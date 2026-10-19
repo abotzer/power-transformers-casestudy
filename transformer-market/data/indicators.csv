@@ -52,3 +52,6 @@ as_of,metric,value,unit,scope,confidence,source_url
 2026-02,Prolec GE implied EV/EBITDA (2025E),12.9-14.1,x,"computed from $9,656M consideration",S,https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000148/gev-20260630.htm
 2023,Coil winders in NAICS 3353 (OEWS),3600,jobs,mean $21.78/hr,P,https://www.bls.gov/oes/
 2026,Announced jobs at 7 plants hiring 2027-28,4388,jobs,1.2x coil winders in NAICS 3353,S,transformer-market/deep-dive/2026-10-12-deep-dive.md
+2026-10-03,"Order - LS Electric 345 kV EHV transformers, NA hyperscale data centers",133.41,USD M,"Nine substations, phased delivery through 2030 (industry sources)",S,https://en.sedaily.com/finance/2026/10/05/korean-transformer-makers-win-big-us-ai-data-center-orders
+2026-10-15,Framework - GE Vernova / Venture Global grid equipment (transformers + GIS) for power islands,,count,Up to 16-21 power islands; 5 packages reserved; first POs by end-2026,S,https://www.tikr.com/blog/ge-vernova-landed-5-grid-equipment-reservations-from-venture-global-heres-where-the-stock-could-go-by-2030
+2026-10-15,BLS PPI final demand (Sep 2026),6.3,% YoY,Headline; transformer series (WPU117409) not retrieved this run,P,https://www.bls.gov/news.release/archives/ppi_10152026.htm

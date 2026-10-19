@@ -1,6 +1,6 @@
 # North American Transformer Market Map
 
-**Baseline as of 2026-10-12.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
+**Baseline as of 2026-10-19.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
 
 Confidence tags: **[P]** primary source (company, government or filing), **[S]** reputable secondary (trade press, law firm, analyst), **[W]** weak (vendor blog or aggregator; directional only).
 
@@ -41,7 +41,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 
 | Company | Owner / listing | NA plants (power) | Recent capacity moves and status | Notes |
 |---|---|---|---|---|
-| **Hitachi Energy** | Hitachi (TSE: 6501) | South Boston VA; Crystal Springs MS; Varennes QC; Alamo TN (bushings) | **South Boston**: $457M LPT plant, 825 jobs, **broke ground Jun 29, 2026**; output ~2028, possibly 2029. **Gallman MS**: $528M, 10-160 MVA ≤230 kV, production 2029, construction not started. It is **partly a move of Crystal Springs**, so net new capacity is about one Crystal Springs. **Varennes**: ~3x capacity, test bay by end-2027. **Alamo**: bushings to 800 kV, broke ground Aug 2025. Buying Canduct (insulation) | ~$1.5B US program [P] |
+| **Hitachi Energy** | Hitachi (TSE: 6501) | South Boston VA; Crystal Springs MS; Varennes QC; Alamo TN (bushings) | **South Boston**: $457M LPT plant, 825 jobs, **broke ground Jun 29, 2026**; output ~2028, possibly 2029. **Gallman MS**: $528M, 10-160 MVA ≤230 kV, production 2029, construction not started. It is **partly a move of Crystal Springs**, so net new capacity is about one Crystal Springs. **Varennes**: ~3x capacity, test bay by end-2027. **Alamo**: bushings to 800 kV, broke ground Aug 2025. Bought Canduct (insulation); **London ON pressboard plant, C$479M, end-2028 (announced Oct 16, 2026)** | ~$1.5B US program plus Canada [P] |
 | **GE Vernova / Prolec GE** | NYSE: GEV. 100% owned since Feb 2, 2026 | 7 sites in the Americas: Goldsboro NC, Shreveport LA, Waukesha WI, Monterrey MX… | **Goldsboro**: $140M, 220→420 units/yr, broke ground Mar 17, 2026, investment deadline Dec 31, 2027. Shreveport +1,500 small units/yr (done) | Total consideration **$9,656M** for 100% (~12.9-14.1x 2025E EBITDA). Prolec ~25% EBITDA margin pre-deal. Electrification EBITDA 18.4% (Q2'26) [P] |
 | **Siemens Energy** | ETR: ENR | Charlotte NC | **$149.9M Charlotte LPT plant**, 24→57/yr. Job posts say the building is done late 2026, so production starts in **2027 (slipped from early 2026)**. A separate $421M NC program (Feb 2026) is mostly generators and turbines. $18.3M 48C credit | [P] |
 | **HD Hyundai Electric** | KRX: 267260 | Montgomery AL | **Plant #2**: $200M, ~312k sq ft, +50% EHV, 765 kV build and test, 200 jobs. Broke ground Mar 6, 2026. Completion Apr 2027 per company, mid-2027 per Chamber | Q2'26 operating margin 25.1%. North America revenue +10% while margin rose (price and mix). Korea antidumping rate **0%** [P/S] |
@@ -113,7 +113,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 | **Cores and laminations** | Section 232 duty on imported cores is **unresolved: 25% (Annex I-B) or 50% (Annex I-A)** under different readings of the April annex. GOES strip is reportedly at 50% | Proclamation 11021 annex reads [S] |
 | **Copper** | LME $14,474/t (Sep 2026), +45% YoY. COMEX premium near zero, so LME works for hedging. Copper wire PPI +19% YoY | World Bank, BLS [P] |
 | **Insulating oil** | Lube base-stock PPI +111% YoY. Ergon raised naphthenic transformer fluids +$2.05/gal (Mar-Apr 2026) | BLS, Ergon [P] |
-| **Insulation / bushings** | Hitachi buying Canduct; Hitachi Alamo bushings plant | [P] |
+| **Insulation / bushings** | Hitachi bought Canduct, and on **Oct 16, 2026 announced a C$479M pressboard plant in London, Ontario** (first in Canada and in the Americas for Hitachi; ~100 jobs; end-2028; C$50M government support). It eases the large-unit insulation bottleneck, but mainly for Hitachi's own plants. Hitachi Alamo bushings plant | [P] |
 | **Labor** | Coil winders in NAICS 3353: 3,600 (2023), mean $21.78/hr. Contracted plant wages $65-72k, 52-56% above county averages | BLS OEWS [P]; incentive filings [P] |
 
 ---
