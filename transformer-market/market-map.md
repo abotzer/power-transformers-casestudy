@@ -1,6 +1,6 @@
 # North American Transformer Market Map
 
-**Baseline as of 2026-10-19.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
+**Baseline as of 2026-10-26.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
 
 Confidence tags: **[P]** primary source (company, government or filing), **[S]** reputable secondary (trade press, law firm, analyst), **[W]** weak (vendor blog or aggregator; directional only).
 
@@ -48,7 +48,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 | **Hyosung HICO** | Hyosung Heavy Industries (KRX) | Memphis TN (the former Mitsubishi Electric plant Hyosung bought in 2019-20) | Two expansions, **$51M (123 jobs) + $157M (240 jobs)**, plus building (~$208-238M in total); +50% by 2028. Broke ground Nov 24, 2025 | Only US 765 kV maker. $287M hyperscaler orders (Sep 2026). Q2 operating margin 15.7% (+490 bp). Korea antidumping rate 4.32% [P/S] |
 | **Virginia Transformer (VTC)** | **Private** (Roanoke VA) | 6 NA plants incl. Rincon GA | **Rincon**: $40M, **scaled back to +50% by Mar 2027** (was +70% by end-2026). **Muscle Shoals AL**: 600k sq ft greenfield, 2-500 MVA, 1,100 jobs, production Jan 2028, ~$300M reported. **No site work found since the May 2026 announcement** | WAPA LPT blanket purchase agreement. Sale talk >$6B (2025), no deal [S] |
 | **Pennsylvania Transformer Technology (PTT)** | Quanta Services (NYSE: PWR) | Canonsburg PA; Raeford NC | **Raeford $102.5M**: includes a **new 150k sq ft pad-mount plant, building done Q4 2026, first shipments early 2027** | 5-750 MVA, to 765 kV [P] |
-| **Niagara Power Transformer** | Quanta Services | Cheektowaga NY | **$71.2M**: new 96k sq ft Dale Rd plant plus a 32k sq ft addition, staff 146→219. ECIDA inducement of $2.19M (Sep 2026) and NYPA $4.5M. **Pre-construction** | [P] |
+| **Niagara Power Transformer** | Quanta Services | Cheektowaga NY | **$71.2M**: new 96k sq ft Dale Rd plant plus a 32k sq ft addition, staff 146→219. ECIDA inducement of $2.19M (Sep 2026), NYPA $4.5M and ESD Excelsior credits up to $3.4M. **Broke ground Oct 22, 2026**; +50% capacity | [P] |
 | **Howard Industries** | **Private** (Laurel MS) | Laurel, Ellisville MS | **Ellisville $100M**: rating rises from 168 MVA/230 kV to **250 MVA/345 kV by end-2026**. Separate **$237M / 450-job** MS program through ~2030 | Moving up-market into 10-100+ MVA. Tells DOE its lead times are under 20 wks [P] |
 | **Delta Star** | Private → MacLean Power Systems (Blackstone/Centerbridge), **signed Sep 1, 2026**, close Q4 | Lynchburg VA; San Carlos CA; Saint-Jean-sur-Richelieu QC | $35M Lynchburg expansion | Power transformers, mobile substations [S] |
 | **SGB-SMIT** | Germany (OEP) | Southwest Electric (OK), bought Mar 2025 | — | [S] |
@@ -95,7 +95,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 |---|---|
 | **2026** | Howard Ellisville to 250 MVA/345 kV (on track, end-2026). Giga Houston, JST Wytheville and Central Moloney FL (operating). Hammond Mexico (operating). PTT pad-mount building complete Q4 |
 | **2027** | PTT Raeford pad-mount (early 2027). VTC Rincon +50% (Mar 2027, slipped). HD Hyundai #2 (Apr to mid-2027). Siemens Charlotte (slipped from 2026). Eaton Jonesville. ERMCO Waddell. Prolec Goldsboro to 420 units/yr (investment deadline Dec 31, 2027). Hyosung Memphis (phased 2027-28). Heron Power SST (late 2027) |
-| **2028** | VTC Muscle Shoals (Jan 2028, **at risk**, no site work seen). Hitachi South Boston (**at risk of slipping to 2029**). Cliffs Butler GOES +25%. Niagara (likely 2028+) |
+| **2028** | VTC Muscle Shoals (Jan 2028, **at risk**, no site work seen). Hitachi South Boston (**at risk of slipping to 2029**). Cliffs Butler GOES +25%. Niagara (broke ground Oct 22, 2026; likely 2027-28) |
 | **2029** | Hitachi Gallman (partly replaces Crystal Springs) |
 
 **What this means:**
