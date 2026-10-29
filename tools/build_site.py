@@ -1,8 +1,8 @@
-"""Build a standalone static copy of the dashboard for self-hosting (e.g. test.white-sail.ai).
+"""Build a standalone static copy of a dashboard report for self-hosting.
 
-Usage: python3 -I build_site.py <dashboard/index.html> <data_dir> <out_dir> [domain]
+Usage: python3 -I tools/build_site.py <dashboard/index.html> <data_dir> <out_dir> [title]
 Writes <out_dir>/index.html (page + embedded datasets + a small `dash` runtime shim),
-<out_dir>/favicon.svg and, if a domain is given, <out_dir>/CNAME.
+<out_dir>/favicon.svg. The page gets a small link back to the report catalog (../).
 """
 import json
 import os
@@ -14,7 +14,7 @@ HEAD = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>NA Transformer Market · Whitesail Labs</title>
+<title>%TITLE%</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
@@ -43,12 +43,16 @@ HEAD = """<!doctype html>
   }
 }
 html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); }
+.ws-catalog { padding: 12px clamp(16px, 2.5vw, 40px) 0; font-size: 13px; }
+.ws-catalog a { color: var(--color-fg-muted); text-decoration: none; }
+.ws-catalog a:hover { color: var(--color-fg); text-decoration: underline; }
 #dash-root { padding: 24px clamp(16px, 2.5vw, 40px) 48px; }
 .dash-skeleton { position: relative; min-height: 2rem; border-radius: var(--cds-radius); background: linear-gradient(90deg, var(--color-border-line) 0%, var(--color-panel) 50%, var(--color-border-line) 100%); background-size: 200% 100%; animation: dash-sk 1.4s linear infinite; color: transparent; }
 @keyframes dash-sk { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 </style>
 </head>
 <body>
+<nav class="ws-catalog"><a href="../">&larr; All reports</a></nav>
 <div id="dash-root">
 """
 
@@ -108,7 +112,7 @@ def scrub(obj):
     return obj
 
 
-def main(page_path, data_dir, out, domain=None):
+def main(page_path, data_dir, out, title="Whitesail Labs report"):
     page = open(page_path).read()
     data = {}
     for f in sorted(os.listdir(data_dir)):
@@ -116,15 +120,12 @@ def main(page_path, data_dir, out, domain=None):
             data[f[:-5]] = json.load(open(os.path.join(data_dir, f)))
     data = scrub(data)
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    html = (HEAD + SHIM % blob + page).replace("--font-anthropic-", "--font-") + "\n</div>\n</body>\n</html>\n"
+    html = (HEAD.replace("%TITLE%", title) + SHIM % blob + page).replace("--font-anthropic-", "--font-") + "\n</div>\n</body>\n</html>\n"
     os.makedirs(out, exist_ok=True)
     open(os.path.join(out, "index.html"), "w").write(html)
-    logo = os.path.join(os.path.dirname(os.path.abspath(page_path)), "brand", "whitesail-logo.svg")
+    logo = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "shared", "brand", "whitesail-logo.svg")
     if os.path.exists(logo):
         open(os.path.join(out, "favicon.svg"), "w").write(open(logo).read())
-    if domain:
-        open(os.path.join(out, "CNAME"), "w").write(domain + "\n")
-    open(os.path.join(out, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
     print("wrote", os.path.join(out, "index.html"), len(html), "bytes;", len(data), "datasets")
 
 

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Reports · Whitesail Labs</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<style>
+:root { --navy: #1A3263; --cream: #F3EEE8; --amber: #FAB95B; --bg: #faf9f5; --panel: #fff; --fg: #1f1e1d; --muted: #6b6a66; --line: #e4e1d8; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1c1b19; --panel: #262522; --fg: #ecebe6; --muted: #a6a39b; --line: #3a3833; } }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: Inter, system-ui, sans-serif; font-size: 15px; }
+main { max-width: 72rem; margin: 0 auto; padding: 24px clamp(16px, 3vw, 40px) 56px; display: flex; flex-direction: column; gap: 28px; }
+.band { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; background: var(--navy); color: var(--cream); border-radius: 12px; padding: 14px 22px; position: relative; overflow: hidden; }
+.band::after { content: ""; position: absolute; right: -2rem; top: 0; bottom: 0; width: 9rem; background: repeating-linear-gradient(180deg, transparent 0 .9rem, rgba(250,185,91,.55) .9rem 1.15rem); opacity: .35; transform: skewX(-20deg); }
+.band svg { width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 0 0 2px var(--cream); }
+.name { font-family: "Source Serif 4", Georgia, serif; font-size: 20px; }
+.tag { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--amber); }
+h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 400; font-size: clamp(28px, 4vw, 40px); margin: 0; padding-left: 14px; border-left: 4px solid var(--amber); }
+.lede { color: var(--muted); max-width: 64ch; line-height: 1.55; margin: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 18px; }
+a.card { display: flex; flex-direction: column; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 22px; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+a.card:hover { border-color: var(--amber); transform: translateY(-2px); }
+a.card.off { pointer-events: none; opacity: .6; }
+.status { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.card h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 400; font-size: 24px; margin: 0; }
+.card p { margin: 0; line-height: 1.55; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+.chips span { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; color: var(--muted); }
+.open { color: var(--fg); font-weight: 500; }
+footer { color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="band"><svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M600 300C600 465.685 465.685 600 300 600C134.315 600 0 465.685 0 300C0 134.315 134.315 0 300 0C465.685 0 600 134.315 600 300Z" fill="#1A3263"/>
+<path d="M457.192 481.78C500.075 352.231 497.886 271.239 468.271 145.981C465.039 132.31 446.892 129.636 439.289 141.567C352.657 277.505 282.146 357.897 146.558 462.131C134.311 471.546 140.577 491.299 155.948 491.374L441.868 492.778C448.786 492.812 455.012 488.367 457.192 481.78Z" fill="#F3EEE8"/>
+<path d="M468.271 145.981L475.572 144.185L468.271 145.981ZM457.192 481.78L464.311 484.07V484.07L457.192 481.78ZM146.558 462.131L151.091 468.059V468.059L146.558 462.131ZM439.289 141.567L445.603 145.55L445.603 145.55L439.289 141.567ZM468.271 145.981L475.572 144.185C490.447 207.104 498.548 259.358 497.417 312.354C496.286 365.392 485.92 418.788 464.311 484.07L457.192 481.78L450.074 479.49C471.347 415.222 481.328 363.348 482.419 312.188C483.511 260.987 475.709 210.116 460.971 147.777L468.271 145.981ZM441.868 492.778L441.754 500.277L155.834 498.874L155.948 491.374L156.062 483.875L441.982 485.279L441.868 492.778ZM146.558 462.131L142.024 456.204C276.868 352.542 346.789 272.823 432.975 137.583L439.289 141.567L445.603 145.55C358.525 282.188 287.425 363.252 151.091 468.059L146.558 462.131ZM155.948 491.374L155.834 498.874C133.069 498.762 124.309 469.822 142.024 456.204L146.558 462.131L151.091 468.059C144.313 473.27 148.085 483.836 156.062 483.875L155.948 491.374ZM457.192 481.78L464.311 484.07C461.089 493.802 451.915 500.327 441.754 500.277L441.868 492.778L441.982 485.279C445.657 485.297 448.934 482.931 450.074 479.49L457.192 481.78ZM468.271 145.981L460.971 147.777C459.317 140.783 449.769 139.013 445.603 145.55L439.289 141.567L432.975 137.583C444.015 120.26 470.761 123.837 475.572 144.185L468.271 145.981Z" fill="#1A3263"/>
+<path d="M257.334 291H188.109" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+<path d="M211.717 230H142.491" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+<path d="M302.952 169H233.726" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+</svg>
+<div><div class="name">Whitesail Labs</div><div class="tag">Market intelligence</div></div></div>
+  <h1>Reports</h1>
+  <p class="lede">Source-linked market research built on public and government data: permits, filings, federal statistics and regulatory dockets. Each report has a market map, the evidence behind it and what it means for the investor it was prepared for.</p>
+  <div class="grid">
+    <a class="card" href="transformers/">
+      <div class="status">Live · updated weekly · 2026-10-26</div>
+      <h2>North American power transformers</h2>
+      <p>Supply, lead times, prices, policy and the value chain from electrical steel to data centers, with a plan for Fulton to profit from the build-out without building transformers.</p>
+      <div class="chips"><span>Grid equipment</span><span>Manufacturing</span><span>Value chain</span></div>
+      <div class="open">Open report &rarr;</div>
+    </a>
+    <a class="card off" href="infra-services/">
+      <div class="status">In preparation · 2026-10-29</div>
+      <h2>Critical utility infrastructure services</h2>
+      <p>Testing the maintenance-led holding-company thesis across natural gas, power and water: precedents, asset age, demand, fragmentation, economics and platform candidates.</p>
+      <div class="chips"><span>Utility services</span><span>Roll-up</span><span>Gas · Power · Water</span></div>
+      <div class="open"></div>
+    </a>
+  </div>
+  <footer>Whitesail Labs · Prepared for Fulton Asset Management</footer>
+</main>
+</body>
+</html>

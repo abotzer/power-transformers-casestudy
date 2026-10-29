@@ -3,7 +3,7 @@ name: Deploy dashboard to GitHub Pages
 on:
   push:
     branches: [claude/na-transformer-market-monitor-phxkdi]
-    paths: ["transformer-market/site/**", ".github/workflows/pages.yml"]
+    paths: ["site/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -26,6 +26,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: transformer-market/site
+          path: site
       - id: deployment
         uses: actions/deploy-pages@v4

@@ -1,15 +1,20 @@
-# NA Transformer Market Monitor
+# Whitesail Labs market reports
 
-A weekly-updated map of the North American electricity transformer market, covering manufacturers, capacity expansions, lead times, pricing, demand, imports, tariffs, M&A and private companies.
+Source-linked market research reports prepared for Fulton Asset Management. The public site's home page (`site/index.html`) is a catalog of the reports below. Each report has an interactive market map, tabs for the market evidence, the analysis for Fulton and an appendix, plus pop-up definitions of technical terms.
 
-| File | What it is |
+| Report | What it covers | Where |
+|---|---|---|
+| **North American power transformers** | Supply, capacity, lead times, prices, trade and policy, deals, the value chain from electrical steel to data centers, and how Fulton can profit from the build-out. Updated weekly | [`transformer-market/`](transformer-market/) · [dashboard](https://claude.ai/artifact/HPfiJXoEzG2ZwVXuMkAWYb) |
+| **Critical utility infrastructure services** | Tests the maintenance-led holding-company thesis across natural gas, power and water: precedent platforms, asset age, demand drivers, fragmentation, TAM and margins, cross-unit synergies and platform candidates | [`infra-services/`](infra-services/) |
+
+## Repository layout
+
+| Path | What it is |
 |---|---|
-| **[Visual report (dashboard)](https://claude.ai/artifact/HPfiJXoEzG2ZwVXuMkAWYb)** | Prepared for Fulton Asset Management. An interactive value-chain graph, the Fulton plan, charts, plant map, timelines and searchable tables, with glossary pop-ups on technical terms. Private until shared |
-| **[For Fulton Asset Management](transformer-market/value-chain/fulton-summary.md)** | How Fulton can profit from the build-out without building transformers: ranked plays across the value chain, exposure of each portfolio company, a ninety-day plan |
-| [`transformer-market/value-chain/`](transformer-market/value-chain/) | The value-chain map behind the dashboard's market graph (suppliers three layers up, customers three layers down, annual flows), the glossary, and the script that builds their datasets |
-| **[Deep dive (2026-10-12)](transformer-market/deep-dive/2026-10-12-deep-dive.md)** | Two rounds of primary-source research: permits, incentives, filings, dockets, trade data, utility bids. Answer, segment ranking, plant status, prices, demand in units, entry playbook |
-| [`transformer-market/weekly/`](transformer-market/weekly/) | One report per week: what changed and what it implies. **Latest: [2026-10-26](transformer-market/weekly/2026-10-26.md)** |
-| [`transformer-market/market-map.md`](transformer-market/market-map.md) | The full market map, rewritten each week |
-| [`transformer-market/data/`](transformer-market/data/) | CSV trackers: capacity expansions, deals, indicators (each row has a source URL) |
-| [`transformer-market/dashboard/`](transformer-market/dashboard/) | Dashboard page source and the script that builds its datasets |
-| [`transformer-market/MONITORING.md`](transformer-market/MONITORING.md) | Runbook each weekly run follows |
+| `reports.json` | The report catalog (title, summary, page and data folders) |
+| `tools/build_catalog.py` | Builds the public site: the catalog home page plus one folder per report |
+| `tools/build_site.py` | Turns one dashboard page and its datasets into a standalone static page |
+| `site/` | The built public site, deployed by `.github/workflows/pages.yml` |
+| `shared/brand/` | Whitesail Labs logo |
+| `transformer-market/` | Transformer report: market map, weekly reports, deep dive, CSV trackers, dashboard source, runbook |
+| `infra-services/` | Utility infrastructure services report: research, dashboard source and datasets |
