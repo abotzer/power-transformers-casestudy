@@ -1,0 +1,254 @@
+  <header class="tx-head" id="top">
+    %BAND%
+    <h1 class="tx-title">Critical utility infrastructure services</h1>
+    <p class="tx-lede tx-fill" data-source="plan" data-field="body" data-where="id=headline">—</p>
+    <p class="tx-updated tx-fill" data-source="figures" data-field="label" data-where="id=report_window">—</p>
+    <nav class="tx-tabs" role="tablist" aria-label="Report sections">
+      <button type="button" role="tab" data-tab="overview">Overview</button>
+      <button type="button" role="tab" data-tab="market">Aging and demand</button>
+      <button type="button" role="tab" data-tab="competition">Competition</button>
+      <button type="button" role="tab" data-tab="economics">Economics</button>
+      <button type="button" role="tab" data-tab="candidates">Candidates</button>
+      <button type="button" role="tab" data-tab="fam">Analysis for Fulton</button>
+      <button type="button" role="tab" data-tab="appendix">Appendix</button>
+    </nav>
+  </header>
+
+  <section class="tx-section" id="verdict-box">
+    <div class="tx-bottom dash-skeleton" id="fam-summary"></div>
+  </section>
+
+  <section class="tx-section" id="questions">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="q-title">The seven questions, answered</h2>
+      <p class="tx-sub">Each answer is graded against the thesis and linked to its sources. Open a card for the evidence; the other tabs hold the charts behind it.</p>
+    </div>
+    <div class="tx-answers dash-skeleton" id="answers-grid" data-source="answers"></div>
+  </section>
+
+  <section class="tx-section" id="value-chain">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="vc-title">How the market works</h2>
+      <p class="tx-sub">Money moves left to right in the order it is spent: who funds the work, the equipment, materials and labor inputs, the service providers in the middle grouped by type, then the asset owners who hire them, who pays those owners, and the end users. Each arrow carries what is bought and its estimated annual value, marked est. Click a company or group to trace its whole chain.</p>
+    </div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Find a company <select id="vc-select" aria-label="Find a company"><option value="">Choose…</option></select></label>
+        <label><input type="checkbox" id="vc-fulton" checked> Show Fulton companies and opportunities</label>
+        <button type="button" class="tx-btn" id="vc-clear">Clear selection</button>
+      </div>
+      <div class="tx-legend" id="vc-legend"></div>
+      <div class="tx-vc-scroll">
+        <div class="tx-chart tx-vc dash-skeleton" id="vc-chart" data-source="value_chain_nodes value_chain_edges"></div>
+      </div>
+      <div class="tx-vc-detail" id="vc-detail"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="actions">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="actions-title">Action items</h2>
+      <p class="tx-sub">What the evidence says to do next, in order.</p>
+    </div>
+    <ol class="tx-steps dash-skeleton" id="plan-steps"></ol>
+  </section>
+
+  <section class="tx-section" id="market-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-market" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="aging">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="aging-title">Is the infrastructure really aging?</h2>
+      <p class="tx-sub">Routine maintenance keeps old assets in service, so the question is how much is past its design life, how fast it is being replaced, and how large the backlog is in miles, units and dollars.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-aging"></div>
+  </section>
+
+  <section class="tx-section" id="why-now">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="why-title">Is the why-now real?</h2>
+      <p class="tx-sub">Demand, population, nuclear, renewables, gas safety rules, water rules and utility capital spending, each tested against the data, with what it means for maintenance work as opposed to new construction.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-demand"></div>
+  </section>
+
+  <section class="tx-section" id="deck-claims">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="claims-title">The deck's statistics, checked</h2>
+      <p class="tx-sub">Each statistic in the thesis deck, the verdict after an independent check, and a version that holds up to diligence.</p>
+    </div>
+    <div class="tx-claims dash-skeleton" id="claims-list" data-source="deck_claims"></div>
+  </section>
+
+  <section class="tx-section" id="watchlist">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Watchlist</h2>
+      <p class="tx-sub">Dated events that could change the picture.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="watch-title">Upcoming catalysts by month</h3>
+      <p class="tx-card-note">Amber dots fall within the next thirty days. Click an item for why it matters.</p>
+      <div class="tx-wt dash-skeleton" id="watch-timeline" data-source="watchlist"></div>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="watch-table" data-source="watchlist" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="precedents">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="prec-title">Who has built this before</h2>
+      <p class="tx-sub">Public companies and private-equity platforms that rolled up utility infrastructure services, grouped by how they turned out. These are both the competition for deals and the evidence on whether the model works.</p>
+    </div>
+    <div class="tx-board tx-board-wide dash-skeleton" id="prec-board" data-source="platforms"></div>
+  </section>
+
+  <section class="tx-section" id="fragmentation">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="frag-title">How fragmented is it?</h2>
+      <p class="tx-sub">Firm counts from federal business statistics by industry code and size, and the companies that have reached real scale.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-competition"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="scaled-title">The scaled players</h3>
+      <p class="tx-card-note">Companies with meaningful utility-services revenue, with links to their websites.</p>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="scaled-table" data-source="scaled" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="tam">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="tam-title">Market size, revenue and margins</h2>
+      <p class="tx-sub">How big each unit is, what comparable companies earn, and how the economics change with scale. Ranges are estimates with their basis shown on hover.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-economics"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="pl-title">An illustrative platform at three sizes</h3>
+      <p class="tx-card-note">An estimate built from public comparables, not a forecast. The drivers column says what moves the margin.</p>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="pl-table" data-source="pl" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="synergies">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="syn-title">Do crews and equipment really move across units?</h2>
+      <p class="tx-sub">Workforce overlap from federal occupation data by industry, the qualifications that keep crews in their lane, and which equipment is shared.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-synergies"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="syn-table-title">Which synergies are real</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="syn-table" data-source="synergies" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="candidates">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="cand-title">Platform and add-on candidates</h2>
+      <p class="tx-sub">Private companies found in public sources that fit the platform criteria, by unit. The dots score each criterion: filled meets it, half partly, hollow does not, and a question mark is not yet known. Open a company for its services, customers and sources.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-candidates"></div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Unit <select id="cand-unit" aria-label="Unit"><option value="">All units</option></select></label>
+        <label><input type="checkbox" id="cand-platform"> Platform-grade only</label>
+        <label><input type="checkbox" id="cand-free"> Not already sponsor-owned</label>
+        <input class="tx-search" id="cand-search" type="search" placeholder="Search services, states or customers" autocomplete="off" aria-label="Search candidates">
+      </div>
+      <div class="tx-cands dash-skeleton" id="cand-board" data-source="candidates"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="ranking">
+    <div class="tx-section-head">
+      <p class="tx-eyebrow">For Fulton Asset Management</p>
+      <h2 class="tx-h2" id="rank-title">Which unit first?</h2>
+      <p class="tx-sub">The four units ranked as a first platform on market size, maintenance share, margins, competition and the supply of candidates.</p>
+    </div>
+    <div class="tx-rank dash-skeleton" id="rank-list" data-source="unit_ranking"></div>
+  </section>
+
+  <section class="tx-section" id="plan">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="plan-title">The plan for Fulton</h2>
+    </div>
+    <div class="tx-bottom dash-skeleton" id="plan-first"></div>
+    <div class="tx-grid">
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="vi-title">Where Fulton's companies fit</h3>
+        <p class="tx-card-note">Vertical-integration links between the services platform and the companies Fulton already owns.</p>
+        <ul class="tx-checks dash-skeleton" id="plan-vi"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="edits-title">Edits the evidence supports</h3>
+        <p class="tx-card-note">Changes to the thesis deck and one-pager.</p>
+        <ul class="tx-checks dash-skeleton" id="plan-edits"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="risks-title">Risks and how to handle them</h3>
+        <ul class="tx-checks dash-skeleton" id="plan-risks"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="signals-title">Signals that would change the plan</h3>
+        <ul class="tx-checks dash-skeleton" id="plan-signals"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="cand-appendix">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">All candidates</h2>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="cand-table-title">Candidate list</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="cand-table" data-source="candidates" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="sources">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Evidence and sources</h2>
+      <p class="tx-sub">Every finding behind the report, with its confidence tag and a link. P is a government, filing or company source; S is trade press, an analyst or a law firm; W is a vendor blog or aggregator, directional only.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="src-title">All findings</h3>
+      <input class="tx-search" id="src-search" type="search" placeholder="Search findings, e.g. PHMSA or margin" autocomplete="off" aria-label="Search findings">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="src-table" data-source="findings" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="glossary">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="gloss-title">Glossary</h2>
+      <p class="tx-sub">Plain-language definitions of the terms underlined across this page. Hover over, tap or tab to an underlined term to read its definition in place.</p>
+    </div>
+    <div class="tx-card">
+      <input class="tx-search" id="gloss-search" type="search" placeholder="Search, e.g. LDC or CIPP" autocomplete="off" aria-label="Search the glossary">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="gloss-table" data-source="glossary" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="notes">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Caveats</h2>
+    </div>
+    <p class="tx-card-note tx-pre dash-skeleton" id="caveats-text"></p>
+  </section>
+
+  <footer class="ws-foot">
+    %MARK%
+    <span>Whitesail Labs · Prepared for Fulton Asset Management · Confidential</span>
+  </footer>
+  <div class="tx-gpop" id="gloss-pop" role="tooltip" hidden></div>
