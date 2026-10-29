@@ -147,7 +147,19 @@ Update after a direct check (Oct 29, 2026): reporting on PG&E's own records date
 
 ## Q4. How many platform candidates exist per unit, based on the thesis criteria?
 
-**Verdict: Challenges thesis.** Few. Of 51 named candidates, 14 are platform-grade (gas 3, T&D 2, power-gen 5, water 4). Only 3 are confirmed independent, and 2 of those are unlikely sellers. The realistic list to pursue now is about 1-4 names plus a handful of gas regionals whose size still needs checking, so the real pipeline must come from primary contractor rosters.
+**Verdict: Mixed.** Enough to start in gas, not enough for three units. A second pass through trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records lists 147 private companies; 21 are platform-grade (gas 9, water 4, T&D 3, power-gen 5). 9 of those look independent, 6 of them in gas. Leaving out Day & Zimmermann, which is not a seller, about 8 names are worth approaching, most of them gas regionals whose size still needs checking.
+
+Update after a second candidate pass (Oct 29, 2026): the first pass dropped companies without a verified website and missed most founder-owned regionals. Checking DCA, NETA, NASSCO and AWWA member lists, company sites and ownership records changed the picture:
+- Gas: 48 listed, 9 platform-grade. Six look independent: Heath Consultants (third-generation family, Houston), R.H. White (White family, ~500-600 staff, Massachusetts), Driver Pipeline and Larrett Energy Services (Texas; Larrett was formed by Scott Driver, so the two may be related), Banks Gas Services (founder-owned, Pittsburgh) and Diversified Utility Services (Atlanta). J.F. Kiely is family-led, but family control is not confirmed.
+- Q3 Contracting was dropped: Primoris owns it, so it is not available.
+- Water: 48 listed, 4 platform-grade. Pittsburg Tank & Tower (Johnston family) is independent; Carylon's ownership is still unconfirmed.
+- T&D: 39 listed, 3 platform-grade. Tomberlin Pole Treatment (family) is independent but add-on scale. Davis H. Elliot (ESOP) fits, but its website was not verified.
+- Power-gen: 12 listed, 5 platform-grade. Day & Zimmermann is the only confirmed independent, and it is not a likely seller.
+- 38 more names are leads without a verified website.
+
+So the gas unit has a real starting pipeline. The other units still depend on sponsor-owned platforms or add-on-scale firms.
+
+First pass, for reference:
 
 Few. We screened 85 named private companies against the thesis criteria: recurring maintenance, durable customers, specialized labor and equipment, safety, and no dependence on low-bid or fixed-price work. That left 51 candidates with their own websites. Of those, 14 are platform-grade (fit 4+, recurring, not bid-driven). Only 3 of the 14 are confirmed independent, and 2 of the 3 are unlikely sellers.
 
@@ -155,7 +167,7 @@ By unit:
 - Gas: 14 listed, 3 platform-grade.
 - The three: Sparus/Southern Cross (Ridgemont since 2021), Heath Consultants (ownership unverified) and Artera (CD&R; too large).
 - Closest independent: Danella. It scores 3 because OSHA has investigated it six times since 2017 over trench work (NBC10).
-- Regional contractors Q3 Contracting, J.F. Kiely and Utility Line Services fit the model, but their size is unknown.
+- Regional contractors J.F. Kiely and Utility Line Services fit the model (Q3 Contracting turned out to be owned by Primoris), but their size is unknown.
 - Add-ons: Teichert Pipelines, Pro-Vac/Hydromax, GPT, ULC Technologies.
 - T&D: 12 listed, 2 platform-grade (Pike, owned by TPG; Osmose, owned by EQT), both sponsor-owned.
 - East Coast Power (A&M) and United Utility Services (Sandbrook/Blackstone) would add two more sponsored names.
@@ -184,13 +196,13 @@ Next step: build the list from primary rosters: DCA, NETA accredited companies, 
 
 | Figure | Value |
 |---|---|
-| Named private companies screened -> candidates kept | 85 -> 51 |
-| Platform-grade candidates by unit | 14 (gas 3, T&D 2, power-gen 5, water 4) |
-| Platform-grade and confirmed independent | 3 (Day & Zimmermann, Structural Integrity Associates, Carylon) |
+| Private companies listed after the roster check | [147 (38 without a verified website)](https://directory.dcaweb.org/) |
+| Platform-grade candidates by unit | [21 (gas 9, water 4, T&D 3, power-gen 5)](https://directory.dcaweb.org/) |
+| Platform-grade and independent | [9 (6 in gas)](https://heathus.com) |
+| Realistic names to approach now | [~8, mostly gas regionals (size unchecked)](https://rhwhite.com) |
 | Sponsor-backed platforms already active | 26 |
 | Gas distribution contractors' trade group membership (DCA) | [~240 member companies incl. suppliers](https://directory.dcaweb.org/) |
 | Danella OSHA trench investigations since 2017 | [6](https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1) |
-| Realistic names to pursue now | ~1-4 (+3-6 gas regionals if size checks out) |
 
 ## Q5. Is the 'why now' sufficient: nuclear and solar, is population really growing, is power demand actually rising despite efficiency?
 
@@ -360,73 +372,169 @@ Defensible rewrite: '~19,000 utility-system contractors (Census 2017), mostly sm
 
 Grades: **Platform** = fits the thesis criteria well enough to anchor a unit; **Add-on** = a tuck-in; **Watch** = weaker fit; **Lead** = website not yet verified.
 
-### Natural gas distribution (14)
+### Natural gas distribution (48)
 
 | Company | Grade | Fit | Ownership | HQ |
 |---|---|---|---|---|
 | [Artera Services (Miller Pipeline, Minnesota Limited, KS Energy Services, Southeast Connections, Hydro-X, Volt Power)](https://www.artera.com) | Platform | 4 | PE-backed: Clayton, Dubilier & Rice since 2018 (formerly PowerTeam Services) | Atlanta, GA area (not verified) |
-| [Heath Consultants](https://heathus.com) | Platform | 4 | Private, founded 1933; no PE sponsor found; ownership details not verified | Houston, TX |
+| [Banks Gas Services, Inc.](https://www.banksgas.com) | Platform | 4 | Founder/family-owned: founded 2001 by Thomas K. Banks (company site, TribLive) | North Versailles, PA (Pittsburgh metro) |
+| [Diversified Utility Services LLC](https://dusllc.com) | Platform | 4 | Minority-owned (company site); private, owner-operated presumed | Metro Atlanta, GA (implied by company site) |
+| [Driver Pipeline Company](https://www.driverpipeline.com) | Platform | 4 | Family-owned merit shop (company site); private | Irving, TX (1200 N. Union Bower Rd.) |
+| [Heath Consultants](https://heathus.com) | Platform | 4 | Independent: third-generation family-owned, founded 1933 (90+ years; CB Insights). No sponsor or 2026 ownership change f | Houston, TX |
+| [J. F. Kiely Construction Co. (Kiely Family of Companies)](https://www.jfkiely.com) | Platform | 4 | Family-led, privately held group founded 1952. Executive Chairman John M. Kiely; CEO Andy Luse (non-family). No sponsor  | Tinton Falls, NJ (group, per ROI-NJ); J.F. Kiely Constructio |
+| [Larrett Energy Services, Inc.](https://larrettenergy.com) | Platform | 4 | Private; Texas corporation formed by Scott Driver in 2010 (LinkedIn/company profile). Likely founder-owned; not verified | Venus / Kaufman, TX (sources differ) |
+| [R.H. White Construction Co.](https://rhwhite.com) | Platform | 4 | Family-owned: founded 1923, still owned and operated by the White family (company site) | Auburn, MA (background; not verified in search results) |
 | [Sparus Holdings (Southern Cross, The Spear Group, OneVision Utility Services, Allegiant Utility Services, TruCheck)](https://www.southerncrossinc.com) | Platform | 4 | PE-backed: Ridgemont Equity Partners since Mar 2021 (previously Source Capital); Allegiant and TruCheck add-ons Feb 2023 | Norcross / Atlanta area, GA (Southern Cross, per job posting |
+| [AGD, Inc.](https://www.agdsurvey.com) | Add-on | 3 | Woman-owned (company site) | Not verified (operations in IL, VA, GA; Macon, GA job postin |
+| [Accurate Corrosion Control, Inc. (ACCI)](https://accuratecorrosion.com) | Add-on | 3 | Employee-owned corporation (company site) | Phoenix, AZ |
+| [BOND Civil & Utility Construction (BOND Brothers)](https://bond-civilutility.com) | Add-on | 3 | Wholly owned subsidiary of BOND Brothers Inc., a private 'family of companies' with roots to 1907; family ownership not  | Massachusetts (BOND Brothers group; city not verified) |
+| [DDS Companies (DDS Utilities)](https://ddscompanies.com) | Add-on | 3 | Not stated in sources | Not verified |
 | [Danella Companies](https://www.danella.com) | Add-on | 3 | Family-owned (background; not re-verified) | Plymouth Meeting, PA (background; not re-verified) |
-| [J. F. Kiely Construction Co.](https://www.jfkiely.com) | Add-on | 3 | Private (not verified) | Long Island City, NY (background; not verified) |
+| [ELM Utilities](https://elmutility.com) | Add-on | 3 | Not stated in sources | Not verified |
+| [Loy Clark Pipeline Co. (DCA listing: Loy Clark Construction)](https://loyclark.com) | Add-on | 3 | Private (not verified); started 1957 doing work for what is now NW Natural | Tualatin, OR area (older records: Beaverton, OR) |
+| [Midwestern Contractors (MWC)](https://www.midwesterncontractors.com) | Add-on | 3 | Not verified (founded 1951 per DCA directory) | Elburn, IL |
+| [Niels Fugal Sons Company](https://www.fugal.com) | Add-on | 3 | Private LLC; family name and 1929 founding suggest family ownership; not verified | Pleasant Grove, UT (offices in Washington, UT and Prescott,  |
+| [Omark Consultants, Inc.](https://omarkinc.com) | Add-on | 3 | Not stated in sources | Not verified |
 | [Pro-Vac (incl. Hydromax USA)](https://www.pro-vac.com) | Add-on | 3 | PE-backed: Gallant Capital Partners. Hydromax USA was owned by Industrial Growth Partners from Dec 2020 (bought from War | Washington state for Pro-Vac (background; not verified); Hyd |
-| [Q3 Contracting, Inc.](https://www.q3contracting.com) | Add-on | 3 | Private (not verified) | Little Canada, MN (background; not verified) |
-| [Teichert Pipelines (division of A. Teichert & Son)](https://www.teichert.com) | Add-on | 3 | Private parent, family/employee-held (background; not verified) | Sacramento, CA area (parent; background) |
-| [ULC Technologies](https://www.ulctechnologies.com) | Add-on | 3 | Private (background; not verified) | Hauppauge, NY (background; not verified) |
+| [R.L. Coolsaet Construction Co.](https://www.rlcoolsaet.com) | Add-on | 3 | Family-owned pipeline contractor founded 1936 (per DCA directory; listing URL not captured) | Michigan (city not verified) |
+| [Roman E&G Corp.](https://romaneg.com) | Add-on | 3 | Veteran-owned Small Business Enterprise; describes itself as family-oriented | Newark, NJ |
+| [Teichert Pipelines (division of A. Teichert & Son)](https://www.teichert.com) | Add-on | 3 | Division of a private parent, family/employee-held (background; not verified) | Sacramento, CA area (parent; background) |
 | [USIC](https://usicllc.com) | Add-on | 3 | PE-backed (current sponsor and entry date not verified) | Indianapolis, IN (background) |
 | [GPT Industries (incl. Integrated Rectifier Technologies)](https://www.gptindustries.com) | Add-on | 2 | PE-backed: Branford Castle Partners (Fund II platform; entry date not verified) | Houston, TX area (background; not verified) |
+| [Hollico, Inc.](https://www.hollico.com) | Add-on | 2 | Family owned and operated; founded 1972 (company site) | Texas (city not verified) |
+| [J. Derenzo Company](https://www.jderenzo.com) | Add-on | 2 | Not stated (75+ year history; family name) | New England (not verified) |
+| [M&M Cathodic Protection Services](https://www.cathodicprotectionutah.com) | Add-on | 2 | Not stated in sources | Draper, UT |
 | [Grace Industries LLC](https://www.graceindustries.com) | Add-on | 1 | Private (not verified) | New York City area (background; not verified) |
-| [Michels Corporation (incl. Michels Utility Services, Michels Trenchless, power T&D)](https://www.michels.us) | Watch | 2 | Family-owned since 1959 | Brownsville, WI |
+| [Crisdel Group](https://www.crisdel.com) | Watch | 2 | Family-owned (company site) | New Jersey (not verified) |
+| [Hanging H Companies, LLC](https://hanginghco.com) | Watch | 2 | Family-owned (DCA listing; company self-description) | Burlington, WA (DCA directory); Rifle, CO office (2019 proje |
+| [Michels Corporation (incl. Michels Utility Services, Michels Trenchless, power T&D)](https://www.michels.us) | Watch | 2 | Family-owned since 1959 (Wikipedia; DCA listing) | Brownsville, WI |
+| [PPI Gas Distribution](https://www.ppigas.com) | Watch | 2 | Not verified | Not verified (Ohio Gas Association attendee) |
 | [T.D. Williamson](https://www.tdwilliamson.com) | Watch | 2 | Private / family-held (background; not re-verified) | Tulsa, OK (background) |
+| R&R Pipeline, Inc. | Lead | 4 | Owner-operated: founded 1984, bought in 2019 by Cody Thoman and Jacob Emery; veteran-owned (DCA listing) | Newark, OH (second location Belpre, OH) |
+| Arizona Pipeline Company | Lead | 3 | Family-owned per LeadIQ; founded 1979 (third-party data, weak) | Hesperia, CA (Levelset lists Chatsworth, CA) |
+| B&H Construction LLC | Lead | 3 | Unknown (private); founded 1982 | Norman, OK (DCA listing) |
+| Delphi Infrastructure Group (incl. Precision Pipeline Services, SabCon Underground, Allegheny Contracting, JMF Underground) | Lead | 3 | PE-backed: MPE Partners. Invested in Precision Pipeline Services (Aug 2023), added SabCon Underground (Apr 2024) and All | Not verified (Precision Pipeline Services: Lancaster, OH; Al |
+| Global Energy Partners LLC | Lead | 3 | Not verified | Mansfield, OH (3401 State Route 13 S.) |
+| Legacy Utility Group (incl. ECS) | Lead | 3 | Employee-owned: ESOP formed Mar 2025 (Menke Group); chose employee ownership over private equity. Acquired ECS (hydrovac | Not verified (subsidiary Nor-Cal Pipeline Services suggests  |
+| Precision Pipeline Solutions, LLC | Lead | 3 | Describes itself as private, but appears on the PrimeLine Utility Services website, so likely a PrimeLine affiliate; ver | New Windsor / Newburgh, NY |
+| Utility Line Services, Inc. | Lead | 3 | Private (not verified); in business since 1996 | Conshohocken, PA (directory profile) |
+| Veteran Pipeline Construction (VPC) | Lead | 3 | Founder-owned: part of the Charge family of companies, privately owned by Michael Robirds and Billy Kilmer Jr.; founded  | California (listings conflict: Orange, CA and Sacramento, CA |
+| Gabe's Construction Co., Inc. | Lead | 2 | Subsidiary of Westshore Companies (private); founded 1942 | Sheboygan, WI |
+| Gas Field Specialists, Inc. | Lead | 2 | Not verified | Shinglehouse, PA |
+| RJ Underground | Lead | 2 | PE-backed: RF Investment Partners platform investment (announced Aug 13, 2026; TKO Miller advised). Founder/CEO Rich Joh | Kenosha, WI |
+| SI Solutions (incl. Integrity Specialists, MN) | Lead | 2 | PE-backed: MidOcean Partners; acquired Integrity Specialists (founded 2010) in Sep 2025. CEO Mark Marano. | Not verified (Integrity Specialists: Annandale, MN) |
+| XCEL NDT (incl. Integrity Assessment Group) | Lead | 2 | PE-backed: Graycliff Partners since Oct 2023. Acquired IAG (founded 2001 as JRGO LLC; MI, TX, VA) in Sep 2025; Preqin al | Conflicting: Longview, TX (press release) vs Clifton, KS (li |
 
-### Water / wastewater (15)
+### Water / wastewater (48)
 
 | Company | Grade | Fit | Ownership | HQ |
 |---|---|---|---|---|
-| [Carylon Corporation (National Power Rodding, National Water Main Cleaning, Mobile Dredging & Video Pipe)](https://mdvpinc.com) | Platform | 4 | Private, founder-family lineage (founder Julius Hemmelstein died 2015); verify current ownership | Chicago, IL (National Water Main Cleaning: Kearny, NJ) |
-| [Maguire Iron (Maguire Water)](https://maguirewater.com) | Platform | 4 | Private (family ownership not verified) | Sioux Falls, SD (background; not re-verified) |
-| [Pittsburg Tank & Tower Group](https://pttg.com) | Platform | 4 | Private (family ownership not verified) | Henderson, KY (background; not re-verified) |
+| [Carylon Corporation (National Power Rodding, National Water Main Cleaning, Mobile Dredging & Video Pipe)](https://mdvpinc.com) | Platform | 4 | Privately held, founded 1949; founder-family lineage (founder Julius Hemmelstein died 2015). Round 2 found no acquisitio | Chicago, IL (National Water Main Cleaning: Kearny, NJ) |
+| [Maguire Iron (Maguire Water)](https://maguirewater.com) | Platform | 4 | Not found; no PE or acquisition found in search | Sioux Falls, SD (background; not re-verified) |
+| [Pittsburg Tank & Tower Group (PTTG)](https://pttg.com) | Platform | 4 | Family-owned: Johnston family bought it in 1983 (Don Johnston, d. 2018); son Ben Johnston now leads. Holding company for | Henderson, KY |
 | [USG Water Solutions (formerly Utility Service Co.)](https://usgwater.com) | Platform | 4 | PE-backed: Turnspire Capital Partners (carved out of Veolia, 2023) with Backcast; 2025 recap; a reported 2026 sale to Wa | Atlanta and Perry, GA |
 | [Azuria Water Solutions (Insituform, Inframark, BLD Services, Atlantic Coast Contractors, Waterline)](https://www.azuria.com) | Add-on | 3 | PE-backed: New Mountain Capital; actively acquiring (Inframark, Caliagua, Waterline Renewal Technologies, 2026) | St. Louis, MO area |
+| [CSC Pipe Inspection (Commercial Sewer & Pipeline Inspection)](https://cspipeinspection.com) | Add-on | 3 | Not verified | Austin, TX |
 | [HK Solutions Group (formerly Hydro-Klean)](https://www.hksolutionsgroup.com) | Add-on | 3 | PE-backed: CenterOak Partners majority recap (2021); previously Summit Equity Group | Des Moines, IA |
-| [M.E. Simpson Co., Inc.](https://www.mesimpson.com) | Add-on | 3 | Private, founded 1979 (ownership structure not verified) | Valparaiso, IN |
-| [Robinson Pipe Cleaning](https://robinsonpipe.com) | Add-on | 3 | Private (not verified) | Not verified |
+| [Hydrant.com](https://hydrant.com) | Add-on | 3 | Not verified | Not verified |
+| [M.E. Simpson Co., Inc.](https://www.mesimpson.com) | Add-on | 3 | Private, founded 1979; owner not verified | Valparaiso, IN |
+| [Municipal Diving](http://www.municipaldiving.com) | Add-on | 3 | Not verified | Not verified |
+| [Rangeline](https://www.rangeline.com) | Add-on | 3 | Not verified | Not verified |
+| [Robinson Pipe Cleaning](https://robinsonpipe.com) | Add-on | 3 | Not verified | Not verified |
+| [SC Environmental (SCE)](https://www.sc-environmental.com) | Add-on | 3 | Not verified | Not verified |
 | [Spiniello Companies](https://www.spiniello.com) | Add-on | 3 | Private: owned by the Solimine family since 1998 (EJ Solimine president since 2015) | Livingston, NJ (background; not re-verified) |
-| [Tank Maintenance Solutions](https://tankmaintenancesolutions.com) | Add-on | 3 | Private (not verified) | Not verified |
+| [Tank Maintenance Solutions](https://tankmaintenancesolutions.com) | Add-on | 3 | Not verified | Not verified |
 | [Visu-Sewer](https://www.visu-sewer.com) | Add-on | 3 | PE-backed: Fort Point Capital Fund III (2023) | Pewaukee, WI |
-| [Vortex Companies](https://vortexcompanies.com) | Add-on | 3 | Private; sponsor not verified (one source called it a strategic buyer) | Not verified |
-| [DRC Construction Services](https://drcconstruction.us) | Add-on | 2 | Private (not verified) | Not verified |
-| [PURIS (incl. Murphy Pipeline Contractors, Insight Pipe, IPC Services)](https://www.murphypipelines.com) | Watch | 2 | PE-backed: J.F. Lehman & Co. (2024 recapitalization) | Not verified |
-| [SAK Construction](https://www.sakcon.com) | Watch | 2 | Private; owner not verified | O'Fallon, MO |
+| [WaterWise Utility Solutions LLC](https://www.waterwiseus.com) | Add-on | 3 | Not verified | Not verified |
+| [iWater](https://iwater.org) | Add-on | 3 | Not verified | Not verified |
+| [360 Pipeline Inspections](https://360pipes.com) | Add-on | 2 | Woman-owned small business (company site) | Folsom, CA |
+| [ARRO (ARRO Consulting / ARRO Water Services)](https://www.arroconsulting.com) | Add-on | 2 | Not verified | Pennsylvania (not verified) |
+| [Blood Hound](https://www.bhug.com) | Add-on | 2 | Not verified (possibly PE-backed; check before outreach) | Not verified |
+| [CIT Sewer Solutions](https://citsewer.com) | Add-on | 2 | Not verified | Not verified |
+| [Commercial Sewer Cleaning Co., Inc.](https://commercialsewercleaningin.com) | Add-on | 2 | Family-owned, founded 1965 (company site) | Indianapolis, IN |
+| [DRC Construction Services](https://drcconstruction.us) | Add-on | 2 | Not verified | Not verified |
+| [Johnson Jet-Line](https://johnsonjet-line.com) | Add-on | 2 | Not verified | Tri-state region (not verified) |
+| [Professional Meters, Inc. (PMI)](https://prometers.com) | Add-on | 2 | Private (not verified); founded 1999 | Not verified |
+| [Second Sight Systems](https://secondsightsystems.com) | Add-on | 2 | Not verified | St. Louis, MO |
+| [Tony McFadden (valve and hydrant maintenance)](https://tonymcfadden.com) | Add-on | 2 | Not verified | Not verified |
+| [Water Tank Inspection Services (division of Cross Marine Projects)](http://watertankinspection.net) | Add-on | 2 | Division of Cross Marine Projects (owner not verified) | Not verified |
+| [PURIS (formerly Inland Pipe Rehabilitation; incl. Murphy Pipeline Contractors, former Granite Inliner, Insight Pipe, IPC Services)](https://www.murphypipelines.com) | Watch | 2 | PE-backed: J.F. Lehman & Company. IPR bought Murphy Pipeline (2020) and Granite Inliner (Mar 2022, reportedly $159.7M);  | Not verified |
+| [SAK Construction, LLC](https://www.sakcon.com) | Watch | 2 | Privately held, management/founder-owned: Indiana foreign-LLC filings list members Jerome Shaw Jr. and Boyd Hirtz (Misso | O'Fallon, MO |
+| [Vortex Companies](https://vortexcompanies.com) | Watch | 2 | PE-backed: Quad-C Management invested Sep 2023 (one database says it bought Vortex from Platform Partners); co-founder M | Not verified |
+| Cleanview Sewer Inspections, LLC | Lead | 3 | Not verified | Arizona (not verified) |
+| Doetsch Environmental Services, Inc. | Lead | 3 | Family-owned; 4th and 5th generations run it; roots to 1898 | Warren, MI (21221 Mullin Ave) |
+| Five Star Energy Services | Lead | 3 | Not verified | Not verified (Midwest: MI/WI/IL activity) |
+| Taplin Group, LLC | Lead | 3 | Taplin family businesses, about 70 years old (company material); roots in A&B Sewer Cleaning | Kalamazoo, MI |
+| Viking Industrial Painting, LLC | Lead | 3 | Not verified | La Vista, NE |
+| Classic Protective Coatings | Lead | 2 | Not verified | Minnesota/Wisconsin (not verified) |
+| Concord Utility Services | Lead | 2 | Not verified; founded 2006 | Not verified (hiring in Baltimore / Annapolis, MD) |
+| Dixon Engineering | Lead | 2 | Not verified | Michigan (not verified) |
+| Empire Pipe Cleaning and Equipment Inc. | Lead | 2 | Private (not verified); in business since 1975 | Southern California (714 phone; not confirmed) |
+| Envocore, LLC | Lead | 2 | PE-backed: Power Sustainable portfolio company (formerly LRI Energy Solutions) | Gambrills, MD (PitchBook) |
+| Federal EC, LLC | Lead | 2 | PE/independent sponsors: acquired Sep 2025 by Crescent Peak and FVLCRUM Funds, with an HCAP Partners investment (Nov 4,  | Woodstock, GA |
+| MRJ Inc. | Lead | 2 | Private (not verified) | Not verified (Wisconsin work) |
+| Ultra Construction Services | Lead | 2 | Private (not verified) | Marquette, MI |
+| Vepo Metering | Lead | 2 | Not verified | Not verified (NY/Northeast activity) |
+| Warren W. Fane Inc. | Lead | 2 | Private (not verified) | Not verified (Troy, NY area work) |
+| Pedal Valves, Inc. (PVI) | Lead | 1 | Not verified | Luling, LA (BuildZoom) |
 
-### T&D / electrical (12)
+### T&D / electrical (39)
 
 | Company | Grade | Fit | Ownership | HQ |
 |---|---|---|---|---|
 | [Osmose Utilities Services](https://www.osmose.com) | Platform | 4 | Infrastructure fund: EQT Infrastructure, acquired from Kohlberg Investors VII (entry date not captured) | Peachtree City, GA (prior knowledge) |
 | [Pike Corporation](https://www.pike.com) | Platform | 4 | PE-backed: TPG Rise Climate + La Caisse majority with management (closed Dec 2025); Lindsay Goldberg 2020-2025; Pike fam | Mount Airy, NC |
+| [Tomberlin Pole Treatment](https://tomberlinpole.com) | Platform | 4 | Third-generation family-run business founded 1965 (company site) | South Carolina (city not captured) |
 | [Asplundh Tree Expert](https://www.asplundh.com) | Add-on | 3 | Family-owned and managed since 1928 | Willow Grove, PA |
 | [Davey Tree Expert Co.](https://www.davey.com) | Add-on | 3 | Employee-owned (not exchange-listed; publishes an annual report) | Kent, OH |
-| [Lewis Tree Service](https://www.lewistree.com) | Add-on | 3 | Privately held; formerly PE-backed per PitchBook; current owner not verified | West Henrietta, NY (prior knowledge) |
+| [Delta US Inc.](https://deltausinc.com) | Add-on | 3 | Not verified | Not verified |
+| [EXO Inc.](https://exoinc.com) | Add-on | 3 | Not verified | Not verified |
+| [Electro-Test and Maintenance, Inc. (ETMI)](http://etmi.com) | Add-on | 3 | Private, founded 1980 (company site); owner not verified | Not verified |
+| [Equity Technical Services, LLC](https://equitytechnicalservices.com) | Add-on | 3 | Small American-owned company (company site); family status not verified | Oklahoma |
+| [Granite State Cable Splicing & Testing](https://granitestatecable.com) | Add-on | 3 | Not verified | New Hampshire (implied by name; not verified) |
+| [Hampton Tedder Electric](https://www.hamptontedder.com) | Add-on | 3 | Woman-owned IBEW contractor (company site); family status not verified | Not verified (Southern California / Nevada per background) |
+| [Lee Inspection & Consulting](https://www.leeinspect.com) | Add-on | 3 | Family- and veteran-owned (company site) | Not verified |
+| [Lewis Tree Service](https://www.lewistree.com) | Add-on | 3 | PitchBook: 'Privately Held (backing)', formerly PE-backed; current owner not identified. A different Lewis Tree Service  | West Henrietta, NY |
+| [M&M Electrical Contractor, Inc.](http://mmpowerline.com) | Add-on | 3 | Privately held, family-owned and operated (company site) | Not verified |
 | [Novinium](https://www.novinium.com) | Add-on | 3 | Strategic: Southwire Company (private wire and cable maker), acquired Apr 2022; formerly VC-backed (SJF Ventures) | Kent/Auburn, WA area (2015 press) |
+| [PPMC / ALCAN](https://www.alcanandppmc.com) | Add-on | 3 | Not verified | Not verified |
+| [Premier Pole Inspection](https://www.premierpoleinspection.com) | Add-on | 3 | Not verified | Not verified |
+| [Saber Power Field Services](https://www.saberpowerfieldservices.com) | Add-on | 3 | Not verified | Not verified (Texas suspected) |
+| [Southern Switch (SSC)](https://southernswitch.com) | Add-on | 3 | Not verified | Florida / Southeast (service area per site) |
+| [Utilities Instrumentation Service (Team UIS)](https://teamuis.com) | Add-on | 3 | Not verified | Great Lakes region (city not captured) |
 | [Wright Tree Service](https://www.wrighttree.com) | Add-on | 3 | Employee-owned / ESOP (prior knowledge; not verified) | West Des Moines, IA (prior knowledge) |
+| [American Power Grid, LLC](https://americanpowergrid.com) | Add-on | 2 | Not verified | Not verified |
+| [Elliott Engineering](https://elliotengineeringinc.com) | Add-on | 2 | Not verified | Not verified |
+| [GMB Powerline](https://gmbpowerline.com) | Add-on | 2 | Not verified | Not verified |
+| [Graceline Utilities](https://gracelineutilities.com) | Add-on | 2 | Woman-owned utility contractor (company site) | Not verified |
+| [Group CBS](https://www.groupcbs.com) | Add-on | 2 | Not verified (surfaced in a search for family-owned NETA testing firms) | Not verified |
 | [Premium Utility Contractor](https://premiumutilitycontractor.com) | Add-on | 2 | PE-backed per PitchBook (acquired as an operating subsidiary; sponsor not captured) | Not verified |
 | [RS Electric Utility Services](https://www.rselectricutility.com) | Add-on | 2 | Not verified | Not verified |
+| [Steinmetz Corporation](https://steinmetzcorp.com) | Add-on | 2 | Not verified | Not verified |
+| [Taylor Electric (utility)](https://www.taylorelectricutility.com) | Add-on | 2 | Not verified | Not verified |
 | [Divergent Alliance](https://divergentalliance.com) | Add-on | 1 | Not verified | Not verified |
 | [OneSource Restoration LLC](https://onesourcerestorationllc.com) | Add-on | 1 | Not verified | Not verified |
-| [Haugland Group](https://hauglandgroup.us) | Watch | 2 | Believed family-owned (prior knowledge; not verified) | Long Island, NY (prior knowledge) |
+| [Haugland Group](https://hauglandgroup.us) | Watch | 2 | Founder-built by William J. Haugland (LittleSis); believed family-owned; current ownership not verified; no PE or acquis | Long Island, NY (prior knowledge) |
+| Davis H. Elliot Company, Inc. | Lead | 4 | 100% employee-owned through an ESOP (MapQuest listing; job-posting benefits). Founded 1946 by Davis H. Elliot. | Roanoke, VA per Ampliz/MapQuest (MarketScreener says Lexingt |
+| East Coast Power (incl. United Powerline Solutions) | Lead | 3 | PE-backed: A&M Capital Partners (AMCP III) majority since Jan 2025; founder Darren Donohue keeps leading the business | Albany, NY (UPS: Haubstadt, IN) |
+| Power & Generation Testing, Inc. (PGTI) | Lead | 3 | Not verified | Nashville, TN |
+| Sigma C Power Services | Lead | 3 | Family business run by CEO Jim Cialdea and his son Stephen (NETA World, 2023) | Not verified |
+| Utility Asset Management, Inc. | Lead | 3 | Not verified | Not verified |
+| United Utility Services | Lead | 2 | PE-backed: Sandbrook Capital with Blackstone Credit & Insurance funds (closed Mar 2, 2026); built by Bernhard Capital Pa | Not verified |
 
-### Power generation (10)
+### Power generation (12)
 
 | Company | Grade | Fit | Ownership | HQ |
 |---|---|---|---|---|
 | [Day & Zimmermann](https://www.dayzim.com) | Platform | 5 | Family-owned | Philadelphia, PA |
 | [Allied Power Group](https://alliedpg.com) | Platform | 4 | PE-backed: Warren Equity Partners per Baird deal card; earlier AEA Investors SBF / Audax (2019). Sources conflict. | Houston, TX |
-| [RESA Power](https://www.resapower.com) | Platform | 4 | PE-backed: Kohlberg & Company (Apr 2025); previously Investcorp (2021) and Blue Sea Capital | Houston, TX |
+| [RESA Power (incl. MP Predictive Technologies)](https://www.resapower.com) | Platform | 4 | PE-backed: Kohlberg & Company (Apr 2025); previously Investcorp (2021) and Blue Sea Capital. Acquired MP Predictive Tech | Houston, TX |
 | [Shermco Industries](https://www.shermco.com) | Platform | 4 | PE-backed: Blackstone (agreed 2025, ~$1.6B) from Gryphon Investors | Irving, TX |
 | [Structural Integrity Associates](https://www.structint.com) | Platform | 4 | Employee-owned | San Jose, CA (founded 1983) |
 | [EthosEnergy](https://www.ethosenergy.com) | Add-on | 3 | PE-backed: One Equity Partners (announced Aug 2024, completed) | Not verified |
-| [Graycor (Graycor Industrial)](https://www.graycor.com) | Add-on | 3 | Family-owned (prior knowledge; not verified) | Oakbrook Terrace, IL (prior knowledge) |
-| [National Electric Coil](https://www.national-electric-coil.com) | Add-on | 3 | Private (prior knowledge; not verified) | Columbus, OH (prior knowledge) |
-| [Power Services Group](https://www.powerservicesgroup.com) | Add-on | 3 | PE-backed historically (GFI Energy Group, then Oaktree via TGM, per PitchBook); current owner not verified | Not verified (predecessor TGM in Cape Coral, FL per PitchBoo |
+| [Graycor (Graycor Industrial)](https://www.graycor.com) | Add-on | 3 | Family-owned (prior knowledge; not verified in either round) | Oakbrook Terrace, IL (prior knowledge) |
+| [National Electric Coil](https://www.national-electric-coil.com) | Add-on | 3 | Privately held (directory); founded 1917 as National Armature and Electric Works, renamed 1934; no acquisition, PE or ES | Columbus, OH (800 King Ave); coil plant in Brownsville, TX |
+| [Power Services Group (PSG)](https://www.powerservicesgroup.com) | Add-on | 3 | PE-backed: Center Rock Capital Partners (Chicago) bought it from Azalea Capital and Harbert Mezzanine (Mergr dates it Ju | Cape Coral, FL |
 | [Power Solutions Group LLC](https://www.powersolutionsgroup.com) | Add-on | 2 | Not verified | Not verified |
+| 360 Electrical & Engineering Services LLC | Lead | 2 | Not verified | Miami, FL |
+| High Potential Testing LLC | Lead | 2 | Not verified | Not verified |

@@ -39,6 +39,79 @@ def write(out, name, rows):
     print(name, len(rows))
 
 
+def apply_round2(out, cands):
+    """Bring the Q4 answer, unit ranking and plan in line with the round-2 candidate list (roster and ownership checks)."""
+    def load(name):
+        return json.load(open(os.path.join(out, name + ".json")))
+
+    units = ["gas", "water", "T&D", "power-gen"]
+    plat = [c for c in cands if c["grade"] == "Platform"]
+    ind = [c for c in plat if c["c_independent"] == "yes"]
+    n = {u: sum(1 for c in cands if c["unit"] == u) for u in units}
+    p = {u: sum(1 for c in plat if c["unit"] == u) for u in units}
+    i = {u: [c["name"] for c in ind if c["unit"] == u] for u in units}
+    leads = sum(1 for c in cands if c["grade"] == "Lead")
+    # the prose below names these companies, so stop the build if the list changes
+    assert len(cands) == 147 and [p[u] for u in units] == [9, 4, 3, 5] and [len(i[u]) for u in units] == [6, 1, 1, 1] and leads == 38, (len(cands), p, i, leads)
+    by_unit = "gas %d, water %d, T&D %d, power-gen %d" % tuple(p[u] for u in units)
+
+    short = ("Enough to start in gas, not enough for three units. A second pass through trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records "
+             "lists %d private companies; %d are platform-grade (%s). %d of those look independent, %d of them in gas. Leaving out Day & Zimmermann, "
+             "which is not a seller, about %d names are worth approaching, most of them gas regionals whose size still needs checking."
+             % (len(cands), len(plat), by_unit, len(ind), len(i["gas"]), len(ind) - 1))
+    update = ("Update after a second candidate pass (Oct 29, 2026): the first pass dropped companies without a verified website and missed most founder-owned "
+              "regionals. Checking DCA, NETA, NASSCO and AWWA member lists, company sites and ownership records changed the picture:\n"
+              "\u2022 Gas: %d listed, %d platform-grade. Six look independent: Heath Consultants (third-generation family, Houston), R.H. White (White family, "
+              "~500-600 staff, Massachusetts), Driver Pipeline and Larrett Energy Services (Texas; Larrett was formed by Scott Driver, so the two may be related), "
+              "Banks Gas Services (founder-owned, Pittsburgh) and Diversified Utility Services (Atlanta). J.F. Kiely is family-led, but family control is not confirmed.\n"
+              "\u2022 Q3 Contracting was dropped: Primoris owns it, so it is not available.\n"
+              "\u2022 Water: %d listed, %d platform-grade. Pittsburg Tank & Tower (Johnston family) is independent; Carylon's ownership is still unconfirmed.\n"
+              "\u2022 T&D: %d listed, %d platform-grade. Tomberlin Pole Treatment (family) is independent but add-on scale. Davis H. Elliot (ESOP) fits, but its website was not verified.\n"
+              "\u2022 Power-gen: %d listed, %d platform-grade. Day & Zimmermann is the only confirmed independent, and it is not a likely seller.\n"
+              "\u2022 %d more names are leads without a verified website.\n\n"
+              "So the gas unit has a real starting pipeline. The other units still depend on sponsor-owned platforms or add-on-scale firms.\n\n"
+              "First pass, for reference:\n\n"
+              % (n["gas"], p["gas"], n["water"], p["water"], n["T&D"], p["T&D"], n["power-gen"], p["power-gen"], leads))
+    answers = load("answers")
+    q4 = next(a for a in answers if a["q"] == 4)
+    q4["short_answer"], q4["verdict"] = short, "Mixed"
+    q4["answer"] = update + q4["answer"].replace("Regional contractors Q3 Contracting, J.F. Kiely and Utility Line Services fit the model",
+                                                 "Regional contractors J.F. Kiely and Utility Line Services fit the model (Q3 Contracting turned out to be owned by Primoris)")
+    q4["sources"] = " | ".join(["https://directory.dcaweb.org/", "https://heathus.com", "https://rhwhite.com", "https://www.driverpipeline.com", "https://pttg.com", "https://tomberlinpole.com"]
+                               + [u for u in q4["sources"].split(" | ") if u])
+    write(out, "answers", answers)
+    anums = [a for a in load("answer_numbers") if a["q"] != 4 or not any(k in a["label"] for k in ("screened", "Platform-grade", "Realistic"))]
+    q4n = [dict(label="Private companies listed after the roster check", value="%d (%d without a verified website)" % (len(cands), leads), source_url="https://directory.dcaweb.org/"),
+           dict(label="Platform-grade candidates by unit", value="%d (%s)" % (len(plat), by_unit), source_url="https://directory.dcaweb.org/"),
+           dict(label="Platform-grade and independent", value="%d (%d in gas)" % (len(ind), len(i["gas"])), source_url="https://heathus.com"),
+           dict(label="Realistic names to approach now", value="~%d, mostly gas regionals (size unchecked)" % (len(ind) - 1), source_url="https://rhwhite.com")]
+    rest = [a for a in anums if a["q"] == 4]
+    anums = [a for a in anums if a["q"] != 4]
+    for k, a in enumerate(q4n + [dict(label=r["label"], value=r["value"], source_url=r["source_url"]) for r in rest]):
+        anums.append(dict(id="q4n%02d" % k, q=4, order=k, label=a["label"], value=a["value"], source_url=a["source_url"]))
+    write(out, "answer_numbers", anums)
+
+    rank = load("unit_ranking")
+    cand_text = {
+        "Natural gas": "%d listed; %d platform-grade, 6 of them independent: Heath Consultants, R.H. White, Driver Pipeline, Larrett Energy, Banks Gas Services, Diversified Utility Services. J.F. Kiely is family-led (control unconfirmed). Sponsor-owned: Sparus (Ridgemont), Artera (CD&R). Danella has a safety flag." % (n["gas"], p["gas"]),
+        "Water": "%d listed; %d platform-grade: Pittsburg Tank & Tower (Johnston family), Carylon (ownership unconfirmed), Maguire Iron (ownership unknown), USG (sponsored). Nine names fail the low-bid screen." % (n["water"], p["water"]),
+        "T&D": "%d listed; %d platform-grade: Pike (TPG) and Osmose (EQT), both sponsor-owned, and Tomberlin Pole Treatment (family, add-on scale). Davis H. Elliot (ESOP) fits but is unverified. Vegetation managers score 3." % (n["T&D"], p["T&D"]),
+        "Power-generation": "%d listed; %d platform-grade. Only Day & Zimmermann is confirmed independent, and it is not a seller; Structural Integrity Associates is employee-owned. Shermco, RESA Power and Allied Power Group are sponsor-owned." % (n["power-gen"], p["power-gen"]),
+    }
+    for r in rank:
+        key = next(k for k in cand_text if r["unit"].startswith(k))
+        r["candidates"] = cand_text[key]
+        r["why"] = (r["why"].replace("\u2022 It has the most independent platform-grade candidates.", "\u2022 It has the second-largest candidate list, clustered in tank asset management and sewer cleaning.")
+                    .replace("\u2022 No independent platform-grade candidate was found.", "\u2022 The only independent platform-grade candidate, Tomberlin Pole Treatment, is add-on scale."))
+    write(out, "unit_ranking", rank)
+
+    plan = load("plan")
+    old = "Approach the named independents first: Heath Consultants once its ownership is confirmed, and Q3 Contracting, J.F. Kiely and Utility Line Services once their size is confirmed."
+    step = next(x for x in plan if old in x["body"])
+    step["body"] = step["body"].replace(old, "Approach the independent gas regionals first: Heath Consultants, R.H. White, Driver Pipeline and Larrett Energy, Banks Gas Services and Diversified Utility Services, plus J.F. Kiely once family control is confirmed. Check each one's size before the first call.")
+    write(out, "plan", plan)
+
+
 def main(src, out, round2=None):
     r = json.load(open(src))
     R, S = r["research"], r["synthesis"]
@@ -177,12 +250,16 @@ def main(src, out, round2=None):
             grade = "Add-on"
         else:
             grade = "Watch"
-        rows.append(dict(id=cid, name=clean(c["name"]), website=web, hq=clean(c.get("hq")), unit=c["unit"], ownership=clean(c.get("ownership")), services=clean(c.get("services")),
+        hq = clean(c.get("hq"))
+        hq_short = re.sub(r"\s*\([^)]*\)?", "", re.split(r";| per | - ", hq or "")[0]).strip(" ,.") if hq else ""
+        rows.append(dict(id=cid, name=clean(c["name"]), website=web, hq=hq, hq_short=hq_short if 2 < len(hq_short) <= 40 and not re.match(r"(?i)not |unknown", hq_short) else "", unit=c["unit"], ownership=clean(c.get("ownership")), services=clean(c.get("services")),
                          customers=clean(c.get("customers")), size_hint=clean(c.get("size_hint")), recurring_evidence=clean(c.get("recurring_evidence")), red_flags=clean(c.get("red_flags")),
                          fit_score=fit, grade=grade, c_recurring=rec, c_customer=cr.get("large_regional_national_customer", "unknown"),
                          c_specialized=cr.get("specialized_labor_equipment", "unknown"), c_avoid=avoid, c_independent=cr.get("independent_available", "unknown"),
                          sources=" | ".join(u for u in (c.get("source_urls") or []) if https(u))))
     write(out, "candidates", rows)
+    if round2 and os.path.exists(round2):
+        apply_round2(out, rows)
 
     # ---------- charts ----------
     meta, data = [], []
@@ -346,9 +423,9 @@ def main(src, out, round2=None):
     for u, lbl in [("gas", "Natural gas"), ("power-gen", "Power generation"), ("T&D", "T&D"), ("water", "Water")]:
         us = [c for c in rows if c["unit"] == u]
         pts += [("Listed", lbl, len(us)), ("Platform-grade", lbl, sum(1 for c in us if c["grade"] == "Platform")),
-                ("Platform-grade and independent", lbl, sum(1 for c in us if c["grade"] == "Platform" and c["c_independent"] in ("yes", "partial"))),
+                ("Platform-grade and independent", lbl, sum(1 for c in us if c["grade"] == "Platform" and c["c_independent"] == "yes")),
                 ("Sponsor or strategic owned", lbl, sum(1 for c in us if c["c_independent"] == "no"))]
-    chart("cand_counts", "candidates", 1, "Candidates by unit", "Counts from the candidate list below. Platform-grade means fit 4 or 5, recurring maintenance and not dependent on low bids; independent means not owned by a sponsor or strategic.",
+    chart("cand_counts", "candidates", 1, "Candidates by unit", "Counts from the candidate list below. Platform-grade means fit 4 or 5, recurring maintenance and not dependent on low bids; independent means confirmed as not owned by a sponsor or strategic.",
           "bar", "int", "https://directory.dcaweb.org/", "S", pts, wide="Yes")
     write(out, "chart_meta", meta)
     write(out, "charts", data)

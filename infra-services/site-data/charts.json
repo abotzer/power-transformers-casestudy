@@ -1741,7 +1741,7 @@
   "order": 0,
   "series": "Listed",
   "x": "Natural gas",
-  "y": 14
+  "y": 48
  },
  {
   "id": "cand_counts-01",
@@ -1749,7 +1749,7 @@
   "order": 1,
   "series": "Platform-grade",
   "x": "Natural gas",
-  "y": 3
+  "y": 9
  },
  {
   "id": "cand_counts-02",
@@ -1757,7 +1757,7 @@
   "order": 2,
   "series": "Platform-grade and independent",
   "x": "Natural gas",
-  "y": 2
+  "y": 6
  },
  {
   "id": "cand_counts-03",
@@ -1765,7 +1765,7 @@
   "order": 3,
   "series": "Sponsor or strategic owned",
   "x": "Natural gas",
-  "y": 1
+  "y": 9
  },
  {
   "id": "cand_counts-04",
@@ -1773,7 +1773,7 @@
   "order": 4,
   "series": "Listed",
   "x": "Power generation",
-  "y": 10
+  "y": 12
  },
  {
   "id": "cand_counts-05",
@@ -1789,7 +1789,7 @@
   "order": 6,
   "series": "Platform-grade and independent",
   "x": "Power generation",
-  "y": 2
+  "y": 1
  },
  {
   "id": "cand_counts-07",
@@ -1797,7 +1797,7 @@
   "order": 7,
   "series": "Sponsor or strategic owned",
   "x": "Power generation",
-  "y": 4
+  "y": 5
  },
  {
   "id": "cand_counts-08",
@@ -1805,7 +1805,7 @@
   "order": 8,
   "series": "Listed",
   "x": "T&D",
-  "y": 12
+  "y": 39
  },
  {
   "id": "cand_counts-09",
@@ -1813,7 +1813,7 @@
   "order": 9,
   "series": "Platform-grade",
   "x": "T&D",
-  "y": 2
+  "y": 3
  },
  {
   "id": "cand_counts-10",
@@ -1829,7 +1829,7 @@
   "order": 11,
   "series": "Sponsor or strategic owned",
   "x": "T&D",
-  "y": 2
+  "y": 6
  },
  {
   "id": "cand_counts-12",
@@ -1837,7 +1837,7 @@
   "order": 12,
   "series": "Listed",
   "x": "Water",
-  "y": 15
+  "y": 48
  },
  {
   "id": "cand_counts-13",
@@ -1861,6 +1861,6 @@
   "order": 15,
   "series": "Sponsor or strategic owned",
   "x": "Water",
-  "y": 4
+  "y": 8
  }
 ]

@@ -216,62 +216,6 @@
   "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=50658"
  },
  {
-  "id": "q4n00",
-  "q": 4,
-  "order": 0,
-  "label": "Named private companies screened -> candidates kept",
-  "value": "85 -> 51",
-  "source_url": ""
- },
- {
-  "id": "q4n01",
-  "q": 4,
-  "order": 1,
-  "label": "Platform-grade candidates by unit",
-  "value": "14 (gas 3, T&D 2, power-gen 5, water 4)",
-  "source_url": ""
- },
- {
-  "id": "q4n02",
-  "q": 4,
-  "order": 2,
-  "label": "Platform-grade and confirmed independent",
-  "value": "3 (Day & Zimmermann, Structural Integrity Associates, Carylon)",
-  "source_url": ""
- },
- {
-  "id": "q4n03",
-  "q": 4,
-  "order": 3,
-  "label": "Sponsor-backed platforms already active",
-  "value": "26",
-  "source_url": ""
- },
- {
-  "id": "q4n04",
-  "q": 4,
-  "order": 4,
-  "label": "Gas distribution contractors' trade group membership (DCA)",
-  "value": "~240 member companies incl. suppliers",
-  "source_url": "https://directory.dcaweb.org/"
- },
- {
-  "id": "q4n05",
-  "q": 4,
-  "order": 5,
-  "label": "Danella OSHA trench investigations since 2017",
-  "value": "6",
-  "source_url": "https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1"
- },
- {
-  "id": "q4n06",
-  "q": 4,
-  "order": 6,
-  "label": "Realistic names to pursue now",
-  "value": "~1-4 (+3-6 gas regionals if size checks out)",
-  "source_url": ""
- },
- {
   "id": "q5n00",
   "q": 5,
   "order": 0,
@@ -478,5 +422,61 @@
   "label": "Quanta + MasTec share of the $158B pool",
   "value": "~27% (rough)",
   "source_url": "https://verticaliq.com/product/utility-system-construction/"
+ },
+ {
+  "id": "q4n00",
+  "q": 4,
+  "order": 0,
+  "label": "Private companies listed after the roster check",
+  "value": "147 (38 without a verified website)",
+  "source_url": "https://directory.dcaweb.org/"
+ },
+ {
+  "id": "q4n01",
+  "q": 4,
+  "order": 1,
+  "label": "Platform-grade candidates by unit",
+  "value": "21 (gas 9, water 4, T&D 3, power-gen 5)",
+  "source_url": "https://directory.dcaweb.org/"
+ },
+ {
+  "id": "q4n02",
+  "q": 4,
+  "order": 2,
+  "label": "Platform-grade and independent",
+  "value": "9 (6 in gas)",
+  "source_url": "https://heathus.com"
+ },
+ {
+  "id": "q4n03",
+  "q": 4,
+  "order": 3,
+  "label": "Realistic names to approach now",
+  "value": "~8, mostly gas regionals (size unchecked)",
+  "source_url": "https://rhwhite.com"
+ },
+ {
+  "id": "q4n04",
+  "q": 4,
+  "order": 4,
+  "label": "Sponsor-backed platforms already active",
+  "value": "26",
+  "source_url": ""
+ },
+ {
+  "id": "q4n05",
+  "q": 4,
+  "order": 5,
+  "label": "Gas distribution contractors' trade group membership (DCA)",
+  "value": "~240 member companies incl. suppliers",
+  "source_url": "https://directory.dcaweb.org/"
+ },
+ {
+  "id": "q4n06",
+  "q": 4,
+  "order": 6,
+  "label": "Danella OSHA trench investigations since 2017",
+  "value": "6",
+  "source_url": "https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1"
  }
 ]

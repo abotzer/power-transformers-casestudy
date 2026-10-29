@@ -324,7 +324,7 @@
   "group": "candidates",
   "order": 1,
   "title": "Candidates by unit",
-  "note": "Counts from the candidate list below. Platform-grade means fit 4 or 5, recurring maintenance and not dependent on low bids; independent means not owned by a sponsor or strategic.",
+  "note": "Counts from the candidate list below. Platform-grade means fit 4 or 5, recurring maintenance and not dependent on low bids; independent means confirmed as not owned by a sponsor or strategic.",
   "kind": "bar",
   "fmt": "int",
   "source_url": "https://directory.dcaweb.org/",

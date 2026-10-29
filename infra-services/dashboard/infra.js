@@ -429,7 +429,7 @@ function renderCandidates() {
     const g = mk('span', 'tx-chip', r.grade, 'candidates', 'grade', w);
     g.setAttribute('data-attr', r.grade === 'Platform' ? 'High' : r.grade === 'Add-on' ? 'Medium' : 'Low');
     chips.appendChild(g);
-    if (r.hq) chips.appendChild(mk('span', 'tx-chip', r.hq, 'candidates', 'hq', w));
+    if (r.hq_short) chips.appendChild(mk('span', 'tx-chip', r.hq_short, 'candidates', 'hq_short', w));
     it.appendChild(chips);
     it.appendChild(mk('p', 'tx-cand-svc', r.services, 'candidates', 'services', w));
     const dots = mk('div', 'tx-dots');
@@ -437,7 +437,7 @@ function renderCandidates() {
     it.appendChild(dots);
     const d = document.createElement('details');
     d.appendChild(mk('summary', null, 'Ownership, size, customers and sources'));
-    [['ownership', 'Ownership'], ['size_hint', 'Size'], ['customers', 'Customers'], ['recurring_evidence', 'Recurring work'], ['red_flags', 'Red flags']].forEach(([f, lbl]) => {
+    [['hq', 'Headquarters'], ['ownership', 'Ownership'], ['size_hint', 'Size'], ['customers', 'Customers'], ['recurring_evidence', 'Recurring work'], ['red_flags', 'Red flags']].forEach(([f, lbl]) => {
       if (!r[f]) return;
       const p = mk('p', 'tx-card-note');
       p.appendChild(mk('b', null, lbl + ': '));

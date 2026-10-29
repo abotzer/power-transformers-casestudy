@@ -1,0 +1,4042 @@
+{
+ "candidates": [
+  {
+   "id": "sparus-holdings",
+   "name": "Sparus Holdings (Southern Cross, The Spear Group, OneVision Utility Services, Allegiant Utility Services, TruCheck)",
+   "website": "https://www.southerncrossinc.com",
+   "hq": "Norcross / Atlanta area, GA (Southern Cross, per job postings; not verified); Allegiant: Manor, TX; TruCheck: Somerset, KY",
+   "unit": "gas",
+   "ownership": "PE-backed: Ridgemont Equity Partners since Mar 2021 (previously Source Capital); Allegiant and TruCheck add-ons Feb 2023",
+   "independent": "no",
+   "services": "Gas leak survey and detection, pipeline inspection and integrity, stray-voltage inspection, utility locating, meter reading/installation/testing, AMI deployment, wood pole inspection (Allegiant). Serves gas, electric and water utilities.",
+   "customers": "Gas, electric and water utilities; none named in sources",
+   "size_hint": "Southern Cross alone: 900+ field employees, founded 1946 (Energy Jobs Network profile, weak source); group revenue unknown",
+   "recurring_evidence": "Federal rules require leak surveys at fixed intervals (49 CFR 192.723). Meter testing and renewal programs recur. AMI deployments are project-based.",
+   "red_flags": "Would be a secondary buyout after 5+ years of Ridgemont ownership, at sponsor pricing. Labor-intensive. AMI is eroding meter reading; vehicle-mounted methane sensing is changing leak-survey economics. Website is a subsidiary's (Southern Cross).",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://ridgemontep.com/press-releases/ridgemont-equity-partners-acquires-sparus-holdings",
+    "https://ejobs.energyjobsnetwork.com/profile/southern-cross-corporation/1267290/",
+    "https://www.businesswire.com/news/home/20210803005106/en",
+    "https://www.businesswire.com/news/home/20230207005137/en/Sparus-Holdings-Acquires-Allegiant-Utility-Services-and-TruCheck-Inc.",
+    "https://www.ridgemontep.com/press-releases/sparus-holdings-acquires-allegiant-utility-services-and-trucheck-inc/"
+   ]
+  },
+  {
+   "id": "heath-consultants",
+   "name": "Heath Consultants",
+   "website": "https://heathus.com",
+   "hq": "Houston, TX",
+   "unit": "gas",
+   "ownership": "Independent: third-generation family-owned, founded 1933 (90+ years; CB Insights). No sponsor or 2026 ownership change found. Sold its Locate Services Division (gas locating) to USIC on Jun 12, 2025 (Westlake Securities advised) to focus on methane emissions detection.",
+   "independent": "yes",
+   "services": "Methane leak-detection instruments plus gas leak survey and methane emissions services for gas utilities",
+   "customers": "Decatur Utilities (AL), annual leak survey; other LDCs not named",
+   "size_hint": "Unknown; smaller after the 2025 locating divestiture",
+   "recurring_evidence": "Federally mandated leak-survey intervals; annual survey contracts (Decatur Utilities); recurring instrument service",
+   "red_flags": "Strategic pivot toward instruments and emissions detection; the divestiture may signal pruning or capital needs. Family succession question. Only named customer is a small municipal utility. Sources are mostly aggregators; website carried from round 1.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://mergr.com/heath-consultants-overview",
+    "https://mergr.com/transaction/usic-acquires-heath-consultants-gas-locating-business",
+    "https://www.decaturutilities.com/post/annual-gas-leak-survey-begins-12-15",
+    "https://www.cbinsights.com/investor/heath-consultants",
+    "https://mergr.com/company/heath-consultants/ma"
+   ]
+  },
+  {
+   "id": "danella",
+   "name": "Danella Companies",
+   "website": "https://www.danella.com",
+   "hq": "Plymouth Meeting, PA (background; not re-verified)",
+   "unit": "gas",
+   "ownership": "Family-owned (background; not re-verified)",
+   "independent": "yes",
+   "services": "Plastic and steel gas mains, metering and regulator stations, gas maintenance and repair; also electric and telecom utility services (background)",
+   "customers": "Philadelphia Gas Works (PGW)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Ongoing PGW excavation work under city utility permits; offers maintenance and repair",
+   "red_flags": "6 OSHA investigations since 2017 over trench work and on site at a Philadelphia gas-main rupture: fails the safety screen pending diligence. PGW is city-owned, so its work is likely publicly bid.",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1",
+    "https://www.danella.com/?p=102"
+   ]
+  },
+  {
+   "id": "artera",
+   "name": "Artera Services (Miller Pipeline, Minnesota Limited, KS Energy Services, Southeast Connections, Hydro-X, Volt Power)",
+   "website": "https://www.artera.com",
+   "hq": "Atlanta, GA area (not verified)",
+   "unit": "gas",
+   "ownership": "PE-backed: Clayton, Dubilier & Rice since 2018 (formerly PowerTeam Services)",
+   "independent": "no",
+   "services": "Gas distribution maintenance, repair, modernization and construction; transmission pipeline; hydro-excavation; some electric work (Volt Power)",
+   "customers": "CenterPoint Energy / Vectren (former parent of Miller Pipeline and Minnesota Limited); other LDCs not named",
+   "size_hint": "Paid $850M for MVerge (Miller Pipeline + Minnesota Limited) in 2020; total revenue unknown",
+   "recurring_evidence": "Says utility customers rely on it to maintain, repair and modernize infrastructure; LDC pipe-replacement programs",
+   "red_flags": "Too large for an entry platform; a CD&R exit would be priced at a sponsor multiple; integration risk of a sponsor-built roll-up; much of the work is replacement capex",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.cdr.com/news/artera-services-announced-as-the-new-name-for-powerteam-services",
+    "https://mergr.com/transaction/artera-services-acquires-miller-pipeline-and-minnesota"
+   ]
+  },
+  {
+   "id": "michels",
+   "name": "Michels Corporation (incl. Michels Utility Services, Michels Trenchless, power T&D)",
+   "website": "https://www.michels.us",
+   "hq": "Brownsville, WI",
+   "unit": "gas",
+   "ownership": "Family-owned since 1959 (Wikipedia; DCA listing)",
+   "independent": "yes",
+   "services": "Diversified infrastructure contractor. Gas: builds, upgrades, repairs and maintains transmission and distribution (cast-iron and bare-steel replacement, risers, meters, customer piping, relights, regulator stations). Also power T&D, pipeline, tunneling, trenchless water/sewer rehab.",
+   "customers": "Not named in sources",
+   "size_hint": "Very large multi-segment contractor; not quantified in sources",
+   "recurring_evidence": "Cast-iron and bare-steel replacement programs and gas maintenance services, but mostly construction",
+   "red_flags": "Construction-heavy, not a maintenance pure play; too large for an entry platform; family unlikely to sell. Appeared in gas, T&D and water lists and in both rounds (merged).",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.michels.us/michels-utility-services-inc/",
+    "https://en.wikipedia.org/wiki/Michels_Corporation",
+    "https://directory.dcaweb.org/listing/michels-utility-services-inc",
+    "https://www.michels.us"
+   ]
+  },
+  {
+   "id": "usic",
+   "name": "USIC",
+   "website": "https://usicllc.com",
+   "hq": "Indianapolis, IN (background)",
+   "unit": "gas",
+   "ownership": "PE-backed (current sponsor and entry date not verified)",
+   "independent": "no",
+   "services": "Utility locating and damage prevention; acquired Heath Consultants' gas locating business (Jun 2025) and Damage Prevention Specialists",
+   "customers": "Utilities (not named)",
+   "size_hint": "Largest US locating company (background); not quantified",
+   "recurring_evidence": "Multi-year locating contracts driven by state one-call laws",
+   "red_flags": "Too large; volume follows excavation activity rather than asset maintenance; per-ticket price pressure; sponsor-owned",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://mergr.com/transaction/usic-acquires-heath-consultants-gas-locating-business",
+    "https://pitchbook.com/profiles/company/538296-40"
+   ]
+  },
+  {
+   "id": "jf-kiely",
+   "name": "J. F. Kiely Construction Co. (Kiely Family of Companies)",
+   "website": "https://www.jfkiely.com",
+   "hq": "Tinton Falls, NJ (group, per ROI-NJ); J.F. Kiely Construction Co. of PA in New Columbia, PA (round-1 background said Long Island City, NY; unverified)",
+   "unit": "gas",
+   "ownership": "Family-led, privately held group founded 1952. Executive Chairman John M. Kiely; CEO Andy Luse (non-family). No sponsor found; family control not confirmed.",
+   "independent": "yes",
+   "services": "New and replacement gas transmission and distribution mains and services, meters, M&R station design-build, cathodic protection, hydrant/valve and lead service line replacement. Water resources division (Barton Construction, acquired 2018). Acquired M. O'Herron Co. (Pittsburgh-area gas distribution contractor, 123 years old) in May 2026.",
+   "customers": "Not named (NJ/NY/PA utilities and municipalities implied)",
+   "size_hint": "Unknown; multi-company group in NJ/NY/PA",
+   "recurring_evidence": "Utility gas distribution replacement and maintenance programs, M&R stations and cathodic protection; water division serves utilities and municipalities (gas plus water in the same metros, as the thesis wants)",
+   "red_flags": "An active acquirer itself, so more likely a competitor than a seller. Family control not confirmed. NYC/NJ union labor costs. Replacement work depends on utility capex programs. Website carried from round 1 (group brand may use another domain).",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/j-f-kiely-construction-co",
+    "https://pulse2.com/kiely-family-of-companies-acquires-m-oherron-company-a-123-year-old-utility-contractor/",
+    "https://www.roi-nj.com/2018/02/22/industry/tinton-falls-construction-firm-makes-acquisition/",
+    "https://www.thebluebook.com/iProView/1441258/j-f-kiely-construction-co-of-pa/subcontractors/"
+   ]
+  },
+  {
+   "id": "teichert-pipelines",
+   "name": "Teichert Pipelines (division of A. Teichert & Son)",
+   "website": "https://www.teichert.com",
+   "hq": "Sacramento, CA area (parent; background)",
+   "unit": "gas",
+   "ownership": "Division of a private parent, family/employee-held (background; not verified)",
+   "independent": "yes",
+   "services": "Plastic and copper gas service repair and replacement; customer meter-set repair and replacement; high-pressure regulator upgrades; cathodic protection",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown (division of a large construction and aggregates group)",
+   "recurring_evidence": "Repair and replacement plus cathodic protection services",
+   "red_flags": "Buyable only as a carve-out; California labor costs; website is the parent's",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/teichert-pipelines-inc"
+   ]
+  },
+  {
+   "id": "grace-industries",
+   "name": "Grace Industries LLC",
+   "website": "https://www.graceindustries.com",
+   "hq": "New York City area (background; not verified)",
+   "unit": "gas",
+   "ownership": "Private (not verified)",
+   "independent": "unknown",
+   "services": "Heavy civil and underground utility work (DCA member)",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Heavy civil contractor probably reliant on low-bid public work (inferred from background, not verified)",
+   "fit_score": 1,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/grace-industries-llc"
+   ]
+  },
+  {
+   "id": "pro-vac-hydromax",
+   "name": "Pro-Vac (incl. Hydromax USA)",
+   "website": "https://www.pro-vac.com",
+   "hq": "Washington state for Pro-Vac (background; not verified); Hydromax USA HQ sources conflict (Omaha, NE / Coppell or Flower Mound, TX / Evansville, IN)",
+   "unit": "gas",
+   "ownership": "PE-backed: Gallant Capital Partners. Hydromax USA was owned by Industrial Growth Partners from Dec 2020 (bought from Warren Equity Partners) before Pro-Vac acquired it.",
+   "independent": "no",
+   "services": "Hydro-excavation and vacuum services; sewer cross-bore inspection for gas-safety programs; gas leak detection; water/wastewater condition assessment; infrastructure mapping and data services",
+   "customers": "Utilities, municipalities, EPC contractors (none named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Outsourced multi-year cross-bore and inspection programs for utilities",
+   "red_flags": "Sponsor-owned (two sponsor hops for Hydromax) and the sponsor is building; each utility's cross-bore program eventually ends; hydrovac pricing is competitive. Round-2 Hydromax record merged here.",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.pro-vac.com/pro-vac-completes-acquisition-of-hydromax",
+    "https://igpequity.com/news_article/igp-aquires-hydromax-usa-llc/",
+    "https://mergr.com/hydromax-usa-acquisitions"
+   ]
+  },
+  {
+   "id": "gpt-industries",
+   "name": "GPT Industries (incl. Integrated Rectifier Technologies)",
+   "website": "https://www.gptindustries.com",
+   "hq": "Houston, TX area (background; not verified)",
+   "unit": "gas",
+   "ownership": "PE-backed: Branford Castle Partners (Fund II platform; entry date not verified)",
+   "independent": "no",
+   "services": "Manufactures pipeline isolation and sealing products and cathodic-protection rectifiers",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Consumables and replacement parts for cathodic-protection systems",
+   "red_flags": "A manufacturer, not a services company; sponsor-owned; midstream/industrial tilt",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://informedinfrastructure.com/post/branford-castle-backed-gpt-industries-electrifies-with-acquisition-of-integrated-rectifier-technologies"
+   ]
+  },
+  {
+   "id": "td-williamson",
+   "name": "T.D. Williamson",
+   "website": "https://www.tdwilliamson.com",
+   "hq": "Tulsa, OK (background)",
+   "unit": "gas",
+   "ownership": "Private / family-held (background; not re-verified)",
+   "independent": "yes",
+   "services": "Hot tapping and plugging, pigging and in-line inspection, pipeline repair; also manufactures the equipment",
+   "customers": "Not named in sources",
+   "size_hint": "Large global company (background); not quantified",
+   "recurring_evidence": "Integrity and maintenance services for pipeline operators",
+   "red_flags": "Global, midstream/transmission focus rather than US distribution; too large; background-only sourcing",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.tdwilliamson.com"
+   ]
+  },
+  {
+   "id": "delphi-infrastructure",
+   "name": "Delphi Infrastructure Group (incl. Precision Pipeline Services, SabCon Underground, Allegheny Contracting, JMF Underground)",
+   "website": "",
+   "hq": "Not verified (Precision Pipeline Services: Lancaster, OH; Allegheny: Ridgway, PA; JMF Underground: Mechanicsburg, PA)",
+   "unit": "gas",
+   "ownership": "PE-backed: MPE Partners. Invested in Precision Pipeline Services (Aug 2023), added SabCon Underground (Apr 2024) and Allegheny Contracting (Aug 22, 2024; founder/CEO Brent Buehler and management rolled equity), formed DIG in Jan 2025, added JMF Underground (Jun 2025). CEO Mark Crowson.",
+   "independent": "no",
+   "services": "Repair, replacement and maintenance of underground gas and electric utility infrastructure: gas transmission integrity repair (inspection-driven), gas distribution repair and replacement, HDD, boring, trenching, HDPE fusion; also water and telecom utilities",
+   "customers": "Gas, electric, water and telecom utilities in the Mid-Atlantic, Midwest and Eastern US (none named)",
+   "size_hint": "Unknown; 4+ combined businesses; deal debt from Churchill Asset Management and BMO Sponsor Finance suggests lower-middle-market scale",
+   "recurring_evidence": "Integrity repairs follow mandated inspections; repair and maintenance work for utilities",
+   "red_flags": "Sponsor roll-up, so not actionable; a direct competitor for gas and underground add-ons. Round 2 listed Precision and DIG separately (same entity; merged). Not to be confused with Precision Pipeline LLC (Eau Claire, WI), a MasTec unit.",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://prnewswire.com/news-releases/mpe-partners-and-precision-pipeline-services-announce-the-acquisition-of-allegheny-contracting-302228936.html",
+    "https://www.undergroundinfrastructure.com/news/2024/august/utility-services-firm-precision-acquires-pipeline-integrity-specialist-allegheny-contracting",
+    "https://pehub.com/mpe-partners-backed-precision-pipeline-acquires-technical-utility-services-provider-allegheny-contracting",
+    "https://undergroundinfrastructure.com/news/2025/june/jmf-underground-acquired-by-mpe-partners-delphi-infrastructure-group",
+    "https://www.jonesday.com/en/practices/experience/2025/06/mpe-partners-and-delphi-infrastructure-group-acquire-jmf-underground",
+    "https://www.citybiz.co/article/708554/mpe-partners-and-delphi-infrastructure-group-acquires-jmf-underground/"
+   ]
+  },
+  {
+   "id": "utility-line-services",
+   "name": "Utility Line Services, Inc.",
+   "website": "",
+   "hq": "Conshohocken, PA (directory profile)",
+   "unit": "gas",
+   "ownership": "Private (not verified); in business since 1996",
+   "independent": "unknown",
+   "services": "Underground utility services; builds natural gas and water mains and services for residential and commercial customers (DCA listing)",
+   "customers": "Not named (Philadelphia-metro utilities likely; unverified)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established; gas plus water mains and services in one metro fits the thesis",
+   "red_flags": "Thin evidence (directory profiles only). Ownership, size and contract types unknown. Website not found.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/utility-line-services-inc",
+    "https://cisleads.com/company/details/6689"
+   ]
+  },
+  {
+   "id": "hanging-h",
+   "name": "Hanging H Companies, LLC",
+   "website": "https://hanginghco.com",
+   "hq": "Burlington, WA (DCA directory); Rifle, CO office (2019 project listing)",
+   "unit": "gas",
+   "ownership": "Family-owned (DCA listing; company self-description)",
+   "independent": "yes",
+   "services": "Union pipeline construction: gas and oil pipeline installation, integrity and anomaly repair, hydrostatic testing and pigging, station crews and gas distribution crews",
+   "customers": "2019 awards: Dominion Energy Questar Pipeline (2.4 mi of 14-in replacement), Tallgrass Energy (70 mi of 36-in), Kinder Morgan (bypass and receiver)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Integrity and anomaly repair is somewhat recurring; mostly project construction",
+   "red_flags": "Mostly midstream/transmission project construction rather than LDC maintenance; bid-based project work; only 2019 project news found",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/hanging-h-companies-llc",
+    "https://ispionage.com/Competitive_Intelligence_directory/h/162/hanginghco_com_68616E67696E6768636F2E636F6D",
+    "https://www.mydigitalpublication.com/article/Project+Roundup/3379291/587396/article.html"
+   ]
+  },
+  {
+   "id": "bh-construction",
+   "name": "B&H Construction LLC",
+   "website": "",
+   "hq": "Norman, OK (DCA listing)",
+   "unit": "gas",
+   "ownership": "Unknown (private); founded 1982",
+   "independent": "unknown",
+   "services": "Underground utility contractor: gas distribution and transmission, leak survey, cathodic protection, directional drilling, fiber. Mix: gas 85%, fiber 10%, other 5%.",
+   "customers": "Not named; works in OK, TX, KS, AR",
+   "size_hint": "Unknown; 40+ years in business",
+   "recurring_evidence": "Leak survey and cathodic protection are compliance-driven recurring services",
+   "red_flags": "Only source is a self-described DCA listing; no website, ownership, customers or safety data found",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/bh-construction-llc"
+   ]
+  },
+  {
+   "id": "veteran-pipeline",
+   "name": "Veteran Pipeline Construction (VPC)",
+   "website": "",
+   "hq": "California (listings conflict: Orange, CA and Sacramento, CA)",
+   "unit": "gas",
+   "ownership": "Founder-owned: part of the Charge family of companies, privately owned by Michael Robirds and Billy Kilmer Jr.; founded 2006; Disabled Veteran Business Enterprise",
+   "independent": "yes",
+   "services": "Gas and electric distribution and joint-trench design-build/EPC, with in-house trenchless (HDD, pipe splitting)",
+   "customers": "PG&E (Graton steel casing); multi-year Aldyl-A gas main replacement in Antioch, CA; HP transmission HDD in Atascadero",
+   "size_hint": "20-28 employees (directory estimates)",
+   "recurring_evidence": "Multi-year Aldyl-A replacement program work",
+   "red_flags": "Small; California labor costs. Directory slugs suggest a 'vpccharge' domain but the website was not confirmed.",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.thebluebook.com/iProView/804107/veteran-pipeline-construction-vpc/subcontractors/",
+    "https://www.thebluebook.com/iProView/804107/veteran-pipeline-construction-vpc/subcontractors/construction-projects/aldyl-a-replacement-372933/",
+    "https://directory.dcaweb.org/listing/veteran-pipeline-construction"
+   ]
+  },
+  {
+   "id": "loy-clark",
+   "name": "Loy Clark Pipeline Co. (DCA listing: Loy Clark Construction)",
+   "website": "https://loyclark.com",
+   "hq": "Tualatin, OR area (older records: Beaverton, OR)",
+   "unit": "gas",
+   "ownership": "Private (not verified); started 1957 doing work for what is now NW Natural",
+   "independent": "unknown",
+   "services": "Underground natural gas distribution construction (plus other divisions)",
+   "customers": "NW Natural (does most of its distribution expansion work; 'distribution contractor of choice'), Avista Utilities, Cascade Natural Gas, PG&E, Kiewit, Oregon Electric Group",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Primary-contractor relationship with NW Natural since 1957 and work for several Pacific Northwest LDCs",
+   "red_flags": "SAFETY: Oregon PUC found Loy Clark caused the 2016 NW Portland gas explosion (dug on the wrong side of the street after a mis-located notification); OR-OSHA fine ~$4,900; 2022 jury verdict ~$10.5M. Expansion work is growth capex rather than maintenance.",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://loyclark.com/?p=1921",
+    "https://en.wikipedia.org/wiki/2016_Portland,_Oregon_gas_explosion",
+    "https://katu.com/news/local/oregon-company-fined-4900-for-nw-23rd-gas-blast",
+    "https://www.law360.com/articles/1540789"
+   ]
+  },
+  {
+   "id": "legacy-utility-group",
+   "name": "Legacy Utility Group (incl. ECS)",
+   "website": "",
+   "hq": "Not verified (subsidiary Nor-Cal Pipeline Services suggests California)",
+   "unit": "gas",
+   "ownership": "Employee-owned: ESOP formed Mar 2025 (Menke Group); chose employee ownership over private equity. Acquired ECS (hydrovac; KS, OK, TX) in Mar 2026.",
+   "independent": "yes",
+   "services": "Hydro-excavation / hydrovac, pipeline services (Nor-Cal Pipeline Services), vacuum excavation (Jaeger Vacuum Excavation), traffic control (Guardian Traffic Solutions)",
+   "customers": "Not named",
+   "size_hint": "Unknown; ECS was its first acquisition",
+   "recurring_evidence": "Not established; hydrovac is largely work-order / project driven",
+   "red_flags": "ESOP that explicitly rejected PE, so a sale is unlikely and complex. Hydrovac pricing is competitive. Website not found.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://www.menke.com/esop-archives/legacy-utility-group-transitions-to-employee-ownership-a-win-for-employees-customers-and-the-community/",
+    "https://www.menke.com/esop-archives/2025/12",
+    "https://lifestyle.xpr.media/?p=1434"
+   ]
+  },
+  {
+   "id": "rj-underground",
+   "name": "RJ Underground",
+   "website": "",
+   "hq": "Kenosha, WI",
+   "unit": "gas",
+   "ownership": "PE-backed: RF Investment Partners platform investment (announced Aug 13, 2026; TKO Miller advised). Founder/CEO Rich Johnston continues.",
+   "independent": "no",
+   "services": "Horizontal directional drilling and hydro-excavation for underground utilities in WI, IL and IN",
+   "customers": "Municipal, utility, commercial and residential (none named)",
+   "size_hint": "About 30 employees (PitchBook); founded 1996",
+   "recurring_evidence": "Not established; HDD is project work",
+   "red_flags": "Just acquired by a sponsor that plans add-ons, so not actionable. Construction rather than maintenance. Small.",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.undergroundinfrastructure.com/news/2026/august/rj-underground-secures-investment-to-expand-trenchless-utility-services",
+    "https://www.vcaonline.com/news/2026081332/rf-announces-utility-infrastructure-platform-investment/",
+    "https://pitchbook.com/profiles/company/366180-76"
+   ]
+  },
+  {
+   "id": "si-solutions",
+   "name": "SI Solutions (incl. Integrity Specialists, MN)",
+   "website": "",
+   "hq": "Not verified (Integrity Specialists: Annandale, MN)",
+   "unit": "gas",
+   "ownership": "PE-backed: MidOcean Partners; acquired Integrity Specialists (founded 2010) in Sep 2025. CEO Mark Marano.",
+   "independent": "no",
+   "services": "Pipeline engineering plus advanced NDE/inspection: integrity assessments, material verification, direct examinations",
+   "customers": "Midstream / interstate pipeline operators (none named)",
+   "size_hint": "About 600 employees and 13 offices combined (Sep 2025)",
+   "recurring_evidence": "Integrity assessments driven by regulatory inspection cycles",
+   "red_flags": "Midstream-focused rather than LDC distribution maintenance; sponsor-owned",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.midoceanpartners.com/news-media/si-solutions-expands-pipeline-inspection-reach-through-acquisition-of-integrity-specialists-llc",
+    "https://pgjonline.com/news/2025/september/si-solutions-acquires-integrity-specialists-to-expand-pipeline-inspection-services",
+    "https://www.privsource.com/acquisitions/deal/EMSpY2"
+   ]
+  },
+  {
+   "id": "xcel-ndt",
+   "name": "XCEL NDT (incl. Integrity Assessment Group)",
+   "website": "",
+   "hq": "Conflicting: Longview, TX (press release) vs Clifton, KS (listing)",
+   "unit": "gas",
+   "ownership": "PE-backed: Graycliff Partners since Oct 2023. Acquired IAG (founded 2001 as JRGO LLC; MI, TX, VA) in Sep 2025; Preqin also lists Cambridgeport Capital as an IAG investor. CEO Cole Morehead.",
+   "independent": "no",
+   "services": "Conventional and advanced NDT inspection; IAG adds pipeline maintenance and cathodic protection and broadens into power generation",
+   "customers": "Not named",
+   "size_hint": "17 facilities across the US (Oct 2023)",
+   "recurring_evidence": "Cathodic protection and pipeline maintenance (IAG); inspection programs",
+   "red_flags": "Sponsor-owned and acquisitive. xcelgrp.com appears in a third-party profile URL but was not confirmed as the company site.",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.onestopndt.com/ndt-news/xcel-ndt-acquires-integrity-assessment-group-to-broaden-turn-key-services",
+    "https://www.privsource.com/acquisitions/deal/O3SXzl",
+    "https://www.businesswire.com/news/home/20231030863551/en"
+   ]
+  },
+  {
+   "id": "rh-white",
+   "name": "R.H. White Construction Co.",
+   "website": "https://rhwhite.com",
+   "hq": "Auburn, MA (background; not verified in search results)",
+   "unit": "gas",
+   "ownership": "Family-owned: founded 1923, still owned and operated by the White family (company site)",
+   "independent": "yes",
+   "services": "Natural gas distribution piping, regulator/meter stations and 24/7 emergency gas repairs; also water/wastewater construction services",
+   "customers": "Not named (presumably New England LDCs such as National Grid / Eversource; unverified)",
+   "size_hint": "About 500-600 employees (company pages say both 'nearly 500' and '600')",
+   "recurring_evidence": "24/7 emergency repair and regulator/meter station work; Massachusetts LDC replacement programs (GSEP) provide multi-year volume (sector context, not company-specific)",
+   "red_flags": "Customer contracts and MSA/unit-price terms not confirmed. Construction-services mix may dilute the maintenance share. Third-generation-plus family, so succession appetite unknown.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://rhwhite.com/",
+    "https://rhwhite.com/company/",
+    "https://rhwhite.com/company/history/",
+    "https://rhwhite.com/solutions/construction-services/"
+   ]
+  },
+  {
+   "id": "driver-pipeline",
+   "name": "Driver Pipeline Company",
+   "website": "https://www.driverpipeline.com",
+   "hq": "Irving, TX (1200 N. Union Bower Rd.)",
+   "unit": "gas",
+   "ownership": "Family-owned merit shop (company site); private",
+   "independent": "yes",
+   "services": "Utility services since 1971: pipeline integrity, new construction, fabrication; recently added data center services",
+   "customers": "'Energy and utility partners'; none named (Atmos Energy likely but unverified)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Utility services and integrity work for gas utilities (self-described); contract structure not disclosed",
+   "red_flags": "Customer concentration and contract types unverified. Data-center diversification may pull resources from utilities. Possibly related to Larrett Energy Services (founded by a Scott Driver).",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.driverpipeline.com/"
+   ]
+  },
+  {
+   "id": "larrett-energy",
+   "name": "Larrett Energy Services, Inc.",
+   "website": "https://larrettenergy.com",
+   "hq": "Venus / Kaufman, TX (sources differ)",
+   "unit": "gas",
+   "ownership": "Private; Texas corporation formed by Scott Driver in 2010 (LinkedIn/company profile). Likely founder-owned; not verified.",
+   "independent": "yes",
+   "services": "Replacement of bare-steel, cast-iron and HDPE gas distribution lines; in-house horizontal directional drilling crew",
+   "customers": "Not named (Texas LDC replacement programs implied)",
+   "size_hint": "501-1,000 employees (LinkedIn range)",
+   "recurring_evidence": "Focus on LDC distribution-main replacement programs (cast iron / bare steel), which are multi-year regulated capex programs",
+   "red_flags": "Replacement work is capex-program driven rather than pure maintenance. Possibly linked to the Driver Pipeline family; confirm. Customers unverified.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://larrettenergy.com/",
+    "https://www.linkedin.com/company/larrettenergyservices"
+   ]
+  },
+  {
+   "id": "banks-gas",
+   "name": "Banks Gas Services, Inc.",
+   "website": "https://www.banksgas.com",
+   "hq": "North Versailles, PA (Pittsburgh metro)",
+   "unit": "gas",
+   "ownership": "Founder/family-owned: founded 2001 by Thomas K. Banks (company site, TribLive)",
+   "independent": "yes",
+   "services": "Full-service gas distribution contractor, mainline to service line: installs and repairs natural gas lines in PA, OH and MD",
+   "customers": "NiSource / Columbia Gas and Peoples Natural Gas (company site)",
+   "size_hint": "Grew from about 10 employees (2008) to 50+ (2014, TribLive); current size unknown",
+   "recurring_evidence": "Ongoing install/repair work for large regional LDCs (Columbia Gas, Peoples) under their replacement programs",
+   "red_flags": "Small (add-on scale). Size data is a decade old. Contract terms (MSA vs. bid) unverified.",
+   "fit_score": 4,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.banksgas.com/",
+    "https://www.banksgas.com/about-us/",
+    "https://archive.triblive.com/business/local-stories/banks-gas-services-finds-success-in-jobs-outside-shale-industry/"
+   ]
+  },
+  {
+   "id": "rr-pipeline",
+   "name": "R&R Pipeline, Inc.",
+   "website": "",
+   "hq": "Newark, OH (second location Belpre, OH)",
+   "unit": "gas",
+   "ownership": "Owner-operated: founded 1984, bought in 2019 by Cody Thoman and Jacob Emery; veteran-owned (DCA listing)",
+   "independent": "yes",
+   "services": "Installation and repair of natural gas distribution, gathering and transmission pipelines; ~90% natural gas, rest water and other utility work",
+   "customers": "Columbia Gas of Ohio (named contractor on Newark/Portsmouth replacement projects); serves OH, MI, IN, KY, WV, PA",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Named contractor on Columbia Gas of Ohio replacement projects",
+   "red_flags": "No own website found. Size unknown. Owners only since 2019, so may not be sellers yet. Positive: 2021 DCA Arthur T. Everham safety award.",
+   "fit_score": 4,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/rr-pipeline-inc",
+    "https://www.facebook.com/rrpipelineinc/",
+    "https://www.columbiagasohio.com/services/work-in-your-neighborhood/replacement-projects/eastern-and-southern-ohio-projects",
+    "https://www.zoominfo.com/c/r--r-pipeline-inc/103842242"
+   ]
+  },
+  {
+   "id": "diversified-utility-services",
+   "name": "Diversified Utility Services LLC",
+   "website": "https://dusllc.com",
+   "hq": "Metro Atlanta, GA (implied by company site)",
+   "unit": "gas",
+   "ownership": "Minority-owned (company site); private, owner-operated presumed",
+   "independent": "yes",
+   "services": "Natural gas utility construction and maintenance; licensed in AL, GA, MS, NC, SC, TN, VA",
+   "customers": "Founded to serve the local natural gas utility in metro Atlanta (Atlanta Gas Light implied; not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Explicitly offers construction and maintenance for a gas LDC",
+   "red_flags": "Probable single-utility concentration. Founding date, size and contract type unknown.",
+   "fit_score": 4,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://dusllc.com/about/"
+   ]
+  },
+  {
+   "id": "rl-coolsaet",
+   "name": "R.L. Coolsaet Construction Co.",
+   "website": "https://www.rlcoolsaet.com",
+   "hq": "Michigan (city not verified)",
+   "unit": "gas",
+   "ownership": "Family-owned pipeline contractor founded 1936 (per DCA directory; listing URL not captured)",
+   "independent": "yes",
+   "services": "Steel welded pipelines, M&R station fabrication, gas distribution mainline and service installation, trenchless methods, system upgrades",
+   "customers": "Not named (likely Michigan LDCs; unverified)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Station fabrication and distribution system upgrades for LDCs",
+   "red_flags": "Mix leans toward construction and transmission; customers and contract type unverified",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.rlcoolsaet.com/",
+    "https://www.rlcoolsaet.com/natural-gas-distribution"
+   ]
+  },
+  {
+   "id": "arizona-pipeline",
+   "name": "Arizona Pipeline Company",
+   "website": "",
+   "hq": "Hesperia, CA (Levelset lists Chatsworth, CA)",
+   "unit": "gas",
+   "ownership": "Family-owned per LeadIQ; founded 1979 (third-party data, weak)",
+   "independent": "yes",
+   "services": "Underground utility contractor focused on gas and power distribution, long-line pipeline, engineering and design; CSLB C-34 pipeline license",
+   "customers": "Not confirmed (SoCalGas / Southwest Gas likely given geography; unverified)",
+   "size_hint": "Unknown; multiple active field job postings",
+   "recurring_evidence": "Gas distribution work for Southwest utilities (self-described)",
+   "red_flags": "Own website not found. A CSLB-based summary shows no active workers' comp on file (possibly self-insured; diligence item). Mixed Indeed reviews. Ownership only from a data aggregator.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://leadiq.com/c/arizona-pipeline-company/5a1d86cc240000240060eed6",
+    "https://craft.co/arizona-pipeline",
+    "https://www.prelien.co/contractor/arizona-pipeline-company-423545",
+    "https://levelset.com/contractors/arizona-pipeline-company"
+   ]
+  },
+  {
+   "id": "bond-civil",
+   "name": "BOND Civil & Utility Construction (BOND Brothers)",
+   "website": "https://bond-civilutility.com",
+   "hq": "Massachusetts (BOND Brothers group; city not verified)",
+   "unit": "gas",
+   "ownership": "Wholly owned subsidiary of BOND Brothers Inc., a private 'family of companies' with roots to 1907; family ownership not explicitly verified",
+   "independent": "yes",
+   "services": "Gas transmission and distribution infrastructure in New England and Mid-Atlantic for 50+ years; launched BOND Trenchless",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown (part of a larger construction group)",
+   "recurring_evidence": "Long-running gas distribution work for Northeast utilities (self-described)",
+   "red_flags": "Would be a carve-out from a diversified GC/construction-management group. Construction-heavy.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://bond-civilutility.com/",
+    "https://bond-civilutility.com/market/oil-gas/",
+    "https://bondbrothers.com/",
+    "https://bond-civilutility.com/news/bond-civil-utility-announces-bond-trenchless/"
+   ]
+  },
+  {
+   "id": "niels-fugal",
+   "name": "Niels Fugal Sons Company",
+   "website": "https://www.fugal.com",
+   "hq": "Pleasant Grove, UT (offices in Washington, UT and Prescott, AZ)",
+   "unit": "gas",
+   "ownership": "Private LLC; family name and 1929 founding suggest family ownership; not verified",
+   "independent": "unknown",
+   "services": "Gas distribution construction for 50+ years; built on installing natural gas pipelines and distribution systems; DCA member",
+   "customers": "Not named (Enbridge Gas Utah, formerly Dominion Energy Utah, likely; unverified)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Long-tenured gas distribution work (DCA listing)",
+   "red_flags": "Website per a directory listing, not directly confirmed. Ownership and current scope unverified; may be diversified into telecom/civil.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/niels-fugal-sons-company",
+    "http://www.chamberorganizer.com/plgrove/mem_NFSCo",
+    "https://www.bloomberg.com/profile/company/1013392D:US"
+   ]
+  },
+  {
+   "id": "dds-companies",
+   "name": "DDS Companies (DDS Utilities)",
+   "website": "https://ddscompanies.com",
+   "hq": "Not verified",
+   "unit": "gas",
+   "ownership": "Not stated in sources",
+   "independent": "unknown",
+   "services": "Gas line installation, gas main replacement, leak-prone main replacement including service replacements, meter relocations, system retirement, gas distribution repair",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Leak-prone main replacement and distribution repair (LDC program work)",
+   "red_flags": "Ownership, HQ and customers unverified",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://ddscompanies.com/services/natural-gas-distribution/"
+   ]
+  },
+  {
+   "id": "midwestern-contractors",
+   "name": "Midwestern Contractors (MWC)",
+   "website": "https://www.midwesterncontractors.com",
+   "hq": "Elburn, IL",
+   "unit": "gas",
+   "ownership": "Not verified (founded 1951 per DCA directory)",
+   "independent": "unknown",
+   "services": "Gas and liquid station projects; pipeline and distribution work (laterals, relocations, new pipe); renewables (biogas lines, hydrogen); added electrical and fiber",
+   "customers": "Not named in sources",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Constructs and maintains gas systems (DCA)",
+   "red_flags": "Station/project mix rather than unit-price maintenance; ownership unknown",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.midwesterncontractors.com/",
+    "https://directory.dcaweb.org/listing/midwestern-contractors",
+    "https://directory.dcaweb.org/llms.txt"
+   ]
+  },
+  {
+   "id": "precision-pipeline-solutions",
+   "name": "Precision Pipeline Solutions, LLC",
+   "website": "",
+   "hq": "New Windsor / Newburgh, NY",
+   "unit": "gas",
+   "ownership": "Describes itself as private, but appears on the PrimeLine Utility Services website, so likely a PrimeLine affiliate; verify",
+   "independent": "unknown",
+   "services": "Gas and electric utility contractor: gas leak survey, corrosion and safety inspections, construction, gas technical services, oil-to-gas conversions, meter exchange",
+   "customers": "Not named (Hudson Valley / NY LDCs implied)",
+   "size_hint": "About $25.8M revenue estimate (Kona Equity); ZoomInfo headcount ~628 (inconsistent; unverified)",
+   "recurring_evidence": "Leak survey and corrosion inspection are compliance-driven recurring work (49 CFR 192)",
+   "red_flags": "Probably already part of PrimeLine, so likely not actionable. No own website found.",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.zoominfo.com/c/precision-pipeline-solutions-llc/183959943",
+    "https://primelineus.com/43-2/156-2/",
+    "https://recruiting.paylocity.com/recruiting/jobs/Details/4334492/Precision-Pipeline-Solutions-LLC/Gas-Leak-Survey-Technician",
+    "https://www.konaequity.com/company/precision-pipeline-solutions-llc-4397987288/"
+   ]
+  },
+  {
+   "id": "elm-utilities",
+   "name": "ELM Utilities",
+   "website": "https://elmutility.com",
+   "hq": "Not verified",
+   "unit": "gas",
+   "ownership": "Not stated in sources",
+   "independent": "unknown",
+   "services": "Combustible gas leak surveys under 49 CFR 192 (flame ionization), mobile and walking surveys, ROW patrols, atmospheric corrosion investigations",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Federally mandated periodic leak survey and atmospheric corrosion inspection",
+   "red_flags": "Ownership and size unknown; web page about 2 years old",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://elmutility.com/gasleaksurvey/"
+   ]
+  },
+  {
+   "id": "omark-consultants",
+   "name": "Omark Consultants, Inc.",
+   "website": "https://omarkinc.com",
+   "hq": "Not verified",
+   "unit": "gas",
+   "ownership": "Not stated in sources",
+   "independent": "unknown",
+   "services": "Mobile and walking leak surveys, public building and business district surveys, atmospheric corrosion inspection (incl. inside-building), corrosion testing",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Compliance-driven periodic leak and corrosion surveys for gas operators",
+   "red_flags": "Ownership, size and customers unknown; services page is dated",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://omarkinc.com/services/"
+   ]
+  },
+  {
+   "id": "agd-inc",
+   "name": "AGD, Inc.",
+   "website": "https://www.agdsurvey.com",
+   "hq": "Not verified (operations in IL, VA, GA; Macon, GA job posting)",
+   "unit": "gas",
+   "ownership": "Woman-owned (company site)",
+   "independent": "yes",
+   "services": "Leak detection, emissions, emergency response and atmospheric corrosion surveys for gas utilities",
+   "customers": "Gas utilities in IL, VA and GA (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Recurring compliance surveys for LDCs",
+   "red_flags": "Small; customers unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.agdsurvey.com/general-5"
+   ]
+  },
+  {
+   "id": "accurate-corrosion-control",
+   "name": "Accurate Corrosion Control, Inc. (ACCI)",
+   "website": "https://accuratecorrosion.com",
+   "hq": "Phoenix, AZ",
+   "unit": "gas",
+   "ownership": "Employee-owned corporation (company site)",
+   "independent": "yes",
+   "services": "Corrosion control and cathodic protection services",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "CP monitoring and maintenance is required for steel gas systems (49 CFR 192 Subpart I)",
+   "red_flags": "Employee ownership complicates a deal. Utility exposure needs confirming.",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://accuratecorrosion.com/"
+   ]
+  },
+  {
+   "id": "roman-eg",
+   "name": "Roman E&G Corp.",
+   "website": "https://romaneg.com",
+   "hq": "Newark, NJ",
+   "unit": "gas",
+   "ownership": "Veteran-owned Small Business Enterprise; describes itself as family-oriented",
+   "independent": "yes",
+   "services": "Gas and electric utility jobs; AGA member",
+   "customers": "Not confirmed (NJ utilities implied)",
+   "size_hint": "Unknown (SBE-sized)",
+   "recurring_evidence": "Not established",
+   "red_flags": "Utility relationships unverified; likely small",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://romaneg.com/"
+   ]
+  },
+  {
+   "id": "mm-cathodic",
+   "name": "M&M Cathodic Protection Services",
+   "website": "https://www.cathodicprotectionutah.com",
+   "hq": "Draper, UT",
+   "unit": "gas",
+   "ownership": "Not stated in sources",
+   "independent": "unknown",
+   "services": "Cathodic protection design, installation and maintenance; 24-hour emergency gas leak repair",
+   "customers": "Utilities, religious organizations, government agencies (not named)",
+   "size_hint": "Unknown (likely small)",
+   "recurring_evidence": "CP maintenance programs plus emergency leak repair",
+   "red_flags": "Small; customer mix not utility-focused",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.cathodicprotectionutah.com/"
+   ]
+  },
+  {
+   "id": "global-energy-partners",
+   "name": "Global Energy Partners LLC",
+   "website": "",
+   "hq": "Mansfield, OH (3401 State Route 13 S.)",
+   "unit": "gas",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Natural gas distribution installation and repair",
+   "customers": "Columbia Gas of Ohio (named contractor on a Marion, OH project)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Columbia Gas replacement project work",
+   "red_flags": "No own website found; ownership unknown; sources are Facebook and a city notice",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.facebook.com/GlobalEnergyPartnersLLC/",
+    "https://www.marionohio.us/m/newsflash/Home/Detail/61"
+   ]
+  },
+  {
+   "id": "ppi-gas",
+   "name": "PPI Gas Distribution",
+   "website": "https://www.ppigas.com",
+   "hq": "Not verified (Ohio Gas Association attendee)",
+   "unit": "gas",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Gas distribution contractor (per site title)",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Almost no information captured",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "unknown",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.ppigas.com/",
+    "https://www.ohiogasassoc.org/wp/wp-content/uploads/2012/03/Tech-Seminar-Attendee-List.pdf"
+   ]
+  },
+  {
+   "id": "hollico",
+   "name": "Hollico, Inc.",
+   "website": "https://www.hollico.com",
+   "hq": "Texas (city not verified)",
+   "unit": "gas",
+   "ownership": "Family owned and operated; founded 1972 (company site)",
+   "independent": "yes",
+   "services": "Pipeline construction and integrity work (transmission-style)",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Integrity work recurs; distribution maintenance not evidenced",
+   "red_flags": "Midstream/transmission rather than LDC distribution",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.hollico.com/"
+   ]
+  },
+  {
+   "id": "crisdel",
+   "name": "Crisdel Group",
+   "website": "https://www.crisdel.com",
+   "hq": "New Jersey (not verified)",
+   "unit": "gas",
+   "ownership": "Family-owned (company site)",
+   "independent": "yes",
+   "services": "Infrastructure construction including underground utility construction in NJ, NY, PA, FL; gas-main scope not confirmed",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Likely heavy civil and public-bid exposure (not verified); gas work unconfirmed",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.crisdel.com/company-overview/"
+   ]
+  },
+  {
+   "id": "j-derenzo",
+   "name": "J. Derenzo Company",
+   "website": "https://www.jderenzo.com",
+   "hq": "New England (not verified)",
+   "unit": "gas",
+   "ownership": "Not stated (75+ year history; family name)",
+   "independent": "unknown",
+   "services": "Site work contractor; utility work includes water, sewer, drainage, gas, electric, fiber",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Site-work generalist rather than gas maintenance specialist; likely bid work",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.jderenzo.com/"
+   ]
+  },
+  {
+   "id": "gabes-construction",
+   "name": "Gabe's Construction Co., Inc.",
+   "website": "",
+   "hq": "Sheboygan, WI",
+   "unit": "gas",
+   "ownership": "Subsidiary of Westshore Companies (private); founded 1942",
+   "independent": "unknown",
+   "services": "Gas, electric and telecom transmission and distribution; large HDD; US and Canada",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Part of a holding company (carve-out); HDD/construction-heavy; no own website found",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://directory.dcaweb.org/listing/gabes-construction-co-inc",
+    "https://www.cbinsights.com/company/gabes-construction"
+   ]
+  },
+  {
+   "id": "gas-field-specialists",
+   "name": "Gas Field Specialists, Inc.",
+   "website": "",
+   "hq": "Shinglehouse, PA",
+   "unit": "gas",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Appears on a Peoples Gas (PA) qualified-contractor list; scope not captured",
+   "customers": "Peoples Gas (qualified-contractor list)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Minimal information; no website found",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "unknown",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.peoples-gas.com/sites/default/files/2025-12/qualified-plumbers.pdf"
+   ]
+  },
+  {
+   "id": "pike",
+   "name": "Pike Corporation",
+   "website": "https://www.pike.com",
+   "hq": "Mount Airy, NC",
+   "unit": "T&D",
+   "ownership": "PE-backed: TPG Rise Climate + La Caisse majority with management (closed Dec 2025); Lindsay Goldberg 2020-2025; Pike family historically",
+   "independent": "no",
+   "services": "Distribution and transmission construction and maintenance, storm restoration, engineering, renewables/DER, telecom",
+   "customers": "400+ investor-owned, municipal and cooperative utilities (unnamed)",
+   "size_hint": "~12,000 employees (company release, Dec 2025); valuation reported >$5B",
+   "recurring_evidence": "Long-standing relationships with 400+ utilities; storm and distribution maintenance work for IOUs and co-ops",
+   "red_flags": "Just recapitalized, so not actionable. Construction and renewables mix. Direct competitor for T&D add-ons.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.businesswire.com/news/home/20251219188529/en",
+    "https://businessnc.com/private-equity-backed-pike-acquired-by-new-private-equity-firms/"
+   ]
+  },
+  {
+   "id": "osmose",
+   "name": "Osmose Utilities Services",
+   "website": "https://www.osmose.com",
+   "hq": "Peachtree City, GA (prior knowledge)",
+   "unit": "T&D",
+   "ownership": "Infrastructure fund: EQT Infrastructure, acquired from Kohlberg Investors VII (entry date not captured)",
+   "independent": "no",
+   "services": "Wood pole inspection, treatment and restoration; steel structure inspection and rehabilitation; structural engineering",
+   "customers": "US and Canadian utilities and telecoms (not named)",
+   "size_hint": "Canadian unit (PPSI) alone evaluates or treats 250,000+ poles per year",
+   "recurring_evidence": "Utilities run pole inspection and treatment as multi-year cyclical programs",
+   "red_flags": "Fund-owned, so not actionable; dominant in pole inspection and competes for pole add-ons",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://realassets.ipe.com/news/eqt-buys-us-utility-and-telecom-infrastructure-servicing-firm-osmose/10029157.article",
+    "https://www.osmose.com/europe/about-osmose",
+    "https://www.osmose.ca/effigis-and-ppsi-rebrand"
+   ]
+  },
+  {
+   "id": "asplundh",
+   "name": "Asplundh Tree Expert",
+   "website": "https://www.asplundh.com",
+   "hq": "Willow Grove, PA",
+   "unit": "T&D",
+   "ownership": "Family-owned and managed since 1928",
+   "independent": "yes",
+   "services": "Utility vegetation management / line clearance (~70% of revenue), plus affiliates doing utility line construction and maintenance",
+   "customers": "Electric utilities nationwide (not named in sources)",
+   "size_hint": "$4.7B revenue in 2021 (Wikipedia mirror, weak); other estimates $5.7B-$7.4B unverified",
+   "recurring_evidence": "Line clearance runs as recurring multi-year utility programs",
+   "red_flags": "Not for sale; dominant competitor; thin-margin labor-intensive vegetation work with periodic re-bids",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Asplundh",
+    "https://growthsharematrix.com/blogs/competitors/asplundh"
+   ]
+  },
+  {
+   "id": "davey-tree",
+   "name": "Davey Tree Expert Co.",
+   "website": "https://www.davey.com",
+   "hq": "Kent, OH",
+   "unit": "T&D",
+   "ownership": "Employee-owned (not exchange-listed; publishes an annual report)",
+   "independent": "yes",
+   "services": "Utility line clearance and vegetation management, utility consulting and inspection (Davey Resource Group), residential and commercial tree care",
+   "customers": "Electric utilities (not named)",
+   "size_hint": "2025 revenue $1.948B, net income $33.3M (2025 annual report)",
+   "recurring_evidence": "Multi-year utility vegetation management programs",
+   "red_flags": "Not for sale; ~1.7% net margin; $34.5M insurance charge in 2025; residential/commercial mix",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://www.davey.com/media/dhvn01qx/2025-annual-report.pdf",
+    "https://en.wikipedia.org/wiki/Davey_Tree_Expert_Company"
+   ]
+  },
+  {
+   "id": "novinium",
+   "name": "Novinium",
+   "website": "https://www.novinium.com",
+   "hq": "Kent/Auburn, WA area (2015 press)",
+   "unit": "T&D",
+   "ownership": "Strategic: Southwire Company (private wire and cable maker), acquired Apr 2022; formerly VC-backed (SJF Ventures)",
+   "independent": "no",
+   "services": "Underground cable rejuvenation (incl. CableCURE, acquired with UtilX) and cable diagnostics/TDR testing",
+   "customers": "100+ utility customers (2015)",
+   "size_hint": "300+ employees (2015)",
+   "recurring_evidence": "Programmatic utility cable rejuvenation programs",
+   "red_flags": "Owned by Southwire, so not actionable; proprietary process; size data from 2015",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.businesswire.com/news/home/20220412005808/en",
+    "https://www.geekwire.com/2015/novinium-acquires-utilx-to-bolster-underground-cable-rejuvenation-efforts/"
+   ]
+  },
+  {
+   "id": "lewis-tree",
+   "name": "Lewis Tree Service",
+   "website": "https://www.lewistree.com",
+   "hq": "West Henrietta, NY",
+   "unit": "T&D",
+   "ownership": "PitchBook: 'Privately Held (backing)', formerly PE-backed; current owner not identified. A different Lewis Tree Service (Santa Cruz, CA) was bought by Davey Tree in Jan 2024; do not conflate.",
+   "independent": "unknown",
+   "services": "Utility vegetation management / line clearance",
+   "customers": "Electric utilities (not named)",
+   "size_hint": "Sources conflict: about 4,000 employees (PitchBook) vs 1,000+ (careers site)",
+   "recurring_evidence": "Line clearance multi-year programs (sector norm, not company-specific)",
+   "red_flags": "Ownership still unclear; thin-margin, re-bid vegetation work",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://pitchbook.com/profiles/company/60258-52",
+    "https://talents.vaia.com/companies/lewis-tree/",
+    "https://www.landscapemanagement.net/davey-tree-expands-in-california-with-lewis-tree-service-acquisition/"
+   ]
+  },
+  {
+   "id": "wright-tree",
+   "name": "Wright Tree Service",
+   "website": "https://www.wrighttree.com",
+   "hq": "West Des Moines, IA (prior knowledge)",
+   "unit": "T&D",
+   "ownership": "Employee-owned / ESOP (prior knowledge; not verified)",
+   "independent": "yes",
+   "services": "Utility line clearance and vegetation management",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Line clearance programs (sector norm; not verified for this company)",
+   "red_flags": "Ownership and size unverified; ESOP sale is complex; thin vegetation-management margins",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://www.wrighttree.com"
+   ]
+  },
+  {
+   "id": "haugland-group",
+   "name": "Haugland Group",
+   "website": "https://hauglandgroup.us",
+   "hq": "Long Island, NY (prior knowledge)",
+   "unit": "T&D",
+   "ownership": "Founder-built by William J. Haugland (LittleSis); believed family-owned; current ownership not verified; no PE or acquisition found",
+   "independent": "unknown",
+   "services": "Electrical system storm restoration, T&D rebuild crews, utility and civil construction",
+   "customers": "Unknown (Northeast utilities)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not disclosed",
+   "red_flags": "Construction-heavy; episodic storm work; ownership unverified",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://hauglandgroup.us/services/storm-restoration/electrical-system-restoration/",
+    "https://littlesis.org/person/325063-William_J_Haugland"
+   ]
+  },
+  {
+   "id": "premium-utility-contractor",
+   "name": "Premium Utility Contractor",
+   "website": "https://premiumutilitycontractor.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "PE-backed per PitchBook (acquired as an operating subsidiary; sponsor not captured)",
+   "independent": "no",
+   "services": "Storm restoration, power line clearance",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Line clearance can recur; not evidenced",
+   "red_flags": "Storm revenue is episodic and transactional; owner not verified",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://premiumutilitycontractor.com/capabilities/storm-restoration/",
+    "https://pitchbook.com/profiles/company/720122-59"
+   ]
+  },
+  {
+   "id": "divergent-alliance",
+   "name": "Divergent Alliance",
+   "website": "https://divergentalliance.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Storm response and emergency restoration, supply and services",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "None found",
+   "red_flags": "Storm-driven and episodic; may be a logistics/supply business rather than line crews",
+   "fit_score": 1,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "unknown",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://divergentalliance.com/storm-recovery-restoration-services/"
+   ]
+  },
+  {
+   "id": "onesource-restoration",
+   "name": "OneSource Restoration LLC",
+   "website": "https://onesourcerestorationllc.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Deploys damage assessors, linemen and distribution line crews to utilities nationwide for storms",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "None found",
+   "red_flags": "Storm-only, transactional work with low switching costs",
+   "fit_score": 1,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://onesourcerestorationllc.com/"
+   ]
+  },
+  {
+   "id": "rs-electric",
+   "name": "RS Electric Utility Services",
+   "website": "https://www.rselectricutility.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Transmission and distribution line work, storm restoration",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "None found",
+   "red_flags": "Storm exposure; no evidence on size or customers",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.rselectricutility.com/"
+   ]
+  },
+  {
+   "id": "east-coast-power",
+   "name": "East Coast Power (incl. United Powerline Solutions)",
+   "website": "",
+   "hq": "Albany, NY (UPS: Haubstadt, IN)",
+   "unit": "T&D",
+   "ownership": "PE-backed: A&M Capital Partners (AMCP III) majority since Jan 2025; founder Darren Donohue keeps leading the business",
+   "independent": "no",
+   "services": "Repair, maintenance, upgrades, restoration and emergency response for transmission, distribution and substation infrastructure on the East Coast; UPS (acquired Jan 2026) adds Midwest overhead distribution",
+   "customers": "Electric utilities (none named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Provides repair and maintenance services to electric utility customers",
+   "red_flags": "Sponsor-owned and acquisitive, so not actionable; competitor for T&D add-ons",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://a-mcapital.com/east-coast-power-acquires-united-powerline-solutions-to-accelerate-expansion-of-national-electric-utility-services-platform",
+    "https://nacleanenergy.com/alvarez-marsal-capital-partners-enters-into-strategic-partnership-with-east-coast-power-to-build-leading-national-electric-utility-services-provider",
+    "https://tdworld.com/utility-business/news/55343352/east-coast-power-acquires-united-powerline-solutions-to-expand-national-electric-utility-services-platform"
+   ]
+  },
+  {
+   "id": "united-utility-services",
+   "name": "United Utility Services",
+   "website": "",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "PE-backed: Sandbrook Capital with Blackstone Credit & Insurance funds (closed Mar 2, 2026); built by Bernhard Capital Partners from 2018",
+   "independent": "no",
+   "services": "Outsourced electric grid infrastructure services",
+   "customers": "Not named",
+   "size_hint": "About $1B transaction (Energy Connects)",
+   "recurring_evidence": "Not verified",
+   "red_flags": "Just sold at scale, so not actionable; too large; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.energyconnects.com/news/utilities/2025/december/sandbrook-buys-united-utility-in-1-billion-bet-on-power-grid",
+    "https://www.streetinsider.com/PRNewswire/BCP+COMPLETES+SALE+OF+UNITED+UTILITY+SERVICES/26087300.html",
+    "https://realassets.ipe.com/news/bernhard-capital-sells-united-utility-services-to-sandbrookand-blackstone/10134394.article"
+   ]
+  },
+  {
+   "id": "davis-h-elliot",
+   "name": "Davis H. Elliot Company, Inc.",
+   "website": "",
+   "hq": "Roanoke, VA per Ampliz/MapQuest (MarketScreener says Lexington, KY; listings conflict)",
+   "unit": "T&D",
+   "ownership": "100% employee-owned through an ESOP (MapQuest listing; job-posting benefits). Founded 1946 by Davis H. Elliot.",
+   "independent": "yes",
+   "services": "Overhead and underground distribution construction and maintenance, transmission, substations, lighting, traffic signals, utility locating, industrial/commercial electrical; servicer crews repair overhead transformers and work energized lines",
+   "customers": "Investor-owned utilities, municipalities and cooperatives (none named); crews posted in Lawton OK, Dayton OH, Roanoke and Cloverdale VA",
+   "size_hint": "ENR Top 150 Specialty Contractor (job postings); multi-state crews",
+   "recurring_evidence": "Postings describe utilities' 'construction and maintenance needs' over seven decades; servicer and distribution-lineman roles imply embedded maintenance crews under utility service contracts",
+   "red_flags": "ESOP sale is complex (trustee process). Own website not confirmed (a third-party listing gives dhec.com). HQ data conflicts. Construction, lighting and traffic-signal mix. Union status unknown.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://app.energyhire.com/job-board/distribution-lineman-c-lawton-ok-5a34134b-437a-43fd-8313-9154567875c7",
+    "https://app.energyhire.com/job-board/servicer-dayton-oh-6fc9f27c-9f75-4cad-a226-4d1340b14de8",
+    "https://www.ampliz.com/company/davis-h-elliot-co-inc/81751766",
+    "https://startpage.mapquest.com/us/virginia/davis-h-elliot-354327071",
+    "https://talents.vaia.com/companies/davis-h-elliot-co-inc/"
+   ]
+  },
+  {
+   "id": "tomberlin-pole",
+   "name": "Tomberlin Pole Treatment",
+   "website": "https://tomberlinpole.com",
+   "hq": "South Carolina (city not captured)",
+   "unit": "T&D",
+   "ownership": "Third-generation family-run business founded 1965 (company site)",
+   "independent": "yes",
+   "services": "Wood utility pole inspection and treatment",
+   "customers": "Electric cooperatives, businesses and communities across the Southeast (none named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Utilities run pole inspection and treatment on fixed multi-year cycles, so customers return each cycle",
+   "red_flags": "Small and regional (add-on scale). Pole inspection is often competitively bid per cycle. Osmose (EQT) is a dominant competitor.",
+   "fit_score": 4,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://tomberlinpole.com/"
+   ]
+  },
+  {
+   "id": "mm-electrical",
+   "name": "M&M Electrical Contractor, Inc.",
+   "website": "http://mmpowerline.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Privately held, family-owned and operated (company site)",
+   "independent": "yes",
+   "services": "Powerline services including underground installations and storm restoration",
+   "customers": "Rural electric cooperatives, municipal systems and investor-owned utilities (none named)",
+   "size_hint": "30+ years of experience (no headcount or revenue)",
+   "recurring_evidence": "Serves co-ops and munis, which typically use multi-year unit-price line contracts (not verified for this firm)",
+   "red_flags": "No HQ, size or contract terms found; storm work is episodic",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "http://mmpowerline.com/"
+   ]
+  },
+  {
+   "id": "etmi",
+   "name": "Electro-Test and Maintenance, Inc. (ETMI)",
+   "website": "http://etmi.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Private, founded 1980 (company site); owner not verified",
+   "independent": "unknown",
+   "services": "Substation testing and commissioning, circuit breaker and switchgear maintenance, transformer field services, recloser maintenance, SF6 gas handling",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Periodic breaker, transformer and recloser maintenance is cyclical work",
+   "red_flags": "Ownership, size and customers unverified; website looks dated",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "http://etmi.com/index.htm",
+    "http://www.etmi.com/circuit.htm"
+   ]
+  },
+  {
+   "id": "southern-switch",
+   "name": "Southern Switch (SSC)",
+   "website": "https://southernswitch.com",
+   "hq": "Florida / Southeast (service area per site)",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Periodic maintenance testing of substation transformers and breakers with own crews and Doble instruments; relay testing and NETA scope go to partner Sigma C Power",
+   "customers": "Not named (Florida and Southeast)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Markets 'periodic maintenance testing' of substation primary equipment",
+   "red_flags": "Not NETA-accredited; ownership unknown; may be partly an equipment business",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://southernswitch.com/field-services/maintenance-testing"
+   ]
+  },
+  {
+   "id": "sigma-c-power",
+   "name": "Sigma C Power Services",
+   "website": "",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Family business run by CEO Jim Cialdea and his son Stephen (NETA World, 2023)",
+   "independent": "yes",
+   "services": "NETA-accredited (2023) acceptance and maintenance testing; partner for Southern Switch's NETA-required substation scope",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Maintenance testing programs; subcontracts substation relay testing for Southern Switch",
+   "red_flags": "Own website not found; size unknown; end market may be mostly commercial/industrial",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://digitaleditions.sheridan.com/article/NETA+Welcomes+New+Accredited+Company%3A+Sigma+C+Power+Services/4632741/800464/article.html",
+    "https://southernswitch.com/field-services/maintenance-testing"
+   ]
+  },
+  {
+   "id": "team-uis",
+   "name": "Utilities Instrumentation Service (Team UIS)",
+   "website": "https://teamuis.com",
+   "hq": "Great Lakes region (city not captured)",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Substation maintenance and electrical testing with NETA-certified technicians",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Positions itself as a substation maintenance provider",
+   "red_flags": "Ownership and size unknown; source page about 3 years old",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://teamuis.com/services/electrical-testing-services/"
+   ]
+  },
+  {
+   "id": "saber-power-field-services",
+   "name": "Saber Power Field Services",
+   "website": "https://www.saberpowerfieldservices.com",
+   "hq": "Not verified (Texas suspected)",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Breaker inspection, testing and timing; transformer winding resistance, turns-ratio and DGA testing; commissioning; monthly substation inspection contracts",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Offers monthly substation inspection contracts",
+   "red_flags": "May belong to a larger Saber Power group; part of the work may be renewables/industrial commissioning",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.saberpowerfieldservices.com/testing-commissioning/"
+   ]
+  },
+  {
+   "id": "delta-us",
+   "name": "Delta US Inc.",
+   "website": "https://deltausinc.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Underground distribution: cable splicing, terminations, fault locating, padmounted equipment",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Fault locating and splice repair is ongoing reactive maintenance for utilities",
+   "red_flags": "Ownership, size and customers unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://deltausinc.com/services/underground-distribution/"
+   ]
+  },
+  {
+   "id": "granite-state-cable",
+   "name": "Granite State Cable Splicing & Testing",
+   "website": "https://granitestatecable.com",
+   "hq": "New Hampshire (implied by name; not verified)",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Underground cable splicing and testing for URD and manhole/duct systems, 120V-35kV and above; fault location and repair",
+   "customers": "Not named",
+   "size_hint": "Unknown (likely small)",
+   "recurring_evidence": "Fault location and repair is recurring reactive maintenance",
+   "red_flags": "Probably small; ownership unknown; some work tied to new residential construction",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://granitestatecable.com/"
+   ]
+  },
+  {
+   "id": "hampton-tedder",
+   "name": "Hampton Tedder Electric",
+   "website": "https://www.hamptontedder.com",
+   "hq": "Not verified (Southern California / Nevada per background)",
+   "unit": "T&D",
+   "ownership": "Woman-owned IBEW contractor (company site); family status not verified",
+   "independent": "yes",
+   "services": "Undergrounding and high-voltage cable splicing from 2,400V to 138kV, fault locating",
+   "customers": "Not named",
+   "size_hint": "60+ years of underground experience",
+   "recurring_evidence": "High-voltage splicing and fault repair for utility and industrial systems",
+   "red_flags": "General electrical contractor with construction exposure; IBEW labor costs; utility share unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.hamptontedder.com/underground-high-voltage-cable-splicing"
+   ]
+  },
+  {
+   "id": "lee-inspection",
+   "name": "Lee Inspection & Consulting",
+   "website": "https://www.leeinspect.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Family- and veteran-owned (company site)",
+   "independent": "yes",
+   "services": "Utility pole inspections and related data/consulting work",
+   "customers": "Utility providers (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Cyclical pole inspection programs",
+   "red_flags": "Inspection-data focus with little treatment or restoration; size unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.leeinspect.com/"
+   ]
+  },
+  {
+   "id": "exo-inc",
+   "name": "EXO Inc.",
+   "website": "https://exoinc.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Wood pole restoration program: field inspection, repair, treatment, structural strengthening; steel and concrete pole inspection",
+   "customers": "Fayette Electric Cooperative (TX), pole inspection and treatment project starting Jan 2026",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Co-op pole inspection and treatment programs run on multi-year cycles",
+   "red_flags": "Ownership unknown; restoration is partly product-driven",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://exoinc.com/wood-pole-restoration-program",
+    "https://www.coloradocountycitizen.com/article/5141,fayette-ec-announces-pole-inspection-project"
+   ]
+  },
+  {
+   "id": "equity-technical-services",
+   "name": "Equity Technical Services, LLC",
+   "website": "https://equitytechnicalservices.com",
+   "hq": "Oklahoma",
+   "unit": "T&D",
+   "ownership": "Small American-owned company (company site); family status not verified",
+   "independent": "yes",
+   "services": "Pole inspection, reinforcement and inventory",
+   "customers": "Electric cooperatives, municipal systems, asset owners and contractors (none named)",
+   "size_hint": "Small (self-described)",
+   "recurring_evidence": "Cyclical pole inspection programs",
+   "red_flags": "Small; ownership details unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://equitytechnicalservices.com/"
+   ]
+  },
+  {
+   "id": "premier-pole-inspection",
+   "name": "Premier Pole Inspection",
+   "website": "https://www.premierpoleinspection.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Wood utility pole inspection and treatment",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Cyclical pole inspection programs",
+   "red_flags": "Ownership, size and customers unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.premierpoleinspection.com/services"
+   ]
+  },
+  {
+   "id": "ppmc-alcan",
+   "name": "PPMC / ALCAN",
+   "website": "https://www.alcanandppmc.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Pole inspections (visual, sound and bore, full excavate-and-treat); utility contracting",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Inspection and treatment programs",
+   "red_flags": "Ownership and structure of the two names unclear",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.alcanandppmc.com/"
+   ]
+  },
+  {
+   "id": "utility-asset-management",
+   "name": "Utility Asset Management, Inc.",
+   "website": "",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Utility pole inspection crews",
+   "customers": "Wise Electric Cooperative (TX), inspecting poles around Aurora, Boyd, Newark and Keeter (Apr 2026 notice)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Co-op pole inspection program",
+   "red_flags": "No own website or ownership found",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.wiseec.com/energy-services/cmpo/"
+   ]
+  },
+  {
+   "id": "pgti",
+   "name": "Power & Generation Testing, Inc. (PGTI)",
+   "website": "",
+   "hq": "Nashville, TN",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "NETA-accredited electrical testing for substations, power plants and industrial clients",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Maintenance testing of substation equipment",
+   "red_flags": "Own website not found; ownership unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://hireveterans.com/company/42720/Power-and-Generation-Testing-Inc"
+   ]
+  },
+  {
+   "id": "steinmetz",
+   "name": "Steinmetz Corporation",
+   "website": "https://steinmetzcorp.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Transformer testing, high-voltage breaker testing, insulating fluid analysis, 24-hour emergency service; follows NETA standards",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Testing and maintenance services",
+   "red_flags": "Not NETA-accredited per its site; ownership and utility share unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://steinmetzcorp.com/testing-and-maintenance-services/"
+   ]
+  },
+  {
+   "id": "elliott-engineering",
+   "name": "Elliott Engineering",
+   "website": "https://elliotengineeringinc.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Protective relay testing, substation commissioning, transformer testing, maintenance and testing contracts, NERC audits, arc flash studies",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Offers maintenance and testing contracts",
+   "red_flags": "Engineering-led rather than field crews; ownership unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://elliotengineeringinc.com/testing-and-commissioning/"
+   ]
+  },
+  {
+   "id": "american-power-grid",
+   "name": "American Power Grid, LLC",
+   "website": "https://americanpowergrid.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Substation testing and maintenance, transformer inspection",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Thin information",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://americanpowergrid.com/substation-testing-maintenance.html"
+   ]
+  },
+  {
+   "id": "gmb-powerline",
+   "name": "GMB Powerline",
+   "website": "https://gmbpowerline.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Utility powerline contractor: distribution construction and maintenance",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Distribution maintenance stated",
+   "red_flags": "Ownership, size and customers unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://gmbpowerline.com/"
+   ]
+  },
+  {
+   "id": "taylor-electric",
+   "name": "Taylor Electric (utility)",
+   "website": "https://www.taylorelectricutility.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Utility line construction and maintenance",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Maintenance listed as a service line",
+   "red_flags": "Ownership, size and customers unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.taylorelectricutility.com/construction-maintenance/"
+   ]
+  },
+  {
+   "id": "graceline-utilities",
+   "name": "Graceline Utilities",
+   "website": "https://gracelineutilities.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Woman-owned utility contractor (company site)",
+   "independent": "yes",
+   "services": "Overhead and underground distribution, storm restoration",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Storm exposure; no evidence on size, customers or contract type",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://gracelineutilities.com/"
+   ]
+  },
+  {
+   "id": "group-cbs",
+   "name": "Group CBS",
+   "website": "https://www.groupcbs.com",
+   "hq": "Not verified",
+   "unit": "T&D",
+   "ownership": "Not verified (surfaced in a search for family-owned NETA testing firms)",
+   "independent": "unknown",
+   "services": "Electrical testing and maintenance (NETA context)",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Weak sourcing; ownership and services unconfirmed",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "unknown",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.groupcbs.com/?p=556"
+   ]
+  },
+  {
+   "id": "day-zimmermann",
+   "name": "Day & Zimmermann",
+   "website": "https://www.dayzim.com",
+   "hq": "Philadelphia, PA",
+   "unit": "power-gen",
+   "ownership": "Family-owned",
+   "independent": "yes",
+   "services": "Nuclear and fossil plant maintenance, scheduled and emergency outages, boiler maintenance and repair, modifications; also non-power businesses",
+   "customers": "FENOC (Davis-Besse, Perry, Beaver Valley), PSEG Nuclear (Salem, Hope Creek), We Energies (10 fossil stations)",
+   "size_hint": "~46,000 workforce company-wide (company figure; a 2013 release said 23,000)",
+   "recurring_evidence": "5-year We Energies and PSEG Nuclear contracts; 50+ FENOC refueling outages; fleet-wide multi-year nuclear maintenance contract",
+   "red_flags": "Not for sale; the dominant incumbent and benchmark. Contract examples date from 2012-13. Coal retirements shrink the fossil base. Diversified beyond power.",
+   "fit_score": 5,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "yes",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.dayzim.com/news/day-and-zimmermann-awarded-new-five",
+    "https://dayzim.com/news/day-and-zimmermann-nps-awarded-new",
+    "https://www.dayzim.com/news/day-and-zimmermann-granted-multi-year",
+    "https://www.dayzim.com/services-and-products/maintenance-construction/fossil",
+    "https://www.dayzim.com/hubfs/DZMC/Nuclear%20Datasheet.pdf?hsLang=en"
+   ]
+  },
+  {
+   "id": "shermco",
+   "name": "Shermco Industries",
+   "website": "https://www.shermco.com",
+   "hq": "Irving, TX",
+   "unit": "power-gen",
+   "ownership": "PE-backed: Blackstone (agreed 2025, ~$1.6B) from Gryphon Investors",
+   "independent": "no",
+   "services": "NETA electrical testing and maintenance, rotating apparatus repair, power systems engineering, training; substation testing",
+   "customers": "Not named in sources",
+   "size_hint": "~$1.6B transaction value",
+   "recurring_evidence": "Maintenance testing programs; serial NETA add-ons (Power Test, 2024)",
+   "red_flags": "Just sold to Blackstone, so not actionable; end markets lean commercial/industrial/data center; consolidator competing for NETA add-ons",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://dallasinnovates.com/north-texas-electrical-testing-co-shermco-to-be-acquired-by-blackstone-in-1-6b-deal/",
+    "https://www.prnewswire.com/news-releases/shermco-industries-acquires-power-test-a-leading-neta-testing-company-302105319.html",
+    "https://www.gryphon-inv.com/news/shermco-industries-acquires-power-test-a-leading-neta-testing-company/"
+   ]
+  },
+  {
+   "id": "resa-power",
+   "name": "RESA Power (incl. MP Predictive Technologies)",
+   "website": "https://www.resapower.com",
+   "hq": "Houston, TX",
+   "unit": "power-gen",
+   "ownership": "PE-backed: Kohlberg & Company (Apr 2025); previously Investcorp (2021) and Blue Sea Capital. Acquired MP Predictive Technologies (Orlando, FL; NETA-accredited, founded 2018, previously family-run) in May 2025.",
+   "independent": "no",
+   "services": "NETA electrical testing and predictive maintenance, transformer services, engineering studies, custom/retrofit switchgear and breakers, obsolete-parts inventory",
+   "customers": "6,000+ customers (not named)",
+   "size_hint": "20+ locations in the US and Canada",
+   "recurring_evidence": "Testing plus parts and service for its installed base; MPPT predictive maintenance programs",
+   "red_flags": "On its third sponsor owner, so not actionable; partly a products/parts business; acquisitive competitor for NETA add-ons. Round-2 MPPT record merged here.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://mergr.com/transaction/kohlberg-company-acquires-resa-power",
+    "https://app.mergerlinks.com/transactions/2025-04-29-resa-power",
+    "https://www.resapower.com/news/investcorp-acquires-resa-power-a-leading-electrical-services-provider-from-blue-sea-capital/",
+    "https://www.resapower.com/news/resa-power-aquisition-of-mp-predictive-technologies/",
+    "https://transformers-magazine.com/tm-news/resa-power-acquires-mp-predictive-technologies/",
+    "https://digitaleditions.sheridan.com/article/NETA+Awards+Accredited+Company+Status+to+MP+Predictive+Technologies/4888832/835984/article.html"
+   ]
+  },
+  {
+   "id": "allied-power-group",
+   "name": "Allied Power Group",
+   "website": "https://alliedpg.com",
+   "hq": "Houston, TX",
+   "unit": "power-gen",
+   "ownership": "PE-backed: Warren Equity Partners per Baird deal card; earlier AEA Investors SBF / Audax (2019). Sources conflict.",
+   "independent": "no",
+   "services": "Aftermarket maintenance and repair of heavy-frame industrial gas turbines, component repair, field services",
+   "customers": "Primarily electric utilities (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Repeat component repair on outage cycles for utility gas-turbine fleets",
+   "red_flags": "Sponsor-owned and consolidating (TRS Services Aug 2026, Viking Turbine Services Oct 2026); competitor for add-ons, not actionable",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://alliedpg.com/",
+    "https://www.rwbaird.com/transactions/investment-banking/dealcard/6793/",
+    "https://www.hklaw.com/en/news/pressreleases/2026/08/holland-knight-represents-trs-services-sale-to-allied-power-group",
+    "https://www.citybiz.co/article/915264/allied-power-group-acquires-viking-turbine-services-to-expand-field-capabilities/",
+    "https://www.aeainvestors.com/portfolio/allied-power-group/"
+   ]
+  },
+  {
+   "id": "power-services-group",
+   "name": "Power Services Group (PSG)",
+   "website": "https://www.powerservicesgroup.com",
+   "hq": "Cape Coral, FL",
+   "unit": "power-gen",
+   "ownership": "PE-backed: Center Rock Capital Partners (Chicago) bought it from Azalea Capital and Harbert Mezzanine (Mergr dates it Jul 11, 2022; a MergerLinks entry is dated Aug 2025). Bought Turbine Resources in Jan 2026 (PitchBook). Earlier GFI Energy Group and Oaktree (via TGM).",
+   "independent": "no",
+   "services": "Turbine-generator maintenance, repair and overhaul: turnkey steam turbine outages (1-1,300 MW, fossil and nuclear), gas turbine services, field balancing, machining, borescope inspection, emergency support",
+   "customers": "Power, industrial and petrochemical (none named)",
+   "size_hint": "Unknown; roll-up of 5+ predecessor firms plus Turbine Resources",
+   "recurring_evidence": "Outage-cycle turbine work across major OEM fleets",
+   "red_flags": "Sponsor-owned and acquiring, so not actionable; lumpy seasonal outage revenue; turnkey outages may be fixed-price",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.powerservicesgroup.com/about/",
+    "https://www.powerservicesgroup.com/steam-turbine-services/",
+    "https://pitchbook.com/profiles/company/10973-62",
+    "https://mergr.com/transaction/center-rock-capital-partners-acquires-power-services-group",
+    "https://tmcapital.com/transactions/power-service-group-has-been-acquired-by-center-rock-capital-partners/",
+    "https://www.oaklins.com/ca/en/deals/108514/",
+    "https://app.mergerlinks.com/transactions/2025-08-04-power-services-group"
+   ]
+  },
+  {
+   "id": "ethosenergy",
+   "name": "EthosEnergy",
+   "website": "https://www.ethosenergy.com",
+   "hq": "Not verified",
+   "unit": "power-gen",
+   "ownership": "PE-backed: One Equity Partners (announced Aug 2024, completed)",
+   "independent": "no",
+   "services": "Aftermarket MRO for rotating equipment, industrial gas turbine repair, outsourced O&M",
+   "customers": "Not named",
+   "size_hint": "Global (no figure captured)",
+   "recurring_evidence": "Outsourced O&M contracts",
+   "red_flags": "Global rather than US-focused; sponsor-owned since 2024",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.oneequity.com/news/one-equity-partners-completes-acquisition-of-ethos-energy/",
+    "https://finance.yahoo.com/news/one-equity-partners-acquire-gas-111600073.html"
+   ]
+  },
+  {
+   "id": "structural-integrity",
+   "name": "Structural Integrity Associates",
+   "website": "https://www.structint.com",
+   "hq": "San Jose, CA (founded 1983)",
+   "unit": "power-gen",
+   "ownership": "Employee-owned",
+   "independent": "yes",
+   "services": "NDE/inspection, engineering and metallurgy for nuclear, fossil and combined-cycle plants; EPRI PDI-qualified; ASME Section XI work",
+   "customers": "50+ nuclear plants served (not named)",
+   "size_hint": "250+ employees",
+   "recurring_evidence": "200+ outages supported; in-service inspection required by regulation (ASME Section XI, 10 CFR 50.55a)",
+   "red_flags": "Employee ownership complicates a sale. Engineering-led rather than crew-heavy (thesis wants field-first). Concentrated in nuclear.",
+   "fit_score": 4,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://www.structint.com/nuclear-power-non-destructive-examination-nde-solutions/",
+    "https://jobs.powermag.com/profile/structural-integrity-associates/1774830/"
+   ]
+  },
+  {
+   "id": "graycor",
+   "name": "Graycor (Graycor Industrial)",
+   "website": "https://www.graycor.com",
+   "hq": "Oakbrook Terrace, IL (prior knowledge)",
+   "unit": "power-gen",
+   "ownership": "Family-owned (prior knowledge; not verified in either round)",
+   "independent": "yes",
+   "services": "Industrial construction plus power plant outage and maintenance services",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not verified",
+   "red_flags": "Construction-heavy; scope of outage services unverified. Listed in both rounds (merged).",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.graycor.com"
+   ]
+  },
+  {
+   "id": "national-electric-coil",
+   "name": "National Electric Coil",
+   "website": "https://www.national-electric-coil.com",
+   "hq": "Columbus, OH (800 King Ave); coil plant in Brownsville, TX",
+   "unit": "power-gen",
+   "ownership": "Privately held (directory); founded 1917 as National Armature and Electric Works, renamed 1934; no acquisition, PE or ESOP found; owners not named",
+   "independent": "unknown",
+   "services": "Generator coil manufacturing (rotor coils in Columbus, stator coils in Brownsville); repair, retrofit and overhaul of large high-voltage generators; field services",
+   "customers": "Utilities and industrial generator owners (none named)",
+   "size_hint": "Employee estimates conflict (50-100 to about 800)",
+   "recurring_evidence": "Generator rewinds and overhauls follow outage cycles",
+   "red_flags": "Manufacturing-heavy; owners not identified; website carried from round 1",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.national-electric-coil.com",
+    "https://craft.co/national-electric-coil-965",
+    "https://www.rigzone.com/directory/company/3050/National-Electric-Coil/",
+    "https://industrytoday.com/?p=939"
+   ]
+  },
+  {
+   "id": "power-solutions-group",
+   "name": "Power Solutions Group LLC",
+   "website": "https://www.powersolutionsgroup.com",
+   "hq": "Not verified",
+   "unit": "power-gen",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "NETA-accredited electrical testing",
+   "customers": "Unknown",
+   "size_hint": "Unknown",
+   "recurring_evidence": "None found",
+   "red_flags": "No size or customer data",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.powersolutionsgroup.com/about/neta-accredited"
+   ]
+  },
+  {
+   "id": "360-electrical",
+   "name": "360 Electrical & Engineering Services LLC",
+   "website": "",
+   "hq": "Miami, FL",
+   "unit": "power-gen",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "NETA-accredited electrical testing and engineering (accredited Jan 2025)",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "NETA maintenance testing is periodic by nature",
+   "red_flags": "Ownership and size unknown; likely small and commercial/industrial-focused; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://digitaleditions.sheridan.com/article/360+Electrical+Added+to+NETA+Network+of+Accredited+Companies/4888829/835984/article.html"
+   ]
+  },
+  {
+   "id": "high-potential-testing",
+   "name": "High Potential Testing LLC",
+   "website": "",
+   "hq": "Not verified",
+   "unit": "power-gen",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "NETA-accredited electrical testing (accredited Nov 2025 per hint URL; not confirmed by round-2 search)",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Almost no information found; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://netaworldjournal.org/2025/11/netaworldstaff/neta-news/high-potential-testing-joins-netas-roster-of-accredited-companies/"
+   ]
+  },
+  {
+   "id": "spiniello",
+   "name": "Spiniello Companies",
+   "website": "https://www.spiniello.com",
+   "hq": "Livingston, NJ (background; not re-verified)",
+   "unit": "water",
+   "ownership": "Private: owned by the Solimine family since 1998 (EJ Solimine president since 2015)",
+   "independent": "yes",
+   "services": "Water and sewer rehabilitation: CIPP lining, sliplining, pipe bursting, spray lining, cement-mortar lining",
+   "customers": "Municipal water and sewer utilities (none named)",
+   "size_hint": "400+ staff (Trenchless Technology / company)",
+   "recurring_evidence": "Rehab programs recur annually, but no MSA evidence found",
+   "red_flags": "Municipal water/sewer rehab is typically public low-bid at fixed unit prices, an avoid criterion",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://www.spiniello.com/about-us",
+    "https://trenchlesstechnology.com/spiniello-companies-continues-push-trenchless-rehab-market/"
+   ]
+  },
+  {
+   "id": "carylon",
+   "name": "Carylon Corporation (National Power Rodding, National Water Main Cleaning, Mobile Dredging & Video Pipe)",
+   "website": "https://mdvpinc.com",
+   "hq": "Chicago, IL (National Water Main Cleaning: Kearny, NJ)",
+   "unit": "water",
+   "ownership": "Privately held, founded 1949; founder-family lineage (founder Julius Hemmelstein died 2015). Round 2 found no acquisition, sale or PE involvement; current owners not named.",
+   "independent": "yes",
+   "services": "Sewer cleaning (jetting), power rodding, CCTV and multi-sensor pipe inspection (claims to have pioneered CCTV), chemical grouting, hydraulic dredging/dewatering, water main cleaning, sewer repair and rehab, leak detection",
+   "customers": "New York City (vendor in NYC procurement data); municipalities",
+   "size_hint": "Federation of about 14 regional operating companies (round 2); ~18 subsidiaries per 2015 trade press; revenue unknown",
+   "recurring_evidence": "Municipal sewer maintenance and cleaning programs; long-tenured NYC vendor relationship",
+   "red_flags": "Municipal bid exposure. Ownership and succession unconfirmed. Website is a subsidiary's (Mobile Dredging & Video Pipe); caryloncorp.com came from a search-engine summary and is not verified.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "yes",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "partial"
+   },
+   "source_urls": [
+    "https://trenchlesstechnology.com/carylon-corp-founder-julius-hemmelstein-has-passed-away/",
+    "https://databook.nyc/procurement/vendor/1633798",
+    "https://mdvpinc.com/about-us/",
+    "https://craft.co/carylon",
+    "https://www.wateronline.com/doc/sewer-cleaning-0001",
+    "https://hireveterans.com/company/82160/carylon-corporation/"
+   ]
+  },
+  {
+   "id": "pittsburg-tank-tower",
+   "name": "Pittsburg Tank & Tower Group (PTTG)",
+   "website": "https://pttg.com",
+   "hq": "Henderson, KY",
+   "unit": "water",
+   "ownership": "Family-owned: Johnston family bought it in 1983 (Don Johnston, d. 2018); son Ben Johnston now leads. Holding company formed 2012 (tank business, Allstate Tower, maintenance unit). No PE found.",
+   "independent": "yes",
+   "services": "Water tower and tank inspection, maintenance, repair, coating restoration and extended-warranty programs; tank construction",
+   "customers": "Municipal water systems (none named)",
+   "size_hint": "Unknown; founded 1919. IBJ reports Phoenix Fabricators bought 'Pittsburgh Tank and Tower Elevated' (Sebree, KY; $25M prior-year sales); date and relationship unclear.",
+   "recurring_evidence": "Extended warranty program with annual inspections and scheduled maintenance; 1/3/5-year inspection cycles",
+   "red_flags": "Possible prior divestiture of the elevated-tank unit; construction mix; latest ownership source from 2019",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://pttg.com/water-tower-water-tank-maintenance.php",
+    "https://pttg.com/water-tank-inspections.php",
+    "https://businessviewmagazine.com/?p=22698",
+    "https://www.ibj.com/articles/11625-tower-erector-rises-from-ruin-once-bankrupt-water-tank-firm-grows-into-industry-giant-acquires-competitor"
+   ]
+  },
+  {
+   "id": "maguire-iron",
+   "name": "Maguire Iron (Maguire Water)",
+   "website": "https://maguirewater.com",
+   "hq": "Sioux Falls, SD (background; not re-verified)",
+   "unit": "water",
+   "ownership": "Not found; no PE or acquisition found in search",
+   "independent": "unknown",
+   "services": "Water tank construction, inspection, cleanout, painting and maintenance plans",
+   "customers": "Municipal water systems (none named); Texas operation",
+   "size_hint": "50-100 employees (directory listing)",
+   "recurring_evidence": "Contract Services Plan (defined term, yearly inspection, biennial cleanout, fixed paint cost) and Full-Service plan",
+   "red_flags": "Ownership unverified; fixed-cost plans move maintenance risk onto the provider; construction mix",
+   "fit_score": 4,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://maguirewater.com/water-tank-maintenance-plans/",
+    "https://maguireiron.com/tank-maintenance/",
+    "https://maguirewater.com/texas/",
+    "https://talents.vaia.com/companies/maguire-iron-inc/"
+   ]
+  },
+  {
+   "id": "me-simpson",
+   "name": "M.E. Simpson Co., Inc.",
+   "website": "https://www.mesimpson.com",
+   "hq": "Valparaiso, IN",
+   "unit": "water",
+   "ownership": "Private, founded 1979; owner not verified",
+   "independent": "unknown",
+   "services": "Water audits, large meter testing, valve assessment and exercising, leak detection, non-revenue water and distribution-system data services",
+   "customers": "Channel partners Core & Main, Hydrosave, Echologics; utility clients not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Cyclical meter testing and valve exercising programs",
+   "red_flags": "Probably sub-scale; relies on channel partners; website from background knowledge (unverified)",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.wateronline.com/doc/m-e-simpson-company-inc-announces-partnership-with-core-main-to-expand-water-and-wastewater-service-offerings-0001",
+    "https://www.wateronline.com/doc/m-e-simpson-announces-strategic-partnership-with-hydrosave-0001",
+    "https://www.echologics.com/resources/articles/echologics-and-m-e-simpson-co-offer-advanced-water-main-inspection-solutions/"
+   ]
+  },
+  {
+   "id": "sak-construction",
+   "name": "SAK Construction, LLC",
+   "website": "https://www.sakcon.com",
+   "hq": "O'Fallon, MO",
+   "unit": "water",
+   "ownership": "Privately held, management/founder-owned: Indiana foreign-LLC filings list members Jerome Shaw Jr. and Boyd Hirtz (Missouri LLC formed 2006); President Jerry Shaw, CEO Tom Kalishman. No PE found.",
+   "independent": "yes",
+   "services": "CIPP sewer lining, manhole rehab, trenchless rehabilitation; reportedly acquired Pipenology (ZoomInfo)",
+   "customers": "Municipalities (South Bend, IN filings; Urbandale and other Iowa cities' sewer lining programs)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Annual municipal sewer lining programs, re-bid each year",
+   "red_flags": "Public low-bid work (an avoid criterion). Website from background (not re-verified). Sources are directories and state filings.",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://files.frontdeskgworks.com/city/1847/media/10.2bidawardrecommendationwithenclosures.pdf",
+    "https://www.urbandale.org/DocumentCenter/View/13943/Bid-Tab-2023-Sanitary-Sewer-Lining-Program",
+    "https://docs.southbendin.gov/WebLink/0/doc/383468/Page21.aspx",
+    "https://craft.co/sak-construction-llc",
+    "https://www.zoominfo.com/c/sak-construction/351692640"
+   ]
+  },
+  {
+   "id": "tank-maintenance-solutions",
+   "name": "Tank Maintenance Solutions",
+   "website": "https://tankmaintenancesolutions.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Turnkey tank asset management; maintenance of welded steel, bolted and concrete tanks",
+   "customers": "Not verified",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Multi-year service contracts and asset-management programs (company site)",
+   "red_flags": "Size and ownership unknown (not re-searched in round 2)",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://tankmaintenancesolutions.com/"
+   ]
+  },
+  {
+   "id": "usg-water",
+   "name": "USG Water Solutions (formerly Utility Service Co.)",
+   "website": "https://usgwater.com",
+   "hq": "Atlanta and Perry, GA",
+   "unit": "water",
+   "ownership": "PE-backed: Turnspire Capital Partners (carved out of Veolia, 2023) with Backcast; 2025 recap; a reported 2026 sale to Warren Equity Partners is unconfirmed",
+   "independent": "no",
+   "services": "Tank asset management and maintenance; pipe network and concrete structure services for water and wastewater",
+   "customers": "Municipal tank owners in 47 states (none named)",
+   "size_hint": "450+ employees; 47 states",
+   "recurring_evidence": "Asset Management Program: rehab plus future maintenance for a set annual cost; growth framed as tanks under management",
+   "red_flags": "Sponsor-owned with several ownership changes, so secondary-buyout pricing. Fixed annual-cost programs carry maintenance risk. Best used as the business-model benchmark for a water platform.",
+   "fit_score": 4,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://usgwater.com/solutions/steel-concrete-tank-services/",
+    "https://peprofessional.com/2023/03/turnspire-carves-acquires-usg-water-solutions-from-veolia/",
+    "https://www.themiddlemarket.com/latest-news/turnspire-acquires-usg-water-solutions",
+    "https://mergr.com/transaction/backcast-partners-exits-usg-water-solutions",
+    "https://www.pulse.bot/b2b-growth/deals/warren-equity-acquires-usg-water-solutions-from-turnspire-83a1384f-f41a-4ff2-a736-c6253edf5458/"
+   ]
+  },
+  {
+   "id": "visu-sewer",
+   "name": "Visu-Sewer",
+   "website": "https://www.visu-sewer.com",
+   "hq": "Pewaukee, WI",
+   "unit": "water",
+   "ownership": "PE-backed: Fort Point Capital Fund III (2023)",
+   "independent": "no",
+   "services": "Sewer cleaning, CCTV inspection, sewer rehab, locating",
+   "customers": "Not verified",
+   "size_hint": "Unknown; at least 4 add-ons (United Survey, Sheridan Plumbing & Sewer, Accurate Locating Services, MOR Construction)",
+   "recurring_evidence": "Municipal sewer maintenance programs",
+   "red_flags": "Sponsor-owned and competes for the same add-ons; municipal bid exposure likely; website from background (unverified)",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://fortpointcapital.com/portfolio/visusewer"
+   ]
+  },
+  {
+   "id": "hk-solutions",
+   "name": "HK Solutions Group (formerly Hydro-Klean)",
+   "website": "https://www.hksolutionsgroup.com",
+   "hq": "Des Moines, IA",
+   "unit": "water",
+   "ownership": "PE-backed: CenterOak Partners majority recap (2021); previously Summit Equity Group",
+   "independent": "no",
+   "services": "Water/wastewater inspection, cleaning and repair; industrial services; wastewater treatment",
+   "customers": "Not verified",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Municipal cleaning and inspection programs (not verified)",
+   "red_flags": "Sponsor-owned since 2021, likely nearing exit; industrial mix; domain seen in listings but not opened",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://centeroakpartners.com/centeroak-partners-acquires-hk-solutions-group/",
+    "https://www.businessrecord.com/dallas-based-private-equity-firm-takes-majority-stake-in-hk-solutions-group/"
+   ]
+  },
+  {
+   "id": "puris",
+   "name": "PURIS (formerly Inland Pipe Rehabilitation; incl. Murphy Pipeline Contractors, former Granite Inliner, Insight Pipe, IPC Services)",
+   "website": "https://www.murphypipelines.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "PE-backed: J.F. Lehman & Company. IPR bought Murphy Pipeline (2020) and Granite Inliner (Mar 2022, reportedly $159.7M); rebranded PURIS Feb 2023; 2024 recapitalization.",
+   "independent": "no",
+   "services": "Water and wastewater pipe renewal: CIPP, UV-cured and geopolymer liners, manhole renewal, static pipe bursting, sliplining, CompressionFit HDPE, trenchless sewer and stormwater rehab",
+   "customers": "Government entities in the US and Canada; City of Chicago sewer work (Inliner)",
+   "size_hint": "Inliner carve-out alone was about $159.7M (single trade source)",
+   "recurring_evidence": "Municipal rehab programs (bid-based); mostly project work",
+   "red_flags": "Sponsor-owned; project- and bid-based municipal work. Website is a subsidiary's (Murphy Pipeline). Round-2 IPR record merged here.",
+   "fit_score": 2,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.prnewswire.com/news-releases/puris-announces-the-acquisition-of-insight-pipe-and-ipc-services-302383427.html",
+    "https://www.murphypipelines.com/about",
+    "https://www.strategicad.com/transactions/insight-pipe-and-ipc-services-have-been-acquired-by-puris-llc",
+    "https://www.jflpartners.com/news-article/141/inland-pipe-rehabilitation-acquires-inliner",
+    "https://www.businesswire.com/news/home/20220315005998/en/Inland-Pipe-Rehabilitation-Announced-Today-That-It-Has-Completed-the-Acquisition-of-Granite-Inliner",
+    "https://trenchlesstechnology.com/ipr-acquiring-inliner-from-granite-construction/"
+   ]
+  },
+  {
+   "id": "azuria",
+   "name": "Azuria Water Solutions (Insituform, Inframark, BLD Services, Atlantic Coast Contractors, Waterline)",
+   "website": "https://www.azuria.com",
+   "hq": "St. Louis, MO area",
+   "unit": "water",
+   "ownership": "PE-backed: New Mountain Capital; actively acquiring (Inframark, Caliagua, Waterline Renewal Technologies, 2026)",
+   "independent": "no",
+   "services": "CIPP and pipe rehab, lateral lining, liner manufacturing, water/wastewater O&M (Inframark)",
+   "customers": "Not verified",
+   "size_hint": ">$2.5B combined revenue after Inframark (Cahill)",
+   "recurring_evidence": "Inframark O&M contracts recur; Insituform rehab is project/bid work",
+   "red_flags": "Competitor benchmark, not a target: too large and sponsor-owned in build mode",
+   "fit_score": 3,
+   "platform_or_addon": "platform",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.cahill.com/news/firm-news/2026-04-23-cahill-represents-lead-arrangers-in-azuria-water-solutions-295-acquisition-financing-for-inframark",
+    "https://www.azuria.com/news/2026/feb/azuria-announces-acquisition-of-caliagua-inc",
+    "https://www.cleaner.com/online_exclusives/2026/03/azuria-water-solutions-announces-acquisition-of-waterline-renewal-technologies",
+    "https://www.stl.news/st-louis-based-azuria-expands-with-acquisition/"
+   ]
+  },
+  {
+   "id": "vortex-companies",
+   "name": "Vortex Companies",
+   "website": "https://vortexcompanies.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "PE-backed: Quad-C Management invested Sep 2023 (one database says it bought Vortex from Platform Partners); co-founder Mike Vellano is CEO; formed 2015",
+   "independent": "no",
+   "services": "Manhole and pipe rehabilitation products, lining and field services (trenchless)",
+   "customers": "Not verified",
+   "size_hint": "PitchBook lists about 2,000 employees (unreliable). Serial acquirer: Lining Division Ltd (UK), Tri-State Utilities and Pipe Vision (from ORIX-backed National Underground Group), Prism Contractors & Engineers (Apr 2025), PrimeLine Products (Oct 2025).",
+   "recurring_evidence": "Not verified",
+   "red_flags": "Sponsor-owned consolidator, so a competitor; products/manufacturing mix",
+   "fit_score": 2,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://vortexcompanies.com/news/vortex-companies-acquires-primeline-products-inc/",
+    "https://vortexcompanies.com/news/quad-c-management-invests-in-vortex-companies/",
+    "https://www.utahbusiness.com/quad-c-invests-vortex",
+    "https://www.stephensonharwood.com/news/stephenson-harwood-advises-vortex-companies-on-lining-division-acquisition/"
+   ]
+  },
+  {
+   "id": "robinson-pipe-cleaning",
+   "name": "Robinson Pipe Cleaning",
+   "website": "https://robinsonpipe.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Sewer cleaning, mini-cam TV inspection, manhole rehabilitation",
+   "customers": "Not verified",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Cleaning and inspection recur by nature",
+   "red_flags": "Size and ownership unknown; municipal re-bid exposure likely",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://robinsonpipe.com/"
+   ]
+  },
+  {
+   "id": "drc-construction",
+   "name": "DRC Construction Services",
+   "website": "https://drcconstruction.us",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Manhole inspection, cleaning and rehabilitation",
+   "customers": "Not verified",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not verified",
+   "red_flags": "Construction positioning; size and ownership unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://drcconstruction.us/2026/"
+   ]
+  },
+  {
+   "id": "federal-ec",
+   "name": "Federal EC, LLC",
+   "website": "",
+   "hq": "Woodstock, GA",
+   "unit": "water",
+   "ownership": "PE/independent sponsors: acquired Sep 2025 by Crescent Peak and FVLCRUM Funds, with an HCAP Partners investment (Nov 4, 2025). Founded 2015.",
+   "independent": "no",
+   "services": "Trenchless rehabilitation of stormwater and wastewater systems (cured-in-place and cast-in-place lining), storm drain rehab, utility construction and repair, hydro-jetting",
+   "customers": "Utilities / public owners (none named); federal contractor listings",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established; municipal/federal rehab is mostly bid project work",
+   "red_flags": "Just acquired by sponsors; bid-based public work",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://undergroundinfrastructure.com/news/2025/november/private-equity-backs-trenchless-rehabilitation-firm-in-major-infrastructure-move",
+    "https://mergr.com/transaction/fvlcrum-acquires-federal-ec",
+    "https://www.finanzen.net/nachricht/aktien/hcap-partners-announces-investment-in-federal-ec-a-leader-in-trenchless-infrastructure-rehabilitation-15185673"
+   ]
+  },
+  {
+   "id": "empire-pipe-cleaning",
+   "name": "Empire Pipe Cleaning and Equipment Inc.",
+   "website": "",
+   "hq": "Southern California (714 phone; not confirmed)",
+   "unit": "water",
+   "ownership": "Private (not verified); in business since 1975",
+   "independent": "unknown",
+   "services": "Sewer and storm drain cleaning, pipeline CCTV inspection, hydro-excavating, manhole assessments",
+   "customers": "Midway City Sanitary District",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Cleaning and CCTV inspection recur by nature",
+   "red_flags": "Municipal bid exposure; ownership and size unknown; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.thebluebook.com/iProView/412181",
+    "https://midwaycitysanitary.specialdistrict.org/active-projects"
+   ]
+  },
+  {
+   "id": "professional-meters",
+   "name": "Professional Meters, Inc. (PMI)",
+   "website": "https://prometers.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Private (not verified); founded 1999",
+   "independent": "unknown",
+   "services": "Turnkey AMR/AMI meter installation nationwide; installation consulting",
+   "customers": "Otay Water District; others not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Limited: AMI deployments are project-based and finite",
+   "red_flags": "Deployment revenue, not recurring maintenance. Domain inferred from a Google Sites page hosted on prometers.com.",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://sites.google.com/prometers.com/pmielectrictraining/introduction-and-policy",
+    "https://seo-for-jobs.com/companies/professional-meters-inc",
+    "https://www.otaywater.gov/ami/"
+   ]
+  },
+  {
+   "id": "envocore",
+   "name": "Envocore, LLC",
+   "website": "",
+   "hq": "Gambrills, MD (PitchBook)",
+   "unit": "water",
+   "ownership": "PE-backed: Power Sustainable portfolio company (formerly LRI Energy Solutions)",
+   "independent": "no",
+   "services": "Meter/AMI installation and utility modernization programs",
+   "customers": "Puerto Rico water-meter modernization program ($129M over five years, Sep 2026); Macon Water; City of Sunrise, FL",
+   "size_hint": "Puerto Rico program worth $129M over 5 years",
+   "recurring_evidence": "Multi-year deployment programs (finite)",
+   "red_flags": "Sponsor-owned; deployment rather than maintenance; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "no"
+   },
+   "source_urls": [
+    "https://www.webull.com/news/15508689619198976",
+    "https://pitchbook.com/profiles/company/42307-48",
+    "https://maconwater.org/bids/construction/large-meter-and-advanced-metering-infrastructure-ami-device-installation/",
+    "https://www.sunrisefl.gov/departments-services/utilities/advanced-metering-infrastructure-project"
+   ]
+  },
+  {
+   "id": "concord-utility-services",
+   "name": "Concord Utility Services",
+   "website": "",
+   "hq": "Not verified (hiring in Baltimore / Annapolis, MD)",
+   "unit": "water",
+   "ownership": "Not verified; founded 2006",
+   "independent": "unknown",
+   "services": "AMI meter replacement and communications-endpoint field services",
+   "customers": "Camarillo and Sonoma, CA; others not named",
+   "size_hint": "2.5M meters/endpoints upgraded across 150+ US projects (self-reported)",
+   "recurring_evidence": "Project-based AMI deployments",
+   "red_flags": "Deployment work that ends; ownership unknown; website not found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://jobs.miter.com/concord-utility-services/water-meter-specialist-md-baltimore",
+    "https://www.cityofcamarillo.org/departments/public_works/water_service/advanced_metering_infrastructure_(ami).php",
+    "https://www.sonomacity.org/advanced-metering-infrastructure-ami/"
+   ]
+  },
+  {
+   "id": "pedal-valves",
+   "name": "Pedal Valves, Inc. (PVI)",
+   "website": "",
+   "hq": "Luling, LA (BuildZoom)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Water meter replacement / AMI installation (Pinellas Park); BuildZoom instead describes plumbing and hands-free pedal valves",
+   "customers": "City of Pinellas Park, FL",
+   "size_hint": "Unknown",
+   "recurring_evidence": "None found",
+   "red_flags": "Conflicting identity (plumbing products vs meter installer); deployment work",
+   "fit_score": 1,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "unknown",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.buildzoom.com/contractor/pedal-valves-inc",
+    "https://www.pinellaspark.gov/2161/AMI-Water-Meter-Project"
+   ]
+  },
+  {
+   "id": "vepo-metering",
+   "name": "Vepo Metering",
+   "website": "",
+   "hq": "Not verified (NY/Northeast activity)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Residential and commercial water meter installation, replacement and reading-system upgrades",
+   "customers": "Town of New Windsor, NY; NYC meter contracts in 2026 via the Maximum Plumbing-VEPO Metering NYC JV; North Lauderdale, FL",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Project-based meter programs",
+   "red_flags": "Deployment work; ownership unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://newwindsor-ny.gov/New-Windsor-Connect/Town-Press-Releases/vepo-water-meter-installations-to-restart-september-8th",
+    "https://bidsfactory.com/en/companies/maximum-plumbing-vepo-metering-nyc-jv-llc",
+    "https://www.nlauderdale.org/residents/utility_billing/new_advanced_metering_infrastructure_(ami).php"
+   ]
+  },
+  {
+   "id": "second-sight-systems",
+   "name": "Second Sight Systems",
+   "website": "https://secondsightsystems.com",
+   "hq": "St. Louis, MO",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Electric, gas and water meter installation; lead service line inventory surveys and AMI installation",
+   "customers": "Itron / BGE (Maryland subcontract); City of Hurst, TX",
+   "size_hint": "Unknown; opened an office near BWI",
+   "recurring_evidence": "Project-based; lead inventory work is compliance-driven but finite",
+   "red_flags": "Subcontractor to an OEM; deployment work; ownership unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://bizmonthly.com/st-louis-based-firm-opening-office-near-bwi-marshall-%ef%bf%bc/",
+    "https://ispionage.com/Competitive_Intelligence_directory/s/163/secondsightsystems_com_7365636F6E64736967687473797374656D732E636F6D",
+    "https://www.hursttx.gov/Home/Components/News/News/397/28"
+   ]
+  },
+  {
+   "id": "five-star-energy",
+   "name": "Five Star Energy Services",
+   "website": "",
+   "hq": "Not verified (Midwest: MI/WI/IL activity)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Lead / non-copper service line replacement, including trenchless installs; gas distribution work per background only",
+   "customers": "Iron Mountain MI (~$4.08M, 400+ lines, May 2026); Jackson MI ($6.9M, ~825 LSLs); Watertown WI ($7.77M); Shorewood WI; Fox Lake IL; Peoria Heights IL; Kalamazoo MI (~$3.1M, 2022)",
+   "size_hint": "Multiple $3-8M municipal LSL contracts per year across 3 states",
+   "recurring_evidence": "Multi-year municipal LSL programs (federal mandate), awarded by low bid",
+   "red_flags": "Wins as low bidder (Watertown bid well under the $12.6M estimate), an avoid criterion. LSL programs end. Gas work and ownership unverified. Website not found.",
+   "fit_score": 3,
+   "platform_or_addon": "unclear",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.ironmountaindailynews.com/news/local-news/2026/05/im-accepts-five-stars-bid-for-water-service-line-project/",
+    "https://jtv.tv/city-of-jackson-ramps-up-lead-service-line-replacements",
+    "https://www.wdtimes.com/news/local/council-approves-final-rounds-of-private-lead-service-replacement/article_809fd6a5-ba07-4905-a4a4-fdd77b21f2ba.html",
+    "https://villageofshorewood.org/DocumentCenter/View/12599/PIM-Presentation-LSL-9-11-2025",
+    "https://www.kalamazoocity.org/Business-Development/Work-with-the-City-of-Kalamazoo/Closed-Opportunities/2022-Northside-Non-Copper-Service-Replacement"
+   ]
+  },
+  {
+   "id": "warren-w-fane",
+   "name": "Warren W. Fane Inc.",
+   "website": "",
+   "hq": "Not verified (Troy, NY area work)",
+   "unit": "water",
+   "ownership": "Private (not verified)",
+   "independent": "unknown",
+   "services": "Lead service line replacement; water/sewer utility construction",
+   "customers": "City of Troy, NY",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Municipal LSL program (bid)",
+   "red_flags": "No evidence found in round 2; municipal low-bid",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.troyny.gov/m/newsflash/home/detail/305"
+   ]
+  },
+  {
+   "id": "ultra-construction",
+   "name": "Ultra Construction Services",
+   "website": "",
+   "hq": "Marquette, MI",
+   "unit": "water",
+   "ownership": "Private (not verified)",
+   "independent": "unknown",
+   "services": "Lead service line replacement",
+   "customers": "City of Iron Mountain, MI (project begun fall 2024, at least 375 lines)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Municipal LSL program (bid)",
+   "red_flags": "Small regional bid contractor",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.ironmountaindailynews.com/news/local-news/2026/05/im-accepts-five-stars-bid-for-water-service-line-project/",
+    "https://www.ironmountaindailynews.com/news/local-news/2025/11/engineering-okd-for-im-lead-service-line-replacements/"
+   ]
+  },
+  {
+   "id": "mrj-inc",
+   "name": "MRJ Inc.",
+   "website": "",
+   "hq": "Not verified (Wisconsin work)",
+   "unit": "water",
+   "ownership": "Private (not verified)",
+   "independent": "unknown",
+   "services": "Lead service line replacement",
+   "customers": "City of Cedarburg, WI",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Municipal LSL program (bid)",
+   "red_flags": "No evidence found in round 2; municipal low-bid",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.gmtoday.com/news_graphic/news/cedarburg-council-approves-contract-for-lead-service-line-replacement-program/article_36b491b5-65bd-51b1-acd6-ea39e2400b8f.html"
+   ]
+  },
+  {
+   "id": "taplin-group",
+   "name": "Taplin Group, LLC",
+   "website": "",
+   "hq": "Kalamazoo, MI",
+   "unit": "water",
+   "ownership": "Taplin family businesses, about 70 years old (company material); roots in A&B Sewer Cleaning",
+   "independent": "yes",
+   "services": "Municipal sewer cleaning and CCTV inspection, industrial sewer cleaning, plus abatement, demolition and contaminated soil removal",
+   "customers": "City of St. Joseph, MI (FY2024 sewer cleaning and televising); City of Caro, MI ($66,250, Jul 2026)",
+   "size_hint": "Cleans and televises 2-3 million feet of pipe a year (Cleaner magazine)",
+   "recurring_evidence": "Annual municipal cleaning and televising programs awarded repeatedly",
+   "red_flags": "Municipal awards are low-bid (an avoid criterion). Environmental/demolition mix. No verified domain (only a Squarespace mirror seen).",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "no",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://sjcity.com/node/3396",
+    "https://citizenportal.ai/articles/9213110/Michigan/Tuscola-County/Caro-City/Caro-awards-66250-contract-to-Taplin-Group-for-sewer-line-cleaning-and-televising",
+    "https://www.cleaner.com/editorial/2019/02/a-family-business-flourishes-belowground",
+    "https://www.buildzoom.com/contractor/taplin-group-llc"
+   ]
+  },
+  {
+   "id": "doetsch-environmental",
+   "name": "Doetsch Environmental Services, Inc.",
+   "website": "",
+   "hq": "Warren, MI (21221 Mullin Ave)",
+   "unit": "water",
+   "ownership": "Family-owned; 4th and 5th generations run it; roots to 1898",
+   "independent": "yes",
+   "services": "Large-diameter sewer and interceptor cleaning with its own vacuum/jetting system (live sewers without bypass), pipeline inspection, catch basin cleaning, hydro-excavation, water main jetting, liquid hauling",
+   "customers": "Memphis interceptor project (with Compliance EnviroSystems); Pierre, SD flood cleanup; Nashville",
+   "size_hint": "60+ staff (dated directory listing); ~40% of work out of state (2015)",
+   "recurring_evidence": "Weak: mostly project-based large-diameter cleaning",
+   "red_flags": "Episodic project work; sources from 2015 or earlier; no verified website",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://trenchlesstechnology.com/all-in-the-family/",
+    "https://www.familybusinessmagazine.com/uncategorized/fifth-generation-industrial-cleaners/",
+    "https://www.stormwater.com/bmps/article/13015771/reader-profile-joe-schotthoefer",
+    "https://trenchlesstechnology.com/memphis-project-requires-specialized-cleaning-approach/",
+    "https://cars.superpages.com/warren-mi/bpp/doetsch-industrial-services-inc-460322754"
+   ]
+  },
+  {
+   "id": "cleanview-sewer",
+   "name": "Cleanview Sewer Inspections, LLC",
+   "website": "",
+   "hq": "Arizona (not verified)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Sewer CCTV inspection and cleaning",
+   "customers": "City of Chandler, AZ: 1-year agreement from Apr 27, 2026 with up to four 1-year renewals",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Multi-year municipal agreement (1+4 years)",
+   "red_flags": "No website or ownership found; likely won through competitive procurement",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://public.destinyhosted.com/chanddocs/2026/CC/20260420_2222/9601_5021-Cleanview.pdf"
+   ]
+  },
+  {
+   "id": "csc-pipe-inspection",
+   "name": "CSC Pipe Inspection (Commercial Sewer & Pipeline Inspection)",
+   "website": "https://cspipeinspection.com",
+   "hq": "Austin, TX",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "PACP-coded CCTV inspection and jetting",
+   "customers": "Lists Round Rock, Austin, Hutto, Kyle and San Marcos as partners",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Repeat work across several Central Texas cities",
+   "red_flags": "Ownership unknown; source page about 2.5 years old; municipal CCTV is often low-bid",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://cspipeinspection.com/"
+   ]
+  },
+  {
+   "id": "waterwise",
+   "name": "WaterWise Utility Solutions LLC",
+   "website": "https://www.waterwiseus.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Acoustic leak detection and non-revenue-water reduction: sounding hydrants, valves and services, correlator pinpointing, GIS documentation, staff training",
+   "customers": "Municipalities (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Utilities repeat leak surveys for water-loss programs",
+   "red_flags": "Ownership and size unknown; probably small",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.waterwiseus.com/"
+   ]
+  },
+  {
+   "id": "iwater",
+   "name": "iWater",
+   "website": "https://iwater.org",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Valve exercising (GPS locate, clean, operate, condition reports, database integration); hydrant maintenance, repair, painting and flushing; unidirectional flushing",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Valve and hydrant programs run on annual or multi-year cycles",
+   "red_flags": "Ownership unknown; may be partly a software/data business",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://iwater.org/professional-services/valve-exercising-services/"
+   ]
+  },
+  {
+   "id": "hydrant-com",
+   "name": "Hydrant.com",
+   "website": "https://hydrant.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Fire hydrant inspections, fire flow testing, hydrant surveys and flushing, valve exercising and surveys, GIS integration",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Hydrant and valve programs are recurring maintenance",
+   "red_flags": "Legal entity name and ownership unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://hydrant.com/"
+   ]
+  },
+  {
+   "id": "sc-environmental",
+   "name": "SC Environmental (SCE)",
+   "website": "https://www.sc-environmental.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Valve exercising programs, hydrant flushing, flow testing",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Programmatic valve and hydrant maintenance",
+   "red_flags": "Ownership and size unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.sc-environmental.com/valve-exercising-and-hydrant-services"
+   ]
+  },
+  {
+   "id": "rangeline",
+   "name": "Rangeline",
+   "website": "https://www.rangeline.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Water distribution services: fire hydrant exercising, isolation valve replacement, hydrant installation and repair",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Hydrant and valve maintenance programs",
+   "red_flags": "Ownership unknown; valve replacement leans toward project work",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.rangeline.com/water-distribution-services/hydrant-services/"
+   ]
+  },
+  {
+   "id": "municipal-diving",
+   "name": "Municipal Diving",
+   "website": "http://www.municipaldiving.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Potable water tank dive inspections and cleanings: 11-month warranty inspections and 3-year maintenance inspections under AWWA M42",
+   "customers": "Municipal water systems (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Offers 3-year maintenance inspection cycles",
+   "red_flags": "Ownership and size unknown",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "yes",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "http://www.municipaldiving.com/inspections/"
+   ]
+  },
+  {
+   "id": "viking-industrial-painting",
+   "name": "Viking Industrial Painting, LLC",
+   "website": "",
+   "hq": "La Vista, NE",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Water tank painting and maintenance plans",
+   "customers": "Iowa municipalities (Iowa League of Cities vendor listing)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Markets maintenance plans that spread tank capex as fixed annual expenses (multi-year tank-maintenance model)",
+   "red_flags": "Fixed-expense plans carry fixed-price risk. No own website found. Ownership unknown.",
+   "fit_score": 3,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "partial",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://iowaleague.org/services/5025"
+   ]
+  },
+  {
+   "id": "commercial-sewer-cleaning",
+   "name": "Commercial Sewer Cleaning Co., Inc.",
+   "website": "https://commercialsewercleaningin.com",
+   "hq": "Indianapolis, IN",
+   "unit": "water",
+   "ownership": "Family-owned, founded 1965 (company site)",
+   "independent": "yes",
+   "services": "Sewer cleaning and repair services",
+   "customers": "Commercial, industrial and municipal clients (none named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Commercial/industrial mix; no evidence of CCTV or municipal maintenance contracts",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://commercialsewercleaningin.com/about/"
+   ]
+  },
+  {
+   "id": "johnson-jet-line",
+   "name": "Johnson Jet-Line",
+   "website": "https://johnsonjet-line.com",
+   "hq": "Tri-state region (not verified)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Sewer cleaning and televising",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Ownership, size and customers unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://johnsonjet-line.com/"
+   ]
+  },
+  {
+   "id": "360-pipeline-inspections",
+   "name": "360 Pipeline Inspections",
+   "website": "https://360pipes.com",
+   "hq": "Folsom, CA",
+   "unit": "water",
+   "ownership": "Woman-owned small business (company site)",
+   "independent": "yes",
+   "services": "NASSCO PACP/MACP/LACP CCTV sewer inspection for California municipalities; 24-48 hour report turnaround",
+   "customers": "California municipalities (not named)",
+   "size_hint": "Small business",
+   "recurring_evidence": "Municipal condition-assessment work",
+   "red_flags": "Small; inspection only, no cleaning or rehab crews",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "yes"
+   },
+   "source_urls": [
+    "https://360pipes.com/cctv-sewer-inspection-sacramento/",
+    "https://360pipes.com/pipeline-inspection-chico-redding/"
+   ]
+  },
+  {
+   "id": "cit-sewer",
+   "name": "CIT Sewer Solutions",
+   "website": "https://citsewer.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "PACP-certified CCTV mainline inspection and lateral launch for municipalities and engineers",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Not established",
+   "red_flags": "Ownership and size unknown",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "unknown",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://citsewer.com/services/sewer-televising-mainline-and-lateral-launch/"
+   ]
+  },
+  {
+   "id": "water-tank-inspection-services",
+   "name": "Water Tank Inspection Services (division of Cross Marine Projects)",
+   "website": "http://watertankinspection.net",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Division of Cross Marine Projects (owner not verified)",
+   "independent": "unknown",
+   "services": "AWWA and NFPA-25 tank inspections, tank cleaning, corrosion control",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Periodic AWWA inspection cycles",
+   "red_flags": "Buyable only as a carve-out of Cross Marine Projects",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "yes",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "http://watertankinspection.net/"
+   ]
+  },
+  {
+   "id": "dixon-engineering",
+   "name": "Dixon Engineering",
+   "website": "",
+   "hq": "Michigan (not verified)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Water tank inspections and rehabilitation design",
+   "customers": "Lynchburg, VA 5-year tank inspection program; Escanaba, MI",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Lynchburg runs a 5-year inspection program using Dixon; Dixon recommends independent inspection every 5 years",
+   "red_flags": "An engineering/inspection firm, not a field-crew contractor; no website found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://projects.constructconnect.com/details/5909743-water-tank-rehabilitation-u0005-city-of-lynchburg&find_loc=VA-24504",
+    "https://www.escanaba.org/media/20336"
+   ]
+  },
+  {
+   "id": "classic-protective-coatings",
+   "name": "Classic Protective Coatings",
+   "website": "",
+   "hq": "Minnesota/Wisconsin (not verified)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Water tank painting and coatings",
+   "customers": "Minnesota municipalities via a consulting engineer that uses it exclusively (Orono, MN document)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Consultant expects to keep using it for the next 5-10 years",
+   "red_flags": "Coatings work is project-based; no website found",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "no",
+    "large_regional_national_customer": "partial",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://publicinfo.ci.orono.mn.us/WebLink/0/doc/141809/Page41.aspx"
+   ]
+  },
+  {
+   "id": "blood-hound",
+   "name": "Blood Hound",
+   "website": "https://www.bhug.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified (possibly PE-backed; check before outreach)",
+   "independent": "unknown",
+   "services": "Acoustic and noise-correlation water leak detection for municipal systems, alongside underground utility locating",
+   "customers": "Municipal and public water systems (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Recurring water-loss surveys",
+   "red_flags": "Main business is locating; ownership unverified",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.bhug.com/services/leak-detection/"
+   ]
+  },
+  {
+   "id": "arro",
+   "name": "ARRO (ARRO Consulting / ARRO Water Services)",
+   "website": "https://www.arroconsulting.com",
+   "hq": "Pennsylvania (not verified)",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Municipal leak detection with acoustic equipment and leak noise correlators, alongside engineering consulting",
+   "customers": "Municipal and privately owned water systems (not named)",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Leak detection programs",
+   "red_flags": "Engineering consultancy rather than a field-services contractor",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://www.arroconsulting.com/project/municipal-leak-detection-services",
+    "https://arrowaterservices.com/project/municipal-leak-detection-services-2/"
+   ]
+  },
+  {
+   "id": "tony-mcfadden",
+   "name": "Tony McFadden (valve and hydrant maintenance)",
+   "website": "https://tonymcfadden.com",
+   "hq": "Not verified",
+   "unit": "water",
+   "ownership": "Not verified",
+   "independent": "unknown",
+   "services": "Valve and hydrant maintenance",
+   "customers": "Not named",
+   "size_hint": "Unknown",
+   "recurring_evidence": "Valve and hydrant maintenance is programmatic",
+   "red_flags": "Thin information; may be a general contractor",
+   "fit_score": 2,
+   "platform_or_addon": "add-on",
+   "criteria": {
+    "recurring_maintenance": "partial",
+    "large_regional_national_customer": "unknown",
+    "specialized_labor_equipment": "partial",
+    "avoids_low_bid_fixed_price": "unknown",
+    "independent_available": "unknown"
+   },
+   "source_urls": [
+    "https://tonymcfadden.com/capabilities/valve-hydrant-maintenance/"
+   ]
+  }
+ ],
+ "counts": [
+  {
+   "unit": "gas",
+   "listed": 48,
+   "platform_grade": 10,
+   "addon_grade": 16,
+   "already_sponsored": 9,
+   "independent_platform_grade": 8,
+   "note": "Independent platform-grade: Heath Consultants, J.F. Kiely, R.H. White, Driver Pipeline, Larrett Energy, Diversified Utility Services, plus Banks Gas and R&R Pipeline (fit 4 but add-on scale). Sponsor-owned platform-grade: Sparus, Artera. Add-on grade includes 1 sponsored name (Pro-Vac). Sponsored: Sparus, Artera, USIC, Pro-Vac/Hydromax, GPT, Delphi, RJ Underground, SI Solutions, XCEL NDT. Dropped as public subsidiaries: Q3 Contracting (Primoris), ULC Technologies (SPX), Mid-Ohio Pipeline (APi Group)."
+  },
+  {
+   "unit": "power-gen",
+   "listed": 12,
+   "platform_grade": 5,
+   "addon_grade": 1,
+   "already_sponsored": 5,
+   "independent_platform_grade": 2,
+   "note": "Independent platform-grade: Day & Zimmermann (family-owned; not for sale, a benchmark) and Structural Integrity Associates (employee-owned, engineering-led). Shermco, RESA Power and Allied Power Group are platform-grade but sponsor-owned. MP Predictive Technologies merged into RESA Power. A thin bench: the new leads are small NETA testing shops with no ownership data."
+  },
+  {
+   "unit": "T&D",
+   "listed": 39,
+   "platform_grade": 4,
+   "addon_grade": 18,
+   "already_sponsored": 6,
+   "independent_platform_grade": 2,
+   "note": "Independent platform-grade: Davis H. Elliot (ESOP; ENR Top 150 specialty contractor) and Tomberlin Pole Treatment (family; add-on scale). Pike and Osmose are sponsor-owned. Add-on grade is mostly substation testing, pole inspection and cable-splicing shops with unverified ownership (1 sponsored: Novinium). Asplundh, Davey, Lewis Tree and East Coast Power are fit-3 platform-scale names, so they count in neither grade. J.W. Didado dropped (Quanta subsidiary)."
+  },
+  {
+   "unit": "water",
+   "listed": 48,
+   "platform_grade": 4,
+   "addon_grade": 13,
+   "already_sponsored": 8,
+   "independent_platform_grade": 2,
+   "note": "Independent platform-grade: Carylon (private, no sponsor found, but ownership and succession unconfirmed) and Pittsburg Tank & Tower (Johnston family). Maguire Iron is platform-grade but its ownership is unknown; USG Water is sponsor-owned. 9 names fail the low-bid screen (Spiniello, SAK, PURIS, Federal EC, Five Star, Fane, Ultra, MRJ, Taplin). 7 AMI/meter installers score recurring_maintenance=no. Hydromax merged into Pro-Vac (gas unit) and Inland Pipe Rehabilitation into PURIS."
+  }
+ ],
+ "notes": "INPUT AND MERGE: 174 input records (51 round-1, 123 round-2) became 147 candidates (gas 48, T&D 39, power-gen 12, water 48). No web search was done.\n- Six records were dropped as public companies or their subsidiaries: Q3 Contracting (Primoris, NASDAQ: PRIM; in both rounds), ULC Technologies (SPX, NYSE: SPXC; in both rounds), J.W. Didado (Quanta, NYSE: PWR) and Mid-Ohio Pipeline (APi Group, NYSE: APG).\n- 21 records were merged into existing ones. Michels, Heath, Kiely, Pittsburg Tank & Tower, Maguire, Carylon, Tank Maintenance Solutions, Robinson, DRC, M.E. Simpson, Vortex, SAK, Lewis Tree, Haugland, Power Services Group, National Electric Coil and Graycor were round-1 duplicates. Hydromax went into pro-vac-hydromax, and IPR/Inliner into puris. Precision Pipeline Services and Delphi Infrastructure Group are one MPE roll-up (new id delphi-infrastructure). MP Predictive Technologies went into resa-power (RESA acquired it in May 2025).\n- Round-1 ids are reused.\n- Where round 2 added verified evidence, it overrode round 1:\n  - Ownership: Heath is third-generation family; Kiely is a family-led group (HQ Tinton Falls, NJ); PTTG is owned by the Johnston family; Vortex is Quad-C; Power Services Group is Center Rock (HQ Cape Coral, FL); SAK is founder/management-owned.\n  - Size: Maguire has 50-100 employees.\n  - Fit changes: Kiely went from 3 to 4 and Vortex from 3 to 2.\n- Websites:\n  - 33 candidates have website \"\" (not found). They are kept as leads; no URL was invented.\n  - Carylon keeps the verified subsidiary site mdvpinc.com. Round 2's caryloncorp.com came from a search summary, so it is flagged rather than used.\n  - Niels Fugal (fugal.com) and PMI (prometers.com) use domains from a directory listing and a Google Sites host; both are flagged.\n  - One round-2 source URL was dropped from R.L. Coolsaet because it pointed to the Hanging H listing.\n\nCRITERIA RUBRIC (applied to both rounds):\n- recurring_maintenance: yes = recurring maintenance, compliance-cycle or MSA/unit-price program work; partial = maintenance mixed with replacement capex or project work; no = deployment, storm-only or project work.\n- large_regional_national_customer: yes = a large utility is named (e.g., Columbia Gas/NiSource, NW Natural, PG&E, PGW, NYC, FENOC/PSEG); partial = utilities served but unnamed, or small munis/co-ops; unknown = no information.\n- avoids_low_bid_fixed_price: no = public low-bid evidence (LSL, CIPP, municipal rehab) or bid-based project work.\n- independent_available: yes = family/founder/owner-operated per company or a credible source; partial = independent but with an obstacle (ESOP/employee-owned, carve-out from a private parent, active acquirer, or private with no sponsor found but ownership unconfirmed); no = PE/strategic-owned; unknown = no ownership information.\n- Normalization of round-1 scores:\n  - Sponsor-owned firms that round 1 scored 'partial' were set to 'no': Sparus, Artera, USIC, Osmose, HK Solutions, GPT, Premium Utility Contractor.\n  - ESOPs and carve-outs that round 1 scored 'yes' were set to 'partial': Davey, Wright Tree, Structural Integrity, Teichert.\n  - Where utilities are served but not named, 'unknown' was set to 'partial' (e.g., Spiniello, M.E. Simpson, Kiely).\n- Platform labels: USIC, Lewis Tree, Power Services Group, EthosEnergy and Azuria were relabelled 'platform' for their scale, and Larrett for its 501-1,000 employees.\n\nCOUNT DEFINITIONS:\n- platform_grade = fit_score >= 4 AND recurring_maintenance yes/partial AND avoids_low_bid_fixed_price != no. This applies the given definition literally, so Banks Gas, R&R Pipeline and Tomberlin (fit 4 but add-on scale) are included.\n- addon_grade = not platform-grade AND fit >= 3 AND recurring_maintenance yes/partial AND avoids_low_bid != no AND platform_or_addon != 'platform'. Large fit-3 platforms such as Asplundh, Danella and East Coast Power therefore count in neither grade. Add-on grade includes a few sponsor-owned names: Pro-Vac, Novinium and National Electric Coil (ownership unknown).\n- already_sponsored = independent 'no' (PE, infrastructure fund or private strategic owner).\n- independent_platform_grade = platform-grade AND independent_available yes/partial.\n\nTOP INDEPENDENT GAS PLATFORM LEADS FOR THE THESIS: R.H. White (MA; family since 1923; 500-600 employees; also does water), Larrett Energy (TX; 501-1,000 employees; cast-iron/bare-steel replacement), Driver Pipeline (TX; family), J.F. Kiely (NJ/NY/PA; gas plus water, but an acquirer itself) and Heath Consultants (TX; leak survey). Diversified Utility Services (Atlanta) is promising but thinly sourced.\n\nSTILL TO VERIFY:\n- Whether Larrett and Driver Pipeline are related.\n- Whether Precision Pipeline Solutions (NY) belongs to PrimeLine.\n- Loy Clark's safety history (2016 Portland explosion).\n- Danella's OSHA record.\n- ULC Technologies' status after 2020; it was dropped on the 2020 SPX acquisition evidence."
+}
