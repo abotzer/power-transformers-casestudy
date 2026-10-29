@@ -4,7 +4,7 @@
   "rank": 1,
   "unit": "Natural gas distribution MRO",
   "attractiveness": "High",
-  "why": "Best first platform, for four reasons.\n• Work is mandated and recurring under 49 CFR 192: annual leak surveys in business districts, annual cathodic protection checks, rectifier checks six times a year and annual regulator-station inspections.\n• Replacement is funded through state rate trackers, with bare steel running to ~2041 at UGI.\n• The target universe is bounded and knowable: ~240 DCA members.\n• It is the only unit with a real labor and fleet link to another unit. With water it shares ~53% of movable headcount and ~65% of fleet value (est.). It also ties into Imperial (meter brass, service and cable scrap), Transend (pipe freight) and Panther (fittings).\n\nRisks:\n• Artera, the same unit at scale, is distressed.\n• Centuri earns only 8.3%.\n• Cast iron is finite (~16K miles left).\n• The PHMSA leak rule was withdrawn.\n• Compliance contracts are often re-bid on unit price.",
+  "why": "Best first platform, for four reasons.\n• Work is mandated and recurring under 49 CFR 192: annual leak surveys in business districts, annual cathodic protection checks, rectifier checks six times a year and annual regulator-station inspections.\n• Replacement is funded through state rate trackers, with bare steel running to ~2041 at UGI.\n• The target universe is bounded and knowable: ~240 DCA members.\n• It is the only unit with a real labor and fleet link to another unit. With water it shares ~53% of movable headcount and ~65% of fleet value (est.). It also ties into Imperial (meter brass, service and cable scrap), Transend (pipe freight) and Panther (fittings).\n\nRisks:\n• Artera, the largest gas roll-up, is highly leveraged (rated CCC+ in 2022).\n• Centuri earns only 8.3%.\n• Cast iron is finite (~16K miles left).\n• The PHMSA leak rule was withdrawn.\n• Compliance contracts are often re-bid on unit price.",
   "tam": "$12-20B/yr outsourced (est.), from AGA's $33-37B/yr safety spend; gas utility construction capex $49.1B (2023)",
   "mro_share": "High: safety and replacement programs ($33-37B/yr) are the bulk of the $49.1B of construction capex (rough, mixed AGA measures)",
   "margin_range": "Centuri 8.3% adj. EBITDA; Quanta Underground 7.7% Q4 operating margin; ESOA 4.2%; specialty hydrovac up to 23.8% (Badger)",
@@ -17,13 +17,13 @@
   "rank": 2,
   "unit": "Water / wastewater",
   "attractiveness": "Medium",
-  "why": "Best as the second unit, bolted onto the gas platform in the same metros, not as the first.\n\nStrengths:\n• It is the most fragmented unit, with one >$1B player (Azuria/Inframark).\n• It has the second-largest candidate list, clustered in tank asset management and sewer cleaning.\n• Tank asset-management contracts (multi-year, fixed annual fee) are the closest match in the whole thesis to recurring maintenance with switching costs.\n\nWeaknesses:\n• Most customers are municipalities buying by low bid.\n• Lead-line replacement (LCRI, due Nov 2027) is in litigation.\n• FY2026 was the last year of IIJA supplemental SRF money.\n• Utilities do most O&M in-house.",
+  "why": "Best as the second unit, bolted onto the gas platform in the same metros, not as the first.\n\nStrengths:\n• It is the most fragmented unit, with one >$1B player (Azuria/Inframark).\n• It has the second-largest candidate list, clustered in tank asset management and sewer cleaning.\n• Tank asset-management contracts (multi-year, fixed annual fee) are the closest match in this report to recurring maintenance with switching costs.\n\nWeaknesses:\n• Most customers are municipalities buying by low bid.\n• Lead-line replacement (LCRI, due Nov 2027) is in litigation.\n• FY2026 was the last year of IIJA supplemental SRF money.\n• Utilities do most O&M in-house.",
   "tam": "$8-18B/yr outsourced (est.); EPA need $625B over 20 years (a need, not funded spend)",
   "mro_share": "O&M is 72% of public water spend ($82B of $113B, 2017) but mostly in-house; mains replaced at ~0.8%/yr",
   "margin_range": "No pure-water comp disclosed; ESOA (gas and water distribution) 4.2% adj. EBITDA; tank asset-management margins unverified",
   "fragmentation": "Highest: essentially one >$1B player; NAICS 237110 firm counts conflict across aggregators (8,000-17,653)",
   "competition": "Azuria/Inframark (New Mountain, >$2.5B), PURIS (J.F. Lehman), IPR, Vortex (Quad-C), Visu-Sewer (Fort Point), HK Solutions (CenterOak), Hydromax (IGP), USG Water Solutions (sponsor-owned)",
-  "candidates": "48 listed; 4 platform-grade: Pittsburg Tank & Tower (Johnston family), Carylon (ownership unconfirmed), Maguire Iron (ownership unknown), USG (sponsored). Nine names fail the low-bid screen."
+  "candidates": "48 listed; 4 platform-grade: Pittsburg Tank & Tower (Johnston family), Carylon (ownership unconfirmed), Maguire Iron (ownership unknown), USG (sponsored). Nine names depend on low-bid work."
  },
  {
   "id": "u3",
@@ -43,12 +43,12 @@
   "rank": 4,
   "unit": "Power-generation maintenance (incl. NETA testing, NDE)",
   "attractiveness": "Low",
-  "why": "Smallest pool, and partly shrinking:\n• Coal units average 45 years and retire at ~50.\n• OEM long-term service agreements and in-house staff take much of the ~$13B of maintenance spend.\n• Outage work is lumpy and seasonal.\n\nNuclear life extension (80-year licenses) is a real tailwind, but Appendix B quality requirements and Day & Zimmermann's multi-year fleet contracts protect incumbents. The precedents are the worst in the thesis: Williams went through Chapter 11, and Team earned 2.7-6.8%.\n\nEnter only through NETA testing or NDE add-ons, which are already being rolled up (Shermco, RESA).",
+  "why": "Smallest pool, and partly shrinking:\n• Coal units average 45 years and retire at ~50.\n• OEM long-term service agreements and in-house staff take much of the ~$13B of maintenance spend.\n• Outage work is lumpy and seasonal.\n\nNuclear life extension (80-year licenses) is a real tailwind, but Appendix B quality requirements and Day & Zimmermann's multi-year fleet contracts protect incumbents. The precedents are the weakest of the four units: Williams went through Chapter 11, and Team earned 2.7-6.8%.\n\nEnter only through NETA testing or NDE add-ons, which are already being rolled up (Shermco, RESA).",
   "tam": "$4-8B/yr outsourced of ~$13B plant maintenance (est.)",
   "mro_share": "~100% maintenance by definition, but only ~30-60% is outsourced to independents (est.)",
   "margin_range": "Mistras 12.6% adj. EBITDA; Team 6.8% FY2025 (2.7% Q1 2025); Williams failed",
   "fragmentation": "Concentrated in OEM service arms and 2-4 independents (Day & Zimmermann, BrandSafway, Team, Mistras); long tail of NETA shops",
   "competition": "OEM service arms (GE Vernova, Siemens Energy, Mitsubishi); Day & Zimmermann; Shermco (Blackstone), RESA (Kohlberg), Allied Power Group (Warren Equity), EthosEnergy (One Equity), Power Services Group, EnergySolutions",
-  "candidates": "12 listed; 5 platform-grade. Only Day & Zimmermann is confirmed independent, and it is not a seller; Structural Integrity Associates is employee-owned. Shermco, RESA Power and Allied Power Group are sponsor-owned."
+  "candidates": "12 listed; 5 platform-grade. Only Day & Zimmermann is confirmed independent, and it is unlikely to sell; Structural Integrity Associates is employee-owned. Shermco, RESA Power and Allied Power Group are sponsor-owned."
  }
 ]

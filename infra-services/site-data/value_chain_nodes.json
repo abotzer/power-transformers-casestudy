@@ -72,18 +72,6 @@
   "source_url": "https://imperialgp.com/about-us/"
  },
  {
-  "id": "fulton-sfe",
-  "name": "Stainless Foundry & Engineering (SFE)",
-  "layer": "S3",
-  "group": "Fulton portfolio",
-  "group_order": null,
-  "kind": "fulton",
-  "description": "Milwaukee stainless and high-alloy sand and investment castings (to ~200 lb) for energy, nuclear and power-generation OEMs; ~6-week lead times. Fits specialty valve bodies and outage replacement parts, not commodity ductile-iron valves.",
-  "size_label": "Est. $15-40M revenue (assumption)",
-  "ownership": "FAM SFE Holdings (Fulton, Feb 2024)",
-  "source_url": "https://www.formds.com/issuers/fam-sfe-holdings-llc"
- },
- {
   "id": "fulton-panther",
   "name": "Panther Metalflow",
   "layer": "S3",
@@ -450,7 +438,7 @@
   "group": "Gas distribution MRO",
   "group_order": 1,
   "kind": "company",
-  "description": "Closest public analogue to the thesis: gas and electric utility MSA replacement work, spun out of Southwest Gas (separation completed 2025). Base gross margin only 8.0%; adj. EBITDA 8.3%; net leverage cut to 2.5x.",
+  "description": "Closest public analogue to a gas maintenance platform: gas and electric utility MSA replacement work, spun out of Southwest Gas (separation completed 2025). Base gross margin only 8.0%; adj. EBITDA 8.3%; net leverage cut to 2.5x.",
   "size_label": "FY2025 revenue $2,983M; adj. EBITDA $249.0M",
   "ownership": "NYSE: CTRI",
   "source_url": "https://www.sec.gov/Archives/edgar/data/1981599/000198159926000017/centuriholdingsincex-991xq.htm"
@@ -474,7 +462,7 @@
   "group": "Gas distribution MRO",
   "group_order": 1,
   "kind": "company",
-  "description": "Small public gas and water distribution contractor in Appalachia: a scale reference for a FAM platform. Adj. EBITDA fell to 4.2% in FY2025.",
+  "description": "Small public gas and water distribution contractor in Appalachia: a scale reference for a new platform. Adj. EBITDA fell to 4.2% in FY2025.",
   "size_label": "FY2025 (Sep) revenue $411.0M",
   "ownership": "NASDAQ: ESOA",
   "source_url": "https://www.sec.gov/Archives/edgar/data/1357971/000110465925119864/tm2533149d1_ex99-1.htm"
@@ -666,7 +654,7 @@
   "group": "Regional independents (aggregate)",
   "group_order": 6,
   "kind": "aggregate",
-  "description": "Thousands of small and mid-size gas main, service and integrity contractors inside NAICS 237120/237110; part of ~18,877 utility-system construction firms (2017 Economic Census via NUCA). The pool FAM would buy from.",
+  "description": "Thousands of small and mid-size gas main, service and integrity contractors inside NAICS 237120/237110; part of ~18,877 utility-system construction firms (2017 Economic Census via NUCA). The pool a new platform would buy from.",
   "size_label": "Est. $5.4-10.7B/yr in-scope",
   "ownership": "",
   "source_url": "https://nuca.com/wp-content/uploads/2026/05/Fact-Sheet2026.pdf"
@@ -870,7 +858,7 @@
   "group": "Pipelines",
   "group_order": null,
   "kind": "aggregate",
-  "description": "Integrity digs, in-line inspection follow-up and maintenance; adjacent to, not inside, the thesis TAM.",
+  "description": "Integrity digs, in-line inspection follow-up and maintenance; adjacent to, not inside, the core maintenance market.",
   "size_label": "Integrity and maintenance services in est. $1.4-3.0B",
   "ownership": "",
   "source_url": ""
@@ -882,7 +870,7 @@
   "group": "Data-center and C&I owners",
   "group_order": null,
   "kind": "aggregate",
-  "description": "Owners of behind-the-meter substations and switchgear that buy NETA acceptance and maintenance testing; Shermco's fastest-growing customers. Outside the thesis TAM.",
+  "description": "Owners of behind-the-meter substations and switchgear that buy NETA acceptance and maintenance testing; Shermco's fastest-growing customers. Outside the core maintenance market.",
   "size_label": "Testing services in est. $0.8-1.55B",
   "ownership": "",
   "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
@@ -1018,5 +1006,17 @@
   "size_label": "Federal water share ~4% of spending (2017)",
   "ownership": "",
   "source_url": "https://www.everycrsreport.com/reports/IF13177.html"
+ },
+ {
+  "id": "prospect",
+  "name": "New gas platform",
+  "layer": "B",
+  "group": "Prospective",
+  "group_order": -1,
+  "kind": "prospect",
+  "description": "A founder-owned gas distribution maintenance contractor of about $50M revenue, as a first platform that later adds water underground work in the same metros. The flows shown are estimates for a company of that size, not a specific target.",
+  "size_label": "~$50M revenue; 9-11% EBITDA (est.)",
+  "ownership": "Founder- or family-owned at entry",
+  "source_url": "https://directory.dcaweb.org/"
  }
 ]

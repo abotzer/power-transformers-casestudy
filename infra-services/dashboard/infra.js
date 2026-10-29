@@ -1,6 +1,6 @@
 // ---------- infra report: renderers ----------
 const UNIT_LABEL = { gas: 'Natural gas', 'power-gen': 'Power generation', 'T&D': 'T&D and electrical', water: 'Water and wastewater' };
-const VERDICT_ATTR = { 'Supports thesis': 'High', Mixed: 'Medium', 'Challenges thesis': 'Low' };
+const TAG_ATTR = { Favorable: 'High', Mixed: 'Medium', Watch: 'Low' };
 function byOrder(a, b) { return (num(a.order) || 0) - (num(b.order) || 0); }
 function linkTo(url, text) {
   const u = safeUrl(url);
@@ -27,36 +27,40 @@ function sourceLinks(list) {
 function renderSummary() {
   const box = document.getElementById('fam-summary');
   if (!prep(box, ['plan'])) return;
-  rows('plan').filter((r) => r.kind === 'summary').forEach((r) => {
+  box.appendChild(mk('div', 'tx-bottom-label', 'Our verdict'));
+  const grid = mk('div', 'tx-verdict-grid');
+  rows('plan').filter((r) => r.kind === 'verdict').sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
-    box.appendChild(mk('div', 'tx-bottom-label', r.heading, 'plan', 'heading', w));
-    box.appendChild(mk('p', 'tx-bottom-text tx-pre', r.body, 'plan', 'body', w));
+    const sec = mk('div', 'tx-verdict-sec');
+    sec.appendChild(mk('h3', 'tx-verdict-h', r.heading, 'plan', 'heading', w));
+    sec.appendChild(mk('p', 'tx-bottom-text tx-pre', r.body, 'plan', 'body', w));
+    grid.appendChild(sec);
   });
+  box.appendChild(grid);
 }
 
-function renderAnswers() {
-  const el = document.getElementById('answers-grid');
-  if (!prep(el, ['answers', 'answer_numbers'])) return;
-  const nums = rows('answer_numbers');
-  rows('answers').slice().sort((a, b) => num(a.q) - num(b.q)).forEach((r) => {
+function renderFindings() {
+  const el = document.getElementById('findings-grid');
+  if (!prep(el, ['key_findings', 'key_numbers'])) return;
+  const nums = rows('key_numbers');
+  rows('key_findings').slice().sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
     const card = mk('article', 'tx-ans');
     const top = mk('div', 'tx-ans-top');
-    top.appendChild(mk('span', 'tx-ans-q', 'Q' + fmtVal(num(r.q)), 'answers', 'q', w));
-    const chip = mk('span', 'tx-chip', r.verdict, 'answers', 'verdict', w);
-    chip.setAttribute('data-attr', VERDICT_ATTR[r.verdict] || 'Medium');
+    top.appendChild(mk('h3', 'tx-ans-title', r.topic, 'key_findings', 'topic', w));
+    const chip = mk('span', 'tx-chip', r.tag, 'key_findings', 'tag', w);
+    chip.setAttribute('data-attr', TAG_ATTR[r.tag] || 'Medium');
     top.appendChild(chip);
     card.appendChild(top);
-    card.appendChild(mk('h3', 'tx-ans-title', r.question, 'answers', 'question', w));
-    card.appendChild(mk('p', 'tx-ans-short', r.short_answer, 'answers', 'short_answer', w));
-    const kn = nums.filter((n) => String(n.q) === String(r.q)).slice(0, 4);
+    card.appendChild(mk('p', 'tx-ans-short', r.summary, 'key_findings', 'summary', w));
+    const kn = nums.filter((n) => n.finding === r.id).sort(byOrder).slice(0, 4);
     if (kn.length) {
       const strip = mk('div', 'tx-ans-nums');
       kn.forEach((n) => {
         const nw = 'id=' + encodeURIComponent(n.id);
         const b = mk('div', 'tx-ans-num');
-        b.appendChild(mk('div', 'tx-ans-val', n.value, 'answer_numbers', 'value', nw));
-        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'answer_numbers', 'label', nw));
+        b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
+        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
         strip.appendChild(b);
       });
       card.appendChild(strip);
@@ -64,9 +68,21 @@ function renderAnswers() {
     const d = document.createElement('details');
     d.className = 'tx-ans-more';
     d.appendChild(mk('summary', null, 'The evidence'));
-    d.appendChild(mk('p', 'tx-pre', r.answer, 'answers', 'answer', w));
+    d.appendChild(mk('p', 'tx-pre', r.body, 'key_findings', 'body', w));
     d.appendChild(sourceLinks(r.sources));
     card.appendChild(d);
+    el.appendChild(card);
+  });
+}
+
+function renderProfile() {
+  const el = document.getElementById('prospect-grid');
+  if (!prep(el, ['plan'])) return;
+  rows('plan').filter((r) => r.kind === 'profile').sort(byOrder).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const card = mk('div', 'tx-card');
+    card.appendChild(mk('h3', 'tx-card-title', r.heading, 'plan', 'heading', w));
+    card.appendChild(mk('p', 'tx-profile-text', r.body, 'plan', 'body', w));
     el.appendChild(card);
   });
 }
@@ -324,25 +340,6 @@ function drawGeneric(el, legend, m, list) {
   addLegend(legend, series, colorOf);
 }
 
-function renderClaims() {
-  const el = document.getElementById('claims-list');
-  if (!prep(el, ['deck_claims'])) return;
-  const attr = { true: 'High', 'mostly true': 'High', misleading: 'Medium', false: 'Low', unverifiable: 'Low' };
-  rows('deck_claims').sort(byOrder).forEach((r) => {
-    const w = 'id=' + encodeURIComponent(r.id);
-    const card = mk('article', 'tx-claim');
-    const top = mk('div', 'tx-claim-top');
-    top.appendChild(mk('p', 'tx-claim-text', r.claim, 'deck_claims', 'claim', w));
-    const chip = mk('span', 'tx-chip', r.verdict, 'deck_claims', 'verdict', w);
-    chip.setAttribute('data-attr', attr[String(r.verdict).toLowerCase()] || 'Medium');
-    top.appendChild(chip);
-    card.appendChild(top);
-    card.appendChild(mk('p', null, r.better_statement, 'deck_claims', 'better_statement', w));
-    if (safeUrl(r.source_url)) card.appendChild(srcLine(null, r.source_url));
-    el.appendChild(card);
-  });
-}
-
 function renderPlatforms() {
   const el = document.getElementById('prec-board');
   if (!prep(el, ['platforms'])) return;
@@ -488,11 +485,11 @@ function renderRanking() {
 }
 
 function renderPlan() {
-  const ids = ['plan-first', 'plan-vi', 'plan-edits', 'plan-risks', 'plan-signals', 'caveats-text'];
+  const ids = ['plan-first', 'plan-vi', 'plan-risks', 'plan-signals', 'caveats-text'];
   const els = ids.map((i) => document.getElementById(i));
   const ok = els.map((e) => prep(e, ['plan']));
   if (!ok[0]) return;
-  const [first, vi, edits, risks, signals, cav] = els;
+  const [first, vi, risks, signals, cav] = els;
   rows('plan').sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
     if (r.kind === 'first_unit') {
@@ -505,8 +502,7 @@ function renderPlan() {
       li.appendChild(document.createTextNode(' — '));
       li.appendChild(mk('span', null, r.body, 'plan', 'body', w));
       ({ vi: vi, risk: risks, signal: signals })[r.kind].appendChild(li);
-    } else if (r.kind === 'edit') edits.appendChild(mk('li', null, r.body, 'plan', 'body', w));
-    else if (r.kind === 'caveat') cav.appendChild(mk('span', null, r.body, 'plan', 'body', w));
+    } else if (r.kind === 'caveat') cav.appendChild(mk('span', null, r.body, 'plan', 'body', w));
   });
 }
 
@@ -585,6 +581,7 @@ const SRC_TABLE = {
 document.getElementById('vc-select').addEventListener('change', (ev) => vcSelect(ev.target.value || null));
 document.getElementById('vc-fulton').addEventListener('change', () => { drawValueChain(); scheduleGlossary(); });
 document.getElementById('vc-clear').addEventListener('click', () => vcSelect(null));
+document.getElementById('vc-prospect').addEventListener('click', () => vcSelect('prospect'));
 document.getElementById('gloss-search').addEventListener('input', () => renderTable(GLOSS_TABLE));
 document.getElementById('src-search').addEventListener('input', () => renderTable(SRC_TABLE));
 ['cand-unit', 'cand-platform', 'cand-free', 'cand-search'].forEach((id) => document.getElementById(id).addEventListener(id === 'cand-search' ? 'input' : 'change', () => { renderCandidates(); scheduleGlossary(); }));
@@ -592,12 +589,12 @@ document.getElementById('src-search').addEventListener('input', () => renderTabl
 let linked = false;
 function renderAll() {
   [
-    fillMarks, renderSummary, renderAnswers, drawValueChain, renderSteps,
+    fillMarks, renderSummary, drawValueChain, renderFindings, renderSteps, renderProfile,
     () => renderTiles('tiles-market', 'market'),
     () => renderChartCards('charts-aging', 'aging'), () => renderChartCards('charts-demand', 'demand'),
     () => renderChartCards('charts-competition', 'competition'), () => renderChartCards('charts-economics', 'economics'),
     () => renderChartCards('charts-synergies', 'synergies'), () => renderChartCards('charts-candidates', 'candidates'),
-    renderClaims, renderWatchTimeline, renderPlatforms, renderCandidates, renderRanking, renderPlan,
+    renderWatchTimeline, renderPlatforms, renderCandidates, renderRanking, renderPlan,
     () => renderTable(WATCH_TABLE), () => renderTable(SCALED_TABLE), () => renderTable(PL_TABLE), () => renderTable(SYN_TABLE),
     () => renderTable(CAND_TABLE), () => renderTable(SRC_TABLE), () => renderTable(GLOSS_TABLE),
   ].forEach((f) => {

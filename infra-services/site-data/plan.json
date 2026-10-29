@@ -4,315 +4,273 @@
   "kind": "headline",
   "order": 0,
   "heading": "Headline",
-  "body": "The market is real and funded through utility rates, but this is a crowded, thin-margin roll-up category. Crews do not flex across gas, power and water, and margins do not grow with scale. FAM should start with one founder-owned gas maintenance platform bought at about 6-8x EBITDA, not a three-unit holding company."
+  "body": "Utility infrastructure maintenance is a large market funded through regulated rates, and a well-trodden roll-up category with moderate margins. Crews and equipment are largely specific to each utility type, and margins change little with scale, which favors starting with one founder-owned gas distribution maintenance platform at about 6-8x EBITDA and adding units over time."
  },
  {
-  "id": "summary",
-  "kind": "summary",
+  "id": "verdict0",
+  "kind": "verdict",
   "order": 1,
-  "heading": "Our verdict",
-  "body": "FAM's plan is a utility-infrastructure maintenance roll-up, a model others have run many times. The category is validated: Shermco (~$1.6B to Blackstone), Pike (>$5B EV reported), USIC, Osmose and Azuria/Inframark were profitable sponsor exits. The three-unit holding company is not validated. No one has built a scaled gas + power + water maintenance platform. The closest attempts failed (Williams, Orbital) or are distressed (Artera, the gas analogue).\n\nThe demand case holds for maintenance and replacement that utilities fund through their rates:\n• investor-owned electric capex of ~$208B in 2025\n• gas utility construction capex of $49.1B in 2023\n• federally mandated gas inspection cycles\n• 50-55% of distribution transformers older than 33 years\n• water mains replaced on a ~125-year cycle\n• nuclear plants licensed to 80 years\n\nPopulation growth (+0.5%) and headline load growth are weak drivers, or mostly fund construction.\n\nThree deck claims fail:\n• '<10 scaled players' is false. There are 15-20, plus 26 sponsor-backed platforms.\n• Crews do not flex across gas, power and water. Only ~15-27% of field headcount can move between units; the exception is gas-water at ~53% (est.).\n• Margins do not expand with scale. MSA work earns 8-10% at any size.\n\nThe outsourced MRO market is ~$44-81B a year (est.). Recommended sequence:\n• Start with one founder-owned gas distribution maintenance platform bought at ~6-8x EBITDA.\n• Add water underground work in the same metros.\n• Treat T&D as a later, separate company.\n• Enter power-gen only through testing or inspection add-ons.\n\nUnderwrite 9-11% margins and cash yield, not multiple arbitrage."
+  "heading": "The market",
+  "body": "Outsourced maintenance across gas, power and water is about $44-81B a year (est.), paid for through utility rates. Maintenance and replacement demand is supported by:\n• investor-owned electric capex of ~$208B in 2025\n• gas utility construction capex of $49.1B in 2023\n• federally mandated gas inspection cycles\n• 50-55% of distribution transformers older than 33 years\n• water mains replaced on a ~125-year cycle\n• nuclear plants licensed to 80 years\nPopulation growth (+0.5%) and headline load growth add less: they mostly fund new construction."
+ },
+ {
+  "id": "verdict1",
+  "kind": "verdict",
+  "order": 2,
+  "heading": "The category",
+  "body": "Maintenance roll-ups are a proven model. Shermco (~$1.6B to Blackstone), Pike (>$5B EV reported), USIC, Osmose and Azuria/Inframark were profitable sponsor exits. Multi-unit platforms have a weaker record: no one has built a scaled gas + power + water maintenance platform, the closest attempts failed (Williams, Orbital), and Artera, the largest gas roll-up, is highly leveraged. At least 26 sponsor-backed platforms compete for the same add-ons."
+ },
+ {
+  "id": "verdict2",
+  "kind": "verdict",
+  "order": 3,
+  "heading": "Figures that should be revalidated",
+  "body": "• Scaled players: public data shows 15-20 companies with revenue around or above $1B, plus 26 sponsor-backed platforms, though fewer than 10 in each sub-segment.\n• Shared crews and equipment: only ~15-27% of field headcount can move between power and gas or water (est.). Gas and water share more, at ~53%.\n• Margins at scale: maintenance contracts earn about 8-10% EBITDA at most sizes. Scale mainly lifts the valuation multiple.\n• Provider count: 18,877 utility-system construction firms (Census 2017), down from 25,227 in 2012. The maintenance-focused pool is much smaller.\n• Asset age: NREL's transformer data, PHMSA's pipe inventory and the Utah State water main survey are stronger sources than grid-wide age estimates."
+ },
+ {
+  "id": "verdict3",
+  "kind": "verdict",
+  "order": 4,
+  "heading": "A path the evidence favors",
+  "body": "• Start with one founder-owned gas distribution maintenance platform at ~6-8x EBITDA.\n• Add water underground work in the same metros.\n• Consider T&D later, as a separate operating company.\n• Approach power generation, if at all, through testing or inspection add-ons.\nA 9-11% margin and cash yield are a sounder underwriting basis than multiple expansion."
  },
  {
   "id": "first_unit",
   "kind": "first_unit",
-  "order": 2,
-  "heading": "Start with",
+  "order": 8,
+  "heading": "A possible starting point",
   "body": "Natural gas distribution maintenance, built as an underground-utility platform that later adds water and wastewater work in the same metros"
  },
  {
   "id": "rationale",
   "kind": "rationale",
-  "order": 3,
+  "order": 9,
   "heading": "Why",
-  "body": "Gas distribution maintenance is the only unit that combines four advantages:\n1. Recurring work that is mandated on a calendar (49 CFR 192 leak surveys, cathodic protection, regulator inspections), plus replacement programs funded through state rate trackers.\n2. A bounded target universe (~240 DCA members) that still includes founder-owned regional firms not held by sponsors.\n3. The one real cross-unit synergy: gas shares crews and fleet with water underground work (~53% of movable headcount, ~65% of fleet value, est.).\n4. The most direct links to FAM's metals, fittings and freight businesses.\n\nIt also carries the clearest warning. Artera, the same unit built at scale with heavy debt, is distressed, and Centuri earns 8.3%. FAM's edge is to buy small, at ~6-8x, with low leverage and no forced exit.\n\nT&D is larger but picked over. Power-gen is small and dominated by OEM service arms."
+  "body": "Gas distribution maintenance is the only unit that combines four advantages:\n1. Recurring work that is mandated on a calendar (49 CFR 192 leak surveys, cathodic protection, regulator inspections), plus replacement programs funded through state rate trackers.\n2. A bounded target universe (~240 DCA members) that still includes founder-owned regional firms not held by sponsors.\n3. The one sizable cross-unit synergy: gas shares crews and fleet with water underground work (~53% of movable headcount, ~65% of fleet value, est.).\n4. The most direct links to Fulton's metals, fittings and freight businesses.\n\nIt also carries the clearest caution: Artera, the largest gas roll-up, is highly leveraged, and Centuri earns 8.3%. Buying small, at ~6-8x, with low leverage and no forced exit is the natural edge for permanent capital.\n\nT&D is larger but heavily consolidated. Power generation is smaller and dominated by equipment makers' service arms."
  },
  {
   "id": "step00",
   "kind": "step",
   "order": 10,
   "heading": "Step 1",
-  "body": "Nov 2026: Rewrite the deck with the edits listed below and narrow unit 1 to gas distribution MRO. Adopt these screens: ~6-8x EBITDA entry; at least two utility MSA customers; most revenue from MSA or unit-rate maintenance (not fixed-price or one-off low-bid work); a clean OSHA and EMR record; and leverage far below the level that broke Artera."
+  "body": "Nov 2026: Consider focusing the first unit on gas distribution maintenance, with entry screens such as ~6-8x EBITDA; at least two utility MSA customers; most revenue from MSA or unit-rate maintenance rather than fixed-price or one-off low-bid work; a clean OSHA and EMR record; and leverage well below the levels that strained Artera."
  },
  {
   "id": "step01",
   "kind": "step",
   "order": 11,
   "heading": "Step 2",
-  "body": "Nov-Dec 2026: Build a primary-source list of 40-60 founder- or family-owned gas contractors with $20-100M of revenue. Sources: the DCA directory (~240 members), state PUC filings on utility replacement programs (NJ, NY, MA, PA and MI hold the most remaining cast iron) and utility contractor prequalification lists."
+  "body": "Nov-Dec 2026: It may help to build a primary-source list of 40-60 founder- or family-owned gas contractors with $20-100M of revenue, drawing on the DCA directory (~240 members), state PUC filings on utility replacement programs (NJ, NY, MA, PA and MI hold the most remaining cast iron) and utility contractor prequalification lists."
  },
  {
   "id": "step02",
   "kind": "step",
   "order": 12,
   "heading": "Step 3",
-  "body": "Dec 2026: Approach the independent gas regionals first: Heath Consultants, R.H. White, Driver Pipeline and Larrett Energy, Banks Gas Services and Diversified Utility Services, plus J.F. Kiely once family control is confirmed. Check each one's size before the first call. Treat Danella as conditional on passing a safety screen. Skip sponsor auctions priced above the screen."
+  "body": "Dec 2026: The independent gas regionals look like natural first conversations: Heath Consultants, R.H. White, Driver Pipeline and Larrett Energy, Banks Gas Services and Diversified Utility Services, and J.F. Kiely once family control is confirmed. Checking each one's size beforehand would save time. Danella would merit a safety review first, and sponsor auctions priced above the screen may be worth passing over."
  },
  {
   "id": "step03",
   "kind": "step",
   "order": 13,
   "heading": "Step 4",
-  "body": "Q1 2027: Diligence each platform candidate on MSA terms and renewal dates, customer tenure, revenue mix by work type, PHMSA operator-qualification records, union status (UA/DCA vs non-union), and equipment ownership and fleet age. Target one LOI by the end of Q1 2027 for a ~$50M-revenue platform (illustratively ~$5.5M EBITDA, ~$37-46M EV at 6.8-8.3x)."
+  "body": "Q1 2027: Diligence could focus on MSA terms and renewal dates, customer tenure, revenue mix by work type, PHMSA operator-qualification records, union status (UA/DCA vs non-union), and equipment ownership and fleet age. A reasonable milestone is one letter of intent by the end of Q1 2027 for a ~$50M-revenue platform (illustratively ~$5.5M EBITDA, ~$37-46M EV at 6.8-8.3x)."
  },
  {
   "id": "step04",
   "kind": "step",
   "order": 14,
   "heading": "Step 5",
-  "body": "2027: Make the first add-ons inside the platform's existing utility territories: leak survey, cathodic protection and regulator-station maintenance (all mandated under 49 CFR 192), plus hydro-excavation. The goal is density (est. 100-300 bps) and a larger share of each utility's spend."
+  "body": "2027: First add-ons could sit inside the platform's existing utility territories: leak survey, cathodic protection and regulator-station maintenance (all mandated under 49 CFR 192), plus hydro-excavation. These build density (est. 100-300 bps) and a larger share of each utility's spend."
  },
  {
   "id": "step05",
   "kind": "step",
   "order": 15,
   "heading": "Step 6",
-  "body": "2027: Set up a lean holdco covering safety, operator-qualification records, insurance and fleet purchasing. Budget ~1-2% of revenue for it, and plan for a margin dip around $150M of revenue."
+  "body": "2027: A lean shared-services layer for safety, operator-qualification records, insurance and fleet purchasing would likely cost ~1-2% of revenue; a temporary margin dip around $150M of revenue is common."
  },
  {
   "id": "step06",
   "kind": "step",
   "order": 16,
   "heading": "Step 7",
-  "body": "2027, after the D.C. Circuit rules on LCRI: Add water underground work in the same metros. Take lead service lines only under negotiated or unit-rate programs. Also add sewer cleaning and CCTV, and tank asset management (Carylon, Pittsburg Tank & Tower or Maguire, after ownership checks)."
+  "body": "2027, after the D.C. Circuit rules on LCRI: Water underground work in the same metros is a natural second step, ideally taking lead service lines only under negotiated or unit-rate programs. Sewer cleaning and CCTV, and tank asset management (Carylon, Pittsburg Tank & Tower or Maguire, after ownership checks), are related options."
  },
  {
   "id": "step07",
   "kind": "step",
   "order": 17,
   "heading": "Step 8",
-  "body": "Nov 2026-2027: Run the portfolio links as small pilots. Imperial quotes buybacks of meter brass, service-line and cable scrap from the platform and its utility customers. Transend quotes pipe freight. Panther and SFE quote fittings and specialty castings. Spend no capex without purchase orders."
+  "body": "Nov 2026-2027: Links with Fulton's companies could start as small pilots: Imperial quoting buybacks of meter brass, service-line and cable scrap; Transend quoting pipe freight; Panther quoting fittings. Committing capex only against purchase orders keeps the downside small."
  },
  {
   "id": "step08",
   "kind": "step",
   "order": 18,
   "heading": "Step 9",
-  "body": "2028 and later: Revisit T&D as a separate operating company only if a lower-middle-market distribution-maintenance or substation-testing firm is available within the screen. Enter power-gen only through NETA or NDE add-ons."
+  "body": "2028 and later: T&D could be revisited as a separate operating company if a lower-middle-market distribution-maintenance or substation-testing firm becomes available within the screen. Power generation looks best approached through NETA testing or NDE add-ons."
  },
  {
   "id": "step09",
   "kind": "step",
   "order": 19,
   "heading": "Step 10",
-  "body": "Review gates: in Jan 2027, decide go or no-go on the target list. In mid-2027, commit to or stop the first platform. Each year after, re-underwrite against the watchlist and signals."
+  "body": "Review points: a go or no-go on the target list in Jan 2027, a decision on the first platform in mid-2027, and a yearly re-underwriting against the watchlist and signals."
+ },
+ {
+  "id": "profile0",
+  "kind": "profile",
+  "order": 30,
+  "heading": "Profile",
+  "body": "A founder- or family-owned gas distribution maintenance contractor with about $50M of revenue and a 9-11% EBITDA margin (est.), working under MSAs with two to four gas utilities in one region. Typical work: main and service replacement, leak survey and repair, meter and regulator work, and cathodic protection."
+ },
+ {
+  "id": "profile1",
+  "kind": "profile",
+  "order": 31,
+  "heading": "Who it would sell to",
+  "body": "Gas distribution utilities (LDCs) under multi-year MSAs and unit-rate programs, about $30-40M a year (est.); transmission pipeline operators for integrity digs, $2-5M; and, in a second phase, water utilities in the same metros, $5-10M. The utilities recover this spending through state rate trackers paid by households and businesses."
+ },
+ {
+  "id": "profile2",
+  "kind": "profile",
+  "order": 32,
+  "heading": "Who it would buy from",
+  "body": "Field crews (pipelayers, operators, laborers, CDL drivers; UA/DCA or merit shop), about $16-20M a year in wages; paving, restoration and traffic-control subcontractors, $3-6M; insurance and surety, $1.5-2.5M; equipment rental, $1-2.5M; materials the utility does not furnish, from distributors such as Core & Main, $1-3M; vacuum excavators and drills from makers such as Vermeer; and hydro-excavation subcontractors such as Badger (all est.)."
+ },
+ {
+  "id": "profile3",
+  "kind": "profile",
+  "order": 33,
+  "heading": "Who it would compete with for work",
+  "body": "Centuri, Artera (Miller Pipeline, Minnesota Limited) and Energy Services of America at scale; Quanta and MasTec units on larger programs; and regional independents in each territory. Utilities re-bid MSAs every three to five years, so safety record and unit prices decide renewals."
+ },
+ {
+  "id": "profile4",
+  "kind": "profile",
+  "order": 34,
+  "heading": "Who it would compete with for deals",
+  "body": "Sponsor-backed platforms buying gas and underground add-ons, including Sparus (Ridgemont), Delphi Infrastructure (MPE), USIC and Pro-Vac, plus public consolidators. Founder-owned firms sold off-market tend to price at ~6-8x EBITDA; auctions run higher."
+ },
+ {
+  "id": "profile5",
+  "kind": "profile",
+  "order": 35,
+  "heading": "Add-on paths",
+  "body": "Inside its territories: leak survey, cathodic protection, regulator-station maintenance and hydro-excavation. In the same metros: water main and service work, sewer cleaning and CCTV, and tank asset management."
  },
  {
   "id": "vi00",
   "kind": "vi",
   "order": 40,
   "heading": "Imperial Group",
-  "body": "Buyback and granulation of copper and aluminum cable retired during reconductoring, undergrounding and cable replacement ($150-500M/yr addressable market (est.; not current sales; overlaps the transformer report's reconductoring scrap, so not additive))"
+  "body": "Buys the platform's meter brass, steel service-line and cable scrap; small direct volumes (~$0.05-0.3M a year, est.). The larger opening is an introduction to the platform's utility customers, whose replacement programs generate $10-45M a year of gas scrap and $30-80M of lead and brass from water work (addressable market, est.)."
  },
  {
   "id": "vi01",
   "kind": "vi",
   "order": 41,
-  "heading": "Imperial Group",
-  "body": "Lead service-line pipe and brass meters and fittings from lead-line replacement and meter swaps ($30-80M/yr addressable market (est.; depends on the pending D.C. Circuit LCRI ruling))"
+  "heading": "Transend Logistics",
+  "body": "Moves pipe and materials from distributor yards to the platform's job sites (~$0.2-0.6M a year, est.), and could quote the pipe makers that supply the platform's utility customers."
  },
  {
   "id": "vi02",
   "kind": "vi",
   "order": 42,
-  "heading": "Imperial Group",
-  "body": "Cast-iron and bare-steel main, steel service and meter scrap from gas replacement programs ($10-45M/yr addressable market (est.; small: most cast iron is abandoned in place, and ferrous scrap is outside Imperial's non-ferrous core, so it would be brokered))"
+  "heading": "Panther Metalflow",
+  "body": "Machined brass and steel fittings and meter-set components, sold through the platform's distributors or specified on its jobs (~$0.05-0.3M a year, est.). Most major materials are furnished by the utilities."
  },
  {
   "id": "vi03",
   "kind": "vi",
   "order": 43,
-  "heading": "Transend Logistics",
-  "body": "Flatbed and truckload freight of PE, PVC and ductile pipe from plants to distributor yards, plus the platform's own material moves ($80-270M/yr addressable market (est.; standard flatbed, no heavy-haul capability needed))"
+  "heading": "AFCO Industries",
+  "body": "Aluminum compartments and toolboxes for the platform's truck bodies, through upfitters (~$0.05-0.1M a year, est.)."
  },
  {
   "id": "vi04",
   "kind": "vi",
   "order": 44,
-  "heading": "Panther (machining)",
-  "body": "Swiss-turned brass and steel fittings, service-valve and meter-set components for gas distribution ($25-100M/yr addressable market (est.; Panther could take a small slice))"
+  "heading": "Stainless Foundry & Engineering",
+  "body": "Occasional specialty castings for regulator-station and valve rebuilds; not sized."
  },
  {
   "id": "vi05",
   "kind": "vi",
   "order": 45,
-  "heading": "Stainless Foundry & Engineering",
-  "body": "Stainless and high-alloy replacement castings (pump, valve and turbine parts) for nuclear and gas-plant outages ($20-90M/yr addressable market (est.; nuclear parts require Appendix B/NQA-1 qualification))"
- },
- {
-  "id": "vi06",
-  "kind": "vi",
-  "order": 46,
-  "heading": "Stainless Foundry & Engineering",
-  "body": "Stainless castings for specialty gas valve bodies, regulators and meter-set components ($3-30M/yr addressable market (est.; most bodies are ductile iron, brass or PE))"
- },
- {
-  "id": "vi07",
-  "kind": "vi",
-  "order": 47,
-  "heading": "AFCO (fabrication)",
-  "body": "Aluminum compartments, toolboxes, platforms and trailer decks for utility truck bodies (via Altec) ($15-100M/yr addressable market (est.; Altec fabricates much of this in-house))"
- },
- {
-  "id": "vi08",
-  "kind": "vi",
-  "order": 48,
-  "heading": "Metaltec (steel abrasives)",
-  "body": "No clear link found in this research. Possible minor use in shop blast-cleaning of fabricated tank and pipe components; low priority until a customer is identified (Not sized)"
- },
- {
-  "id": "edit00",
-  "kind": "edit",
-  "order": 60,
-  "heading": "Edit",
-  "body": "Replace '20,000+ service providers' with '~19,000 utility-system contractors (Census 2017: 18,877 firms, 570,952 employees), mostly small; ~240 DCA gas distribution members; platform-quality maintenance firms in the low hundreds (est.)'."
- },
- {
-  "id": "edit01",
-  "kind": "edit",
-  "order": 61,
-  "heading": "Edit",
-  "body": "Replace '<10 meaningful scaled players' with '15-20 players with revenue around or above $1B (Quanta, MasTec, Primoris, Asplundh, MYR, Centuri, Artera, Azuria/Inframark, Davey, Pike, Day & Zimmermann, Michels) plus 26 sponsor-backed platforms; fewer than 10 per sub-segment; none spans gas, power and water at scale'."
- },
- {
-  "id": "edit02",
-  "kind": "edit",
-  "order": 62,
-  "heading": "Edit",
-  "body": "Replace '70% of the US electric grid is over 25 years old' with 'DOE: >70% of transmission lines and power transformers are 25+ years old; NREL: 50-55% of 60-80M distribution transformers are older than 33 years, and only 2.5-3% are replaced or added each year'."
- },
- {
-  "id": "edit03",
-  "kind": "edit",
-  "order": 63,
-  "heading": "Edit",
-  "body": "Restate the gas statistic as 'PHMSA: 28% of distribution pipe was installed before 1970; ~16,300 miles of cast and wrought iron remain (2023); bare-steel programs run to ~2041'. Re-pull the CY2024 by-decade inventory before publishing."
- },
- {
-  "id": "edit04",
-  "kind": "edit",
-  "order": 64,
-  "heading": "Edit",
-  "body": "Quantify water: '11.1 breaks per 100 miles a year, ~260,000 breaks and $2.6B of repairs annually, $452B of pipe past useful life (Utah State 2023); mains replaced on a ~125-year cycle'. Label $625B as a 20-year need, not funded spend."
- },
- {
-  "id": "edit05",
-  "kind": "edit",
-  "order": 65,
-  "heading": "Edit",
-  "body": "Slide 6: delete 'crews flex across segments' and 'specialized assets move across jobs and regions' as applied between gas/water and power. Replace with 'gas and water share underground crews and fleet (~53% / ~65%, est.); holdco synergies are density, purchasing, insurance, safety and back office'."
- },
- {
-  "id": "edit06",
-  "kind": "edit",
-  "order": 66,
-  "heading": "Edit",
-  "body": "Add a TAM slide: ~$44-81B a year of outsourced MRO (gas $12-20B, T&D $20-35B, power-gen $4-8B, water $8-18B; all estimates)."
- },
- {
-  "id": "edit07",
-  "kind": "edit",
-  "order": 67,
-  "heading": "Edit",
-  "body": "Add an economics slide: comparables earn 8-10% adj. EBITDA on MSA work and 12-24% in specialty niches; the illustrative platform earns 9-11% with no margin expansion; returns come from cash yield at ~6-8x entry, not multiple arbitrage."
- },
- {
-  "id": "edit08",
-  "kind": "edit",
-  "order": 68,
-  "heading": "Edit",
-  "body": "Rewrite the why-now around replacement capex that utilities recover through their rates (EEI ~$208B in 2025; AGA $49.1B in 2023), mandated gas compliance cycles, and asset life extension (nuclear to 80 years, poles to 70-80+). Drop population, and note that load growth mostly funds construction."
- },
- {
-  "id": "edit09",
-  "kind": "edit",
-  "order": 69,
-  "heading": "Edit",
-  "body": "Add a precedents slide: winners (Shermco, Pike, USIC, Osmose, Badger), failures (Artera, Williams, Orbital, Team), and the lessons (focus, low leverage, no fixed-price creep)."
- },
- {
-  "id": "edit10",
-  "kind": "edit",
-  "order": 70,
-  "heading": "Edit",
-  "body": "Change the sequencing from 'first unit natural gas or power' to 'gas first; water as an adjacency in the same metros; T&D as a separate, later company; power-gen only via testing and inspection add-ons'."
- },
- {
-  "id": "edit11",
-  "kind": "edit",
-  "order": 71,
-  "heading": "Edit",
-  "body": "Tighten the platform criteria: at least two utility MSAs; most revenue from MSA or unit-rate maintenance; a clean OSHA and EMR record; a documented operator-qualification program; an owned fleet; and explicit leverage limits."
+  "heading": "Metaltec",
+  "body": "No clear link found."
  },
  {
   "id": "risk00",
   "kind": "risk",
   "order": 80,
   "heading": "Overpaying in a sponsor-crowded market (Pike >$5B reported, Shermco ~$1.6B, public peers at ~15.2x)",
-  "body": "Buy founder- and family-owned firms at ~6-8x. Skip auctions priced above the screen. Build the pipeline from primary rosters, not banker books."
+  "body": "Favoring founder- and family-owned firms at ~6-8x, passing on auctions priced above the screen, and building the pipeline from primary rosters rather than banker books."
  },
  {
   "id": "risk01",
   "kind": "risk",
   "order": 81,
   "heading": "Thin margins that do not expand with scale (MSA work earns 8-10%; ~+0.3 pts net from $50M to $500M, est.)",
-  "body": "Underwrite 9-11% steady-state margins and cash yield. Give no credit for cross-unit crew flex. Keep holdco costs to ~1-2% of revenue."
+  "body": "Underwriting 9-11% steady-state margins and cash yield, giving little credit for cross-unit crew flex, and keeping shared costs to ~1-2% of revenue."
  },
  {
   "id": "risk02",
   "kind": "risk",
   "order": 82,
   "heading": "Leverage meeting utility buying power, as at Artera (>$2.5B of debt) and Orbital",
-  "body": "Use permanent capital with modest leverage (Centuri deleveraged to 2.5x), stagger maturities, and avoid one large transformative deal."
+  "body": "Permanent capital with modest leverage (Centuri deleveraged to 2.5x), staggered maturities, and a preference for several small deals over one large one."
  },
  {
   "id": "risk03",
   "kind": "risk",
   "order": 83,
   "heading": "Creep into fixed-price and low-bid work (Williams; margin swings at MYR and MasTec Pipeline)",
-  "body": "Cap fixed-price and low-bid revenue in the platform criteria. Buy add-ons whose work is MSA or unit-rate. Report job-level margins from day one."
+  "body": "Capping fixed-price and low-bid revenue in the platform criteria, favoring add-ons whose work is MSA or unit-rate, and reporting job-level margins from day one."
  },
  {
   "id": "risk04",
   "kind": "risk",
   "order": 84,
   "heading": "Customer concentration and loss of an MSA (Williams lost large contracts in 2022)",
-  "body": "Require at least two utility MSAs at entry. Diligence renewal dates and tenure. Expand with existing customers before entering new geographies."
+  "body": "At least two utility MSAs at entry, diligence on renewal dates and tenure, and growth with existing customers before new geographies."
  },
  {
   "id": "risk05",
   "kind": "risk",
   "order": 85,
   "heading": "Finite replacement programs: cast iron is ~16K miles, ~11-16 years from done",
-  "body": "Target bare steel, vintage plastic, service lines and mandated compliance work, which run into the 2040s."
+  "body": "Leaning toward bare steel, vintage plastic, service lines and mandated compliance work, which run into the 2040s."
  },
  {
   "id": "risk06",
   "kind": "risk",
   "order": 86,
   "heading": "Regulatory and funding timing: PHMSA leak rule withdrawn, LCRI in litigation, IIJA SRF money ended in FY2026",
-  "body": "Build the base case on existing state rate-tracker programs only. Treat federal rules and federal money as upside."
+  "body": "A base case built on existing state rate-tracker programs, with federal rules and federal money treated as upside."
  },
  {
   "id": "risk07",
   "kind": "risk",
   "order": 87,
   "heading": "Safety and qualification exposure (OSHA trench cases; gas operator qualifications specific to each utility)",
-  "body": "Screen OSHA history and EMR. Centralize operator-qualification records and the safety program at the holdco. Walk away from repeat trench citations."
+  "body": "Screening OSHA history and EMR, and centralizing operator-qualification records and the safety program. Repeat trench citations are a reason to pass."
  },
  {
   "id": "risk08",
   "kind": "risk",
   "order": 88,
   "heading": "Labor scarcity and split union jurisdictions (UA/DCA, IBEW, LIUNA)",
-  "body": "Map union status for each target. Do not assume crews can move between units or regions. Budget ~0.7 pts for wage harmonization."
+  "body": "Mapping union status for each target, not assuming crews can move between units or regions, and budgeting ~0.7 pts for wage harmonization."
  },
  {
   "id": "risk09",
   "kind": "risk",
   "order": 89,
   "heading": "Affordability pressure on utility rates and O&M budgets",
-  "body": "Favor replacement programs that utilities capitalize and earn a return on over O&M work they expense."
+  "body": "Favoring replacement programs that utilities capitalize and earn a return on over O&M work they expense."
  },
  {
   "id": "sig00",
@@ -389,6 +347,6 @@
   "kind": "caveat",
   "order": 200,
   "heading": "Caveats",
-  "body": "This synthesis ran no new web searches. It relies on the research, verification and candidate passes.\n\nMany central figures are analyst estimates, not reported data:\n• the TAM by unit ($44-81B)\n• the labor and fleet overlap matrices\n• synergy basis points\n• the illustrative P&L and margin bridge\n• the size of the platform-quality universe\n• the pre-tax cash yield\n\nItems that are unverified or weakly sourced:\n• The 1921 build date of PG&E's Caribou-Palermo line.\n• MIT's 8,000 mi/yr transmission build rate (excluded) and the ~90% replacement share of transmission spend.\n• Artera's current rating (a Dec 2025 S&P action was not confirmed).\n• Pike's >$5B value (press-reported).\n• Asplundh's revenue and Day & Zimmermann's current revenue.\n• The current owners of USG Water Solutions, Heath Consultants, Pittsburg Tank & Tower and Maguire Iron, and J.W. Didado's ownership.\n• The PJM +41% wholesale price figure.\n\nSix-digit NAICS firm counts conflict across aggregators and were not used. The gas 'mains over 50 years' statistic rests on 2021 PHMSA data and should be re-pulled.\n\nThe candidate list over-represents sponsor-owned and web-visible firms. Founder-owned $10-50M businesses need primary rosters (DCA, NETA, NASSCO, AWWA, state PUC lists). Lower-middle-market multiples are all-industry (GF Data), not utility-specific.\n\nNot researched here: state gas-transition policy and long-run gas demand.\n\nOut of scope: sponsor compensation and any specific live deal process."
+  "body": "Many central figures are analyst estimates, not reported data:\n• the market size by unit ($44-81B)\n• the labor and fleet overlap matrices\n• synergy basis points\n• the illustrative P&L and margin bridge\n• the flows shown for the prospective platform on the market map\n• the size of the platform-quality universe\n• the pre-tax cash yield\n\nItems that are unverified or weakly sourced:\n• The 1921 build date of PG&E's Caribou-Palermo line (press reporting on PG&E records).\n• MIT's 8,000 mi/yr transmission build rate (excluded) and the ~90% replacement share of transmission spend.\n• Artera's current rating (a Dec 2025 S&P action was not confirmed).\n• Pike's >$5B value (press-reported).\n• Asplundh's revenue and Day & Zimmermann's current revenue.\n• The current owners of USG Water Solutions, Carylon, Pittsburg Tank & Tower and Maguire Iron.\n• The PJM +41% wholesale price figure.\n\nSix-digit NAICS firm counts conflict across aggregators and were not used. The share of gas mains over 50 years old rests on 2021 PHMSA data and should be re-pulled.\n\nThe candidate list over-represents sponsor-owned and web-visible firms. Founder-owned $10-50M businesses need primary rosters (DCA, NETA, NASSCO, AWWA, state PUC lists). Lower-middle-market multiples are all-industry (GF Data), not utility-specific.\n\nNot researched here: state gas-transition policy and long-run gas demand.\n\nOut of scope: sponsor economics and any specific live deal process."
  }
 ]

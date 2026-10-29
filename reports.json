@@ -5,7 +5,11 @@
     "subtitle": "Supply, lead times, prices, policy and the value chain from electrical steel to data centers, with a plan for Fulton to profit from the build-out without building transformers.",
     "status": "Live · updated weekly",
     "updated": "2026-10-26",
-    "tags": ["Grid equipment", "Manufacturing", "Value chain"],
+    "tags": [
+      "Grid equipment",
+      "Manufacturing",
+      "Value chain"
+    ],
     "page": "transformer-market/dashboard/index.html",
     "data": "transformer-market/site-data",
     "page_title": "NA Power Transformers · Whitesail Labs"
@@ -13,10 +17,14 @@
   {
     "slug": "infra-services",
     "title": "Critical utility infrastructure services",
-    "subtitle": "Testing the maintenance-led holding-company thesis across natural gas, power and water: precedents, asset age, demand, fragmentation, economics and platform candidates.",
+    "subtitle": "An independent look at utility infrastructure maintenance across natural gas, power and water: asset age, demand drivers, precedents, fragmentation, economics, platform candidates and where a new platform would sit.",
     "status": "New",
     "updated": "2026-10-29",
-    "tags": ["Utility services", "Roll-up", "Gas · Power · Water"],
+    "tags": [
+      "Utility services",
+      "Roll-up",
+      "Gas · Power · Water"
+    ],
     "page": "infra-services/dashboard/index.html",
     "data": "infra-services/site-data",
     "page_title": "Utility Infrastructure Services · Whitesail Labs"

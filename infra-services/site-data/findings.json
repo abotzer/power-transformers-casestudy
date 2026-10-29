@@ -376,7 +376,7 @@
  {
   "id": "precedents:crowding-count",
   "domain": "precedents",
-  "claim": "At least ~20 named public or sponsor-backed scaled consolidators already operate across FAM's four target sub-segments (gas, power-gen maintenance, T&D, water), and each sub-segment has at least two. Estimate based on the platforms identified in this run, not a census count",
+  "claim": "At least ~20 named public or sponsor-backed scaled consolidators already operate across the four sub-segments covered here (gas, power-gen maintenance, T&D, water), and each sub-segment has at least two. Estimate based on the platforms identified in this run, not a census count",
   "value": ">=20 scaled consolidators (estimate)",
   "as_of": "2026-10",
   "source_name": "Estimate: derived from the platforms list in this output",
@@ -475,7 +475,7 @@
  {
   "id": "fragmentation:est-platform-universe",
   "domain": "fragmentation",
-  "claim": "ESTIMATE: of ~19K NAICS 2371 firms, ~0.5-2% (~100-400) have 500+ employees and ~4-6% (~800-1,100) have 100+; maintenance-weighted firms meeting FAM's platform criteria number in the low hundreds. Basis: 2005 SUSB pipeline (3.2% at 500+) as an upper bound and Census heavy/civil (0.12% at 500+) as a lower bound, applied to the 18,877 count.",
+  "claim": "ESTIMATE: of ~19K NAICS 2371 firms, ~0.5-2% (~100-400) have 500+ employees and ~4-6% (~800-1,100) have 100+; maintenance-weighted firms meeting the platform criteria used here number in the low hundreds. Basis: 2005 SUSB pipeline (3.2% at 500+) as an upper bound and Census heavy/civil (0.12% at 500+) as a lower bound, applied to the 18,877 count.",
   "value": "~100-400 firms 500+; low hundreds of platform candidates",
   "as_of": "2026-10 estimate",
   "source_name": "Analyst estimate from SUSB 2005 and ENR/Census 2011 ratios",
@@ -1388,7 +1388,7 @@
  {
   "id": "demand:epa-dwinsa",
   "domain": "demand",
-  "claim": "EPA 7th DWINSA: $625B drinking water infrastructure need over 20 years (deck claim verified; not re-fetched this run)",
+  "claim": "EPA 7th DWINSA: $625B drinking water infrastructure need over 20 years (verified)",
   "value": "$625B / 20 yrs",
   "as_of": "2023-04",
   "source_name": "EPA 7th Drinking Water Infrastructure Needs Survey and Assessment",
@@ -2510,7 +2510,7 @@
  {
   "id": "cand_gas:danella-osha",
   "domain": "candidates: gas",
-  "claim": "Since 2017, OSHA has investigated Danella six times over trench-work issues in various parts of the country. Danella was also on site during a ruptured-gas-main incident in Philadelphia. This conflicts with the thesis's 'strong safety record' criterion pending diligence.",
+  "claim": "Since 2017, OSHA has investigated Danella six times over trench-work issues in various parts of the country. Danella was also on site during a ruptured-gas-main incident in Philadelphia. This is a safety-record concern pending diligence.",
   "value": "6 OSHA investigations since 2017",
   "as_of": "2025",
   "source_name": "NBC10 Philadelphia",

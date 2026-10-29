@@ -326,7 +326,6 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .tx-ans { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
 .tx-ans-top { display: flex; align-items: center; justify-content: space-between; gap: var(--cds-gap-sm); }
-.tx-ans-q { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); color: var(--ws-amber, var(--color-warn)); line-height: 1; }
 .tx-ans-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.35; margin: 0; }
 .tx-ans-short { line-height: 1.55; }
 .tx-ans-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--cds-gap-sm); padding-block: var(--cds-pad-xs); border-block: 1px solid var(--color-border-line); }
@@ -337,13 +336,9 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-ans-more p { line-height: 1.6; }
 .tx-srcs { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); line-height: 1.6; }
 .tx-srcs a { color: var(--color-fg-muted); }
-.tx-steps { margin: 0; padding-left: 1.4rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
+.tx-steps { margin: 0; padding-left: 2rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
 .tx-chartgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
 .tx-chartgrid:empty { display: none; }
-.tx-claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
-.tx-claim { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); background: var(--color-panel); }
-.tx-claim-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--cds-gap-sm); }
-.tx-claim-text { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.35; }
 .tx-board-wide { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
 .tx-board-col[data-outcome="thriving"] .tx-board-head, .tx-board-col[data-outcome="solid"] .tx-board-head { border-color: var(--color-ok); color: var(--color-fg); }
 .tx-board-col[data-outcome="mixed"] .tx-board-head { border-color: var(--color-warn); color: var(--color-fg); }
@@ -370,6 +365,18 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-rank { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
 .tx-chart-gen:empty { min-height: 240px; }
 .tx-bul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }
+.tx-ans-top { align-items: flex-start; }
+.tx-verdict-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md) var(--cds-gap-lg); margin-top: var(--cds-gap-xs); }
+.tx-verdict-sec { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.tx-verdict-h { margin: 0; font-size: var(--cds-font-size-body); font-weight: 700; color: var(--color-fg); }
+.tx-profile { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-profile-text { line-height: 1.6; }
+.tx { --vc-prospect: #6A47C2; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tx { --vc-prospect: #A88BF2; } }
+:root[data-theme="dark"] .tx { --vc-prospect: #A88BF2; }
+.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2px; fill: color-mix(in srgb, var(--vc-prospect) 14%, var(--color-panel)); }
+[data-kind="prospect"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-prospect) 60%, transparent); background: color-mix(in srgb, var(--vc-prospect) 14%, transparent); }
+.tx-ans-top .tx-chip { flex: none; white-space: nowrap; }
 </style>
 
 <div class="tx">
@@ -404,24 +411,17 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
     <div class="tx-bottom dash-skeleton" id="fam-summary"></div>
   </section>
 
-  <section class="tx-section" id="questions">
-    <div class="tx-section-head">
-      <h2 class="tx-h2" id="q-title">The seven questions, answered</h2>
-      <p class="tx-sub">Each answer is graded against the thesis and linked to its sources. Open a card for the evidence; the other tabs hold the charts behind it.</p>
-    </div>
-    <div class="tx-answers dash-skeleton" id="answers-grid" data-source="answers"></div>
-  </section>
-
   <section class="tx-section" id="value-chain">
     <div class="tx-section-head">
       <h2 class="tx-h2" id="vc-title">How the market works</h2>
-      <p class="tx-sub">Goods and money move left to right: raw inputs and training, equipment and materials, labor and subcontractors, the service providers in the middle grouped by type, then the asset owners who hire them, the funding channels that pay those owners, and the ratepayers and taxpayers behind them. Each arrow carries what is bought and its estimated annual value, marked est. Click a company or group to trace its whole chain.</p>
+      <p class="tx-sub">Goods and money move left to right: raw inputs and training, equipment and materials, labor and subcontractors, the service providers in the middle grouped by type, then the asset owners who hire them, the funding channels that pay those owners, and the ratepayers and taxpayers behind them. The prospective gas maintenance platform sits at the top of the service-provider column, traced through its likely suppliers and customers (dashed lines, estimated for a company with about fifty million dollars of revenue). Click any other company or group to trace its chain.</p>
     </div>
     <div class="tx-card">
       <div class="tx-vc-controls">
         <label>Find a company <select id="vc-select" aria-label="Find a company"><option value="">Choose…</option></select></label>
-        <label><input type="checkbox" id="vc-fulton" checked> Show Fulton companies and opportunities</label>
-        <button type="button" class="tx-btn" id="vc-clear">Clear selection</button>
+        <label><input type="checkbox" id="vc-fulton"> Show how Fulton's companies could work with the platform</label>
+        <button type="button" class="tx-btn" id="vc-prospect">Trace the prospective platform</button>
+        <button type="button" class="tx-btn" id="vc-clear">Show the whole market</button>
       </div>
       <div class="tx-legend" id="vc-legend"></div>
       <div class="tx-vc-scroll">
@@ -431,10 +431,18 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
     </div>
   </section>
 
+  <section class="tx-section" id="key-findings">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="kf-title">Key findings</h2>
+      <p class="tx-sub">What public and government data show about the industry, topic by topic. Each card links its sources; open it for the full evidence. The other tabs hold the charts behind it.</p>
+    </div>
+    <div class="tx-answers dash-skeleton" id="findings-grid" data-source="key_findings"></div>
+  </section>
+
   <section class="tx-section" id="actions">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="actions-title">Action items</h2>
-      <p class="tx-sub">What the evidence says to do next, in order.</p>
+      <h2 class="tx-h2" id="actions-title">Recommended action items</h2>
+      <p class="tx-sub">Possible next steps, roughly in order. They are suggestions for discussion rather than a fixed plan.</p>
     </div>
     <ol class="tx-steps dash-skeleton" id="plan-steps"></ol>
   </section>
@@ -445,26 +453,18 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 
   <section class="tx-section" id="aging">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="aging-title">Is the infrastructure really aging?</h2>
-      <p class="tx-sub">Routine maintenance keeps old assets in service, so the question is how much is past its design life, how fast it is being replaced, and how large the backlog is in miles, units and dollars.</p>
+      <h2 class="tx-h2" id="aging-title">How old is the infrastructure?</h2>
+      <p class="tx-sub">Routine maintenance keeps old assets in service, so what matters is how much is past its design life, how fast it is being replaced, and how large the backlog is in miles, units and dollars.</p>
     </div>
     <div class="tx-chartgrid" id="charts-aging"></div>
   </section>
 
   <section class="tx-section" id="why-now">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="why-title">Is the why-now real?</h2>
+      <h2 class="tx-h2" id="why-title">What is driving demand</h2>
       <p class="tx-sub">Demand, population, nuclear, renewables, gas safety rules, water rules and utility capital spending, each tested against the data, with what it means for maintenance work as opposed to new construction.</p>
     </div>
     <div class="tx-chartgrid" id="charts-demand"></div>
-  </section>
-
-  <section class="tx-section" id="deck-claims">
-    <div class="tx-section-head">
-      <h2 class="tx-h2" id="claims-title">The deck's statistics, checked</h2>
-      <p class="tx-sub">Each statistic in the thesis deck, the verdict after an independent check, and a version that holds up to diligence.</p>
-    </div>
-    <div class="tx-claims dash-skeleton" id="claims-list" data-source="deck_claims"></div>
   </section>
 
   <section class="tx-section" id="watchlist">
@@ -484,7 +484,7 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 
   <section class="tx-section" id="precedents">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="prec-title">Who has built this before</h2>
+      <h2 class="tx-h2" id="prec-title">Precedent platforms</h2>
       <p class="tx-sub">Public companies and private-equity platforms that rolled up utility infrastructure services, grouped by how they turned out. These are both the competition for deals and the evidence on whether the model works.</p>
     </div>
     <div class="tx-board tx-board-wide dash-skeleton" id="prec-board" data-source="platforms"></div>
@@ -522,12 +522,12 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 
   <section class="tx-section" id="synergies">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="syn-title">Do crews and equipment really move across units?</h2>
+      <h2 class="tx-h2" id="syn-title">How much crews and equipment can be shared</h2>
       <p class="tx-sub">Workforce overlap from federal occupation data by industry, the qualifications that keep crews in their lane, and which equipment is shared.</p>
     </div>
     <div class="tx-chartgrid" id="charts-synergies"></div>
     <div class="tx-card">
-      <h3 class="tx-card-title" id="syn-table-title">Which synergies are real</h3>
+      <h3 class="tx-card-title" id="syn-table-title">Where the synergies are</h3>
       <div class="tx-table-wrap">
         <table class="tx-table" id="syn-table" data-source="synergies" data-row-key="id"><thead></thead><tbody></tbody></table>
       </div>
@@ -551,9 +551,17 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
     </div>
   </section>
 
-  <section class="tx-section" id="ranking">
+  <section class="tx-section" id="prospect">
     <div class="tx-section-head">
       <p class="tx-eyebrow">For Fulton Asset Management</p>
+      <h2 class="tx-h2" id="prospect-title">Where a prospective platform would sit</h2>
+      <p class="tx-sub">A founder-owned gas distribution maintenance contractor with about fifty million dollars of revenue, placed in the market: who it would sell to and buy from, who it would compete with, and how it could grow. Figures are estimates for a company of that size, not a specific target. The market map on the Overview traces the same links.</p>
+    </div>
+    <div class="tx-profile dash-skeleton" id="prospect-grid" data-source="plan"></div>
+  </section>
+
+  <section class="tx-section" id="ranking">
+    <div class="tx-section-head">
       <h2 class="tx-h2" id="rank-title">Which unit first?</h2>
       <p class="tx-sub">The four units ranked as a first platform on market size, maintenance share, margins, competition and the supply of candidates.</p>
     </div>
@@ -562,26 +570,21 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 
   <section class="tx-section" id="plan">
     <div class="tx-section-head">
-      <h2 class="tx-h2" id="plan-title">The plan for Fulton</h2>
+      <h2 class="tx-h2" id="plan-title">A possible path for Fulton</h2>
     </div>
     <div class="tx-bottom dash-skeleton" id="plan-first"></div>
     <div class="tx-grid">
       <div class="tx-card">
-        <h3 class="tx-card-title" id="vi-title">Where Fulton's companies fit</h3>
-        <p class="tx-card-note">Vertical-integration links between the services platform and the companies Fulton already owns.</p>
+        <h3 class="tx-card-title" id="vi-title">How Fulton's companies could work with the platform</h3>
+        <p class="tx-card-note">Possible links between the prospective platform and companies Fulton already owns. Values are estimates, not current sales.</p>
         <ul class="tx-checks dash-skeleton" id="plan-vi"></ul>
       </div>
       <div class="tx-card">
-        <h3 class="tx-card-title" id="edits-title">Edits the evidence supports</h3>
-        <p class="tx-card-note">Changes to the thesis deck and one-pager.</p>
-        <ul class="tx-checks dash-skeleton" id="plan-edits"></ul>
-      </div>
-      <div class="tx-card">
-        <h3 class="tx-card-title" id="risks-title">Risks and how to handle them</h3>
+        <h3 class="tx-card-title" id="risks-title">Risks and possible mitigations</h3>
         <ul class="tx-checks dash-skeleton" id="plan-risks"></ul>
       </div>
       <div class="tx-card">
-        <h3 class="tx-card-title" id="signals-title">Signals that would change the plan</h3>
+        <h3 class="tx-card-title" id="signals-title">Signals to watch</h3>
         <ul class="tx-checks dash-skeleton" id="plan-signals"></ul>
       </div>
     </div>
@@ -891,7 +894,7 @@ function renderTable(cfg) {
 
 const VC_LAYERS = ['S3', 'S2', 'S1', 'B', 'C1', 'C2', 'C3'];
 const VC_TITLES = ["Raw inputs and training", "Equipment and materials", "Labor, subs and distributors", "Service providers", "Asset owners", "Funding channels", "Ultimate payers"];
-const vcState = { sel: null };
+const vcState = { sel: 'prospect' };
 
 function vcIsEst(e) { return e.estimated === true || e.estimated === 'true' || e.estimated === 'Yes'; }
 function vcMid(e) {
@@ -910,6 +913,7 @@ function vcInitials(name) {
 }
 function vcBadgeColor(n) {
   if (n.kind === 'fulton') return 'var(--color-warn)';
+  if (n.kind === 'prospect') return 'var(--vc-prospect)';
   if (n.kind === 'aggregate') return 'var(--cds-chart-muted)';
   let h = 0;
   String(n.id).split('').forEach((ch) => { h = (h * 31 + ch.charCodeAt(0)) >>> 0; });
@@ -921,7 +925,7 @@ function vcModel() {
   const showF = document.getElementById('vc-fulton').checked;
   const nodes = rows('value_chain_nodes').filter((n) => VC_LAYERS.includes(n.layer) && (showF || n.kind !== 'fulton'));
   const byId = new Map(nodes.map((n) => [n.id, n]));
-  const edges = rows('value_chain_edges').filter((e) => byId.has(e.source) && byId.has(e.target) && e.source !== e.target && (showF || e.kind !== 'fulton_opportunity'));
+  const edges = rows('value_chain_edges').filter((e) => byId.has(e.source) && byId.has(e.target) && e.source !== e.target && (showF || !/^fulton/.test(e.kind)));
   return { nodes, byId, edges };
 }
 function vcTrace(model, id) {
@@ -1023,7 +1027,7 @@ function drawValueChain() {
   legend.textContent = '';
   if (!ok) { detail.textContent = ''; return; }
   const c = dash.colors;
-  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Fulton opportunity: addressable market, not current sales', 'var(--color-warn)', true]].forEach((d) => {
+  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Prospective platform: estimated flows', 'var(--vc-prospect)', true]].concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : []).forEach((d) => {
     const item = document.createElement('span');
     const sw = document.createElement('i');
     sw.className = 'tx-swatch';
@@ -1057,7 +1061,7 @@ function drawValueChain() {
 
   const W = Math.max(el.clientWidth, 900);
   const L = vcLayout(model, W);
-  const svg = newSvg(el, L.W, L.H).attr('aria-label', 'Value chain of the North American transformer market: suppliers, builders and customers with annual flows');
+  const svg = newSvg(el, L.W, L.H).attr('aria-label', 'Value chain of US utility infrastructure services: suppliers, service providers and customers with annual flows');
   const tr = vcState.sel ? vcTrace(model, vcState.sel) : null;
   const vals = model.edges.map(vcMid).filter((v) => v !== null && v > 0);
   const wScale = d3.scaleLog().domain([Math.max(d3.min(vals) || 1, 0.1), Math.max(d3.max(vals) || 10, 1)]).range([1, 9]).clamp(true);
@@ -1065,7 +1069,7 @@ function drawValueChain() {
 
   // column titles
   svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[0]).attr('y', 14).text('← Suppliers');
-  svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[3] + L.boxW / 2).attr('y', 14).attr('text-anchor', 'middle').text('Builders');
+  svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[3] + L.boxW / 2).attr('y', 14).attr('text-anchor', 'middle').text('Service providers');
   svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[6] + L.boxW).attr('y', 14).attr('text-anchor', 'end').text('Customers →');
   VC_LAYERS.forEach((_, i) => {
     const t = svg.append('text').attr('class', 'tx-vc-col').attr('x', L.colX[i] + L.boxW / 2).attr('y', 36).attr('text-anchor', 'middle').text(VC_TITLES[i]);
@@ -1116,22 +1120,22 @@ function drawValueChain() {
       arrow: [[t.x + L.boxW, y2], [x2, y2 - aw / 2], [x2, y2 + aw / 2]], mx: x1 + b * 0.75, my: (y1 + y2) / 2, w: w };
   };
   const role = (e) => (!tr ? 'none' : tr.upE.has(e.id) ? 'up' : tr.downE.has(e.id) ? 'down' : 'dim');
-  const color = (e, r) => (e.kind === 'fulton_opportunity' ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : 'var(--cds-chart-muted)');
+  const color = (e, r) => (/^fulton/.test(e.kind) ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : e.kind === 'prospect' ? 'var(--vc-prospect)' : 'var(--cds-chart-muted)');
   const edgeG = svg.append('g');
   const ordered = model.edges.slice().sort((a, b) => (role(a) !== 'dim' && role(a) !== 'none') - (role(b) !== 'dim' && role(b) !== 'none') || (vcMid(b) || 0) - (vcMid(a) || 0));
   const name = (id) => (model.byId.get(id) || {}).name || id;
   ordered.forEach((e) => {
     const g = geom(e), r = role(e), col = color(e, r);
     const eg = edgeG.append('g').attr('class', r === 'dim' ? 'is-dim' : null);
-    const op = r === 'none' ? (e.kind === 'fulton_opportunity' ? 0.75 : 0.4) : 0.9;
+    const op = r === 'none' ? (e.kind !== 'flow' ? 0.8 : 0.4) : 0.9;
     eg.append('path').attr('d', g.d).attr('fill', 'none').style('stroke', col).attr('stroke-width', g.w).attr('stroke-opacity', op)
-      .attr('stroke-dasharray', e.kind === 'fulton_opportunity' ? '5 4' : null);
+      .attr('stroke-dasharray', e.kind !== 'flow' ? '5 4' : null);
     eg.append('polygon').attr('points', g.arrow.map((p) => p.join(',')).join(' ')).style('fill', col).attr('fill-opacity', Math.min(1, op + 0.1));
     eg.append('path').attr('class', 'tx-vc-hit').attr('d', g.d).attr('stroke-width', Math.max(9, g.w + 6))
       .on('mousemove', (ev) => {
         const [px, py] = d3.pointer(ev, svg.node());
         showTip(el, name(e.source) + ' → ' + name(e.target), [e.product, vcValue(e),
-          e.kind === 'fulton_opportunity' ? 'Addressable market for a Fulton company, not current sales' : '', clip(e.basis, 220)], px, py);
+          e.kind === 'prospect' ? 'Estimate for a platform of about $50M revenue, not a specific company' : /^fulton/.test(e.kind) ? 'Possible link with a Fulton company, not current sales' : '', clip(e.basis, 220)], px, py);
       })
       .on('mouseleave', () => hideTip(el))
       .on('click', (ev) => { ev.stopPropagation(); vcSelect(e.target === vcState.sel ? e.source : e.target); });
@@ -1141,7 +1145,7 @@ function drawValueChain() {
   model.nodes.forEach((n) => {
     const p = L.pos.get(n.id);
     const inChain = tr && (n.id === vcState.sel || tr.up.has(n.id) || tr.down.has(n.id));
-    const cls = ['tx-vc-node', n.layer === 'B' ? 'is-b' : '', n.kind === 'aggregate' ? 'is-agg' : '', n.kind === 'fulton' ? 'is-fulton' : '',
+    const cls = ['tx-vc-node', n.layer === 'B' ? 'is-b' : '', n.kind === 'aggregate' ? 'is-agg' : '', n.kind === 'fulton' ? 'is-fulton' : '', n.kind === 'prospect' ? 'is-prospect' : '',
       n.id === vcState.sel ? 'is-sel' : '', tr && !inChain ? 'is-dim' : ''].filter(Boolean).join(' ');
     const g = nodeG.append('g').attr('class', cls).attr('transform', 'translate(' + p.x + ',' + (p.y - L.rowH / 2) + ')')
       .attr('tabindex', 0).attr('role', 'button').attr('aria-label', n.name);
@@ -1161,10 +1165,10 @@ function drawValueChain() {
 
   // labels: the selected company's own arrows, or the largest arrow between each pair of columns
   let labelled;
-  if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel);
+  if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel).sort((a, b) => (vcMid(b) || 0) - (vcMid(a) || 0)).slice(0, 6);
   else {
     const best = new Map();
-    model.edges.filter((e) => e.kind !== 'fulton_opportunity').forEach((e) => {
+    model.edges.filter((e) => e.kind === 'flow').forEach((e) => {
       const k = L.pos.get(e.source).ci;
       if (!best.has(k) || (vcMid(e) || 0) > (vcMid(best.get(k)) || 0)) best.set(k, e);
     });
@@ -1240,7 +1244,8 @@ function renderVcDetail(model) {
       top.appendChild(btn);
       top.appendChild(mk('span', 'tx-vc-val', e.value_label, 'value_chain_edges', 'value_label', ew));
       if (vcIsEst(e)) { const ch = mk('span', 'tx-chip', 'Estimate'); ch.setAttribute('data-kind', 'est'); top.appendChild(ch); }
-      if (e.kind === 'fulton_opportunity') { const ch = mk('span', 'tx-chip', 'Opportunity'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }
+      if (/^fulton/.test(e.kind)) { const ch = mk('span', 'tx-chip', 'Fulton link'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }
+      if (e.kind === 'prospect') { const ch = mk('span', 'tx-chip', 'Prospective'); ch.setAttribute('data-kind', 'prospect'); top.appendChild(ch); }
       li.appendChild(top);
       li.appendChild(mk('div', null, e.product, 'value_chain_edges', 'product', ew));
       if (e.basis) li.appendChild(mk('div', 'tx-card-note', e.basis, 'value_chain_edges', 'basis', ew));
@@ -1462,7 +1467,7 @@ function glHide(now) {
 
 // ---------- infra report: renderers ----------
 const UNIT_LABEL = { gas: 'Natural gas', 'power-gen': 'Power generation', 'T&D': 'T&D and electrical', water: 'Water and wastewater' };
-const VERDICT_ATTR = { 'Supports thesis': 'High', Mixed: 'Medium', 'Challenges thesis': 'Low' };
+const TAG_ATTR = { Favorable: 'High', Mixed: 'Medium', Watch: 'Low' };
 function byOrder(a, b) { return (num(a.order) || 0) - (num(b.order) || 0); }
 function linkTo(url, text) {
   const u = safeUrl(url);
@@ -1489,36 +1494,40 @@ function sourceLinks(list) {
 function renderSummary() {
   const box = document.getElementById('fam-summary');
   if (!prep(box, ['plan'])) return;
-  rows('plan').filter((r) => r.kind === 'summary').forEach((r) => {
+  box.appendChild(mk('div', 'tx-bottom-label', 'Our verdict'));
+  const grid = mk('div', 'tx-verdict-grid');
+  rows('plan').filter((r) => r.kind === 'verdict').sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
-    box.appendChild(mk('div', 'tx-bottom-label', r.heading, 'plan', 'heading', w));
-    box.appendChild(mk('p', 'tx-bottom-text tx-pre', r.body, 'plan', 'body', w));
+    const sec = mk('div', 'tx-verdict-sec');
+    sec.appendChild(mk('h3', 'tx-verdict-h', r.heading, 'plan', 'heading', w));
+    sec.appendChild(mk('p', 'tx-bottom-text tx-pre', r.body, 'plan', 'body', w));
+    grid.appendChild(sec);
   });
+  box.appendChild(grid);
 }
 
-function renderAnswers() {
-  const el = document.getElementById('answers-grid');
-  if (!prep(el, ['answers', 'answer_numbers'])) return;
-  const nums = rows('answer_numbers');
-  rows('answers').slice().sort((a, b) => num(a.q) - num(b.q)).forEach((r) => {
+function renderFindings() {
+  const el = document.getElementById('findings-grid');
+  if (!prep(el, ['key_findings', 'key_numbers'])) return;
+  const nums = rows('key_numbers');
+  rows('key_findings').slice().sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
     const card = mk('article', 'tx-ans');
     const top = mk('div', 'tx-ans-top');
-    top.appendChild(mk('span', 'tx-ans-q', 'Q' + fmtVal(num(r.q)), 'answers', 'q', w));
-    const chip = mk('span', 'tx-chip', r.verdict, 'answers', 'verdict', w);
-    chip.setAttribute('data-attr', VERDICT_ATTR[r.verdict] || 'Medium');
+    top.appendChild(mk('h3', 'tx-ans-title', r.topic, 'key_findings', 'topic', w));
+    const chip = mk('span', 'tx-chip', r.tag, 'key_findings', 'tag', w);
+    chip.setAttribute('data-attr', TAG_ATTR[r.tag] || 'Medium');
     top.appendChild(chip);
     card.appendChild(top);
-    card.appendChild(mk('h3', 'tx-ans-title', r.question, 'answers', 'question', w));
-    card.appendChild(mk('p', 'tx-ans-short', r.short_answer, 'answers', 'short_answer', w));
-    const kn = nums.filter((n) => String(n.q) === String(r.q)).slice(0, 4);
+    card.appendChild(mk('p', 'tx-ans-short', r.summary, 'key_findings', 'summary', w));
+    const kn = nums.filter((n) => n.finding === r.id).sort(byOrder).slice(0, 4);
     if (kn.length) {
       const strip = mk('div', 'tx-ans-nums');
       kn.forEach((n) => {
         const nw = 'id=' + encodeURIComponent(n.id);
         const b = mk('div', 'tx-ans-num');
-        b.appendChild(mk('div', 'tx-ans-val', n.value, 'answer_numbers', 'value', nw));
-        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'answer_numbers', 'label', nw));
+        b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
+        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
         strip.appendChild(b);
       });
       card.appendChild(strip);
@@ -1526,9 +1535,21 @@ function renderAnswers() {
     const d = document.createElement('details');
     d.className = 'tx-ans-more';
     d.appendChild(mk('summary', null, 'The evidence'));
-    d.appendChild(mk('p', 'tx-pre', r.answer, 'answers', 'answer', w));
+    d.appendChild(mk('p', 'tx-pre', r.body, 'key_findings', 'body', w));
     d.appendChild(sourceLinks(r.sources));
     card.appendChild(d);
+    el.appendChild(card);
+  });
+}
+
+function renderProfile() {
+  const el = document.getElementById('prospect-grid');
+  if (!prep(el, ['plan'])) return;
+  rows('plan').filter((r) => r.kind === 'profile').sort(byOrder).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const card = mk('div', 'tx-card');
+    card.appendChild(mk('h3', 'tx-card-title', r.heading, 'plan', 'heading', w));
+    card.appendChild(mk('p', 'tx-profile-text', r.body, 'plan', 'body', w));
     el.appendChild(card);
   });
 }
@@ -1786,25 +1807,6 @@ function drawGeneric(el, legend, m, list) {
   addLegend(legend, series, colorOf);
 }
 
-function renderClaims() {
-  const el = document.getElementById('claims-list');
-  if (!prep(el, ['deck_claims'])) return;
-  const attr = { true: 'High', 'mostly true': 'High', misleading: 'Medium', false: 'Low', unverifiable: 'Low' };
-  rows('deck_claims').sort(byOrder).forEach((r) => {
-    const w = 'id=' + encodeURIComponent(r.id);
-    const card = mk('article', 'tx-claim');
-    const top = mk('div', 'tx-claim-top');
-    top.appendChild(mk('p', 'tx-claim-text', r.claim, 'deck_claims', 'claim', w));
-    const chip = mk('span', 'tx-chip', r.verdict, 'deck_claims', 'verdict', w);
-    chip.setAttribute('data-attr', attr[String(r.verdict).toLowerCase()] || 'Medium');
-    top.appendChild(chip);
-    card.appendChild(top);
-    card.appendChild(mk('p', null, r.better_statement, 'deck_claims', 'better_statement', w));
-    if (safeUrl(r.source_url)) card.appendChild(srcLine(null, r.source_url));
-    el.appendChild(card);
-  });
-}
-
 function renderPlatforms() {
   const el = document.getElementById('prec-board');
   if (!prep(el, ['platforms'])) return;
@@ -1950,11 +1952,11 @@ function renderRanking() {
 }
 
 function renderPlan() {
-  const ids = ['plan-first', 'plan-vi', 'plan-edits', 'plan-risks', 'plan-signals', 'caveats-text'];
+  const ids = ['plan-first', 'plan-vi', 'plan-risks', 'plan-signals', 'caveats-text'];
   const els = ids.map((i) => document.getElementById(i));
   const ok = els.map((e) => prep(e, ['plan']));
   if (!ok[0]) return;
-  const [first, vi, edits, risks, signals, cav] = els;
+  const [first, vi, risks, signals, cav] = els;
   rows('plan').sort(byOrder).forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
     if (r.kind === 'first_unit') {
@@ -1967,8 +1969,7 @@ function renderPlan() {
       li.appendChild(document.createTextNode(' — '));
       li.appendChild(mk('span', null, r.body, 'plan', 'body', w));
       ({ vi: vi, risk: risks, signal: signals })[r.kind].appendChild(li);
-    } else if (r.kind === 'edit') edits.appendChild(mk('li', null, r.body, 'plan', 'body', w));
-    else if (r.kind === 'caveat') cav.appendChild(mk('span', null, r.body, 'plan', 'body', w));
+    } else if (r.kind === 'caveat') cav.appendChild(mk('span', null, r.body, 'plan', 'body', w));
   });
 }
 
@@ -2047,6 +2048,7 @@ const SRC_TABLE = {
 document.getElementById('vc-select').addEventListener('change', (ev) => vcSelect(ev.target.value || null));
 document.getElementById('vc-fulton').addEventListener('change', () => { drawValueChain(); scheduleGlossary(); });
 document.getElementById('vc-clear').addEventListener('click', () => vcSelect(null));
+document.getElementById('vc-prospect').addEventListener('click', () => vcSelect('prospect'));
 document.getElementById('gloss-search').addEventListener('input', () => renderTable(GLOSS_TABLE));
 document.getElementById('src-search').addEventListener('input', () => renderTable(SRC_TABLE));
 ['cand-unit', 'cand-platform', 'cand-free', 'cand-search'].forEach((id) => document.getElementById(id).addEventListener(id === 'cand-search' ? 'input' : 'change', () => { renderCandidates(); scheduleGlossary(); }));
@@ -2054,12 +2056,12 @@ document.getElementById('src-search').addEventListener('input', () => renderTabl
 let linked = false;
 function renderAll() {
   [
-    fillMarks, renderSummary, renderAnswers, drawValueChain, renderSteps,
+    fillMarks, renderSummary, drawValueChain, renderFindings, renderSteps, renderProfile,
     () => renderTiles('tiles-market', 'market'),
     () => renderChartCards('charts-aging', 'aging'), () => renderChartCards('charts-demand', 'demand'),
     () => renderChartCards('charts-competition', 'competition'), () => renderChartCards('charts-economics', 'economics'),
     () => renderChartCards('charts-synergies', 'synergies'), () => renderChartCards('charts-candidates', 'candidates'),
-    renderClaims, renderWatchTimeline, renderPlatforms, renderCandidates, renderRanking, renderPlan,
+    renderWatchTimeline, renderPlatforms, renderCandidates, renderRanking, renderPlan,
     () => renderTable(WATCH_TABLE), () => renderTable(SCALED_TABLE), () => renderTable(PL_TABLE), () => renderTable(SYN_TABLE),
     () => renderTable(CAND_TABLE), () => renderTable(SRC_TABLE), () => renderTable(GLOSS_TABLE),
   ].forEach((f) => {
@@ -2071,12 +2073,12 @@ function renderAll() {
 
 // ---------- tabs and collapsibles ----------
 const TABS = {
-  overview: ['verdict-box', 'questions', 'value-chain', 'actions'],
-  market: ['market-tiles', 'aging', 'why-now', 'deck-claims', 'watchlist'],
+  overview: ['verdict-box', 'value-chain', 'key-findings', 'actions'],
+  market: ['market-tiles', 'aging', 'why-now', 'watchlist'],
   competition: ['precedents', 'fragmentation'],
   economics: ['tam', 'synergies'],
   candidates: ['candidates'],
-  fam: ['ranking', 'plan'],
+  fam: ['prospect', 'ranking', 'plan'],
   appendix: ['cand-appendix', 'sources', 'glossary', 'notes'],
 };
 (function buildTabs() {

@@ -2,7 +2,6 @@
 .tx-answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .tx-ans { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
 .tx-ans-top { display: flex; align-items: center; justify-content: space-between; gap: var(--cds-gap-sm); }
-.tx-ans-q { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); color: var(--ws-amber, var(--color-warn)); line-height: 1; }
 .tx-ans-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.35; margin: 0; }
 .tx-ans-short { line-height: 1.55; }
 .tx-ans-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--cds-gap-sm); padding-block: var(--cds-pad-xs); border-block: 1px solid var(--color-border-line); }
@@ -13,13 +12,9 @@
 .tx-ans-more p { line-height: 1.6; }
 .tx-srcs { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); line-height: 1.6; }
 .tx-srcs a { color: var(--color-fg-muted); }
-.tx-steps { margin: 0; padding-left: 1.4rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
+.tx-steps { margin: 0; padding-left: 2rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
 .tx-chartgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
 .tx-chartgrid:empty { display: none; }
-.tx-claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
-.tx-claim { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); background: var(--color-panel); }
-.tx-claim-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--cds-gap-sm); }
-.tx-claim-text { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.35; }
 .tx-board-wide { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
 .tx-board-col[data-outcome="thriving"] .tx-board-head, .tx-board-col[data-outcome="solid"] .tx-board-head { border-color: var(--color-ok); color: var(--color-fg); }
 .tx-board-col[data-outcome="mixed"] .tx-board-head { border-color: var(--color-warn); color: var(--color-fg); }
@@ -46,3 +41,15 @@
 .tx-rank { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
 .tx-chart-gen:empty { min-height: 240px; }
 .tx-bul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }
+.tx-ans-top { align-items: flex-start; }
+.tx-verdict-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md) var(--cds-gap-lg); margin-top: var(--cds-gap-xs); }
+.tx-verdict-sec { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.tx-verdict-h { margin: 0; font-size: var(--cds-font-size-body); font-weight: 700; color: var(--color-fg); }
+.tx-profile { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-profile-text { line-height: 1.6; }
+.tx { --vc-prospect: #6A47C2; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tx { --vc-prospect: #A88BF2; } }
+:root[data-theme="dark"] .tx { --vc-prospect: #A88BF2; }
+.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2px; fill: color-mix(in srgb, var(--vc-prospect) 14%, var(--color-panel)); }
+[data-kind="prospect"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-prospect) 60%, transparent); background: color-mix(in srgb, var(--vc-prospect) 14%, transparent); }
+.tx-ans-top .tx-chip { flex: none; white-space: nowrap; }

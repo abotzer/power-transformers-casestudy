@@ -3,7 +3,8 @@
 Usage: python3 -I compose_page.py <transformer index.html> <layer_titles.json> <out index.html>
 Shared parts taken from the transformer page: all CSS, the Whitesail band, JS helpers, the table
 system, the value-chain graph, glossary pop-ups, the watchlist timeline, and the tabs/collapsibles code.
-This report's own parts: body.html, infra.css, infra.js and the tab map below.
+This report's own parts: body.html, infra.css, infra.js, the tab map below, and VC_PATCHES, which adapt the
+value-chain graph to show the prospective platform (kind "prospect") and Fulton's links to it (kind "fulton_synergy").
 """
 import json
 import os
@@ -12,14 +13,41 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 TABS = """const TABS = {
-  overview: ['verdict-box', 'questions', 'value-chain', 'actions'],
-  market: ['market-tiles', 'aging', 'why-now', 'deck-claims', 'watchlist'],
+  overview: ['verdict-box', 'value-chain', 'key-findings', 'actions'],
+  market: ['market-tiles', 'aging', 'why-now', 'watchlist'],
   competition: ['precedents', 'fragmentation'],
   economics: ['tam', 'synergies'],
   candidates: ['candidates'],
-  fam: ['ranking', 'plan'],
+  fam: ['prospect', 'ranking', 'plan'],
   appendix: ['cand-appendix', 'sources', 'glossary', 'notes'],
 };"""
+
+FULTON = "/^fulton/.test(e.kind)"
+VC_PATCHES = [
+    ("const vcState = { sel: null };", "const vcState = { sel: 'prospect' };"),
+    ("  if (n.kind === 'fulton') return 'var(--color-warn)';\n",
+     "  if (n.kind === 'fulton') return 'var(--color-warn)';\n  if (n.kind === 'prospect') return 'var(--vc-prospect)';\n"),
+    ("(showF || e.kind !== 'fulton_opportunity')", "(showF || !" + FULTON + ")"),
+    ("[['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Fulton opportunity: addressable market, not current sales', 'var(--color-warn)', true]]",
+     "[['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Prospective platform: estimated flows', 'var(--vc-prospect)', true]]"
+     ".concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : [])"),
+    ("'Value chain of the North American transformer market: suppliers, builders and customers with annual flows'",
+     "'Value chain of US utility infrastructure services: suppliers, service providers and customers with annual flows'"),
+    (".attr('text-anchor', 'middle').text('Builders');", ".attr('text-anchor', 'middle').text('Service providers');"),
+    ("const color = (e, r) => (e.kind === 'fulton_opportunity' ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : 'var(--cds-chart-muted)');",
+     "const color = (e, r) => (" + FULTON + " ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : e.kind === 'prospect' ? 'var(--vc-prospect)' : 'var(--cds-chart-muted)');"),
+    ("const op = r === 'none' ? (e.kind === 'fulton_opportunity' ? 0.75 : 0.4) : 0.9;", "const op = r === 'none' ? (e.kind !== 'flow' ? 0.8 : 0.4) : 0.9;"),
+    (".attr('stroke-dasharray', e.kind === 'fulton_opportunity' ? '5 4' : null);", ".attr('stroke-dasharray', e.kind !== 'flow' ? '5 4' : null);"),
+    ("e.kind === 'fulton_opportunity' ? 'Addressable market for a Fulton company, not current sales' : ''",
+     "e.kind === 'prospect' ? 'Estimate for a platform of about $50M revenue, not a specific company' : " + FULTON + " ? 'Possible link with a Fulton company, not current sales' : ''"),
+    ("n.kind === 'fulton' ? 'is-fulton' : '',", "n.kind === 'fulton' ? 'is-fulton' : '', n.kind === 'prospect' ? 'is-prospect' : '',"),
+    ("model.edges.filter((e) => e.kind !== 'fulton_opportunity').forEach((e) => {", "model.edges.filter((e) => e.kind === 'flow').forEach((e) => {"),
+    ("if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel);",
+     "if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel).sort((a, b) => (vcMid(b) || 0) - (vcMid(a) || 0)).slice(0, 6);"),
+    ("      if (e.kind === 'fulton_opportunity') { const ch = mk('span', 'tx-chip', 'Opportunity'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }",
+     "      if (" + FULTON + ") { const ch = mk('span', 'tx-chip', 'Fulton link'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }\n"
+     "      if (e.kind === 'prospect') { const ch = mk('span', 'tx-chip', 'Prospective'); ch.setAttribute('data-kind', 'prospect'); top.appendChild(ch); }"),
+]
 
 
 def cut(s, start, end):
@@ -42,6 +70,9 @@ def main(src, titles_path, out):
     start = vc.index("const VC_TITLES = [")
     end = vc.index("\n", start)
     vc = vc[:start] + "const VC_TITLES = " + json.dumps(titles) + ";" + vc[end:]
+    for old, new in VC_PATCHES:
+        assert vc.count(old) == 1, old[:70]
+        vc = vc.replace(old, new)
     js.append(vc)
     js.append(cut(s, "function renderWatchTimeline() {", "function renderPortfolioBoard() {"))
     js.append(cut(s, "const GLOSS_TABLE = {", "// ---------- glossary"))

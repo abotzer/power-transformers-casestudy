@@ -1,15 +1,19 @@
 """Build the infra-services dashboard datasets from the research workflow results.
 
-Usage: python3 -I build_infra.py <research/workflow_result.json> <out_dir> [research/candidates_round2.json]
-Writes one JSON file per dataset (figures, plan, answers, answer_numbers, deck_claims, charts, chart_meta,
-platforms, scaled, pl, synergies, candidates, unit_ranking, findings, watchlist, glossary,
-value_chain_nodes, value_chain_edges) plus value_chain_layers.json (column titles for the page).
+Usage: python3 -I build_infra.py <research/workflow_result.json> <out_dir> <research/candidates_round2.json>
+Writes one JSON file per dataset (figures, plan, key_findings, key_numbers, charts, chart_meta, platforms, scaled,
+pl, synergies, candidates, unit_ranking, findings, watchlist, glossary, value_chain_nodes, value_chain_edges)
+plus dashboard/layer_titles.json (column titles for the page).
 Chart rows are curated here from the research tables; every chart row carries its source in chart_meta.
+Report wording (findings, verdict, recommended actions, the prospective platform) comes from editorial.py.
 """
 import json
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import editorial as E  # noqa: E402
 
 ID_BRACKETS = re.compile(r"\s*\[(?:[a-z0-9]+(?:-[a-z0-9]+)+)(?:,\s*[a-z0-9]+(?:-[a-z0-9]+)*)*\]")
 DROP_ALIASES = {"EO", "CT", "CC", "shelter", "fluids", "platform", "Platform", "outage", "Outage", "backlog", "Backlog",
@@ -40,7 +44,7 @@ def write(out, name, rows):
 
 
 def apply_round2(out, cands):
-    """Bring the Q4 answer, unit ranking and plan in line with the round-2 candidate list (roster and ownership checks)."""
+    """Bring the candidate finding, its numbers and the unit ranking in line with the round-2 candidate list."""
     def load(name):
         return json.load(open(os.path.join(out, name + ".json")))
 
@@ -51,52 +55,34 @@ def apply_round2(out, cands):
     p = {u: sum(1 for c in plat if c["unit"] == u) for u in units}
     i = {u: [c["name"] for c in ind if c["unit"] == u] for u in units}
     leads = sum(1 for c in cands if c["grade"] == "Lead")
-    # the prose below names these companies, so stop the build if the list changes
+    # the prose in editorial.py names these companies, so stop the build if the list changes
     assert len(cands) == 147 and [p[u] for u in units] == [9, 4, 3, 5] and [len(i[u]) for u in units] == [6, 1, 1, 1] and leads == 38, (len(cands), p, i, leads)
-    by_unit = "gas %d, water %d, T&D %d, power-gen %d" % tuple(p[u] for u in units)
+    by_unit = "gas %d, water %d, T&D %d, power generation %d" % tuple(p[u] for u in units)
 
-    short = ("Enough to start in gas, not enough for three units. A second pass through trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records "
-             "lists %d private companies; %d are platform-grade (%s). %d of those look independent, %d of them in gas. Leaving out Day & Zimmermann, "
-             "which is not a seller, about %d names are worth approaching, most of them gas regionals whose size still needs checking."
-             % (len(cands), len(plat), by_unit, len(ind), len(i["gas"]), len(ind) - 1))
-    update = ("Update after a second candidate pass (Oct 29, 2026): the first pass dropped companies without a verified website and missed most founder-owned "
-              "regionals. Checking DCA, NETA, NASSCO and AWWA member lists, company sites and ownership records changed the picture:\n"
-              "\u2022 Gas: %d listed, %d platform-grade. Six look independent: Heath Consultants (third-generation family, Houston), R.H. White (White family, "
-              "~500-600 staff, Massachusetts), Driver Pipeline and Larrett Energy Services (Texas; Larrett was formed by Scott Driver, so the two may be related), "
-              "Banks Gas Services (founder-owned, Pittsburgh) and Diversified Utility Services (Atlanta). J.F. Kiely is family-led, but family control is not confirmed.\n"
-              "\u2022 Q3 Contracting was dropped: Primoris owns it, so it is not available.\n"
-              "\u2022 Water: %d listed, %d platform-grade. Pittsburg Tank & Tower (Johnston family) is independent; Carylon's ownership is still unconfirmed.\n"
-              "\u2022 T&D: %d listed, %d platform-grade. Tomberlin Pole Treatment (family) is independent but add-on scale. Davis H. Elliot (ESOP) fits, but its website was not verified.\n"
-              "\u2022 Power-gen: %d listed, %d platform-grade. Day & Zimmermann is the only confirmed independent, and it is not a likely seller.\n"
-              "\u2022 %d more names are leads without a verified website.\n\n"
-              "So the gas unit has a real starting pipeline. The other units still depend on sponsor-owned platforms or add-on-scale firms.\n\n"
-              "First pass, for reference:\n\n"
-              % (n["gas"], p["gas"], n["water"], p["water"], n["T&D"], p["T&D"], n["power-gen"], p["power-gen"], leads))
-    answers = load("answers")
-    q4 = next(a for a in answers if a["q"] == 4)
-    q4["short_answer"], q4["verdict"] = short, "Mixed"
-    q4["answer"] = update + q4["answer"].replace("Regional contractors Q3 Contracting, J.F. Kiely and Utility Line Services fit the model",
-                                                 "Regional contractors J.F. Kiely and Utility Line Services fit the model (Q3 Contracting turned out to be owned by Primoris)")
-    q4["sources"] = " | ".join(["https://directory.dcaweb.org/", "https://heathus.com", "https://rhwhite.com", "https://www.driverpipeline.com", "https://pttg.com", "https://tomberlinpole.com"]
-                               + [u for u in q4["sources"].split(" | ") if u])
-    write(out, "answers", answers)
-    anums = [a for a in load("answer_numbers") if a["q"] != 4 or not any(k in a["label"] for k in ("screened", "Platform-grade", "Realistic"))]
-    q4n = [dict(label="Private companies listed after the roster check", value="%d (%d without a verified website)" % (len(cands), leads), source_url="https://directory.dcaweb.org/"),
+    kf = load("key_findings")
+    f = next(x for x in kf if x["id"] == "candidates")
+    f["body"] = E.CANDIDATE_BODY.format(gas_n=n["gas"], gas_p=p["gas"], water_n=n["water"], water_p=p["water"], td_n=n["T&D"], td_p=p["T&D"],
+                                        pg_n=n["power-gen"], pg_p=p["power-gen"], leads=leads)
+    f["sources"] = " | ".join(["https://directory.dcaweb.org/", "https://heathus.com", "https://rhwhite.com", "https://www.driverpipeline.com", "https://pttg.com", "https://tomberlinpole.com"]
+                              + [u for u in f["sources"].split(" | ") if u])
+    write(out, "key_findings", kf)
+    kn = [x for x in load("key_numbers") if x["finding"] != "candidates" or not any(k in x["label"] for k in ("screened", "Platform-grade", "Realistic"))]
+    new = [dict(label="Private companies listed after the roster check", value="%d (%d without a verified website)" % (len(cands), leads), source_url="https://directory.dcaweb.org/"),
            dict(label="Platform-grade candidates by unit", value="%d (%s)" % (len(plat), by_unit), source_url="https://directory.dcaweb.org/"),
            dict(label="Platform-grade and independent", value="%d (%d in gas)" % (len(ind), len(i["gas"])), source_url="https://heathus.com"),
-           dict(label="Realistic names to approach now", value="~%d, mostly gas regionals (size unchecked)" % (len(ind) - 1), source_url="https://rhwhite.com")]
-    rest = [a for a in anums if a["q"] == 4]
-    anums = [a for a in anums if a["q"] != 4]
-    for k, a in enumerate(q4n + [dict(label=r["label"], value=r["value"], source_url=r["source_url"]) for r in rest]):
-        anums.append(dict(id="q4n%02d" % k, q=4, order=k, label=a["label"], value=a["value"], source_url=a["source_url"]))
-    write(out, "answer_numbers", anums)
+           dict(label="Names that may be worth approaching now", value="~%d, mostly gas regionals (size unchecked)" % (len(ind) - 1), source_url="https://rhwhite.com")]
+    rest = [x for x in kn if x["finding"] == "candidates"]
+    kn = [x for x in kn if x["finding"] != "candidates"]
+    for k, x in enumerate(new + [dict(label=r["label"], value=r["value"], source_url=r["source_url"]) for r in rest]):
+        kn.append(dict(id="candidates-n%02d" % k, finding="candidates", order=k, label=x["label"], value=x["value"], source_url=x["source_url"]))
+    write(out, "key_numbers", kn)
 
     rank = load("unit_ranking")
     cand_text = {
         "Natural gas": "%d listed; %d platform-grade, 6 of them independent: Heath Consultants, R.H. White, Driver Pipeline, Larrett Energy, Banks Gas Services, Diversified Utility Services. J.F. Kiely is family-led (control unconfirmed). Sponsor-owned: Sparus (Ridgemont), Artera (CD&R). Danella has a safety flag." % (n["gas"], p["gas"]),
-        "Water": "%d listed; %d platform-grade: Pittsburg Tank & Tower (Johnston family), Carylon (ownership unconfirmed), Maguire Iron (ownership unknown), USG (sponsored). Nine names fail the low-bid screen." % (n["water"], p["water"]),
+        "Water": "%d listed; %d platform-grade: Pittsburg Tank & Tower (Johnston family), Carylon (ownership unconfirmed), Maguire Iron (ownership unknown), USG (sponsored). Nine names depend on low-bid work." % (n["water"], p["water"]),
         "T&D": "%d listed; %d platform-grade: Pike (TPG) and Osmose (EQT), both sponsor-owned, and Tomberlin Pole Treatment (family, add-on scale). Davis H. Elliot (ESOP) fits but is unverified. Vegetation managers score 3." % (n["T&D"], p["T&D"]),
-        "Power-generation": "%d listed; %d platform-grade. Only Day & Zimmermann is confirmed independent, and it is not a seller; Structural Integrity Associates is employee-owned. Shermco, RESA Power and Allied Power Group are sponsor-owned." % (n["power-gen"], p["power-gen"]),
+        "Power-generation": "%d listed; %d platform-grade. Only Day & Zimmermann is confirmed independent, and it is unlikely to sell; Structural Integrity Associates is employee-owned. Shermco, RESA Power and Allied Power Group are sponsor-owned." % (n["power-gen"], p["power-gen"]),
     }
     for r in rank:
         key = next(k for k in cand_text if r["unit"].startswith(k))
@@ -105,11 +91,17 @@ def apply_round2(out, cands):
                     .replace("\u2022 No independent platform-grade candidate was found.", "\u2022 The only independent platform-grade candidate, Tomberlin Pole Treatment, is add-on scale."))
     write(out, "unit_ranking", rank)
 
-    plan = load("plan")
-    old = "Approach the named independents first: Heath Consultants once its ownership is confirmed, and Q3 Contracting, J.F. Kiely and Utility Line Services once their size is confirmed."
-    step = next(x for x in plan if old in x["body"])
-    step["body"] = step["body"].replace(old, "Approach the independent gas regionals first: Heath Consultants, R.H. White, Driver Pipeline and Larrett Energy, Banks Gas Services and Diversified Utility Services, plus J.F. Kiely once family control is confirmed. Check each one's size before the first call.")
-    write(out, "plan", plan)
+
+def apply_text_edits(out):
+    """Plain wording fixes in datasets that come straight from the research (see editorial.TEXT_EDITS)."""
+    cache = {}
+    for name, rid, field, old, new in E.TEXT_EDITS:
+        rows = cache.setdefault(name, json.load(open(os.path.join(out, name + ".json"))))
+        r = next(x for x in rows if x["id"] == rid)
+        assert r[field].count(old) == 1, (name, rid, field, old[:50])
+        r[field] = r[field].replace(old, new)
+    for name, rows in cache.items():
+        write(out, name, rows)
 
 
 def main(src, out, round2=None):
@@ -117,52 +109,52 @@ def main(src, out, round2=None):
     R, S = r["research"], r["synthesis"]
     os.makedirs(out, exist_ok=True)
 
-    # ---------- answers (+ Q3 fix: Caribou-Palermo and PG&E tower age now sourced) ----------
-    extra_q3 = ("\n\nUpdate after a direct check (Oct 29, 2026): reporting on PG&E's own records dates the Caribou-Palermo line to 1921, "
-                "and a 2017 PG&E presentation put the average age of its ~50,000 transmission towers at 68 years, the oldest built before 1910 "
-                "(GV Wire / KQED, citing the Wall Street Journal). In Pennsylvania, PPL is rebuilding 230 kV lines from the mid-1920s and 1930s under a "
-                "'Vintage Conductor' program (PA PUC filing).")
-    answers, anums = [], []
+    # ---------- key findings (the research answers, reworded as independent findings in editorial.py) ----------
+    bodies = {a["q"]: clean(a["answer"]) for a in S["answers"]}
+    bodies[3] = bodies[3].replace("A secondary source dates the line to 1921; confirm that against the Butte County DA report before citing it.",
+                                  "Reporting on PG&E's records dates the line to 1921 (see the update below).")
+    for q, old, new in E.BODY_EDITS:
+        assert bodies[q].count(old) == 1, (q, old[:60])
+        bodies[q] = bodies[q].replace(old, new)
+    kf, kn = [], []
     for a in S["answers"]:
-        body = clean(a["answer"])
+        f = E.FINDINGS[a["q"]]
         srcs = list(a.get("source_urls") or [])
-        if a["q"] == 3:
-            body = body.replace("A secondary source dates the line to 1921; confirm that against the Butte County DA report before citing it.",
-                                "Reporting on PG&E's records dates the line to 1921 (see the update below).") + extra_q3
-            srcs += ["https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/", "https://www.kqed.org/news/11760156/report-pge-knew-about-extensive-power-line",
-                     "https://www.puc.pa.gov/pcdocs/1118448.pdf"]
-        answers.append(dict(id=f"q{a['q']}", q=a["q"], question=clean(a["question"]), short_answer=clean(a["short_answer"]), answer=body,
-                            verdict=a["verdict"], sources=" | ".join(u for u in srcs if https(u))))
         nums = list(a["key_numbers"])
         if a["q"] == 3:
+            srcs += ["https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/", "https://www.kqed.org/news/11760156/report-pge-knew-about-extensive-power-line",
+                     "https://www.puc.pa.gov/pcdocs/1118448.pdf"]
             nums = [dict(label="Caribou-Palermo line (Camp Fire) in service since", value="1921", source_url="https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/"),
                     dict(label="PG&E transmission towers, average age (2017)", value="68 yrs", source_url="https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/")] + nums
+        kf.append(dict(id=f["id"], order=f["order"], topic=f["topic"], tag=f["tag"], summary=f["summary"], body=bodies[a["q"]],
+                       sources=" | ".join(u for u in srcs if https(u))))
         for i, k in enumerate(nums):
-            anums.append(dict(id=f"q{a['q']}n{i:02d}", q=a["q"], order=i, label=clean(k["label"]), value=clean(k["value"]), source_url=https(k.get("source_url"))))
-    write(out, "answers", answers)
-    write(out, "answer_numbers", anums)
-
-    # ---------- deck claims ----------
-    write(out, "deck_claims", [dict(id=f"c{i:02d}", order=i, claim=clean(d["claim"]), verdict=d["verdict"].capitalize(), better_statement=clean(d["better_statement"]),
-                                    source_url=https(d.get("source_url"))) for i, d in enumerate(S["deck_claims"])])
+            kn.append(dict(id=f"{f['id']}-n{i:02d}", finding=f["id"], order=i, label=clean(k["label"]), value=clean(k["value"]), source_url=https(k.get("source_url"))))
+    write(out, "key_findings", sorted(kf, key=lambda x: x["order"]))
+    write(out, "key_numbers", kn)
+    for old in ("answers", "answer_numbers", "deck_claims"):
+        if os.path.exists(os.path.join(out, old + ".json")):
+            os.remove(os.path.join(out, old + ".json"))
 
     # ---------- plan ----------
     P = S["fam_plan"]
-    plan = [dict(id="headline", kind="headline", order=0, heading="Headline", body=clean(S["headline"])),
-            dict(id="summary", kind="summary", order=1, heading="Our verdict", body=clean(S["summary"])),
-            dict(id="first_unit", kind="first_unit", order=2, heading="Start with", body=clean(P["first_unit"])),
-            dict(id="rationale", kind="rationale", order=3, heading="Why", body=clean(P["rationale"]))]
-    for i, x in enumerate(P["steps"]):
-        plan.append(dict(id=f"step{i:02d}", kind="step", order=10 + i, heading=f"Step {i + 1}", body=clean(x)))
-    for i, x in enumerate(P["vertical_integration"]):
-        plan.append(dict(id=f"vi{i:02d}", kind="vi", order=40 + i, heading=clean(x["fam_company"]), body=clean(x["opportunity"]) + (f" ({clean(x['size'])})" if x.get("size") else "")))
-    for i, x in enumerate(P["thesis_edits"]):
-        plan.append(dict(id=f"edit{i:02d}", kind="edit", order=60 + i, heading="Edit", body=clean(x)))
+    plan = [dict(id="headline", kind="headline", order=0, heading="Headline", body=E.HEADLINE)]
+    for i, (h, b) in enumerate(E.VERDICT):
+        plan.append(dict(id=f"verdict{i}", kind="verdict", order=1 + i, heading=h, body=b))
+    plan += [dict(id="first_unit", kind="first_unit", order=8, heading=E.FIRST_UNIT[0], body=E.FIRST_UNIT[1]),
+             dict(id="rationale", kind="rationale", order=9, heading="Why", body=E.RATIONALE)]
+    for i, x in enumerate(E.STEPS):
+        plan.append(dict(id=f"step{i:02d}", kind="step", order=10 + i, heading=f"Step {i + 1}", body=x))
+    for i, (h, b) in enumerate(E.PROFILE):
+        plan.append(dict(id=f"profile{i}", kind="profile", order=30 + i, heading=h, body=b))
+    for i, (h, b) in enumerate(E.FULTON_LINKS):
+        plan.append(dict(id=f"vi{i:02d}", kind="vi", order=40 + i, heading=h, body=b))
     for i, x in enumerate(P["risks"]):
-        plan.append(dict(id=f"risk{i:02d}", kind="risk", order=80 + i, heading=clean(x["risk"]), body=clean(x["mitigation"])))
+        rid = f"risk{i:02d}"
+        plan.append(dict(id=rid, kind="risk", order=80 + i, heading=clean(x["risk"]), body=E.RISK_BODIES[rid]))
     for i, x in enumerate(P["signals"]):
         plan.append(dict(id=f"sig{i:02d}", kind="signal", order=100 + i, heading=clean(x["signal"]), body=clean(x["meaning"])))
-    plan.append(dict(id="caveats", kind="caveat", order=200, heading="Caveats", body=clean(S["caveats"])))
+    plan.append(dict(id="caveats", kind="caveat", order=200, heading="Caveats", body=E.CAVEATS))
     write(out, "plan", plan)
 
     # ---------- unit ranking ----------
@@ -230,7 +222,7 @@ def main(src, out, round2=None):
     write(out, "findings", findings)
 
     # ---------- candidates ----------
-    cands = (json.load(open(round2))["candidates"] if round2 and os.path.exists(round2) else r["consolidated"]["candidates"])
+    cands = json.load(open(round2))["candidates"]
     rows = []
     seen = set()
     for c in cands:
@@ -258,8 +250,7 @@ def main(src, out, round2=None):
                          c_specialized=cr.get("specialized_labor_equipment", "unknown"), c_avoid=avoid, c_independent=cr.get("independent_available", "unknown"),
                          sources=" | ".join(u for u in (c.get("source_urls") or []) if https(u))))
     write(out, "candidates", rows)
-    if round2 and os.path.exists(round2):
-        apply_round2(out, rows)
+    apply_round2(out, rows)
 
     # ---------- charts ----------
     meta, data = [], []
@@ -476,9 +467,17 @@ def main(src, out, round2=None):
         nodes.append(dict(id=n["id"], name=clean(n["name"]), layer=n["layer"], group=g, group_order=groups.index(g) if n["layer"] == "B" and g in groups else None,
                           kind=n.get("kind", "company"), description=clean(n.get("description")), size_label=clean(n.get("size_label")), ownership=clean(n.get("ownership")),
                           source_url=https(n.get("source_url"))))
+    nodes.append(dict(E.PROSPECT_NODE))
+    net_edges = [e for e in net["edges"] if e.get("kind") != "fulton_opportunity"]
+    for k, (src_, tgt, prod, lo, hi, basis, url) in enumerate(E.PROSPECT_EDGES):
+        net_edges.append(dict(id=f"p{k:02d}", source=src_, target=tgt, product=prod, value_low_usd_m=lo, value_high_usd_m=hi,
+                              value_label="$%s-%sM/yr (est.)" % (lo, hi), estimated=True, kind="prospect", basis=basis, source_url=url))
+    for k, (src_, tgt, prod, lo, hi, basis) in enumerate(E.FULTON_EDGES):
+        net_edges.append(dict(id=f"fs{k:02d}", source=src_, target=tgt, product=prod, value_low_usd_m=lo, value_high_usd_m=hi,
+                              value_label="$%s-%sM/yr (est.)" % (lo, hi), estimated=True, kind="fulton_synergy", basis=basis, source_url=""))
     ids = {n["id"] for n in nodes}
     edges, eids = [], set()
-    for i, e in enumerate(net["edges"]):
+    for i, e in enumerate(net_edges):
         if e["source"] not in ids or e["target"] not in ids or e["source"] == e["target"]:
             continue
         eid = e.get("id") or f"e{i:03d}"
@@ -493,6 +492,7 @@ def main(src, out, round2=None):
     write(out, "value_chain_edges", edges)
     with open(os.path.join(os.path.dirname(os.path.abspath(src)), "..", "dashboard", "layer_titles.json"), "w") as f:
         json.dump(net["layer_titles"], f)
+    apply_text_edits(out)
 
 
 if __name__ == "__main__":

@@ -81,14 +81,14 @@
   "sort_date": "2027-04-30",
   "when": "2026-2027",
   "item": "Sponsor exits in lower-middle-market utility services (Sparus held by Ridgemont since 2021; reported USG Water Solutions sale)",
-  "why": "Sets the prices FAM will face for platforms and add-ons. Above ~9-10x, slow down."
+  "why": "Sets the prices a buyer will face for platforms and add-ons. Above ~9-10x, slow down."
  },
  {
   "id": "w12",
   "sort_date": "2027-06-30",
   "when": "2027",
   "item": "PHMSA CY2026 gas distribution annual-report data",
-  "why": "Re-pull the by-decade inventory and cast-iron mileage to finalize the deck's mains-over-50-years statistic."
+  "why": "Re-pull the by-decade inventory and cast-iron mileage to update the share of mains over 50 years old."
  },
  {
   "id": "w13",

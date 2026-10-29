@@ -1,14 +1,250 @@
 # Critical utility infrastructure services
 
-**The market is real and funded through utility rates, but this is a crowded, thin-margin roll-up category. Crews do not flex across gas, power and water, and margins do not grow with scale. FAM should start with one founder-owned gas maintenance platform bought at about 6-8x EBITDA, not a three-unit holding company.**
+**Utility infrastructure maintenance is a large market funded through regulated rates, and a well-trodden roll-up category with moderate margins. Crews and equipment are largely specific to each utility type, and margins change little with scale, which favors starting with one founder-owned gas distribution maintenance platform at about 6-8x EBITDA and adding units over time.**
 
-Prepared for Fulton Asset Management by Whitesail Labs. The interactive report has the charts, market map and full source list; this file holds the answers in plain text.
+Prepared for Fulton Asset Management by Whitesail Labs. The interactive report has the charts, market map and full source list; this file holds the text.
 
-## Q1. Is this basically an infrastructure maintenance roll-up? Who has built such platforms (competition), and which roll-ups are going well or badly (validation)?
+## Our verdict
 
-**Verdict: Mixed.** Yes. It is a utility-infrastructure maintenance roll-up, and the category is proven by profitable exits (Shermco, Pike, USIC, Osmose, Azuria). The multi-unit holding company is not proven: the closest attempts failed or are distressed, and the field is crowded with at least 26 sponsor-backed platforms plus the public consolidators.
+**The market**
 
-Yes. Without the branding, this is a utility-infrastructure maintenance (MRO) roll-up, and the playbook has been run many times. The record validates the category, but not the three-unit design.
+Outsourced maintenance across gas, power and water is about $44-81B a year (est.), paid for through utility rates. Maintenance and replacement demand is supported by:
+- investor-owned electric capex of ~$208B in 2025
+- gas utility construction capex of $49.1B in 2023
+- federally mandated gas inspection cycles
+- 50-55% of distribution transformers older than 33 years
+- water mains replaced on a ~125-year cycle
+- nuclear plants licensed to 80 years
+Population growth (+0.5%) and headline load growth add less: they mostly fund new construction.
+
+**The category**
+
+Maintenance roll-ups are a proven model. Shermco (~$1.6B to Blackstone), Pike (>$5B EV reported), USIC, Osmose and Azuria/Inframark were profitable sponsor exits. Multi-unit platforms have a weaker record: no one has built a scaled gas + power + water maintenance platform, the closest attempts failed (Williams, Orbital), and Artera, the largest gas roll-up, is highly leveraged. At least 26 sponsor-backed platforms compete for the same add-ons.
+
+**Figures that should be revalidated**
+
+- Scaled players: public data shows 15-20 companies with revenue around or above $1B, plus 26 sponsor-backed platforms, though fewer than 10 in each sub-segment.
+- Shared crews and equipment: only ~15-27% of field headcount can move between power and gas or water (est.). Gas and water share more, at ~53%.
+- Margins at scale: maintenance contracts earn about 8-10% EBITDA at most sizes. Scale mainly lifts the valuation multiple.
+- Provider count: 18,877 utility-system construction firms (Census 2017), down from 25,227 in 2012. The maintenance-focused pool is much smaller.
+- Asset age: NREL's transformer data, PHMSA's pipe inventory and the Utah State water main survey are stronger sources than grid-wide age estimates.
+
+**A path the evidence favors**
+
+- Start with one founder-owned gas distribution maintenance platform at ~6-8x EBITDA.
+- Add water underground work in the same metros.
+- Consider T&D later, as a separate operating company.
+- Approach power generation, if at all, through testing or inspection add-ons.
+A 9-11% margin and cash yield are a sounder underwriting basis than multiple expansion.
+
+## Key findings
+
+### Market size and platform economics
+
+*Mixed.* Outsourced maintenance across gas, power and water is about $44-81B a year (est.): T&D $20-35B, gas $12-20B, water $8-18B and power generation $4-8B. A founder-owned platform of about $50M revenue, built to about $150M through add-ons, would typically earn a 9-11% EBITDA margin. Scale adds little margin on its own (roughly 0-1 point); its main benefit is a higher valuation multiple, which a permanent-capital owner realizes only through a sale or recapitalization.
+
+The market is large; margins are moderate and change little with scale.
+
+TAM, outsourced MRO only (the spend pools are sourced; the outsourced shares are estimates):
+- Gas: $12-20B a year (35-55% of AGA's $33-37B annual safety spend).
+- T&D: $20-35B. This is the replacement and hardening share of $50.9B distribution and $32.6B transmission capex, plus outsourced vegetation, inspection, testing and storm work.
+- Power-gen maintenance: $4-8B of ~$13B of plant maintenance (EIA cost per MWh x generation), after OEM service agreements and in-house work. It is shrinking with coal.
+- Water: $8-18B (CBO: $113B of public water spending in 2017, $82B of it O&M that is mostly done in-house).
+- Total: ~$44-81B. A $500M platform would hold ~1%.
+
+Margins (FY2025 adj. EBITDA):
+- Quanta 10.1%, Mistras 12.6%, Centuri 8.3%, MasTec 8.0%
+- Primoris ~6.9%, Team 6.8%, ESOA 4.2%, Badger 23.8%
+
+Specialty and asset-heavy niches earn 12-24%; MSA labor work earns 8-10%. Scale alone adds roughly 0-2 points. Fixed-price problems swing margins hard: MYR's gross margin moved from 8.6% to 11.6%, and MasTec Pipeline's from 18.3% to 14.9%.
+
+Revenue and margin path (illustrative estimate; 70% MSA field work, 30% specialty testing):
+- $50M platform: ~11.0% EBITDA ($5.5M), often helped by owner add-backs.
+- $150M: ~9.5% ($14M), because holdco safety, finance and ERP costs land before the synergies do.
+- $500M: ~11.3% ($56.5M), with a range of 9-13%.
+
+Bridge from $50M to $500M:
+- holdco cost: -1.2 pts
+- integration: -0.7
+- procurement: +0.4 (utilities often supply the major materials)
+- equipment: +0.4
+- insurance and benefits: +0.4
+- SG&A leverage: +1.0
+
+The net is ~+0.3 pts. A 9-11% steady-state margin is a reasonable underwriting case.
+
+Where scale does help:
+- Multiples. Lower-middle-market deals cleared at 6.4x ($10-25M TEV), 6.8x ($25-50M) and 8.3x ($50-100M) in 9M 2025 (GF Data, all industries). Scaled assets sit at 11-16x: Centuri's IPO was ~11-12x (est.) and it trades at 12-16x, the public peer median is 15.2x, and Qualus paid 14.9x.
+- For permanent capital, that multiple gap is a mark, not cash, unless the owner recapitalizes or sells. The cash case must stand on its own. At a 7x entry and an 11% margin, EBITDA less 3-4% fleet capex is ~9.7% of the purchase price a year, pre-tax and before organic growth (est.).
+- Risk costs fall with size: insurance pooling, safety programs and fleet buying all improve.
+
+A realistic path: a ~$50M founder-owned platform bought at ~6-8x, built to ~$150M through add-ons, earning 9-11%. $500M is a long-horizon outcome.
+
+| Figure | Value |
+|---|---|
+| Outsourced MRO TAM, four units | [$44-81B/yr (est.)](https://www.aga.org/safety) |
+| Gas outsourced MRO | [$12-20B/yr (est.)](https://www.aga.org/safety) |
+| T&D outsourced MRO | [$20-35B/yr (est.)](https://www.foley.com/insights/publications/2026/09/the-grids-bottleneck-isnt-just-money-its-materials/) |
+| Power-gen outsourced maintenance | [$4-8B/yr of ~$13B (est.)](https://eia.gov/electricity/annual/html/epa_08_04.html) |
+| Water outsourced MRO | [$8-18B/yr (est.)](https://nacwa.org/news-publications/news-detail/2018/10/23/congressional-budget-office-reveals-public-spending-trends-for-water-infrastructure-and-transportation-in-new-report) |
+| Illustrative EBITDA margin at $50M / $150M / $500M revenue | [11.0% / 9.5% / 11.3% (est.)](https://www.businesswire.com/news/home/20260225110463/en) |
+| Net margin gain from scale, $50M -> $500M | ~+0.3 pts (est.) |
+| Lower-middle-market entry multiples (9M 2025, all industries) | [6.4x / 6.8x / 8.3x by deal size](https://capitalpad.com/lower-middle-market-ebitda-multiples/) |
+| Scaled utility-services multiples | [11-16x EV/EBITDA (public peer median 15.2x)](https://axiagrowth.com/resources/industries/energy-infrastructure/electrical-infrastructure-contracting) |
+| Pre-tax cash yield at 7x entry, 11% margin, 3-4% fleet capex | ~9.7% (est.) |
+
+### How old the infrastructure is
+
+*Favorable.* Much of it is old, and the age can be measured. Most of the US transmission grid dates from the 1960s-70s, some lines go back to the 1920s, and 50-55% of distribution transformers are older than 33 years. At today's replacement pace, the old stock takes about 17-22 years to clear for transformers and 11-16 years for cast-iron gas mains, and water mains are on a ~125-year cycle. Maintenance extends asset life and is itself recurring revenue, so aging is a slow, funded driver rather than a sudden wave.
+
+Routine maintenance keeps old assets in service, and that maintenance is the revenue. The age of the installed base can be measured from federal and utility data.
+
+Power lines over 50 years old are common:
+- NASEO's grid primer says most of today's transmission grid dates to the 1960s-70s, which makes it roughly 46-66 years old now.
+- The best-known case is PG&E's Caribou-Palermo 115 kV line. A worn C-hook on Tower 27/222 failed and started the 2018 Camp Fire (CAL FIRE; PG&E 8-K), and PG&E pleaded guilty to 84 counts of involuntary manslaughter. Reporting on PG&E's records dates the line to 1921, and a 2017 PG&E presentation put the average age of its ~50,000 transmission towers at 68 years, the oldest built before 1910 (GV Wire / KQED, citing the Wall Street Journal).
+- In Pennsylvania, PPL is rebuilding 230 kV lines from the mid-1920s and 1930s under a 'Vintage Conductor' program (PA PUC filing).
+
+Years to clear the old stock at today's replacement pace:
+- Distribution transformers (NREL for DOE): 60-80M units, 50-55% older than 33 years, with additions plus replacements of only 2.5-3% a year. Turning over the old half would take ~17-22 years even if every unit went to it.
+- Large power transformers averaged 38-40 years in 2014, against a ~40-year design life (DOE).
+- Wood poles: 130-160M are in service. Well maintained, they last 70-80+ years on ~10-year inspect-and-treat cycles, against a ~35-year book life (NAWPC). That is recurring inspection demand, not a replacement wave.
+- Gas: PHMSA says 28% of distribution pipe was installed before 1970. Cast and wrought iron fell to ~16,337 miles in 2023, down 63% since 2005, and 24 states have finished. At 1,000-1,500 miles a year, it is gone in ~11-16 years. Bare steel (~61,000 miles around 2013) runs into the 2040s (UGI: 2041).
+- Water: a 2023 Utah State survey of 802 utilities found 11.1 breaks per 100 miles a year (~260,000 breaks and $2.6B of repairs) and a $452B backlog of pipe past its useful life (ASCE). Mains are replaced on a ~125-year cycle (~0.8% a year) while the average pipe fails at ~53 years, so the backlog grows.
+- Generation: coal units average 45 years and retire at ~50 (EIA), so that market shrinks. Nuclear is the opposite: the NRC renewed 18 licenses (~17 GW) in 15 months, many to 80 years.
+
+Does spending follow? Grid Strategies/ACEG attributes ~90% of the $25B+ a year of transmission spend to reliability and replacement (not re-verified). Asset-condition projects are 73% of New England transmission owners' capital projects (Utility Dive).
+
+In sum: aging is real, measurable and funded through rate trackers, but it is slow and regional. NREL's transformer data, PHMSA's pipe inventory and the Utah State water main survey are the most defensible sources; grid-wide age percentages should be revalidated before use.
+
+| Figure | Value |
+|---|---|
+| Caribou-Palermo line (Camp Fire) in service since | [1921](https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/) |
+| PG&E transmission towers, average age (2017) | [68 yrs](https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/) |
+| Gas distribution pipe installed before 1970 | [28% (PHMSA, 2021)](https://primis-meetings.phmsa.dot.gov/archive/Agenda_9_PAC_Pipeline_Industry_Performance_10202021.pdf) |
+| Cast/wrought iron gas mains left (2023) and years to clear | [~16,337 mi; ~11-16 yrs at 1,000-1,500 mi/yr](https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2025-01/PHMSA%20Final%20Rule%20-%20Gas%20Pipeline%20Leak%20Detection%20and%20Repair%20-%20As%20submitted.pdf) |
+| Distribution transformers older than 33 years | [50-55% of 60-80M units](https://nrel.gov/docs/fy25osti/92076.pdf) |
+| Distribution transformer replacements + additions | [2.5-3% of units per year (~17-22 yrs to turn over the old half)](https://nrel.gov/docs/fy25osti/92076.pdf) |
+| Large power transformer average age (2014) | [38-40 yrs vs ~40-yr design life](https://www.energy.gov/sites/default/files/2014/04/f15/LPTStudyUpdate-040914.pdf) |
+| Water main break rate (US + Canada, 2023) | [11.1 per 100 mi/yr; ~260K breaks; $2.6B/yr repairs](https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2024/04/breaking-water-mains-present-us-canada-with-%24452b-problem) |
+| Water main replacement cycle vs average failure age | [~125 yrs vs ~53 yrs](https://trenchlesstechnology.com/last-word-the-water-main-report-card/) |
+| Maintained wood pole life vs book life | [70-80+ yrs vs ~35 yrs](https://woodpoles.org/issues/service-life/) |
+| Coal unit average age / retirement age | [45 yrs / ~50 yrs](https://www.eia.gov/todayinenergy/detail.php?id=50658) |
+
+### What is driving demand
+
+*Mixed.* The drivers most tied to maintenance are replacement capex that utilities recover through their rates, mandated gas safety cycles and asset life extension, especially nuclear licenses to 80 years. Population growth has slowed to 0.5%. Electricity use was flat for years as products became more efficient and is now rising again, mostly from data centers; that growth largely funds new construction. Headwinds include a withdrawn federal leak-detection rule, the end of supplemental federal water funding and litigation over the lead-pipe rule.
+
+Drivers that fund new construction and drivers that fund maintenance point in different directions.
+
+Population: a weak driver.
+- Census Vintage 2025 shows +0.5% growth to 341.8M, the slowest since 2021.
+- Net international migration fell from 2.7M (2024) to 1.3M (2025), and ~321k is projected for 2026.
+- What growth there is sits in the Sun Belt and means new connections, which is construction.
+
+Power demand: falling per home, rising in total.
+- Efficiency is real: residential use per customer fell 2.3% from 2009 to 2019 (EIA), and total use was flat in 2015-2021 at ~3.86-4.0 trillion kWh.
+- Use then hit a record 4,195 BkWh in 2025. EIA's Oct 2026 STEO forecasts 4,288 for 2026 and 4,356 for 2027, led by commercial load (data centers).
+- LBNL puts data centers at 176 TWh in 2023 (4.4% of US use) and 325-580 TWh by 2028.
+- Grid Strategies' 5-year peak forecast rose from 24 GW to 166 GW in three years, though it flags ~25 GW of data-center double counting.
+- Growth is concentrated in ERCOT and PJM and mostly pays for generation, transmission and interconnection builds.
+
+Nuclear: the clearest maintenance signal.
+- The NRC renewed 18 licenses (~17 GW) in 15 months, including 80-year approvals for Turkey Point, Surry, Browns Ferry, St. Lucie and Hatch.
+- Restarts add ~2.25 GW (Palisades ~Mar 2027; Crane 2027). SMRs are post-2030 construction.
+- Outage work requires NRC Appendix B quality programs and is held by incumbents.
+
+Solar, wind and storage: a record 53 GW was added in 2025 and 86 GW is planned for 2026 (EIA). The O&M pool (est. $7-10B) goes largely to equipment makers and owners, and the OBBBA tax-credit phase-out points to a 2026-27 peak.
+
+The drivers most tied to maintenance:
+- Replacement capex that utilities recover through their rates. EEI members' capex rose from $139.8B (2020) to ~$207.9B (2025E), with >$1.1T planned for 2025-29. Gas utility construction capex rose from $32.7B to $49.1B in 2022-23 (AGA).
+- Mandated recurring work: 49 CFR 192 leak surveys, cathodic protection and regulator inspections.
+- Life extension: nuclear to 80 years, poles to 70-80+.
+
+Headwinds:
+- PHMSA's leak-detection rule was withdrawn in Jan 2025; a new proposal has sat at DOT since Apr 30, 2026.
+- FY2026 was the last year of IIJA supplemental SRF money ($2,603M per fund).
+- The Nov 2027 lead-line deadline is in litigation.
+- Affordability pressure is rising.
+
+Utilities earn a return on capital spending but not on O&M, so the replacement programs they capitalize are the most durable source of work.
+
+| Figure | Value |
+|---|---|
+| US electricity consumption | [4,195 BkWh (2025) -> 4,288 (2026F) -> 4,356 (2027F)](https://www.eia.gov/outlooks/steo/archives/oct26.pdf) |
+| Total electricity use, 2015-2021 | [~flat at ~3.86-4.0 trillion kWh](https://www.eia.gov/electricity/annual/html/epa_02_02.html) |
+| Residential use per customer, 2009-2019 | [-2.3%](https://www.eia.gov/todayinenergy/detail.php?id=46276) |
+| Data center electricity use | [176 TWh (2023, 4.4%) -> 325-580 TWh (2028)](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers) |
+| US population growth, 2025 | [+0.5% to 341.8M; net migration 2.7M -> 1.3M](https://census.gov/newsroom/press-releases/2026/population-growth-slows.html) |
+| Investor-owned electric utility capex | [$139.8B (2020) -> ~$207.9B (2025E); >$1.1T 2025-29](https://www.eei.org/News/news/All/electric-companies-to-invest-nearly-$208b-in-2025-to-strengthen-grid-and-drive-economic-growth) |
+| Gas utility construction capex | [$32.7B (2022) -> $49.1B (2023)](https://www.aga.org/research-policy/resource-library/gas-utility-construction-capital-expenditure) |
+| Nuclear license renewals | [18 in 15 months (~17 GW)](https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-049.pdf) |
+| IIJA supplemental SRF funding, final year FY2026 | [$2,603M per fund (clean water, drinking water)](https://www.everycrsreport.com/reports/IF13177.html) |
+
+### Providers and scaled players
+
+*Watch.* The provider base is large and shrinking. The Census counted 18,877 utility-system construction firms in 2017, down from 25,227 in 2012, though the maintenance-focused pool is much smaller (for example, ~240 members of the gas distribution contractors' association). At the top, 15-20 companies have revenue around or above $1B, usually fewer than 10 per sub-segment, and none spans gas, power and water at scale.
+
+The total firm count is large, but the pool relevant to maintenance platforms is much smaller, and the number of scaled players is larger than often assumed.
+
+Firm count:
+- The 2017 Economic Census counted 18,877 utility-system construction businesses (NAICS 2371) with 570,952 employees (NUCA 2026 fact sheet). The 2012 census counted 25,227, so the count fell ~25% in five years.
+- VerticalIQ models ~17,800 firms and ~$158B of revenue.
+- Six-digit counts from aggregators conflict badly (237130: 2,773 vs 7,112 vs 13,809), so they are not relied on here.
+- NAICS 2371 includes new construction and telecom. Adding electrical contractors and repair firms would push the total past 20,000.
+
+The relevant pool is far smaller:
+- The Distribution Contractors Association, the trade group for gas distribution contractors, has ~240 member companies, including suppliers.
+- Firm size is skewed. In 2005, 3.2% of pipeline-construction firms had 500+ employees and held 52.8% of the jobs (Census SUSB).
+- Our estimate: ~100-400 firms in 2371 have 500+ staff, and platform-quality maintenance firms number in the low hundreds.
+
+Scaled players with largely US utility and energy infrastructure revenue (website, revenue):
+- Quanta, quantaservices.com: $28.48B
+- MasTec, mastec.com: $14.3B
+- Primoris, prim.com: ~$7.6B
+- Asplundh, asplundh.com: ~$4.7-6.3B (weak sourcing)
+- MYR Group, myrgroup.com: $3.66B
+- Centuri, centuri.com: $2.98B
+- Artera, artera.com: >$2.6B
+- Azuria/Inframark, azuria.com: >$2.5B
+- Davey Tree, davey.com: ~$1.95B
+- Pike, pike.com: $1.7B in 2020, roughly doubled since (Lindsay Goldberg)
+- Day & Zimmermann, dayzim.com: #1 power O&M contractor (ENR 2023)
+- Michels, michels.us: ENR Top 400 #38
+
+Next tier:
+- Shermco, shermco.com: ~$1.6B deal value
+- Team, teaminc.com: $896.5M
+- Badger, badgerinc.com: $831.7M
+- Mistras, mistrasgroup.com: $724.0M
+- USIC (usicllc.com) and Osmose (osmose.com): revenue undisclosed
+
+That is 15-20 scaled players.
+
+By sub-segment, the field is thinner:
+- gas: ~6 scaled players
+- power-gen maintenance: 2-4 independents
+- T&D: 8+
+- water: essentially one >$1B player
+
+The top is concentrated. Quanta plus MasTec equal ~27% of the $158B pool. That ratio is rough, because their revenue includes non-US and renewables work.
+
+In short: ~19,000 utility-system contractors (Census 2017), mostly small; 15-20 players with revenue around or above $1B; fewer than 10 in each sub-segment; none spanning gas, power and water at scale.
+
+| Figure | Value |
+|---|---|
+| Utility-system construction businesses, NAICS 2371 (2017) | [18,877 firms; 570,952 employees](https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf) |
+| Same count in the 2012 Economic Census | [25,227 firms (-25% by 2017)](https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf) |
+| Modeled industry size | [~17,800 firms; ~$158B revenue](https://verticaliq.com/product/utility-system-construction/) |
+| Gas distribution contractors' trade group (DCA) | [~240 member companies incl. suppliers](https://directory.dcaweb.org/) |
+| Pipeline construction firms with 500+ staff (2005) | [3.2% of firms, 52.8% of jobs](https://webarchive.library.unt.edu/eot2008/20080917233023/http:/www.census.gov/epcd/susb/latest/us/US23.HTM) |
+| Scaled players (revenue around or above $1B, or comparable deal value) | 15-20 named |
+| Quanta + MasTec share of the $158B pool | [~27% (rough)](https://verticaliq.com/product/utility-system-construction/) |
+
+### Roll-ups that worked and roll-ups that struggled
+
+*Mixed.* Utility maintenance roll-ups have been built many times, with profitable exits such as Shermco (~$1.6B to Blackstone), Pike (>$5B reported), USIC, Osmose and Azuria. Multi-unit platforms have a weaker record: the closest attempts failed or are highly leveraged, and no one has built a scaled gas + power + water maintenance platform. The field is crowded, with at least 26 sponsor-backed platforms plus the public consolidators.
+
+The utility-infrastructure maintenance (MRO) roll-up playbook has been run many times. The record supports focused, single-niche platforms more than multi-unit ones.
 
 What has worked:
 - Quanta, the 1990s roll-up: $28.48B FY2025 revenue at ~10.1% adj. EBITDA (Quanta 8-K). Scale bought labor depth and backlog, not premium margins.
@@ -19,18 +255,18 @@ What has worked:
 - Badger (hydrovac; builds its own trucks): 23.8% adj. EBITDA on $831.7M.
 
 What has failed or struggled:
-- Artera (CD&R) paid CenterPoint $850M in 2020 for Miller Pipeline and Minnesota Limited, which is in effect FAM's gas unit at scale. S&P cut it to CCC+ in Aug 2022 on leverage. Bloomberg Law reported >$2.5B of debt and that it had hired debt advisers.
+- Artera (CD&R) paid CenterPoint $850M in 2020 for Miller Pipeline and Minnesota Limited, the largest gas distribution maintenance roll-up. S&P cut it to CCC+ in Aug 2022 on leverage. Bloomberg Law reported >$2.5B of debt and that it had hired debt advisers.
 - Williams Industrial (power-gen maintenance plus water) filed Chapter 11 in 2023 and sold for $60M after losing large contracts and losing money on water work (SEC filings).
 - Orbital Infrastructure (T&D, telecom, renewables) filed Chapter 11 and liquidated in 2023. Charge Enterprises followed in 2024.
 - Team Inc earned 2.7% adj. EBITDA in Q1 2025 and had to refinance; FY2025 was 6.8%.
 
 Lessons:
 1. Focus beats breadth. The best exits and margins come from one technically gated niche (Shermco, Badger, Osmose). Diversified holdcos are over-represented among the failures (Orbital, Williams), and nobody has built a scaled gas + power + water maintenance platform.
-2. Debt plus utility buying power breaks roll-ups (Artera, Orbital). FAM's permanent, low-leverage capital is a genuine edge.
-3. Fixed-price creep and customer concentration are the usual killers (Williams), which matches the deck's own avoid list.
+2. Debt plus utility buying power breaks roll-ups (Artera, Orbital). Permanent, low-leverage capital is a genuine edge here.
+3. Fixed-price creep and customer concentration are the usual causes of failure (Williams).
 4. Recurring is not the same as profitable. Centuri, the closest public analogue, earns 8.3% adj. EBITDA on $2.98B; Davey earns ~3.7% operating margin.
 
-Competition is heavy. This research found 26 sponsor-backed platforms across the four sub-segments, owned by sponsors including Ridgemont, MPE, EQT, A&M, Kohlberg, Warren Equity, New Mountain, J.F. Lehman, Fort Point and CenterOak. The public consolidators (Quanta, MasTec, Primoris, MYR, Centuri, Dycom) compete too. Dycom paid 9.7x LTM EBITDA for Power Solutions (Delancey Street). FAM will bid against all of them for add-ons.
+Competition is heavy. This research found 26 sponsor-backed platforms across the four sub-segments, owned by sponsors including Ridgemont, MPE, EQT, A&M, Kohlberg, Warren Equity, New Mountain, J.F. Lehman, Fort Point and CenterOak. The public consolidators (Quanta, MasTec, Primoris, MYR, Centuri, Dycom) compete too. Dycom paid 9.7x LTM EBITDA for Power Solutions (Delancey Street). A new platform would bid against all of them for add-ons.
 
 | Figure | Value |
 |---|---|
@@ -43,11 +279,11 @@ Competition is heavy. This research found 26 sponsor-backed platforms across the
 | Badger (owned hydrovac fleet) adj. EBITDA margin | [23.8% on $831.7M](https://ir.badgerinc.com/English/news/news-details/2026/Badger-Delivers-Solid-Growth-in-2025-and-Announces-Record-Fleet-Build-for-2026/default.aspx) |
 | Sponsor-backed platforms identified in the four sub-segments | 26 |
 
-## Q2. Is there real employee and equipment utilization across business units, given the different equipment and expertise? Quantify.
+### Sharing crews and equipment across units
 
-**Verdict: Challenges thesis.** Mostly no. Only about 15-27% of field headcount (est.) can move between gas or water and power, and those are the cheapest roles. Gas and water are the exception, at about 53% of headcount and 65% of fleet value. The real synergies are density, purchasing, insurance and back office, not crews flexing between units.
+*Watch.* Crews and equipment move readily within a unit, partly between gas and water, and rarely between gas or water and power. Only about 15-27% of field headcount (est.) can move between power and gas or water, and those are the easiest roles to hire. Gas and water overlap more, at about 53% of headcount and 65% of fleet value. The larger synergies are route density, purchasing, insurance and back office.
 
-Mostly no across units, yes within a unit, and partly between gas and water. Public labor data, credential rules and the way the closest comparables report all point the same way.
+Crews and equipment move readily within a unit, partly between gas and water, and rarely between gas or water and power. Public labor data, credential rules and the way the closest comparables report all point the same way.
 
 The labor pool (BLS OEWS, May 2023, NAICS 237100, ~576,000 workers implied):
 - construction laborers: ~121,530 (~21%)
@@ -94,7 +330,7 @@ Where synergies are real (estimates, as a share of revenue):
 
 The gas-water pairing is validated by Miller Pipeline (Artera), Hydromax and J.F. Kiely, which all do both.
 
-Implication: build gas and water as one underground-pipe platform, and run T&D and power-gen as separate operating companies. Underwrite purchasing, overhead and density, not crew flex.
+Implication: gas and water fit together as one underground-pipe platform, while T&D and power generation work better as separate operating companies. Purchasing, overhead and density are more reliable synergies than crew flex.
 
 | Figure | Value |
 |---|---|
@@ -107,270 +343,75 @@ Implication: build gas and water as one underground-pipe platform, and run T&D a
 | Power-line installers: utility contractors vs utilities (May 2023) | [36,320 vs 57,100](https://www.bls.gov/oes/current/oes499051.htm) |
 | Value of cross-unit crew flex | [<50 bps of revenue (est.)](https://www.sec.gov/Archives/edgar/data/1981599/000198159925000008/ctri-20241229.htm) |
 
-## Q3. Is infrastructure really aging, given routine maintenance? Is there a single US power line 50+ years old? Quantify like lead times.
+### The candidate pool
 
-**Verdict: Supports thesis.** Yes. Most of the US transmission grid dates from the 1960s-70s, and 50-55% of distribution transformers are older than 33 years. At today's replacement pace, clearing the old stock takes about 17-22 years for transformers, 11-16 years for gas cast iron, and a ~125-year cycle for water mains. Maintenance extends asset life, and that maintenance is the revenue, so aging is a slow, funded driver rather than a shock.
+*Mixed.* Trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records yield 147 private companies, of which 21 are platform-grade (gas 9, water 4, T&D 3, power generation 5). Nine of those look independent, six of them in gas. Setting aside Day & Zimmermann, which is unlikely to sell, about 8 names may be worth approaching, most of them gas regionals whose size still needs checking.
 
-Yes, and routine maintenance is why the thesis works, not a rebuttal of it. Maintenance stretches asset life, and that maintenance is the revenue. The deck, however, uses the weakest numbers available.
-
-Is there a US power line over 50 years old? Yes, many:
-- NASEO's grid primer says most of today's transmission grid dates to the 1960s-70s, which makes it roughly 46-66 years old now.
-- The best-known case is PG&E's Caribou-Palermo 115 kV line. A worn C-hook on Tower 27/222 failed and started the 2018 Camp Fire (CAL FIRE; PG&E 8-K), and PG&E pleaded guilty to 84 counts of involuntary manslaughter. Reporting on PG&E's records dates the line to 1921 (see the update below).
-
-Quantified like lead times, as years to clear the old stock at today's replacement pace:
-- Distribution transformers (NREL for DOE): 60-80M units, 50-55% older than 33 years, with additions plus replacements of only 2.5-3% a year. Turning over the old half would take ~17-22 years even if every unit went to it.
-- Large power transformers averaged 38-40 years in 2014, against a ~40-year design life (DOE).
-- Wood poles: 130-160M are in service. Well maintained, they last 70-80+ years on ~10-year inspect-and-treat cycles, against a ~35-year book life (NAWPC). That is recurring inspection demand, not a replacement wave.
-- Gas: PHMSA says 28% of distribution pipe was installed before 1970. Cast and wrought iron fell to ~16,337 miles in 2023, down 63% since 2005, and 24 states have finished. At 1,000-1,500 miles a year, it is gone in ~11-16 years. Bare steel (~61,000 miles around 2013) runs into the 2040s (UGI: 2041).
-- Water: a 2023 Utah State survey of 802 utilities found 11.1 breaks per 100 miles a year (~260,000 breaks and $2.6B of repairs) and a $452B backlog of pipe past its useful life (ASCE). Mains are replaced on a ~125-year cycle (~0.8% a year) while the average pipe fails at ~53 years, so the backlog grows.
-- Generation: coal units average 45 years and retire at ~50 (EIA), so that market shrinks. Nuclear is the opposite: the NRC renewed 18 licenses (~17 GW) in 15 months, many to 80 years.
-
-Does spending follow? Grid Strategies/ACEG attributes ~90% of the $25B+ a year of transmission spend to reliability and replacement (not re-verified). Asset-condition projects are 73% of New England transmission owners' capital projects (Utility Dive).
-
-Verdict: aging is real, measurable and funded through rate trackers, but it is slow and regional, not a shock. Replace the deck's 70%-of-the-grid figure with NREL's transformer data, and source the gas and water claims to PHMSA and Utah State.
-
-Update after a direct check (Oct 29, 2026): reporting on PG&E's own records dates the Caribou-Palermo line to 1921, and a 2017 PG&E presentation put the average age of its ~50,000 transmission towers at 68 years, the oldest built before 1910 (GV Wire / KQED, citing the Wall Street Journal). In Pennsylvania, PPL is rebuilding 230 kV lines from the mid-1920s and 1930s under a 'Vintage Conductor' program (PA PUC filing).
-
-| Figure | Value |
-|---|---|
-| Caribou-Palermo line (Camp Fire) in service since | [1921](https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/) |
-| PG&E transmission towers, average age (2017) | [68 yrs](https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/) |
-| Gas distribution pipe installed before 1970 | [28% (PHMSA, 2021)](https://primis-meetings.phmsa.dot.gov/archive/Agenda_9_PAC_Pipeline_Industry_Performance_10202021.pdf) |
-| Cast/wrought iron gas mains left (2023) and years to clear | [~16,337 mi; ~11-16 yrs at 1,000-1,500 mi/yr](https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2025-01/PHMSA%20Final%20Rule%20-%20Gas%20Pipeline%20Leak%20Detection%20and%20Repair%20-%20As%20submitted.pdf) |
-| Distribution transformers older than 33 years | [50-55% of 60-80M units](https://nrel.gov/docs/fy25osti/92076.pdf) |
-| Distribution transformer replacements + additions | [2.5-3% of units per year (~17-22 yrs to turn over the old half)](https://nrel.gov/docs/fy25osti/92076.pdf) |
-| Large power transformer average age (2014) | [38-40 yrs vs ~40-yr design life](https://www.energy.gov/sites/default/files/2014/04/f15/LPTStudyUpdate-040914.pdf) |
-| Water main break rate (US + Canada, 2023) | [11.1 per 100 mi/yr; ~260K breaks; $2.6B/yr repairs](https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2024/04/breaking-water-mains-present-us-canada-with-%24452b-problem) |
-| Water main replacement cycle vs average failure age | [~125 yrs vs ~53 yrs](https://trenchlesstechnology.com/last-word-the-water-main-report-card/) |
-| Maintained wood pole life vs book life | [70-80+ yrs vs ~35 yrs](https://woodpoles.org/issues/service-life/) |
-| Coal unit average age / retirement age | [45 yrs / ~50 yrs](https://www.eia.gov/todayinenergy/detail.php?id=50658) |
-
-## Q4. How many platform candidates exist per unit, based on the thesis criteria?
-
-**Verdict: Mixed.** Enough to start in gas, not enough for three units. A second pass through trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records lists 147 private companies; 21 are platform-grade (gas 9, water 4, T&D 3, power-gen 5). 9 of those look independent, 6 of them in gas. Leaving out Day & Zimmermann, which is not a seller, about 8 names are worth approaching, most of them gas regionals whose size still needs checking.
-
-Update after a second candidate pass (Oct 29, 2026): the first pass dropped companies without a verified website and missed most founder-owned regionals. Checking DCA, NETA, NASSCO and AWWA member lists, company sites and ownership records changed the picture:
-- Gas: 48 listed, 9 platform-grade. Six look independent: Heath Consultants (third-generation family, Houston), R.H. White (White family, ~500-600 staff, Massachusetts), Driver Pipeline and Larrett Energy Services (Texas; Larrett was formed by Scott Driver, so the two may be related), Banks Gas Services (founder-owned, Pittsburgh) and Diversified Utility Services (Atlanta). J.F. Kiely is family-led, but family control is not confirmed.
-- Q3 Contracting was dropped: Primoris owns it, so it is not available.
-- Water: 48 listed, 4 platform-grade. Pittsburg Tank & Tower (Johnston family) is independent; Carylon's ownership is still unconfirmed.
-- T&D: 39 listed, 3 platform-grade. Tomberlin Pole Treatment (family) is independent but add-on scale. Davis H. Elliot (ESOP) fits, but its website was not verified.
-- Power-gen: 12 listed, 5 platform-grade. Day & Zimmermann is the only confirmed independent, and it is not a likely seller.
-- 38 more names are leads without a verified website.
-
-So the gas unit has a real starting pipeline. The other units still depend on sponsor-owned platforms or add-on-scale firms.
-
-First pass, for reference:
-
-Few. We screened 85 named private companies against the thesis criteria: recurring maintenance, durable customers, specialized labor and equipment, safety, and no dependence on low-bid or fixed-price work. That left 51 candidates with their own websites. Of those, 14 are platform-grade (fit 4+, recurring, not bid-driven). Only 3 of the 14 are confirmed independent, and 2 of the 3 are unlikely sellers.
+Platform criteria used in this screen: recurring maintenance work, large regional or national utility customers, specialized labor and equipment, little dependence on low-bid or fixed-price work, and availability (not owned by a sponsor or a larger company). Candidates come from DCA, NETA, NASSCO and AWWA member lists, company websites, ownership records and trade press.
 
 By unit:
-- Gas: 14 listed, 3 platform-grade.
-- The three: Sparus/Southern Cross (Ridgemont since 2021), Heath Consultants (ownership unverified) and Artera (CD&R; too large).
-- Closest independent: Danella. It scores 3 because OSHA has investigated it six times since 2017 over trench work (NBC10).
-- Regional contractors J.F. Kiely and Utility Line Services fit the model (Q3 Contracting turned out to be owned by Primoris), but their size is unknown.
-- Add-ons: Teichert Pipelines, Pro-Vac/Hydromax, GPT, ULC Technologies.
-- T&D: 12 listed, 2 platform-grade (Pike, owned by TPG; Osmose, owned by EQT), both sponsor-owned.
-- East Coast Power (A&M) and United Utility Services (Sandbrook/Blackstone) would add two more sponsored names.
-- No independent platform-grade company was found.
-- Vegetation managers (Asplundh, Davey, Lewis, Wright) score 3 because the work is thin-margin and re-bid.
-- Power-gen, including NETA testing: 10 listed, 5 platform-grade.
-- The five: Day & Zimmermann (family), Structural Integrity Associates (employee-owned), Shermco (Blackstone), RESA Power (Kohlberg) and Allied Power Group (Warren Equity).
-- Only Day & Zimmermann and Structural Integrity are independent, and neither looks like a seller.
-- National Electric Coil is add-on scale.
-- Water: 15 listed, 4 platform-grade.
-- The four: the Carylon group (family), Pittsburg Tank & Tower and Maguire Iron (ownership unverified), and USG Water Solutions (sponsor-owned).
-- Water has the most independent candidates. They cluster in tank asset-management contracts (fixed annual fee, provider carries the maintenance risk) and in annual sewer cleaning and CCTV programs.
-- Spiniello and SAK fail the low-bid screen.
-- Lead-line and meter installers do low-bid subcontract work. For example, Watertown awarded $7.77M to the low bidder.
+- Gas: 48 listed, 9 platform-grade. Six look independent: Heath Consultants (third-generation family, Houston), R.H. White (White family, ~500-600 staff, Massachusetts), Driver Pipeline and Larrett Energy Services (Texas; Larrett was formed by Scott Driver, so the two may be related), Banks Gas Services (founder-owned, Pittsburgh) and Diversified Utility Services (Atlanta). J.F. Kiely is family-led, but family control is not confirmed. Sparus (Ridgemont) and Artera (CD&R) are sponsor-owned. Danella would need a safety review: OSHA has investigated it six times since 2017 over trench work (NBC10). Q3 Contracting is owned by Primoris and is not available.
+- Water: 48 listed, 4 platform-grade. Pittsburg Tank & Tower (Johnston family) is independent; Carylon's ownership is unconfirmed, Maguire Iron's is unknown, and USG Water is sponsor-owned. Independent water firms cluster in tank asset-management contracts and annual sewer cleaning and CCTV programs. Nine names depend on low-bid work.
+- T&D: 39 listed, 3 platform-grade. Pike (TPG) and Osmose (EQT) are sponsor-owned; Tomberlin Pole Treatment (family) is independent but add-on scale. Davis H. Elliot (ESOP) fits, but its website was not verified. Vegetation managers (Asplundh, Davey, Lewis, Wright) score lower because the work is thin-margin and re-bid.
+- Power generation: 12 listed, 5 platform-grade. Day & Zimmermann is the only confirmed independent and is unlikely to sell; Structural Integrity Associates is employee-owned; Shermco, RESA Power and Allied Power Group are sponsor-owned.
+- 38 more names are leads without a verified website.
 
-Realistic list to pursue now: about 1-4 names, plus 3-6 gas regionals if their size checks out.
-
-Why so few:
-- 26 sponsor-backed platforms already hold most of the scaled assets.
+Why the independent pool is modest:
+- 26 sponsor-backed platforms already hold many of the scaled assets.
 - Much line, lead-pipe and meter work is bought by low bid.
-- Web search under-represents founder-owned $10-50M firms, which is where FAM's platform would come from.
+- Web sources under-represent founder-owned $10-50M firms, which is where a first platform would most likely come from.
 
-The gas universe is bounded. The Distribution Contractors Association has ~240 member companies, including suppliers.
-
-Next step: build the list from primary rosters: DCA, NETA accredited companies, NASSCO, AWWA, state PUC and utility contractor prequalification lists, and co-op vendor lists. Read a fit score of 3 with mostly unknown fields as not yet diligenced, not as weak.
+The gas universe is bounded: the Distribution Contractors Association has ~240 member companies, including suppliers. State utility commission filings and utility contractor prequalification lists would add names that web sources miss. A fit score of 3 with mostly unknown fields means not yet diligenced, not weak.
 
 | Figure | Value |
 |---|---|
 | Private companies listed after the roster check | [147 (38 without a verified website)](https://directory.dcaweb.org/) |
-| Platform-grade candidates by unit | [21 (gas 9, water 4, T&D 3, power-gen 5)](https://directory.dcaweb.org/) |
+| Platform-grade candidates by unit | [21 (gas 9, water 4, T&D 3, power generation 5)](https://directory.dcaweb.org/) |
 | Platform-grade and independent | [9 (6 in gas)](https://heathus.com) |
-| Realistic names to approach now | [~8, mostly gas regionals (size unchecked)](https://rhwhite.com) |
+| Names that may be worth approaching now | [~8, mostly gas regionals (size unchecked)](https://rhwhite.com) |
 | Sponsor-backed platforms already active | 26 |
 | Gas distribution contractors' trade group membership (DCA) | [~240 member companies incl. suppliers](https://directory.dcaweb.org/) |
 | Danella OSHA trench investigations since 2017 | [6](https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1) |
 
-## Q5. Is the 'why now' sufficient: nuclear and solar, is population really growing, is power demand actually rising despite efficiency?
+## Recommended action items
 
-**Verdict: Mixed.** Not as written. Population growth has slowed to 0.5%, and load growth is real but driven by data centers and mostly funds construction. The defensible why-now is record replacement capex that utilities recover through their rates, mandated gas compliance cycles, and asset life extension, especially nuclear to 80 years. The headwinds the deck omits are a withdrawn PHMSA leak rule, the end of IIJA water money and pending litigation over the lead-pipe rule.
+1. Nov 2026: Consider focusing the first unit on gas distribution maintenance, with entry screens such as ~6-8x EBITDA; at least two utility MSA customers; most revenue from MSA or unit-rate maintenance rather than fixed-price or one-off low-bid work; a clean OSHA and EMR record; and leverage well below the levels that strained Artera.
+2. Nov-Dec 2026: It may help to build a primary-source list of 40-60 founder- or family-owned gas contractors with $20-100M of revenue, drawing on the DCA directory (~240 members), state PUC filings on utility replacement programs (NJ, NY, MA, PA and MI hold the most remaining cast iron) and utility contractor prequalification lists.
+3. Dec 2026: The independent gas regionals look like natural first conversations: Heath Consultants, R.H. White, Driver Pipeline and Larrett Energy, Banks Gas Services and Diversified Utility Services, and J.F. Kiely once family control is confirmed. Checking each one's size beforehand would save time. Danella would merit a safety review first, and sponsor auctions priced above the screen may be worth passing over.
+4. Q1 2027: Diligence could focus on MSA terms and renewal dates, customer tenure, revenue mix by work type, PHMSA operator-qualification records, union status (UA/DCA vs non-union), and equipment ownership and fleet age. A reasonable milestone is one letter of intent by the end of Q1 2027 for a ~$50M-revenue platform (illustratively ~$5.5M EBITDA, ~$37-46M EV at 6.8-8.3x).
+5. 2027: First add-ons could sit inside the platform's existing utility territories: leak survey, cathodic protection and regulator-station maintenance (all mandated under 49 CFR 192), plus hydro-excavation. These build density (est. 100-300 bps) and a larger share of each utility's spend.
+6. 2027: A lean shared-services layer for safety, operator-qualification records, insurance and fleet purchasing would likely cost ~1-2% of revenue; a temporary margin dip around $150M of revenue is common.
+7. 2027, after the D.C. Circuit rules on LCRI: Water underground work in the same metros is a natural second step, ideally taking lead service lines only under negotiated or unit-rate programs. Sewer cleaning and CCTV, and tank asset management (Carylon, Pittsburg Tank & Tower or Maguire, after ownership checks), are related options.
+8. Nov 2026-2027: Links with Fulton's companies could start as small pilots: Imperial quoting buybacks of meter brass, service-line and cable scrap; Transend quoting pipe freight; Panther quoting fittings. Committing capex only against purchase orders keeps the downside small.
+9. 2028 and later: T&D could be revisited as a separate operating company if a lower-middle-market distribution-maintenance or substation-testing firm becomes available within the screen. Power generation looks best approached through NETA testing or NDE add-ons.
+10. Review points: a go or no-go on the target list in Jan 2027, a decision on the first platform in mid-2027, and a yearly re-underwriting against the watchlist and signals.
 
-Not as written. The deck leans on drivers that mostly fund new construction, which FAM excludes, and on population, which is barely growing. A stronger why-now exists.
+## Where a prospective platform would sit
 
-Population: drop it.
-- Census Vintage 2025 shows +0.5% growth to 341.8M, the slowest since 2021.
-- Net international migration fell from 2.7M (2024) to 1.3M (2025), and ~321k is projected for 2026.
-- What growth there is sits in the Sun Belt and means new connections, which is construction.
+**Profile.** A founder- or family-owned gas distribution maintenance contractor with about $50M of revenue and a 9-11% EBITDA margin (est.), working under MSAs with two to four gas utilities in one region. Typical work: main and service replacement, leak survey and repair, meter and regulator work, and cathodic protection.
 
-Power demand: the instinct is right for homes and wrong for the total.
-- Efficiency is real: residential use per customer fell 2.3% from 2009 to 2019 (EIA), and total use was flat in 2015-2021 at ~3.86-4.0 trillion kWh.
-- Use then hit a record 4,195 BkWh in 2025. EIA's Oct 2026 STEO forecasts 4,288 for 2026 and 4,356 for 2027, led by commercial load (data centers).
-- LBNL puts data centers at 176 TWh in 2023 (4.4% of US use) and 325-580 TWh by 2028.
-- Grid Strategies' 5-year peak forecast rose from 24 GW to 166 GW in three years, though it flags ~25 GW of data-center double counting.
-- Growth is concentrated in ERCOT and PJM and mostly pays for generation, transmission and interconnection builds.
+**Who it would sell to.** Gas distribution utilities (LDCs) under multi-year MSAs and unit-rate programs, about $30-40M a year (est.); transmission pipeline operators for integrity digs, $2-5M; and, in a second phase, water utilities in the same metros, $5-10M. The utilities recover this spending through state rate trackers paid by households and businesses.
 
-Nuclear: the clearest maintenance signal.
-- The NRC renewed 18 licenses (~17 GW) in 15 months, including 80-year approvals for Turkey Point, Surry, Browns Ferry, St. Lucie and Hatch.
-- Restarts add ~2.25 GW (Palisades ~Mar 2027; Crane 2027). SMRs are post-2030 construction.
-- Outage work requires NRC Appendix B quality programs and is held by incumbents.
+**Who it would buy from.** Field crews (pipelayers, operators, laborers, CDL drivers; UA/DCA or merit shop), about $16-20M a year in wages; paving, restoration and traffic-control subcontractors, $3-6M; insurance and surety, $1.5-2.5M; equipment rental, $1-2.5M; materials the utility does not furnish, from distributors such as Core & Main, $1-3M; vacuum excavators and drills from makers such as Vermeer; and hydro-excavation subcontractors such as Badger (all est.).
 
-Solar, wind and storage: a record 53 GW was added in 2025 and 86 GW is planned for 2026 (EIA). The O&M pool (est. $7-10B) goes largely to equipment makers and owners, and the OBBBA tax-credit phase-out points to a 2026-27 peak.
+**Who it would compete with for work.** Centuri, Artera (Miller Pipeline, Minnesota Limited) and Energy Services of America at scale; Quanta and MasTec units on larger programs; and regional independents in each territory. Utilities re-bid MSAs every three to five years, so safety record and unit prices decide renewals.
 
-What should anchor the why-now:
-- Replacement capex that utilities recover through their rates. EEI members' capex rose from $139.8B (2020) to ~$207.9B (2025E), with >$1.1T planned for 2025-29. Gas utility construction capex rose from $32.7B to $49.1B in 2022-23 (AGA).
-- Mandated recurring work: 49 CFR 192 leak surveys, cathodic protection and regulator inspections.
-- Life extension: nuclear to 80 years, poles to 70-80+.
+**Who it would compete with for deals.** Sponsor-backed platforms buying gas and underground add-ons, including Sparus (Ridgemont), Delphi Infrastructure (MPE), USIC and Pro-Vac, plus public consolidators. Founder-owned firms sold off-market tend to price at ~6-8x EBITDA; auctions run higher.
 
-Headwinds the deck omits:
-- PHMSA's leak-detection rule was withdrawn in Jan 2025; a new proposal has sat at DOT since Apr 30, 2026.
-- FY2026 was the last year of IIJA supplemental SRF money ($2,603M per fund).
-- The Nov 2027 lead-line deadline is in litigation.
-- Affordability pressure is rising.
+**Add-on paths.** Inside its territories: leak survey, cathodic protection, regulator-station maintenance and hydro-excavation. In the same metros: water main and service work, sewer cleaning and CCTV, and tank asset management.
 
-Utilities earn a return on capex but not on O&M, so FAM should target the replacement programs utilities capitalize.
+## How Fulton's companies could work with the platform
 
-| Figure | Value |
-|---|---|
-| US electricity consumption | [4,195 BkWh (2025) -> 4,288 (2026F) -> 4,356 (2027F)](https://www.eia.gov/outlooks/steo/archives/oct26.pdf) |
-| Total electricity use, 2015-2021 | [~flat at ~3.86-4.0 trillion kWh](https://www.eia.gov/electricity/annual/html/epa_02_02.html) |
-| Residential use per customer, 2009-2019 | [-2.3%](https://www.eia.gov/todayinenergy/detail.php?id=46276) |
-| Data center electricity use | [176 TWh (2023, 4.4%) -> 325-580 TWh (2028)](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers) |
-| US population growth, 2025 | [+0.5% to 341.8M; net migration 2.7M -> 1.3M](https://census.gov/newsroom/press-releases/2026/population-growth-slows.html) |
-| Investor-owned electric utility capex | [$139.8B (2020) -> ~$207.9B (2025E); >$1.1T 2025-29](https://www.eei.org/News/news/All/electric-companies-to-invest-nearly-$208b-in-2025-to-strengthen-grid-and-drive-economic-growth) |
-| Gas utility construction capex | [$32.7B (2022) -> $49.1B (2023)](https://www.aga.org/research-policy/resource-library/gas-utility-construction-capital-expenditure) |
-| Nuclear license renewals | [18 in 15 months (~17 GW)](https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-049.pdf) |
-| IIJA supplemental SRF funding, final year FY2026 | [$2,603M per fund (clean water, drinking water)](https://www.everycrsreport.com/reports/IF13177.html) |
-
-## Q6. What is the TAM? What revenue could the platform reach, at what margins, and how do economics improve with scale?
-
-**Verdict: Mixed.** The outsourced maintenance market is about $44-81B a year (est.): T&D $20-35B, gas $12-20B, water $8-18B, power-gen $4-8B. A realistic FAM platform is about $50M of revenue at entry, built to about $150M through add-ons, at a 9-11% EBITDA margin. Scale adds roughly 0-1 point of margin; most of the scale benefit is a higher valuation multiple, which a permanent-capital owner does not cash unless it sells or recapitalizes.
-
-The deck has no TAM and no margin case. The market is big enough; the margin story is not.
-
-TAM, outsourced MRO only (the spend pools are sourced; the outsourced shares are estimates):
-- Gas: $12-20B a year (35-55% of AGA's $33-37B annual safety spend).
-- T&D: $20-35B. This is the replacement and hardening share of $50.9B distribution and $32.6B transmission capex, plus outsourced vegetation, inspection, testing and storm work.
-- Power-gen maintenance: $4-8B of ~$13B of plant maintenance (EIA cost per MWh x generation), after OEM service agreements and in-house work. It is shrinking with coal.
-- Water: $8-18B (CBO: $113B of public water spending in 2017, $82B of it O&M that is mostly done in-house).
-- Total: ~$44-81B. A $500M holdco would hold ~1%.
-
-Margins (FY2025 adj. EBITDA):
-- Quanta 10.1%, Mistras 12.6%, Centuri 8.3%, MasTec 8.0%
-- Primoris ~6.9%, Team 6.8%, ESOA 4.2%, Badger 23.8%
-
-Specialty and asset-heavy niches earn 12-24%; MSA labor work earns 8-10%. Scale alone adds roughly 0-2 points. Fixed-price problems swing margins hard: MYR's gross margin moved from 8.6% to 11.6%, and MasTec Pipeline's from 18.3% to 14.9%.
-
-Revenue and margin path (illustrative estimate; 70% MSA field work, 30% specialty testing):
-- $50M platform: ~11.0% EBITDA ($5.5M), often helped by owner add-backs.
-- $150M: ~9.5% ($14M), because holdco safety, finance and ERP costs land before the synergies do.
-- $500M: ~11.3% ($56.5M), with a range of 9-13%.
-
-Bridge from $50M to $500M:
-- holdco cost: -1.2 pts
-- integration: -0.7
-- procurement: +0.4 (utilities often supply the major materials)
-- equipment: +0.4
-- insurance and benefits: +0.4
-- SG&A leverage: +1.0
-
-The net is ~+0.3 pts. Underwrite 9-11% at steady state.
-
-Where scale does help:
-- Multiples. Lower-middle-market deals cleared at 6.4x ($10-25M TEV), 6.8x ($25-50M) and 8.3x ($50-100M) in 9M 2025 (GF Data, all industries). Scaled assets sit at 11-16x: Centuri's IPO was ~11-12x (est.) and it trades at 12-16x, the public peer median is 15.2x, and Qualus paid 14.9x.
-- For permanent capital, that multiple gap is a mark, not cash, unless FAM recapitalizes or sells. The cash case must stand on its own. At a 7x entry and an 11% margin, EBITDA less 3-4% fleet capex is ~9.7% of the purchase price a year, pre-tax and before organic growth (est.).
-- Risk costs fall with size: insurance pooling, safety programs and fleet buying all improve.
-
-Expectation: buy a ~$50M founder-owned platform at ~6-8x, build it to ~$150M through add-ons, and earn 9-11%. $500M is a long-horizon outcome, not a plan.
-
-| Figure | Value |
-|---|---|
-| Outsourced MRO TAM, four units | [$44-81B/yr (est.)](https://www.aga.org/safety) |
-| Gas outsourced MRO | [$12-20B/yr (est.)](https://www.aga.org/safety) |
-| T&D outsourced MRO | [$20-35B/yr (est.)](https://www.foley.com/insights/publications/2026/09/the-grids-bottleneck-isnt-just-money-its-materials/) |
-| Power-gen outsourced maintenance | [$4-8B/yr of ~$13B (est.)](https://eia.gov/electricity/annual/html/epa_08_04.html) |
-| Water outsourced MRO | [$8-18B/yr (est.)](https://nacwa.org/news-publications/news-detail/2018/10/23/congressional-budget-office-reveals-public-spending-trends-for-water-infrastructure-and-transportation-in-new-report) |
-| Illustrative EBITDA margin at $50M / $150M / $500M revenue | [11.0% / 9.5% / 11.3% (est.)](https://www.businesswire.com/news/home/20260225110463/en) |
-| Net margin gain from scale, $50M -> $500M | ~+0.3 pts (est.) |
-| Lower-middle-market entry multiples (9M 2025, all industries) | [6.4x / 6.8x / 8.3x by deal size](https://capitalpad.com/lower-middle-market-ebitda-multiples/) |
-| Scaled utility-services multiples | [11-16x EV/EBITDA (public peer median 15.2x)](https://axiagrowth.com/resources/industries/energy-infrastructure/electrical-infrastructure-contracting) |
-| Pre-tax cash yield at 7x entry, 11% margin, 3-4% fleet capex | ~9.7% (est.) |
-
-## Q7. Verify '20,000+ providers' and '<10 scaled players' with real numbers and named companies.
-
-**Verdict: Challenges thesis.** '20,000+' is roughly right. The Census counted 18,877 utility-system construction firms in 2017, down from 25,227 in 2012, but the relevant pool is much smaller (e.g. ~240 gas distribution contractor members of DCA). '<10 scaled players' is false: 15-20 named players have revenue around or above $1B, though fewer than 10 operate in each sub-segment and none spans gas, power and water at scale.
-
-The deck's '20,000+ providers' is roughly right but measures the wrong thing. Its '<10 meaningful scaled players' is false.
-
-Firm count:
-- The 2017 Economic Census counted 18,877 utility-system construction businesses (NAICS 2371) with 570,952 employees (NUCA 2026 fact sheet). The 2012 census counted 25,227, so the count fell ~25% in five years.
-- VerticalIQ models ~17,800 firms and ~$158B of revenue.
-- Six-digit counts from aggregators conflict badly (237130: 2,773 vs 7,112 vs 13,809), so don't cite them.
-- NAICS 2371 includes new construction and telecom. Adding electrical contractors and repair firms would push the total past 20,000.
-
-The relevant pool is far smaller:
-- The Distribution Contractors Association, the trade group for gas distribution contractors, has ~240 member companies, including suppliers.
-- Firm size is skewed. In 2005, 3.2% of pipeline-construction firms had 500+ employees and held 52.8% of the jobs (Census SUSB).
-- Our estimate: ~100-400 firms in 2371 have 500+ staff, and platform-quality maintenance firms number in the low hundreds.
-
-Scaled players with largely US utility and energy infrastructure revenue (website, revenue):
-- Quanta, quantaservices.com: $28.48B
-- MasTec, mastec.com: $14.3B
-- Primoris, prim.com: ~$7.6B
-- Asplundh, asplundh.com: ~$4.7-6.3B (weak sourcing)
-- MYR Group, myrgroup.com: $3.66B
-- Centuri, centuri.com: $2.98B
-- Artera, artera.com: >$2.6B
-- Azuria/Inframark, azuria.com: >$2.5B
-- Davey Tree, davey.com: ~$1.95B
-- Pike, pike.com: $1.7B in 2020, roughly doubled since (Lindsay Goldberg)
-- Day & Zimmermann, dayzim.com: #1 power O&M contractor (ENR 2023)
-- Michels, michels.us: ENR Top 400 #38
-
-Next tier:
-- Shermco, shermco.com: ~$1.6B deal value
-- Team, teaminc.com: $896.5M
-- Badger, badgerinc.com: $831.7M
-- Mistras, mistrasgroup.com: $724.0M
-- USIC (usicllc.com) and Osmose (osmose.com): revenue undisclosed
-
-That is 15-20 scaled players.
-
-By sub-segment, the deck's framing fits better:
-- gas: ~6 scaled players
-- power-gen maintenance: 2-4 independents
-- T&D: 8+
-- water: essentially one >$1B player
-
-The top is concentrated. Quanta plus MasTec equal ~27% of the $158B pool. That ratio is rough, because their revenue includes non-US and renewables work.
-
-Defensible rewrite: '~19,000 utility-system contractors (Census 2017), mostly small; 15-20 players with revenue around or above $1B; fewer than 10 in each sub-segment; none spanning gas, power and water at scale.'
-
-| Figure | Value |
-|---|---|
-| Utility-system construction businesses, NAICS 2371 (2017) | [18,877 firms; 570,952 employees](https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf) |
-| Same count in the 2012 Economic Census | [25,227 firms (-25% by 2017)](https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf) |
-| Modeled industry size | [~17,800 firms; ~$158B revenue](https://verticaliq.com/product/utility-system-construction/) |
-| Gas distribution contractors' trade group (DCA) | [~240 member companies incl. suppliers](https://directory.dcaweb.org/) |
-| Pipeline construction firms with 500+ staff (2005) | [3.2% of firms, 52.8% of jobs](https://webarchive.library.unt.edu/eot2008/20080917233023/http:/www.census.gov/epcd/susb/latest/us/US23.HTM) |
-| Scaled players (revenue around or above $1B, or comparable deal value) | 15-20 named |
-| Quanta + MasTec share of the $158B pool | [~27% (rough)](https://verticaliq.com/product/utility-system-construction/) |
+- **Imperial Group:** Buys the platform's meter brass, steel service-line and cable scrap; small direct volumes (~$0.05-0.3M a year, est.). The larger opening is an introduction to the platform's utility customers, whose replacement programs generate $10-45M a year of gas scrap and $30-80M of lead and brass from water work (addressable market, est.).
+- **Transend Logistics:** Moves pipe and materials from distributor yards to the platform's job sites (~$0.2-0.6M a year, est.), and could quote the pipe makers that supply the platform's utility customers.
+- **Panther Metalflow:** Machined brass and steel fittings and meter-set components, sold through the platform's distributors or specified on its jobs (~$0.05-0.3M a year, est.). Most major materials are furnished by the utilities.
+- **AFCO Industries:** Aluminum compartments and toolboxes for the platform's truck bodies, through upfitters (~$0.05-0.1M a year, est.).
+- **Stainless Foundry & Engineering:** Occasional specialty castings for regulator-station and valve rebuilds; not sized.
+- **Metaltec:** No clear link found.
 
 ## Platform candidates by unit
 
-Grades: **Platform** = fits the thesis criteria well enough to anchor a unit; **Add-on** = a tuck-in; **Watch** = weaker fit; **Lead** = website not yet verified.
+Grades: **Platform** = fits the platform criteria well enough to anchor a unit; **Add-on** = a tuck-in; **Watch** = weaker fit; **Lead** = website not yet verified.
 
 ### Natural gas distribution (48)
 
