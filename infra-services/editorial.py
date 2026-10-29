@@ -18,7 +18,7 @@ VERDICT = [
      "• gas utility construction capex of $49.1B in 2023\n"
      "• federally mandated gas inspection cycles\n"
      "• 50-55% of distribution transformers older than 33 years\n"
-     "• water mains replaced on a ~125-year cycle\n"
+     "• water utilities renewing only ~0.8% of mains a year, a pace that would take ~125 years, while mains that break do so at ~53 years on average\n"
      "• nuclear plants licensed to 80 years\n"
      "Population growth (+0.5%) and headline load growth add less: they mostly fund new construction."),
     ("The category",
@@ -43,37 +43,44 @@ VERDICT = [
 # Key findings: research id (q in the synthesis) -> topic, tag, order and rewritten text
 FINDINGS = {
     6: dict(id="economics", order=1, topic="Market size and platform economics", tag="Mixed",
+            headline='About $44-81B a year is outsourced; platforms earn 9-11%, and scale adds little margin.',
             summary=("Outsourced maintenance across gas, power and water is about $44-81B a year (est.): T&D $20-35B, gas $12-20B, water $8-18B "
                      "and power generation $4-8B. A founder-owned platform of about $50M revenue, built to about $150M through add-ons, would "
                      "typically earn a 9-11% EBITDA margin. Scale adds little margin on its own (roughly 0-1 point); its main benefit is a higher "
                      "valuation multiple, which a permanent-capital owner realizes only through a sale or recapitalization.")),
     3: dict(id="age", order=2, topic="How old the infrastructure is", tag="Favorable",
+            headline='Much of the grid, gas and water network is decades old, and it is being renewed slowly.',
             summary=("Much of it is old, and the age can be measured. Most of the US transmission grid dates from the 1960s-70s, some lines go back "
                      "to the 1920s, and 50-55% of distribution transformers are older than 33 years. At today's replacement pace, the old stock takes "
-                     "about 17-22 years to clear for transformers and 11-16 years for cast-iron gas mains, and water mains are on a ~125-year cycle. "
+                     "about 17-22 years to clear for transformers and 11-16 years for cast-iron gas mains, and water utilities renew only ~0.8% of mains a year, a pace that would take ~125 years even though mains that break do so at ~53 years on average. "
                      "Maintenance extends asset life and is itself recurring revenue, so aging is a slow, funded driver rather than a sudden wave.")),
     5: dict(id="demand", order=3, topic="What is driving demand", tag="Mixed",
+            headline='Maintenance rests on rate-funded replacement and mandated inspections more than on population or load growth.',
             summary=("The drivers most tied to maintenance are replacement capex that utilities recover through their rates, mandated gas safety "
                      "cycles and asset life extension, especially nuclear licenses to 80 years. Population growth has slowed to 0.5%. Electricity use "
                      "was flat for years as products became more efficient and is now rising again, mostly from data centers; that growth largely "
                      "funds new construction. Headwinds include a withdrawn federal leak-detection rule, the end of supplemental federal water "
                      "funding and litigation over the lead-pipe rule.")),
     7: dict(id="structure", order=4, topic="Providers and scaled players", tag="Watch",
+            headline='About 19,000 firms, mostly small; 15-20 players near $1B, none spanning gas, power and water.',
             summary=("The provider base is large and shrinking. The Census counted 18,877 utility-system construction firms in 2017, down from 25,227 "
                      "in 2012, though the maintenance-focused pool is much smaller (for example, ~240 members of the gas distribution contractors' "
                      "association). At the top, 15-20 companies have revenue around or above $1B, usually fewer than 10 per sub-segment, and none "
                      "spans gas, power and water at scale.")),
     1: dict(id="precedents", order=5, topic="Roll-ups that worked and roll-ups that struggled", tag="Mixed",
+            headline='Single-niche roll-ups have sold well; multi-unit ones have struggled.',
             summary=("Utility maintenance roll-ups have been built many times, with profitable exits such as Shermco (~$1.6B to Blackstone), Pike "
                      "(>$5B reported), USIC, Osmose and Azuria. Multi-unit platforms have a weaker record: the closest attempts failed or are highly "
                      "leveraged, and no one has built a scaled gas + power + water maintenance platform. The field is crowded, with at least 26 "
                      "sponsor-backed platforms plus the public consolidators.")),
     2: dict(id="sharing", order=6, topic="Sharing crews and equipment across units", tag="Watch",
+            headline='Crews and equipment mostly stay within a unit; gas and water share the most.',
             summary=("Crews and equipment move readily within a unit, partly between gas and water, and rarely between gas or water and power. Only "
                      "about 15-27% of field headcount (est.) can move between power and gas or water, and those are the easiest roles to hire. Gas "
                      "and water overlap more, at about 53% of headcount and 65% of fleet value. The larger synergies are route density, purchasing, "
                      "insurance and back office.")),
     4: dict(id="candidates", order=7, topic="The candidate pool", tag="Mixed",
+            headline='147 private companies screened: 21 platform-grade, 9 independent, 6 of them in gas.',
             summary=("Trade rosters (DCA, NETA, NASSCO, AWWA) and ownership records yield 147 private companies, of which 21 are platform-grade "
                      "(gas 9, water 4, T&D 3, power generation 5). Nine of those look independent, six of them in gas. Setting aside Day & Zimmermann, "
                      "which is unlikely to sell, about 8 names may be worth approaching, most of them gas regionals whose size still needs checking.")),
@@ -101,6 +108,8 @@ BODY_EDITS = [
     (3, "Quantified like lead times, as years to clear the old stock at today's replacement pace:", "Years to clear the old stock at today's replacement pace:"),
     (3, "Verdict: aging is real, measurable and funded through rate trackers, but it is slow and regional, not a shock. Replace the deck's 70%-of-the-grid figure with NREL's transformer data, and source the gas and water claims to PHMSA and Utah State.",
         "In sum: aging is real, measurable and funded through rate trackers, but it is slow and regional. NREL's transformer data, PHMSA's pipe inventory and the Utah State water main survey are the most defensible sources; grid-wide age percentages should be revalidated before use."),
+    (3, "Mains are replaced on a ~125-year cycle (~0.8% a year) while the average pipe fails at ~53 years, so the backlog grows.",
+        "Utilities renew only ~0.8% of mains a year, a pace that would take ~125 years to replace the whole network. That figure measures underinvestment, not pipe life: mains that break do so at ~53 years on average, and design lives run roughly 50-100+ years by material, so the backlog of old pipe grows."),
     (5, "Not as written. The deck leans on drivers that mostly fund new construction, which FAM excludes, and on population, which is barely growing. A stronger why-now exists.",
         "Drivers that fund new construction and drivers that fund maintenance point in different directions."),
     (5, "Population: drop it.", "Population: a weak driver."),
@@ -249,7 +258,7 @@ FULTON_LINKS = [
 ]
 
 PROSPECT_NODE = dict(
-    id="prospect", name="New Platform", layer="B", group="Prospective", group_order=-1, kind="prospect",
+    id="prospect", name="New Platform", layer="B", group="Prospective", group_order=2.5, kind="prospect",
     description=("A prospective new platform of about $50M revenue. The recommended starting point is a founder-owned gas distribution "
                  "maintenance contractor that later adds water underground work in the same metros; the unit mix is not decided. The flows shown are estimates for a company of that size, not a specific target."),
     size_label="~$50M revenue; 9-11% EBITDA (est.)", ownership="Founder- or family-owned at entry", source_url="https://directory.dcaweb.org/")
@@ -301,6 +310,7 @@ TEXT_EDITS = [
     ("value_chain_nodes", "dc-ci-owners", "description", "Outside the thesis TAM.", "Outside the core maintenance market."),
     ("watchlist", "w12", "why", "to finalize the deck's mains-over-50-years statistic", "to update the share of mains over 50 years old"),
     ("unit_ranking", "u1", "why", "Artera, the same unit at scale, is distressed.", "Artera, the largest gas roll-up, is highly leveraged (rated CCC+ in 2022)."),
+    ("key_numbers", "age-n08", "label", "Water main replacement cycle vs average failure age", "Years to renew all water mains at today's ~0.8%/yr pace vs average age of mains that break"),
     ("watchlist", "w11", "why", "Sets the prices FAM will face", "Sets the prices a buyer will face"),
     ("platforms", "vortex-companies", "lesson", "that FAM's water unit would bid against", "that a new water platform would bid against"),
     ("platforms", "utility-service-co-usg-water-s", "lesson", "It is a template for FAM's water unit.", "It is a template for a water maintenance unit."),

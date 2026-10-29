@@ -37,7 +37,7 @@
   "group": "aging",
   "order": 4,
   "title": "Years to clear the old stock at today's pace",
-  "note": "Derived from the backlog and the current replacement rate. Water mains are replaced on a ~125-year cycle while the average main fails at ~53 years, so that backlog grows.",
+  "note": "Derived from the backlog and the current replacement rate. Water utilities renew only ~0.8% of mains a year, a pace that would take ~125 years, while mains that break do so at ~53 years on average, so that backlog grows.",
   "kind": "hbar",
   "fmt": "int",
   "source_url": "https://nrel.gov/docs/fy25osti/92076.pdf",

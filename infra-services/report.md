@@ -13,7 +13,7 @@ Outsourced maintenance across gas, power and water is about $44-81B a year (est.
 - gas utility construction capex of $49.1B in 2023
 - federally mandated gas inspection cycles
 - 50-55% of distribution transformers older than 33 years
-- water mains replaced on a ~125-year cycle
+- water utilities renewing only ~0.8% of mains a year, a pace that would take ~125 years, while mains that break do so at ~53 years on average
 - nuclear plants licensed to 80 years
 Population growth (+0.5%) and headline load growth add less: they mostly fund new construction.
 
@@ -95,7 +95,7 @@ A realistic path: a ~$50M founder-owned platform bought at ~6-8x, built to ~$150
 
 ### How old the infrastructure is
 
-*Favorable.* Much of it is old, and the age can be measured. Most of the US transmission grid dates from the 1960s-70s, some lines go back to the 1920s, and 50-55% of distribution transformers are older than 33 years. At today's replacement pace, the old stock takes about 17-22 years to clear for transformers and 11-16 years for cast-iron gas mains, and water mains are on a ~125-year cycle. Maintenance extends asset life and is itself recurring revenue, so aging is a slow, funded driver rather than a sudden wave.
+*Favorable.* Much of it is old, and the age can be measured. Most of the US transmission grid dates from the 1960s-70s, some lines go back to the 1920s, and 50-55% of distribution transformers are older than 33 years. At today's replacement pace, the old stock takes about 17-22 years to clear for transformers and 11-16 years for cast-iron gas mains, and water utilities renew only ~0.8% of mains a year, a pace that would take ~125 years even though mains that break do so at ~53 years on average. Maintenance extends asset life and is itself recurring revenue, so aging is a slow, funded driver rather than a sudden wave.
 
 Routine maintenance keeps old assets in service, and that maintenance is the revenue. The age of the installed base can be measured from federal and utility data.
 
@@ -109,7 +109,7 @@ Years to clear the old stock at today's replacement pace:
 - Large power transformers averaged 38-40 years in 2014, against a ~40-year design life (DOE).
 - Wood poles: 130-160M are in service. Well maintained, they last 70-80+ years on ~10-year inspect-and-treat cycles, against a ~35-year book life (NAWPC). That is recurring inspection demand, not a replacement wave.
 - Gas: PHMSA says 28% of distribution pipe was installed before 1970. Cast and wrought iron fell to ~16,337 miles in 2023, down 63% since 2005, and 24 states have finished. At 1,000-1,500 miles a year, it is gone in ~11-16 years. Bare steel (~61,000 miles around 2013) runs into the 2040s (UGI: 2041).
-- Water: a 2023 Utah State survey of 802 utilities found 11.1 breaks per 100 miles a year (~260,000 breaks and $2.6B of repairs) and a $452B backlog of pipe past its useful life (ASCE). Mains are replaced on a ~125-year cycle (~0.8% a year) while the average pipe fails at ~53 years, so the backlog grows.
+- Water: a 2023 Utah State survey of 802 utilities found 11.1 breaks per 100 miles a year (~260,000 breaks and $2.6B of repairs) and a $452B backlog of pipe past its useful life (ASCE). Utilities renew only ~0.8% of mains a year, a pace that would take ~125 years to replace the whole network. That figure measures underinvestment, not pipe life: mains that break do so at ~53 years on average, and design lives run roughly 50-100+ years by material, so the backlog of old pipe grows.
 - Generation: coal units average 45 years and retire at ~50 (EIA), so that market shrinks. Nuclear is the opposite: the NRC renewed 18 licenses (~17 GW) in 15 months, many to 80 years.
 
 Does spending follow? Grid Strategies/ACEG attributes ~90% of the $25B+ a year of transmission spend to reliability and replacement (not re-verified). Asset-condition projects are 73% of New England transmission owners' capital projects (Utility Dive).
@@ -126,7 +126,7 @@ In sum: aging is real, measurable and funded through rate trackers, but it is sl
 | Distribution transformer replacements + additions | [2.5-3% of units per year (~17-22 yrs to turn over the old half)](https://nrel.gov/docs/fy25osti/92076.pdf) |
 | Large power transformer average age (2014) | [38-40 yrs vs ~40-yr design life](https://www.energy.gov/sites/default/files/2014/04/f15/LPTStudyUpdate-040914.pdf) |
 | Water main break rate (US + Canada, 2023) | [11.1 per 100 mi/yr; ~260K breaks; $2.6B/yr repairs](https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2024/04/breaking-water-mains-present-us-canada-with-%24452b-problem) |
-| Water main replacement cycle vs average failure age | [~125 yrs vs ~53 yrs](https://trenchlesstechnology.com/last-word-the-water-main-report-card/) |
+| Years to renew all water mains at today's ~0.8%/yr pace vs average age of mains that break | [~125 yrs vs ~53 yrs](https://trenchlesstechnology.com/last-word-the-water-main-report-card/) |
 | Maintained wood pole life vs book life | [70-80+ yrs vs ~35 yrs](https://woodpoles.org/issues/service-life/) |
 | Coal unit average age / retirement age | [45 yrs / ~50 yrs](https://www.eia.gov/todayinenergy/detail.php?id=50658) |
 

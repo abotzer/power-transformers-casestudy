@@ -323,17 +323,8 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 }
 
 /* infra report additions */
-.tx-answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
-.tx-ans { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
-.tx-ans-top { display: flex; align-items: center; justify-content: space-between; gap: var(--cds-gap-sm); }
-.tx-ans-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.35; margin: 0; }
-.tx-ans-short { line-height: 1.55; }
-.tx-ans-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--cds-gap-sm); padding-block: var(--cds-pad-xs); border-block: 1px solid var(--color-border-line); }
 .tx-ans-val { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; }
 .tx-ans-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
-.tx-ans-more summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
-.tx-ans-more[open] summary { margin-bottom: var(--cds-gap-sm); }
-.tx-ans-more p { line-height: 1.6; }
 .tx-srcs { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); line-height: 1.6; }
 .tx-srcs a { color: var(--color-fg-muted); }
 .tx-steps { margin: 0; padding-left: 2rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
@@ -365,7 +356,6 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-rank { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
 .tx-chart-gen:empty { min-height: 240px; }
 .tx-bul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }
-.tx-ans-top { align-items: flex-start; }
 .tx-verdict-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md) var(--cds-gap-lg); margin-top: var(--cds-gap-xs); }
 .tx-verdict-sec { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .tx-verdict-h { margin: 0; font-size: var(--cds-font-size-body); font-weight: 700; color: var(--color-fg); }
@@ -379,8 +369,29 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-vc .tx-vc-node.is-prospect circle { fill: #fff !important; }
 .tx-vc .tx-vc-node.is-prospect .tx-vc-mono { fill: var(--vc-prospect); }
 [data-kind="prospect"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-prospect) 60%, transparent); background: color-mix(in srgb, var(--vc-prospect) 14%, transparent); }
-.tx-ans-top .tx-chip { flex: none; white-space: nowrap; }
 .tx-lede, .tx-sub, .tx-card-note, .tx-steps, .tx-caveats, .tx-bottom-text { max-width: none; }
+.tx-kf { display: grid; grid-template-columns: minmax(16rem, 24rem) minmax(0, 1fr); gap: var(--cds-gap-md); align-items: start; }
+@media (max-width: 760px) { .tx-kf { grid-template-columns: minmax(0, 1fr); } }
+.tx-kf-nav { display: flex; flex-direction: column; gap: 6px; }
+.tx-kf-item { all: unset; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; gap: 4px; padding: var(--cds-pad-sm, 10px) var(--cds-pad-md); border: 1px solid var(--color-border-line); border-left: 4px solid transparent; border-radius: var(--cds-radius); background: var(--color-panel); }
+.tx-kf-item:hover { border-color: color-mix(in srgb, var(--ws-amber) 60%, var(--color-border-line)); }
+.tx-kf-item:focus-visible { outline: 2px solid var(--ws-amber); outline-offset: 2px; }
+.tx-kf-item[aria-selected="true"] { border-left-color: var(--ws-amber); background: color-mix(in srgb, var(--ws-amber) 10%, var(--color-panel)); }
+.tx-kf-item-top { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-sm); }
+.tx-kf-item-top .tx-chip { flex: none; white-space: nowrap; }
+.tx-kf-topic { font-weight: 600; }
+.tx-kf-head { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.4; }
+.tx-kf-pane { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.tx-kf-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title, 1.5rem); line-height: 1.3; }
+.tx-kf-summary { line-height: 1.6; color: var(--color-fg-muted); }
+.tx-kf-stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-sm); }
+.tx-kf-stat { border-top: 2px solid var(--ws-amber); padding-top: 6px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tx-kf-stat .tx-srcs { margin-top: 2px; }
+.tx-kf-more summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-kf-more[open] summary { margin-bottom: var(--cds-gap-sm); }
+.tx-rich { column-width: 26rem; column-gap: var(--cds-gap-lg); line-height: 1.55; }
+.tx-rich > * { break-inside: avoid; margin: 0 0 8px; }
+.tx-rich-h { font-weight: 700; font-size: var(--cds-font-size-body); margin-top: 6px; break-after: avoid; }
 </style>
 
 <div class="tx">
@@ -438,9 +449,9 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
   <section class="tx-section" id="key-findings">
     <div class="tx-section-head">
       <h2 class="tx-h2" id="kf-title">Key findings</h2>
-      <p class="tx-sub">What public and government data show about the industry, topic by topic. Each card links its sources; open it for the full evidence. The other tabs hold the charts behind it.</p>
+      <p class="tx-sub">What public and government data show about the industry. Pick a topic for its key numbers and sources; the other tabs hold the charts behind them.</p>
     </div>
-    <div class="tx-answers dash-skeleton" id="findings-grid" data-source="key_findings"></div>
+    <div class="tx-kf dash-skeleton" id="findings-grid" data-source="key_findings key_numbers"></div>
   </section>
 
   <section class="tx-section" id="actions">
@@ -1031,7 +1042,7 @@ function drawValueChain() {
   legend.textContent = '';
   if (!ok) { detail.textContent = ''; return; }
   const c = dash.colors;
-  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['New Platform: estimated flows', 'var(--vc-prospect)', true]].concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : []).forEach((d) => {
+  [['Selected company and its whole chain: darker lines', 'var(--color-fg-muted)', false], ['Dashed: estimated links of the New Platform' + (document.getElementById('vc-fulton').checked ? ' and Fulton\'s companies' : ''), 'var(--cds-chart-muted)', true]].forEach((d) => {
     const item = document.createElement('span');
     const sw = document.createElement('i');
     sw.className = 'tx-swatch';
@@ -1124,7 +1135,7 @@ function drawValueChain() {
       arrow: [[t.x + L.boxW, y2], [x2, y2 - aw / 2], [x2, y2 + aw / 2]], mx: x1 + b * 0.75, my: (y1 + y2) / 2, w: w };
   };
   const role = (e) => (!tr ? 'none' : tr.upE.has(e.id) ? 'up' : tr.downE.has(e.id) ? 'down' : 'dim');
-  const color = (e, r) => (/^fulton/.test(e.kind) ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : e.kind === 'prospect' ? 'var(--vc-prospect)' : 'var(--cds-chart-muted)');
+  const color = () => 'var(--cds-chart-muted)';
   const edgeG = svg.append('g');
   const ordered = model.edges.slice().sort((a, b) => (role(a) !== 'dim' && role(a) !== 'none') - (role(b) !== 'dim' && role(b) !== 'none') || (vcMid(b) || 0) - (vcMid(a) || 0));
   const name = (id) => (model.byId.get(id) || {}).name || id;
@@ -1510,40 +1521,91 @@ function renderSummary() {
   box.appendChild(grid);
 }
 
+// structured text: blank lines split blocks; "•" and "1." lines become lists; short lines ending in ":" become subheads
+function richText(text) {
+  const wrap = mk('div', 'tx-rich');
+  let list = null;
+  String(text || '').split('\n').forEach((raw) => {
+    const line = raw.trim();
+    if (!line) { list = null; return; }
+    const bullet = /^•\s*/.test(line), numbered = /^\d+\.\s/.test(line);
+    if (bullet || numbered) {
+      const tag = bullet ? 'ul' : 'ol';
+      if (!list || list.tagName.toLowerCase() !== tag) { list = mk(tag, 'tx-bul'); wrap.appendChild(list); }
+      list.appendChild(mk('li', null, line.replace(/^•\s*|^\d+\.\s/, '')));
+      return;
+    }
+    list = null;
+    if (line.length < 90 && /:$/.test(line)) wrap.appendChild(mk('h4', 'tx-rich-h', line.replace(/:$/, '')));
+    else wrap.appendChild(mk('p', null, line));
+  });
+  return wrap;
+}
+
+const kfState = { sel: null };
 function renderFindings() {
   const el = document.getElementById('findings-grid');
   if (!prep(el, ['key_findings', 'key_numbers'])) return;
-  const nums = rows('key_numbers');
-  rows('key_findings').slice().sort(byOrder).forEach((r) => {
+  const list = rows('key_findings').slice().sort(byOrder);
+  if (!list.length) return;
+  if (!list.some((r) => r.id === kfState.sel)) kfState.sel = list[0].id;
+  const nav = mk('div', 'tx-kf-nav');
+  nav.setAttribute('role', 'tablist');
+  list.forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
-    const card = mk('article', 'tx-ans');
-    const top = mk('div', 'tx-ans-top');
-    top.appendChild(mk('h3', 'tx-ans-title', r.topic, 'key_findings', 'topic', w));
+    const btn = mk('button', 'tx-kf-item');
+    btn.type = 'button';
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', String(r.id === kfState.sel));
+    const top = mk('div', 'tx-kf-item-top');
+    top.appendChild(mk('span', 'tx-kf-topic', r.topic, 'key_findings', 'topic', w));
     const chip = mk('span', 'tx-chip', r.tag, 'key_findings', 'tag', w);
     chip.setAttribute('data-attr', TAG_ATTR[r.tag] || 'Medium');
     top.appendChild(chip);
-    card.appendChild(top);
-    card.appendChild(mk('p', 'tx-ans-short', r.summary, 'key_findings', 'summary', w));
-    const kn = nums.filter((n) => n.finding === r.id).sort(byOrder).slice(0, 4);
-    if (kn.length) {
-      const strip = mk('div', 'tx-ans-nums');
-      kn.forEach((n) => {
-        const nw = 'id=' + encodeURIComponent(n.id);
-        const b = mk('div', 'tx-ans-num');
-        b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
-        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
-        strip.appendChild(b);
-      });
-      card.appendChild(strip);
-    }
-    const d = document.createElement('details');
-    d.className = 'tx-ans-more';
-    d.appendChild(mk('summary', null, 'The evidence'));
-    d.appendChild(mk('p', 'tx-pre', r.body, 'key_findings', 'body', w));
-    d.appendChild(sourceLinks(r.sources));
-    card.appendChild(d);
-    el.appendChild(card);
+    btn.appendChild(top);
+    btn.appendChild(mk('span', 'tx-kf-head', r.headline, 'key_findings', 'headline', w));
+    btn.addEventListener('click', () => { kfState.sel = r.id; el.textContent = ''; renderFindings(); scheduleGlossary(); });
+    nav.appendChild(btn);
   });
+  el.appendChild(nav);
+
+  const r = list.find((x) => x.id === kfState.sel);
+  const w = 'id=' + encodeURIComponent(r.id);
+  const pane = mk('article', 'tx-kf-pane');
+  pane.setAttribute('role', 'tabpanel');
+  pane.appendChild(mk('div', 'tx-bottom-label', r.topic, 'key_findings', 'topic', w));
+  pane.appendChild(mk('h3', 'tx-kf-title', r.headline, 'key_findings', 'headline', w));
+  pane.appendChild(mk('p', 'tx-kf-summary', r.summary, 'key_findings', 'summary', w));
+  const kn = rows('key_numbers').filter((n) => n.finding === r.id).sort(byOrder);
+  if (kn.length) {
+    const strip = mk('div', 'tx-kf-stats');
+    kn.forEach((n) => {
+      const nw = 'id=' + encodeURIComponent(n.id);
+      const b = mk('div', 'tx-kf-stat');
+      b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
+      b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
+      if (safeUrl(n.source_url)) {
+        let host = 'source';
+        try { host = new URL(n.source_url).hostname.replace(/^www\./, ''); } catch (e) { host = 'source'; }
+        const src = mk('div', 'tx-srcs');
+        src.appendChild(linkTo(n.source_url, host + ' ↗'));
+        b.appendChild(src);
+      }
+      strip.appendChild(b);
+    });
+    pane.appendChild(strip);
+  }
+  const d = document.createElement('details');
+  d.className = 'tx-kf-more';
+  d.appendChild(mk('summary', null, 'Full evidence and sources'));
+  const body = richText(r.body);
+  body.setAttribute('data-source', 'key_findings');
+  body.setAttribute('data-field', 'body');
+  body.setAttribute('data-where', w);
+  d.appendChild(body);
+  d.appendChild(sourceLinks(r.sources));
+  pane.appendChild(d);
+  el.appendChild(pane);
 }
 
 function renderProfile() {

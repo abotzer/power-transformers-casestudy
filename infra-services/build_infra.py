@@ -126,7 +126,7 @@ def main(src, out, round2=None):
                      "https://www.puc.pa.gov/pcdocs/1118448.pdf"]
             nums = [dict(label="Caribou-Palermo line (Camp Fire) in service since", value="1921", source_url="https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/"),
                     dict(label="PG&E transmission towers, average age (2017)", value="68 yrs", source_url="https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/")] + nums
-        kf.append(dict(id=f["id"], order=f["order"], topic=f["topic"], tag=f["tag"], summary=f["summary"], body=bodies[a["q"]],
+        kf.append(dict(id=f["id"], order=f["order"], topic=f["topic"], tag=f["tag"], headline=f["headline"], summary=f["summary"], body=bodies[a["q"]],
                        sources=" | ".join(u for u in srcs if https(u))))
         for i, k in enumerate(nums):
             kn.append(dict(id=f"{f['id']}-n{i:02d}", finding=f["id"], order=i, label=clean(k["label"]), value=clean(k["value"]), source_url=https(k.get("source_url"))))
@@ -282,11 +282,11 @@ def main(src, out, round2=None):
           [("Age", "Coal units", 45, "45 yrs", "Average age of operating coal units (EIA)"), ("Design or book life", "Coal units", 50, "~50", "Average retirement age"),
            ("Age", "Transformers", 39, "38–40", "Large power transformers, average age in 2014 (DOE)"), ("Design or book life", "Transformers", 40, "~40", "Large power transformer design life"),
            ("Age", "Wood poles", 75, "70–80+", "Maintained service life (NAWPC)"), ("Design or book life", "Wood poles", 35, "35", "Depreciation life")])
-    chart("backlog_years", "aging", 4, "Years to clear the old stock at today's pace", "Derived from the backlog and the current replacement rate. Water mains are replaced on a ~125-year cycle while the average main fails at ~53 years, so that backlog grows.",
+    chart("backlog_years", "aging", 4, "Years to clear the old stock at today's pace", "Derived from the backlog and the current replacement rate. Water utilities renew only ~0.8% of mains a year, a pace that would take ~125 years, while mains that break do so at ~53 years on average, so that backlog grows.",
           "hbar", "int", "https://nrel.gov/docs/fy25osti/92076.pdf", "S",
           [("Years", "Cast iron gas mains", 13, "~11–16 yrs", "Cast and wrought iron gas mains"), ("Years", "Bare steel gas mains", 18, "~15–20 yrs"),
            ("Years", "Old transformers", 20, "~17–22 yrs", "Distribution transformers over 33 years old"), ("Years", "Lead service lines", 10, "~10 yrs", "If the Lead and Copper Rule Improvements hold"),
-           ("Years", "Water mains", 125, "~125-yr cycle", "Full replacement cycle at today's pace")])
+           ("Years", "All water mains", 125, "~125 yrs at today's pace", "Renewing ~0.8% of mains a year; a measure of underinvestment, not of pipe life")])
     chart("dwinsa", "aging", 5, "Drinking water: the $625B twenty-year need", "EPA's seventh needs survey, by category ($B over 20 years). Two-thirds is pipe in the ground.",
           "hbar", "usd_b", "https://asdwa.org/2023/09/07/epa-sends-7th-drinking-water-infrastructure-needs-report-to-congress", "P",
           [("$B", "Distribution and transmission", 420.8), ("$B", "Treatment", 106.4), ("$B", "Storage, source and other", 97.8)])

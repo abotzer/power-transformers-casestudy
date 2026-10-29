@@ -188,10 +188,10 @@
   "chart_id": "backlog_years",
   "order": 4,
   "series": "Years",
-  "x": "Water mains",
+  "x": "All water mains",
   "y": 125,
-  "label": "~125-yr cycle",
-  "note": "Full replacement cycle at today's pace"
+  "label": "~125 yrs at today's pace",
+  "note": "Renewing ~0.8% of mains a year; a measure of underinvestment, not of pipe life"
  },
  {
   "id": "dwinsa-00",

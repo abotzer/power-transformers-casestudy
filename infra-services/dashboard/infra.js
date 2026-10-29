@@ -39,40 +39,91 @@ function renderSummary() {
   box.appendChild(grid);
 }
 
+// structured text: blank lines split blocks; "•" and "1." lines become lists; short lines ending in ":" become subheads
+function richText(text) {
+  const wrap = mk('div', 'tx-rich');
+  let list = null;
+  String(text || '').split('\n').forEach((raw) => {
+    const line = raw.trim();
+    if (!line) { list = null; return; }
+    const bullet = /^•\s*/.test(line), numbered = /^\d+\.\s/.test(line);
+    if (bullet || numbered) {
+      const tag = bullet ? 'ul' : 'ol';
+      if (!list || list.tagName.toLowerCase() !== tag) { list = mk(tag, 'tx-bul'); wrap.appendChild(list); }
+      list.appendChild(mk('li', null, line.replace(/^•\s*|^\d+\.\s/, '')));
+      return;
+    }
+    list = null;
+    if (line.length < 90 && /:$/.test(line)) wrap.appendChild(mk('h4', 'tx-rich-h', line.replace(/:$/, '')));
+    else wrap.appendChild(mk('p', null, line));
+  });
+  return wrap;
+}
+
+const kfState = { sel: null };
 function renderFindings() {
   const el = document.getElementById('findings-grid');
   if (!prep(el, ['key_findings', 'key_numbers'])) return;
-  const nums = rows('key_numbers');
-  rows('key_findings').slice().sort(byOrder).forEach((r) => {
+  const list = rows('key_findings').slice().sort(byOrder);
+  if (!list.length) return;
+  if (!list.some((r) => r.id === kfState.sel)) kfState.sel = list[0].id;
+  const nav = mk('div', 'tx-kf-nav');
+  nav.setAttribute('role', 'tablist');
+  list.forEach((r) => {
     const w = 'id=' + encodeURIComponent(r.id);
-    const card = mk('article', 'tx-ans');
-    const top = mk('div', 'tx-ans-top');
-    top.appendChild(mk('h3', 'tx-ans-title', r.topic, 'key_findings', 'topic', w));
+    const btn = mk('button', 'tx-kf-item');
+    btn.type = 'button';
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', String(r.id === kfState.sel));
+    const top = mk('div', 'tx-kf-item-top');
+    top.appendChild(mk('span', 'tx-kf-topic', r.topic, 'key_findings', 'topic', w));
     const chip = mk('span', 'tx-chip', r.tag, 'key_findings', 'tag', w);
     chip.setAttribute('data-attr', TAG_ATTR[r.tag] || 'Medium');
     top.appendChild(chip);
-    card.appendChild(top);
-    card.appendChild(mk('p', 'tx-ans-short', r.summary, 'key_findings', 'summary', w));
-    const kn = nums.filter((n) => n.finding === r.id).sort(byOrder).slice(0, 4);
-    if (kn.length) {
-      const strip = mk('div', 'tx-ans-nums');
-      kn.forEach((n) => {
-        const nw = 'id=' + encodeURIComponent(n.id);
-        const b = mk('div', 'tx-ans-num');
-        b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
-        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
-        strip.appendChild(b);
-      });
-      card.appendChild(strip);
-    }
-    const d = document.createElement('details');
-    d.className = 'tx-ans-more';
-    d.appendChild(mk('summary', null, 'The evidence'));
-    d.appendChild(mk('p', 'tx-pre', r.body, 'key_findings', 'body', w));
-    d.appendChild(sourceLinks(r.sources));
-    card.appendChild(d);
-    el.appendChild(card);
+    btn.appendChild(top);
+    btn.appendChild(mk('span', 'tx-kf-head', r.headline, 'key_findings', 'headline', w));
+    btn.addEventListener('click', () => { kfState.sel = r.id; el.textContent = ''; renderFindings(); scheduleGlossary(); });
+    nav.appendChild(btn);
   });
+  el.appendChild(nav);
+
+  const r = list.find((x) => x.id === kfState.sel);
+  const w = 'id=' + encodeURIComponent(r.id);
+  const pane = mk('article', 'tx-kf-pane');
+  pane.setAttribute('role', 'tabpanel');
+  pane.appendChild(mk('div', 'tx-bottom-label', r.topic, 'key_findings', 'topic', w));
+  pane.appendChild(mk('h3', 'tx-kf-title', r.headline, 'key_findings', 'headline', w));
+  pane.appendChild(mk('p', 'tx-kf-summary', r.summary, 'key_findings', 'summary', w));
+  const kn = rows('key_numbers').filter((n) => n.finding === r.id).sort(byOrder);
+  if (kn.length) {
+    const strip = mk('div', 'tx-kf-stats');
+    kn.forEach((n) => {
+      const nw = 'id=' + encodeURIComponent(n.id);
+      const b = mk('div', 'tx-kf-stat');
+      b.appendChild(mk('div', 'tx-ans-val', n.value, 'key_numbers', 'value', nw));
+      b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'key_numbers', 'label', nw));
+      if (safeUrl(n.source_url)) {
+        let host = 'source';
+        try { host = new URL(n.source_url).hostname.replace(/^www\./, ''); } catch (e) { host = 'source'; }
+        const src = mk('div', 'tx-srcs');
+        src.appendChild(linkTo(n.source_url, host + ' ↗'));
+        b.appendChild(src);
+      }
+      strip.appendChild(b);
+    });
+    pane.appendChild(strip);
+  }
+  const d = document.createElement('details');
+  d.className = 'tx-kf-more';
+  d.appendChild(mk('summary', null, 'Full evidence and sources'));
+  const body = richText(r.body);
+  body.setAttribute('data-source', 'key_findings');
+  body.setAttribute('data-field', 'body');
+  body.setAttribute('data-where', w);
+  d.appendChild(body);
+  d.appendChild(sourceLinks(r.sources));
+  pane.appendChild(d);
+  el.appendChild(pane);
 }
 
 function renderProfile() {

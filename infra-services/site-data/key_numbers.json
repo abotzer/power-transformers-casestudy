@@ -195,7 +195,7 @@
   "id": "age-n08",
   "finding": "age",
   "order": 8,
-  "label": "Water main replacement cycle vs average failure age",
+  "label": "Years to renew all water mains at today's ~0.8%/yr pace vs average age of mains that break",
   "value": "~125 yrs vs ~53 yrs",
   "source_url": "https://trenchlesstechnology.com/last-word-the-water-main-report-card/"
  },
