@@ -249,9 +249,9 @@ FULTON_LINKS = [
 ]
 
 PROSPECT_NODE = dict(
-    id="prospect", name="New gas platform", layer="B", group="Prospective", group_order=-1, kind="prospect",
-    description=("A founder-owned gas distribution maintenance contractor of about $50M revenue, as a first platform that later adds water "
-                 "underground work in the same metros. The flows shown are estimates for a company of that size, not a specific target."),
+    id="prospect", name="New Platform", layer="B", group="Prospective", group_order=-1, kind="prospect",
+    description=("A prospective new platform of about $50M revenue. The recommended starting point is a founder-owned gas distribution "
+                 "maintenance contractor that later adds water underground work in the same metros; the unit mix is not decided. The flows shown are estimates for a company of that size, not a specific target."),
     size_label="~$50M revenue; 9-11% EBITDA (est.)", ownership="Founder- or family-owned at entry", source_url="https://directory.dcaweb.org/")
 
 # (source, target, product, low $M, high $M, basis, source_url)

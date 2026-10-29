@@ -50,6 +50,10 @@
 .tx { --vc-prospect: #6A47C2; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tx { --vc-prospect: #A88BF2; } }
 :root[data-theme="dark"] .tx { --vc-prospect: #A88BF2; }
-.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2px; fill: color-mix(in srgb, var(--vc-prospect) 14%, var(--color-panel)); }
+.tx-vc .tx-vc-node.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2.5px; fill: var(--vc-prospect); filter: drop-shadow(0 0 4px color-mix(in srgb, var(--vc-prospect) 55%, transparent)); }
+.tx-vc .tx-vc-node.is-prospect text { fill: #fff; font-weight: 700; }
+.tx-vc .tx-vc-node.is-prospect circle { fill: #fff !important; }
+.tx-vc .tx-vc-node.is-prospect .tx-vc-mono { fill: var(--vc-prospect); }
 [data-kind="prospect"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-prospect) 60%, transparent); background: color-mix(in srgb, var(--vc-prospect) 14%, transparent); }
 .tx-ans-top .tx-chip { flex: none; white-space: nowrap; }
+.tx-lede, .tx-sub, .tx-card-note, .tx-steps, .tx-caveats, .tx-bottom-text { max-width: none; }

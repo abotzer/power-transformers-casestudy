@@ -374,9 +374,13 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx { --vc-prospect: #6A47C2; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tx { --vc-prospect: #A88BF2; } }
 :root[data-theme="dark"] .tx { --vc-prospect: #A88BF2; }
-.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2px; fill: color-mix(in srgb, var(--vc-prospect) 14%, var(--color-panel)); }
+.tx-vc .tx-vc-node.is-prospect rect { stroke: var(--vc-prospect); stroke-width: 2.5px; fill: var(--vc-prospect); filter: drop-shadow(0 0 4px color-mix(in srgb, var(--vc-prospect) 55%, transparent)); }
+.tx-vc .tx-vc-node.is-prospect text { fill: #fff; font-weight: 700; }
+.tx-vc .tx-vc-node.is-prospect circle { fill: #fff !important; }
+.tx-vc .tx-vc-node.is-prospect .tx-vc-mono { fill: var(--vc-prospect); }
 [data-kind="prospect"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-prospect) 60%, transparent); background: color-mix(in srgb, var(--vc-prospect) 14%, transparent); }
 .tx-ans-top .tx-chip { flex: none; white-space: nowrap; }
+.tx-lede, .tx-sub, .tx-card-note, .tx-steps, .tx-caveats, .tx-bottom-text { max-width: none; }
 </style>
 
 <div class="tx">
@@ -414,13 +418,13 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
   <section class="tx-section" id="value-chain">
     <div class="tx-section-head">
       <h2 class="tx-h2" id="vc-title">How the market works</h2>
-      <p class="tx-sub">Goods and money move left to right: raw inputs and training, equipment and materials, labor and subcontractors, the service providers in the middle grouped by type, then the asset owners who hire them, the funding channels that pay those owners, and the ratepayers and taxpayers behind them. The prospective gas maintenance platform sits at the top of the service-provider column, traced through its likely suppliers and customers (dashed lines, estimated for a company with about fifty million dollars of revenue). Click any other company or group to trace its chain.</p>
+      <p class="tx-sub">Goods and money move left to right: raw inputs and training, equipment and materials, labor and subcontractors, the service providers in the middle grouped by type, then the asset owners who hire them, the funding channels that pay those owners, and the ratepayers and taxpayers behind them. The New Platform, a prospective company whose unit mix is not yet decided, is highlighted at the top of the service-provider column and traced through its likely suppliers and customers, shown here for the recommended gas-first start (dashed lines, estimated for a company with about fifty million dollars of revenue). Amber links show how Fulton's companies could work with it. Click any other company or group to trace its chain.</p>
     </div>
     <div class="tx-card">
       <div class="tx-vc-controls">
         <label>Find a company <select id="vc-select" aria-label="Find a company"><option value="">Choose…</option></select></label>
-        <label><input type="checkbox" id="vc-fulton"> Show how Fulton's companies could work with the platform</label>
-        <button type="button" class="tx-btn" id="vc-prospect">Trace the prospective platform</button>
+        <label><input type="checkbox" id="vc-fulton" checked> Show how Fulton's companies could work with the platform</label>
+        <button type="button" class="tx-btn" id="vc-prospect">Trace the New Platform</button>
         <button type="button" class="tx-btn" id="vc-clear">Show the whole market</button>
       </div>
       <div class="tx-legend" id="vc-legend"></div>
@@ -1027,7 +1031,7 @@ function drawValueChain() {
   legend.textContent = '';
   if (!ok) { detail.textContent = ''; return; }
   const c = dash.colors;
-  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Prospective platform: estimated flows', 'var(--vc-prospect)', true]].concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : []).forEach((d) => {
+  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['New Platform: estimated flows', 'var(--vc-prospect)', true]].concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : []).forEach((d) => {
     const item = document.createElement('span');
     const sw = document.createElement('i');
     sw.className = 'tx-swatch';

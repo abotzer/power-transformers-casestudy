@@ -29,7 +29,7 @@ VC_PATCHES = [
      "  if (n.kind === 'fulton') return 'var(--color-warn)';\n  if (n.kind === 'prospect') return 'var(--vc-prospect)';\n"),
     ("(showF || e.kind !== 'fulton_opportunity')", "(showF || !" + FULTON + ")"),
     ("[['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Fulton opportunity: addressable market, not current sales', 'var(--color-warn)', true]]",
-     "[['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Prospective platform: estimated flows', 'var(--vc-prospect)', true]]"
+     "[['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['New Platform: estimated flows', 'var(--vc-prospect)', true]]"
      ".concat(document.getElementById('vc-fulton').checked ? [['Fulton company link to the platform (est.)', 'var(--color-warn)', true]] : [])"),
     ("'Value chain of the North American transformer market: suppliers, builders and customers with annual flows'",
      "'Value chain of US utility infrastructure services: suppliers, service providers and customers with annual flows'"),
