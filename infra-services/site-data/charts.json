@@ -1,0 +1,1866 @@
+[
+ {
+  "id": "ci_mains-00",
+  "chart_id": "ci_mains",
+  "order": 0,
+  "series": "Miles",
+  "x": "2013",
+  "y": 33619,
+  "note": "Congressional testimony citing PHMSA"
+ },
+ {
+  "id": "ci_mains-01",
+  "chart_id": "ci_mains",
+  "order": 1,
+  "series": "Miles",
+  "x": "2015",
+  "y": 27771,
+  "note": "PHMSA via Pipeline & Gas Journal"
+ },
+ {
+  "id": "ci_mains-02",
+  "chart_id": "ci_mains",
+  "order": 2,
+  "series": "Miles",
+  "x": "2021",
+  "y": 18314,
+  "note": "Federal Register, PHMSA leak rule"
+ },
+ {
+  "id": "ci_mains-03",
+  "chart_id": "ci_mains",
+  "order": 3,
+  "series": "Miles",
+  "x": "2022",
+  "y": 17010,
+  "note": "PHMSA via Pipeline & Gas Journal"
+ },
+ {
+  "id": "ci_mains-04",
+  "chart_id": "ci_mains",
+  "order": 4,
+  "series": "Miles",
+  "x": "2023",
+  "y": 16337,
+  "note": "PHMSA data cited in research"
+ },
+ {
+  "id": "ci_states-00",
+  "chart_id": "ci_states",
+  "order": 0,
+  "series": "Miles",
+  "x": "New Jersey",
+  "y": 2904
+ },
+ {
+  "id": "ci_states-01",
+  "chart_id": "ci_states",
+  "order": 1,
+  "series": "Miles",
+  "x": "New York",
+  "y": 2481
+ },
+ {
+  "id": "ci_states-02",
+  "chart_id": "ci_states",
+  "order": 2,
+  "series": "Miles",
+  "x": "Massachusetts",
+  "y": 2413
+ },
+ {
+  "id": "ci_states-03",
+  "chart_id": "ci_states",
+  "order": 3,
+  "series": "Miles",
+  "x": "Pennsylvania",
+  "y": 2259
+ },
+ {
+  "id": "ci_states-04",
+  "chart_id": "ci_states",
+  "order": 4,
+  "series": "Miles",
+  "x": "Michigan",
+  "y": 1616
+ },
+ {
+  "id": "power_age-00",
+  "chart_id": "power_age",
+  "order": 0,
+  "series": "Age",
+  "x": "Coal units",
+  "y": 45,
+  "label": "45 yrs",
+  "note": "Average age of operating coal units (EIA)"
+ },
+ {
+  "id": "power_age-01",
+  "chart_id": "power_age",
+  "order": 1,
+  "series": "Design or book life",
+  "x": "Coal units",
+  "y": 50,
+  "label": "~50",
+  "note": "Average retirement age"
+ },
+ {
+  "id": "power_age-02",
+  "chart_id": "power_age",
+  "order": 2,
+  "series": "Age",
+  "x": "Transformers",
+  "y": 39,
+  "label": "38–40",
+  "note": "Large power transformers, average age in 2014 (DOE)"
+ },
+ {
+  "id": "power_age-03",
+  "chart_id": "power_age",
+  "order": 3,
+  "series": "Design or book life",
+  "x": "Transformers",
+  "y": 40,
+  "label": "~40",
+  "note": "Large power transformer design life"
+ },
+ {
+  "id": "power_age-04",
+  "chart_id": "power_age",
+  "order": 4,
+  "series": "Age",
+  "x": "Wood poles",
+  "y": 75,
+  "label": "70–80+",
+  "note": "Maintained service life (NAWPC)"
+ },
+ {
+  "id": "power_age-05",
+  "chart_id": "power_age",
+  "order": 5,
+  "series": "Design or book life",
+  "x": "Wood poles",
+  "y": 35,
+  "label": "35",
+  "note": "Depreciation life"
+ },
+ {
+  "id": "backlog_years-00",
+  "chart_id": "backlog_years",
+  "order": 0,
+  "series": "Years",
+  "x": "Cast iron gas mains",
+  "y": 13,
+  "label": "~11–16 yrs",
+  "note": "Cast and wrought iron gas mains"
+ },
+ {
+  "id": "backlog_years-01",
+  "chart_id": "backlog_years",
+  "order": 1,
+  "series": "Years",
+  "x": "Bare steel gas mains",
+  "y": 18,
+  "label": "~15–20 yrs"
+ },
+ {
+  "id": "backlog_years-02",
+  "chart_id": "backlog_years",
+  "order": 2,
+  "series": "Years",
+  "x": "Old transformers",
+  "y": 20,
+  "label": "~17–22 yrs",
+  "note": "Distribution transformers over 33 years old"
+ },
+ {
+  "id": "backlog_years-03",
+  "chart_id": "backlog_years",
+  "order": 3,
+  "series": "Years",
+  "x": "Lead service lines",
+  "y": 10,
+  "label": "~10 yrs",
+  "note": "If the Lead and Copper Rule Improvements hold"
+ },
+ {
+  "id": "backlog_years-04",
+  "chart_id": "backlog_years",
+  "order": 4,
+  "series": "Years",
+  "x": "Water mains",
+  "y": 125,
+  "label": "~125-yr cycle",
+  "note": "Full replacement cycle at today's pace"
+ },
+ {
+  "id": "dwinsa-00",
+  "chart_id": "dwinsa",
+  "order": 0,
+  "series": "$B",
+  "x": "Distribution and transmission",
+  "y": 420.8
+ },
+ {
+  "id": "dwinsa-01",
+  "chart_id": "dwinsa",
+  "order": 1,
+  "series": "$B",
+  "x": "Treatment",
+  "y": 106.4
+ },
+ {
+  "id": "dwinsa-02",
+  "chart_id": "dwinsa",
+  "order": 2,
+  "series": "$B",
+  "x": "Storage, source and other",
+  "y": 97.8
+ },
+ {
+  "id": "lsl-00",
+  "chart_id": "lsl",
+  "order": 0,
+  "series": "Millions",
+  "x": "EPA model (2023)",
+  "y": 9.2,
+  "label": "9.2M"
+ },
+ {
+  "id": "lsl-01",
+  "chart_id": "lsl",
+  "order": 1,
+  "series": "Millions",
+  "x": "Utility inventories (2025)",
+  "y": 4.0,
+  "label": "~4.0M"
+ },
+ {
+  "id": "water_breaks-00",
+  "chart_id": "water_breaks",
+  "order": 0,
+  "series": "Miles",
+  "x": "Over 50 years old",
+  "y": 770000,
+  "label": "~770k mi",
+  "note": "About 33% of all mains"
+ },
+ {
+  "id": "water_breaks-01",
+  "chart_id": "water_breaks",
+  "order": 1,
+  "series": "Miles",
+  "x": "Past useful life",
+  "y": 452000,
+  "label": "~452k mi",
+  "note": "Unfunded; about $452B to replace"
+ },
+ {
+  "id": "elec_use-00",
+  "chart_id": "elec_use",
+  "order": 0,
+  "series": "Retail sales",
+  "x": "2021",
+  "y": 3806
+ },
+ {
+  "id": "elec_use-01",
+  "chart_id": "elec_use",
+  "order": 1,
+  "series": "Retail sales",
+  "x": "2022",
+  "y": 3927
+ },
+ {
+  "id": "elec_use-02",
+  "chart_id": "elec_use",
+  "order": 2,
+  "series": "Retail sales",
+  "x": "2023",
+  "y": 3861
+ },
+ {
+  "id": "elec_use-03",
+  "chart_id": "elec_use",
+  "order": 3,
+  "series": "Retail sales",
+  "x": "2024",
+  "y": 3975
+ },
+ {
+  "id": "elec_use-04",
+  "chart_id": "elec_use",
+  "order": 4,
+  "series": "Total consumption",
+  "x": "2024",
+  "y": 4097
+ },
+ {
+  "id": "elec_use-05",
+  "chart_id": "elec_use",
+  "order": 5,
+  "series": "Total consumption",
+  "x": "2025",
+  "y": 4195
+ },
+ {
+  "id": "elec_use-06",
+  "chart_id": "elec_use",
+  "order": 6,
+  "series": "Total consumption",
+  "x": "2026F",
+  "y": 4288
+ },
+ {
+  "id": "elec_use-07",
+  "chart_id": "elec_use",
+  "order": 7,
+  "series": "Total consumption",
+  "x": "2027F",
+  "y": 4356
+ },
+ {
+  "id": "dc_use-00",
+  "chart_id": "dc_use",
+  "order": 0,
+  "series": "TWh",
+  "x": "2014",
+  "y": 58
+ },
+ {
+  "id": "dc_use-01",
+  "chart_id": "dc_use",
+  "order": 1,
+  "series": "TWh",
+  "x": "2023",
+  "y": 176,
+  "label": "176 (4.4%)"
+ },
+ {
+  "id": "dc_use-02",
+  "chart_id": "dc_use",
+  "order": 2,
+  "series": "TWh",
+  "x": "2028 low",
+  "y": 325,
+  "label": "325 (6.7%)"
+ },
+ {
+  "id": "dc_use-03",
+  "chart_id": "dc_use",
+  "order": 3,
+  "series": "TWh",
+  "x": "2028 high",
+  "y": 580,
+  "label": "580 (12%)"
+ },
+ {
+  "id": "eei_capex-00",
+  "chart_id": "eei_capex",
+  "order": 0,
+  "series": "$B",
+  "x": "2020",
+  "y": 139.8
+ },
+ {
+  "id": "eei_capex-01",
+  "chart_id": "eei_capex",
+  "order": 1,
+  "series": "$B",
+  "x": "2024",
+  "y": 178.2
+ },
+ {
+  "id": "eei_capex-02",
+  "chart_id": "eei_capex",
+  "order": 2,
+  "series": "$B",
+  "x": "2025E",
+  "y": 207.9
+ },
+ {
+  "id": "eei_capex-03",
+  "chart_id": "eei_capex",
+  "order": 3,
+  "series": "$B",
+  "x": "2025–29",
+  "y": 220,
+  "label": "~220+",
+  "note": "Average a year, 2025–29 plan"
+ },
+ {
+  "id": "additions-00",
+  "chart_id": "additions",
+  "order": 0,
+  "series": "2025 actual",
+  "x": "Solar",
+  "y": 27.2
+ },
+ {
+  "id": "additions-01",
+  "chart_id": "additions",
+  "order": 1,
+  "series": "2026 planned",
+  "x": "Solar",
+  "y": 43.4
+ },
+ {
+  "id": "additions-02",
+  "chart_id": "additions",
+  "order": 2,
+  "series": "2025 actual",
+  "x": "Batteries",
+  "y": 15,
+  "label": "~15"
+ },
+ {
+  "id": "additions-03",
+  "chart_id": "additions",
+  "order": 3,
+  "series": "2026 planned",
+  "x": "Batteries",
+  "y": 24.3
+ },
+ {
+  "id": "additions-04",
+  "chart_id": "additions",
+  "order": 4,
+  "series": "2025 actual",
+  "x": "All types",
+  "y": 53
+ },
+ {
+  "id": "additions-05",
+  "chart_id": "additions",
+  "order": 5,
+  "series": "2026 planned",
+  "x": "All types",
+  "y": 86
+ },
+ {
+  "id": "loadfc-00",
+  "chart_id": "loadfc",
+  "order": 0,
+  "series": "GW",
+  "x": "2022",
+  "y": 24
+ },
+ {
+  "id": "loadfc-01",
+  "chart_id": "loadfc",
+  "order": 1,
+  "series": "GW",
+  "x": "2023",
+  "y": 38
+ },
+ {
+  "id": "loadfc-02",
+  "chart_id": "loadfc",
+  "order": 2,
+  "series": "GW",
+  "x": "2024",
+  "y": 128
+ },
+ {
+  "id": "loadfc-03",
+  "chart_id": "loadfc",
+  "order": 3,
+  "series": "GW",
+  "x": "2025",
+  "y": 166
+ },
+ {
+  "id": "drivers-00",
+  "chart_id": "drivers",
+  "order": 0,
+  "series": "Electricity demand",
+  "x": "Maintenance and repair",
+  "y": 1,
+  "label": "Indirect",
+  "note": "Indirect (higher utilization, delayed retirements) · Real, but mostly construction"
+ },
+ {
+  "id": "drivers-01",
+  "chart_id": "drivers",
+  "order": 1,
+  "series": "Electricity demand",
+  "x": "New construction",
+  "y": 3,
+  "label": "Strong",
+  "note": "Strong (gen, transmission, substations) · Real, but mostly construction"
+ },
+ {
+  "id": "drivers-02",
+  "chart_id": "drivers",
+  "order": 2,
+  "series": "Efficiency",
+  "x": "Maintenance and repair",
+  "y": 0,
+  "label": "Neutral",
+  "note": "Neutral · Offsets household growth"
+ },
+ {
+  "id": "drivers-03",
+  "chart_id": "drivers",
+  "order": 3,
+  "series": "Efficiency",
+  "x": "New construction",
+  "y": 0,
+  "label": "Negative",
+  "note": "Negative for residential load · Offsets household growth"
+ },
+ {
+  "id": "drivers-04",
+  "chart_id": "drivers",
+  "order": 4,
+  "series": "Population",
+  "x": "Maintenance and repair",
+  "y": 0,
+  "label": "Negligible",
+  "note": "Negligible · Not a driver - drop"
+ },
+ {
+  "id": "drivers-05",
+  "chart_id": "drivers",
+  "order": 5,
+  "series": "Population",
+  "x": "New construction",
+  "y": 1,
+  "label": "Some",
+  "note": "Sun Belt new connections · Not a driver - drop"
+ },
+ {
+  "id": "drivers-06",
+  "chart_id": "drivers",
+  "order": 6,
+  "series": "Nuclear life extension/restarts",
+  "x": "Maintenance and repair",
+  "y": 3,
+  "label": "Strong",
+  "note": "Strong (outages, aging-management NDE) · Real, narrow, high barriers"
+ },
+ {
+  "id": "drivers-07",
+  "chart_id": "drivers",
+  "order": 7,
+  "series": "Nuclear life extension/restarts",
+  "x": "New construction",
+  "y": 1,
+  "label": "Later",
+  "note": "SMRs post-2030 · Real, narrow, high barriers"
+ },
+ {
+  "id": "drivers-08",
+  "chart_id": "drivers",
+  "order": 8,
+  "series": "Solar/wind/storage",
+  "x": "Maintenance and repair",
+  "y": 2,
+  "label": "Moderate",
+  "note": "Moderate, OEM/in-house captured · Partial fit (storage/substation testing)"
+ },
+ {
+  "id": "drivers-09",
+  "chart_id": "drivers",
+  "order": 9,
+  "series": "Solar/wind/storage",
+  "x": "New construction",
+  "y": 3,
+  "label": "Strong",
+  "note": "Strong but tax-credit cliff · Partial fit (storage/substation testing)"
+ },
+ {
+  "id": "drivers-10",
+  "chart_id": "drivers",
+  "order": 10,
+  "series": "Gas mains replacement",
+  "x": "Maintenance and repair",
+  "y": 3,
+  "label": "Strong",
+  "note": "Strong (replacement MSAs) · Real; federal leak rule not in force"
+ },
+ {
+  "id": "drivers-11",
+  "chart_id": "drivers",
+  "order": 11,
+  "series": "Gas mains replacement",
+  "x": "New construction",
+  "y": 1,
+  "label": "Low",
+  "note": "Low · Real; federal leak rule not in force"
+ },
+ {
+  "id": "drivers-12",
+  "chart_id": "drivers",
+  "order": 12,
+  "series": "Water LSL/PFAS",
+  "x": "Maintenance and repair",
+  "y": 3,
+  "label": "Strong",
+  "note": "Strong for LSL replacement · Real need, timing risk"
+ },
+ {
+  "id": "drivers-13",
+  "chart_id": "drivers",
+  "order": 13,
+  "series": "Water LSL/PFAS",
+  "x": "New construction",
+  "y": 2,
+  "label": "Treatment",
+  "note": "PFAS = treatment construction · Real need, timing risk"
+ },
+ {
+  "id": "drivers-14",
+  "chart_id": "drivers",
+  "order": 14,
+  "series": "Utility capex",
+  "x": "Maintenance and repair",
+  "y": 3,
+  "label": "Yes",
+  "note": "Yes if capitalized replacement · Strongest driver"
+ },
+ {
+  "id": "drivers-15",
+  "chart_id": "drivers",
+  "order": 15,
+  "series": "Utility capex",
+  "x": "New construction",
+  "y": 3,
+  "label": "Yes",
+  "note": "Yes · Strongest driver"
+ },
+ {
+  "id": "firms-00",
+  "chart_id": "firms",
+  "order": 0,
+  "series": "Firms",
+  "x": "2012",
+  "y": 25227
+ },
+ {
+  "id": "firms-01",
+  "chart_id": "firms",
+  "order": 1,
+  "series": "Firms",
+  "x": "2017",
+  "y": 18877
+ },
+ {
+  "id": "estabs-00",
+  "chart_id": "estabs",
+  "order": 0,
+  "series": "Establishments",
+  "x": "Water and sewer",
+  "y": 10818,
+  "note": "NAICS 237110 water and sewer line construction"
+ },
+ {
+  "id": "estabs-01",
+  "chart_id": "estabs",
+  "order": 1,
+  "series": "Establishments",
+  "x": "Power and comms lines",
+  "y": 7112,
+  "note": "NAICS 237130 power and communication line construction"
+ },
+ {
+  "id": "estabs-02",
+  "chart_id": "estabs",
+  "order": 2,
+  "series": "Establishments",
+  "x": "Oil and gas pipelines",
+  "y": 2172,
+  "note": "NAICS 237120 oil and gas pipeline construction"
+ },
+ {
+  "id": "scaled_rev-00",
+  "chart_id": "scaled_rev",
+  "order": 0,
+  "series": "Revenue",
+  "x": "Quanta Services",
+  "y": 28.48
+ },
+ {
+  "id": "scaled_rev-01",
+  "chart_id": "scaled_rev",
+  "order": 1,
+  "series": "Revenue",
+  "x": "MasTec",
+  "y": 14.3
+ },
+ {
+  "id": "scaled_rev-02",
+  "chart_id": "scaled_rev",
+  "order": 2,
+  "series": "Revenue",
+  "x": "Primoris Services",
+  "y": 7.6
+ },
+ {
+  "id": "scaled_rev-03",
+  "chart_id": "scaled_rev",
+  "order": 3,
+  "series": "Revenue",
+  "x": "Asplundh Tree Expert",
+  "y": 6.3
+ },
+ {
+  "id": "scaled_rev-04",
+  "chart_id": "scaled_rev",
+  "order": 4,
+  "series": "Revenue",
+  "x": "MYR Group",
+  "y": 3.66
+ },
+ {
+  "id": "scaled_rev-05",
+  "chart_id": "scaled_rev",
+  "order": 5,
+  "series": "Revenue",
+  "x": "Centuri Holdings",
+  "y": 2.98
+ },
+ {
+  "id": "scaled_rev-06",
+  "chart_id": "scaled_rev",
+  "order": 6,
+  "series": "Revenue",
+  "x": "Azuria Water Solutions (+Inframark)",
+  "y": 2.5
+ },
+ {
+  "id": "scaled_rev-07",
+  "chart_id": "scaled_rev",
+  "order": 7,
+  "series": "Revenue",
+  "x": "Day & Zimmermann",
+  "y": 2.4
+ },
+ {
+  "id": "scaled_rev-08",
+  "chart_id": "scaled_rev",
+  "order": 8,
+  "series": "Revenue",
+  "x": "Davey Tree Expert",
+  "y": 1.95
+ },
+ {
+  "id": "scaled_rev-09",
+  "chart_id": "scaled_rev",
+  "order": 9,
+  "series": "Revenue",
+  "x": "Pike Corporation",
+  "y": 1.7
+ },
+ {
+  "id": "scaled_rev-10",
+  "chart_id": "scaled_rev",
+  "order": 10,
+  "series": "Revenue",
+  "x": "Team Inc",
+  "y": 0.9
+ },
+ {
+  "id": "scaled_rev-11",
+  "chart_id": "scaled_rev",
+  "order": 11,
+  "series": "Revenue",
+  "x": "Badger Infrastructure Solutions",
+  "y": 0.83
+ },
+ {
+  "id": "scaled_rev-12",
+  "chart_id": "scaled_rev",
+  "order": 12,
+  "series": "Revenue",
+  "x": "Mistras Group",
+  "y": 0.72
+ },
+ {
+  "id": "crowding-00",
+  "chart_id": "crowding",
+  "order": 0,
+  "series": "Count",
+  "x": "Natural gas",
+  "y": 5,
+  "note": "Centuri; Artera Services (Miller Pipeline, Minnesota Ltd); USIC (incl. Heath gas-locating unit); Quanta gas ops; Badger (hydrovac)"
+ },
+ {
+  "id": "crowding-01",
+  "chart_id": "crowding",
+  "order": 1,
+  "series": "Count",
+  "x": "Power generation",
+  "y": 4,
+  "note": "Mistras; Team Inc; Shermco (Blackstone); EnergySolutions (ex-Williams assets)"
+ },
+ {
+  "id": "crowding-02",
+  "chart_id": "crowding",
+  "order": 2,
+  "series": "Count",
+  "x": "T&D",
+  "y": 8,
+  "note": "Quanta; Pike (TPG/La Caisse); MYR Group; Primoris (incl. PLH); Davey Tree; Asplundh; Osmose (EQT); MasTec"
+ },
+ {
+  "id": "crowding-03",
+  "chart_id": "crowding",
+  "order": 3,
+  "series": "Count",
+  "x": "Water",
+  "y": 4,
+  "note": "Azuria/Insituform (New Mountain); Vortex (Quad-C); National Underground Group (ORIX); Utility Service Co/USG"
+ },
+ {
+  "id": "exits-00",
+  "chart_id": "exits",
+  "order": 0,
+  "series": "Exit",
+  "x": "Pike, 2025",
+  "y": 5000,
+  "label": ">$5,000M",
+  "note": "Reported value including debt"
+ },
+ {
+  "id": "exits-01",
+  "chart_id": "exits",
+  "order": 1,
+  "series": "Exit",
+  "x": "Shermco, 2025",
+  "y": 1600,
+  "label": "~$1,600M",
+  "note": "Blackstone acquisition"
+ },
+ {
+  "id": "exits-02",
+  "chart_id": "exits",
+  "order": 2,
+  "series": "Exit",
+  "x": "IEA, 2022",
+  "y": 1100,
+  "label": "~$1,100M",
+  "note": "Sold to MasTec"
+ },
+ {
+  "id": "exits-03",
+  "chart_id": "exits",
+  "order": 3,
+  "series": "Exit",
+  "x": "Aegion, 2021",
+  "y": 963,
+  "note": "Take-private"
+ },
+ {
+  "id": "exits-04",
+  "chart_id": "exits",
+  "order": 4,
+  "series": "Platform formed",
+  "x": "Artera, 2020",
+  "y": 850,
+  "note": "Artera buys Miller Pipeline and Minnesota Limited"
+ },
+ {
+  "id": "exits-05",
+  "chart_id": "exits",
+  "order": 5,
+  "series": "Exit",
+  "x": "Utility Service Co, 2008",
+  "y": 220,
+  "note": "Sale of the water-tank maintenance business"
+ },
+ {
+  "id": "exits-06",
+  "chart_id": "exits",
+  "order": 6,
+  "series": "Exit",
+  "x": "Vortex, 2023",
+  "y": 160,
+  "label": "~$160M",
+  "note": "Unconfirmed"
+ },
+ {
+  "id": "exits-07",
+  "chart_id": "exits",
+  "order": 7,
+  "series": "Failure",
+  "x": "Williams Industrial, 2023",
+  "y": 60,
+  "note": "Asset sale after restructuring"
+ },
+ {
+  "id": "outcomes-00",
+  "chart_id": "outcomes",
+  "order": 0,
+  "series": "Platforms",
+  "x": "Thriving",
+  "y": 2
+ },
+ {
+  "id": "outcomes-01",
+  "chart_id": "outcomes",
+  "order": 1,
+  "series": "Platforms",
+  "x": "Solid",
+  "y": 5
+ },
+ {
+  "id": "outcomes-02",
+  "chart_id": "outcomes",
+  "order": 2,
+  "series": "Platforms",
+  "x": "Mixed",
+  "y": 1
+ },
+ {
+  "id": "outcomes-03",
+  "chart_id": "outcomes",
+  "order": 3,
+  "series": "Platforms",
+  "x": "Struggling",
+  "y": 2
+ },
+ {
+  "id": "outcomes-04",
+  "chart_id": "outcomes",
+  "order": 4,
+  "series": "Platforms",
+  "x": "Failed",
+  "y": 3
+ },
+ {
+  "id": "outcomes-05",
+  "chart_id": "outcomes",
+  "order": 5,
+  "series": "Platforms",
+  "x": "Exited",
+  "y": 5
+ },
+ {
+  "id": "tam-00",
+  "chart_id": "tam",
+  "order": 0,
+  "series": "TAM",
+  "x": "T&D and electrical",
+  "y": 20,
+  "label": "$20–35B",
+  "note": "Distribution capex $50.9B + transmission $32.6B + O&M; replacement share x contractor share",
+  "y2": 35
+ },
+ {
+  "id": "tam-01",
+  "chart_id": "tam",
+  "order": 1,
+  "series": "TAM",
+  "x": "Natural gas",
+  "y": 12,
+  "label": "$12–20B",
+  "note": "AGA ~$33–37B a year of safety spend x 35–55% contractor share",
+  "y2": 20
+ },
+ {
+  "id": "tam-02",
+  "chart_id": "tam",
+  "order": 2,
+  "series": "TAM",
+  "x": "Water and wastewater",
+  "y": 8,
+  "label": "$8–18B",
+  "note": "20–30% of ~$45–55B capex plus 2–4% of O&M",
+  "y2": 18
+ },
+ {
+  "id": "tam-03",
+  "chart_id": "tam",
+  "order": 3,
+  "series": "TAM",
+  "x": "Power generation maintenance",
+  "y": 4,
+  "label": "$4–8B",
+  "note": "~$13B plant maintenance (EIA $/MWh x generation) x 30–60% outsourced",
+  "y2": 8
+ },
+ {
+  "id": "comps-00",
+  "chart_id": "comps",
+  "order": 0,
+  "series": "MRO-heavy",
+  "x": 0.72,
+  "y": 12.6,
+  "label": "Mistras"
+ },
+ {
+  "id": "comps-01",
+  "chart_id": "comps",
+  "order": 1,
+  "series": "MRO-heavy",
+  "x": 0.9,
+  "y": 6.8,
+  "label": "Team"
+ },
+ {
+  "id": "comps-02",
+  "chart_id": "comps",
+  "order": 2,
+  "series": "MRO-heavy",
+  "x": 2.98,
+  "y": 8.3,
+  "label": "Centuri"
+ },
+ {
+  "id": "comps-03",
+  "chart_id": "comps",
+  "order": 3,
+  "series": "Mixed or specialty",
+  "x": 0.41,
+  "y": 4.2,
+  "label": "ESOA"
+ },
+ {
+  "id": "comps-04",
+  "chart_id": "comps",
+  "order": 4,
+  "series": "Mixed or specialty",
+  "x": 0.83,
+  "y": 23.8,
+  "label": "Badger"
+ },
+ {
+  "id": "comps-05",
+  "chart_id": "comps",
+  "order": 5,
+  "series": "Construction-heavy",
+  "x": 7.71,
+  "y": 6.9,
+  "label": "Primoris"
+ },
+ {
+  "id": "comps-06",
+  "chart_id": "comps",
+  "order": 6,
+  "series": "Construction-heavy",
+  "x": 14.3,
+  "y": 8.0,
+  "label": "MasTec"
+ },
+ {
+  "id": "comps-07",
+  "chart_id": "comps",
+  "order": 7,
+  "series": "Construction-heavy",
+  "x": 28.48,
+  "y": 10.1,
+  "label": "Quanta"
+ },
+ {
+  "id": "swings-00",
+  "chart_id": "swings",
+  "order": 0,
+  "series": "FY2024",
+  "x": "MYR gross",
+  "y": 8.6
+ },
+ {
+  "id": "swings-01",
+  "chart_id": "swings",
+  "order": 1,
+  "series": "FY2025",
+  "x": "MYR gross",
+  "y": 11.6
+ },
+ {
+  "id": "swings-02",
+  "chart_id": "swings",
+  "order": 2,
+  "series": "FY2024",
+  "x": "Centuri base gross",
+  "y": 6.9
+ },
+ {
+  "id": "swings-03",
+  "chart_id": "swings",
+  "order": 3,
+  "series": "FY2025",
+  "x": "Centuri base gross",
+  "y": 8.0
+ },
+ {
+  "id": "swings-04",
+  "chart_id": "swings",
+  "order": 4,
+  "series": "FY2024",
+  "x": "MasTec Pipeline",
+  "y": 18.3
+ },
+ {
+  "id": "swings-05",
+  "chart_id": "swings",
+  "order": 5,
+  "series": "FY2025",
+  "x": "MasTec Pipeline",
+  "y": 14.9
+ },
+ {
+  "id": "swings-06",
+  "chart_id": "swings",
+  "order": 6,
+  "series": "FY2024",
+  "x": "Primoris Utilities",
+  "y": 10.6
+ },
+ {
+  "id": "swings-07",
+  "chart_id": "swings",
+  "order": 7,
+  "series": "FY2025",
+  "x": "Primoris Utilities",
+  "y": 11.5
+ },
+ {
+  "id": "bridge-00",
+  "chart_id": "bridge",
+  "order": 0,
+  "series": "pts",
+  "x": "Holdco and standalone costs",
+  "y": -1.2
+ },
+ {
+  "id": "bridge-01",
+  "chart_id": "bridge",
+  "order": 1,
+  "series": "pts",
+  "x": "Integration, mix and wage alignment",
+  "y": -0.7
+ },
+ {
+  "id": "bridge-02",
+  "chart_id": "bridge",
+  "order": 2,
+  "series": "pts",
+  "x": "Materials and equipment purchasing",
+  "y": 0.4
+ },
+ {
+  "id": "bridge-03",
+  "chart_id": "bridge",
+  "order": 3,
+  "series": "pts",
+  "x": "Equipment utilization",
+  "y": 0.4
+ },
+ {
+  "id": "bridge-04",
+  "chart_id": "bridge",
+  "order": 4,
+  "series": "pts",
+  "x": "Insurance, EMR and benefits pooling",
+  "y": 0.4
+ },
+ {
+  "id": "bridge-05",
+  "chart_id": "bridge",
+  "order": 5,
+  "series": "pts",
+  "x": "Overhead leverage",
+  "y": 1.0
+ },
+ {
+  "id": "multiples-00",
+  "chart_id": "multiples",
+  "order": 0,
+  "series": "x",
+  "x": "Private deals, $10–25M EV",
+  "y": 6.4
+ },
+ {
+  "id": "multiples-01",
+  "chart_id": "multiples",
+  "order": 1,
+  "series": "x",
+  "x": "Private deals, $25–50M EV",
+  "y": 6.8
+ },
+ {
+  "id": "multiples-02",
+  "chart_id": "multiples",
+  "order": 2,
+  "series": "x",
+  "x": "Private deals, $50–100M EV",
+  "y": 8.3
+ },
+ {
+  "id": "multiples-03",
+  "chart_id": "multiples",
+  "order": 3,
+  "series": "x",
+  "x": "Centuri at IPO (est.)",
+  "y": 11.5,
+  "label": "~11–12x"
+ },
+ {
+  "id": "multiples-04",
+  "chart_id": "multiples",
+  "order": 4,
+  "series": "x",
+  "x": "Engineering and services sector, 2025",
+  "y": 13.2
+ },
+ {
+  "id": "multiples-05",
+  "chart_id": "multiples",
+  "order": 5,
+  "series": "x",
+  "x": "Public utility-services peers, median",
+  "y": 15.2
+ },
+ {
+  "id": "people-00",
+  "chart_id": "people",
+  "order": 0,
+  "series": "Gas",
+  "x": "Water",
+  "y": 53,
+  "label": "53%",
+  "note": "raw / movable: 83 / 53%"
+ },
+ {
+  "id": "people-01",
+  "chart_id": "people",
+  "order": 1,
+  "series": "Gas",
+  "x": "T&D",
+  "y": 27,
+  "label": "27%",
+  "note": "raw / movable: 46 / 27%"
+ },
+ {
+  "id": "people-02",
+  "chart_id": "people",
+  "order": 2,
+  "series": "Gas",
+  "x": "Power-gen",
+  "y": 15,
+  "label": "15%",
+  "note": "raw / movable: 51 / 15%"
+ },
+ {
+  "id": "people-03",
+  "chart_id": "people",
+  "order": 3,
+  "series": "Water",
+  "x": "Gas",
+  "y": 53,
+  "label": "53%",
+  "note": "raw / movable: 83 / 53%"
+ },
+ {
+  "id": "people-04",
+  "chart_id": "people",
+  "order": 4,
+  "series": "Water",
+  "x": "T&D",
+  "y": 27,
+  "label": "27%",
+  "note": "raw / movable: 40 / 27%"
+ },
+ {
+  "id": "people-05",
+  "chart_id": "people",
+  "order": 5,
+  "series": "Water",
+  "x": "Power-gen",
+  "y": 15,
+  "label": "15%",
+  "note": "raw / movable: 47 / 15%"
+ },
+ {
+  "id": "people-06",
+  "chart_id": "people",
+  "order": 6,
+  "series": "T&D",
+  "x": "Gas",
+  "y": 27,
+  "label": "27%",
+  "note": "raw / movable: 46 / 27%"
+ },
+ {
+  "id": "people-07",
+  "chart_id": "people",
+  "order": 7,
+  "series": "T&D",
+  "x": "Water",
+  "y": 27,
+  "label": "27%",
+  "note": "raw / movable: 40 / 27%"
+ },
+ {
+  "id": "people-08",
+  "chart_id": "people",
+  "order": 8,
+  "series": "T&D",
+  "x": "Power-gen",
+  "y": 25,
+  "label": "25%",
+  "note": "raw / movable: 39 / 25%"
+ },
+ {
+  "id": "people-09",
+  "chart_id": "people",
+  "order": 9,
+  "series": "Power-gen",
+  "x": "Gas",
+  "y": 15,
+  "label": "15%",
+  "note": "raw / movable: 51 / 15%"
+ },
+ {
+  "id": "people-10",
+  "chart_id": "people",
+  "order": 10,
+  "series": "Power-gen",
+  "x": "Water",
+  "y": 15,
+  "label": "15%",
+  "note": "raw / movable: 47 / 15%"
+ },
+ {
+  "id": "people-11",
+  "chart_id": "people",
+  "order": 11,
+  "series": "Power-gen",
+  "x": "T&D",
+  "y": 25,
+  "label": "25%",
+  "note": "raw / movable: 39 / 25%"
+ },
+ {
+  "id": "fleet-00",
+  "chart_id": "fleet",
+  "order": 0,
+  "series": "Gas",
+  "x": "Water",
+  "y": 65,
+  "label": "65%"
+ },
+ {
+  "id": "fleet-01",
+  "chart_id": "fleet",
+  "order": 1,
+  "series": "Gas",
+  "x": "T&D",
+  "y": 30,
+  "label": "30%"
+ },
+ {
+  "id": "fleet-02",
+  "chart_id": "fleet",
+  "order": 2,
+  "series": "Gas",
+  "x": "Power-gen",
+  "y": 10,
+  "label": "10%"
+ },
+ {
+  "id": "fleet-03",
+  "chart_id": "fleet",
+  "order": 3,
+  "series": "Water",
+  "x": "Gas",
+  "y": 65,
+  "label": "65%"
+ },
+ {
+  "id": "fleet-04",
+  "chart_id": "fleet",
+  "order": 4,
+  "series": "Water",
+  "x": "T&D",
+  "y": 25,
+  "label": "25%"
+ },
+ {
+  "id": "fleet-05",
+  "chart_id": "fleet",
+  "order": 5,
+  "series": "Water",
+  "x": "Power-gen",
+  "y": 10,
+  "label": "10%"
+ },
+ {
+  "id": "fleet-06",
+  "chart_id": "fleet",
+  "order": 6,
+  "series": "T&D",
+  "x": "Gas",
+  "y": 30,
+  "label": "30%"
+ },
+ {
+  "id": "fleet-07",
+  "chart_id": "fleet",
+  "order": 7,
+  "series": "T&D",
+  "x": "Water",
+  "y": 25,
+  "label": "25%"
+ },
+ {
+  "id": "fleet-08",
+  "chart_id": "fleet",
+  "order": 8,
+  "series": "T&D",
+  "x": "Power-gen",
+  "y": 20,
+  "label": "20%"
+ },
+ {
+  "id": "fleet-09",
+  "chart_id": "fleet",
+  "order": 9,
+  "series": "Power-gen",
+  "x": "Gas",
+  "y": 10,
+  "label": "10%"
+ },
+ {
+  "id": "fleet-10",
+  "chart_id": "fleet",
+  "order": 10,
+  "series": "Power-gen",
+  "x": "Water",
+  "y": 10,
+  "label": "10%"
+ },
+ {
+  "id": "fleet-11",
+  "chart_id": "fleet",
+  "order": 11,
+  "series": "Power-gen",
+  "x": "T&D",
+  "y": 20,
+  "label": "20%"
+ },
+ {
+  "id": "mix-00",
+  "chart_id": "mix",
+  "order": 0,
+  "series": "Laborers, operators and drivers",
+  "x": "Gas",
+  "y": 53.0
+ },
+ {
+  "id": "mix-01",
+  "chart_id": "mix",
+  "order": 1,
+  "series": "Laborers, operators and drivers",
+  "x": "Water",
+  "y": 56.0
+ },
+ {
+  "id": "mix-02",
+  "chart_id": "mix",
+  "order": 2,
+  "series": "Laborers, operators and drivers",
+  "x": "T&D",
+  "y": 27.0
+ },
+ {
+  "id": "mix-03",
+  "chart_id": "mix",
+  "order": 3,
+  "series": "Laborers, operators and drivers",
+  "x": "Power-gen",
+  "y": 15.0
+ },
+ {
+  "id": "mix-04",
+  "chart_id": "mix",
+  "order": 4,
+  "series": "Pipe trades and welders",
+  "x": "Gas",
+  "y": 25.0
+ },
+ {
+  "id": "mix-05",
+  "chart_id": "mix",
+  "order": 5,
+  "series": "Pipe trades and welders",
+  "x": "Water",
+  "y": 18.0
+ },
+ {
+  "id": "mix-06",
+  "chart_id": "mix",
+  "order": 6,
+  "series": "Pipe trades and welders",
+  "x": "T&D",
+  "y": 0.0
+ },
+ {
+  "id": "mix-07",
+  "chart_id": "mix",
+  "order": 7,
+  "series": "Pipe trades and welders",
+  "x": "Power-gen",
+  "y": 20.0
+ },
+ {
+  "id": "mix-08",
+  "chart_id": "mix",
+  "order": 8,
+  "series": "Lineworkers",
+  "x": "Gas",
+  "y": 0.0
+ },
+ {
+  "id": "mix-09",
+  "chart_id": "mix",
+  "order": 9,
+  "series": "Lineworkers",
+  "x": "Water",
+  "y": 0.0
+ },
+ {
+  "id": "mix-10",
+  "chart_id": "mix",
+  "order": 10,
+  "series": "Lineworkers",
+  "x": "T&D",
+  "y": 45.0
+ },
+ {
+  "id": "mix-11",
+  "chart_id": "mix",
+  "order": 11,
+  "series": "Lineworkers",
+  "x": "Power-gen",
+  "y": 0.0
+ },
+ {
+  "id": "mix-12",
+  "chart_id": "mix",
+  "order": 12,
+  "series": "Electricians and testers",
+  "x": "Gas",
+  "y": 1.0
+ },
+ {
+  "id": "mix-13",
+  "chart_id": "mix",
+  "order": 13,
+  "series": "Electricians and testers",
+  "x": "Water",
+  "y": 2.0
+ },
+ {
+  "id": "mix-14",
+  "chart_id": "mix",
+  "order": 14,
+  "series": "Electricians and testers",
+  "x": "T&D",
+  "y": 10.0
+ },
+ {
+  "id": "mix-15",
+  "chart_id": "mix",
+  "order": 15,
+  "series": "Electricians and testers",
+  "x": "Power-gen",
+  "y": 15.0
+ },
+ {
+  "id": "mix-16",
+  "chart_id": "mix",
+  "order": 16,
+  "series": "Plant crafts and NDE",
+  "x": "Gas",
+  "y": 0.0
+ },
+ {
+  "id": "mix-17",
+  "chart_id": "mix",
+  "order": 17,
+  "series": "Plant crafts and NDE",
+  "x": "Water",
+  "y": 1.0
+ },
+ {
+  "id": "mix-18",
+  "chart_id": "mix",
+  "order": 18,
+  "series": "Plant crafts and NDE",
+  "x": "T&D",
+  "y": 0.0
+ },
+ {
+  "id": "mix-19",
+  "chart_id": "mix",
+  "order": 19,
+  "series": "Plant crafts and NDE",
+  "x": "Power-gen",
+  "y": 35.0
+ },
+ {
+  "id": "mix-20",
+  "chart_id": "mix",
+  "order": 20,
+  "series": "Water specialists",
+  "x": "Gas",
+  "y": 0.0
+ },
+ {
+  "id": "mix-21",
+  "chart_id": "mix",
+  "order": 21,
+  "series": "Water specialists",
+  "x": "Water",
+  "y": 12.0
+ },
+ {
+  "id": "mix-22",
+  "chart_id": "mix",
+  "order": 22,
+  "series": "Water specialists",
+  "x": "T&D",
+  "y": 0.0
+ },
+ {
+  "id": "mix-23",
+  "chart_id": "mix",
+  "order": 23,
+  "series": "Water specialists",
+  "x": "Power-gen",
+  "y": 0.0
+ },
+ {
+  "id": "mix-24",
+  "chart_id": "mix",
+  "order": 24,
+  "series": "Supervisors and other",
+  "x": "Gas",
+  "y": 21.0
+ },
+ {
+  "id": "mix-25",
+  "chart_id": "mix",
+  "order": 25,
+  "series": "Supervisors and other",
+  "x": "Water",
+  "y": 11.0
+ },
+ {
+  "id": "mix-26",
+  "chart_id": "mix",
+  "order": 26,
+  "series": "Supervisors and other",
+  "x": "T&D",
+  "y": 18.0
+ },
+ {
+  "id": "mix-27",
+  "chart_id": "mix",
+  "order": 27,
+  "series": "Supervisors and other",
+  "x": "Power-gen",
+  "y": 15.0
+ },
+ {
+  "id": "syn_bps-00",
+  "chart_id": "syn_bps",
+  "order": 0,
+  "series": "bps",
+  "x": "Density and wallet share in one unit",
+  "y": 100,
+  "label": "100–300",
+  "y2": 300
+ },
+ {
+  "id": "syn_bps-01",
+  "chart_id": "syn_bps",
+  "order": 1,
+  "series": "bps",
+  "x": "Purchasing",
+  "y": 50,
+  "label": "50–150",
+  "y2": 150
+ },
+ {
+  "id": "syn_bps-02",
+  "chart_id": "syn_bps",
+  "order": 2,
+  "series": "bps",
+  "x": "Back office, safety, records",
+  "y": 50,
+  "label": "50–100",
+  "y2": 100
+ },
+ {
+  "id": "syn_bps-03",
+  "chart_id": "syn_bps",
+  "order": 3,
+  "series": "bps",
+  "x": "Insurance and benefits",
+  "y": 30,
+  "label": "30–100",
+  "y2": 100
+ },
+ {
+  "id": "syn_bps-04",
+  "chart_id": "syn_bps",
+  "order": 4,
+  "series": "bps",
+  "x": "Shared fleet shops",
+  "y": 20,
+  "label": "20–50",
+  "y2": 50
+ },
+ {
+  "id": "syn_bps-05",
+  "chart_id": "syn_bps",
+  "order": 5,
+  "series": "bps",
+  "x": "Crews flexing across units",
+  "y": 0,
+  "label": "<50",
+  "y2": 50
+ },
+ {
+  "id": "syn_bps-06",
+  "chart_id": "syn_bps",
+  "order": 6,
+  "series": "bps",
+  "x": "Specialized assets across units",
+  "y": 0,
+  "label": "~0",
+  "y2": 2
+ },
+ {
+  "id": "cand_counts-00",
+  "chart_id": "cand_counts",
+  "order": 0,
+  "series": "Listed",
+  "x": "Natural gas",
+  "y": 14
+ },
+ {
+  "id": "cand_counts-01",
+  "chart_id": "cand_counts",
+  "order": 1,
+  "series": "Platform-grade",
+  "x": "Natural gas",
+  "y": 3
+ },
+ {
+  "id": "cand_counts-02",
+  "chart_id": "cand_counts",
+  "order": 2,
+  "series": "Platform-grade and independent",
+  "x": "Natural gas",
+  "y": 2
+ },
+ {
+  "id": "cand_counts-03",
+  "chart_id": "cand_counts",
+  "order": 3,
+  "series": "Sponsor or strategic owned",
+  "x": "Natural gas",
+  "y": 1
+ },
+ {
+  "id": "cand_counts-04",
+  "chart_id": "cand_counts",
+  "order": 4,
+  "series": "Listed",
+  "x": "Power generation",
+  "y": 10
+ },
+ {
+  "id": "cand_counts-05",
+  "chart_id": "cand_counts",
+  "order": 5,
+  "series": "Platform-grade",
+  "x": "Power generation",
+  "y": 5
+ },
+ {
+  "id": "cand_counts-06",
+  "chart_id": "cand_counts",
+  "order": 6,
+  "series": "Platform-grade and independent",
+  "x": "Power generation",
+  "y": 2
+ },
+ {
+  "id": "cand_counts-07",
+  "chart_id": "cand_counts",
+  "order": 7,
+  "series": "Sponsor or strategic owned",
+  "x": "Power generation",
+  "y": 4
+ },
+ {
+  "id": "cand_counts-08",
+  "chart_id": "cand_counts",
+  "order": 8,
+  "series": "Listed",
+  "x": "T&D",
+  "y": 12
+ },
+ {
+  "id": "cand_counts-09",
+  "chart_id": "cand_counts",
+  "order": 9,
+  "series": "Platform-grade",
+  "x": "T&D",
+  "y": 2
+ },
+ {
+  "id": "cand_counts-10",
+  "chart_id": "cand_counts",
+  "order": 10,
+  "series": "Platform-grade and independent",
+  "x": "T&D",
+  "y": 1
+ },
+ {
+  "id": "cand_counts-11",
+  "chart_id": "cand_counts",
+  "order": 11,
+  "series": "Sponsor or strategic owned",
+  "x": "T&D",
+  "y": 2
+ },
+ {
+  "id": "cand_counts-12",
+  "chart_id": "cand_counts",
+  "order": 12,
+  "series": "Listed",
+  "x": "Water",
+  "y": 15
+ },
+ {
+  "id": "cand_counts-13",
+  "chart_id": "cand_counts",
+  "order": 13,
+  "series": "Platform-grade",
+  "x": "Water",
+  "y": 4
+ },
+ {
+  "id": "cand_counts-14",
+  "chart_id": "cand_counts",
+  "order": 14,
+  "series": "Platform-grade and independent",
+  "x": "Water",
+  "y": 1
+ },
+ {
+  "id": "cand_counts-15",
+  "chart_id": "cand_counts",
+  "order": 15,
+  "series": "Sponsor or strategic owned",
+  "x": "Water",
+  "y": 4
+ }
+]

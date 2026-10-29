@@ -115,6 +115,7 @@ function renderChartCards(containerId, group) {
   if (!ok) { box.classList.add('dash-skeleton'); return; }
   const metas = rows('chart_meta').filter((m) => m.group === group).sort(byOrder);
   const data = rows('charts');
+  const jobs = [];
   metas.forEach((m) => {
     const w = 'id=' + encodeURIComponent(m.id);
     const card = mk('div', 'tx-card' + (m.wide === 'Yes' ? ' tx-span' : ''));
@@ -128,8 +129,20 @@ function renderChartCards(containerId, group) {
     card.appendChild(el);
     card.appendChild(srcLine(m.confidence, m.source_url, 'chart_meta', w));
     box.appendChild(card);
-    try { drawGeneric(el, legend, m, data.filter((r) => r.chart_id === m.id)); } catch (e) { console.error('chart ' + m.id, e); }
+    jobs.push([el, legend, m]);
   });
+  // draw only after every card is in the grid, so each chart is sized to its final column width
+  jobs.forEach(([el, legend, m]) => {
+    try { drawGeneric(el, legend, m, data.filter((r) => r.chart_id === m.id)); el.style.minHeight = ''; } catch (e) { console.error('chart ' + m.id, e); }
+  });
+}
+function axisTicks(x, isLog, span) {
+  if (isLog) {
+    const [a, b] = x.domain();
+    const all = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100, 300, 1000, 3000, 10000, 30000].filter((t) => t >= a && t <= b);
+    return all.length > 6 ? all.filter((t, i) => i % 2 === 0) : all;
+  }
+  return x.ticks(Math.max(2, Math.min(6, Math.floor(span / 70))));
 }
 function seriesList(list) {
   const seen = [];
@@ -158,31 +171,35 @@ function drawGeneric(el, legend, m, list) {
   const W = Math.max(el.clientWidth, 300);
   const c = dash.colors;
   const series = seriesList(list);
-  const colorOf = (s) => (m.highlight && s !== m.highlight ? 'var(--cds-chart-muted)' : c[Math.max(0, series.indexOf(s)) % c.length]);
+  const colorOf = (s) => (/^Fail/.test(String(s)) ? 'var(--color-bad)' : m.highlight && s !== m.highlight ? 'var(--cds-chart-muted)' : c[Math.max(0, series.indexOf(s)) % c.length]);
   const fmt = (v) => fmtBy(m.fmt, v);
+  const tickFmt = (v) => fmt(v).replace(/\.0(?=\D*$)/, '');
   if (kind === 'hbar' || kind === 'range') {
     const items = list.slice().sort(byOrder);
     const rowH = 30, top = 6;
     const svg0 = newSvg(el, W, 10);
     const left = Math.min(W * 0.42, measure(svg0, items.map((r) => String(r.x)), 'tx-lbl') + 14);
+    const right = Math.min(W * 0.3, measure(svg0, items.map((r) => r.label || (kind === 'range' ? fmt(num(r.y)) + '–' + fmt(num(r.y2)) : fmt(num(r.y)))), 'tx-val') + 14);
     svg0.remove();
     const H = top + items.length * rowH + 24;
     const svg = newSvg(el, W, H).attr('aria-label', m.title);
     const vals = items.flatMap((r) => [num(r.y), num(r.y2)]).filter((v) => v !== null);
     const lo = m.log_x === 'Yes' ? Math.max(d3.min(vals) * 0.8, 0.01) : Math.min(0, d3.min(vals));
-    const x = (m.log_x === 'Yes' ? d3.scaleLog() : d3.scaleLinear()).domain([lo, d3.max(vals) * 1.05]).range([left, W - 70]).nice();
-    x.ticks(5).forEach((t) => {
+    const x = (m.log_x === 'Yes' ? d3.scaleLog() : d3.scaleLinear()).domain([lo, d3.max(vals) * 1.05]).range([left, W - right]).nice();
+    axisTicks(x, m.log_x === 'Yes', W - left - right).forEach((t) => {
       svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', top).attr('y2', H - 22).style('stroke', 'var(--cds-chart-grid)');
-      svg.append('text').attr('x', x(t)).attr('y', H - 6).attr('text-anchor', 'middle').text(fmt(t));
+      svg.append('text').attr('x', x(t)).attr('y', H - 6).attr('text-anchor', 'middle').text(tickFmt(t));
     });
     items.forEach((r, i) => {
       const cy = top + i * rowH + rowH / 2;
       const t = svg.append('text').attr('class', 'tx-lbl').attr('x', 0).attr('y', cy).attr('dy', '0.35em').text(String(r.x));
       fitText(t.node(), left - 12);
-      const a = kind === 'range' ? num(r.y) : x.domain()[0], b = kind === 'range' ? num(r.y2) : num(r.y);
-      const col = m.highlight ? (String(r.x) === m.highlight ? c[0] : 'var(--cds-chart-muted)') : (r.series && series.length > 1 ? colorOf(r.series) : c[0]);
-      svg.append('rect').attr('x', x(a)).attr('y', cy - 7).attr('width', Math.max(3, x(b) - x(a))).attr('height', 14).attr('rx', 4).style('fill', col);
-      svg.append('text').attr('class', 'tx-val').attr('x', x(b) + 6).attr('y', cy).attr('dy', '0.35em').text(r.label || (kind === 'range' ? fmt(a) + '–' + fmt(b) : fmt(b)));
+      const base = m.log_x === 'Yes' ? x.domain()[0] : 0;
+      const a = kind === 'range' ? num(r.y) : base, b = kind === 'range' ? num(r.y2) : num(r.y);
+      const col = m.highlight ? (String(r.x) === m.highlight ? c[0] : 'var(--cds-chart-muted)') : (b < a ? 'var(--color-bad)' : (r.series && series.length > 1 ? colorOf(r.series) : c[0]));
+      const x0 = x(Math.min(a, b)), x1 = x(Math.max(a, b));
+      svg.append('rect').attr('x', x0).attr('y', cy - 7).attr('width', Math.max(3, x1 - x0)).attr('height', 14).attr('rx', 4).style('fill', col);
+      svg.append('text').attr('class', 'tx-val').attr('x', x1 + 6).attr('y', cy).attr('dy', '0.35em').text(r.label || (kind === 'range' ? fmt(a) + '–' + fmt(b) : fmt(b)));
       svg.append('rect').attr('x', 0).attr('y', cy - rowH / 2).attr('width', W).attr('height', rowH).style('fill', 'transparent')
         .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev, svg.node()); showTip(el, String(r.x), [r.label || (kind === 'range' ? fmt(a) + '–' + fmt(b) : fmt(b)), r.note || ''], px, py); })
         .on('mouseleave', () => hideTip(el));
@@ -191,13 +208,13 @@ function drawGeneric(el, legend, m, list) {
     return;
   }
   if (kind === 'heat') {
-    const xs = catList(list), ys = seriesList(list);
+    const xs = m.x_order ? m.x_order.split('|') : catList(list), ys = m.y_order ? m.y_order.split('|') : seriesList(list);
     const svg0 = newSvg(el, W, 10);
     const left = Math.min(W * 0.35, measure(svg0, ys, 'tx-lbl') + 14);
     svg0.remove();
-    const cell = Math.min(64, (W - left) / xs.length);
-    const top = 34, H = top + ys.length * (cell * 0.62) + 6;
-    const ch = cell * 0.62;
+    const cell = Math.min(m.wide === 'Yes' ? 170 : 64, (W - left) / xs.length);
+    const ch = m.wide === 'Yes' ? 32 : cell * 0.62;
+    const top = 34, H = top + ys.length * ch + 6;
     const svg = newSvg(el, W, H).attr('aria-label', m.title);
     const vmax = d3.max(list, (r) => num(r.y)) || 1;
     xs.forEach((xv, i) => {
@@ -230,7 +247,7 @@ function drawGeneric(el, legend, m, list) {
       svg.append('line').attr('x1', padL).attr('x2', W - right).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
       svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmtBy(m.fmt, t));
     });
-    x.ticks(5).forEach((t) => {
+    axisTicks(x, m.log_x === 'Yes', W - padL - right).forEach((t) => {
       svg.append('text').attr('x', x(t)).attr('y', H - 12).attr('text-anchor', 'middle').text(fmtBy(m.x_fmt, t));
     });
     if (m.x_title) svg.append('text').attr('x', W - right).attr('y', H - 1).attr('text-anchor', 'end').text(m.x_title);
@@ -255,21 +272,27 @@ function drawGeneric(el, legend, m, list) {
   if (stacked) ymax = d3.max(cats, (cv) => d3.sum(list.filter((r) => String(r.x) === cv), (r) => num(r.y) || 0));
   else ymax = d3.max(list, (r) => num(r.y));
   const ymin = Math.min(0, d3.min(list, (r) => num(r.y)) || 0);
-  const y = d3.scaleLinear().domain([ymin, ymax * 1.1 || 1]).nice().range([H - padB, top]);
+  const yTop = stacked && m.fmt === 'pct' && ymax <= 101 ? 100 : ymax * 1.1 || 1;
+  const y = d3.scaleLinear().domain([ymin, yTop]).nice().range([H - padB, top]);
   y.ticks(5).forEach((t) => {
     svg.append('line').attr('x1', padL).attr('x2', W - right).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
-    svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmt(t));
+    svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(tickFmt(t));
   });
   const x = d3.scaleBand().domain(cats).range([padL, W - right]).padding(kind === 'line' ? 0 : 0.22);
   const every = Math.ceil(cats.length / Math.max(1, Math.floor((W - padL) / 54)));
+  const yearAxis = kind === 'line' && cats.length > 2 && cats.every((cv) => /^\d{4}$/.test(cv));
+  const xYear = yearAxis ? d3.scaleLinear().domain(d3.extent(cats, (cv) => +cv)).range([x(cats[0]) + x.bandwidth() / 2, x(cats[cats.length - 1]) + x.bandwidth() / 2]) : null;
+  let lastTick = -Infinity;
   cats.forEach((cv, i) => {
-    if (i % every) return;
-    const t = svg.append('text').attr('x', x(cv) + x.bandwidth() / 2).attr('y', H - 14).attr('text-anchor', 'middle').text(cv);
+    if (yearAxis ? xYear(+cv) - lastTick < 40 : i % every) return;
+    if (yearAxis) lastTick = xYear(+cv);
+    const t = svg.append('text').attr('x', yearAxis ? xYear(+cv) : x(cv) + x.bandwidth() / 2).attr('y', H - 14).attr('text-anchor', 'middle').text(cv);
     fitText(t.node(), x.bandwidth() * every - 2);
   });
   if (kind === 'line') {
+    const px = (cv) => (yearAxis ? xYear(+cv) : x(cv) + x.bandwidth() / 2);
     series.forEach((s) => {
-      const pts = cats.map((cv) => { const r = list.find((d) => d.series === s && String(d.x) === cv); return r && num(r.y) !== null ? [x(cv) + x.bandwidth() / 2, y(num(r.y)), r] : null; }).filter(Boolean);
+      const pts = cats.map((cv) => { const r = list.find((d) => d.series === s && String(d.x) === cv); return r && num(r.y) !== null ? [px(cv), y(num(r.y)), r] : null; }).filter(Boolean);
       svg.append('path').attr('d', d3.line()(pts.map((p) => [p[0], p[1]]))).attr('fill', 'none').style('stroke', colorOf(s)).attr('stroke-width', 2.5);
       pts.forEach((p) => svg.append('circle').attr('cx', p[0]).attr('cy', p[1]).attr('r', 3.5).style('fill', colorOf(s))
         .on('mousemove', (ev) => { const [qx, qy] = d3.pointer(ev, svg.node()); showTip(el, s + ' · ' + p[2].x, [p[2].label || fmt(num(p[2].y)), p[2].note || ''], qx, qy); })
@@ -443,7 +466,13 @@ function renderRanking() {
     a.setAttribute('data-attr', r.attractiveness);
     chips.appendChild(a);
     card.appendChild(chips);
-    card.appendChild(mk('p', null, r.why, 'unit_ranking', 'why', w));
+    const parts = String(r.why || '').split(/\s*•\s*/).filter(Boolean);
+    card.appendChild(mk('p', null, parts[0], 'unit_ranking', 'why', w));
+    if (parts.length > 1) {
+      const ul = mk('ul', 'tx-bul');
+      parts.slice(1).forEach((t) => ul.appendChild(mk('li', null, t)));
+      card.appendChild(ul);
+    }
     const dl = mk('dl', 'tx-dl');
     [['Market size', 'tam'], ['Maintenance share', 'mro_share'], ['Margins', 'margin_range'], ['Fragmentation', 'fragmentation'], ['Competition', 'competition'], ['Candidates', 'candidates']].forEach(([lbl, f]) => {
       if (!r[f]) return;

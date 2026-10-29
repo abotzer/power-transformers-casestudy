@@ -5,7 +5,7 @@ Source-linked market research reports prepared for Fulton Asset Management. The 
 | Report | What it covers | Where |
 |---|---|---|
 | **North American power transformers** | Supply, capacity, lead times, prices, trade and policy, deals, the value chain from electrical steel to data centers, and how Fulton can profit from the build-out. Updated weekly | [`transformer-market/`](transformer-market/) · [dashboard](https://claude.ai/artifact/HPfiJXoEzG2ZwVXuMkAWYb) |
-| **Critical utility infrastructure services** | Tests the maintenance-led holding-company thesis across natural gas, power and water: precedent platforms, asset age, demand drivers, fragmentation, TAM and margins, cross-unit synergies and platform candidates | [`infra-services/`](infra-services/) |
+| **Critical utility infrastructure services** | Tests the maintenance-led holding-company thesis across natural gas, power and water: precedent platforms, asset age, demand drivers, fragmentation, TAM and margins, cross-unit synergies and platform candidates | [`infra-services/`](infra-services/) · [dashboard](https://claude.ai/artifact/Qr6MHQ1uWuHrpDkx2gfpJn) |
 
 ## Repository layout
 

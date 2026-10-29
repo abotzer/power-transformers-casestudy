@@ -1,0 +1,1258 @@
+[
+ {
+  "id": "acoustic-leak-detection",
+  "term": "Acoustic leak detection",
+  "aliases": "Acoustic leak detection | water leak detection | leak noise correlator | leak noise correlators | acoustic sensors | acoustic monitoring",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "Finding leaks in buried water pipes by listening for leak noise with ground microphones, correlators or permanently installed sensors. It is a lower-cost way to cut water loss than replacing pipe."
+ },
+ {
+  "id": "add-on",
+  "term": "Add-on acquisition",
+  "aliases": "Add-on acquisition | add-ons | add-on acquisitions | bolt-on | bolt-ons | bolt-on acquisition | tuck-in | tuck-ins | tuck-in acquisition",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A smaller company bought by an existing platform company to add customers, territory, services or skilled crews. Add-ons are usually cheaper per dollar of EBITDA than platforms."
+ },
+ {
+  "id": "ami",
+  "term": "Advanced metering infrastructure (AMI)",
+  "aliases": "Advanced metering infrastructure | AMI | advanced metering infrastructure | smart meter | Smart meter | smart meters | Smart meters | AMR | automated meter reading | meter replacement | meter replacements | meter installation | meter installations",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Networked \"smart\" meters that report usage to the utility automatically, plus the communications and data systems behind them; AMR is an older, one-way version. Roughly three-quarters of US electricity meters are now smart meters per EIA, while many gas and water utilities are still rolling them out, creating meter installation work."
+ },
+ {
+  "id": "aga",
+  "term": "AGA",
+  "aliases": "AGA | American Gas Association",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The American Gas Association, the trade group for US gas utilities. It publishes industry statistics, including utility spending on safety and pipe replacement."
+ },
+ {
+  "id": "allowed-roe",
+  "term": "Allowed return on equity (ROE)",
+  "aliases": "Allowed return on equity | ROE | allowed ROE | Allowed ROE | authorized ROE | Authorized ROE | allowed return on equity | authorized return on equity | Authorized return on equity",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The profit rate on shareholder capital that a state commission lets a utility earn on its rate base, recently around 9.5% to 10% for US electric and gas utilities."
+ },
+ {
+  "id": "asce",
+  "term": "ASCE Infrastructure Report Card",
+  "aliases": "ASCE Infrastructure Report Card | ASCE | American Society of Civil Engineers | Infrastructure Report Card | ASCE Report Card",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "A grade card for US infrastructure that the American Society of Civil Engineers publishes about every four years, most recently in 2025. It comes from an engineering advocacy group, so its grades and funding-gap figures are estimates rather than official data."
+ },
+ {
+  "id": "awwa",
+  "term": "AWWA",
+  "aliases": "AWWA | American Water Works Association",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The American Water Works Association, the main professional body for drinking-water utilities. It publishes technical standards and widely cited estimates of pipe replacement needs, such as its \"Buried No Longer\" report."
+ },
+ {
+  "id": "bls",
+  "term": "BLS",
+  "aliases": "BLS | Bureau of Labor Statistics",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The Bureau of Labor Statistics, the Labor Department agency that publishes employment, wage, workplace injury and price data, including the OEWS and QCEW programs."
+ },
+ {
+  "id": "book-to-bill",
+  "term": "Book-to-bill ratio",
+  "aliases": "Book-to-bill ratio | book-to-bill | book to bill",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "New contract awards in a period divided by revenue billed in the same period. A ratio above 1.0 means backlog is growing."
+ },
+ {
+  "id": "line-trucks",
+  "term": "Bucket truck and digger derrick",
+  "aliases": "Bucket truck and digger derrick | bucket truck | bucket trucks | aerial lift | aerial lifts | digger derrick | digger derricks | line truck | line trucks",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "The core vehicles of power-line work: a bucket truck lifts a lineworker up to the wires, and a digger derrick bores holes and sets poles. They are specific to electric line and tree work and are not used by gas or water crews."
+ },
+ {
+  "id": "baba",
+  "term": "Build America, Buy America (BABA)",
+  "aliases": "Build America, Buy America | BABA | Build America Buy America | Buy America",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "An IIJA provision requiring iron, steel, manufactured products and construction materials used in federally funded infrastructure projects, including SRF-funded water work, to be made in the US unless a waiver is granted."
+ },
+ {
+  "id": "cagr",
+  "term": "CAGR",
+  "aliases": "CAGR | compound annual growth rate | Compound annual growth rate",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Compound annual growth rate: the steady yearly growth rate that would take a value from its starting level to its ending level over a period."
+ },
+ {
+  "id": "capex",
+  "term": "Capital expenditure (capex)",
+  "aliases": "Capital expenditure | capex | capital expenditures | capital spending | utility capex",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Spending on long-lived assets, which a utility adds to its rate base and recovers over decades with a return. Investor-owned utility capex is at record levels, and replacing aging pipe and wire is a large share of it."
+ },
+ {
+  "id": "cast-iron-bare-steel",
+  "term": "Cast iron and bare steel pipe",
+  "aliases": "Cast iron and bare steel pipe | cast iron | cast-iron | wrought iron | bare steel | unprotected steel | unprotected bare steel | cast iron and bare steel | leak-prone pipe | leak-prone",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "Older gas main materials prone to cracking and corrosion: cast iron, laid mostly in the first half of the 20th century, and steel without cathodic protection, which became mandatory in 1971. PHMSA annual reports track the miles of each material that remain, by utility and state, and regulators push utilities to replace them."
+ },
+ {
+  "id": "cathodic-protection",
+  "term": "Cathodic protection",
+  "aliases": "Cathodic protection | CP system | CP systems | CP survey | CP surveys | rectifier | rectifiers | sacrificial anode | sacrificial anodes | impressed current | anode bed | anode beds",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "A way of preventing corrosion on buried steel pipe by applying a small electric current, from rectifiers or sacrificial metal anodes, so the pipe does not lose metal. Federal rules require it on steel gas pipelines along with periodic surveys to confirm it works, which is recurring specialist work."
+ },
+ {
+  "id": "cctv-inspection",
+  "term": "CCTV sewer inspection",
+  "aliases": "CCTV sewer inspection | CCTV | CCTV inspection | CCTV inspections | CCTV crawler | CCTV crawlers | sewer inspection | Sewer inspection | sewer inspections | Sewer inspections | sewer televising | Sewer televising",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "Inspection of sewer pipes with a remote-controlled camera crawler driven through the line, with defects coded, typically to NASSCO's PACP standard. Many cities inspect a set share of their sewers each year, and the findings drive rehabilitation work such as CIPP."
+ },
+ {
+  "id": "cdl",
+  "term": "CDL (commercial driver's license)",
+  "aliases": "CDL | CDLs | commercial driver's license | Commercial driver's license | commercial driver’s license | commercial drivers license | Class A CDL | Class B CDL | CDL-A | CDL-B",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "A commercial driver's license, required to drive heavy trucks such as hydrovacs, combination sewer cleaners and line trucks. CDL holders are in short supply and subject to federal drug and alcohol testing, which constrains how quickly crews can be staffed."
+ },
+ {
+  "id": "census-bureau",
+  "term": "Census Bureau",
+  "aliases": "Census Bureau | US Census Bureau | U.S. Census Bureau",
+  "case_sensitive": false,
+  "category": "Organizations",
+  "definition": "The Commerce Department agency that counts businesses as well as people. Its County Business Patterns, Statistics of US Businesses and Economic Census report company and location counts by industry code, the basis for checking how fragmented a market is."
+ },
+ {
+  "id": "cwa",
+  "term": "Clean Water Act",
+  "aliases": "Clean Water Act | CWA",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The 1972 federal law that regulates discharges into US waters. Sewer overflows violate it, which is why many cities operate under consent decrees requiring sewer rehabilitation."
+ },
+ {
+  "id": "combination-truck",
+  "term": "Combination sewer cleaner",
+  "aliases": "Combination sewer cleaner | combination sewer cleaners | combination truck | combination trucks | combo truck | combo trucks | jet-vac | jet/vac | sewer jetter | sewer jetters | jetter truck | sewer cleaning truck | sewer cleaning trucks",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "A truck that combines a high-pressure water jet to scour sewer pipes with a vacuum to remove the debris. It is the basic tool of sewer cleaning and is usually paired with CCTV inspection, but it is specific to sewer work."
+ },
+ {
+  "id": "cws",
+  "term": "Community water system (CWS)",
+  "aliases": "Community water system | CWS | community water system | community water systems | Community water systems",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "EPA's term for a public water system that serves the same residents year-round, such as a town or city. There are roughly 50,000 in the US, but a few thousand large systems serve most of the population."
+ },
+ {
+  "id": "consent-decree",
+  "term": "Consent decree",
+  "aliases": "Consent decree | consent decrees",
+  "case_sensitive": false,
+  "category": "Policy & regulation",
+  "definition": "A court-approved settlement, often between EPA and a city, that commits the city to fix sewer overflows on a fixed schedule, typically over 10 to 25 years at a cost of hundreds of millions to billions of dollars. It makes sewer rehabilitation spending legally mandatory rather than discretionary."
+ },
+ {
+  "id": "backlog",
+  "term": "Contract backlog",
+  "aliases": "Contract backlog | backlogs | contract backlogs | remaining performance obligations | RPO | 12-month backlog",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "The value of work a contractor has won but not yet performed. For utility MSAs it is an estimate of expected work orders over the contract term, so it is softer than a firm order book. Not to be confused with a replacement backlog of aging assets."
+ },
+ {
+  "id": "cost-plus",
+  "term": "Cost-plus contract",
+  "aliases": "Cost-plus contract | cost-plus | cost plus | cost-plus contracts | cost-reimbursable",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A contract that reimburses the contractor's actual costs plus a fixed fee or percentage. It moves cost risk to the customer but usually caps the contractor's margin."
+ },
+ {
+  "id": "cbp",
+  "term": "County Business Patterns (CBP)",
+  "aliases": "County Business Patterns | CBP",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "An annual Census Bureau dataset of business locations, jobs and payroll by industry code and by county, state or metro area. It shows where contractors are, but it counts locations rather than companies, so a firm with five branches appears five times."
+ },
+ {
+  "id": "cipp",
+  "term": "Cured-in-place pipe (CIPP)",
+  "aliases": "Cured-in-place pipe | CIPP | cured-in-place pipe | cured in place pipe | Cured in place pipe | cured-in-place | Cured-in-place | CIPP lining | CIPP liner | CIPP liners",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "A trenchless repair in which a resin-soaked fabric tube is inserted into a damaged pipe and hardened with hot water, steam or ultraviolet light, forming a new pipe inside the old one. It is the dominant method for rehabilitating sewer mains and a specialized, equipment-heavy niche."
+ },
+ {
+  "id": "customer-concentration",
+  "term": "Customer concentration",
+  "aliases": "Customer concentration | concentration risk | top-customer concentration",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "The share of revenue that comes from the largest customers. Small utility contractors often earn half or more from one or two utilities, so losing a single MSA renewal can be existential, and buyers price that in."
+ },
+ {
+  "id": "cwns",
+  "term": "CWNS",
+  "aliases": "CWNS | Clean Watersheds Needs Survey",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "EPA's periodic survey of wastewater and stormwater capital needs. The 2022 survey, published in 2024, estimated about $630 billion of needs over 20 years, much of it for sewer pipes and overflow control."
+ },
+ {
+  "id": "davis-bacon",
+  "term": "Davis-Bacon Act (prevailing wage)",
+  "aliases": "Davis-Bacon Act | Davis-Bacon | Davis Bacon | prevailing wage | prevailing wages | prevailing-wage",
+  "case_sensitive": false,
+  "category": "Labor & safety",
+  "definition": "A 1931 federal law requiring contractors on federally funded construction to pay at least the locally \"prevailing\" wage and benefits, often set from union rates. It applies to IIJA and SRF-funded water projects, and many states have similar laws."
+ },
+ {
+  "id": "design-life",
+  "term": "Design life / useful life",
+  "aliases": "Design life / useful life | design life | useful life | useful lives | service life | service lives | expected life | design lives | depreciable life | depreciable lives",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "The number of years an asset is expected to last in normal service, such as roughly 40 to 50 years for transformers and wood poles and 50 to 100 years or more for many pipes. Assets often run past it with maintenance, so age alone overstates replacement need; each utility's depreciation study filed with regulators gives its own estimates."
+ },
+ {
+  "id": "dimp",
+  "term": "DIMP",
+  "aliases": "DIMP | Distribution Integrity Management Program | distribution integrity management | Distribution integrity management",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "PHMSA's Distribution Integrity Management Program rule (49 CFR Part 192, Subpart P), in force since 2011, which requires every gas distribution utility to identify the threats to its pipes, rank the risks and act to reduce them. It underpins the leak survey and pipe replacement programs that drive gas services demand."
+ },
+ {
+  "id": "dga",
+  "term": "Dissolved gas analysis (DGA)",
+  "aliases": "Dissolved gas analysis | DGA | dissolved gas analysis | transformer oil testing | Transformer oil testing | oil sampling | insulating oil testing | Insulating oil testing",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Laboratory testing of the oil inside a transformer for gases that form when its insulation overheats or arcs, giving early warning of failure. Utilities sample large transformers periodically, making it a recurring service tied to transformer maintenance."
+ },
+ {
+  "id": "main",
+  "term": "Distribution main",
+  "aliases": "Distribution main | distribution mains | gas main | gas mains | water main | water mains | main break | main breaks | water main break | water main breaks | miles of main",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "The larger pipe running under streets that carries gas or water through a neighborhood, from which service lines branch to each building. The US has about 1.3 million miles of gas distribution main and roughly 2.2 million miles of water pipe; a main break is a rupture of a water main."
+ },
+ {
+  "id": "dso",
+  "term": "DSO (days sales outstanding)",
+  "aliases": "DSO | days sales outstanding | Days sales outstanding",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "The average number of days a company takes to collect payment after billing. Utility contractors commonly run about 60 to 90 days, and slow-paying public customers push it higher."
+ },
+ {
+  "id": "dwinsa",
+  "term": "DWINSA",
+  "aliases": "DWINSA | Drinking Water Infrastructure Needs Survey and Assessment | Drinking Water Needs Survey",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "EPA's survey, every four years, of drinking-water systems' 20-year capital needs. The 7th DWINSA (2023) estimated $625 billion of needs and about 9.2 million lead service lines, and it is used to divide Drinking Water SRF money among states."
+ },
+ {
+  "id": "ebitda",
+  "term": "EBITDA",
+  "aliases": "EBITDA | EBITDA margin | EBITDA margins | Adjusted EBITDA | adjusted EBITDA | Adj. EBITDA | adj. EBITDA",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Earnings before interest, taxes, depreciation and amortization, a rough measure of operating cash profit. EBITDA margin is EBITDA as a share of revenue; \"adjusted\" EBITDA excludes items the company treats as one-off."
+ },
+ {
+  "id": "economic-census",
+  "term": "Economic Census",
+  "aliases": "Economic Census | 2022 Economic Census | 2017 Economic Census",
+  "case_sensitive": false,
+  "category": "Data & statistics",
+  "definition": "The Census Bureau's survey of US businesses every five years (years ending in 2 and 7). It is the main federal source of revenue by detailed industry, including the value of construction work by type; the 2022 results are the latest benchmark."
+ },
+ {
+  "id": "eia",
+  "term": "EIA",
+  "aliases": "EIA | Energy Information Administration | U.S. Energy Information Administration",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The Department of Energy's independent statistics agency. It publishes electricity demand, generation, power plant and utility data through survey forms such as EIA-860 and EIA-861."
+ },
+ {
+  "id": "eia-860",
+  "term": "EIA-860",
+  "aliases": "EIA-860 | EIA 860 | Form EIA-860 | EIA-860M",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "EIA's annual survey of every US power plant of 1 megawatt or more, listing each generator's technology, capacity, location and year it entered service. It is the source for how old the US power plant fleet is; the monthly version, EIA-860M, tracks planned additions and retirements."
+ },
+ {
+  "id": "eia-861",
+  "term": "EIA-861",
+  "aliases": "EIA-861 | EIA 861 | Form EIA-861",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "EIA's annual survey of electric utilities covering customers, sales, revenue, ownership type, smart meters and reliability (SAIDI and SAIFI). It is the basis for counting utilities by type and for tracking grid reliability."
+ },
+ {
+  "id": "co-op",
+  "term": "Electric cooperative (co-op)",
+  "aliases": "Electric cooperative | electric cooperatives | electric co-op | electric co-ops | co-op | co-ops",
+  "case_sensitive": false,
+  "category": "Organizations",
+  "definition": "A not-for-profit utility owned by its members, mostly in rural areas. About 900 US electric co-ops serve roughly 13% of electricity customers but own about 42% of distribution line miles, so they are large buyers of line work and right-of-way clearing."
+ },
+ {
+  "id": "emr",
+  "term": "EMR (experience modification rate)",
+  "aliases": "EMR | experience modification rate | Experience modification rate | experience modifier | experience mod | e-mod | EMR rating",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "A workers' compensation insurance factor that compares a company's past injury claims with the average for its industry: 1.0 is average and lower is better. Many utilities will not hire contractors above about 1.0, so a poor safety record can shut a contractor out of work."
+ },
+ {
+  "id": "epa",
+  "term": "EPA",
+  "aliases": "EPA | US EPA | U.S. EPA | Environmental Protection Agency",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The US Environmental Protection Agency, which sets national drinking-water standards such as the lead and PFAS rules, regulates sewage discharges, and runs the State Revolving Funds and the water and wastewater needs surveys."
+ },
+ {
+  "id": "establishment-firm",
+  "term": "Establishment vs. firm",
+  "aliases": "Establishment vs. firm | establishments | employer establishments | establishment counts | employer firm | employer firms | firm count | firm counts",
+  "case_sensitive": false,
+  "category": "Data & statistics",
+  "definition": "In Census data an establishment is a single business location, while a firm is all the locations under common ownership. Firm counts are the right measure of how many competitors exist; establishment counts run higher because larger companies have many branches."
+ },
+ {
+  "id": "ev-ebitda",
+  "term": "EV/EBITDA multiple",
+  "aliases": "EV/EBITDA multiple | EV/EBITDA | EV / EBITDA | EBITDA multiple | EBITDA multiples | enterprise value | Enterprise value | valuation multiple | valuation multiples",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Enterprise value (the price of a company's equity plus its net debt) divided by EBITDA, the standard yardstick for pricing acquisitions. Small private service contractors often sell for roughly 4x to 7x EBITDA while large public utility service companies trade well into double digits, the gap a roll-up tries to capture."
+ },
+ {
+  "id": "ferc",
+  "term": "FERC",
+  "aliases": "FERC | Federal Energy Regulatory Commission",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The Federal Energy Regulatory Commission, which regulates interstate electricity transmission, wholesale power markets and interstate gas pipelines. It also collects the FERC Form 1 financial reports used to estimate utility maintenance spending."
+ },
+ {
+  "id": "ferc-form-1",
+  "term": "FERC Form 1",
+  "aliases": "FERC Form 1 | FERC Form No. 1 | FERC Form 2 | FERC Form No. 2",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The annual financial report that major investor-owned electric utilities file with FERC, including plant in service and operation and maintenance expense by account, such as maintenance of overhead and underground lines. It lets outsiders measure what utilities actually spend on maintenance; FERC Form 2 is the equivalent for interstate gas pipelines."
+ },
+ {
+  "id": "gross-margin",
+  "term": "Gross margin",
+  "aliases": "Gross margin | gross margins | gross profit",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Revenue minus direct job costs (crew labor, equipment, materials and subcontractors), as a share of revenue. Specialty testing and inspection services usually earn higher gross margins than heavy construction because skill, not equipment or materials, is the main input."
+ },
+ {
+  "id": "holdco",
+  "term": "Holding company (HoldCo)",
+  "aliases": "Holding company | HoldCo | holdco | Holdco | holding company | holding companies | Holding companies",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "A parent company that owns several operating businesses; here, the vehicle for owning services companies across business units. It can share capital, management and back-office functions while each unit keeps its own brand and crews."
+ },
+ {
+  "id": "hdd",
+  "term": "Horizontal directional drilling (HDD)",
+  "aliases": "Horizontal directional drilling | HDD | horizontal directional drilling | directional drilling | Directional drilling | directional boring | Directional boring | directional bore | directional bores | HDD rig | HDD rigs",
+  "case_sensitive": true,
+  "category": "Equipment",
+  "definition": "A trenchless method that drills a steerable bore underground and pulls new pipe or cable conduit through it, avoiding open trenches under roads, rivers and yards. Small HDD rigs are used for gas, water, electric and fiber work alike, making it one of the more transferable capabilities."
+ },
+ {
+  "id": "hydro-excavation",
+  "term": "Hydro-excavation",
+  "aliases": "Hydro-excavation | hydro excavation | hydroexcavation | hydro-excavating | hydrovac | hydrovacs | hydrovac truck | hydrovac trucks | hydro-vac | hydro vac",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "Digging with pressurized water to loosen soil, which a truck-mounted vacuum then sucks into a debris tank. It exposes buried pipes and cables without damaging them and is used across gas, water and electric work; a hydrovac truck typically costs several hundred thousand dollars."
+ },
+ {
+  "id": "hydrotest",
+  "term": "Hydrostatic pressure test",
+  "aliases": "Hydrostatic pressure test | hydrostatic test | hydrostatic tests | hydrostatic testing | hydrotest | hydrotests | hydrotesting | hydro test | pressure test | pressure tests | pressure testing",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "A test in which a pipeline section is filled with water and pressurized above its operating pressure to prove it will not fail. PHMSA's 2019 gas transmission rule requires many older pipelines without adequate records to be pressure-tested or otherwise reverified."
+ },
+ {
+  "id": "ibew",
+  "term": "IBEW",
+  "aliases": "IBEW | International Brotherhood of Electrical Workers | NECA | National Electrical Contractors Association",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The International Brotherhood of Electrical Workers, the main union for lineworkers, electricians and utility employees. Its outside-line branch supplies union line crews trained through joint apprenticeship programs run with the National Electrical Contractors Association (NECA)."
+ },
+ {
+  "id": "iija",
+  "term": "IIJA / Bipartisan Infrastructure Law (BIL)",
+  "aliases": "IIJA / Bipartisan Infrastructure Law | IIJA | Infrastructure Investment and Jobs Act | BIL | Bipartisan Infrastructure Law",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The Infrastructure Investment and Jobs Act of November 2021, also called the Bipartisan Infrastructure Law, which authorized about $1.2 trillion including roughly $550 billion of new federal spending over fiscal 2022 to 2026. It funded water systems (about $55 billion), grid resilience and gas pipe replacement grants, and its five-year funding ends with fiscal 2026 unless renewed."
+ },
+ {
+  "id": "ili",
+  "term": "In-line inspection (ILI)",
+  "aliases": "In-line inspection | ILI | in-line inspection | inline inspection | Inline inspection | smart pig | smart pigs | pigging | Pigging",
+  "case_sensitive": true,
+  "category": "Gas",
+  "definition": "Inspection of a pipeline from the inside by a sensor-laden device (a \"smart pig\") that travels with the gas or oil flow and records corrosion, dents and cracks. It is the main assessment method for transmission pipelines; most distribution pipe is too small and branched for it."
+ },
+ {
+  "id": "ipp",
+  "term": "Independent power producer (IPP)",
+  "aliases": "Independent power producer | IPP | IPPs | independent power producer | independent power producers | Independent power producers",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "A company that owns power plants and sells electricity into wholesale markets or under contract rather than to retail customers, such as Vistra or Constellation. IPPs buy outage, inspection and testing services for their plants."
+ },
+ {
+  "id": "ira",
+  "term": "Inflation Reduction Act (IRA)",
+  "aliases": "Inflation Reduction Act | IRA",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The 2022 climate and tax law that expanded tax credits for solar, wind, storage, nuclear and other clean energy. The July 2025 tax law cut back its wind and solar credits while largely keeping those for nuclear, storage and geothermal."
+ },
+ {
+  "id": "i-and-i",
+  "term": "Inflow and infiltration (I&I)",
+  "aliases": "Inflow and infiltration | I&I | inflow and infiltration | infiltration and inflow | Infiltration and inflow",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "Rainwater and groundwater that enter sewer pipes through cracks, bad joints and improper connections. It overloads treatment plants and causes overflows, and reducing it is a main goal of sewer rehabilitation."
+ },
+ {
+  "id": "capital-tracker",
+  "term": "Infrastructure replacement rider",
+  "aliases": "Infrastructure replacement rider | capital tracker | Capital tracker | capital trackers | Capital trackers | infrastructure rider | Infrastructure rider | infrastructure riders | replacement rider | replacement riders | infrastructure surcharge | replacement surcharge | accelerated replacement program | accelerated replacement programs | DSIC | DSICs",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "A surcharge on customer bills, approved by a state commission, that lets a utility recover the cost of pipe or wire replacement between rate cases. Most states have one for gas pipe replacement; Pennsylvania's DSIC (Distribution System Improvement Charge) is a common water and gas example."
+ },
+ {
+  "id": "integrity-dig",
+  "term": "Integrity dig",
+  "aliases": "Integrity dig | integrity digs | dig program | dig programs | anomaly dig | anomaly digs | verification dig | verification digs",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "An excavation to expose a pipeline section flagged by inspection so crews can examine it, often with NDE, and repair or replace it. Integrity digs combine excavation, NDE and pipeline welding skills."
+ },
+ {
+  "id": "iou",
+  "term": "Investor-owned utility (IOU)",
+  "aliases": "Investor-owned utility | IOU | IOUs | investor-owned utility | investor-owned utilities | Investor-owned utilities | investor-owned | Investor-owned",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "A utility owned by shareholders and regulated by a state utility commission, such as Duke Energy or American Water Works. IOUs serve about 70% of US electricity customers and earn a regulated return on the capital they invest, which rewards replacing old pipe and wire."
+ },
+ {
+  "id": "iuoe",
+  "term": "IUOE",
+  "aliases": "IUOE | International Union of Operating Engineers | Operating Engineers | operating engineers",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The International Union of Operating Engineers, which represents heavy-equipment operators such as excavator, crane and drill-rig operators, as well as some stationary plant engineers."
+ },
+ {
+  "id": "kv",
+  "term": "kV (kilovolt)",
+  "aliases": "kV | kilovolt | kilovolts",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "One thousand volts. US transmission lines typically run at 115 to 765 kV and distribution lines at roughly 4 to 35 kV."
+ },
+ {
+  "id": "lcri",
+  "term": "LCRI (Lead and Copper Rule Improvements)",
+  "aliases": "LCRI | Lead and Copper Rule Improvements | LCRR | Lead and Copper Rule Revisions | Lead and Copper Rule",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "EPA's October 2024 update to the Lead and Copper Rule, which requires most water systems to replace all lead and galvanized-requiring-replacement service lines within ten years of its November 2027 compliance date. It builds on the 2021 Lead and Copper Rule Revisions (LCRR), which required every system to inventory its service lines; its deadlines could still change through litigation or EPA review."
+ },
+ {
+  "id": "lsl-replacement",
+  "term": "Lead service line replacement (LSLR)",
+  "aliases": "Lead service line replacement | LSL | LSLs | LSLR | LSL replacement | LSL replacements | lead service line | Lead service line | lead service lines | Lead service lines | lead service line replacement | lead pipe | lead pipes | Lead pipes",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "Removing the lead pipes that connect water mains to homes and replacing them with copper or plastic, usually including the portion on private property. EPA estimated about 9.2 million lead service lines nationwide, and costs range from several thousand to tens of thousands of dollars per line depending on the city."
+ },
+ {
+  "id": "leak-grading",
+  "term": "Leak grading",
+  "aliases": "Leak grading | leak grade | Grade 1 leak | Grade 1 leaks | Grade 2 leak | Grade 2 leaks | Grade 3 leak | Grade 3 leaks | hazardous leak | hazardous leaks",
+  "case_sensitive": false,
+  "category": "Gas",
+  "definition": "The industry practice of classifying gas leaks by danger: Grade 1 is hazardous and repaired immediately, Grade 2 is not hazardous now but scheduled for repair, and Grade 3 is non-hazardous and monitored. Utilities report hazardous leaks repaired each year to PHMSA, one public measure of pipe condition."
+ },
+ {
+  "id": "leak-survey",
+  "term": "Leak survey",
+  "aliases": "Leak survey | leak survey | leak surveys | Leak surveys | leak surveying | Leak surveying | mobile leak survey | walking survey | walking surveys | advanced leak detection | Advanced leak detection | ALDP | ALDPs",
+  "case_sensitive": true,
+  "category": "Gas",
+  "definition": "Periodic checking of gas pipes for leaks, by technicians walking the lines with gas detectors or by vehicles carrying sensitive methane analyzers (\"advanced leak detection\"). Federal rules require surveys at least every five years in most areas and every year in business districts, and many utilities survey more often."
+ },
+ {
+  "id": "lineworker",
+  "term": "Lineworker",
+  "aliases": "Lineworker | lineworkers | line worker | line workers | lineman | linemen | journeyman lineman | journeyman linemen | line crew | line crews | power-line installers | power-line installers and repairers",
+  "case_sensitive": false,
+  "category": "Labor & safety",
+  "definition": "A worker who builds and repairs overhead and underground power lines. BLS counts roughly 120,000 electrical power-line installers and repairers, among the scarcest and best-paid utility trades."
+ },
+ {
+  "id": "liuna",
+  "term": "LIUNA",
+  "aliases": "LIUNA | Laborers' International Union of North America | Laborers International Union of North America | Laborers' union",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The Laborers' International Union of North America, which represents construction laborers, including many gas distribution and pipeline workers."
+ },
+ {
+  "id": "load-growth",
+  "term": "Load growth",
+  "aliases": "Load growth | load growth | electricity demand growth | Electricity demand growth | demand growth | Demand growth | peak demand | Peak demand | large load | large loads | Large loads",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Growth in electricity use or peak demand on the grid. US demand was roughly flat from about 2007 to 2021 as efficiency gains offset new uses, and is now rising again with data centers, factories and electrification."
+ },
+ {
+  "id": "ldc",
+  "term": "Local distribution company (LDC)",
+  "aliases": "Local distribution company | LDC | LDCs | local distribution company | local distribution companies | Local distribution companies | gas utility | gas utilities | Gas utility | Gas utilities",
+  "case_sensitive": true,
+  "category": "Gas",
+  "definition": "A gas utility that owns the low-pressure mains and service lines that deliver natural gas to homes and businesses in its franchise area, such as Atmos Energy or Southern California Gas. LDCs are the main buyers of leak survey, locating and gas pipe replacement work."
+ },
+ {
+  "id": "low-bid",
+  "term": "Low-bid procurement",
+  "aliases": "Low-bid procurement | low-bid | low bid | low bidder | lowest responsible bidder | lowest responsive and responsible bidder | hard bid | hard-bid",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Public purchasing in which the contract goes to the qualified bidder offering the lowest price. Cities and other public owners must usually buy this way, which limits pricing power compared with negotiated MSAs from investor-owned utilities."
+ },
+ {
+  "id": "lower-middle-market",
+  "term": "Lower middle market",
+  "aliases": "Lower middle market | lower-middle-market | lower middle-market | LMM",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Private companies with roughly $10 million to $100 million of revenue, or a few million to about $15 million of EBITDA. Many are founder-owned, and they usually sell at lower multiples than larger companies."
+ },
+ {
+  "id": "lump-sum",
+  "term": "Lump-sum (fixed-price) contract",
+  "aliases": "Lump-sum | lump sum | fixed-price | fixed price | lump-sum contract | lump-sum contracts | fixed-price contract | fixed-price contracts | firm fixed price | firm fixed-price",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A contract that pays one agreed price for a defined scope of work. The contractor keeps any savings but absorbs cost overruns, so margins are more volatile than under unit-price or T&M work."
+ },
+ {
+  "id": "msa",
+  "term": "Master service agreement (MSA)",
+  "aliases": "Master service agreement | MSA | MSAs | master service agreement | master service agreements | Master service agreements | master services agreement | master services agreements | Master Service Agreement",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "A multi-year framework contract under which a utility issues a stream of work orders to a contractor at pre-agreed prices without rebidding each job. MSAs typically run three to five years and make revenue recurring, though they rarely guarantee volume. In Census data, MSA instead means metropolitan statistical area."
+ },
+ {
+  "id": "mro",
+  "term": "MRO (maintenance, repair and operations)",
+  "aliases": "MRO | maintenance, repair and operations | maintenance, repair, and operations | maintenance, repair and overhaul",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Spending to keep existing assets working, as opposed to building new ones. In this report it means recurring inspection, testing, repair and replacement work on utility pipes, wires and plants."
+ },
+ {
+  "id": "multiple-arbitrage",
+  "term": "Multiple arbitrage",
+  "aliases": "Multiple arbitrage | multiple expansion | multiples arbitrage",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Profit from buying small companies at low valuation multiples and selling the combined, larger company at a higher one. For example, $10 million of EBITDA bought at 6x ($60 million) and later valued at 10x ($100 million) creates $40 million of value with no operating improvement."
+ },
+ {
+  "id": "muni",
+  "term": "Municipal utility (muni)",
+  "aliases": "Municipal utility | municipal utilities | municipally owned utility | municipally owned utilities | muni | munis | public power | public power utilities",
+  "case_sensitive": false,
+  "category": "Organizations",
+  "definition": "A utility owned by a city or other local government, such as the Los Angeles Department of Water and Power. About 2,000 US electric utilities (known as public power) are publicly owned, as are the systems serving most Americans' drinking water; they usually buy services through public, low-bid procurement."
+ },
+ {
+  "id": "naics",
+  "term": "NAICS",
+  "aliases": "NAICS | NAICS code | NAICS codes",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The North American Industry Classification System, which assigns each business location a six-digit industry code based on its main activity. Federal counts of companies, payroll and jobs are organized by these codes, and a contractor doing several kinds of work is counted only under its main one."
+ },
+ {
+  "id": "naics-237110",
+  "term": "NAICS 237110",
+  "aliases": "NAICS 237110 | 237110",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Water and Sewer Line and Related Structures Construction: contractors building and repairing water mains, sewers, pumping stations and treatment plants. It is the federal industry code closest to the water business unit."
+ },
+ {
+  "id": "naics-237120",
+  "term": "NAICS 237120",
+  "aliases": "NAICS 237120 | 237120",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Oil and Gas Pipeline and Related Structures Construction: contractors building and repairing oil and gas pipelines, including gas distribution lines. It mixes large long-distance pipeline builders with local gas distribution contractors."
+ },
+ {
+  "id": "naics-237130",
+  "term": "NAICS 237130",
+  "aliases": "NAICS 237130 | 237130",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Power and Communication Line and Related Structures Construction: contractors building and maintaining power lines, substations and towers as well as telecom and cable lines. Many of its firms are telecom and fiber contractors, so not all serve electric utilities."
+ },
+ {
+  "id": "naics-238210",
+  "term": "NAICS 238210",
+  "aliases": "NAICS 238210 | 238210",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Electrical Contractors and Other Wiring Installation Contractors. It is dominated by building electricians but also holds many substation and electrical testing contractors, so it greatly overstates the utility testing niche."
+ },
+ {
+  "id": "naics-541380",
+  "term": "NAICS 541380",
+  "aliases": "NAICS 541380 | 541380",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Testing Laboratories and Services: firms that perform physical, chemical and other analytical testing, including some electrical, oil-testing and NDE companies. Like 238210, it is broad and only partly relevant."
+ },
+ {
+  "id": "nassco",
+  "term": "NASSCO",
+  "aliases": "NASSCO | PACP | MACP | LACP",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The trade association for sewer and pipeline rehabilitation contractors. Its PACP standard is the common way of coding sewer pipe condition from CCTV video (MACP covers manholes and LACP laterals), and its certifications are often required in sewer inspection bids."
+ },
+ {
+  "id": "nerc",
+  "term": "NERC",
+  "aliases": "NERC | North American Electric Reliability Corporation",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The North American Electric Reliability Corporation, which writes and enforces mandatory reliability standards for the high-voltage grid under FERC oversight. Its standards require periodic testing of protection systems, vegetation clearing along transmission lines and cybersecurity controls."
+ },
+ {
+  "id": "nerc-cip",
+  "term": "NERC CIP",
+  "aliases": "NERC CIP | CIP standards | CIP-014 | CIP compliance",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "NERC's Critical Infrastructure Protection standards, mandatory cybersecurity and physical-security rules for the systems and sites that run the high-voltage grid. CIP-014, for example, requires physical protection of the most critical substations."
+ },
+ {
+  "id": "neta",
+  "term": "NETA",
+  "aliases": "NETA | InterNational Electrical Testing Association | NETA-certified | NETA certified | NETA-accredited | NETA ATS | NETA MTS | ANSI/NETA",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The InterNational Electrical Testing Association, which publishes the standards for acceptance testing of new electrical equipment (ATS) and maintenance testing of equipment in service (MTS). It also accredits testing companies and certifies their technicians, who form the core of the electrical testing segment."
+ },
+ {
+  "id": "nfpa-70e",
+  "term": "NFPA 70E",
+  "aliases": "NFPA 70E | NFPA-70E | 70E | arc flash | arc-flash | Arc flash",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The National Fire Protection Association's standard for electrical safety in the workplace, which governs arc-flash protection and who counts as a \"qualified\" electrical worker. Electrical testing technicians must be trained to it, which keeps them separate from general construction labor."
+ },
+ {
+  "id": "ngdism",
+  "term": "NGDISM grants",
+  "aliases": "NGDISM grants | NGDISM | Natural Gas Distribution Infrastructure Safety and Modernization",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The Natural Gas Distribution Infrastructure Safety and Modernization grant program, created by the IIJA with $1 billion over five years for municipal and community-owned gas utilities to replace leak-prone pipe. PHMSA administers it."
+ },
+ {
+  "id": "nrw",
+  "term": "Non-revenue water",
+  "aliases": "Non-revenue water | non-revenue water | NRW | water loss | Water loss | water losses | Water losses",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "Water a utility treats but never bills, mostly lost through leaks and main breaks, plus meter errors and theft. Many US systems lose 10% to 30% of their treated water, which supports leak detection and meter replacement work."
+ },
+ {
+  "id": "nde",
+  "term": "Nondestructive examination (NDE / NDT)",
+  "aliases": "Nondestructive examination | NDE | NDT | nondestructive examination | non-destructive examination | Non-destructive examination | nondestructive testing | Nondestructive testing | non-destructive testing | Non-destructive testing | ultrasonic testing | Ultrasonic testing | radiographic testing | Radiographic testing | phased array | phased-array | Phased array",
+  "case_sensitive": true,
+  "category": "Gas",
+  "definition": "Methods for inspecting welds, pipe walls and equipment without damaging them, such as ultrasonic, radiographic (X-ray), magnetic-particle and eddy-current testing. Technicians are certified by method and level, so NDE crews are specialized and not easily swapped with general construction crews."
+ },
+ {
+  "id": "nonemployer",
+  "term": "Nonemployer Statistics",
+  "aliases": "Nonemployer Statistics | nonemployer | nonemployers | nonemployer businesses | nonemployer firms",
+  "case_sensitive": false,
+  "category": "Data & statistics",
+  "definition": "Census Bureau counts of businesses with no paid employees, mostly self-employed individuals, by industry. They sit outside the main company counts and are not realistic acquisition targets, so including them inflates provider counts."
+ },
+ {
+  "id": "nrc",
+  "term": "NRC",
+  "aliases": "NRC | Nuclear Regulatory Commission",
+  "case_sensitive": true,
+  "category": "Organizations",
+  "definition": "The Nuclear Regulatory Commission, which licenses and inspects US nuclear plants. License renewals now let many reactors run for 60 to 80 years, which sustains demand for refueling-outage inspection and maintenance work."
+ },
+ {
+  "id": "o-and-m",
+  "term": "O&M (operations and maintenance)",
+  "aliases": "O&M | operations and maintenance | Operations and maintenance | operation and maintenance | Operation and maintenance | O&M expense | O&M expenses",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "A utility's day-to-day running and upkeep costs, which it recovers in rates without earning a return. Leak survey, locating and vegetation management are mostly O&M, while pipe and pole replacement is usually capital spending."
+ },
+ {
+  "id": "oews",
+  "term": "OEWS",
+  "aliases": "OEWS | Occupational Employment and Wage Statistics | OES",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The BLS Occupational Employment and Wage Statistics survey, which estimates jobs and wages for about 800 occupations by industry and area. Comparing which occupations each industry employs is how this report tests whether crews overlap across business units."
+ },
+ {
+  "id": "obbba",
+  "term": "One Big Beautiful Bill Act (OBBBA)",
+  "aliases": "One Big Beautiful Bill Act | OBBBA | One Big Beautiful Bill",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The July 2025 federal tax and spending law. Among other things it ends federal tax credits for wind and solar projects that do not start construction by July 2026 or enter service by the end of 2027, which may pull solar additions forward and then slow them."
+ },
+ {
+  "id": "open-shop",
+  "term": "Open shop (merit shop)",
+  "aliases": "Open shop | open-shop | merit shop | merit-shop | non-union | nonunion",
+  "case_sensitive": false,
+  "category": "Labor & safety",
+  "definition": "A contractor whose workers are not covered by a union agreement. Union and open-shop contractors often serve different customers, and combining both in one company can create labor-relations limits on sharing crews."
+ },
+ {
+  "id": "operating-leverage",
+  "term": "Operating leverage",
+  "aliases": "Operating leverage",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "The degree to which profit grows faster than revenue because some costs, such as overhead, yard facilities and idle equipment, stay fixed as volume rises. It also works in reverse when volume falls."
+ },
+ {
+  "id": "operator-qualification",
+  "term": "Operator Qualification (OQ)",
+  "aliases": "Operator Qualification | OQ | OQs | operator qualification | Operator qualification | OQ program | OQ programs | OQ-qualified | OQ qualified | OQ-certified | covered task | covered tasks",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "PHMSA's rule (49 CFR Part 192, Subpart N, and Part 195, Subpart G) that anyone performing \"covered tasks\" on a pipeline, such as joining pipe, locating lines or checking cathodic protection, must be evaluated and qualified for each task. Qualifications are task-specific, which limits how freely crews can move between gas, water and electric work."
+ },
+ {
+  "id": "organic-growth",
+  "term": "Organic growth",
+  "aliases": "Organic growth | organic revenue growth | grew organically | organic growth rate",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Revenue growth from existing businesses, excluding revenue added by acquisitions. Investors value it more than acquired growth because it reflects real demand and market share gains."
+ },
+ {
+  "id": "osha",
+  "term": "OSHA",
+  "aliases": "OSHA | Occupational Safety and Health Administration | OSHA 300 | OSHA 10 | OSHA 30 | OSHA-recordable | OSHA recordable",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The Occupational Safety and Health Administration, the federal agency that sets and enforces workplace safety rules, including those for power-line work and trenching. Employers log recordable injuries on the OSHA 300 log, the basis for TRIR."
+ },
+ {
+  "id": "outage-services",
+  "term": "Outage services",
+  "aliases": "Outage services | outage services | planned outage | planned outages | Planned outages | refueling outage | refueling outages | Refueling outages | plant outage | plant outages | outage season | maintenance outage | maintenance outages",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Inspection, repair and overhaul work done while a power plant is deliberately shut down, such as a nuclear plant's refueling outage every 18 to 24 months or a gas turbine's major inspection. The work comes in intense seasonal bursts, mostly spring and fall when power demand is low, and needs large, skilled temporary crews."
+ },
+ {
+  "id": "pfas",
+  "term": "PFAS",
+  "aliases": "PFAS | PFOA | PFOS | forever chemicals | per- and polyfluoroalkyl substances | Per- and polyfluoroalkyl substances",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "Per- and polyfluoroalkyl substances, long-lasting industrial chemicals (\"forever chemicals\") found in many water supplies. EPA set the first national drinking-water limits in 2024, including 4 parts per trillion for PFOA and PFOS; in 2025 it said it would keep those two limits but move compliance from 2029 to 2031 and reconsider the others. Compliance mostly means new treatment plants rather than pipe work."
+ },
+ {
+  "id": "phmsa",
+  "term": "PHMSA",
+  "aliases": "PHMSA | Pipeline and Hazardous Materials Safety Administration",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The Pipeline and Hazardous Materials Safety Administration, the Department of Transportation agency that sets federal safety rules for gas and hazardous-liquid pipelines (49 CFR Parts 192 and 195). State utility commissions enforce most of its rules on gas distribution utilities."
+ },
+ {
+  "id": "phmsa-annual-report",
+  "term": "PHMSA gas distribution annual report",
+  "aliases": "PHMSA gas distribution annual report | PHMSA annual report | PHMSA annual reports | PHMSA annual report data | Form 7100.1-1 | F 7100.1-1 | PHMSA F 7100.1-1",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The report every gas distribution utility files with PHMSA each year, listing miles of main and number of service lines by material, size and decade installed, plus leaks repaired by cause. It is the best public source for how old and leak-prone US gas pipe is."
+ },
+ {
+  "id": "pipe-bursting",
+  "term": "Pipe bursting",
+  "aliases": "Pipe bursting | pipe-bursting | pipebursting | pipe splitting",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "A trenchless replacement method that pulls a bursting head through an old pipe, breaking it outward while drawing a new pipe of the same or larger size into its place. It is widely used for lead service line and water main replacement."
+ },
+ {
+  "id": "pipes-act",
+  "term": "PIPES Act",
+  "aliases": "PIPES Act | PIPES Act of 2020",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The Protecting our Infrastructure of Pipelines and Enhancing Safety Act of 2020, which reauthorized PHMSA. It requires gas operators to run leak detection and repair programs and to update maintenance plans to minimize methane releases, and led to PHMSA's 2023 proposed leak detection and repair rule."
+ },
+ {
+  "id": "platform",
+  "term": "Platform company",
+  "aliases": "Platform company | platform companies | platform acquisition | platform acquisitions | platform investment | platform investments | platform-grade",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "The first, usually larger, company a buyer acquires in a new sector, which supplies the management team, systems and customer base into which later add-ons are merged."
+ },
+ {
+  "id": "pole-inspection",
+  "term": "Pole inspection and treatment",
+  "aliases": "Pole inspection and treatment | pole inspection | Pole inspection | pole inspections | pole testing | pole treatment | pole inspection and treatment | wood pole | wood poles | Wood poles | pole replacement | pole replacements | Pole replacement | utility poles",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Periodic testing of wooden utility poles for rot and damage, by sounding, boring and applying preservative, typically on cycles of about 8 to 12 years, with failed poles scheduled for replacement. The US has well over 100 million utility poles, most of them wood."
+ },
+ {
+  "id": "pe-pipe",
+  "term": "Polyethylene (PE) pipe",
+  "aliases": "Polyethylene | PE pipe | PE pipes | polyethylene | HDPE | MDPE | plastic pipe | plastic pipes | plastic main | plastic mains | fusion machine | fusion machines | butt fusion",
+  "case_sensitive": true,
+  "category": "Gas",
+  "definition": "Plastic pipe that is now the standard material for new and replacement gas distribution lines and is widely used for water. It does not corrode, and its joints are fused with heat by fusion machines run by qualified workers."
+ },
+ {
+  "id": "prc-005",
+  "term": "PRC-005",
+  "aliases": "PRC-005 | PRC-005-6 | protection system maintenance | Protection system maintenance",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The NERC standard requiring owners of the high-voltage grid to test and maintain protective relays, station batteries and related equipment within set maximum intervals. It creates recurring, non-discretionary demand for relay testing."
+ },
+ {
+  "id": "prequalification",
+  "term": "Prequalification",
+  "aliases": "Prequalification | pre-qualification | prequalified | pre-qualified | prequal | approved vendor list | approved contractor list | approved bidders list",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A screening step before a contractor may bid on or work for a utility, typically checking safety record (TRIR, EMR), insurance, bonding capacity, Operator Qualification and finances. Getting on a utility's approved list can take months, which protects incumbents and makes acquired customer relationships valuable."
+ },
+ {
+  "id": "financial-sponsor",
+  "term": "Private-equity sponsor",
+  "aliases": "Private-equity sponsor | private equity | Private equity | private-equity | Private-equity | PE-backed | PE firm | PE firms | sponsor-backed | sponsor-owned | Sponsor-owned | financial sponsor | financial sponsors",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "An investment firm that buys companies using its funds' equity plus borrowed money, usually aiming to sell within about three to seven years. Companies a sponsor already owns are typically unavailable as platforms until the sponsor is ready to exit."
+ },
+ {
+  "id": "protective-relay",
+  "term": "Protective relay",
+  "aliases": "Protective relay | protective relay | protective relays | Protective relays | protection system | protection systems | Protection systems | relay settings",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "A device that senses abnormal conditions on the grid, such as a short circuit, and signals circuit breakers to open, isolating the problem within a fraction of a second. Older electromechanical relays are being replaced by digital ones, which must be set, commissioned and periodically tested."
+ },
+ {
+  "id": "puc",
+  "term": "Public utility commission (PUC)",
+  "aliases": "Public utility commission | PUC | PUCs | PSC | PSCs | public utility commission | public utility commissions | public service commission | Public service commission | public service commissions | state utility commission | state utility commissions | state commission | state commissions",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The state agency, called a public utility or public service commission depending on the state, that sets the rates investor-owned utilities may charge and approves their spending plans. Its decisions largely determine how much utilities spend on replacement and maintenance."
+ },
+ {
+  "id": "potw",
+  "term": "Publicly owned treatment works (POTW)",
+  "aliases": "Publicly owned treatment works | POTW | POTWs | publicly owned treatment works",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "The Clean Water Act term for a municipal wastewater system, including its sewer pipes and treatment plant. There are about 16,000 in the US, and their sewer rehabilitation needs drive CIPP and sewer inspection work."
+ },
+ {
+  "id": "qcew",
+  "term": "QCEW",
+  "aliases": "QCEW | Quarterly Census of Employment and Wages",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The BLS Quarterly Census of Employment and Wages: near-complete counts of jobs, business locations and pay by industry and county, drawn from unemployment insurance records and published within about six months."
+ },
+ {
+  "id": "rate-base",
+  "term": "Rate base",
+  "aliases": "Rate base | rate-base | rate base growth",
+  "case_sensitive": false,
+  "category": "Policy & regulation",
+  "definition": "The value of a regulated utility's invested capital, net of depreciation, on which regulators let it earn a return. Replacing pipe or poles adds to rate base while routine maintenance is an expense, so utilities have a financial incentive to replace rather than repair."
+ },
+ {
+  "id": "rate-case",
+  "term": "Rate case",
+  "aliases": "Rate case | rate cases | general rate case | general rate cases | rate filing | rate filings",
+  "case_sensitive": false,
+  "category": "Policy & regulation",
+  "definition": "The formal proceeding in which a utility asks its state commission to change its prices based on its costs and invested capital. A rate case typically takes about a year, and utilities plan maintenance and replacement budgets around the outcome."
+ },
+ {
+  "id": "recurring-revenue",
+  "term": "Recurring revenue",
+  "aliases": "Recurring revenue | recurring revenues | repeat revenue | non-discretionary | nondiscretionary",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Revenue from work that repeats every year, such as mandated inspections, leak surveys, locating and maintenance under MSAs, as opposed to one-off projects. Buyers pay higher multiples for it because it is more predictable."
+ },
+ {
+  "id": "apprenticeship",
+  "term": "Registered apprenticeship",
+  "aliases": "Registered apprenticeship | registered apprenticeships | apprenticeship | apprenticeships | apprenticeship program | apprenticeship programs | journeyman | journeymen | journey-level | journeyworker | journeyworkers",
+  "case_sensitive": false,
+  "category": "Labor & safety",
+  "definition": "A formal earn-while-you-learn program, registered with the Labor Department or a state, combining paid on-the-job work with classroom instruction. A lineworker apprenticeship takes about three to four years before the worker reaches \"journeyman\" status, which limits how fast skilled crews can be added."
+ },
+ {
+  "id": "relay-testing",
+  "term": "Relay testing",
+  "aliases": "Relay testing | relay testing | protective relay testing | Protective relay testing | relay test | relay tests | relay test set | relay test sets | protection testing | Protection testing",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Checking that protective relays detect faults and trip breakers correctly, using portable test sets that inject simulated currents and voltages. NERC standard PRC-005 and utility maintenance programs require it on a recurring schedule; it is skilled technician work, often by NETA-certified staff."
+ },
+ {
+  "id": "replacement-backlog",
+  "term": "Replacement backlog",
+  "aliases": "Replacement backlog | replacement backlogs | deferred maintenance | maintenance backlog | maintenance backlogs",
+  "case_sensitive": false,
+  "category": "Data & statistics",
+  "definition": "The stock of assets that owners or regulators judge are due for replacement but have not yet been replaced, measured in miles of pipe, numbers of poles or dollars. It is different from a contractor's backlog of signed work."
+ },
+ {
+  "id": "retainage",
+  "term": "Retainage",
+  "aliases": "Retainage | retainage receivable | retainage payable",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A share of each payment, typically 5% to 10%, that the customer holds back until a project is complete. It ties up contractor cash and is common on public project work but less so on utility MSA work."
+ },
+ {
+  "id": "roll-up",
+  "term": "Roll-up (buy-and-build)",
+  "aliases": "roll-ups | rollup | rollups | rolled up | buy-and-build | buy and build",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A strategy, usually backed by private equity, of buying many small companies in a fragmented industry and combining them, aiming to sell the larger whole at a higher valuation multiple than was paid for the parts."
+ },
+ {
+  "id": "sdwa",
+  "term": "Safe Drinking Water Act (SDWA)",
+  "aliases": "Safe Drinking Water Act | SDWA",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The 1974 federal law under which EPA sets enforceable standards for public drinking water, including the lead and PFAS rules."
+ },
+ {
+  "id": "saidi-saifi",
+  "term": "SAIDI and SAIFI",
+  "aliases": "SAIDI and SAIFI | SAIDI | SAIFI | CAIDI | major event days | major event day",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "Standard grid reliability measures: SAIDI is the average total minutes of outage per customer per year and SAIFI the average number of outages per customer. EIA reports both by utility, with and without \"major event days\" such as big storms, giving a public read on whether grid condition is improving or worsening."
+ },
+ {
+  "id": "service-line",
+  "term": "Service line",
+  "aliases": "Service line | service lines",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "The small pipe connecting a gas or water main under the street to an individual building. Service lines are where most remaining lead pipe sits in water systems and where many gas leaks occur."
+ },
+ {
+  "id": "service-line-inventory",
+  "term": "Service line inventory",
+  "aliases": "Service line inventory | service line inventories | lead service line inventory | lead service line inventories | LSL inventory | LSL inventories",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "A list, required from every community water system by October 2024, classifying each service line as lead, galvanized requiring replacement, non-lead or unknown material. Many states publish them, giving a count of lines needing replacement."
+ },
+ {
+  "id": "sewer-overflow",
+  "term": "Sewer overflow (CSO / SSO)",
+  "aliases": "Sewer overflow | CSO | CSOs | SSO | SSOs | combined sewer overflow | Combined sewer overflow | combined sewer overflows | Combined sewer overflows | sanitary sewer overflow | Sanitary sewer overflow | sanitary sewer overflows | Sanitary sewer overflows | combined sewer | combined sewers",
+  "case_sensitive": true,
+  "category": "Water",
+  "definition": "A discharge of untreated sewage, either from older combined sewers that carry stormwater and sewage in one pipe (CSO, in roughly 700 US communities) or from separate sanitary sewers that leak or back up (SSO). Both violate the Clean Water Act and are the usual target of EPA consent decrees."
+ },
+ {
+  "id": "sga",
+  "term": "SG&A",
+  "aliases": "SG&A | selling, general and administrative | Selling, general and administrative",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Selling, general and administrative expenses: overhead such as management, estimating, safety, IT and back office. In a roll-up, combining these functions across acquired companies is the most dependable source of margin improvement."
+ },
+ {
+  "id": "sliplining",
+  "term": "Sliplining",
+  "aliases": "Sliplining | slip-lining | slip lining | slipline | sliplined",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "A trenchless repair that pushes or pulls a slightly smaller new pipe, usually plastic, inside an existing pipe and fills the gap with grout. It is simple and inexpensive but reduces the pipe's capacity."
+ },
+ {
+  "id": "smr",
+  "term": "Small modular reactor (SMR)",
+  "aliases": "Small modular reactor | SMR | SMRs | small modular reactor | small modular reactors | Small modular reactors",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "A nuclear reactor of up to about 300 megawatts designed to be built in factory modules. None operates commercially in the US yet, and the first are expected around 2030 or later, so they matter little for near-term maintenance demand."
+ },
+ {
+  "id": "soc",
+  "term": "SOC code",
+  "aliases": "SOC code | SOC | SOC codes | Standard Occupational Classification",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "The Standard Occupational Classification, the federal coding of jobs used in OEWS. Examples are 49-9051 (electrical power-line installers and repairers), 47-2152 (plumbers, pipefitters and steamfitters) and 47-2073 (operating engineers and other construction equipment operators)."
+ },
+ {
+  "id": "srf",
+  "term": "State Revolving Funds (SRF)",
+  "aliases": "State Revolving Funds | SRF | SRFs | State Revolving Fund | state revolving fund | state revolving funds | CWSRF | DWSRF | Clean Water SRF | Drinking Water SRF | Clean Water State Revolving Fund | Drinking Water State Revolving Fund",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "The Clean Water and Drinking Water State Revolving Funds, through which EPA gives grants to states that then make low-interest loans, and sometimes grants, to water and sewer systems for capital projects. The IIJA added about $43 billion to them over five years, including $15 billion for lead service line replacement."
+ },
+ {
+  "id": "storm-restoration",
+  "term": "Storm restoration",
+  "aliases": "Storm restoration | storm restoration | storm response | Storm response | storm work | mutual assistance | Mutual assistance | mutual aid | emergency restoration | storm crews",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Emergency repair of power lines after hurricanes, ice storms and other severe weather, often by contractor crews traveling from other regions under mutual assistance arrangements. It is billed at premium time-and-materials rates, profitable but highly variable from year to year."
+ },
+ {
+  "id": "substation",
+  "term": "Substation",
+  "aliases": "Substation | substations",
+  "case_sensitive": false,
+  "category": "Electrical",
+  "definition": "A fenced site where transformers change voltage between transmission and distribution levels and circuit breakers and relays protect the lines. Substations are where most electrical testing work happens."
+ },
+ {
+  "id": "surety-bond",
+  "term": "Surety bond",
+  "aliases": "Surety bond | surety bonds | surety | sureties | performance bond | performance bonds | payment bond | payment bonds | payment and performance bonds | bid bond | bid bonds | bonding capacity | bonding line",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A guarantee from an insurance company that a contractor will finish the job (performance bond) and pay its suppliers and subcontractors (payment bond). Public projects usually require bonds, and a contractor's bonding capacity, which the surety sets from its balance sheet, caps how much public work it can take on."
+ },
+ {
+  "id": "susb",
+  "term": "SUSB (Statistics of US Businesses)",
+  "aliases": "SUSB | Statistics of US Businesses | Statistics of U.S. Businesses",
+  "case_sensitive": true,
+  "category": "Data & statistics",
+  "definition": "A Census Bureau dataset counting firms, locations, jobs and payroll by industry code and by company size (number of employees), and every five years by revenue size. It is the best public source for how many small companies versus scaled players an industry has."
+ },
+ {
+  "id": "tam",
+  "term": "TAM (total addressable market)",
+  "aliases": "TAM | total addressable market | Total addressable market | SAM | serviceable addressable market | Serviceable addressable market | serviceable available market",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "Total addressable market: annual spending on the services a business could sell if it won every customer. The serviceable addressable market (SAM) is the narrower part it can realistically reach given its geography and capabilities."
+ },
+ {
+  "id": "t-and-m",
+  "term": "Time-and-materials (T&M)",
+  "aliases": "Time-and-materials | T&M | time-and-materials | time and materials | Time and materials",
+  "case_sensitive": true,
+  "category": "Markets & finance",
+  "definition": "A contract that pays hourly rates for labor and equipment plus the cost of materials, usually with a markup. It is common for emergency and storm work, where the scope is unknown in advance, and carries little cost-overrun risk for the contractor."
+ },
+ {
+  "id": "timp",
+  "term": "TIMP",
+  "aliases": "TIMP | Transmission Integrity Management Program | transmission integrity management | Transmission integrity management | integrity management program | integrity management programs",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "PHMSA's integrity management rule for gas transmission pipelines (49 CFR Part 192, Subpart O), which requires operators to assess pipe in populated \"high consequence areas\" by in-line inspection, pressure testing or direct assessment and to repair what they find. It drives inspection, NDE and dig-and-repair work."
+ },
+ {
+  "id": "td",
+  "term": "Transmission and distribution (T&D)",
+  "aliases": "Transmission and distribution | T&D | transmission and distribution | transmission & distribution | Transmission & distribution",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "The two parts of the grid after the power plant: high-voltage transmission lines that move bulk power long distances, and lower-voltage distribution lines that deliver it to homes and businesses. Distribution has far more line miles and assets and accounts for most utility line maintenance."
+ },
+ {
+  "id": "trenchless",
+  "term": "Trenchless construction",
+  "aliases": "Trenchless construction | trenchless | trenchless rehabilitation | trenchless technology | trenchless technologies | trenchless methods | no-dig",
+  "case_sensitive": false,
+  "category": "Water",
+  "definition": "Methods for installing, renewing or replacing underground pipe without digging a continuous trench, including HDD, CIPP, sliplining and pipe bursting. They reduce street disruption and are now standard for urban sewer and water work."
+ },
+ {
+  "id": "trir",
+  "term": "TRIR (total recordable incident rate)",
+  "aliases": "TRIR | total recordable incident rate | Total recordable incident rate | total recordable rate | DART | DART rate | LTIR | lost time incident rate | Lost time incident rate",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "OSHA-recordable injuries and illnesses per 200,000 hours worked, roughly 100 full-time workers for a year. Utilities screen contractors on it, along with the DART rate (cases with days away, restricted work or job transfer) and lost-time rate, and BLS publishes industry averages for comparison."
+ },
+ {
+  "id": "ua",
+  "term": "UA (United Association)",
+  "aliases": "UA | United Association | United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry | pipefitters union | pipefitters' union",
+  "case_sensitive": true,
+  "category": "Labor & safety",
+  "definition": "The United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry, the union for plumbers, pipefitters, welders and HVAC technicians, including pipeline welders."
+ },
+ {
+  "id": "undergrounding",
+  "term": "Undergrounding",
+  "aliases": "Undergrounding | underground conversion | underground conversions | strategic undergrounding",
+  "case_sensitive": false,
+  "category": "Electrical",
+  "definition": "Moving overhead power lines into buried cable. It cuts wildfire and storm risk but costs several times more per mile than overhead line, so utilities target it to the highest-risk areas."
+ },
+ {
+  "id": "unit-price",
+  "term": "Unit-price contract",
+  "aliases": "Unit-price contract | unit-price | unit price contract | unit-price contracts | unit price contracts | unit pricing | unit rates",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "A contract that pays a fixed price per unit of work, such as per foot of pipe installed, per leak repaired or per pole replaced, so revenue depends on volume. It is the most common pricing in utility MSAs and rewards contractors whose crews are productive."
+ },
+ {
+  "id": "utility-locating",
+  "term": "Utility locating (811)",
+  "aliases": "Utility locating | line locating | locating services | locate ticket | locate tickets | locate requests | call 811 | 811 call | 811 ticket | 811 tickets | 811 system | one-call | one call center | one-call center | damage prevention | excavation damage | excavation damages",
+  "case_sensitive": false,
+  "category": "Labor & safety",
+  "definition": "Marking the location of buried pipes and cables with paint and flags before anyone digs, after a call to the national 811 \"call before you dig\" number. Utilities often outsource it to specialist contractors that handle millions of tickets a year, and locating errors lead to excavation damage, a leading cause of gas distribution incidents."
+ },
+ {
+  "id": "utility-scale",
+  "term": "Utility-scale solar and storage",
+  "aliases": "Utility-scale solar and storage | utility-scale | Utility-scale | utility-scale solar | Utility-scale solar | utility-scale battery | utility-scale batteries",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Solar or battery projects of about 1 megawatt or more that sell power to the grid, as opposed to rooftop systems. They need far less maintenance labor per megawatt than conventional plants, but each one adds substation and line assets that do need upkeep."
+ },
+ {
+  "id": "utilization",
+  "term": "Utilization (equipment and labor)",
+  "aliases": "Utilization | equipment utilization | fleet utilization | labor utilization | crew utilization | billable utilization | utilization rate | utilization rates",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "The share of available hours that equipment or workers are actually billed to customers. Higher utilization spreads fixed fleet and overhead costs over more revenue, and moving idle crews or trucks between business units is a common roll-up synergy claim."
+ },
+ {
+  "id": "vacuum-excavation",
+  "term": "Vacuum excavation",
+  "aliases": "Vacuum excavation | vacuum excavations | vacuum excavator | vacuum excavators | vac-ex | vac truck | vac trucks | air excavation | air-vac | soft dig | soft digging | soft excavation | potholing | daylighting",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "Any excavation that removes soil by vacuum, after loosening it with water (hydro-excavation) or compressed air. It is the standard \"soft dig\" method for potholing, which exposes existing utilities to confirm their exact location before drilling or digging."
+ },
+ {
+  "id": "vegetation-management",
+  "term": "Vegetation management",
+  "aliases": "Vegetation management | vegetation management | line clearance | Line clearance | line-clearance | tree trimming | Tree trimming | right-of-way clearing | right-of-way maintenance | utility forestry | Utility forestry | integrated vegetation management | IVM",
+  "case_sensitive": true,
+  "category": "Electrical",
+  "definition": "Trimming and removing trees and brush near power lines and keeping rights-of-way clear, usually on multi-year cycles. It is one of utilities' largest O&M costs, is mandatory for major transmission lines under NERC rules, and has grown sharply with wildfire plans; Asplundh is the largest provider."
+ },
+ {
+  "id": "wmp",
+  "term": "Wildfire mitigation plan (WMP)",
+  "aliases": "Wildfire mitigation plan | WMP | WMPs | wildfire mitigation plan | wildfire mitigation plans | Wildfire mitigation plans | wildfire mitigation | Wildfire mitigation",
+  "case_sensitive": true,
+  "category": "Policy & regulation",
+  "definition": "A utility plan, required in California and a growing number of other western states, for reducing the risk that power lines start wildfires through vegetation clearing, line inspection, covered conductor and undergrounding. These plans have sharply increased vegetation management spending in the West."
+ },
+ {
+  "id": "working-capital",
+  "term": "Working capital",
+  "aliases": "Working capital | net working capital | NWC | working-capital",
+  "case_sensitive": false,
+  "category": "Markets & finance",
+  "definition": "Cash tied up in running the business, mainly receivables and unbilled work minus payables. Service contractors are paid after doing the work, so fast growth absorbs cash even when profitable."
+ },
+ {
+  "id": "yellow-iron",
+  "term": "Yellow iron",
+  "aliases": "Yellow iron | yellow-iron | earthmoving equipment",
+  "case_sensitive": false,
+  "category": "Equipment",
+  "definition": "Industry slang for general construction equipment such as excavators, backhoes, loaders and skid steers. It is the most interchangeable equipment across gas, water and electric underground work and is widely available to rent."
+ }
+]

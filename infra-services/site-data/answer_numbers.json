@@ -1,0 +1,482 @@
+[
+ {
+  "id": "q1n00",
+  "q": 1,
+  "order": 0,
+  "label": "Quanta FY2025 revenue / adj. EBITDA margin",
+  "value": "$28.48B / ~10.1%",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526058069/d101511dex991.htm"
+ },
+ {
+  "id": "q1n01",
+  "q": 1,
+  "order": 1,
+  "label": "Centuri FY2025 adj. EBITDA margin (closest public analogue)",
+  "value": "8.3% on $2.98B",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1981599/000198159926000017/centuriholdingsincex-991xq.htm"
+ },
+ {
+  "id": "q1n02",
+  "q": 1,
+  "order": 2,
+  "label": "Shermco sale to Blackstone (announced 2025-08-21)",
+  "value": "~$1.6B",
+  "source_url": "https://www.blackstone.com/news/press/blackstone-announces-agreement-to-acquire-shermco-for-approximately-1-6-billion/"
+ },
+ {
+  "id": "q1n03",
+  "q": 1,
+  "order": 3,
+  "label": "Pike majority sale to TPG Rise Climate (Dec 2025)",
+  "value": ">$5B EV incl. debt (press-reported, unconfirmed)",
+  "source_url": "https://news.bgov.com/private-equity/tpg-is-said-to-near-deal-for-infrastructure-firm-pike-corp"
+ },
+ {
+  "id": "q1n04",
+  "q": 1,
+  "order": 4,
+  "label": "Artera's 2020 purchase of Miller Pipeline + Minnesota Limited",
+  "value": "$850M; S&P CCC+ by Aug 2022",
+  "source_url": "https://www.centerpointenergy.com/en-us/corporate/about-us/news/1312"
+ },
+ {
+  "id": "q1n05",
+  "q": 1,
+  "order": 5,
+  "label": "Williams Industrial Chapter 11 asset sale (2023)",
+  "value": "$60M",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1136294/000110465923083246/tm2321858d1_ex99-1.htm"
+ },
+ {
+  "id": "q1n06",
+  "q": 1,
+  "order": 6,
+  "label": "Badger (owned hydrovac fleet) adj. EBITDA margin",
+  "value": "23.8% on $831.7M",
+  "source_url": "https://ir.badgerinc.com/English/news/news-details/2026/Badger-Delivers-Solid-Growth-in-2025-and-Announces-Record-Fleet-Build-for-2026/default.aspx"
+ },
+ {
+  "id": "q1n07",
+  "q": 1,
+  "order": 7,
+  "label": "Sponsor-backed platforms identified in the four sub-segments",
+  "value": "26",
+  "source_url": ""
+ },
+ {
+  "id": "q2n00",
+  "q": 2,
+  "order": 0,
+  "label": "Movable field headcount overlap, gas-water",
+  "value": "~53% (est.)",
+  "source_url": "https://www.bls.gov/oes/2023/may/naics4_237100.htm"
+ },
+ {
+  "id": "q2n01",
+  "q": 2,
+  "order": 1,
+  "label": "Movable overlap, gas-T&D and water-T&D",
+  "value": "~27% (est.)",
+  "source_url": "https://www.bls.gov/oes/2023/may/naics4_237100.htm"
+ },
+ {
+  "id": "q2n02",
+  "q": 2,
+  "order": 2,
+  "label": "Movable overlap, T&D-power-gen",
+  "value": "~25% (est.)",
+  "source_url": "https://www.bls.gov/oes/2023/may/naics4_237100.htm"
+ },
+ {
+  "id": "q2n03",
+  "q": 2,
+  "order": 3,
+  "label": "Movable overlap, gas or water with power-gen",
+  "value": "~15% (est.)",
+  "source_url": "https://www.bls.gov/oes/2023/may/naics4_237100.htm"
+ },
+ {
+  "id": "q2n04",
+  "q": 2,
+  "order": 4,
+  "label": "Fleet value usable by the other unit: gas-water / gas-T&D / T&D-power-gen",
+  "value": "~65% / ~30% / ~20% (est.)",
+  "source_url": "https://protips.vermeer.com/underground/2026/09/07/potholing-best-practices-daylighting-buried-utilities-with-a-vacuum-excavator/"
+ },
+ {
+  "id": "q2n05",
+  "q": 2,
+  "order": 5,
+  "label": "Lineworker apprenticeship",
+  "value": "7,000 hours (~3.5 years)",
+  "source_url": "https://lni.wa.gov/licensing-permits/apprenticeship/agenda-docs/25NorthwestLine.pdf"
+ },
+ {
+  "id": "q2n06",
+  "q": 2,
+  "order": 6,
+  "label": "Power-line installers: utility contractors vs utilities (May 2023)",
+  "value": "36,320 vs 57,100",
+  "source_url": "https://www.bls.gov/oes/current/oes499051.htm"
+ },
+ {
+  "id": "q2n07",
+  "q": 2,
+  "order": 7,
+  "label": "Value of cross-unit crew flex",
+  "value": "<50 bps of revenue (est.)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1981599/000198159925000008/ctri-20241229.htm"
+ },
+ {
+  "id": "q3n00",
+  "q": 3,
+  "order": 0,
+  "label": "Caribou-Palermo line (Camp Fire) in service since",
+  "value": "1921",
+  "source_url": "https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/"
+ },
+ {
+  "id": "q3n01",
+  "q": 3,
+  "order": 1,
+  "label": "PG&E transmission towers, average age (2017)",
+  "value": "68 yrs",
+  "source_url": "https://gvwire.com/2019/07/11/report-pge-ignored-repairs-on-aging-power-lines/"
+ },
+ {
+  "id": "q3n02",
+  "q": 3,
+  "order": 2,
+  "label": "Gas distribution pipe installed before 1970",
+  "value": "28% (PHMSA, 2021)",
+  "source_url": "https://primis-meetings.phmsa.dot.gov/archive/Agenda_9_PAC_Pipeline_Industry_Performance_10202021.pdf"
+ },
+ {
+  "id": "q3n03",
+  "q": 3,
+  "order": 3,
+  "label": "Cast/wrought iron gas mains left (2023) and years to clear",
+  "value": "~16,337 mi; ~11-16 yrs at 1,000-1,500 mi/yr",
+  "source_url": "https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2025-01/PHMSA%20Final%20Rule%20-%20Gas%20Pipeline%20Leak%20Detection%20and%20Repair%20-%20As%20submitted.pdf"
+ },
+ {
+  "id": "q3n04",
+  "q": 3,
+  "order": 4,
+  "label": "Distribution transformers older than 33 years",
+  "value": "50-55% of 60-80M units",
+  "source_url": "https://nrel.gov/docs/fy25osti/92076.pdf"
+ },
+ {
+  "id": "q3n05",
+  "q": 3,
+  "order": 5,
+  "label": "Distribution transformer replacements + additions",
+  "value": "2.5-3% of units per year (~17-22 yrs to turn over the old half)",
+  "source_url": "https://nrel.gov/docs/fy25osti/92076.pdf"
+ },
+ {
+  "id": "q3n06",
+  "q": 3,
+  "order": 6,
+  "label": "Large power transformer average age (2014)",
+  "value": "38-40 yrs vs ~40-yr design life",
+  "source_url": "https://www.energy.gov/sites/default/files/2014/04/f15/LPTStudyUpdate-040914.pdf"
+ },
+ {
+  "id": "q3n07",
+  "q": 3,
+  "order": 7,
+  "label": "Water main break rate (US + Canada, 2023)",
+  "value": "11.1 per 100 mi/yr; ~260K breaks; $2.6B/yr repairs",
+  "source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2024/04/breaking-water-mains-present-us-canada-with-%24452b-problem"
+ },
+ {
+  "id": "q3n08",
+  "q": 3,
+  "order": 8,
+  "label": "Water main replacement cycle vs average failure age",
+  "value": "~125 yrs vs ~53 yrs",
+  "source_url": "https://trenchlesstechnology.com/last-word-the-water-main-report-card/"
+ },
+ {
+  "id": "q3n09",
+  "q": 3,
+  "order": 9,
+  "label": "Maintained wood pole life vs book life",
+  "value": "70-80+ yrs vs ~35 yrs",
+  "source_url": "https://woodpoles.org/issues/service-life/"
+ },
+ {
+  "id": "q3n10",
+  "q": 3,
+  "order": 10,
+  "label": "Coal unit average age / retirement age",
+  "value": "45 yrs / ~50 yrs",
+  "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=50658"
+ },
+ {
+  "id": "q4n00",
+  "q": 4,
+  "order": 0,
+  "label": "Named private companies screened -> candidates kept",
+  "value": "85 -> 51",
+  "source_url": ""
+ },
+ {
+  "id": "q4n01",
+  "q": 4,
+  "order": 1,
+  "label": "Platform-grade candidates by unit",
+  "value": "14 (gas 3, T&D 2, power-gen 5, water 4)",
+  "source_url": ""
+ },
+ {
+  "id": "q4n02",
+  "q": 4,
+  "order": 2,
+  "label": "Platform-grade and confirmed independent",
+  "value": "3 (Day & Zimmermann, Structural Integrity Associates, Carylon)",
+  "source_url": ""
+ },
+ {
+  "id": "q4n03",
+  "q": 4,
+  "order": 3,
+  "label": "Sponsor-backed platforms already active",
+  "value": "26",
+  "source_url": ""
+ },
+ {
+  "id": "q4n04",
+  "q": 4,
+  "order": 4,
+  "label": "Gas distribution contractors' trade group membership (DCA)",
+  "value": "~240 member companies incl. suppliers",
+  "source_url": "https://directory.dcaweb.org/"
+ },
+ {
+  "id": "q4n05",
+  "q": 4,
+  "order": 5,
+  "label": "Danella OSHA trench investigations since 2017",
+  "value": "6",
+  "source_url": "https://www.nbcphiladelphia.com/news/local/ruptured-gas-main-cloud-philly-logan-section/4120397/?amp=1"
+ },
+ {
+  "id": "q4n06",
+  "q": 4,
+  "order": 6,
+  "label": "Realistic names to pursue now",
+  "value": "~1-4 (+3-6 gas regionals if size checks out)",
+  "source_url": ""
+ },
+ {
+  "id": "q5n00",
+  "q": 5,
+  "order": 0,
+  "label": "US electricity consumption",
+  "value": "4,195 BkWh (2025) -> 4,288 (2026F) -> 4,356 (2027F)",
+  "source_url": "https://www.eia.gov/outlooks/steo/archives/oct26.pdf"
+ },
+ {
+  "id": "q5n01",
+  "q": 5,
+  "order": 1,
+  "label": "Total electricity use, 2015-2021",
+  "value": "~flat at ~3.86-4.0 trillion kWh",
+  "source_url": "https://www.eia.gov/electricity/annual/html/epa_02_02.html"
+ },
+ {
+  "id": "q5n02",
+  "q": 5,
+  "order": 2,
+  "label": "Residential use per customer, 2009-2019",
+  "value": "-2.3%",
+  "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=46276"
+ },
+ {
+  "id": "q5n03",
+  "q": 5,
+  "order": 3,
+  "label": "Data center electricity use",
+  "value": "176 TWh (2023, 4.4%) -> 325-580 TWh (2028)",
+  "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
+ },
+ {
+  "id": "q5n04",
+  "q": 5,
+  "order": 4,
+  "label": "US population growth, 2025",
+  "value": "+0.5% to 341.8M; net migration 2.7M -> 1.3M",
+  "source_url": "https://census.gov/newsroom/press-releases/2026/population-growth-slows.html"
+ },
+ {
+  "id": "q5n05",
+  "q": 5,
+  "order": 5,
+  "label": "Investor-owned electric utility capex",
+  "value": "$139.8B (2020) -> ~$207.9B (2025E); >$1.1T 2025-29",
+  "source_url": "https://www.eei.org/News/news/All/electric-companies-to-invest-nearly-$208b-in-2025-to-strengthen-grid-and-drive-economic-growth"
+ },
+ {
+  "id": "q5n06",
+  "q": 5,
+  "order": 6,
+  "label": "Gas utility construction capex",
+  "value": "$32.7B (2022) -> $49.1B (2023)",
+  "source_url": "https://www.aga.org/research-policy/resource-library/gas-utility-construction-capital-expenditure"
+ },
+ {
+  "id": "q5n07",
+  "q": 5,
+  "order": 7,
+  "label": "Nuclear license renewals",
+  "value": "18 in 15 months (~17 GW)",
+  "source_url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-049.pdf"
+ },
+ {
+  "id": "q5n08",
+  "q": 5,
+  "order": 8,
+  "label": "IIJA supplemental SRF funding, final year FY2026",
+  "value": "$2,603M per fund (clean water, drinking water)",
+  "source_url": "https://www.everycrsreport.com/reports/IF13177.html"
+ },
+ {
+  "id": "q6n00",
+  "q": 6,
+  "order": 0,
+  "label": "Outsourced MRO TAM, four units",
+  "value": "$44-81B/yr (est.)",
+  "source_url": "https://www.aga.org/safety"
+ },
+ {
+  "id": "q6n01",
+  "q": 6,
+  "order": 1,
+  "label": "Gas outsourced MRO",
+  "value": "$12-20B/yr (est.)",
+  "source_url": "https://www.aga.org/safety"
+ },
+ {
+  "id": "q6n02",
+  "q": 6,
+  "order": 2,
+  "label": "T&D outsourced MRO",
+  "value": "$20-35B/yr (est.)",
+  "source_url": "https://www.foley.com/insights/publications/2026/09/the-grids-bottleneck-isnt-just-money-its-materials/"
+ },
+ {
+  "id": "q6n03",
+  "q": 6,
+  "order": 3,
+  "label": "Power-gen outsourced maintenance",
+  "value": "$4-8B/yr of ~$13B (est.)",
+  "source_url": "https://eia.gov/electricity/annual/html/epa_08_04.html"
+ },
+ {
+  "id": "q6n04",
+  "q": 6,
+  "order": 4,
+  "label": "Water outsourced MRO",
+  "value": "$8-18B/yr (est.)",
+  "source_url": "https://nacwa.org/news-publications/news-detail/2018/10/23/congressional-budget-office-reveals-public-spending-trends-for-water-infrastructure-and-transportation-in-new-report"
+ },
+ {
+  "id": "q6n05",
+  "q": 6,
+  "order": 5,
+  "label": "Illustrative EBITDA margin at $50M / $150M / $500M revenue",
+  "value": "11.0% / 9.5% / 11.3% (est.)",
+  "source_url": "https://www.businesswire.com/news/home/20260225110463/en"
+ },
+ {
+  "id": "q6n06",
+  "q": 6,
+  "order": 6,
+  "label": "Net margin gain from scale, $50M -> $500M",
+  "value": "~+0.3 pts (est.)",
+  "source_url": ""
+ },
+ {
+  "id": "q6n07",
+  "q": 6,
+  "order": 7,
+  "label": "Lower-middle-market entry multiples (9M 2025, all industries)",
+  "value": "6.4x / 6.8x / 8.3x by deal size",
+  "source_url": "https://capitalpad.com/lower-middle-market-ebitda-multiples/"
+ },
+ {
+  "id": "q6n08",
+  "q": 6,
+  "order": 8,
+  "label": "Scaled utility-services multiples",
+  "value": "11-16x EV/EBITDA (public peer median 15.2x)",
+  "source_url": "https://axiagrowth.com/resources/industries/energy-infrastructure/electrical-infrastructure-contracting"
+ },
+ {
+  "id": "q6n09",
+  "q": 6,
+  "order": 9,
+  "label": "Pre-tax cash yield at 7x entry, 11% margin, 3-4% fleet capex",
+  "value": "~9.7% (est.)",
+  "source_url": ""
+ },
+ {
+  "id": "q7n00",
+  "q": 7,
+  "order": 0,
+  "label": "Utility-system construction businesses, NAICS 2371 (2017)",
+  "value": "18,877 firms; 570,952 employees",
+  "source_url": "https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf"
+ },
+ {
+  "id": "q7n01",
+  "q": 7,
+  "order": 1,
+  "label": "Same count in the 2012 Economic Census",
+  "value": "25,227 firms (-25% by 2017)",
+  "source_url": "https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf"
+ },
+ {
+  "id": "q7n02",
+  "q": 7,
+  "order": 2,
+  "label": "Modeled industry size",
+  "value": "~17,800 firms; ~$158B revenue",
+  "source_url": "https://verticaliq.com/product/utility-system-construction/"
+ },
+ {
+  "id": "q7n03",
+  "q": 7,
+  "order": 3,
+  "label": "Gas distribution contractors' trade group (DCA)",
+  "value": "~240 member companies incl. suppliers",
+  "source_url": "https://directory.dcaweb.org/"
+ },
+ {
+  "id": "q7n04",
+  "q": 7,
+  "order": 4,
+  "label": "Pipeline construction firms with 500+ staff (2005)",
+  "value": "3.2% of firms, 52.8% of jobs",
+  "source_url": "https://webarchive.library.unt.edu/eot2008/20080917233023/http:/www.census.gov/epcd/susb/latest/us/US23.HTM"
+ },
+ {
+  "id": "q7n05",
+  "q": 7,
+  "order": 5,
+  "label": "Scaled players (revenue around or above $1B, or comparable deal value)",
+  "value": "15-20 named",
+  "source_url": ""
+ },
+ {
+  "id": "q7n06",
+  "q": 7,
+  "order": 6,
+  "label": "Quanta + MasTec share of the $158B pool",
+  "value": "~27% (rough)",
+  "source_url": "https://verticaliq.com/product/utility-system-construction/"
+ }
+]

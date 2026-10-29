@@ -1,0 +1,66 @@
+[
+ {
+  "id": "c00",
+  "order": 0,
+  "claim": "25% of US natural gas distribution mains are more than 50 years old",
+  "verdict": "Mostly true",
+  "better_statement": "PHMSA (2021) reports that 28% of the US gas distribution system was installed before 1970, so that pipe is now 56+ years old. PHMSA-cited data count about 423K miles of pre-1970 mains out of about 1.3M miles, including about 87K miles of unknown vintage. The riskiest material, cast and wrought iron, is down to about 1% of mains (about 16K miles) and is being retired at about 1,000 miles a year. Most of the remaining work is in 1950s-70s bare steel and early plastic, not cast iron. Re-pull the CY2024 by-decade inventory before publishing.",
+  "source_url": "https://primis-meetings.phmsa.dot.gov/archive/Agenda_9_PAC_Pipeline_Industry_Performance_10202021.pdf"
+ },
+ {
+  "id": "c01",
+  "order": 1,
+  "claim": "70% of the US electric grid is over 25 years old",
+  "verdict": "Misleading",
+  "better_statement": "DOE (2022) says more than 70% of transmission lines and power transformers are over 25 years old. The statistic dates back to at least 2006, it does not cover the whole grid, and 25 years is well inside a 40-60+ year design life. A stronger, current figure is NREL's: about 50-55% of the 60-80M US distribution transformers are older than 33 years, and only 2.5-3% of units are added or replaced each year.",
+  "source_url": "https://nrel.gov/docs/fy25osti/92076.pdf"
+ },
+ {
+  "id": "c02",
+  "order": 2,
+  "claim": "Some US water infrastructure is now more than a century old",
+  "verdict": "True",
+  "better_statement": "The claim is true but unquantified. A 2023 Utah State survey of 802 utilities found 11.1 main breaks per 100 miles per year, about 260,000 breaks and $2.6B of repairs annually, and $452B of pipe past its useful life. Mains are replaced on a ~125-year cycle against an average failure age of ~53 years. In Philadelphia, about 15% of mains were laid before 1900.",
+  "source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2024/04/breaking-water-mains-present-us-canada-with-%24452b-problem"
+ },
+ {
+  "id": "c03",
+  "order": 3,
+  "claim": "$625B drinking water infrastructure investment need over 20 years",
+  "verdict": "True",
+  "better_statement": "EPA's 7th DWINSA (2021 survey data, released 2023) puts the 20-year drinking-water need at $625B, up 32% from $472.6B, with $420.8B for transmission and distribution. It is a needs estimate, not funded spending. FY2026 was the last year of IIJA supplemental SRF money, and EPA's Nov 2025 update cut the lead-service-line estimate to about 4M from 9.2M.",
+  "source_url": "https://asdwa.org/2023/09/07/epa-sends-7th-drinking-water-infrastructure-needs-report-to-congress"
+ },
+ {
+  "id": "c04",
+  "order": 4,
+  "claim": "20,000+ service providers in the US",
+  "verdict": "Mostly true",
+  "better_statement": "The Census counted 18,877 utility-system construction businesses (NAICS 2371) with 570,952 employees in 2017, down from 25,227 in 2012. That count includes new construction and telecom. The relevant pool is far smaller: the gas distribution contractors' trade group (DCA) has ~240 members, and platform-quality maintenance firms number in the low hundreds (est.). Say: about 19,000 utility-system contractors (Census), mostly small.",
+  "source_url": "https://nuca.com/wp-content/uploads/2026/03/Fact-Sheet2026.pdf"
+ },
+ {
+  "id": "c05",
+  "order": 5,
+  "claim": "<10 meaningful scaled players",
+  "verdict": "False",
+  "better_statement": "At least 15-20 scaled public or sponsor-backed consolidators operate across these sub-segments. They include Quanta ($28.5B), MasTec ($14.3B), Primoris (~$7.6B), Asplundh, MYR ($3.7B), Centuri ($3.0B), Artera (>$2.6B), Azuria/Inframark (>$2.5B), Davey (~$1.95B), Pike (>$5B EV reported), Day & Zimmermann, Michels, Shermco (~$1.6B deal), Badger, Mistras and Team. On top of these, 26 sponsor-backed platforms are buying add-ons. The claim holds only per sub-segment, and no one spans gas, power and water at scale.",
+  "source_url": "https://www.blackstone.com/news/press/blackstone-announces-agreement-to-acquire-shermco-for-approximately-1-6-billion/"
+ },
+ {
+  "id": "c06",
+  "order": 6,
+  "claim": "Employee and equipment utilization across units: crews flex across segments and specialized assets move across jobs and regions",
+  "verdict": "Misleading",
+  "better_statement": "Credentials and unions keep crafts apart:\n• Lineworkers need ~7,000-hour apprenticeships and OSHA 1910.269 qualification.\n• Gas crews need PHMSA operator qualifications that are specific to each utility.\n• Unions split by trade: UA/DCA for gas, IBEW for line work.\n• Centuri reports its segments by trade and labor regime.\n\nAn estimated ~15-27% of field headcount and ~10-30% of fleet value can move between gas or water and power. Gas and water underground work is the exception, at about 53% of headcount and 65% of fleet value (est.). Specialized assets do move across regions within one unit, as storm mobilization shows.",
+  "source_url": "https://www.bls.gov/oes/current/oes499051.htm"
+ },
+ {
+  "id": "c07",
+  "order": 7,
+  "claim": "Wallet share, shared branch overhead, material and equipment purchases, insurance and benefits",
+  "verdict": "Mostly true",
+  "better_statement": "These synergies are real but modest. Estimated as a share of revenue:\n• density and wallet share within a unit: 100-300 bps\n• purchasing: 50-150 bps\n• back office and safety: 50-100 bps\n• insurance: 30-100 bps\n• shared fleet shops: 20-50 bps\n\nUtilities often supply the major materials, and workers' comp is priced by trade class. Holdco costs (~1.2-2% of revenue) and integration (~0.7 pts) offset much of the gain, so underwrite a net margin gain of only ~0-1 point (est.).",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1981599/000198159925000008/ctri-20241229.htm"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "id": "y0",
+  "order": 0,
+  "lever": "Within-unit density / wallet share",
+  "verdict": "Real",
+  "quant": "100-300 bps of revenue",
+  "evidence": "Storm and MSA mobilization within electric (Centuri, Quanta)"
+ },
+ {
+  "id": "y1",
+  "order": 1,
+  "lever": "Purchasing (vehicles, heavy equipment, fuel, PPE)",
+  "verdict": "Real",
+  "quant": "50-150 bps of revenue",
+  "evidence": "Generic fleet shared across all units"
+ },
+ {
+  "id": "y2",
+  "order": 2,
+  "lever": "Back office / safety / qualification records",
+  "verdict": "Real",
+  "quant": "50-100 (before holdco cost) bps of revenue",
+  "evidence": "192.807 record-keeping burden"
+ },
+ {
+  "id": "y3",
+  "order": 3,
+  "lever": "Insurance and benefits",
+  "verdict": "Real",
+  "quant": "30-100 bps of revenue",
+  "evidence": "Workers' comp priced by trade class"
+ },
+ {
+  "id": "y4",
+  "order": 4,
+  "lever": "Fleet maintenance shops (same city)",
+  "verdict": "Real",
+  "quant": "20-50 bps of revenue",
+  "evidence": "Shared chassis types"
+ },
+ {
+  "id": "y5",
+  "order": 5,
+  "lever": "Gas with water crews and equipment",
+  "verdict": "Partial",
+  "quant": "n/a",
+  "evidence": "Miller Pipeline/Artera; ~53% movable headcount"
+ },
+ {
+  "id": "y6",
+  "order": 6,
+  "lever": "T&D substation with power-gen testing",
+  "verdict": "Partial",
+  "quant": "n/a",
+  "evidence": "NETA techs serve both"
+ },
+ {
+  "id": "y7",
+  "order": 7,
+  "lever": "Crew flex between gas/water and T&D/power-gen",
+  "verdict": "Overstated",
+  "quant": "<50 bps of revenue",
+  "evidence": "15-27% movable, ~0 in union markets; Centuri segments; no filing disclosures"
+ },
+ {
+  "id": "y8",
+  "order": 8,
+  "lever": "Specialized assets moving across units",
+  "verdict": "Overstated",
+  "quant": "~0 bps of revenue",
+  "evidence": "Aerial, CCTV/pipe-relining, leak-survey, NDE assets are unit-specific"
+ }
+]

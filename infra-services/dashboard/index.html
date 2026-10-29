@@ -1,0 +1,2195 @@
+<style>
+/* Layout: one reading column of sections; summary tiles first, then charts and tables in cards. */
+.tx { display: flex; flex-direction: column; gap: calc(var(--cds-gap-xl) * 1.5); font-family: var(--font-anthropic-sans); color: var(--color-fg); max-width: 140rem; margin-inline: auto; }
+.tx h1, .tx h2, .tx h3, .tx p { margin: 0; }
+.tx h1, .tx h2, .tx h3 { text-wrap: balance; }
+.tx a { color: inherit; }
+.tx a:focus-visible, .tx button:focus-visible, .tx input:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.tx-muted { color: var(--color-fg-muted); }
+
+.tx-head { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.tx-eyebrow { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .05em; text-transform: uppercase; }
+.tx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: calc(var(--cds-font-size-title) * 1.45); line-height: 1.1; }
+.tx-lede { font-size: var(--cds-font-size-heading); line-height: 1.45; max-width: 62ch; }
+.tx-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); padding-top: var(--cds-pad-xs); }
+.tx-nav button { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; cursor: pointer; }
+.tx-nav button:hover { border-color: var(--color-fg-muted); }
+
+.tx-section { display: flex; flex-direction: column; gap: var(--cds-gap-md); scroll-margin-top: var(--cds-gap-lg); }
+.tx-section-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.tx-h2 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.2; }
+.tx-h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.tx-sub { color: var(--color-fg-muted); max-width: 70ch; line-height: 1.45; }
+
+.tx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-span { grid-column: 1 / -1; }
+.tx-card-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.tx-card-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
+
+.tx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11.5rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+.tx-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
+.tx-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tx-unit { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+.tx-unit-word { margin-left: .25em; }
+.tx-tile-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.4; }
+.tx-tile-prior { font-size: var(--cds-font-size-caption); color: var(--color-fg); }
+
+.tx-chip { display: inline-flex; align-items: center; font-size: var(--cds-font-size-caption); line-height: 1.5; padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); white-space: nowrap; }
+.tx-chip[data-level="High"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--color-warn) 55%, transparent); background: color-mix(in srgb, var(--color-warn) 22%, transparent); }
+.tx-chip[data-level="Medium"] { color: var(--color-fg); background: color-mix(in srgb, var(--color-warn) 9%, transparent); }
+.tx-chip[data-stance="Tailwind"] { color: var(--color-ok); border-color: color-mix(in srgb, var(--color-ok) 45%, transparent); }
+.tx-chip[data-stance="Risk"] { color: var(--color-bad); border-color: color-mix(in srgb, var(--color-bad) 45%, transparent); }
+.tx-chip[data-stance="Opportunity"] { color: var(--color-warn); border-color: color-mix(in srgb, var(--color-warn) 55%, transparent); }
+.tx-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+
+.tx-events { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-event { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-event-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-event-date { font-variant-numeric: tabular-nums; margin-right: auto; }
+.tx-event-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
+.tx-event-detail { line-height: 1.45; }
+.tx-event-impl { line-height: 1.45; padding-top: var(--cds-pad-sm); border-top: 1px solid var(--color-border-line); }
+.tx-event-impl .tx-so { font-weight: var(--cds-font-weight-medium); }
+.tx-src { display: flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: auto; }
+.tx-conf { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); border: 1px solid var(--color-border-line); border-radius: 4px; padding: 0 4px; line-height: 1.4; color: var(--color-fg-muted); }
+
+.tx-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+.tx-item { display: grid; grid-template-columns: minmax(4.5rem, 6.5rem) minmax(0, 1fr); gap: var(--cds-gap-md); padding-block: var(--cds-pad-sm); border-top: 1px solid var(--color-border-line); }
+.tx-item:first-child { border-top: 0; }
+.tx-item-date { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; padding-top: 2px; }
+.tx-item-body { display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+.tx-item-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-sm); }
+.tx-item-title { font-weight: var(--cds-font-weight-medium); }
+.tx-item-text { line-height: 1.45; }
+.tx-pol-dot { display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; margin-right: .4rem; background: var(--color-fg-muted); vertical-align: middle; }
+.tx-item[data-kind="Tariff"] .tx-pol-dot { background: var(--color-warn); }
+.tx-item[data-kind="Ban"] .tx-pol-dot { background: var(--color-bad); }
+.tx-item[data-kind="Support"] .tx-pol-dot { background: var(--color-ok); }
+.tx-today { display: flex; align-items: center; gap: var(--cds-gap-sm); padding-block: var(--cds-pad-xs); font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.tx-today::after { content: ""; flex: 1; border-top: 1px dashed var(--color-fg-muted); }
+
+.tx-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md) var(--cds-gap-lg); }
+.tx-fig { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding-top: var(--cds-pad-sm); border-top: 1px solid var(--color-border-line); }
+.tx-fig-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
+.tx-fig-value { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-weight: 400; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.tx-fig-unit { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+.tx-fig-prior { font-size: var(--cds-font-size-caption); color: var(--color-fg); }
+.tx-fig-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.4; }
+
+.tx-chart { position: relative; width: 100%; min-width: 0; }
+.tx-chart-cap { min-height: 38rem; }
+.tx-chart-year { min-height: 13.75rem; }
+.tx-chart-map { min-height: 16rem; }
+.tx-chart-lead { min-height: 16.5rem; }
+.tx-chart-def { min-height: 12.5rem; }
+.tx-chart-ppi { min-height: 13.75rem; }
+.tx-chart-capex { min-height: 6rem; }
+.tx-svg { display: block; width: 100%; height: auto; }
+.tx-svg text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.tx-svg .tx-lbl { fill: var(--color-fg); }
+.tx-svg .tx-val { fill: var(--color-fg); }
+.tx-svg .tx-lane { fill: var(--color-fg-muted); letter-spacing: .06em; }
+.tx-svg .tx-row.is-hover .tx-lbl { font-weight: var(--cds-font-weight-medium); }
+.tx-tip { position: absolute; z-index: 3; max-width: 18rem; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.45; pointer-events: none; color: var(--color-fg); }
+.tx-tip-head { color: var(--cds-text-secondary); font-weight: var(--cds-font-weight-medium); }
+.tx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.tx-swatch { width: .65rem; height: .65rem; border-radius: 50%; display: inline-block; }
+.tx-undated { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.tx-undated .tx-chip { color: var(--color-fg); }
+.tx-sentence { line-height: 1.45; }
+.tx .tx-sentence b, .tx .tx-strong { font-weight: var(--cds-font-weight-medium); }
+.tx-capex-group { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.tx-capex-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .05em; }
+.tx-rates { display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); }
+.tx-rates .tx-rate-v { font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+
+.tx-fail { display: flex; align-items: center; justify-content: center; gap: .5rem; min-height: inherit; height: 100%; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.tx-fail-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.tx [data-dash-source-state=empty] { color: transparent; }
+.tx [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+.tx-table-wrap { overflow: auto; max-height: 34rem; min-width: 0; }
+.tx-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.tx-table th { position: sticky; top: 0; z-index: 1; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.tx-table th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.tx-table th button::after { content: " ↕"; opacity: .4; }
+.tx-table th[aria-sort="ascending"] button::after { content: " ↑"; opacity: 1; }
+.tx-table th[aria-sort="descending"] button::after { content: " ↓"; opacity: 1; }
+.tx-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; line-height: 1.4; }
+.tx-table td.tx-num, .tx-table th.tx-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tx-table td.tx-first { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.tx-table tr.is-new td { background: color-mix(in srgb, var(--color-warn) 12%, transparent); }
+.tx-search { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); width: min(100%, 22rem); }
+@media (max-width: 40rem) { .tx-hide-sm { display: none; } }
+
+.tx-bottom { display: flex; flex-direction: column; gap: var(--cds-gap-xs); padding: var(--cds-pad-lg); border-radius: var(--cds-radius); background: color-mix(in srgb, var(--color-warn) 10%, var(--color-panel)); border: 1px solid var(--color-border-line); }
+.tx-bottom-label { font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .05em; color: var(--color-fg-muted); }
+.tx-bottom-text { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.45; max-width: 70ch; }
+.tx-imp { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-imp-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-imp-card p { line-height: 1.5; white-space: pre-line; }
+.tx-pre { white-space: pre-line; }
+.tx-seg { display: grid; grid-template-columns: minmax(5rem, 6rem) minmax(0, 1fr); gap: var(--cds-gap-md); padding-block: var(--cds-pad-md); border-top: 1px solid var(--color-border-line); }
+.tx-seg:first-child { border-top: 0; }
+.tx-seg-name { font-weight: var(--cds-font-weight-medium); }
+.tx-seg-why { color: var(--color-fg-muted); line-height: 1.5; font-size: var(--cds-font-size-body); }
+.tx-chip[data-attr="High"] { color: var(--color-ok); border-color: color-mix(in srgb, var(--color-ok) 50%, transparent); background: color-mix(in srgb, var(--color-ok) 12%, transparent); }
+.tx-chip[data-attr="Medium"] { color: var(--color-warn); border-color: color-mix(in srgb, var(--color-warn) 50%, transparent); }
+.tx-chip[data-attr="Low"] { color: var(--color-fg-muted); }
+.tx-qa { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-qa-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-qa-q { font-weight: var(--cds-font-weight-medium); line-height: 1.35; }
+.tx-qa-a { line-height: 1.5; color: var(--color-fg); }
+.tx-verdicts { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.tx-table td.v-on_track, .tx-table td.v-operating { color: var(--color-ok); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.tx-table td.v-slipped { color: var(--color-warn); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.tx-table td.v-at_risk, .tx-table td.v-cancelled { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.tx-table td.v-unverified { color: var(--color-fg-muted); white-space: nowrap; }
+.tx-table td.tx-pre { white-space: pre-line; }
+.tx-chart-margin { min-height: 13rem; }
+.tx-caveats { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); line-height: 1.5; max-width: 75ch; }
+.tx { position: relative; overflow-x: clip; min-width: 0; overflow-wrap: anywhere; }
+.tx > *, .tx-section, .tx-card, .tx-grid > * { min-width: 0; max-width: 100%; }
+.tx .tx-chip { white-space: normal; max-width: 100%; }
+.tx-table td { overflow-wrap: anywhere; }
+.tx h4 { margin: 0; }
+.tx-updated { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-btn { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: var(--cds-radius); cursor: pointer; }
+.tx-btn:hover { border-color: var(--color-fg-muted); }
+.tx-linkbtn { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; text-decoration: underline; text-decoration-color: var(--color-border-line); text-underline-offset: 3px; }
+.tx-linkbtn:hover { text-decoration-color: var(--color-fg); }
+
+/* Glossary terms and their Wikipedia-style preview */
+.tx-term { text-decoration: underline dotted; text-decoration-color: color-mix(in srgb, var(--color-fg) 45%, transparent); text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: help; border-radius: 2px; }
+.tx-term:hover, .tx-term:focus-visible, .tx-term.is-open { text-decoration-color: var(--color-fg); background: color-mix(in srgb, var(--color-fg) 7%, transparent); outline: none; }
+.tx-gpop { position: absolute; z-index: 30; width: min(23rem, calc(100% - 1rem)); background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); color: var(--color-fg); }
+.tx-gpop[hidden] { display: none; }
+.tx-gpop-cat { font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .05em; color: var(--color-fg-muted); }
+.tx-gpop-term { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.25; }
+.tx-gpop-def { font-size: var(--cds-font-size-body); line-height: 1.5; }
+.tx-gpop-more { align-self: flex-start; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+
+/* Value-chain graph */
+.tx-vc-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); }
+.tx-vc-controls label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); color: var(--color-fg); }
+.tx-vc-controls select { font: inherit; color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); max-width: 16rem; }
+.tx-vc-scroll { overflow-x: auto; min-width: 0; }
+.tx-vc { min-width: 70rem; min-height: 40rem; }
+.tx-vc .tx-vc-node { cursor: pointer; }
+.tx-vc .tx-vc-node rect { fill: var(--color-panel); stroke: var(--color-border-line); }
+.tx-vc .tx-vc-node.is-b rect { fill: color-mix(in srgb, var(--color-fg) 6%, var(--color-panel)); }
+.tx-vc .tx-vc-node.is-agg rect { stroke-dasharray: 3 2; }
+.tx-vc .tx-vc-node.is-fulton rect { stroke: var(--color-warn); fill: color-mix(in srgb, var(--color-warn) 16%, var(--color-panel)); }
+.tx-vc .tx-vc-node.is-sel rect { stroke: var(--color-fg); stroke-width: 2; }
+.tx-vc .tx-vc-node text { fill: var(--color-fg); }
+.tx-vc .tx-svg text { font-size: 10.5px; }
+.tx-vc .tx-vc-col { font-size: 11.5px; }
+.tx-vc .tx-vc-group { font-size: 9.5px; }
+.tx-vc .tx-vc-node .tx-vc-mono { fill: #fff; font-size: 7.5px; font-weight: 600; letter-spacing: 0; }
+.tx-vc .tx-vc-node:focus { outline: none; }
+.tx-vc .tx-vc-node:focus-visible rect { stroke: var(--color-fg); stroke-width: 2; }
+.tx-vc .is-dim { opacity: .18; }
+.tx-vc .tx-vc-band { fill: color-mix(in srgb, var(--color-fg) 4%, transparent); }
+.tx-vc .tx-vc-group { fill: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; font-size: calc(var(--cds-font-size-caption) * .9); }
+.tx-vc .tx-vc-col { fill: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.tx-vc .tx-vc-side { fill: var(--color-fg-muted); letter-spacing: .06em; text-transform: uppercase; }
+.tx-vc .tx-vc-hit { fill: none; stroke: transparent; pointer-events: stroke; cursor: pointer; }
+.tx-vc .tx-vc-elabel text { paint-order: stroke; stroke: var(--color-panel); stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+.tx-vc .tx-vc-elabel .tx-vc-eprod { fill: var(--color-fg); }
+.tx-vc .tx-vc-elabel .tx-vc-evalue { fill: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.tx-vc-detail { display: flex; flex-direction: column; gap: var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-md); }
+.tx-vc-dhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-md); }
+.tx-vc-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md) var(--cds-gap-lg); }
+.tx-vc-h4 { margin: 0; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .05em; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.tx-vc-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.tx-vc-item { display: flex; flex-direction: column; gap: 2px; padding-block: var(--cds-pad-sm); border-top: 1px solid var(--color-border-line); line-height: 1.45; }
+.tx-vc-item:first-child { border-top: 0; }
+.tx-vc-item-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-sm); }
+.tx-vc-val { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+.tx-chip[data-kind="est"] { border-style: dashed; }
+.tx-chip[data-kind="fulton"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--color-warn) 60%, transparent); background: color-mix(in srgb, var(--color-warn) 16%, transparent); }
+
+/* Fulton section */
+.tx-plays { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-play { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-play-top { display: flex; align-items: baseline; gap: var(--cds-gap-sm); }
+.tx-play-rank { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1; color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.tx-play-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
+.tx-dl { display: grid; grid-template-columns: minmax(6rem, 8rem) minmax(0, 1fr); gap: var(--cds-gap-xs) var(--cds-gap-md); margin: 0; font-size: var(--cds-font-size-body); line-height: 1.45; }
+.tx-dl dt { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding-top: 2px; }
+.tx-dl dd { margin: 0; min-width: 0; white-space: pre-line; }
+.tx-checks { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); line-height: 1.5; }
+.tx-table td.i-High { color: var(--color-ok); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.tx-table td.i-Medium { color: var(--color-warn); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.tx-table td.i-Low, .tx-table td.i-None { color: var(--color-fg-muted); white-space: nowrap; }
+.tx-sources { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 2px; font-size: var(--cds-font-size-caption); line-height: 1.45; }
+.tx-acts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-act { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+.tx-act-link { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--cds-gap-sm); align-items: start; padding-block: var(--cds-pad-xs); }
+.tx-act-arrow { color: var(--color-warn); font-size: var(--cds-font-size-heading); padding-top: 2px; }
+.tx-act-do { line-height: 1.45; }
+.tx-act-verify { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-style: italic; }
+.tx-pol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: var(--cds-gap-sm); }
+.tx .tx-pol-item { display: flex; flex-direction: column; gap: var(--cds-gap-xs); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); border-top: 1px solid var(--color-border-line); }
+.tx-pol-today { grid-column: 1 / -1; }
+.tx-pol-more summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--color-border-line); padding-top: var(--cds-pad-sm); }
+.tx-tabs button { font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-sm) var(--cds-pad-md); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); cursor: pointer; margin-bottom: -1px; }
+.tx-tabs button:hover { color: var(--color-fg); }
+.tx-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.tx-panel { display: flex; flex-direction: column; gap: calc(var(--cds-gap-xl) * 1.5); min-width: 0; }
+.tx-panel[hidden] { display: none; }
+details.tx-fold { min-width: 0; }
+details.tx-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: var(--cds-gap-sm); }
+details.tx-fold > summary::-webkit-details-marker { display: none; }
+details.tx-fold > summary::before { content: "▸"; color: var(--color-fg-muted); transition: transform .15s; }
+details.tx-fold[open] > summary::before { transform: rotate(90deg); }
+details.tx-fold > .tx-fold-body { display: flex; flex-direction: column; gap: var(--cds-gap-sm); padding-top: var(--cds-pad-sm); min-width: 0; }
+#fam-summary .tx-bottom-text { max-width: none; }
+/* refinement: rhythm, readability, sticky tabs */
+.tx p, .tx li, .tx dd { line-height: 1.55; }
+.tx-lede { max-width: 72ch; }
+.tx-sub { font-size: var(--cds-font-size-body); line-height: 1.55; max-width: 78ch; }
+.tx-section-head { gap: var(--cds-gap-sm); }
+.tx-panel > .tx-section + .tx-section, .tx-panel > .tx-tiles + .tx-section { border-top: 1px solid var(--color-border-line); padding-top: calc(var(--cds-gap-xl) * 1.25); }
+.tx-card { gap: var(--cds-gap-md); }
+.tx-card-note { max-width: 80ch; }
+.tx-tabs { position: sticky; top: 0; z-index: 8; background: var(--color-bg); }
+.tx-table th { font-size: calc(var(--cds-font-size-caption) * .95); letter-spacing: .03em; text-transform: uppercase; padding-block: var(--cds-pad-sm); }
+.tx-table td { padding: var(--cds-pad-sm); }
+.tx-table tbody tr:hover td { background: color-mix(in srgb, var(--color-fg) 4%, transparent); }
+details.tx-fold > summary { padding-block: 2px; }
+details.tx-fold > summary:hover .tx-card-title, details.tx-fold > summary:hover .tx-h3 { text-decoration: underline; text-decoration-color: var(--color-border-line); text-underline-offset: 4px; }
+details.tx-fold-inline > summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding-block: var(--cds-pad-xs); }
+details.tx-fold-inline > summary:hover { color: var(--color-fg); }
+details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
+.tx-checks { gap: var(--cds-gap-sm); }
+.tx-play { gap: var(--cds-gap-sm); }
+.tx-play details summary, .tx-pmore summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-play details[open] summary { margin-bottom: var(--cds-gap-sm); }
+#fam-summary .tx-bottom-text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.65; }
+/* plant status strip */
+.tx-vbar { display: flex; height: .75rem; border-radius: 999px; overflow: hidden; gap: 2px; background: var(--color-panel); }
+.tx-vbar i { display: block; height: 100%; min-width: 4px; }
+.tx-vbar-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-vbar-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.tx-vbar-legend b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+/* watchlist by month */
+.tx-wt { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-wt-month { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-wt-head { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); }
+.tx-wt-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.tx-wt-item { display: grid; grid-template-columns: .6rem minmax(0, 1fr); gap: var(--cds-gap-sm); }
+.tx-wt-dot { width: .5rem; height: .5rem; border-radius: 50%; margin-top: .45rem; background: var(--color-fg-muted); }
+.tx-wt-item.is-soon .tx-wt-dot { background: var(--color-warn); }
+.tx-wt-when { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.tx-wt-item details summary { cursor: pointer; list-style: none; }
+.tx-wt-item details summary::-webkit-details-marker { display: none; }
+.tx-wt-item details p { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); white-space: pre-line; }
+/* portfolio exposure board */
+.tx-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-board-col { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-board-head { display: flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .05em; color: var(--color-fg-muted); padding-bottom: var(--cds-pad-xs); border-bottom: 2px solid var(--color-border-line); }
+.tx-board-col[data-level="High"] .tx-board-head { border-color: var(--color-ok); color: var(--color-fg); }
+.tx-board-col[data-level="Medium"] .tx-board-head { border-color: var(--color-warn); color: var(--color-fg); }
+.tx-board-item { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-xs); background: var(--color-panel); }
+.tx-board-item p { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.tx-board-item details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-board-item details p { -webkit-line-clamp: unset; display: block; color: var(--color-fg); margin-top: var(--cds-gap-xs); }
+.tx-chart-deals { min-height: 15rem; }
+.tx-chart-opps { min-height: 18rem; }
+/* Whitesail Labs branding */
+.tx { --ws-navy: #1A3263; --ws-cream: #F3EEE8; --ws-amber: #FAB95B; }
+.ws-band { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); background: var(--ws-navy); color: var(--ws-cream); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-lg); margin-bottom: var(--cds-gap-sm); position: relative; overflow: hidden; }
+.ws-band::after { content: ""; position: absolute; right: -2rem; top: 0; bottom: 0; width: 9rem; background: repeating-linear-gradient(180deg, transparent 0 .9rem, color-mix(in srgb, var(--ws-amber) 55%, transparent) .9rem 1.15rem); opacity: .35; transform: skewX(-20deg); pointer-events: none; }
+.ws-logo { flex: none; display: block; box-shadow: 0 0 0 2px var(--ws-cream); border-radius: 50%; }
+.ws-brand { display: flex; flex-direction: column; line-height: 1.15; }
+.ws-name { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); letter-spacing: .01em; }
+.ws-tag { font-size: var(--cds-font-size-caption); letter-spacing: .08em; text-transform: uppercase; color: var(--ws-amber); }
+.ws-for { margin-left: auto; font-size: var(--cds-font-size-caption); color: color-mix(in srgb, var(--ws-cream) 80%, transparent); position: relative; z-index: 1; }
+.ws-for b { color: var(--ws-cream); font-weight: var(--cds-font-weight-medium); }
+.tx-tabs button[aria-selected="true"] { border-bottom-color: var(--ws-amber); }
+.tx-bottom { border-left: 4px solid var(--ws-amber); }
+.tx-title { position: relative; padding-left: .9rem; }
+.tx-title::before { content: ""; position: absolute; left: 0; top: .15em; bottom: .15em; width: 4px; border-radius: 2px; background: var(--ws-amber); }
+.ws-foot { display: flex; align-items: center; gap: var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+@media (max-width: 40rem) { .ws-for { margin-left: 0; width: 100%; } .ws-band::after { display: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .tx-svg .tx-anim { animation: tx-grow var(--cds-dur-slow) var(--cds-ease-out) both; transform-origin: bottom; transform-box: fill-box; }
+  @keyframes tx-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+}
+
+/* infra report additions */
+.tx-answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-ans { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-ans-top { display: flex; align-items: center; justify-content: space-between; gap: var(--cds-gap-sm); }
+.tx-ans-q { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); color: var(--ws-amber, var(--color-warn)); line-height: 1; }
+.tx-ans-title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.35; margin: 0; }
+.tx-ans-short { line-height: 1.55; }
+.tx-ans-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--cds-gap-sm); padding-block: var(--cds-pad-xs); border-block: 1px solid var(--color-border-line); }
+.tx-ans-val { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; }
+.tx-ans-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
+.tx-ans-more summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-ans-more[open] summary { margin-bottom: var(--cds-gap-sm); }
+.tx-ans-more p { line-height: 1.6; }
+.tx-srcs { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); line-height: 1.6; }
+.tx-srcs a { color: var(--color-fg-muted); }
+.tx-steps { margin: 0; padding-left: 1.4rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 90ch; }
+.tx-chartgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-chartgrid:empty { display: none; }
+.tx-claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-claim { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); background: var(--color-panel); }
+.tx-claim-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--cds-gap-sm); }
+.tx-claim-text { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.35; }
+.tx-board-wide { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.tx-board-col[data-outcome="thriving"] .tx-board-head, .tx-board-col[data-outcome="solid"] .tx-board-head { border-color: var(--color-ok); color: var(--color-fg); }
+.tx-board-col[data-outcome="mixed"] .tx-board-head { border-color: var(--color-warn); color: var(--color-fg); }
+.tx-board-col[data-outcome="struggling"] .tx-board-head, .tx-board-col[data-outcome="failed/restructured"] .tx-board-head { border-color: var(--color-bad); color: var(--color-fg); }
+.tx-board-item .tx-chips .tx-chip { white-space: normal; }
+.tx-cands { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+.tx-cand-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-cand { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-sm); background: var(--color-panel); min-width: 0; }
+.tx-cand-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--cds-gap-sm); }
+.tx-cand-head a { color: inherit; }
+.tx-cand-score { flex: none; min-width: 1.8rem; height: 1.8rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; border: 2px solid var(--color-border-line); }
+.tx-cand-score[data-score="5"], .tx-cand-score[data-score="4"] { border-color: var(--color-ok); }
+.tx-cand-score[data-score="3"] { border-color: var(--color-warn); }
+.tx-cand-svc { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tx-dots { display: flex; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.tx-dotwrap { display: inline-flex; align-items: center; gap: 3px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-dot { width: .8rem; height: .8rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 9px; border: 1.5px solid var(--color-fg-muted); color: var(--color-fg-muted); }
+.tx-dot[data-v="yes"] { background: var(--color-ok); border-color: var(--color-ok); }
+.tx-dot[data-v="partial"] { background: linear-gradient(90deg, var(--color-warn) 50%, transparent 50%); border-color: var(--color-warn); }
+.tx-dot[data-v="no"] { border-color: var(--color-bad); }
+.tx-dot-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-cand details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-cand details p { margin-top: var(--cds-gap-xs); }
+.tx-rank { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
+.tx-chart-gen:empty { min-height: 240px; }
+.tx-bul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }
+</style>
+
+<div class="tx">
+  <header class="tx-head" id="top">
+    <div class="ws-band">
+      <svg class="ws-logo" role="img" aria-label="Whitesail Labs logo" width="40" height="40" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M600 300C600 465.685 465.685 600 300 600C134.315 600 0 465.685 0 300C0 134.315 134.315 0 300 0C465.685 0 600 134.315 600 300Z" fill="#1A3263"/>
+<path d="M457.192 481.78C500.075 352.231 497.886 271.239 468.271 145.981C465.039 132.31 446.892 129.636 439.289 141.567C352.657 277.505 282.146 357.897 146.558 462.131C134.311 471.546 140.577 491.299 155.948 491.374L441.868 492.778C448.786 492.812 455.012 488.367 457.192 481.78Z" fill="#F3EEE8"/>
+<path d="M468.271 145.981L475.572 144.185L468.271 145.981ZM457.192 481.78L464.311 484.07V484.07L457.192 481.78ZM146.558 462.131L151.091 468.059V468.059L146.558 462.131ZM439.289 141.567L445.603 145.55L445.603 145.55L439.289 141.567ZM468.271 145.981L475.572 144.185C490.447 207.104 498.548 259.358 497.417 312.354C496.286 365.392 485.92 418.788 464.311 484.07L457.192 481.78L450.074 479.49C471.347 415.222 481.328 363.348 482.419 312.188C483.511 260.987 475.709 210.116 460.971 147.777L468.271 145.981ZM441.868 492.778L441.754 500.277L155.834 498.874L155.948 491.374L156.062 483.875L441.982 485.279L441.868 492.778ZM146.558 462.131L142.024 456.204C276.868 352.542 346.789 272.823 432.975 137.583L439.289 141.567L445.603 145.55C358.525 282.188 287.425 363.252 151.091 468.059L146.558 462.131ZM155.948 491.374L155.834 498.874C133.069 498.762 124.309 469.822 142.024 456.204L146.558 462.131L151.091 468.059C144.313 473.27 148.085 483.836 156.062 483.875L155.948 491.374ZM457.192 481.78L464.311 484.07C461.089 493.802 451.915 500.327 441.754 500.277L441.868 492.778L441.982 485.279C445.657 485.297 448.934 482.931 450.074 479.49L457.192 481.78ZM468.271 145.981L460.971 147.777C459.317 140.783 449.769 139.013 445.603 145.55L439.289 141.567L432.975 137.583C444.015 120.26 470.761 123.837 475.572 144.185L468.271 145.981Z" fill="#1A3263"/>
+<path d="M257.334 291H188.109" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+<path d="M211.717 230H142.491" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+<path d="M302.952 169H233.726" stroke-width="20" stroke-linecap="round" stroke="#FAB95B"/>
+</svg>
+      <div class="ws-brand"><span class="ws-name">Whitesail Labs</span><span class="ws-tag">Market intelligence</span></div>
+      <div class="ws-for">Prepared for <b>Fulton Asset Management</b></div>
+    </div>
+    <h1 class="tx-title">Critical utility infrastructure services</h1>
+    <p class="tx-lede tx-fill" data-source="plan" data-field="body" data-where="id=headline">—</p>
+    <p class="tx-updated tx-fill" data-source="figures" data-field="label" data-where="id=report_window">—</p>
+    <nav class="tx-tabs" role="tablist" aria-label="Report sections">
+      <button type="button" role="tab" data-tab="overview">Overview</button>
+      <button type="button" role="tab" data-tab="market">Aging and demand</button>
+      <button type="button" role="tab" data-tab="competition">Competition</button>
+      <button type="button" role="tab" data-tab="economics">Economics</button>
+      <button type="button" role="tab" data-tab="candidates">Candidates</button>
+      <button type="button" role="tab" data-tab="fam">Analysis for Fulton</button>
+      <button type="button" role="tab" data-tab="appendix">Appendix</button>
+    </nav>
+  </header>
+
+  <section class="tx-section" id="verdict-box">
+    <div class="tx-bottom dash-skeleton" id="fam-summary"></div>
+  </section>
+
+  <section class="tx-section" id="questions">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="q-title">The seven questions, answered</h2>
+      <p class="tx-sub">Each answer is graded against the thesis and linked to its sources. Open a card for the evidence; the other tabs hold the charts behind it.</p>
+    </div>
+    <div class="tx-answers dash-skeleton" id="answers-grid" data-source="answers"></div>
+  </section>
+
+  <section class="tx-section" id="value-chain">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="vc-title">How the market works</h2>
+      <p class="tx-sub">Goods and money move left to right: raw inputs and training, equipment and materials, labor and subcontractors, the service providers in the middle grouped by type, then the asset owners who hire them, the funding channels that pay those owners, and the ratepayers and taxpayers behind them. Each arrow carries what is bought and its estimated annual value, marked est. Click a company or group to trace its whole chain.</p>
+    </div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Find a company <select id="vc-select" aria-label="Find a company"><option value="">Choose…</option></select></label>
+        <label><input type="checkbox" id="vc-fulton" checked> Show Fulton companies and opportunities</label>
+        <button type="button" class="tx-btn" id="vc-clear">Clear selection</button>
+      </div>
+      <div class="tx-legend" id="vc-legend"></div>
+      <div class="tx-vc-scroll">
+        <div class="tx-chart tx-vc dash-skeleton" id="vc-chart" data-source="value_chain_nodes value_chain_edges"></div>
+      </div>
+      <div class="tx-vc-detail" id="vc-detail"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="actions">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="actions-title">Action items</h2>
+      <p class="tx-sub">What the evidence says to do next, in order.</p>
+    </div>
+    <ol class="tx-steps dash-skeleton" id="plan-steps"></ol>
+  </section>
+
+  <section class="tx-section" id="market-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-market" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="aging">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="aging-title">Is the infrastructure really aging?</h2>
+      <p class="tx-sub">Routine maintenance keeps old assets in service, so the question is how much is past its design life, how fast it is being replaced, and how large the backlog is in miles, units and dollars.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-aging"></div>
+  </section>
+
+  <section class="tx-section" id="why-now">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="why-title">Is the why-now real?</h2>
+      <p class="tx-sub">Demand, population, nuclear, renewables, gas safety rules, water rules and utility capital spending, each tested against the data, with what it means for maintenance work as opposed to new construction.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-demand"></div>
+  </section>
+
+  <section class="tx-section" id="deck-claims">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="claims-title">The deck's statistics, checked</h2>
+      <p class="tx-sub">Each statistic in the thesis deck, the verdict after an independent check, and a version that holds up to diligence.</p>
+    </div>
+    <div class="tx-claims dash-skeleton" id="claims-list" data-source="deck_claims"></div>
+  </section>
+
+  <section class="tx-section" id="watchlist">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Watchlist</h2>
+      <p class="tx-sub">Dated events that could change the picture.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="watch-title">Upcoming catalysts by month</h3>
+      <p class="tx-card-note">Amber dots fall within the next thirty days. Click an item for why it matters.</p>
+      <div class="tx-wt dash-skeleton" id="watch-timeline" data-source="watchlist"></div>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="watch-table" data-source="watchlist" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="precedents">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="prec-title">Who has built this before</h2>
+      <p class="tx-sub">Public companies and private-equity platforms that rolled up utility infrastructure services, grouped by how they turned out. These are both the competition for deals and the evidence on whether the model works.</p>
+    </div>
+    <div class="tx-board tx-board-wide dash-skeleton" id="prec-board" data-source="platforms"></div>
+  </section>
+
+  <section class="tx-section" id="fragmentation">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="frag-title">How fragmented is it?</h2>
+      <p class="tx-sub">Firm counts from federal business statistics by industry code and size, and the companies that have reached real scale.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-competition"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="scaled-title">The scaled players</h3>
+      <p class="tx-card-note">Companies with meaningful utility-services revenue, with links to their websites.</p>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="scaled-table" data-source="scaled" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="tam">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="tam-title">Market size, revenue and margins</h2>
+      <p class="tx-sub">How big each unit is, what comparable companies earn, and how the economics change with scale. Ranges are estimates with their basis shown on hover.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-economics"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="pl-title">An illustrative platform at three sizes</h3>
+      <p class="tx-card-note">An estimate built from public comparables, not a forecast. The drivers column says what moves the margin.</p>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="pl-table" data-source="pl" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="synergies">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="syn-title">Do crews and equipment really move across units?</h2>
+      <p class="tx-sub">Workforce overlap from federal occupation data by industry, the qualifications that keep crews in their lane, and which equipment is shared.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-synergies"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="syn-table-title">Which synergies are real</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="syn-table" data-source="synergies" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="candidates">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="cand-title">Platform and add-on candidates</h2>
+      <p class="tx-sub">Private companies found in public sources that fit the platform criteria, by unit. The dots score each criterion: filled meets it, half partly, hollow does not, and a question mark is not yet known. Open a company for its services, customers and sources.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-candidates"></div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Unit <select id="cand-unit" aria-label="Unit"><option value="">All units</option></select></label>
+        <label><input type="checkbox" id="cand-platform"> Platform-grade only</label>
+        <label><input type="checkbox" id="cand-free"> Not already sponsor-owned</label>
+        <input class="tx-search" id="cand-search" type="search" placeholder="Search services, states or customers" autocomplete="off" aria-label="Search candidates">
+      </div>
+      <div class="tx-cands dash-skeleton" id="cand-board" data-source="candidates"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="ranking">
+    <div class="tx-section-head">
+      <p class="tx-eyebrow">For Fulton Asset Management</p>
+      <h2 class="tx-h2" id="rank-title">Which unit first?</h2>
+      <p class="tx-sub">The four units ranked as a first platform on market size, maintenance share, margins, competition and the supply of candidates.</p>
+    </div>
+    <div class="tx-rank dash-skeleton" id="rank-list" data-source="unit_ranking"></div>
+  </section>
+
+  <section class="tx-section" id="plan">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="plan-title">The plan for Fulton</h2>
+    </div>
+    <div class="tx-bottom dash-skeleton" id="plan-first"></div>
+    <div class="tx-grid">
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="vi-title">Where Fulton's companies fit</h3>
+        <p class="tx-card-note">Vertical-integration links between the services platform and the companies Fulton already owns.</p>
+        <ul class="tx-checks dash-skeleton" id="plan-vi"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="edits-title">Edits the evidence supports</h3>
+        <p class="tx-card-note">Changes to the thesis deck and one-pager.</p>
+        <ul class="tx-checks dash-skeleton" id="plan-edits"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="risks-title">Risks and how to handle them</h3>
+        <ul class="tx-checks dash-skeleton" id="plan-risks"></ul>
+      </div>
+      <div class="tx-card">
+        <h3 class="tx-card-title" id="signals-title">Signals that would change the plan</h3>
+        <ul class="tx-checks dash-skeleton" id="plan-signals"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="cand-appendix">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">All candidates</h2>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="cand-table-title">Candidate list</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="cand-table" data-source="candidates" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="sources">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Evidence and sources</h2>
+      <p class="tx-sub">Every finding behind the report, with its confidence tag and a link. P is a government, filing or company source; S is trade press, an analyst or a law firm; W is a vendor blog or aggregator, directional only.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="src-title">All findings</h3>
+      <input class="tx-search" id="src-search" type="search" placeholder="Search findings, e.g. PHMSA or margin" autocomplete="off" aria-label="Search findings">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="src-table" data-source="findings" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="glossary">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="gloss-title">Glossary</h2>
+      <p class="tx-sub">Plain-language definitions of the terms underlined across this page. Hover over, tap or tab to an underlined term to read its definition in place.</p>
+    </div>
+    <div class="tx-card">
+      <input class="tx-search" id="gloss-search" type="search" placeholder="Search, e.g. LDC or CIPP" autocomplete="off" aria-label="Search the glossary">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="gloss-table" data-source="glossary" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="notes">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Caveats</h2>
+    </div>
+    <p class="tx-card-note tx-pre dash-skeleton" id="caveats-text"></p>
+  </section>
+
+  <footer class="ws-foot">
+    <svg class="ws-mark" viewBox="0 0 600 600" width="18" height="18" aria-hidden="true"><path d="M600 300C600 465.685 465.685 600 300 600C134.315 600 0 465.685 0 300C0 134.315 134.315 0 300 0C465.685 0 600 134.315 600 300Z" fill="#1A3263"/><path d="M457.192 481.78C500.075 352.231 497.886 271.239 468.271 145.981C465.039 132.31 446.892 129.636 439.289 141.567C352.657 277.505 282.146 357.897 146.558 462.131C134.311 471.546 140.577 491.299 155.948 491.374L441.868 492.778C448.786 492.812 455.012 488.367 457.192 481.78Z" fill="#F3EEE8"/></svg>
+    <span>Whitesail Labs · Prepared for Fulton Asset Management · Confidential</span>
+  </footer>
+  <div class="tx-gpop" id="gloss-pop" role="tooltip" hidden></div>
+</div>
+
+<script>
+const FAIL = ['error', 'connect', 'declined', 'missing'];
+const LANES = ['765 kV / EHV', 'Power transformers', 'Distribution & MV', 'Components & steel', 'Solid-state'];
+const STATUSES = ['Operating', 'Under construction', 'Announced', 'Slipped', 'At risk', 'Unconfirmed'];
+const TILES = { AK: [0, 0], ME: [10, 0], WI: [5, 1], ON: [7, 1], QC: [8, 1], VT: [9, 1], NH: [10, 1], WA: [0, 2], ID: [1, 2], MT: [2, 2], ND: [3, 2], MN: [4, 2], IL: [5, 2], MI: [6, 2], NY: [8, 2], MA: [9, 2], OR: [0, 3], NV: [1, 3], WY: [2, 3], SD: [3, 3], IA: [4, 3], IN: [5, 3], OH: [6, 3], PA: [7, 3], NJ: [8, 3], CT: [9, 3], RI: [10, 3], CA: [0, 4], UT: [1, 4], CO: [2, 4], NE: [3, 4], MO: [4, 4], KY: [5, 4], WV: [6, 4], VA: [7, 4], MD: [8, 4], DE: [9, 4], AZ: [1, 5], NM: [2, 5], KS: [3, 5], AR: [4, 5], TN: [5, 5], NC: [6, 5], SC: [7, 5], DC: [8, 5], OK: [3, 6], LA: [4, 6], MS: [5, 6], AL: [6, 6], GA: [7, 6], HI: [0, 7], TX: [3, 7], FL: [8, 7], MX: [3, 8] };
+const NON_US = { ON: true, QC: true, MX: true };
+const fmtComma = d3.format(',');
+const fmtMonth = d3.utcFormat('%b %Y');
+
+function num(v) {
+  if (v === null || v === undefined || v === '') return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+function fmtVal(v) {
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'number') return Number.isInteger(v) ? fmtComma(v) : fmtComma(Math.round(v * 1000) / 1000);
+  return String(v);
+}
+function money(m) {
+  if (m === null) return 'Not disclosed';
+  return m >= 1000 ? '$' + fmtComma(Math.round(m / 100) / 10) + 'B' : '$' + fmtComma(m) + 'M';
+}
+function rows(id) {
+  const d = dash.data(id);
+  return d && d.status === 'ok' && Array.isArray(d.data) ? d.data : [];
+}
+function statusOf(ids) {
+  let st = 'ok';
+  ids.forEach((id) => {
+    const s = dash.data(id).status;
+    if (FAIL.includes(s)) st = 'fail';
+    else if (s !== 'ok' && st === 'ok') st = 'loading';
+  });
+  return st;
+}
+function prep(el, ids) {
+  const st = statusOf(ids);
+  el.textContent = '';
+  if (st === 'ok') { el.classList.remove('dash-skeleton'); return true; }
+  if (st === 'fail') {
+    el.classList.remove('dash-skeleton');
+    const f = document.createElement('div');
+    f.className = 'tx-fail';
+    const dot = document.createElement('span');
+    dot.className = 'tx-fail-dot';
+    const t = document.createElement('span');
+    t.textContent = 'Failed to load';
+    f.append(dot, t);
+    el.appendChild(f);
+    return false;
+  }
+  el.classList.add('dash-skeleton');
+  return false;
+}
+function mk(tag, cls, text, src, field, where) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  n.textContent = text === null || text === undefined ? '' : String(text);
+  if (src) {
+    n.setAttribute('data-source', src);
+    if (field) n.setAttribute('data-field', field);
+    if (where) n.setAttribute('data-where', where);
+  }
+  return n;
+}
+function safeUrl(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
+function srcLine(conf, url, src, where) {
+  const line = document.createElement('div');
+  line.className = 'tx-src';
+  if (conf) line.appendChild(mk('span', 'tx-conf', conf, src, 'confidence', where));
+  const u = safeUrl(url);
+  if (u) {
+    const a = document.createElement('a');
+    a.href = u;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'Source ↗';
+    line.appendChild(a);
+  }
+  return line;
+}
+
+function parseWhere(s) {
+  return s.split('&').map((p) => {
+    const i = p.indexOf('=');
+    return [decodeURIComponent(p.slice(0, i)), decodeURIComponent(p.slice(i + 1))];
+  });
+}
+function fillMarks() {
+  document.querySelectorAll('#dash-root .tx-fill').forEach((el) => {
+    const src = el.getAttribute('data-source');
+    const d = dash.data(src);
+    if (d.status !== 'ok') {
+      if (FAIL.includes(d.status)) { el.classList.remove('dash-skeleton'); el.textContent = '—'; }
+      else el.classList.add('dash-skeleton');
+      return;
+    }
+    el.classList.remove('dash-skeleton');
+    const field = el.getAttribute('data-field');
+    if (!field) { el.textContent = fmtVal(d.data); return; }
+    const where = el.getAttribute('data-where');
+    const conds = where ? parseWhere(where) : [];
+    const list = Array.isArray(d.data) ? d.data : [];
+    const row = list.find((r) => conds.every((c) => String(r[c[0]]) === c[1]));
+    el.textContent = row ? fmtVal(row[field]) : '';
+  });
+}
+
+function tipEl(el) {
+  let t = el.querySelector('.tx-tip');
+  if (!t) {
+    t = document.createElement('div');
+    t.className = 'tx-tip';
+    t.hidden = true;
+    el.appendChild(t);
+  }
+  return t;
+}
+function showTip(el, head, lines, px, py) {
+  const t = tipEl(el);
+  t.textContent = '';
+  t.appendChild(mk('div', 'tx-tip-head', head));
+  lines.forEach((ln) => { if (ln) t.appendChild(mk('div', null, ln)); });
+  t.hidden = false;
+  const svg = el.querySelector('svg');
+  const vb = svg && svg.viewBox && svg.viewBox.baseVal;
+  const k = vb && vb.width ? svg.getBoundingClientRect().width / vb.width : 1;
+  const x = px * k, y = py * k;
+  const cw = el.clientWidth, ch = el.clientHeight, tw = t.offsetWidth, th = t.offsetHeight;
+  let left = x + 14;
+  if (left + tw > cw) left = x - tw - 14;
+  if (left < 0) left = Math.max(0, cw - tw);
+  let top = y - th / 2;
+  top = Math.max(0, Math.min(top, ch - th));
+  t.style.left = left + 'px';
+  t.style.top = top + 'px';
+}
+function hideTip(el) { const t = el.querySelector('.tx-tip'); if (t) t.hidden = true; }
+
+function newSvg(el, w, h) {
+  return d3.select(el).append('svg').attr('class', 'tx-svg').attr('width', '100%').attr('viewBox', '0 0 ' + w + ' ' + h).attr('role', 'img');
+}
+function measure(svg, texts, cls) {
+  const g = svg.append('g').style('visibility', 'hidden');
+  let w = 0;
+  texts.forEach((t) => {
+    const n = g.append('text').attr('class', cls).text(t).node();
+    w = Math.max(w, n.getComputedTextLength());
+  });
+  g.remove();
+  return w;
+}
+function fitText(node, maxW) {
+  const full = node.textContent;
+  if (node.getComputedTextLength() <= maxW) return;
+  let s = full;
+  while (s.length > 1 && node.getComputedTextLength() > maxW) {
+    s = s.slice(0, -1);
+    node.textContent = s.trimEnd() + '…';
+  }
+}
+
+const sortState = {};
+function buildHead(table, cols, rerender) {
+  const thead = table.querySelector('thead');
+  if (thead.childElementCount) return;
+  const tr = document.createElement('tr');
+  cols.forEach((c) => {
+    const th = document.createElement('th');
+    th.setAttribute('data-field', c.field);
+    if (c.sortBy) th.setAttribute('data-sort', c.sortBy);
+    if (c.cls) th.className = c.cls;
+    if (c.sortable === false) {
+      th.textContent = c.label;
+    } else {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = c.label;
+      b.addEventListener('click', () => {
+        const f = c.sortBy || c.field;
+        const st = sortState[table.id];
+        sortState[table.id] = { field: f, dir: st && st.field === f && st.dir === 'asc' ? 'desc' : 'asc' };
+        rerender();
+      });
+      th.appendChild(b);
+    }
+    tr.appendChild(th);
+  });
+  thead.appendChild(tr);
+}
+function applySort(table, list) {
+  const st = sortState[table.id];
+  table.querySelectorAll('th').forEach((th) => {
+    const f = th.getAttribute('data-sort') || th.getAttribute('data-field');
+    if (st && f === st.field) th.setAttribute('aria-sort', st.dir === 'asc' ? 'ascending' : 'descending');
+    else th.removeAttribute('aria-sort');
+  });
+  if (!st) return list;
+  const dir = st.dir === 'asc' ? 1 : -1;
+  const blank = (v) => v === null || v === undefined || v === '';
+  return list.slice().sort((a, b) => {
+    const va = a[st.field], vb = b[st.field];
+    if (blank(va) && blank(vb)) return 0;
+    if (blank(va)) return 1;
+    if (blank(vb)) return -1;
+    const na = num(va), nb = num(vb);
+    if (na !== null && nb !== null) return (na - nb) * dir;
+    return String(va).localeCompare(String(vb)) * dir;
+  });
+}
+function fillBody(table, list, cols, keyField, rowClass) {
+  const tb = table.querySelector('tbody');
+  tb.textContent = '';
+  list.forEach((r) => {
+    const tr = document.createElement('tr');
+    tr.setAttribute('data-key', String(r[keyField]));
+    const rc = rowClass ? rowClass(r) : '';
+    if (rc) tr.className = rc;
+    cols.forEach((c, i) => {
+      const td = document.createElement('td');
+      const cls = [c.cls, c.cellClass ? c.cellClass(r) : '', i === 0 ? 'tx-first' : ''].filter(Boolean).join(' ');
+      if (cls) td.className = cls;
+      td.textContent = fmtVal(c.num ? num(r[c.field]) : r[c.field]);
+      tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+}
+function renderTable(cfg) {
+  const table = document.getElementById(cfg.id);
+  const wrap = table.parentElement;
+  const rerender = () => renderTable(cfg);
+  buildHead(table, cfg.cols, rerender);
+  const st = statusOf([cfg.src]);
+  if (st !== 'ok') {
+    table.querySelector('tbody').textContent = '';
+    wrap.classList.toggle('dash-skeleton', st === 'loading');
+    return;
+  }
+  wrap.classList.remove('dash-skeleton');
+  let list = rows(cfg.src);
+  if (cfg.filter) list = list.filter(cfg.filter);
+  if (cfg.defaultSort && !sortState[cfg.id]) list = list.slice().sort(cfg.defaultSort);
+  list = applySort(table, list);
+  fillBody(table, list, cfg.cols, cfg.key, cfg.rowClass);
+}
+
+
+const VC_LAYERS = ['S3', 'S2', 'S1', 'B', 'C1', 'C2', 'C3'];
+const VC_TITLES = ["Raw inputs and training", "Equipment and materials", "Labor, subs and distributors", "Service providers", "Asset owners", "Funding channels", "Ultimate payers"];
+const vcState = { sel: null };
+
+function vcIsEst(e) { return e.estimated === true || e.estimated === 'true' || e.estimated === 'Yes'; }
+function vcMid(e) {
+  const lo = num(e.value_low_usd_m), hi = num(e.value_high_usd_m);
+  if (lo === null && hi === null) return null;
+  return ((lo === null ? hi : lo) + (hi === null ? lo : hi)) / 2;
+}
+function vcValue(e) {
+  const l = String(e.value_label || '');
+  return vcIsEst(e) && !/est/i.test(l) ? l + ' est.' : l;
+}
+function vcInitials(name) {
+  const skip = ['other', 'the', 'and', 'of', 'us', 'na', 'incl.'];
+  const w = String(name || '').replace(/\(.*?\)/g, ' ').split(/[\s\/,&-]+/).filter((x) => x && !skip.includes(x.toLowerCase()));
+  return ((w[0] || '?')[0] + (w[1] ? w[1][0] : (w[0] || '')[1] || '')).toUpperCase();
+}
+function vcBadgeColor(n) {
+  if (n.kind === 'fulton') return 'var(--color-warn)';
+  if (n.kind === 'aggregate') return 'var(--cds-chart-muted)';
+  let h = 0;
+  String(n.id).split('').forEach((ch) => { h = (h * 31 + ch.charCodeAt(0)) >>> 0; });
+  return dash.colors[h % dash.colors.length];
+}
+function clip(t, n) { const s = String(t || ''); return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; }
+
+function vcModel() {
+  const showF = document.getElementById('vc-fulton').checked;
+  const nodes = rows('value_chain_nodes').filter((n) => VC_LAYERS.includes(n.layer) && (showF || n.kind !== 'fulton'));
+  const byId = new Map(nodes.map((n) => [n.id, n]));
+  const edges = rows('value_chain_edges').filter((e) => byId.has(e.source) && byId.has(e.target) && e.source !== e.target && (showF || e.kind !== 'fulton_opportunity'));
+  return { nodes, byId, edges };
+}
+function vcTrace(model, id) {
+  const inE = new Map(), outE = new Map();
+  model.edges.forEach((e) => {
+    if (!inE.has(e.target)) inE.set(e.target, []);
+    if (!outE.has(e.source)) outE.set(e.source, []);
+    inE.get(e.target).push(e);
+    outE.get(e.source).push(e);
+  });
+  const walk = (map, end) => {
+    const nodes = new Set(), edges = new Set();
+    const q = [id];
+    while (q.length) {
+      const n = q.shift();
+      (map.get(n) || []).forEach((e) => {
+        edges.add(e.id);
+        const next = e[end];
+        if (next !== id && !nodes.has(next)) { nodes.add(next); q.push(next); }
+      });
+    }
+    return { nodes, edges };
+  };
+  const up = walk(inE, 'source'), down = walk(outE, 'target');
+  return { up: up.nodes, upE: up.edges, down: down.nodes, downE: down.edges };
+}
+
+function vcLayout(model, W) {
+  const gap = Math.max(44, W * 0.05);
+  const boxW = (W - gap * 6) / 7;
+  const colX = VC_LAYERS.map((_, i) => i * (boxW + gap));
+  const top = 58, rowH = 20, rowGap = 13, headH = 24;
+  const cols = VC_LAYERS.map(() => []);
+  model.nodes.forEach((n) => cols[VC_LAYERS.indexOf(n.layer)].push(n));
+  const weight = new Map();
+  model.edges.forEach((e) => {
+    const v = vcMid(e) || 0;
+    weight.set(e.source, (weight.get(e.source) || 0) + v);
+    weight.set(e.target, (weight.get(e.target) || 0) + v);
+  });
+  const gOrd = (n) => { const g = num(n.group_order); return g === null ? 99 : g; };
+  cols.forEach((c) => c.sort((a, b) => (a.kind === 'fulton') - (b.kind === 'fulton') || gOrd(a) - gOrd(b) || (weight.get(b.id) || 0) - (weight.get(a.id) || 0)));
+  const nbrs = new Map();
+  model.nodes.forEach((n) => nbrs.set(n.id, []));
+  model.edges.forEach((e) => { nbrs.get(e.source).push(e.target); nbrs.get(e.target).push(e.source); });
+  const rel = new Map();
+  const setRel = () => cols.forEach((c) => c.forEach((n, i) => rel.set(n.id, c.length > 1 ? i / (c.length - 1) : 0.5)));
+  setRel();
+  for (let pass = 0; pass < 6; pass++) {
+    const order = pass % 2 ? cols.map((_, i) => cols.length - 1 - i) : cols.map((_, i) => i);
+    order.forEach((ci) => {
+      const c = cols[ci];
+      const bary = new Map();
+      c.forEach((n) => {
+        const ns = nbrs.get(n.id).filter((m) => model.byId.get(m).layer !== n.layer);
+        bary.set(n.id, ns.length ? d3.mean(ns, (m) => rel.get(m)) : rel.get(n.id));
+      });
+      const gMean = new Map();
+      d3.group(c, (n) => n.group).forEach((list, g) => gMean.set(g, d3.mean(list, (n) => bary.get(n.id))));
+      c.sort((a, b) => (a.kind === 'fulton') - (b.kind === 'fulton') ||
+        (ci === 3 ? gOrd(a) - gOrd(b) : gMean.get(a.group) - gMean.get(b.group)) ||
+        String(a.group).localeCompare(String(b.group)) || bary.get(a.id) - bary.get(b.id));
+      c.forEach((n, i) => rel.set(n.id, c.length > 1 ? i / (c.length - 1) : 0.5));
+    });
+  }
+  const items = cols.map((c, ci) => {
+    const list = [];
+    let prevGroup = null, fultonHead = false;
+    c.forEach((n) => {
+      if (n.kind === 'fulton' && !fultonHead) { fultonHead = true; list.push({ head: 'Fulton portfolio', h: headH, fulton: true }); }
+      else if (ci === 3 && n.kind !== 'fulton' && n.group !== prevGroup) list.push({ head: n.group, h: headH, group: n.group });
+      prevGroup = n.group;
+      list.push({ node: n, h: rowH + rowGap });
+    });
+    return list;
+  });
+  const need = items.map((l) => d3.sum(l, (it) => it.h));
+  const H = d3.max(need) || 0;
+  const pos = new Map(), heads = [];
+  items.forEach((list, ci) => {
+    const extra = H - need[ci];
+    const per = list.length > 1 ? Math.min(extra / (list.length - 1), 30) : 0;
+    let y = top + (extra - per * (list.length - 1)) / 2;
+    list.forEach((it) => {
+      if (it.node) pos.set(it.node.id, { x: colX[ci], y: y + rowH / 2, ci: ci });
+      else heads.push({ ci: ci, y: y, text: it.head, group: it.group, fulton: it.fulton });
+      y += it.h + per;
+    });
+  });
+  return { W: W, H: top + H + 8, gap: gap, boxW: boxW, colX: colX, rowH: rowH, top: top, pos: pos, heads: heads, cols: cols };
+}
+
+function drawValueChain() {
+  const el = document.getElementById('vc-chart');
+  const detail = document.getElementById('vc-detail');
+  const legend = document.getElementById('vc-legend');
+  const sel = document.getElementById('vc-select');
+  const ok = prep(el, ['value_chain_nodes', 'value_chain_edges']);
+  legend.textContent = '';
+  if (!ok) { detail.textContent = ''; return; }
+  const c = dash.colors;
+  [['Supplier chain of the selected company', c[0], false], ['Customer chain', c[1], false], ['Fulton opportunity: addressable market, not current sales', 'var(--color-warn)', true]].forEach((d) => {
+    const item = document.createElement('span');
+    const sw = document.createElement('i');
+    sw.className = 'tx-swatch';
+    sw.style.background = d[1];
+    if (d[2]) { sw.style.borderRadius = '0'; sw.style.height = '2px'; sw.style.width = '1rem'; }
+    item.append(sw, document.createTextNode(d[0]));
+    legend.appendChild(item);
+  });
+  legend.appendChild(mk('span', null, 'Line width shows annual value'));
+  legend.appendChild(mk('span', null, 'Dashed box: a group of many smaller firms'));
+
+  const model = vcModel();
+  if (vcState.sel && !model.byId.has(vcState.sel)) vcState.sel = null;
+  sel.textContent = '';
+  const none = document.createElement('option');
+  none.value = '';
+  none.textContent = 'Choose…';
+  sel.appendChild(none);
+  VC_LAYERS.forEach((L, li) => {
+    const og = document.createElement('optgroup');
+    og.label = VC_TITLES[li];
+    model.nodes.filter((n) => n.layer === L).sort((a, b) => String(a.name).localeCompare(String(b.name))).forEach((n) => {
+      const o = document.createElement('option');
+      o.value = n.id;
+      o.textContent = n.name;
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  });
+  sel.value = vcState.sel || '';
+
+  const W = Math.max(el.clientWidth, 900);
+  const L = vcLayout(model, W);
+  const svg = newSvg(el, L.W, L.H).attr('aria-label', 'Value chain of the North American transformer market: suppliers, builders and customers with annual flows');
+  const tr = vcState.sel ? vcTrace(model, vcState.sel) : null;
+  const vals = model.edges.map(vcMid).filter((v) => v !== null && v > 0);
+  const wScale = d3.scaleLog().domain([Math.max(d3.min(vals) || 1, 0.1), Math.max(d3.max(vals) || 10, 1)]).range([1, 9]).clamp(true);
+  const sw = (e) => { const v = vcMid(e); return v && v > 0 ? wScale(v) : 1; };
+
+  // column titles
+  svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[0]).attr('y', 14).text('← Suppliers');
+  svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[3] + L.boxW / 2).attr('y', 14).attr('text-anchor', 'middle').text('Builders');
+  svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[6] + L.boxW).attr('y', 14).attr('text-anchor', 'end').text('Customers →');
+  VC_LAYERS.forEach((_, i) => {
+    const t = svg.append('text').attr('class', 'tx-vc-col').attr('x', L.colX[i] + L.boxW / 2).attr('y', 36).attr('text-anchor', 'middle').text(VC_TITLES[i]);
+    fitText(t.node(), L.boxW + L.gap * 0.8);
+  });
+  // builder group bands
+  const bandG = svg.append('g');
+  L.heads.forEach((h) => {
+    const members = L.cols[h.ci].filter((n) => (h.fulton ? n.kind === 'fulton' : n.kind !== 'fulton' && n.group === h.group));
+    const ys = members.map((n) => L.pos.get(n.id).y);
+    if (!ys.length) return;
+    if (h.ci === 3 || h.fulton) {
+      bandG.append('rect').attr('class', 'tx-vc-band').attr('x', L.colX[h.ci] - 6).attr('y', h.y - 2).attr('width', L.boxW + 12)
+        .attr('height', d3.max(ys) + L.rowH / 2 + 5 - (h.y - 2)).attr('rx', 6);
+    }
+    const t = bandG.append('text').attr('class', 'tx-vc-group').attr('x', L.colX[h.ci]).attr('y', h.y + 13).text(h.text);
+    fitText(t.node(), L.boxW);
+  });
+
+  // ports: spread edge ends over each box's height
+  const outs = new Map(), ins = new Map();
+  model.edges.forEach((e) => {
+    if (!outs.has(e.source)) outs.set(e.source, []);
+    if (!ins.has(e.target)) ins.set(e.target, []);
+    outs.get(e.source).push(e);
+    ins.get(e.target).push(e);
+  });
+  const off = new Map();
+  const spread = (map, key, other) => map.forEach((list) => {
+    list.sort((a, b) => L.pos.get(a[other]).y - L.pos.get(b[other]).y);
+    const span = Math.min(L.rowH - 6, list.length * 3);
+    list.forEach((e, k) => off.set(e.id + key, list.length > 1 ? -span / 2 + span * k / (list.length - 1) : 0));
+  });
+  spread(outs, ':o', 'target');
+  spread(ins, ':i', 'source');
+
+  const geom = (e) => {
+    const s = L.pos.get(e.source), t = L.pos.get(e.target);
+    const w = sw(e), aw = Math.max(6, w + 4), aL = 6;
+    const y1 = s.y + off.get(e.id + ':o'), y2 = t.y + off.get(e.id + ':i');
+    if (t.ci > s.ci) {
+      const x1 = s.x + L.boxW, x2 = t.x - aL, dx = (x2 - x1) / 2;
+      return { d: 'M' + x1 + ',' + y1 + 'C' + (x1 + dx) + ',' + y1 + ' ' + (x2 - dx) + ',' + y2 + ' ' + x2 + ',' + y2,
+        arrow: [[t.x, y2], [x2, y2 - aw / 2], [x2, y2 + aw / 2]], mx: (x1 + x2) / 2, my: (y1 + y2) / 2, w: w };
+    }
+    const x1 = s.x + L.boxW, x2 = t.x + L.boxW + aL, b = L.gap * 0.75;
+    return { d: 'M' + x1 + ',' + y1 + 'C' + (x1 + b) + ',' + y1 + ' ' + (x2 + b) + ',' + y2 + ' ' + x2 + ',' + y2,
+      arrow: [[t.x + L.boxW, y2], [x2, y2 - aw / 2], [x2, y2 + aw / 2]], mx: x1 + b * 0.75, my: (y1 + y2) / 2, w: w };
+  };
+  const role = (e) => (!tr ? 'none' : tr.upE.has(e.id) ? 'up' : tr.downE.has(e.id) ? 'down' : 'dim');
+  const color = (e, r) => (e.kind === 'fulton_opportunity' ? 'var(--color-warn)' : r === 'up' ? c[0] : r === 'down' ? c[1] : 'var(--cds-chart-muted)');
+  const edgeG = svg.append('g');
+  const ordered = model.edges.slice().sort((a, b) => (role(a) !== 'dim' && role(a) !== 'none') - (role(b) !== 'dim' && role(b) !== 'none') || (vcMid(b) || 0) - (vcMid(a) || 0));
+  const name = (id) => (model.byId.get(id) || {}).name || id;
+  ordered.forEach((e) => {
+    const g = geom(e), r = role(e), col = color(e, r);
+    const eg = edgeG.append('g').attr('class', r === 'dim' ? 'is-dim' : null);
+    const op = r === 'none' ? (e.kind === 'fulton_opportunity' ? 0.75 : 0.4) : 0.9;
+    eg.append('path').attr('d', g.d).attr('fill', 'none').style('stroke', col).attr('stroke-width', g.w).attr('stroke-opacity', op)
+      .attr('stroke-dasharray', e.kind === 'fulton_opportunity' ? '5 4' : null);
+    eg.append('polygon').attr('points', g.arrow.map((p) => p.join(',')).join(' ')).style('fill', col).attr('fill-opacity', Math.min(1, op + 0.1));
+    eg.append('path').attr('class', 'tx-vc-hit').attr('d', g.d).attr('stroke-width', Math.max(9, g.w + 6))
+      .on('mousemove', (ev) => {
+        const [px, py] = d3.pointer(ev, svg.node());
+        showTip(el, name(e.source) + ' → ' + name(e.target), [e.product, vcValue(e),
+          e.kind === 'fulton_opportunity' ? 'Addressable market for a Fulton company, not current sales' : '', clip(e.basis, 220)], px, py);
+      })
+      .on('mouseleave', () => hideTip(el))
+      .on('click', (ev) => { ev.stopPropagation(); vcSelect(e.target === vcState.sel ? e.source : e.target); });
+  });
+
+  const nodeG = svg.append('g');
+  model.nodes.forEach((n) => {
+    const p = L.pos.get(n.id);
+    const inChain = tr && (n.id === vcState.sel || tr.up.has(n.id) || tr.down.has(n.id));
+    const cls = ['tx-vc-node', n.layer === 'B' ? 'is-b' : '', n.kind === 'aggregate' ? 'is-agg' : '', n.kind === 'fulton' ? 'is-fulton' : '',
+      n.id === vcState.sel ? 'is-sel' : '', tr && !inChain ? 'is-dim' : ''].filter(Boolean).join(' ');
+    const g = nodeG.append('g').attr('class', cls).attr('transform', 'translate(' + p.x + ',' + (p.y - L.rowH / 2) + ')')
+      .attr('tabindex', 0).attr('role', 'button').attr('aria-label', n.name);
+    g.append('rect').attr('width', L.boxW).attr('height', L.rowH).attr('rx', 4);
+    g.append('circle').attr('cx', 11).attr('cy', L.rowH / 2).attr('r', 7).style('fill', vcBadgeColor(n));
+    g.append('text').attr('class', 'tx-vc-mono').attr('x', 11).attr('y', L.rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').text(vcInitials(n.name));
+    const t = g.append('text').attr('x', 22).attr('y', L.rowH / 2).attr('dy', '0.35em').text(n.name);
+    fitText(t.node(), L.boxW - 26);
+    g.on('mousemove', (ev) => {
+      const [px, py] = d3.pointer(ev, svg.node());
+      showTip(el, n.name, [n.group + ' · ' + VC_TITLES[VC_LAYERS.indexOf(n.layer)], n.size_label, n.ownership, clip(n.description, 220)], px, py);
+    })
+      .on('mouseleave', () => hideTip(el))
+      .on('click', (ev) => { ev.stopPropagation(); hideTip(el); vcSelect(n.id === vcState.sel ? null : n.id); })
+      .on('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); vcSelect(n.id === vcState.sel ? null : n.id); } });
+  });
+
+  // labels: the selected company's own arrows, or the largest arrow between each pair of columns
+  let labelled;
+  if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel);
+  else {
+    const best = new Map();
+    model.edges.filter((e) => e.kind !== 'fulton_opportunity').forEach((e) => {
+      const k = L.pos.get(e.source).ci;
+      if (!best.has(k) || (vcMid(e) || 0) > (vcMid(best.get(k)) || 0)) best.set(k, e);
+    });
+    labelled = Array.from(best.values());
+  }
+  const labs = labelled.map((e) => Object.assign({ e: e }, geom(e)));
+  d3.group(labs, (l) => Math.round(l.mx)).forEach((list) => {
+    list.sort((a, b) => a.my - b.my);
+    for (let i = 1; i < list.length; i++) if (list[i].my < list[i - 1].my + 28) list[i].my = list[i - 1].my + 28;
+    const over = list.length ? list[list.length - 1].my - (L.H - 16) : 0;
+    if (over > 0) list.forEach((l) => { l.my -= over; });
+  });
+  const labG = svg.append('g');
+  labs.forEach((l) => {
+    const g = labG.append('g').attr('class', 'tx-vc-elabel');
+    const a = g.append('text').attr('class', 'tx-vc-eprod').attr('x', l.mx).attr('y', l.my - 3).attr('text-anchor', 'middle').text(l.e.product);
+    fitText(a.node(), L.gap + L.boxW * 0.9);
+    const b = g.append('text').attr('class', 'tx-vc-evalue').attr('x', l.mx).attr('y', l.my + 11).attr('text-anchor', 'middle').text(vcValue(l.e));
+    fitText(b.node(), L.gap + L.boxW * 0.9);
+  });
+  svg.on('click', () => { if (vcState.sel) vcSelect(null); });
+  renderVcDetail(model);
+}
+
+function vcSelect(id) {
+  vcState.sel = id || null;
+  drawValueChain();
+  scheduleGlossary();
+}
+
+function renderVcDetail(model) {
+  const box = document.getElementById('vc-detail');
+  box.textContent = '';
+  const id = vcState.sel;
+  if (!id) {
+    box.appendChild(mk('p', 'tx-card-note', 'Click a company, or pick one from the list, to see who supplies it, who it sells to, what changes hands and how much it is worth each year. The chain lights up through every layer: one color traces its suppliers and their suppliers, the other its customers and theirs. With nothing selected, the largest flow between each pair of columns is labelled.'));
+    return;
+  }
+  const n = model.byId.get(id);
+  const w = 'id=' + encodeURIComponent(id);
+  const head = mk('div', 'tx-vc-dhead');
+  head.appendChild(mk('h3', 'tx-h3', n.name, 'value_chain_nodes', 'name', w));
+  const chips = mk('div', 'tx-chips');
+  chips.appendChild(mk('span', 'tx-chip', VC_TITLES[VC_LAYERS.indexOf(n.layer)]));
+  chips.appendChild(mk('span', 'tx-chip', n.group, 'value_chain_nodes', 'group', w));
+  if (n.kind === 'fulton') { const f = mk('span', 'tx-chip', 'Fulton portfolio'); f.setAttribute('data-kind', 'fulton'); chips.appendChild(f); }
+  if (n.kind === 'aggregate') chips.appendChild(mk('span', 'tx-chip', 'Group of firms'));
+  head.appendChild(chips);
+  box.appendChild(head);
+  if (n.description) box.appendChild(mk('p', 'tx-sentence', n.description, 'value_chain_nodes', 'description', w));
+  const meta = mk('p', 'tx-card-note');
+  if (n.size_label) meta.appendChild(mk('span', null, n.size_label, 'value_chain_nodes', 'size_label', w));
+  if (n.size_label && n.ownership) meta.appendChild(document.createTextNode(' · '));
+  if (n.ownership) meta.appendChild(mk('span', null, n.ownership, 'value_chain_nodes', 'ownership', w));
+  if (meta.childNodes.length) box.appendChild(meta);
+  if (safeUrl(n.source_url)) box.appendChild(srcLine(null, n.source_url));
+  const colsEl = mk('div', 'tx-vc-cols');
+  [['Buys from', (e) => e.target === id, 'source'], ['Sells to', (e) => e.source === id, 'target']].forEach((spec) => {
+    const list = model.edges.filter(spec[1]).sort((a, b) => (vcMid(b) || 0) - (vcMid(a) || 0));
+    const wrap = mk('div');
+    wrap.appendChild(mk('h4', 'tx-vc-h4', spec[0]));
+    const ul = mk('ul', 'tx-vc-list');
+    if (!list.length) ul.appendChild(mk('li', 'tx-vc-item tx-muted', 'Not mapped at this level of detail.'));
+    list.forEach((e) => {
+      const ew = 'id=' + encodeURIComponent(e.id);
+      const other = model.byId.get(e[spec[2]]);
+      const li = mk('li', 'tx-vc-item');
+      const top = mk('div', 'tx-vc-item-top');
+      const btn = mk('button', 'tx-linkbtn tx-strong');
+      btn.type = 'button';
+      btn.appendChild(mk('span', null, other.name, 'value_chain_nodes', 'name', 'id=' + encodeURIComponent(other.id)));
+      btn.addEventListener('click', () => vcSelect(other.id));
+      top.appendChild(btn);
+      top.appendChild(mk('span', 'tx-vc-val', e.value_label, 'value_chain_edges', 'value_label', ew));
+      if (vcIsEst(e)) { const ch = mk('span', 'tx-chip', 'Estimate'); ch.setAttribute('data-kind', 'est'); top.appendChild(ch); }
+      if (e.kind === 'fulton_opportunity') { const ch = mk('span', 'tx-chip', 'Opportunity'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }
+      li.appendChild(top);
+      li.appendChild(mk('div', null, e.product, 'value_chain_edges', 'product', ew));
+      if (e.basis) li.appendChild(mk('div', 'tx-card-note', e.basis, 'value_chain_edges', 'basis', ew));
+      if (safeUrl(e.source_url)) li.appendChild(srcLine(null, e.source_url));
+      ul.appendChild(li);
+    });
+    wrap.appendChild(ul);
+    colsEl.appendChild(wrap);
+  });
+  box.appendChild(colsEl);
+}
+
+
+function renderWatchTimeline() {
+  const el = document.getElementById('watch-timeline');
+  if (!prep(el, ['watchlist'])) return;
+  const now = Date.now();
+  const byMonth = d3.group(rows('watchlist').slice().sort((a, b) => (a.sort_date < b.sort_date ? -1 : 1)), (r) => String(r.sort_date).slice(0, 7));
+  byMonth.forEach((list, m) => {
+    const box = mk('section', 'tx-wt-month');
+    box.appendChild(mk('div', 'tx-wt-head', d3.utcFormat('%B %Y')(new Date(m + '-01T00:00:00Z'))));
+    const ul = mk('ul', 'tx-wt-list');
+    list.forEach((r) => {
+      const w = 'id=' + encodeURIComponent(r.id);
+      const t = Date.parse(r.sort_date + 'T00:00:00Z');
+      const li = mk('li', 'tx-wt-item' + (t >= now - 86400000 && t - now < 30 * 86400000 ? ' is-soon' : ''));
+      li.appendChild(mk('span', 'tx-wt-dot'));
+      const body = mk('div');
+      body.appendChild(mk('div', 'tx-wt-when', r.when, 'watchlist', 'when', w));
+      const d = document.createElement('details');
+      const sm = document.createElement('summary');
+      sm.appendChild(mk('span', 'tx-pre', r.item, 'watchlist', 'item', w));
+      d.appendChild(sm);
+      d.appendChild(mk('p', null, r.why, 'watchlist', 'why', w));
+      body.appendChild(d);
+      li.appendChild(body);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    el.appendChild(box);
+  });
+}
+
+
+const GLOSS_TABLE = {
+  id: 'gloss-table', src: 'glossary', key: 'id',
+  cols: [
+    { field: 'term', label: 'Term' },
+    { field: 'category', label: 'Category', cls: 'tx-hide-sm' },
+    { field: 'definition', label: 'Definition', sortable: false },
+  ],
+  defaultSort: (a, b) => String(a.term).localeCompare(String(b.term)),
+  filter: (r) => {
+    const q = (document.getElementById('gloss-search').value || '').trim().toLowerCase();
+    if (!q) return true;
+    return ['term', 'aliases', 'category', 'definition'].some((k) => String(r[k] || '').toLowerCase().includes(q));
+  },
+};
+
+
+// ---------- glossary: underline terms in the page text and show a preview on hover, focus or tap ----------
+const GL = { sig: '', re: null, exact: new Map(), loose: new Map(), byId: new Map(), open: null, showT: 0, hideT: 0, queued: false };
+const GL_SKIP = 'svg, script, style, button, select, option, input, textarea, a, h1, h2, .tx-term, .tx-gpop, .tx-tip, .tx-nav, #glossary, .tx-chip, .tx-conf, .tx-big, .tx-fig-value, .tx-play-rank';
+const GL_SCOPE = '.tx-tile, .tx-event, .tx-imp-card, .tx-qa-card, .tx-seg, .tx-item, .tx-vc-item, .tx-play, tr, li, .tx-section-head, .tx-bottom, .tx-fig, .tx-head, .tx-card, .tx-vc-detail, section';
+function glIndex() {
+  const list = rows('glossary');
+  const sig = list.length + ':' + list.map((g) => g.id).join(',').length;
+  if (sig === GL.sig) return GL.re;
+  GL.sig = sig;
+  GL.exact = new Map();
+  GL.loose = new Map();
+  GL.byId = new Map();
+  const pats = new Set();
+  list.forEach((g) => {
+    GL.byId.set(String(g.id), g);
+    const cs = g.case_sensitive === true || g.case_sensitive === 'true' || g.case_sensitive === 'Yes';
+    String(g.aliases || '').split('|').map((a) => a.trim()).filter((a) => a.length > 1).forEach((a) => {
+      if (cs) { if (!GL.exact.has(a)) GL.exact.set(a, g); } else if (!GL.loose.has(a.toLowerCase())) GL.loose.set(a.toLowerCase(), g);
+      pats.add(a);
+    });
+  });
+  if (!pats.size) { GL.re = null; return null; }
+  const esc = Array.from(pats).sort((a, b) => b.length - a.length).map((a) => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  GL.re = new RegExp('(?<![A-Za-z0-9])(?:' + esc.join('|') + ')(?![A-Za-z0-9])', 'gi');
+  return GL.re;
+}
+function glLookup(m) { return GL.exact.get(m) || GL.loose.get(m.toLowerCase()) || null; }
+function scheduleGlossary() {
+  if (GL.queued) return;
+  GL.queued = true;
+  requestAnimationFrame(() => { GL.queued = false; try { glossaryScan(); } catch (e) { console.error(e); } });
+}
+function glossaryScan() {
+  if (statusOf(['glossary']) !== 'ok') return;
+  const re = glIndex();
+  if (!re) return;
+  const root = document.getElementById('dash-root');
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => {
+      if (!n.nodeValue || n.nodeValue.trim().length < 2) return NodeFilter.FILTER_REJECT;
+      const p = n.parentElement;
+      return !p || p.closest(GL_SKIP) || p.closest('.dash-skeleton') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+    },
+  });
+  const texts = [];
+  while (walker.nextNode()) texts.push(walker.currentNode);
+  const used = new Map();
+  const usedFor = (scope) => {
+    if (!used.has(scope)) {
+      const set = new Set();
+      scope.querySelectorAll('.tx-term').forEach((t) => set.add(t.getAttribute('data-term')));
+      used.set(scope, set);
+    }
+    return used.get(scope);
+  };
+  texts.forEach((tn) => {
+    const scope = tn.parentElement.closest(GL_SCOPE) || root;
+    const set = usedFor(scope);
+    const s = tn.nodeValue;
+    re.lastIndex = 0;
+    let m, last = 0;
+    const parts = [];
+    while ((m = re.exec(s))) {
+      const g = glLookup(m[0]);
+      if (!g || set.has(String(g.id))) continue;
+      set.add(String(g.id));
+      if (m.index > last) parts.push(document.createTextNode(s.slice(last, m.index)));
+      const span = document.createElement('span');
+      span.className = 'tx-term';
+      span.tabIndex = 0;
+      span.setAttribute('data-term', String(g.id));
+      span.setAttribute('aria-describedby', 'gloss-pop');
+      span.textContent = m[0];
+      parts.push(span);
+      last = m.index + m[0].length;
+    }
+    if (!parts.length) return;
+    if (last < s.length) parts.push(document.createTextNode(s.slice(last)));
+    const frag = document.createDocumentFragment();
+    parts.forEach((x) => frag.appendChild(x));
+    tn.parentNode.replaceChild(frag, tn);
+  });
+}
+function glShow(term) {
+  const g = GL.byId.get(term.getAttribute('data-term'));
+  const pop = document.getElementById('gloss-pop');
+  if (!g) return;
+  clearTimeout(GL.hideT);
+  if (GL.open && GL.open !== term) GL.open.classList.remove('is-open');
+  GL.open = term;
+  term.classList.add('is-open');
+  const w = 'id=' + encodeURIComponent(g.id);
+  pop.textContent = '';
+  pop.appendChild(mk('div', 'tx-gpop-cat', g.category, 'glossary', 'category', w));
+  pop.appendChild(mk('div', 'tx-gpop-term', g.term, 'glossary', 'term', w));
+  pop.appendChild(mk('div', 'tx-gpop-def', g.definition, 'glossary', 'definition', w));
+  const more = mk('button', 'tx-linkbtn tx-gpop-more', 'All terms in the glossary →');
+  more.type = 'button';
+  more.addEventListener('click', () => {
+    glHide(true);
+    showTab('appendix');
+    const sec = document.getElementById('glossary');
+    document.getElementById('gloss-search').value = g.term;
+    renderTable(GLOSS_TABLE);
+    sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    dash.setLink('glossary');
+  });
+  pop.appendChild(more);
+  pop.hidden = false;
+  const wrap = pop.parentElement.getBoundingClientRect();
+  const r = term.getBoundingClientRect();
+  const pw = pop.offsetWidth, ph = pop.offsetHeight;
+  let left = r.left - wrap.left;
+  left = Math.max(0, Math.min(left, wrap.width - pw));
+  let top = r.bottom - wrap.top + 6;
+  if (r.bottom + ph + 12 > window.innerHeight && r.top - ph - 12 > 0) top = r.top - wrap.top - ph - 6;
+  pop.style.left = left + 'px';
+  pop.style.top = top + 'px';
+}
+function glHide(now) {
+  clearTimeout(GL.showT);
+  clearTimeout(GL.hideT);
+  const done = () => {
+    document.getElementById('gloss-pop').hidden = true;
+    if (GL.open) GL.open.classList.remove('is-open');
+    GL.open = null;
+  };
+  if (now) done(); else GL.hideT = setTimeout(done, 220);
+}
+(function wireGlossary() {
+  const root = document.getElementById('dash-root');
+  const pop = document.getElementById('gloss-pop');
+  root.addEventListener('mouseover', (ev) => {
+    const t = ev.target.closest && ev.target.closest('.tx-term');
+    if (t) { clearTimeout(GL.showT); clearTimeout(GL.hideT); GL.showT = setTimeout(() => glShow(t), 260); }
+  });
+  root.addEventListener('mouseout', (ev) => {
+    const t = ev.target.closest && ev.target.closest('.tx-term');
+    if (t) { clearTimeout(GL.showT); glHide(false); }
+  });
+  pop.addEventListener('mouseenter', () => clearTimeout(GL.hideT));
+  pop.addEventListener('mouseleave', () => glHide(false));
+  root.addEventListener('focusin', (ev) => {
+    const t = ev.target.closest && ev.target.closest('.tx-term');
+    if (t) glShow(t);
+  });
+  root.addEventListener('focusout', (ev) => {
+    const t = ev.target.closest && ev.target.closest('.tx-term');
+    if (t && !(ev.relatedTarget && pop.contains(ev.relatedTarget))) glHide(false);
+  });
+  root.addEventListener('click', (ev) => {
+    const t = ev.target.closest && ev.target.closest('.tx-term');
+    if (t) { ev.preventDefault(); if (GL.open === t && !pop.hidden) glHide(true); else glShow(t); return; }
+    if (!pop.contains(ev.target)) glHide(true);
+  });
+  root.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && GL.open) { const t = GL.open; glHide(true); t.focus(); } });
+})();
+
+
+// ---------- infra report: renderers ----------
+const UNIT_LABEL = { gas: 'Natural gas', 'power-gen': 'Power generation', 'T&D': 'T&D and electrical', water: 'Water and wastewater' };
+const VERDICT_ATTR = { 'Supports thesis': 'High', Mixed: 'Medium', 'Challenges thesis': 'Low' };
+function byOrder(a, b) { return (num(a.order) || 0) - (num(b.order) || 0); }
+function linkTo(url, text) {
+  const u = safeUrl(url);
+  if (!u) return mk('span', null, text);
+  const a = document.createElement('a');
+  a.href = u;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.textContent = text;
+  return a;
+}
+function sourceLinks(list) {
+  const wrap = mk('div', 'tx-srcs');
+  String(list || '').split(' | ').map((s) => s.trim()).filter((s) => safeUrl(s)).slice(0, 8).forEach((u, i) => {
+    let host = '';
+    try { host = new URL(u).hostname.replace(/^www\./, ''); } catch (e) { host = 'source'; }
+    const a = linkTo(u, host + ' ↗');
+    if (i) wrap.appendChild(document.createTextNode(' · '));
+    wrap.appendChild(a);
+  });
+  return wrap;
+}
+
+function renderSummary() {
+  const box = document.getElementById('fam-summary');
+  if (!prep(box, ['plan'])) return;
+  rows('plan').filter((r) => r.kind === 'summary').forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    box.appendChild(mk('div', 'tx-bottom-label', r.heading, 'plan', 'heading', w));
+    box.appendChild(mk('p', 'tx-bottom-text tx-pre', r.body, 'plan', 'body', w));
+  });
+}
+
+function renderAnswers() {
+  const el = document.getElementById('answers-grid');
+  if (!prep(el, ['answers', 'answer_numbers'])) return;
+  const nums = rows('answer_numbers');
+  rows('answers').slice().sort((a, b) => num(a.q) - num(b.q)).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const card = mk('article', 'tx-ans');
+    const top = mk('div', 'tx-ans-top');
+    top.appendChild(mk('span', 'tx-ans-q', 'Q' + fmtVal(num(r.q)), 'answers', 'q', w));
+    const chip = mk('span', 'tx-chip', r.verdict, 'answers', 'verdict', w);
+    chip.setAttribute('data-attr', VERDICT_ATTR[r.verdict] || 'Medium');
+    top.appendChild(chip);
+    card.appendChild(top);
+    card.appendChild(mk('h3', 'tx-ans-title', r.question, 'answers', 'question', w));
+    card.appendChild(mk('p', 'tx-ans-short', r.short_answer, 'answers', 'short_answer', w));
+    const kn = nums.filter((n) => String(n.q) === String(r.q)).slice(0, 4);
+    if (kn.length) {
+      const strip = mk('div', 'tx-ans-nums');
+      kn.forEach((n) => {
+        const nw = 'id=' + encodeURIComponent(n.id);
+        const b = mk('div', 'tx-ans-num');
+        b.appendChild(mk('div', 'tx-ans-val', n.value, 'answer_numbers', 'value', nw));
+        b.appendChild(mk('div', 'tx-ans-lbl', n.label, 'answer_numbers', 'label', nw));
+        strip.appendChild(b);
+      });
+      card.appendChild(strip);
+    }
+    const d = document.createElement('details');
+    d.className = 'tx-ans-more';
+    d.appendChild(mk('summary', null, 'The evidence'));
+    d.appendChild(mk('p', 'tx-pre', r.answer, 'answers', 'answer', w));
+    d.appendChild(sourceLinks(r.sources));
+    card.appendChild(d);
+    el.appendChild(card);
+  });
+}
+
+function renderSteps() {
+  const el = document.getElementById('plan-steps');
+  if (!prep(el, ['plan'])) return;
+  rows('plan').filter((r) => r.kind === 'step').sort(byOrder).forEach((r) => {
+    el.appendChild(mk('li', null, r.body, 'plan', 'body', 'id=' + encodeURIComponent(r.id)));
+  });
+}
+
+function renderTiles(elId, tab) {
+  const el = document.getElementById(elId);
+  if (!prep(el, ['figures'])) return;
+  rows('figures').filter((r) => r.tab === tab).sort(byOrder).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const t = mk('div', 'tx-tile');
+    t.appendChild(mk('div', 'tx-tile-label', r.label, 'figures', 'label', w));
+    const big = mk('div', 'tx-big');
+    if (r.prefix) big.appendChild(mk('span', null, r.prefix, 'figures', 'prefix', w));
+    big.appendChild(mk('span', null, fmtVal(num(r.value) !== null ? num(r.value) : r.value), 'figures', 'value', w));
+    if (r.unit) big.appendChild(mk('span', 'tx-unit tx-unit-word', r.unit, 'figures', 'unit', w));
+    t.appendChild(big);
+    if (r.note) t.appendChild(mk('div', 'tx-tile-note', r.note, 'figures', 'note', w));
+    t.appendChild(srcLine(r.confidence, r.source_url, 'figures', w));
+    el.appendChild(t);
+  });
+}
+
+// ----- generic chart engine: chart_meta (one row per chart) + charts (rows: chart_id, series, x, y, y2, label, order)
+function fmtBy(fmt, v) {
+  if (v === null || v === undefined || Number.isNaN(v)) return '';
+  if (fmt === 'pct') return d3.format('.0f')(v) + '%';
+  if (fmt === 'pct1') return d3.format('.1f')(v) + '%';
+  if (fmt === 'usd_b') return '$' + d3.format(',.1f')(v) + 'B';
+  if (fmt === 'usd_m') return '$' + d3.format(',.0f')(v) + 'M';
+  if (fmt === 'k') return d3.format(',.0f')(v / 1000) + 'k';
+  if (fmt === 'dec1') return d3.format(',.1f')(v);
+  return d3.format(',')(Math.round(v * 100) / 100);
+}
+function renderChartCards(containerId, group) {
+  const box = document.getElementById(containerId);
+  if (!box) return;
+  const ok = prep(box, ['chart_meta', 'charts']);
+  if (!ok) { box.classList.add('dash-skeleton'); return; }
+  const metas = rows('chart_meta').filter((m) => m.group === group).sort(byOrder);
+  const data = rows('charts');
+  const jobs = [];
+  metas.forEach((m) => {
+    const w = 'id=' + encodeURIComponent(m.id);
+    const card = mk('div', 'tx-card' + (m.wide === 'Yes' ? ' tx-span' : ''));
+    card.appendChild(mk('h3', 'tx-card-title', m.title, 'chart_meta', 'title', w));
+    if (m.note) card.appendChild(mk('p', 'tx-card-note', m.note, 'chart_meta', 'note', w));
+    const legend = mk('div', 'tx-legend');
+    card.appendChild(legend);
+    const el = mk('div', 'tx-chart tx-chart-gen');
+    el.setAttribute('data-source', 'charts');
+    el.style.minHeight = (num(m.height) || 240) + 'px';
+    card.appendChild(el);
+    card.appendChild(srcLine(m.confidence, m.source_url, 'chart_meta', w));
+    box.appendChild(card);
+    jobs.push([el, legend, m]);
+  });
+  // draw only after every card is in the grid, so each chart is sized to its final column width
+  jobs.forEach(([el, legend, m]) => {
+    try { drawGeneric(el, legend, m, data.filter((r) => r.chart_id === m.id)); el.style.minHeight = ''; } catch (e) { console.error('chart ' + m.id, e); }
+  });
+}
+function axisTicks(x, isLog, span) {
+  if (isLog) {
+    const [a, b] = x.domain();
+    const all = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100, 300, 1000, 3000, 10000, 30000].filter((t) => t >= a && t <= b);
+    return all.length > 6 ? all.filter((t, i) => i % 2 === 0) : all;
+  }
+  return x.ticks(Math.max(2, Math.min(6, Math.floor(span / 70))));
+}
+function seriesList(list) {
+  const seen = [];
+  list.slice().sort(byOrder).forEach((r) => { if (!seen.includes(r.series)) seen.push(r.series); });
+  return seen;
+}
+function catList(list) {
+  const seen = [];
+  list.slice().sort(byOrder).forEach((r) => { if (!seen.includes(String(r.x))) seen.push(String(r.x)); });
+  return seen;
+}
+function addLegend(legend, series, colorOf) {
+  legend.textContent = '';
+  if (series.length < 2) return;
+  series.forEach((s) => {
+    const item = document.createElement('span');
+    const sw = document.createElement('i');
+    sw.className = 'tx-swatch';
+    sw.style.background = colorOf(s);
+    item.append(sw, document.createTextNode(s));
+    legend.appendChild(item);
+  });
+}
+function drawGeneric(el, legend, m, list) {
+  const kind = m.kind || 'bar';
+  const W = Math.max(el.clientWidth, 300);
+  const c = dash.colors;
+  const series = seriesList(list);
+  const colorOf = (s) => (/^Fail/.test(String(s)) ? 'var(--color-bad)' : m.highlight && s !== m.highlight ? 'var(--cds-chart-muted)' : c[Math.max(0, series.indexOf(s)) % c.length]);
+  const fmt = (v) => fmtBy(m.fmt, v);
+  const tickFmt = (v) => fmt(v).replace(/\.0(?=\D*$)/, '');
+  if (kind === 'hbar' || kind === 'range') {
+    const items = list.slice().sort(byOrder);
+    const rowH = 30, top = 6;
+    const svg0 = newSvg(el, W, 10);
+    const left = Math.min(W * 0.42, measure(svg0, items.map((r) => String(r.x)), 'tx-lbl') + 14);
+    const right = Math.min(W * 0.3, measure(svg0, items.map((r) => r.label || (kind === 'range' ? fmt(num(r.y)) + '–' + fmt(num(r.y2)) : fmt(num(r.y)))), 'tx-val') + 14);
+    svg0.remove();
+    const H = top + items.length * rowH + 24;
+    const svg = newSvg(el, W, H).attr('aria-label', m.title);
+    const vals = items.flatMap((r) => [num(r.y), num(r.y2)]).filter((v) => v !== null);
+    const lo = m.log_x === 'Yes' ? Math.max(d3.min(vals) * 0.8, 0.01) : Math.min(0, d3.min(vals));
+    const x = (m.log_x === 'Yes' ? d3.scaleLog() : d3.scaleLinear()).domain([lo, d3.max(vals) * 1.05]).range([left, W - right]).nice();
+    axisTicks(x, m.log_x === 'Yes', W - left - right).forEach((t) => {
+      svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', top).attr('y2', H - 22).style('stroke', 'var(--cds-chart-grid)');
+      svg.append('text').attr('x', x(t)).attr('y', H - 6).attr('text-anchor', 'middle').text(tickFmt(t));
+    });
+    items.forEach((r, i) => {
+      const cy = top + i * rowH + rowH / 2;
+      const t = svg.append('text').attr('class', 'tx-lbl').attr('x', 0).attr('y', cy).attr('dy', '0.35em').text(String(r.x));
+      fitText(t.node(), left - 12);
+      const base = m.log_x === 'Yes' ? x.domain()[0] : 0;
+      const a = kind === 'range' ? num(r.y) : base, b = kind === 'range' ? num(r.y2) : num(r.y);
+      const col = m.highlight ? (String(r.x) === m.highlight ? c[0] : 'var(--cds-chart-muted)') : (b < a ? 'var(--color-bad)' : (r.series && series.length > 1 ? colorOf(r.series) : c[0]));
+      const x0 = x(Math.min(a, b)), x1 = x(Math.max(a, b));
+      svg.append('rect').attr('x', x0).attr('y', cy - 7).attr('width', Math.max(3, x1 - x0)).attr('height', 14).attr('rx', 4).style('fill', col);
+      svg.append('text').attr('class', 'tx-val').attr('x', x1 + 6).attr('y', cy).attr('dy', '0.35em').text(r.label || (kind === 'range' ? fmt(a) + '–' + fmt(b) : fmt(b)));
+      svg.append('rect').attr('x', 0).attr('y', cy - rowH / 2).attr('width', W).attr('height', rowH).style('fill', 'transparent')
+        .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev, svg.node()); showTip(el, String(r.x), [r.label || (kind === 'range' ? fmt(a) + '–' + fmt(b) : fmt(b)), r.note || ''], px, py); })
+        .on('mouseleave', () => hideTip(el));
+    });
+    addLegend(legend, series.length > 1 ? series : [], colorOf);
+    return;
+  }
+  if (kind === 'heat') {
+    const xs = m.x_order ? m.x_order.split('|') : catList(list), ys = m.y_order ? m.y_order.split('|') : seriesList(list);
+    const svg0 = newSvg(el, W, 10);
+    const left = Math.min(W * 0.35, measure(svg0, ys, 'tx-lbl') + 14);
+    svg0.remove();
+    const cell = Math.min(m.wide === 'Yes' ? 170 : 64, (W - left) / xs.length);
+    const ch = m.wide === 'Yes' ? 32 : cell * 0.62;
+    const top = 34, H = top + ys.length * ch + 6;
+    const svg = newSvg(el, W, H).attr('aria-label', m.title);
+    const vmax = d3.max(list, (r) => num(r.y)) || 1;
+    xs.forEach((xv, i) => {
+      const t = svg.append('text').attr('class', 'tx-lbl').attr('x', left + i * cell + cell / 2).attr('y', top - 10).attr('text-anchor', 'middle').text(xv);
+      fitText(t.node(), cell - 4);
+    });
+    ys.forEach((yv, j) => {
+      const t = svg.append('text').attr('class', 'tx-lbl').attr('x', 0).attr('y', top + j * ch + ch / 2).attr('dy', '0.35em').text(yv);
+      fitText(t.node(), left - 10);
+      xs.forEach((xv, i) => {
+        const r = list.find((d) => d.series === yv && String(d.x) === xv);
+        const v = r ? num(r.y) : null;
+        svg.append('rect').attr('x', left + i * cell + 1).attr('y', top + j * ch + 1).attr('width', cell - 2).attr('height', ch - 2).attr('rx', 3)
+          .style('fill', v === null ? 'var(--color-panel)' : c[0]).attr('fill-opacity', v === null ? 1 : 0.12 + 0.88 * v / vmax)
+          .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev, svg.node()); showTip(el, yv + ' × ' + xv, [v === null ? 'n/a' : fmt(v), r && r.note ? r.note : ''], px, py); })
+          .on('mouseleave', () => hideTip(el));
+        if (v !== null) svg.append('text').attr('class', 'tx-val').attr('x', left + i * cell + cell / 2).attr('y', top + j * ch + ch / 2).attr('dy', '0.35em').attr('text-anchor', 'middle')
+          .style('fill', v / vmax > 0.6 ? 'var(--color-panel)' : 'var(--color-fg)').style('pointer-events', 'none').text(r.label || fmt(v));
+      });
+    });
+    return;
+  }
+  if (kind === 'scatter') {
+    const H = Math.max(260, num(m.height) || 300), padL = 44, padB = 32, top = 10, right = 16;
+    const svg = newSvg(el, W, H).attr('aria-label', m.title);
+    const xv = list.map((r) => num(r.x)).filter((v) => v !== null && v > 0), yv = list.map((r) => num(r.y)).filter((v) => v !== null);
+    const x = (m.log_x === 'Yes' ? d3.scaleLog() : d3.scaleLinear()).domain([d3.min(xv) * 0.7, d3.max(xv) * 1.4]).range([padL, W - right]);
+    const y = d3.scaleLinear().domain([Math.min(0, d3.min(yv)), d3.max(yv) * 1.15]).nice().range([H - padB, top]);
+    y.ticks(5).forEach((t) => {
+      svg.append('line').attr('x1', padL).attr('x2', W - right).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
+      svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmtBy(m.fmt, t));
+    });
+    axisTicks(x, m.log_x === 'Yes', W - padL - right).forEach((t) => {
+      svg.append('text').attr('x', x(t)).attr('y', H - 12).attr('text-anchor', 'middle').text(fmtBy(m.x_fmt, t));
+    });
+    if (m.x_title) svg.append('text').attr('x', W - right).attr('y', H - 1).attr('text-anchor', 'end').text(m.x_title);
+    list.forEach((r) => {
+      const px = num(r.x), py = num(r.y);
+      if (px === null || py === null || px <= 0) return;
+      svg.append('circle').attr('cx', x(px)).attr('cy', y(py)).attr('r', 6).style('fill', colorOf(r.series)).attr('fill-opacity', 0.85).style('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+        .on('mousemove', (ev) => { const [qx, qy] = d3.pointer(ev, svg.node()); showTip(el, r.label || String(r.x), [r.series, fmtBy(m.x_fmt, px) + ' · ' + fmtBy(m.fmt, py), r.note || ''], qx, qy); })
+        .on('mouseleave', () => hideTip(el));
+      const t = svg.append('text').attr('class', 'tx-val').attr('x', x(px) + 9).attr('y', y(py)).attr('dy', '0.35em').style('pointer-events', 'none').text(clip(r.label, 18));
+      if (x(px) + 120 > W) t.attr('x', x(px) - 9).attr('text-anchor', 'end');
+    });
+    addLegend(legend, series, colorOf);
+    return;
+  }
+  // bar (grouped), stack, line
+  const cats = catList(list);
+  const H = num(m.height) || 240, padL = 48, padB = 34, top = 14, right = 12;
+  const svg = newSvg(el, W, H).attr('aria-label', m.title);
+  const stacked = kind === 'stack';
+  let ymax;
+  if (stacked) ymax = d3.max(cats, (cv) => d3.sum(list.filter((r) => String(r.x) === cv), (r) => num(r.y) || 0));
+  else ymax = d3.max(list, (r) => num(r.y));
+  const ymin = Math.min(0, d3.min(list, (r) => num(r.y)) || 0);
+  const yTop = stacked && m.fmt === 'pct' && ymax <= 101 ? 100 : ymax * 1.1 || 1;
+  const y = d3.scaleLinear().domain([ymin, yTop]).nice().range([H - padB, top]);
+  y.ticks(5).forEach((t) => {
+    svg.append('line').attr('x1', padL).attr('x2', W - right).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(tickFmt(t));
+  });
+  const x = d3.scaleBand().domain(cats).range([padL, W - right]).padding(kind === 'line' ? 0 : 0.22);
+  const every = Math.ceil(cats.length / Math.max(1, Math.floor((W - padL) / 54)));
+  const yearAxis = kind === 'line' && cats.length > 2 && cats.every((cv) => /^\d{4}$/.test(cv));
+  const xYear = yearAxis ? d3.scaleLinear().domain(d3.extent(cats, (cv) => +cv)).range([x(cats[0]) + x.bandwidth() / 2, x(cats[cats.length - 1]) + x.bandwidth() / 2]) : null;
+  let lastTick = -Infinity;
+  cats.forEach((cv, i) => {
+    if (yearAxis ? xYear(+cv) - lastTick < 40 : i % every) return;
+    if (yearAxis) lastTick = xYear(+cv);
+    const t = svg.append('text').attr('x', yearAxis ? xYear(+cv) : x(cv) + x.bandwidth() / 2).attr('y', H - 14).attr('text-anchor', 'middle').text(cv);
+    fitText(t.node(), x.bandwidth() * every - 2);
+  });
+  if (kind === 'line') {
+    const px = (cv) => (yearAxis ? xYear(+cv) : x(cv) + x.bandwidth() / 2);
+    series.forEach((s) => {
+      const pts = cats.map((cv) => { const r = list.find((d) => d.series === s && String(d.x) === cv); return r && num(r.y) !== null ? [px(cv), y(num(r.y)), r] : null; }).filter(Boolean);
+      svg.append('path').attr('d', d3.line()(pts.map((p) => [p[0], p[1]]))).attr('fill', 'none').style('stroke', colorOf(s)).attr('stroke-width', 2.5);
+      pts.forEach((p) => svg.append('circle').attr('cx', p[0]).attr('cy', p[1]).attr('r', 3.5).style('fill', colorOf(s))
+        .on('mousemove', (ev) => { const [qx, qy] = d3.pointer(ev, svg.node()); showTip(el, s + ' · ' + p[2].x, [p[2].label || fmt(num(p[2].y)), p[2].note || ''], qx, qy); })
+        .on('mouseleave', () => hideTip(el)));
+      const last = pts[pts.length - 1];
+      if (last && series.length <= 4) svg.append('text').attr('class', 'tx-val').attr('x', Math.min(last[0] + 4, W - 40)).attr('y', last[1] - 8).text(last[2].label || fmt(num(last[2].y)));
+    });
+  } else {
+    const inner = d3.scaleBand().domain(series).range([0, x.bandwidth()]).padding(0.08);
+    cats.forEach((cv) => {
+      let acc = 0;
+      series.forEach((s) => {
+        const r = list.find((d) => d.series === s && String(d.x) === cv);
+        if (!r || num(r.y) === null) return;
+        const v = num(r.y);
+        const bx = stacked ? x(cv) : x(cv) + inner(s);
+        const bw = stacked ? x.bandwidth() : inner.bandwidth();
+        const y0 = stacked ? y(acc + v) : y(Math.max(0, v));
+        const h = stacked ? y(acc) - y(acc + v) : Math.abs(y(v) - y(0));
+        acc += v;
+        svg.append('rect').attr('x', bx).attr('y', y0).attr('width', bw).attr('height', Math.max(0, h - (stacked ? 1 : 0))).attr('rx', stacked ? 1 : 3)
+          .style('fill', colorOf(s))
+          .on('mousemove', (ev) => { const [qx, qy] = d3.pointer(ev, svg.node()); showTip(el, (series.length > 1 ? s + ' · ' : '') + cv, [r.label || fmt(v), r.note || ''], qx, qy); })
+          .on('mouseleave', () => hideTip(el));
+        if (!stacked && cats.length * series.length <= 14) svg.append('text').attr('class', 'tx-val').attr('x', bx + bw / 2).attr('y', y0 - 4).attr('text-anchor', 'middle').style('pointer-events', 'none').text(r.label || fmt(v));
+      });
+    });
+  }
+  addLegend(legend, series, colorOf);
+}
+
+function renderClaims() {
+  const el = document.getElementById('claims-list');
+  if (!prep(el, ['deck_claims'])) return;
+  const attr = { true: 'High', 'mostly true': 'High', misleading: 'Medium', false: 'Low', unverifiable: 'Low' };
+  rows('deck_claims').sort(byOrder).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const card = mk('article', 'tx-claim');
+    const top = mk('div', 'tx-claim-top');
+    top.appendChild(mk('p', 'tx-claim-text', r.claim, 'deck_claims', 'claim', w));
+    const chip = mk('span', 'tx-chip', r.verdict, 'deck_claims', 'verdict', w);
+    chip.setAttribute('data-attr', attr[String(r.verdict).toLowerCase()] || 'Medium');
+    top.appendChild(chip);
+    card.appendChild(top);
+    card.appendChild(mk('p', null, r.better_statement, 'deck_claims', 'better_statement', w));
+    if (safeUrl(r.source_url)) card.appendChild(srcLine(null, r.source_url));
+    el.appendChild(card);
+  });
+}
+
+function renderPlatforms() {
+  const el = document.getElementById('prec-board');
+  if (!prep(el, ['platforms'])) return;
+  const outcomes = [['thriving', 'Thriving'], ['solid', 'Solid'], ['mixed', 'Mixed'], ['struggling', 'Struggling'], ['failed/restructured', 'Failed or restructured'], ['exited', 'Exited or merged']];
+  const list = rows('platforms');
+  outcomes.forEach(([o, label]) => {
+    const items = list.filter((r) => r.outcome === o);
+    if (!items.length) return;
+    const col = mk('div', 'tx-board-col');
+    col.setAttribute('data-outcome', o);
+    col.appendChild(mk('div', 'tx-board-head', label));
+    items.forEach((r) => {
+      const w = 'id=' + encodeURIComponent(r.id);
+      const it = mk('article', 'tx-board-item');
+      const name = mk('div', 'tx-strong');
+      const nm = mk('span', null, r.name, 'platforms', 'name', w);
+      if (safeUrl(r.website)) { const a = linkTo(r.website, ''); a.appendChild(nm); name.appendChild(a); } else name.appendChild(nm);
+      it.appendChild(name);
+      const chips = mk('div', 'tx-chips');
+      chips.appendChild(mk('span', 'tx-chip', r.type, 'platforms', 'type', w));
+      chips.appendChild(mk('span', 'tx-chip', r.model, 'platforms', 'model', w));
+      if (r.units) chips.appendChild(mk('span', 'tx-chip', r.units, 'platforms', 'units', w));
+      it.appendChild(chips);
+      const facts = mk('div', 'tx-card-note');
+      [['revenue', r.revenue], ['margin', r.margin]].forEach(([f, v], i) => {
+        if (!v) return;
+        if (facts.childNodes.length) facts.appendChild(document.createTextNode(' · '));
+        facts.appendChild(mk('span', null, v, 'platforms', f, w));
+      });
+      if (facts.childNodes.length) it.appendChild(facts);
+      it.appendChild(mk('p', null, r.lesson, 'platforms', 'lesson', w));
+      const d = document.createElement('details');
+      d.appendChild(mk('summary', null, 'Evidence and deals'));
+      d.appendChild(mk('p', null, r.evidence, 'platforms', 'evidence', w));
+      if (r.acquisitions) d.appendChild(mk('p', null, r.acquisitions, 'platforms', 'acquisitions', w));
+      d.appendChild(sourceLinks(r.sources));
+      it.appendChild(d);
+      col.appendChild(it);
+    });
+    el.appendChild(col);
+  });
+}
+
+const CRIT = [['c_recurring', 'Recurring maintenance'], ['c_customer', 'Large regional or national customer'], ['c_specialized', 'Specialized labor and equipment'], ['c_avoid', 'Avoids low-bid and fixed-price work'], ['c_independent', 'Independent (not sponsor-owned)']];
+function critDot(v) {
+  const s = mk('span', 'tx-dot');
+  s.setAttribute('data-v', v || 'unknown');
+  s.textContent = v === 'unknown' || !v ? '?' : '';
+  return s;
+}
+function candFilter(r) {
+  const u = document.getElementById('cand-unit').value;
+  const q = (document.getElementById('cand-search').value || '').trim().toLowerCase();
+  if (u && r.unit !== u) return false;
+  if (document.getElementById('cand-platform').checked && r.grade !== 'Platform') return false;
+  if (document.getElementById('cand-free').checked && r.c_independent === 'no') return false;
+  if (q && !['name', 'hq', 'services', 'customers', 'ownership', 'size_hint'].some((k) => String(r[k] || '').toLowerCase().includes(q))) return false;
+  return true;
+}
+function renderCandidates() {
+  const el = document.getElementById('cand-board');
+  const sel = document.getElementById('cand-unit');
+  if (!prep(el, ['candidates'])) return;
+  const all = rows('candidates');
+  if (sel.options.length <= 1) Object.keys(UNIT_LABEL).forEach((u) => { if (all.some((r) => r.unit === u)) { const o = document.createElement('option'); o.value = u; o.textContent = UNIT_LABEL[u]; sel.appendChild(o); } });
+  const list = all.filter(candFilter).sort((a, b) => num(b.fit_score) - num(a.fit_score) || String(a.name).localeCompare(String(b.name)));
+  if (!list.length) { el.appendChild(mk('p', 'tx-card-note', 'No company matches these filters.')); return; }
+  const legend = mk('div', 'tx-dot-legend');
+  CRIT.forEach(([, label], i) => { const s = mk('span'); s.appendChild(mk('b', null, String.fromCharCode(65 + i))); s.appendChild(document.createTextNode(' ' + label)); legend.appendChild(s); });
+  el.appendChild(legend);
+  const grid = mk('div', 'tx-cand-grid');
+  list.forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const it = mk('article', 'tx-cand');
+    const head = mk('div', 'tx-cand-head');
+    const nm = mk('span', 'tx-strong', r.name, 'candidates', 'name', w);
+    if (safeUrl(r.website)) { const a = linkTo(r.website, ''); a.appendChild(nm); head.appendChild(a); } else head.appendChild(nm);
+    const sc = mk('span', 'tx-cand-score', fmtVal(num(r.fit_score)), 'candidates', 'fit_score', w);
+    sc.setAttribute('data-score', String(r.fit_score));
+    head.appendChild(sc);
+    it.appendChild(head);
+    const chips = mk('div', 'tx-chips');
+    chips.appendChild(mk('span', 'tx-chip', UNIT_LABEL[r.unit] || r.unit));
+    const g = mk('span', 'tx-chip', r.grade, 'candidates', 'grade', w);
+    g.setAttribute('data-attr', r.grade === 'Platform' ? 'High' : r.grade === 'Add-on' ? 'Medium' : 'Low');
+    chips.appendChild(g);
+    if (r.hq) chips.appendChild(mk('span', 'tx-chip', r.hq, 'candidates', 'hq', w));
+    it.appendChild(chips);
+    it.appendChild(mk('p', 'tx-cand-svc', r.services, 'candidates', 'services', w));
+    const dots = mk('div', 'tx-dots');
+    CRIT.forEach(([f], i) => { const d = mk('span', 'tx-dotwrap'); d.appendChild(mk('b', null, String.fromCharCode(65 + i))); d.appendChild(critDot(r[f])); dots.appendChild(d); });
+    it.appendChild(dots);
+    const d = document.createElement('details');
+    d.appendChild(mk('summary', null, 'Ownership, size, customers and sources'));
+    [['ownership', 'Ownership'], ['size_hint', 'Size'], ['customers', 'Customers'], ['recurring_evidence', 'Recurring work'], ['red_flags', 'Red flags']].forEach(([f, lbl]) => {
+      if (!r[f]) return;
+      const p = mk('p', 'tx-card-note');
+      p.appendChild(mk('b', null, lbl + ': '));
+      p.appendChild(mk('span', null, r[f], 'candidates', f, w));
+      d.appendChild(p);
+    });
+    d.appendChild(sourceLinks(r.sources));
+    it.appendChild(d);
+    grid.appendChild(it);
+  });
+  el.appendChild(grid);
+}
+
+function renderRanking() {
+  const el = document.getElementById('rank-list');
+  if (!prep(el, ['unit_ranking'])) return;
+  rows('unit_ranking').slice().sort((a, b) => num(a.rank) - num(b.rank)).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    const card = mk('article', 'tx-play');
+    const top = mk('div', 'tx-play-top');
+    top.appendChild(mk('span', 'tx-play-rank', fmtVal(num(r.rank)), 'unit_ranking', 'rank', w));
+    top.appendChild(mk('h4', 'tx-play-title', r.unit, 'unit_ranking', 'unit', w));
+    card.appendChild(top);
+    const chips = mk('div', 'tx-chips');
+    const a = mk('span', 'tx-chip', r.attractiveness, 'unit_ranking', 'attractiveness', w);
+    a.setAttribute('data-attr', r.attractiveness);
+    chips.appendChild(a);
+    card.appendChild(chips);
+    const parts = String(r.why || '').split(/\s*•\s*/).filter(Boolean);
+    card.appendChild(mk('p', null, parts[0], 'unit_ranking', 'why', w));
+    if (parts.length > 1) {
+      const ul = mk('ul', 'tx-bul');
+      parts.slice(1).forEach((t) => ul.appendChild(mk('li', null, t)));
+      card.appendChild(ul);
+    }
+    const dl = mk('dl', 'tx-dl');
+    [['Market size', 'tam'], ['Maintenance share', 'mro_share'], ['Margins', 'margin_range'], ['Fragmentation', 'fragmentation'], ['Competition', 'competition'], ['Candidates', 'candidates']].forEach(([lbl, f]) => {
+      if (!r[f]) return;
+      dl.appendChild(mk('dt', null, lbl));
+      dl.appendChild(mk('dd', null, r[f], 'unit_ranking', f, w));
+    });
+    const d = document.createElement('details');
+    d.appendChild(mk('summary', null, 'Size, margins, competition and candidates'));
+    d.appendChild(dl);
+    card.appendChild(d);
+    el.appendChild(card);
+  });
+}
+
+function renderPlan() {
+  const ids = ['plan-first', 'plan-vi', 'plan-edits', 'plan-risks', 'plan-signals', 'caveats-text'];
+  const els = ids.map((i) => document.getElementById(i));
+  const ok = els.map((e) => prep(e, ['plan']));
+  if (!ok[0]) return;
+  const [first, vi, edits, risks, signals, cav] = els;
+  rows('plan').sort(byOrder).forEach((r) => {
+    const w = 'id=' + encodeURIComponent(r.id);
+    if (r.kind === 'first_unit') {
+      first.appendChild(mk('div', 'tx-bottom-label', r.heading, 'plan', 'heading', w));
+      first.appendChild(mk('p', 'tx-bottom-text', r.body, 'plan', 'body', w));
+    } else if (r.kind === 'rationale') first.appendChild(mk('p', 'tx-pre', r.body, 'plan', 'body', w));
+    else if (r.kind === 'vi' || r.kind === 'risk' || r.kind === 'signal') {
+      const li = mk('li');
+      li.appendChild(mk('span', 'tx-strong', r.heading, 'plan', 'heading', w));
+      li.appendChild(document.createTextNode(' — '));
+      li.appendChild(mk('span', null, r.body, 'plan', 'body', w));
+      ({ vi: vi, risk: risks, signal: signals })[r.kind].appendChild(li);
+    } else if (r.kind === 'edit') edits.appendChild(mk('li', null, r.body, 'plan', 'body', w));
+    else if (r.kind === 'caveat') cav.appendChild(mk('span', null, r.body, 'plan', 'body', w));
+  });
+}
+
+const WATCH_TABLE = {
+  id: 'watch-table', src: 'watchlist', key: 'id',
+  cols: [
+    { field: 'when', label: 'When', sortBy: 'sort_date' },
+    { field: 'item', label: 'What', sortable: false, cls: 'tx-pre' },
+    { field: 'why', label: 'Why it matters', sortable: false, cls: 'tx-pre' },
+  ],
+  defaultSort: (a, b) => (a.sort_date < b.sort_date ? -1 : 1),
+};
+const SCALED_TABLE = {
+  id: 'scaled-table', src: 'scaled', key: 'id',
+  cols: [
+    { field: 'company', label: 'Company' },
+    { field: 'revenue_label', label: 'Utility-services revenue', sortBy: 'revenue_usd_b' },
+    { field: 'units', label: 'Units' },
+    { field: 'ownership', label: 'Ownership', cls: 'tx-hide-sm' },
+    { field: 'website', label: 'Website', sortable: false },
+    { field: 'note', label: 'Note', cls: 'tx-hide-sm', sortable: false },
+  ],
+  defaultSort: (a, b) => (num(b.revenue_usd_b) || 0) - (num(a.revenue_usd_b) || 0),
+};
+const PL_TABLE = {
+  id: 'pl-table', src: 'pl', key: 'id',
+  cols: [
+    { field: 'line', label: 'Line', sortable: false },
+    { field: 's50', label: 'Small', sortable: false },
+    { field: 's150', label: 'Mid', sortable: false },
+    { field: 's500', label: 'Large', sortable: false },
+    { field: 'drivers', label: 'What drives it', sortable: false, cls: 'tx-hide-sm' },
+  ],
+  defaultSort: byOrder,
+};
+const SYN_TABLE = {
+  id: 'syn-table', src: 'synergies', key: 'id',
+  cols: [
+    { field: 'lever', label: 'Synergy in the deck' },
+    { field: 'verdict', label: 'Verdict', cellClass: (r) => 'i-' + ({ Real: 'High', Partial: 'Medium', Overstated: 'Low' }[r.verdict] || 'Low') },
+    { field: 'quant', label: 'Size', sortable: false },
+    { field: 'evidence', label: 'Evidence', sortable: false, cls: 'tx-hide-sm' },
+  ],
+  defaultSort: byOrder,
+};
+const CAND_TABLE = {
+  id: 'cand-table', src: 'candidates', key: 'id',
+  cols: [
+    { field: 'name', label: 'Company' },
+    { field: 'unit', label: 'Unit' },
+    { field: 'grade', label: 'Grade' },
+    { field: 'fit_score', label: 'Fit', num: true, cls: 'tx-num' },
+    { field: 'hq', label: 'HQ', cls: 'tx-hide-sm' },
+    { field: 'ownership', label: 'Ownership', cls: 'tx-hide-sm', sortable: false },
+    { field: 'size_hint', label: 'Size', sortable: false, cls: 'tx-hide-sm' },
+    { field: 'website', label: 'Website', sortable: false },
+  ],
+  defaultSort: (a, b) => String(a.unit).localeCompare(String(b.unit)) || num(b.fit_score) - num(a.fit_score),
+};
+const SRC_TABLE = {
+  id: 'src-table', src: 'findings', key: 'id',
+  cols: [
+    { field: 'claim', label: 'Finding', sortable: false },
+    { field: 'value', label: 'Value', sortable: false },
+    { field: 'domain', label: 'Topic' },
+    { field: 'status', label: 'Check', cls: 'tx-hide-sm' },
+    { field: 'confidence', label: 'Tag' },
+    { field: 'source_url', label: 'Source', sortable: false, cls: 'tx-hide-sm' },
+  ],
+  filter: (r) => {
+    const q = (document.getElementById('src-search').value || '').trim().toLowerCase();
+    return !q || ['claim', 'value', 'domain', 'source_name', 'source_url'].some((k) => String(r[k] || '').toLowerCase().includes(q));
+  },
+};
+
+document.getElementById('vc-select').addEventListener('change', (ev) => vcSelect(ev.target.value || null));
+document.getElementById('vc-fulton').addEventListener('change', () => { drawValueChain(); scheduleGlossary(); });
+document.getElementById('vc-clear').addEventListener('click', () => vcSelect(null));
+document.getElementById('gloss-search').addEventListener('input', () => renderTable(GLOSS_TABLE));
+document.getElementById('src-search').addEventListener('input', () => renderTable(SRC_TABLE));
+['cand-unit', 'cand-platform', 'cand-free', 'cand-search'].forEach((id) => document.getElementById(id).addEventListener(id === 'cand-search' ? 'input' : 'change', () => { renderCandidates(); scheduleGlossary(); }));
+
+let linked = false;
+function renderAll() {
+  [
+    fillMarks, renderSummary, renderAnswers, drawValueChain, renderSteps,
+    () => renderTiles('tiles-market', 'market'),
+    () => renderChartCards('charts-aging', 'aging'), () => renderChartCards('charts-demand', 'demand'),
+    () => renderChartCards('charts-competition', 'competition'), () => renderChartCards('charts-economics', 'economics'),
+    () => renderChartCards('charts-synergies', 'synergies'), () => renderChartCards('charts-candidates', 'candidates'),
+    renderClaims, renderWatchTimeline, renderPlatforms, renderCandidates, renderRanking, renderPlan,
+    () => renderTable(WATCH_TABLE), () => renderTable(SCALED_TABLE), () => renderTable(PL_TABLE), () => renderTable(SYN_TABLE),
+    () => renderTable(CAND_TABLE), () => renderTable(SRC_TABLE), () => renderTable(GLOSS_TABLE),
+  ].forEach((f) => {
+    try { f(); } catch (e) { console.error(e); }
+  });
+  glHide(true);
+  scheduleGlossary();
+}
+
+// ---------- tabs and collapsibles ----------
+const TABS = {
+  overview: ['verdict-box', 'questions', 'value-chain', 'actions'],
+  market: ['market-tiles', 'aging', 'why-now', 'deck-claims', 'watchlist'],
+  competition: ['precedents', 'fragmentation'],
+  economics: ['tam', 'synergies'],
+  candidates: ['candidates'],
+  fam: ['ranking', 'plan'],
+  appendix: ['cand-appendix', 'sources', 'glossary', 'notes'],
+};
+(function buildTabs() {
+  const wrap = document.querySelector('#dash-root .tx');
+  const head = document.getElementById('top');
+  const panels = {};
+  let after = head;
+  Object.keys(TABS).forEach((t) => {
+    const p = document.createElement('div');
+    p.className = 'tx-panel';
+    p.id = 'tab-' + t;
+    p.setAttribute('role', 'tabpanel');
+    after.after(p);
+    after = p;
+    panels[t] = p;
+  });
+  Object.keys(TABS).forEach((t) => TABS[t].forEach((id) => {
+    let el;
+    if (id.slice(0, 2) === '@@') {
+      el = document.createElement('section');
+      el.className = 'tx-section';
+      el.appendChild(document.getElementById(id.slice(2)));
+    } else if (id[0] === '@') {
+      const inner = document.getElementById(id.slice(1));
+      const card = inner && inner.closest('.tx-card');
+      if (!card) return;
+      el = document.createElement('section');
+      el.className = 'tx-section';
+      el.id = 'sec-' + id.slice(1);
+      const h = document.createElement('div');
+      h.className = 'tx-section-head';
+      const h2 = document.createElement('h2');
+      h2.className = 'tx-h2';
+      h2.textContent = t === 'overview' ? 'Action items' : 'All tracked projects';
+      h.appendChild(h2);
+      el.appendChild(h);
+      el.appendChild(card);
+    } else el = document.getElementById(id);
+    if (el) panels[t].appendChild(el);
+  }));
+  // fold: cards with a title (except charts on the market tab and everything on the overview tab)
+  document.querySelectorAll('#dash-root .tx-panel .tx-card').forEach((card) => {
+    const panel = card.closest('.tx-panel');
+    const title = card.querySelector(':scope > .tx-card-title');
+    if (panel.id === 'tab-overview') return;
+    const visual = card.querySelector('.tx-chart, .tx-board, .tx-wt, .tx-vbar-wrap, .tx-figs');
+    const table = card.querySelector('.tx-table-wrap');
+    if (visual && table) {
+      const d = document.createElement('details');
+      d.className = 'tx-fold-inline';
+      const sum = document.createElement('summary');
+      sum.textContent = 'Show as a table';
+      table.before(d);
+      d.append(sum, table);
+      d.addEventListener('toggle', () => { if (d.open) redraw(); });
+      return;
+    }
+    if (visual || !title) return;
+    fold(card, title);
+  });
+  ['scorecard-title'].forEach((id) => {
+    const h = document.getElementById(id);
+    if (!h) return;
+    const body = h.nextElementSibling;
+    const box = document.createElement('div');
+    h.before(box);
+    box.append(h, body);
+    fold(box, h);
+  });
+  const imp = document.getElementById('imp-grid');
+  if (imp) {
+    const box = document.createElement('div');
+    const t = document.createElement('h3');
+    t.className = 'tx-card-title';
+    t.textContent = 'Show all implications';
+    imp.before(box);
+    box.append(t, imp);
+    fold(box, t);
+  }
+  function fold(container, title) {
+    const d = document.createElement('details');
+    d.className = 'tx-fold';
+    const sum = document.createElement('summary');
+    title.before(d);
+    sum.appendChild(title);
+    const body = document.createElement('div');
+    body.className = 'tx-fold-body';
+    while (d.nextSibling && d.parentElement === container) body.appendChild(d.nextSibling);
+    let prev = d.previousSibling;
+    const before = [];
+    while (prev) { before.unshift(prev); prev = prev.previousSibling; }
+    d.append(sum, body);
+    d.addEventListener('toggle', () => { if (d.open) redraw(); });
+  }
+})();
+let currentTab = 'overview';
+function redraw() { try { renderAll(); } catch (e) { console.error(e); } }
+function showTab(t, scrollTo) {
+  if (!TABS[t]) t = 'overview';
+  currentTab = t;
+  document.querySelectorAll('#dash-root .tx-panel').forEach((p) => { p.hidden = p.id !== 'tab-' + t; });
+  document.querySelectorAll('#dash-root .tx-tabs button').forEach((b) => b.setAttribute('aria-selected', String(b.getAttribute('data-tab') === t)));
+  redraw();
+  if (scrollTo) { const el = document.getElementById(scrollTo); if (el) { const d = el.closest('details'); if (d) d.open = true; el.scrollIntoView(); } }
+}
+document.querySelectorAll('#dash-root .tx-tabs button').forEach((b) => b.addEventListener('click', () => { showTab(b.getAttribute('data-tab')); dash.setLink(b.getAttribute('data-tab')); }));
+(function initTab() {
+  const h = location.hash.slice(1);
+  if (TABS[h]) return showTab(h);
+  const el = h && document.getElementById(h);
+  const panel = el && el.closest('.tx-panel');
+  showTab(panel ? panel.id.slice(4) : 'overview', panel ? h : null);
+})();
+
+dash.onData(renderAll);
+</script>

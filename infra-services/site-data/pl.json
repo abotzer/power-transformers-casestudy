@@ -1,0 +1,65 @@
+[
+ {
+  "id": "pl0",
+  "order": 0,
+  "line": "Revenue",
+  "s50": "$50.0M",
+  "s150": "$150.0M",
+  "s500": "$500.0M",
+  "drivers": "Organic growth plus add-ons"
+ },
+ {
+  "id": "pl1",
+  "order": 1,
+  "line": "Gross profit before D&A",
+  "s50": "$9.5M (19.0%)",
+  "s150": "$27.8M (18.5%)",
+  "s500": "$97.5M (19.5%)",
+  "drivers": "Crew productivity, mix of specialty work, pricing on MSAs"
+ },
+ {
+  "id": "pl2",
+  "order": 2,
+  "line": "Operating SG&A (branch + business-unit)",
+  "s50": "$4.0M (8.0%)",
+  "s150": "$10.5M (7.0%)",
+  "s500": "$35.0M (7.0%)",
+  "drivers": "Branch overhead spread over more revenue"
+ },
+ {
+  "id": "pl3",
+  "order": 3,
+  "line": "Holdco cost (safety, finance, HR, ERP, M&A)",
+  "s50": "$0.0M (0.0%)",
+  "s150": "$3.0M (2.0%)",
+  "s500": "$6.0M (1.2%)",
+  "drivers": "Added once there are several companies"
+ },
+ {
+  "id": "pl4",
+  "order": 4,
+  "line": "Adjusted EBITDA",
+  "s50": "$5.5M (11.0%)",
+  "s150": "$14.3M (9.5%)",
+  "s500": "$56.5M (11.3%)",
+  "drivers": "Net of the above; comps at scale earn 8-10%"
+ },
+ {
+  "id": "pl5",
+  "order": 5,
+  "line": "Fleet net capex (estimate)",
+  "s50": "$1.5-2.0M (3-4%)",
+  "s150": "$4.5-6.0M (3-4%)",
+  "s500": "$15-20M (3-4%)",
+  "drivers": "Owned fleet at 3-4% of revenue"
+ },
+ {
+  "id": "pl6",
+  "order": 6,
+  "line": "Implied value at entry/exit multiple",
+  "s50": "~37-46 at 6.8-8.3x",
+  "s150": "~115-145 at 8-10x",
+  "s500": "~565-735 at 10-13x",
+  "drivers": "Multiples rise with scale; a permanent owner only realizes this by recapitalizing"
+ }
+]

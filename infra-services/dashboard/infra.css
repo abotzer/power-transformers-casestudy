@@ -44,4 +44,5 @@
 .tx-cand details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .tx-cand details p { margin-top: var(--cds-gap-xs); }
 .tx-rank { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--cds-gap-md); }
-.tx-chart-gen { min-height: 240px; }
+.tx-chart-gen:empty { min-height: 240px; }
+.tx-bul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }

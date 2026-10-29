@@ -1,0 +1,20 @@
+{
+  "answers": ["Answers to the seven questions", "Fulton's seven questions on the thesis, each with a short answer, a verdict and its evidence."],
+  "answer_numbers": ["Key numbers per answer", "The figures quoted under each answer, with a source link for each."],
+  "deck_claims": ["Deck statistics checked", "Each statistic in the thesis deck, the verdict from an independent check, and a better-supported version."],
+  "plan": ["Recommendation and plan", "Verdict, first unit, steps, value-chain links, deck edits, risks, signals and caveats."],
+  "unit_ranking": ["Business units ranked", "The four business units ranked as a first platform on size, maintenance share, margins, competition and candidates."],
+  "watchlist": ["Upcoming catalysts", "Dated rule-makings, filings, rate cases and data releases that could change the picture."],
+  "platforms": ["Precedent roll-up platforms", "Public companies and private-equity platforms that rolled up utility infrastructure services, and how they turned out."],
+  "scaled": ["Scaled players", "Companies at or near $1B of revenue in utility infrastructure services, with revenue, margin and ownership."],
+  "pl": ["Platform P&L model", "Illustrative platform economics at entry and at scale, line by line."],
+  "synergies": ["Cross-unit synergies", "Where crews, equipment and overhead can and cannot be shared across units, with estimates."],
+  "findings": ["Research findings", "Every sourced finding behind the report, with its domain, source link and confidence."],
+  "candidates": ["Platform candidates", "Companies screened against the thesis criteria, by business unit, with website, ownership and grade."],
+  "chart_meta": ["Chart definitions", "Title, note, kind, format and source of each chart."],
+  "charts": ["Chart data", "Data points for every chart, from federal statistics, filings, dockets and trade sources."],
+  "figures": ["Key market figures", "Headline numbers on aging assets, demand, spending and competition, each with a source link."],
+  "glossary": ["Glossary", "Plain definitions of the industry, regulatory and finance terms used in the report."],
+  "value_chain_nodes": ["Market map companies", "Companies and groups in the value chain, from raw inputs to the ratepayers who fund the work."],
+  "value_chain_edges": ["Market map flows", "What moves between groups in the value chain, with estimated annual value where known."]
+}

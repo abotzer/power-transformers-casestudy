@@ -1,0 +1,167 @@
+[
+ {
+  "id": "s00",
+  "company": "Quanta Services",
+  "revenue_label": "28480 ($M, FY2025)",
+  "revenue_usd_b": 28.48,
+  "units": "T&D, gas, power-gen",
+  "ownership": "Public (PWR)",
+  "website": "https://www.quantaservices.com",
+  "note": "Electric ~81% of Q4; Underground Utility Q4 1,410",
+  "confidence": "P"
+ },
+ {
+  "id": "s01",
+  "company": "MasTec",
+  "revenue_label": "14300 ($M, FY2025)",
+  "revenue_usd_b": 14.3,
+  "units": "T&D, gas",
+  "ownership": "Public (MTZ)",
+  "website": "https://www.mastec.com",
+  "note": "Power Delivery + Pipeline segments (not broken out here)",
+  "confidence": "P"
+ },
+ {
+  "id": "s02",
+  "company": "Primoris Services",
+  "revenue_label": "~7600 (implied) ($M, FY2025)",
+  "revenue_usd_b": 7.6,
+  "units": "gas, T&D",
+  "ownership": "Public (PRIM)",
+  "website": "https://www.prim.com",
+  "note": "Utilities segment (FY not retrieved)",
+  "confidence": "P"
+ },
+ {
+  "id": "s03",
+  "company": "Asplundh Tree Expert",
+  "revenue_label": "~6300 ($M, 2025 (Forbes))",
+  "revenue_usd_b": 6.3,
+  "units": "T&D",
+  "ownership": "Private (family)",
+  "website": "https://www.asplundh.com",
+  "note": "Utility vegetation mgmt and line services",
+  "confidence": "W"
+ },
+ {
+  "id": "s04",
+  "company": "MYR Group",
+  "revenue_label": "3660 ($M, FY2025)",
+  "revenue_usd_b": 3.66,
+  "units": "T&D",
+  "ownership": "Public (MYRG)",
+  "website": "https://www.myrgroup.com",
+  "note": "T&D 2,000",
+  "confidence": "P"
+ },
+ {
+  "id": "s05",
+  "company": "Centuri Holdings",
+  "revenue_label": "2983 ($M, FY2025)",
+  "revenue_usd_b": 2.98,
+  "units": "gas, T&D",
+  "ownership": "Public (CTRI)",
+  "website": "https://www.centuri.com",
+  "note": "Gas + electric utility services ~2,983",
+  "confidence": "P"
+ },
+ {
+  "id": "s06",
+  "company": "Azuria Water Solutions (+Inframark)",
+  "revenue_label": "~2500 combined ($M, 2025-26)",
+  "revenue_usd_b": 2.5,
+  "units": "water",
+  "ownership": "PE (New Mountain)",
+  "website": "https://www.azuria.com",
+  "note": "Water/wastewater rehab + O&M",
+  "confidence": "S"
+ },
+ {
+  "id": "s07",
+  "company": "Day & Zimmermann",
+  "revenue_label": "~2400 ($M, 2024-25)",
+  "revenue_usd_b": 2.4,
+  "units": "power-gen",
+  "ownership": "Private (family)",
+  "website": "https://www.dayzim.com",
+  "note": "Power O&M ~1,200",
+  "confidence": "P"
+ },
+ {
+  "id": "s08",
+  "company": "Davey Tree Expert",
+  "revenue_label": "~1950 ($M, FY2025)",
+  "revenue_usd_b": 1.95,
+  "units": "T&D",
+  "ownership": "Employee-owned (SEC filer)",
+  "website": "https://www.davey.com",
+  "note": "Utility segment (FY total not retrieved)",
+  "confidence": "P"
+ },
+ {
+  "id": "s09",
+  "company": "Pike Corporation",
+  "revenue_label": ">1700 (2020) ($M, 2020 (Moody's))",
+  "revenue_usd_b": 1.7,
+  "units": "T&D, gas",
+  "ownership": "PE (TPG, La Caisse; >$5B valuation)",
+  "website": "https://www.pike.com",
+  "note": "Power lines, substations, storm, gas",
+  "confidence": "S"
+ },
+ {
+  "id": "s10",
+  "company": "Michels Corporation",
+  "revenue_label": "not disclosed (ENR Top 400 #38)",
+  "revenue_usd_b": null,
+  "units": "gas, T&D, water",
+  "ownership": "Private (family)",
+  "website": "https://www.michels.us",
+  "note": "Pipeline, power T&D, trenchless water",
+  "confidence": "P"
+ },
+ {
+  "id": "s11",
+  "company": "Team Inc",
+  "revenue_label": "896.5 ($M, FY2025)",
+  "revenue_usd_b": 0.9,
+  "units": "power-gen",
+  "ownership": "Public (TISI)",
+  "website": "https://www.teaminc.com",
+  "note": "Inspection/heat treating; power a minority",
+  "confidence": "P"
+ },
+ {
+  "id": "s12",
+  "company": "Mistras Group",
+  "revenue_label": "724.0 ($M, FY2025)",
+  "revenue_usd_b": 0.72,
+  "units": "power-gen",
+  "ownership": "Public (MG)",
+  "website": "https://www.mistrasgroup.com",
+  "note": "NDE/inspection; power gen growing",
+  "confidence": "P"
+ },
+ {
+  "id": "s13",
+  "company": "Williams Industrial Services (failed)",
+  "revenue_label": "n/a",
+  "revenue_usd_b": null,
+  "units": "power-gen, water",
+  "ownership": "Sold to EnergySolutions",
+  "website": "https://www.energysolutions.com",
+  "note": "Power-gen maintenance + water",
+  "confidence": "P"
+ },
+ {
+  "id": "s90",
+  "company": "Badger Infrastructure Solutions",
+  "revenue_label": "831.7 ($M, FY2025)",
+  "revenue_usd_b": 0.83,
+  "units": "gas, T&D, water (hydro-excavation)",
+  "ownership": "Public (TSX: BDGI)",
+  "website": "https://www.badgerinc.com",
+  "note": "Owns a self-built hydrovac fleet; 23.8% adj. EBITDA margin",
+  "confidence": "P"
+ }
+]

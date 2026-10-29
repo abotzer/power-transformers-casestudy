@@ -1,0 +1,135 @@
+[
+ {
+  "id": "w00",
+  "sort_date": "2026-11-05",
+  "when": "Early Nov 2026",
+  "item": "Q3 2026 results from Centuri, Quanta, MasTec, MYR, Primoris, Mistras and Team",
+  "why": "Tests whether MSA margins hold (Centuri's guide is $280-310M adj. EBITDA) and whether specialty margins (Mistras 12.6%) keep improving."
+ },
+ {
+  "id": "w01",
+  "sort_date": "2026-11-10",
+  "when": "Nov 2026",
+  "item": "EIA November Short-Term Energy Outlook",
+  "why": "Shows whether the 2026-27 consumption forecasts (4,288 / 4,356 BkWh) hold."
+ },
+ {
+  "id": "w02",
+  "sort_date": "2026-12-01",
+  "when": "Late 2026",
+  "item": "Grid Strategies' next national load-growth report",
+  "why": "Shows whether the 166 GW five-year forecast rises again, or the ~25 GW data-center overstatement is corrected."
+ },
+ {
+  "id": "w03",
+  "sort_date": "2026-12-15",
+  "when": "Pending at DOT since 2026-04-30",
+  "item": "PHMSA gas leak detection and repair proposed rule",
+  "why": "Publication would restore a federal driver for leak survey and repair work, the core of a gas compliance add-on strategy."
+ },
+ {
+  "id": "w04",
+  "sort_date": "2026-12-31",
+  "when": "FY2027 (began 2026-10-01)",
+  "item": "FY2027 Clean Water and Drinking Water SRF appropriations",
+  "why": "First year without IIJA supplemental money ($2,603M per fund in FY2026); shows how deep the water funding cliff is."
+ },
+ {
+  "id": "w05",
+  "sort_date": "2027-01-27",
+  "when": "Late Jan 2027",
+  "item": "Census Vintage 2026 population estimates",
+  "why": "Confirms or reverses the slowdown (net international migration projected at ~321k for 2026)."
+ },
+ {
+  "id": "w06",
+  "sort_date": "2027-02-15",
+  "when": "Possibly early 2027",
+  "item": "D.C. Circuit decision in AWWA v. EPA on LCRI (argued 2026-09-30)",
+  "why": "Decides whether private-side lead-line replacement stands. Sets the timing of the water entry and of Imperial's lead and brass flows."
+ },
+ {
+  "id": "w07",
+  "sort_date": "2027-02-20",
+  "when": "Feb 2027",
+  "item": "EIA planned capacity additions for 2027",
+  "why": "First read on whether solar and wind additions peak after the OBBBA credit phase-out."
+ },
+ {
+  "id": "w08",
+  "sort_date": "2027-02-25",
+  "when": "Late Feb 2027",
+  "item": "Centuri FY2026 results and 2027 guidance",
+  "why": "Base gross margin trend (6.9% in 2024, 8.0% in 2025) is the best public read on gas and electric MSA economics."
+ },
+ {
+  "id": "w09",
+  "sort_date": "2027-02-28",
+  "when": "Feb 2027",
+  "item": "UGI's target date to finish cast-iron main replacement",
+  "why": "Shows utility programs shifting from cast iron to bare steel and vintage plastic, which is the durable work."
+ },
+ {
+  "id": "w10",
+  "sort_date": "2027-03-31",
+  "when": "~Mar 2027",
+  "item": "Palisades return to service (fuel load paused in Aug 2026)",
+  "why": "Execution test for nuclear restarts (~2.25 GW across three plants) and the outage-services niche."
+ },
+ {
+  "id": "w11",
+  "sort_date": "2027-04-30",
+  "when": "2026-2027",
+  "item": "Sponsor exits in lower-middle-market utility services (Sparus held by Ridgemont since 2021; reported USG Water Solutions sale)",
+  "why": "Sets the prices FAM will face for platforms and add-ons. Above ~9-10x, slow down."
+ },
+ {
+  "id": "w12",
+  "sort_date": "2027-06-30",
+  "when": "2027",
+  "item": "PHMSA CY2026 gas distribution annual-report data",
+  "why": "Re-pull the by-decade inventory and cast-iron mileage to finalize the deck's mains-over-50-years statistic."
+ },
+ {
+  "id": "w13",
+  "sort_date": "2027-07-31",
+  "when": "2027",
+  "item": "Artera refinancing, rating actions or asset sales",
+  "why": "Distress could release gas assets (Miller Pipeline, Minnesota Limited) as carve-outs. Deeper distress is a warning about MSA economics."
+ },
+ {
+  "id": "w14",
+  "sort_date": "2027-09-30",
+  "when": "2027",
+  "item": "Crane Clean Energy Center restart and Nine Mile Point 1 license renewal",
+  "why": "More nuclear life extension supports NDE and testing add-ons."
+ },
+ {
+  "id": "w15",
+  "sort_date": "2027-10-31",
+  "when": "2027",
+  "item": "EEI actual capex against the ~$207.9B 2025 projection",
+  "why": "EEI says first-year projections run high. This confirms the size of the T&D pool."
+ },
+ {
+  "id": "w16",
+  "sort_date": "2027-11-01",
+  "when": "2027-11-01",
+  "item": "LCRI compliance date (if upheld)",
+  "why": "Starts the 10-year lead-line replacement clock to ~2037."
+ },
+ {
+  "id": "w17",
+  "sort_date": "2028-01-15",
+  "when": "Jan 2028",
+  "item": "EIA outlook with full-year 2027 electricity consumption",
+  "why": "Tests the 4,356 BkWh forecast and the data-center-led growth story."
+ },
+ {
+  "id": "w18",
+  "sort_date": "2028-12-31",
+  "when": "Through 2028",
+  "item": "Data-center electricity use against LBNL's 325-580 TWh range for 2028",
+  "why": "Shows whether large-load growth is real enough to extend asset lives and raise maintenance intensity, or stays a construction story."
+ }
+]
