@@ -19,3 +19,4 @@ date,acquirer,target,type,value_usd_m,status,segment,confidence,source_url
 2023-10,Wind Point Partners,Central Moloney,Acquisition,,Closed,Distribution,S,
 ,(buyer n/s),Pioneer Custom Electrical Products (from Pioneer Power Solutions),Acquisition,50,Closed,Custom electrical,S,
 2026-01-06,RESA Power (Kohlberg),"3MD Power Services (Roanoke VA; LPT testing, repair, install)",Acquisition,,Closed,Aftermarket / field service,P,https://www.resapower.com/news/resa-power-acquisition-of-3md-power-services-llc/
+2026-10-28,GE Vernova,"Trench Group (from Triton Partners; bushings, instrument transformers, coils; 11 plants)",Acquisition,9000,Signed,Components: bushings / instrument transformers,P,https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000163/gev-20260930.htm
