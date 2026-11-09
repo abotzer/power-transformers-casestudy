@@ -1,6 +1,6 @@
 # North American Transformer Market Map
 
-**Baseline as of 2026-11-02.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
+**Baseline as of 2026-11-09.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
 
 Confidence tags: **[P]** primary source (company, government or filing), **[S]** reputable secondary (trade press, law firm, analyst), **[W]** weak (vendor blog or aggregator; directional only).
 
@@ -114,6 +114,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 | **Copper** | LME $14,474/t (Sep 2026), +45% YoY. COMEX premium near zero, so LME works for hedging. Copper wire PPI +19% YoY | World Bank, BLS [P] |
 | **Insulating oil** | Lube base-stock PPI +111% YoY. Ergon raised naphthenic transformer fluids +$2.05/gal (Mar-Apr 2026) | BLS, Ergon [P] |
 | **Insulation / bushings** | Hitachi bought Canduct, and on **Oct 16, 2026 announced a C$479M pressboard plant in London, Ontario** (first in Canada and in the Americas for Hitachi; ~100 jobs; end-2028; C$50M government support). It eases the large-unit insulation bottleneck, but mainly for Hitachi's own plants. Hitachi Alamo bushings plant. **GE Vernova agreed on Oct 28, 2026 to buy Trench Group (bushings, instrument transformers, coils; 11 plants) from Triton for ~$9B**, closing late 2027; GE Vernova says it buys most of its bushings externally today, so independent transformer makers could lose a supplier that is also a rival's captive. **DOE's $237M Grid SCALED call (Oct 30)** funds US-made subcomponents and refurbishment | [P] |
+| **GOES (domestic)** | Besides Cleveland-Cliffs, **U.S. Steel (Nippon Steel) plans grain-oriented electrical steel at Big River, Osceola AR, targeting mass production in 2028** (announced Nov 2025; no 2026 construction update found). A second domestic GOES source would ease the 50% Section 232 duty on imported cores and laminations for builders | [S] |
 | **Labor** | Coil winders in NAICS 3353: 3,600 (2023), mean $21.78/hr. Contracted plant wages $65-72k, 52-56% above county averages | BLS OEWS [P]; incentive filings [P] |
 
 ---
