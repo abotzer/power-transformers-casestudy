@@ -68,3 +68,5 @@ as_of,metric,value,unit,scope,confidence,source_url
 2026-08,PPI transformers and power regulators (WPU1174),434.493,index,"Jul 434.315; Jun 416.959 (step up in June, flat since)",P,https://fred.stlouisfed.org/series/WPU1174
 2026-09,PPI electrical equipment manufacturing (PCU3353133531),256.321,index,Aug 254.606; Jul 250.849,P,https://fred.stlouisfed.org/series/PCU3353133531
 2026-11-04,"TSEA Energy (Brazil) capacity investment, past year",230,USD M,New power transformer complex in Brazil; output committed through 2029; US its main market,S,https://transformer-magazine.com/news/tsea-invests-230-m-in-transformer-capacity/
+2026-10,BLS PPI final demand (Oct 2026),6.5,% YoY,+0.3% m/m SA; released Nov 13; transformer series not retrieved,P,https://www.bls.gov/news.release/archives/ppi_11132026.htm
+2026-09-30,Siemens Energy Grid Technologies orders FY2026 (to Sep 30),14.5,% YoY comparable,Group revenue EUR 44.2B (+15.5%); dividend EUR 2.30; secondary source,S,https://oilprice.com/Latest-Energy-News/World-News/Siemens-Energy-More-Than-Triples-Dividend-After-Record-Year.amp.html
