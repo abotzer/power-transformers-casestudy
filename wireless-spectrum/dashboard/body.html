@@ -1,0 +1,299 @@
+  <header class="tx-head" id="top">
+    %BAND%
+    <h1 class="tx-title">Wireless spectrum</h1>
+    <p class="tx-lede tx-fill" data-source="plan" data-field="body" data-where="id=headline">—</p>
+    <p class="tx-updated tx-fill" data-source="figures" data-field="label" data-where="id=report_window">—</p>
+    <nav class="tx-tabs" role="tablist" aria-label="Report sections">
+      <button type="button" role="tab" data-tab="overview">Overview</button>
+      <button type="button" role="tab" data-tab="demand">Demand and capacity</button>
+      <button type="button" role="tab" data-tab="supply">Supply and rules</button>
+      <button type="button" role="tab" data-tab="prices">Prices and deals</button>
+      <button type="button" role="tab" data-tab="satellite">Satellites</button>
+      <button type="button" role="tab" data-tab="projections">Projections</button>
+      <button type="button" role="tab" data-tab="invest">Ways to invest</button>
+      <button type="button" role="tab" data-tab="appendix">Appendix</button>
+    </nav>
+  </header>
+
+  <section class="tx-section" id="verdict-box">
+    <div class="tx-bottom dash-skeleton" id="fam-summary"></div>
+  </section>
+
+  <section class="tx-section" id="outlook">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="outlook-title">The outlook in numbers</h2>
+      <p class="tx-sub">Our central estimates and 80% ranges for the questions that decide the thesis, and how likely each future is. The Projections tab has every forecast, the reasoning and what would change our mind.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="outlook-scen-title">Four ways the market could look in 2030</h3>
+      <div class="tx-scen-bar dash-skeleton" id="outlook-scen" data-source="scenarios"></div>
+    </div>
+    <div class="tx-fc-grid dash-skeleton" id="outlook-grid" data-source="forecasts forecast_panel"></div>
+  </section>
+
+  <section class="tx-section" id="value-chain">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="vc-title">How the market works</h2>
+      <p class="tx-sub">Spectrum and equipment move left to right: where spectrum comes from (federal agencies, FCC auctions and satellite bands), the network equipment and sites built on it, the companies that hold the licences in the middle, the channels that sell service, and the customers and devices that use it. Solid lines are yearly flows of money for goods and services; dashed lines are spectrum rights changing hands, at deal or auction value. SpaceX, the newest large buyer, is highlighted. Click any company or group to trace its chain.</p>
+    </div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Find a company <select id="vc-select" aria-label="Find a company"><option value="">Choose…</option></select></label>
+        <button type="button" class="tx-btn" id="vc-focus">Trace SpaceX</button>
+        <button type="button" class="tx-btn" id="vc-clear">Show the whole market</button>
+      </div>
+      <div class="tx-legend" id="vc-legend"></div>
+      <div class="tx-vc-scroll">
+        <div class="tx-chart tx-vc dash-skeleton" id="vc-chart" data-source="value_chain_nodes value_chain_edges"></div>
+      </div>
+      <div class="tx-vc-detail" id="vc-detail"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="key-findings">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="kf-title">Key findings</h2>
+      <p class="tx-sub">What filings, regulators, auction records and industry data show. Pick a topic for its key numbers and sources; the other tabs hold the charts behind them.</p>
+    </div>
+    <div class="tx-kf dash-skeleton" id="findings-grid" data-source="key_findings key_numbers"></div>
+  </section>
+
+  <section class="tx-section" id="demand-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-demand" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="traffic">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="traffic-title">How fast demand is growing</h2>
+      <p class="tx-sub">Mobile data traffic, usage per phone, fixed wireless at home, and what forecasters expect from AI devices such as glasses, cars and robots. The test for the thesis is whether growth is speeding up or slowing down.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-demand"></div>
+  </section>
+
+  <section class="tx-section" id="capacity">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="capacity-title">Where new capacity comes from</h2>
+      <p class="tx-sub">Operators add capacity three ways: more spectrum, more cell sites, and more bits per hertz from better technology. Wi-Fi carries much of the load indoors. The more the other levers can do, the less a new megahertz is worth.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-capacity"></div>
+  </section>
+
+  <section class="tx-section" id="supply-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-supply" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="holdings">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="holdings-title">Who holds the spectrum</h2>
+      <p class="tx-sub">Licensed mobile spectrum by holder and band, after the 2025-2026 sales. Low-band travels far and through walls, mid-band carries most 5G capacity, and high-band (millimetre wave) is fast over short distances.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-supply"></div>
+  </section>
+
+  <section class="tx-section" id="pipeline">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="pipeline-title">What the FCC plans to sell, and the rules on who can buy</h2>
+      <p class="tx-sub">Bands in the auction pipeline with their expected timing, and the rules that limit how much any one company can hold.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="pipe-title">Spectrum pipeline and rules</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="pipe-table" data-source="pipeline" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="price-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-prices" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="auctions">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="auctions-title">What spectrum sells for</h2>
+      <p class="tx-sub">Prices are compared per megahertz per person covered ($/MHz-pop), so that bands of different width and reach can be set side by side. FCC auctions and private sales since 2006.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-prices"></div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="deals-title">Auctions and private sales</h3>
+      <p class="tx-card-note">Click a column header to sort. Prices per MHz-pop are as reported or computed from the deal value, the megahertz and the population covered.</p>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="deals-table" data-source="deals" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="global">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="global-title">Prices outside the US</h2>
+      <p class="tx-sub">Other countries' recent auctions, and how much spectrum went unsold. They show what happens to spectrum prices when supply is plentiful and buyers are few.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-global"></div>
+  </section>
+
+  <section class="tx-section" id="precedents">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="prec-title">Spectrum bets in history</h2>
+      <p class="tx-sub">Investors have bet on spectrum scarcity before. Grouped by how the bet turned out, with the cost, the outcome and the lesson.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-precedents"></div>
+    <div class="tx-board tx-board-wide dash-skeleton" id="prec-board" data-source="precedents"></div>
+  </section>
+
+  <section class="tx-section" id="sat-tiles">
+    <div class="tx-tiles dash-skeleton" id="tiles-satellite" data-source="figures"></div>
+  </section>
+
+  <section class="tx-section" id="d2d">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="d2d-title">Satellites that talk to phones</h2>
+      <p class="tx-sub">Direct-to-device service connects ordinary phones to satellites. It needs spectrum of its own or a carrier's, and a satellite beam covers a large area with a fixed amount of capacity, which limits what it can do in cities.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-satellite"></div>
+  </section>
+
+  <section class="tx-section" id="d2d-players">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="players-title">The direct-to-device players</h2>
+      <p class="tx-sub">Who is building satellite-to-phone service, with what spectrum and partners, and how far along each is.</p>
+    </div>
+    <div class="tx-cand-grid dash-skeleton" id="players-board" data-source="d2d_players"></div>
+  </section>
+
+  <section class="tx-section" id="proj-method">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="method-title">How we made the projections</h2>
+    </div>
+    <div class="tx-bottom dash-skeleton" id="method-box"></div>
+  </section>
+
+  <section class="tx-section" id="scenarios">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="scen-title">Scenarios for 2030</h2>
+      <p class="tx-sub">Four internally consistent pictures of the market, with our probability for each. The probabilities add to 100%.</p>
+    </div>
+    <div class="tx-card">
+      <div class="tx-scen-bar dash-skeleton" id="scen-bar" data-source="scenarios"></div>
+    </div>
+    <div class="tx-scen-grid dash-skeleton" id="scen-grid" data-source="scenarios"></div>
+  </section>
+
+  <section class="tx-section" id="forecasts">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="fc-title">Forecasts</h2>
+      <p class="tx-sub">Each bar is our 80% range (10th to 90th percentile) with the central estimate marked; the hollow dot is today's value. Small ticks show each forecasting lens's central estimate, so a wide spread of ticks means the lenses disagreed. Open a forecast for the reasoning.</p>
+    </div>
+    <div class="tx-vc-controls">
+      <label>Topic <select id="fc-group" aria-label="Forecast topic"><option value="">All topics</option></select></label>
+    </div>
+    <div class="tx-fc-grid dash-skeleton" id="fc-grid" data-source="forecasts forecast_panel"></div>
+  </section>
+
+  <section class="tx-section" id="events">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="ev-title">How likely are the key events?</h2>
+      <p class="tx-sub">Yes-or-no questions with a deadline, each with our probability and the range across the forecasting lenses.</p>
+    </div>
+    <div class="tx-prob-list dash-skeleton" id="prob-list" data-source="probabilities"></div>
+  </section>
+
+  <section class="tx-section" id="watchlist">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Signposts and upcoming events</h2>
+      <p class="tx-sub">Dated auctions, rulings, launches and results that would move the forecasts, and which way.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="watch-title">Upcoming events by month</h3>
+      <p class="tx-card-note">Amber dots fall within the next thirty days. Click an item for why it matters.</p>
+      <div class="tx-wt dash-skeleton" id="watch-timeline" data-source="watchlist"></div>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="watch-table" data-source="watchlist" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="exposure">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="exp-title">Public companies and funds with spectrum exposure</h2>
+      <p class="tx-sub">Listed ways to own a piece of the thesis, grouped by how directly their value depends on spectrum. Exposure is our judgment of how much of the company's value would move if spectrum became scarcer. This is a map of the market, not a recommendation to buy or sell any security.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-invest"></div>
+    <div class="tx-card">
+      <div class="tx-vc-controls">
+        <label>Exposure <select id="uni-grade" aria-label="Exposure"><option value="">All</option><option value="High">High</option><option value="Medium">Medium</option><option value="Low">Low</option></select></label>
+        <input class="tx-search" id="uni-search" type="search" placeholder="Search names, tickers or bands" autocomplete="off" aria-label="Search the universe">
+      </div>
+      <div class="tx-uni dash-skeleton" id="uni-board" data-source="universe"></div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="economics">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="econ-title">Who captures the value of spectrum</h2>
+      <p class="tx-sub">Owning spectrum helps shareholders only if it turns into pricing power or lower costs. Revenue, prices, subscriber growth, investment and valuations for the US carriers.</p>
+    </div>
+    <div class="tx-chartgrid" id="charts-economics"></div>
+  </section>
+
+  <section class="tx-section" id="universe-appendix">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">All companies and funds</h2>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="uni-table-title">Exposure table</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="uni-table" data-source="universe" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="players-appendix">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Direct-to-device players</h2>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="players-table-title">Players table</h3>
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="players-table" data-source="d2d_players" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="sources">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Evidence and sources</h2>
+      <p class="tx-sub">Every finding behind the report, with its confidence tag and a link. P is a regulator, filing, official statistic or company source; S is reputable press, an analyst or a law firm; W is a blog or aggregator, directional only. The check column shows the result of our second, independent check of the key numbers.</p>
+    </div>
+    <div class="tx-card">
+      <h3 class="tx-card-title" id="src-title">All findings</h3>
+      <input class="tx-search" id="src-search" type="search" placeholder="Search findings, e.g. C-band or EchoStar" autocomplete="off" aria-label="Search findings">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="src-table" data-source="findings" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="glossary">
+    <div class="tx-section-head">
+      <h2 class="tx-h2" id="gloss-title">Glossary</h2>
+      <p class="tx-sub">Plain-language definitions of the terms underlined across this page. Hover over, tap or tab to an underlined term to read its definition in place.</p>
+    </div>
+    <div class="tx-card">
+      <input class="tx-search" id="gloss-search" type="search" placeholder="Search, e.g. MHz-pop or C-band" autocomplete="off" aria-label="Search the glossary">
+      <div class="tx-table-wrap">
+        <table class="tx-table" id="gloss-table" data-source="glossary" data-row-key="id"><thead></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="tx-section" id="notes">
+    <div class="tx-section-head">
+      <h2 class="tx-h2">Caveats</h2>
+    </div>
+    <p class="tx-card-note tx-pre dash-skeleton" id="caveats-text"></p>
+  </section>
+
+  <footer class="ws-foot">
+    %MARK%
+    <span>Whitesail Labs · Prepared for Fulton Asset Management · Confidential · Not investment advice</span>
+  </footer>
+  <div class="tx-gpop" id="gloss-pop" role="tooltip" hidden></div>
