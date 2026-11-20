@@ -69,6 +69,28 @@ def _swap(pts):
     return [dict(series=p["x"], x=p["series"], y=p["y"], note=p.get("note")) for p in pts]
 
 
+def _us_traffic(R):
+    """US traffic bars for 2019-2025, each labelled with its growth on the year before (CTIA; 2025 as reported, 20%)."""
+    lv = {p["x"]: p["y"] for p in R["demand"]["datapoints"] if p["chart"] == "us_traffic"}
+    gr = {p["x"]: p["y"] for p in R["demand"]["datapoints"] if p["chart"] == "us_traffic_growth"}
+    gr["2025"] = 20
+    out = []
+    for y in ["2019", "2020", "2021", "2022", "2023", "2024", "2025"]:
+        g = gr.get(y)
+        gi = int(g + 0.5)
+        out.append(dict(series="Traffic", x=y, y=lv[y], label="+%d%%" % gi,
+                        note="%s EB in %s, up %d%% on %d" % (("%.1f" % lv[y]).rstrip("0").rstrip("."), y, gi, int(y) - 1)))
+    return out
+
+
+def _global_traffic(pts):
+    """Ericsson actuals and the June 2026 forecast as dated points; the forecast line starts from the end-2025 actual."""
+    when = {"2023 Q3": "2023-09", "2024 Q3": "2024-09", "2025 Q4": "2025-12", "2026 Q1": "2026-03", "2026 Q2": "2026-06", "2031": "2031-12"}
+    out = [dict(series=p["series"], x=when[p["x"]], y=p["y"], note=p.get("note")) for p in pts if p["x"] in when]
+    out.insert(len([p for p in out if p["series"] == "Actual"]), dict(series="Forecast", x="2025-12", y=203, note="Ericsson's end-2025 base for its forecast"))
+    return out
+
+
 CTIA = "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
 AI_X = {"GenAI share of mobile traffic, measured Apr 2025 (Ericsson)": "Gen AI share of traffic, 2025", "Typical mobile uplink share today (Ericsson)": "Uplink share of all traffic today",
         "Uplink share of GenAI app traffic (Ericsson)": "Uplink share of gen AI traffic", "Uplink share, text LLM traffic (Ookla est.)": "Uplink share, text chatbots",
@@ -77,16 +99,13 @@ AI_X = {"GenAI share of mobile traffic, measured Apr 2025 (Ericsson)": "Gen AI s
         "AI share of broadband traffic 2034 (CTIA)": "AI share of broadband, 2034 (CTIA)"}
 CHARTS = [
     # ---- demand
-    dict(id="us_traffic", group="demand", order=1, domain="demand", **{"from": "us_traffic"}, kind="line", fmt="dec1",
-         title="US mobile data traffic", source_url=CTIA, confidence="S",
-         note="Exabytes (trillion megabytes) a year, from CTIA's annual survey. The series includes fixed wireless home internet. Survey editions changed in 2015 and 2017, so the early years are approximate."),
-    dict(id="us_traffic_growth", group="demand", order=2, domain="demand", **{"from": "us_traffic_growth"}, kind="bar", fmt="pct",
-         keep=lambda p: p["x"] >= "2019", overrides={"2025": 20}, title="Traffic growth is slowing", source_url=CTIA, confidence="S",
-         note="Year-on-year growth in US mobile data traffic (CTIA). 2025's 20% was the slowest year since 2020 and the sharpest one-year slowdown in the series."),
-    dict(id="global_traffic", group="demand", order=3, domain="demand", **{"from": "global_traffic"}, kind="bar", fmt="int",
-         keep=lambda p: p["series"] in ("Actual", "Forecast"), x_map={"2031": "2031F"},
-         title="Global mobile traffic, actual and forecast", source_url="https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-forecast", confidence="P",
-         note="Exabytes a month including fixed wireless (Ericsson). The June 2026 forecast of 515 EB a month in 2031 implies 17% a year, slowing to 14%. Ericsson cut its 2030 forecast from 473 to 430 between its November 2024 and June 2025 editions."),
+    dict(id="us_traffic", group="demand", order=1, kind="bar", fmt="int", wide="Yes", height=260, build=lambda R: _us_traffic(R),
+         title="US traffic keeps rising, but growth is slowing", source_url=CTIA, confidence="S",
+         note="Bars show exabytes (trillion megabytes) carried each year, from CTIA's annual survey, including fixed wireless home internet. Labels show growth on the year before. Traffic rises every year; what is slowing is the rate. Growth fell from 32% in 2024 to 20% in 2025, the sharpest one-year slowdown in the series, yet at 20% a year traffic still doubles in about four years."),
+    dict(id="global_traffic", group="demand", order=3, domain="demand", **{"from": "global_traffic"}, kind="timeline", fmt="int",
+         keep=lambda p: p["series"] in ("Actual", "Forecast"), build_after=lambda pts: _global_traffic(pts),
+         title="Global traffic: slower growth still compounds", source_url="https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-forecast", confidence="P",
+         note="Exabytes a month including fixed wireless (Ericsson), on a true time scale. Growth was 23% a year in mid-2026. Ericsson's June 2026 forecast of 515 EB a month in 2031 assumes growth keeps slowing, to about 14% by 2031, about 17% a year on average, which still more than doubles traffic in five years. Ericsson cut its 2030 forecast from 473 to 430 between its November 2024 and June 2025 editions."),
     dict(id="forecast_overshoot", group="demand", order=4, kind="bar", fmt="int", title="Usage forecasts have run high",
          points=[("Forecast at the time", "2022 (forecast made in 2018)", 26, "Ericsson 2018 edition"), ("What happened", "2022 (forecast made in 2018)", 19, "Later Ericsson edition"),
                  ("Forecast at the time", "2023 (forecast made in 2017)", 48, "Ericsson 2017 edition"), ("What happened", "2023 (forecast made in 2017)", 26, "Ericsson 2024 edition")],
@@ -225,7 +244,7 @@ CHARTS = [
          note="US wireless service revenue divided by traffic, $ per GB, log scale (Light Reading from CTIA data). It has fallen about 20% a year since 2020 while total service revenue grew about 3% a year."),
 ]
 for _c in CHARTS:
-    if "from" not in _c and "points" not in _c:
+    if "from" not in _c and "points" not in _c and "build" not in _c:
         raise SystemExit("chart without data: " + _c["id"])
     if "x_map" in _c and "keep" in _c and "x_order" not in _c:
         pass

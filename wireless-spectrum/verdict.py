@@ -20,9 +20,30 @@ def plan(fc, pr, sc, f, p, rng, money):
     spx_more = round((spxmhz.get("p50") or 79) - 79)
 
     rows = [dict(id="headline", kind="headline", order=0, heading="Headline", body=(
-        "The thesis is half right. US spectrum already carries real scarcity value, low-band and satellite-capable spectrum is getting scarcer, and SpaceX has become a deep-pocketed buyer that pushed private prices up in 2025-26. "
-        "But licensed spectrum as a whole is unlikely to become significantly more valuable by 2030: we put %s%% on a broad scarcity premium. Traffic growth is slowing, AI is still a sliver of traffic, and a statutory pipeline adds about a third more licensed spectrum by 2030. "
-        "We expect the 2027 upper C-band auction to draw about %s per MHz-pop, below the $0.87 the 2021 lower C-band fetched on the same population basis, and we see no clean passive way to own the theme." % (scar, p50)))]
+        "The thesis is half right. Low-band and satellite-capable spectrum is getting scarcer and SpaceX is paying up, "
+        "but we put only %s%% on licensed spectrum as a whole re-rating by 2030, and no listed security gives clean exposure." % scar))]
+
+    SHORT = [
+        ("Right about",
+         "• Low-band is scarce. SpaceX agreed to pay 2.2x what Grain paid for the same 800 MHz licences two months earlier.\n"
+         "• SpaceX is a deep-pocketed new buyer, with about $28B of deals agreed.\n"
+         "• Satellites can't serve cities, so convergence needs ground spectrum."),
+        ("Wrong about",
+         "• Demand growth is slowing. US traffic still rises, but by 20%% in 2025 against 32%% in 2024, and AI is 0.06%% of traffic.\n"
+         "• Supply is rising. We expect about %s of new spectrum auctioned by 2030.\n"
+         "• Owners don't capture it. Carrier stocks fell 9-13%% on SpaceX's 800 MHz deal.\n"
+         "• Past pure plays mostly failed. Of 16, 8 lost money and 3 clearly won." % money(newmhz.get("p50"), "mhz")),
+        ("Our odds",
+         "• Upper C-band (2027): %s per MHz-pop, below 2021's $0.87.\n"
+         "• Scarcity premium by 2030: %s%%. SpaceX as a fourth force: %s%%.\n"
+         "• Carriers beat the S&P 500 through 2030: %s%%." % (p50, scar, fourth, beat)),
+        ("Ways in",
+         "• No clean passive vehicle exists.\n"
+         "• The purest are small holders (Anterix, NextNav, Array), which pay off only through a sale.\n"
+         "• Convergence gains go to sellers and SpaceX more than to carriers."),
+    ]
+    for i, (h, b) in enumerate(SHORT):
+        rows.append(dict(id="verdict%d" % i, kind="verdict", order=i + 1, heading=h, body=b))
 
     V = [
         ("Where the thesis is right",
@@ -71,7 +92,7 @@ def plan(fc, pr, sc, f, p, rng, money):
          "The dated events are on the Projections tab." % (above, spxucb, reaccel, crunch, techbuy)),
     ]
     for i, (h, b) in enumerate(V):
-        rows.append(dict(id="verdict%d" % i, kind="verdict", order=i + 1, heading=h, body=b))
+        rows.append(dict(id="detail%d" % i, kind="verdict_detail", order=i + 1, heading=h, body=b))
 
     M = [
         ("Research", "Nine researchers each covered one part of the market: demand, substitutes for spectrum, supply and rules, prices and deals, satellites, carrier economics, listed exposure, past spectrum bets and markets outside the US. They gathered 379 findings, each with a source link and a tag: P for regulators, filings and official statistics, S for reputable press and analysts, W for directional sources. Our environment could not open some primary sites (SEC, FCC, Reuters) directly, so those facts rest on search extracts of the documents."),

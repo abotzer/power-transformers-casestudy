@@ -1,12 +1,39 @@
 # Wireless spectrum: market reference and probabilistic outlook
 
-**The thesis is half right. US spectrum already carries real scarcity value, low-band and satellite-capable spectrum is getting scarcer, and SpaceX has become a deep-pocketed buyer that pushed private prices up in 2025-26. But licensed spectrum as a whole is unlikely to become significantly more valuable by 2030: we put 14% on a broad scarcity premium. Traffic growth is slowing, AI is still a sliver of traffic, and a statutory pipeline adds about a third more licensed spectrum by 2030. We expect the 2027 upper C-band auction to draw about $0.77 per MHz-pop, below the $0.87 the 2021 lower C-band fetched on the same population basis, and we see no clean passive way to own the theme.**
+**The thesis is half right. Low-band and satellite-capable spectrum is getting scarcer and SpaceX is paying up, but we put only 14% on licensed spectrum as a whole re-rating by 2030, and no listed security gives clean exposure.**
 
 Prepared for Fulton Asset Management by Whitesail Labs, November 2026. The interactive report has the charts, market map, forecast panel and full source list; this file holds the text. It is a market reference, not investment advice.
 
 Units: a MHz-pop is one megahertz of bandwidth covering one person, so a nationwide 10 MHz licence is about 3.35 billion MHz-pops, and prices per MHz-pop let bands of different width and reach be compared. An exabyte (EB) is a billion gigabytes. Uplink is data sent from a device to the network.
 
 ## Our verdict
+
+**Right about**
+
+- Low-band is scarce. SpaceX agreed to pay 2.2x what Grain paid for the same 800 MHz licences two months earlier.
+- SpaceX is a deep-pocketed new buyer, with about $28B of deals agreed.
+- Satellites can't serve cities, so convergence needs ground spectrum.
+
+**Wrong about**
+
+- Demand growth is slowing. US traffic still rises, but by 20% in 2025 against 32% in 2024, and AI is 0.06% of traffic.
+- Supply is rising. We expect about 370 MHz of new spectrum auctioned by 2030.
+- Owners don't capture it. Carrier stocks fell 9-13% on SpaceX's 800 MHz deal.
+- Past pure plays mostly failed. Of 16, 8 lost money and 3 clearly won.
+
+**Our odds**
+
+- Upper C-band (2027): $0.77 per MHz-pop, below 2021's $0.87.
+- Scarcity premium by 2030: 14%. SpaceX as a fourth force: 23%.
+- Carriers beat the S&P 500 through 2030: 36%.
+
+**Ways in**
+
+- No clean passive vehicle exists.
+- The purest are small holders (Anterix, NextNav, Array), which pay off only through a sale.
+- Convergence gains go to sellers and SpaceX more than to carriers.
+
+### The full reasoning
 
 **Where the thesis is right**
 

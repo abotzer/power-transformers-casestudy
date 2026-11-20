@@ -59,3 +59,7 @@
 .tx-cand-head .tx-chip { flex: none; white-space: nowrap; }
 .tx-cand .tx-card-note { line-height: 1.5; }
 #method-box .tx-bottom-text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.65; }
+.tx-verdict-more { margin-top: var(--cds-gap-sm); }
+.tx-verdict-more .tx-verdict-h { margin-top: var(--cds-gap-sm); }
+#fam-summary .tx-verdict-grid .tx-bottom-text { font-size: var(--cds-font-size-body); }
+#fam-summary .tx-verdict-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }

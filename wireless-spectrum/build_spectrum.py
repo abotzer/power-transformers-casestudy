@@ -110,7 +110,9 @@ def build_charts(R, F):
 
     for spec in E.CHARTS:
         pts = []
-        if "points" in spec:
+        if "build" in spec:
+            pts = spec["build"](R)
+        elif "points" in spec:
             pts = [dict(series=s, x=x, y=y, note=n) for s, x, y, n in spec["points"]]
         else:
             src = dp(spec["domain"], spec["from"])
@@ -120,6 +122,8 @@ def build_charts(R, F):
                 q = dict(series=spec.get("series_map", {}).get(p["series"], p["series"]), x=spec.get("x_map", {}).get(p["x"], p["x"]),
                          y=p["y"], note=clean(p.get("note")))
                 pts.append(q)
+        if spec.get("build_after"):
+            pts = spec["build_after"](pts)
         for p in pts:
             if p["x"] in spec.get("overrides", {}):
                 p["y"] = spec["overrides"][p["x"]]

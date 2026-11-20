@@ -43,6 +43,9 @@ def main(d, out):
           "Units: a MHz-pop is one megahertz of bandwidth covering one person, so a nationwide 10 MHz licence is about 3.35 billion MHz-pops, and prices per MHz-pop let bands of different width and reach be compared. An exabyte (EB) is a billion gigabytes. Uplink is data sent from a device to the network.", ""]
     L += ["## Our verdict", ""]
     for p in [p for p in plan if p["kind"] == "verdict"]:
+        L += ["**%s**" % p["heading"], "", bullets(p["body"]), ""]
+    L += ["### The full reasoning", ""]
+    for p in [p for p in plan if p["kind"] == "verdict_detail"]:
         L += ["**%s**" % p["heading"], "", bullets(p["body"]).replace("on the Projections tab", "in the signposts table below"), ""]
     L += ["## Scenarios for 2030", "", "| Scenario | Probability | What it looks like |", "|---|---|---|"]
     L += ["| **%s** | %s%% | %s |" % (cell(s["name"]), s["probability"], cell(s["tagline"])) for s in sc]

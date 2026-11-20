@@ -3,197 +3,78 @@
   "id": "us_traffic-00",
   "chart_id": "us_traffic",
   "order": 0,
-  "series": "CTIA",
-  "x": "2012",
-  "y": 1.468,
-  "note": "Implied by CTIA's +120% growth to 3.23 trillion MB in 2013"
+  "series": "Traffic",
+  "x": "2019",
+  "y": 37.06,
+  "label": "+30%",
+  "note": "37.1 EB in 2019, up 30% on 2018"
  },
  {
   "id": "us_traffic-01",
   "chart_id": "us_traffic",
   "order": 1,
-  "series": "CTIA",
-  "x": "2013",
-  "y": 3.23,
-  "note": "CTIA 2014 survey"
+  "series": "Traffic",
+  "x": "2020",
+  "y": 42.2,
+  "label": "+14%",
+  "note": "42.2 EB in 2020, up 14% on 2019"
  },
  {
   "id": "us_traffic-02",
   "chart_id": "us_traffic",
   "order": 2,
-  "series": "CTIA",
-  "x": "2014",
-  "y": 4.06,
-  "note": "CTIA 2016 survey release"
+  "series": "Traffic",
+  "x": "2021",
+  "y": 53.4,
+  "label": "+27%",
+  "note": "53.4 EB in 2021, up 27% on 2020"
  },
  {
   "id": "us_traffic-03",
   "chart_id": "us_traffic",
   "order": 3,
-  "series": "CTIA",
-  "x": "2015",
-  "y": 9.65,
-  "note": "CTIA later tables; press release rounded to 9.6"
+  "series": "Traffic",
+  "x": "2022",
+  "y": 73.7,
+  "label": "+38%",
+  "note": "73.7 EB in 2022, up 38% on 2021"
  },
  {
   "id": "us_traffic-04",
   "chart_id": "us_traffic",
   "order": 4,
-  "series": "CTIA",
-  "x": "2016",
-  "y": 13.72,
-  "note": "CTIA 2017 survey"
+  "series": "Traffic",
+  "x": "2023",
+  "y": 100.1,
+  "label": "+36%",
+  "note": "100.1 EB in 2023, up 36% on 2022"
  },
  {
   "id": "us_traffic-05",
   "chart_id": "us_traffic",
   "order": 5,
-  "series": "CTIA",
-  "x": "2017",
-  "y": 15.68,
-  "note": "CTIA tables (15.7 rounded)"
+  "series": "Traffic",
+  "x": "2024",
+  "y": 132,
+  "label": "+32%",
+  "note": "132 EB in 2024, up 32% on 2023"
  },
  {
   "id": "us_traffic-06",
   "chart_id": "us_traffic",
   "order": 6,
-  "series": "CTIA",
-  "x": "2018",
-  "y": 28.58,
-  "note": "CTIA 2019 survey (later restated 28.60)"
- },
- {
-  "id": "us_traffic-07",
-  "chart_id": "us_traffic",
-  "order": 7,
-  "series": "CTIA",
-  "x": "2019",
-  "y": 37.06,
-  "note": "CTIA 2020 survey"
- },
- {
-  "id": "us_traffic-08",
-  "chart_id": "us_traffic",
-  "order": 8,
-  "series": "CTIA",
-  "x": "2020",
-  "y": 42.2,
-  "note": "CTIA 2021/2022 surveys"
- },
- {
-  "id": "us_traffic-09",
-  "chart_id": "us_traffic",
-  "order": 9,
-  "series": "CTIA",
-  "x": "2021",
-  "y": 53.4,
-  "note": "CTIA 2022 survey"
- },
- {
-  "id": "us_traffic-10",
-  "chart_id": "us_traffic",
-  "order": 10,
-  "series": "CTIA",
-  "x": "2022",
-  "y": 73.7,
-  "note": "CTIA 2023 survey"
- },
- {
-  "id": "us_traffic-11",
-  "chart_id": "us_traffic",
-  "order": 11,
-  "series": "CTIA",
-  "x": "2023",
-  "y": 100.1,
-  "note": "CTIA 2024 survey"
- },
- {
-  "id": "us_traffic-12",
-  "chart_id": "us_traffic",
-  "order": 12,
-  "series": "CTIA",
-  "x": "2024",
-  "y": 132,
-  "note": "CTIA 2025 survey"
- },
- {
-  "id": "us_traffic-13",
-  "chart_id": "us_traffic",
-  "order": 13,
-  "series": "CTIA",
+  "series": "Traffic",
   "x": "2025",
   "y": 159.3,
-  "note": "CTIA 2026 survey; series includes FWA traffic"
- },
- {
-  "id": "us_traffic_growth-00",
-  "chart_id": "us_traffic_growth",
-  "order": 0,
-  "series": "CTIA y/y",
-  "x": "2019",
-  "y": 29.7,
-  "note": "CTIA reported ~30%"
- },
- {
-  "id": "us_traffic_growth-01",
-  "chart_id": "us_traffic_growth",
-  "order": 1,
-  "series": "CTIA y/y",
-  "x": "2020",
-  "y": 13.9,
-  "note": "Computed from levels (37.06 -> 42.2); pandemic shift to home Wi-Fi"
- },
- {
-  "id": "us_traffic_growth-02",
-  "chart_id": "us_traffic_growth",
-  "order": 2,
-  "series": "CTIA y/y",
-  "x": "2021",
-  "y": 26.5,
-  "note": "Computed from levels (42.2 -> 53.4)"
- },
- {
-  "id": "us_traffic_growth-03",
-  "chart_id": "us_traffic_growth",
-  "order": 3,
-  "series": "CTIA y/y",
-  "x": "2022",
-  "y": 38,
-  "note": "CTIA reported +38%"
- },
- {
-  "id": "us_traffic_growth-04",
-  "chart_id": "us_traffic_growth",
-  "order": 4,
-  "series": "CTIA y/y",
-  "x": "2023",
-  "y": 35.8,
-  "note": "Computed from levels (73.7 -> 100.1)"
- },
- {
-  "id": "us_traffic_growth-05",
-  "chart_id": "us_traffic_growth",
-  "order": 5,
-  "series": "CTIA y/y",
-  "x": "2024",
-  "y": 31.9,
-  "note": "CTIA reported +32%"
- },
- {
-  "id": "us_traffic_growth-06",
-  "chart_id": "us_traffic_growth",
-  "order": 6,
-  "series": "CTIA y/y",
-  "x": "2025",
-  "y": 20,
-  "note": "Computed from levels; CTIA reports +20%"
+  "label": "+20%",
+  "note": "159.3 EB in 2025, up 20% on 2024"
  },
  {
   "id": "global_traffic-00",
   "chart_id": "global_traffic",
   "order": 0,
   "series": "Actual",
-  "x": "2023 Q3",
+  "x": "2023-09",
   "y": 130,
   "note": "Ericsson revised figure (earlier edition said >140)"
  },
@@ -202,7 +83,7 @@
   "chart_id": "global_traffic",
   "order": 1,
   "series": "Actual",
-  "x": "2024 Q3",
+  "x": "2024-09",
   "y": 157,
   "note": "Ericsson Nov 2024 edition; may be restated in later editions"
  },
@@ -211,7 +92,7 @@
   "chart_id": "global_traffic",
   "order": 2,
   "series": "Actual",
-  "x": "2025 Q4",
+  "x": "2025-12",
   "y": 203,
   "note": "Ericsson end-2025"
  },
@@ -220,7 +101,7 @@
   "chart_id": "global_traffic",
   "order": 3,
   "series": "Actual",
-  "x": "2026 Q1",
+  "x": "2026-03",
   "y": 210,
   "note": "+22% y/y"
  },
@@ -229,7 +110,7 @@
   "chart_id": "global_traffic",
   "order": 4,
   "series": "Actual",
-  "x": "2026 Q2",
+  "x": "2026-06",
   "y": 220,
   "note": "Reported as 'exceeded 220'; +23% y/y"
  },
@@ -238,7 +119,16 @@
   "chart_id": "global_traffic",
   "order": 5,
   "series": "Forecast",
-  "x": "2031F",
+  "x": "2025-12",
+  "y": 203,
+  "note": "Ericsson's end-2025 base for its forecast"
+ },
+ {
+  "id": "global_traffic-06",
+  "chart_id": "global_traffic",
+  "order": 6,
+  "series": "Forecast",
+  "x": "2031-12",
   "y": 515,
   "note": "Ericsson Jun 2026 edition; CAGR ~17%"
  },

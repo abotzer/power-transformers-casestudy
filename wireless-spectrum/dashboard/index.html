@@ -454,6 +454,10 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 .tx-cand-head .tx-chip { flex: none; white-space: nowrap; }
 .tx-cand .tx-card-note { line-height: 1.5; }
 #method-box .tx-bottom-text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.65; }
+.tx-verdict-more { margin-top: var(--cds-gap-sm); }
+.tx-verdict-more .tx-verdict-h { margin-top: var(--cds-gap-sm); }
+#fam-summary .tx-verdict-grid .tx-bottom-text { font-size: var(--cds-font-size-body); }
+#fam-summary .tx-verdict-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
 </style>
 
 <div class="tx">
@@ -2005,6 +2009,63 @@ fmtBy = function (fmt, v) {
   return fmtByBase(fmt, v);
 };
 function fmtF(fmt, v) { return fmtBy(fmt, v); }
+
+// a line chart on a true time axis: x is "YYYY" or "YYYY-MM"; a series named "Forecast" is drawn dashed
+function tlYear(x) { const m = String(x).match(/^(\d{4})(?:-(\d{2}))?/); return m ? +m[1] + (m[2] ? (+m[2] - 0.5) / 12 : 0.5) : null; }
+function drawTimeline(el, legend, m, list) {
+  const W = Math.max(el.clientWidth, 300), H = num(m.height) || 260, padL = 44, padB = 30, top = 22, right = 20;
+  const svg = newSvg(el, W, H).attr('aria-label', m.title);
+  const pts = list.map((r) => ({ r: r, t: tlYear(r.x), v: num(r.y) })).filter((p) => p.t !== null && p.v !== null);
+  const series = seriesList(list);
+  const colorOf = (s) => (/^Forecast/.test(s) ? dash.colors[1] : dash.colors[0]);
+  const x = d3.scaleLinear().domain([Math.floor(d3.min(pts, (p) => p.t)), Math.ceil(d3.max(pts, (p) => p.t))]).range([padL, W - right]);
+  const y = d3.scaleLinear().domain([0, d3.max(pts, (p) => p.v) * 1.12]).nice().range([H - padB, top]);
+  const fmt = (v) => fmtBy(m.fmt, v);
+  y.ticks(5).forEach((t) => {
+    svg.append('line').attr('x1', padL).attr('x2', W - right).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', padL - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmt(t));
+  });
+  const [y0, y1] = x.domain();
+  const step = Math.max(1, Math.ceil((y1 - y0) / Math.max(2, Math.floor((W - padL) / 60))));
+  for (let yr = y0; yr <= y1; yr += step) svg.append('text').attr('x', x(yr)).attr('y', H - 10).attr('text-anchor', 'middle').text(String(yr));
+  series.forEach((s) => {
+    const sp = pts.filter((p) => p.r.series === s).sort((a, b) => a.t - b.t);
+    svg.append('path').attr('d', d3.line()(sp.map((p) => [x(p.t), y(p.v)]))).attr('fill', 'none').style('stroke', colorOf(s)).attr('stroke-width', 2.5)
+      .attr('stroke-dasharray', /^Forecast/.test(s) ? '6 5' : null);
+    sp.forEach((p, i) => {
+      if (/^Forecast/.test(s) && i === 0) return;
+      svg.append('circle').attr('cx', x(p.t)).attr('cy', y(p.v)).attr('r', 4).style('fill', colorOf(s))
+        .on('mousemove', (ev) => { const [qx, qy] = d3.pointer(ev, svg.node()); showTip(el, s + ' · ' + p.r.x, [p.r.label || fmt(p.v), p.r.note || ''], qx, qy); })
+        .on('mouseleave', () => hideTip(el));
+    });
+    const last = sp[sp.length - 1];
+    if (last) svg.append('text').attr('class', 'tx-val').attr('x', Math.min(x(last.t), W - right - 4)).attr('y', y(last.v) - 9).attr('text-anchor', 'end').text(last.r.label || fmt(last.v));
+  });
+  addLegend(legend, series, colorOf);
+}
+const drawGenericBase = drawGeneric;
+drawGeneric = function (el, legend, m, list) { return m.kind === 'timeline' ? drawTimeline(el, legend, m, list) : drawGenericBase(el, legend, m, list); };
+
+// the full reasoning behind the short verdict, folded under it
+function renderVerdictDetail() {
+  const box = document.getElementById('fam-summary');
+  if (statusOf(['plan']) !== 'ok' || !box) return;
+  const list = rows('plan').filter((r) => r.kind === 'verdict_detail').sort(byOrder);
+  if (!list.length) return;
+  const d = document.createElement('details');
+  d.className = 'tx-kf-more tx-verdict-more';
+  d.appendChild(mk('summary', null, 'The full reasoning, with the numbers'));
+  list.forEach((r) => {
+    const w = wq(r.id);
+    d.appendChild(mk('h4', 'tx-verdict-h', r.heading, 'plan', 'heading', w));
+    const body = richText(r.body);
+    body.setAttribute('data-source', 'plan');
+    body.setAttribute('data-field', 'body');
+    body.setAttribute('data-where', w);
+    d.appendChild(body);
+  });
+  box.appendChild(d);
+}
 Object.assign(TAG_ATTR, { Supports: 'High', Mixed: 'Medium', Undercuts: 'Low' });
 const wq = (id) => 'id=' + encodeURIComponent(id);
 function detailsBox(summary) {
@@ -2508,7 +2569,7 @@ document.getElementById('fc-group').addEventListener('change', () => { renderFor
 let linked = false;
 function renderAll() {
   [
-    fillMarks, renderSummary, () => drawScenBar('outlook-scen'), () => renderForecastGrid('outlook-grid', (f) => f.headline === 'Yes', true),
+    fillMarks, renderSummary, renderVerdictDetail, () => drawScenBar('outlook-scen'), () => renderForecastGrid('outlook-grid', (f) => f.headline === 'Yes', true),
     drawValueChain, renderFindings,
     () => renderTiles('tiles-demand', 'demand'), () => renderTiles('tiles-supply', 'supply'), () => renderTiles('tiles-prices', 'prices'), () => renderTiles('tiles-satellite', 'satellite'),
     () => renderChartCards('charts-demand', 'demand'), () => renderChartCards('charts-capacity', 'capacity'), () => renderChartCards('charts-supply', 'supply'),
