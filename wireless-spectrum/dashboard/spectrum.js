@@ -142,13 +142,19 @@ function drawStrip(el, f, panel) {
   const fmt = (v) => fmtF(f.fmt, v);
   const svg = newSvg(el, W, H).attr('aria-label', f.short + ': central ' + fmt(num(f.p50)) + ', 80% range ' + fmt(num(f.p10)) + ' to ' + fmt(num(f.p90)));
   svg.append('line').attr('x1', padL).attr('x2', W - padR).attr('y1', axisY).attr('y2', axisY).style('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 2);
-  const ticks = isLog ? x.ticks(4).filter((t, i, a) => a.length <= 5 || i % 2 === 0) : x.ticks(4);
+  const [d0, d1] = x.domain();
+  const NICE = [0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000];
+  const ticks = isLog ? NICE.filter((t) => t >= d0 && t <= d1) : x.ticks(4);
+  let lastRight = -Infinity;
   ticks.forEach((t) => {
     svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', axisY - 3).attr('y2', axisY + 3).style('stroke', 'var(--cds-chart-axis)');
     const lbl = svg.append('text').attr('x', x(t)).attr('y', H - 4).attr('text-anchor', 'middle').text(fmt(t).replace(/\.0(?=\D*$)/, ''));
     const lw = lbl.node().getComputedTextLength();
-    if (x(t) - lw / 2 < 0) lbl.attr('text-anchor', 'start').attr('x', 0);
-    else if (x(t) + lw / 2 > W) lbl.attr('text-anchor', 'end').attr('x', W);
+    let left = x(t) - lw / 2;
+    if (left < 0) { lbl.attr('text-anchor', 'start').attr('x', 0); left = 0; }
+    else if (x(t) + lw / 2 > W) { lbl.attr('text-anchor', 'end').attr('x', W); left = W - lw; }
+    if (left < lastRight + 8) { lbl.remove(); return; }
+    lastRight = left + lw;
   });
   const p10 = num(f.p10), p50 = num(f.p50), p90 = num(f.p90), cur = num(f.current);
   if (p10 !== null && p90 !== null) {
@@ -200,11 +206,13 @@ function forecastCard(f, panelRows, compact) {
     b.appendChild(mk('span', 'tx-ans-val', fmtF(f.fmt, num(f[fld])), 'forecasts', fld, w));
     nums.appendChild(b);
   });
-  const today = mk('div', 'tx-fc-num');
-  today.appendChild(mk('span', 'tx-ans-lbl', 'Today'));
-  today.appendChild(mk('span', 'tx-ans-val tx-fc-today', f.current_label, 'forecasts', 'current_label', w));
-  nums.appendChild(today);
   card.appendChild(nums);
+  if (f.current_label) {
+    const today = mk('p', 'tx-card-note tx-fc-todayline');
+    today.appendChild(mk('b', null, 'Today: '));
+    today.appendChild(mk('span', null, f.current_label, 'forecasts', 'current_label', w));
+    card.appendChild(today);
+  }
   const d = detailsBox(compact ? 'Reasoning' : 'Reasoning, drivers and signposts');
   d.appendChild(mk('p', null, f.rationale, 'forecasts', 'rationale', w));
   if (!compact) {
@@ -231,11 +239,13 @@ function forecastCard(f, panelRows, compact) {
   card.appendChild(d);
   return [card, strip];
 }
+const FC_GROUPS = ['Spectrum prices', 'Supply', 'Demand', 'Satellites and SpaceX', 'Carriers and value capture'];
 function renderForecastGrid(elId, filter, compact) {
   const el = document.getElementById(elId);
   if (!prep(el, ['forecasts', 'forecast_panel'])) return;
   const panel = rows('forecast_panel');
-  const list = rows('forecasts').filter(filter).sort((a, b) => String(a.group).localeCompare(String(b.group)) || byOrder(a, b));
+  const gi = (g) => { const i = FC_GROUPS.indexOf(g); return i < 0 ? 99 : i; };
+  const list = rows('forecasts').filter(filter).sort((a, b) => gi(a.group) - gi(b.group) || byOrder(a, b));
   if (!list.length) { el.appendChild(mk('p', 'tx-card-note', 'No forecast in this topic.')); return; }
   const jobs = [];
   let lastGroup = null;
@@ -251,7 +261,7 @@ function renderForecastGrid(elId, filter, compact) {
 function renderForecasts() {
   const sel = document.getElementById('fc-group');
   if (statusOf(['forecasts']) === 'ok' && sel.options.length <= 1) {
-    Array.from(new Set(rows('forecasts').map((f) => f.group))).sort().forEach((g) => { const o = document.createElement('option'); o.value = g; o.textContent = g; sel.appendChild(o); });
+    FC_GROUPS.filter((g) => rows('forecasts').some((f) => f.group === g)).forEach((g) => { const o = document.createElement('option'); o.value = g; o.textContent = g; sel.appendChild(o); });
   }
   const g = sel.value;
   renderForecastGrid('fc-grid', (f) => !g || f.group === g, false);

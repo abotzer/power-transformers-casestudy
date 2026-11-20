@@ -1,0 +1,211 @@
+[
+ {
+  "id": "fcc-auction-115-3-98-4-14-ghz-upper-c-band",
+  "order": 11,
+  "kind": "Pipeline",
+  "band": "3.98-4.14 GHz upper C-band",
+  "mhz": "160",
+  "timing": "Bidding from 2027-04-27",
+  "status": "Rules adopted",
+  "notes": "3,248 licenses; $4.33B clearing estimate; TD Cowen $30-75B",
+  "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date"
+ },
+ {
+  "id": "fcc-auction-113-aws-3-1695-1710-1755-1780-2155-2",
+  "order": 12,
+  "kind": "Pipeline",
+  "band": "AWS-3 1695-1710, 1755-1780/2155-2180 MHz",
+  "mhz": "200 licenses (reauction)",
+  "timing": "Closed 2026-06-23",
+  "status": "Complete",
+  "notes": "$3.57B gross; 7 winners; Verizon ~$3.2B",
+  "source_url": "https://auctiondata.fcc.gov/public/projects/auction113"
+ },
+ {
+  "id": "fcc-ntia-1675-1695-mhz-2020-2025-mhz",
+  "order": 13,
+  "kind": "Pipeline",
+  "band": "1675-1695 MHz + 2020-2025 MHz",
+  "mhz": "25",
+  "timing": "Auction est. 2027-2028",
+  "status": "NPRM Oct 2026",
+  "notes": "Secondary MSS allocation for D2D; 1675-1680 MHz identified by NTIA Feb 2026",
+  "source_url": "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf"
+ },
+ {
+  "id": "fcc-ntia-2-69-2-9-ghz",
+  "order": 14,
+  "kind": "Pipeline",
+  "band": "2.69-2.9 GHz",
+  "mhz": "~210",
+  "timing": "Auction targeted 2028",
+  "status": "Relocation plans approved Apr 2026",
+  "notes": "FAA/NOAA/DoD radar; Spectrum Relocation Fund",
+  "source_url": "https://www.ntia.gov/press-release/2026/plan-repurpose-27-ghz-band-clears-key-milestone-fueling-us-6g-leadership"
+ },
+ {
+  "id": "ntia-7-125-7-4-ghz",
+  "order": 15,
+  "kind": "Pipeline",
+  "band": "7.125-7.4 GHz",
+  "mhz": "275",
+  "timing": "Final report Dec 2026",
+  "status": "Study",
+  "notes": "Adjacent to WRC-27 AI 1.7 range 7.125-8.4 GHz",
+  "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+ },
+ {
+  "id": "ntia-4-4-4-94-ghz",
+  "order": 16,
+  "kind": "Pipeline",
+  "band": "4.4-4.94 GHz",
+  "mhz": "up to 540",
+  "timing": "2030+",
+  "status": "Reviewing 9 agency plans",
+  "notes": "DoD-heavy band; usable share uncertain",
+  "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+ },
+ {
+  "id": "ntia-1-3-1-35-ghz",
+  "order": 17,
+  "kind": "Pipeline",
+  "band": "1.3-1.35 GHz",
+  "mhz": "50",
+  "timing": "None",
+  "status": "Future study",
+  "notes": "No study confirmed launched",
+  "source_url": "https://www.congress.gov/crs-product/R48862"
+ },
+ {
+  "id": "firstnet-band-manager-4-94-4-99-ghz",
+  "order": 18,
+  "kind": "Pipeline",
+  "band": "4.94-4.99 GHz",
+  "mhz": "50",
+  "timing": "2027+",
+  "status": "Order upheld July 2026",
+  "notes": "Not auctioned; FirstNet reauthorization due Feb 2027",
+  "source_url": "https://www.everycrsreport.com/reports/IF12766.html"
+ },
+ {
+  "id": "nextnav-902-928-mhz-lower-900",
+  "order": 19,
+  "kind": "Pipeline",
+  "band": "902-928 MHz (lower 900)",
+  "mhz": "15",
+  "timing": "Uncertain",
+  "status": "Petition; draft NPRM at OIRA Mar 2026",
+  "notes": "Broad opposition; House appropriations rider proposed",
+  "source_url": "https://www.powermag.com/what-utilities-need-to-know-about-the-900-mhz-nextnav-fcc-proceeding/"
+ },
+ {
+  "id": "fcc-scs-expansion-13-terrestrial-bands-proposed",
+  "order": 20,
+  "kind": "Pipeline",
+  "band": "13 terrestrial bands (proposed)",
+  "mhz": "+482",
+  "timing": "Comment cycle late 2026-2027",
+  "status": "NPRM 2026-10-29",
+  "notes": "Satellite leasing of carrier spectrum; carriers raised 5G interference concerns",
+  "source_url": "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/"
+ },
+ {
+  "id": "obbba-p-l-119-21-1-3-10-5-ghz-federal-3-98-4-2-g",
+  "order": 21,
+  "kind": "Rule",
+  "band": "1.3-10.5 GHz federal; 3.98-4.2 GHz (OBBBA (P.L. 119-21))",
+  "mhz": "800 pipeline",
+  "timing": "Authority to 2034-09-30",
+  "status": "Law",
+  "notes": "300 MHz FCC (>=100 upper C by 2027-07-04) + 500 MHz federal (200 by 2027/2029, rest by 2029/2033)",
+  "source_url": "https://www.wiley.law/alert-One-Big-Beautiful-Bill-Act-Passes-Restoring-FCC-Auction-Authority-and-Establishing-Spectrum-Pipeline"
+ },
+ {
+  "id": "obbba-exclusions-3-1-3-45-ghz-7-4-8-4-ghz",
+  "order": 22,
+  "kind": "Rule",
+  "band": "3.1-3.45 GHz; 7.4-8.4 GHz (OBBBA exclusions)",
+  "mhz": "1,350",
+  "timing": "2025",
+  "status": "Excluded",
+  "notes": "Protects DoD radar and federal satellite uses",
+  "source_url": "https://www.congress.gov/crs-product/R48862"
+ },
+ {
+  "id": "fcc-overall-spectrum-screen-sub-6-suitable-and-a",
+  "order": 23,
+  "kind": "Rule",
+  "band": "Sub-6 suitable and available (FCC overall spectrum screen)",
+  "mhz": "385",
+  "timing": "Current; ~438 after Auction 115",
+  "status": "In force",
+  "notes": "Trigger for case-by-case review; AT&T exceeded in some counties and was approved",
+  "source_url": "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf"
+ },
+ {
+  "id": "fcc-mmwave-threshold-24-28-37-39-47-ghz",
+  "order": 24,
+  "kind": "Rule",
+  "band": "24/28/37/39/47 GHz (FCC mmWave threshold)",
+  "mhz": "1,850",
+  "timing": "Since 2018-2020",
+  "status": "In force",
+  "notes": "Verizon ~1,700 MHz closest",
+  "source_url": "https://www.fcc.gov/node/84288"
+ },
+ {
+  "id": "fcc-below-1-ghz-enhanced-factor-600-700-800-850-",
+  "order": 25,
+  "kind": "Rule",
+  "band": "600/700/800/850 MHz (FCC below-1-GHz enhanced factor)",
+  "mhz": "~one-third of sub-1 GHz",
+  "timing": "Since 2014",
+  "status": "In force",
+  "notes": "Triggered in 98 Verizon/Array markets; approved",
+  "source_url": "https://convergedigest.com/verizon-wins-fcc-approval-for-major-array-spectrum-acquisition/?amp=1"
+ },
+ {
+  "id": "fcc-mss-exclusivity-da-26-398-big-leo-l-band-2-g",
+  "order": 26,
+  "kind": "Rule",
+  "band": "Big LEO, L-band, 2 GHz (FCC MSS exclusivity (DA 26-398))",
+  "mhz": "n/a",
+  "timing": "2026-04-23",
+  "status": "Petitions dismissed",
+  "notes": "Kept incumbents exclusive; reconsideration opposed by SpaceX and Globalstar",
+  "source_url": "https://docs.fcc.gov/public/attachments/DA-26-398A1.pdf"
+ },
+ {
+  "id": "fcc-epfd-modernization-fcc-26-26-10-7-12-7-17-3-",
+  "order": 27,
+  "kind": "Rule",
+  "band": "10.7-12.7, 17.3-18.6, 19.7-20.2 GHz (FCC EPFD modernization (FCC 26-26))",
+  "mhz": "n/a",
+  "timing": "Effective 2026-07-13 (partial)",
+  "status": "Adopted",
+  "notes": "Replaces EPFD limits with performance-based GSO protection; two sections lack effective date",
+  "source_url": "https://www.federalregister.gov/documents/2026/05/13/2026-09565/modernizing-spectrum-sharing-for-satellite-broadband"
+ },
+ {
+  "id": "itu-wrc-27-694-mhz-2-7-ghz-ai-1-13-4-4-4-8-7-125",
+  "order": 28,
+  "kind": "Rule",
+  "band": "694 MHz-2.7 GHz (AI 1.13); 4.4-4.8, 7.125-8.4, 14.8-15.35 GHz (AI 1.7) (ITU WRC-27)",
+  "mhz": "n/a",
+  "timing": "Oct 18-Nov 12, 2027",
+  "status": "Studies",
+  "notes": "Decisions effective Jan 2029",
+  "source_url": "https://rcrwireless.com/20261019/tech/wrc-27-direct-to-device-spectrum"
+ },
+ {
+  "id": "cbrs-framework-3-55-3-7-ghz",
+  "order": 29,
+  "kind": "Rule",
+  "band": "3.55-3.7 GHz (CBRS framework)",
+  "mhz": "150 (70 PAL)",
+  "timing": "2026",
+  "status": "No FCC proposal pending",
+  "notes": "2024 higher-power NPRM; senators asked to preserve rules Mar 2026; AT&T relocation idea lacks momentum",
+  "source_url": "https://broadbandbreakfast.com/fcc-takes-step-toward-upper-c-band-auction/"
+ }
+]

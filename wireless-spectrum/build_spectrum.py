@@ -242,7 +242,7 @@ def build_forecasts(Fq, F):
                                   base_rate=clean(c.get("base_rate")), signposts=clean(c.get("signposts")), sources=E.FORECAST_SOURCES.get(q["id"], "")))
         else:
             c, a = cp.get(q["id"], {}), agg_p.get(q["id"], {})
-            probs.append(dict(id=q["id"], order=i, group=q["group"], question=q["question"], horizon=q["horizon"], probability=E.rnd(c.get("probability")),
+            probs.append(dict(id=q["id"], order=i, group=q["group"], question=q["question"], horizon=q["horizon"], probability=int(round(c.get("probability"))) if c.get("probability") is not None else None,
                               low=a.get("low"), high=a.get("high"), rationale=clean(c.get("rationale")), resolution=q.get("resolution", ""),
                               signposts=clean(c.get("signposts"))))
     for p in F.get("panel", []):
@@ -250,7 +250,7 @@ def build_forecasts(Fq, F):
             panel.append(dict(id=p["lens"] + ":" + f["id"], forecast_id=f["id"], lens=lens_name[p["lens"]], p10=E.rnd(f.get("p10")), p50=E.rnd(f.get("p50")),
                               p90=E.rnd(f.get("p90")), note=clean(f.get("rationale"))))
         for b in p.get("probabilities", []):
-            panel.append(dict(id=p["lens"] + ":" + b["id"], forecast_id=b["id"], lens=lens_name[p["lens"]], p10=None, p50=E.rnd(b.get("probability")),
+            panel.append(dict(id=p["lens"] + ":" + b["id"], forecast_id=b["id"], lens=lens_name[p["lens"]], p10=None, p50=int(round(b["probability"])),
                               p90=None, note=clean(b.get("rationale"))))
     scen = []
     for i, s in enumerate(chief.get("scenarios", [])):
