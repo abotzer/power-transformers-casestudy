@@ -1,0 +1,1968 @@
+{
+ "questions": [
+  {
+   "id": "q_ucb_price",
+   "kind": "quantile",
+   "group": "Spectrum prices",
+   "headline": "Yes",
+   "short": "Upper C-band auction price",
+   "question": "Gross price per MHz-pop in the FCC's upper C-band auction (Auction 115, 160 MHz at 3.98-4.14 GHz; bidding set to start 27 April 2027): gross bids divided by (MHz offered x 335M US pops). Resolves on the final round; void if bidding has not concluded by end-2028.",
+   "unit": "$/MHz-pop",
+   "fmt": "usd2",
+   "current": 0.94,
+   "current_label": "Lower C-band 2021: about $0.94",
+   "horizon": "2027"
+  },
+  {
+   "id": "q_ucb_proceeds",
+   "kind": "quantile",
+   "group": "Spectrum prices",
+   "headline": "",
+   "short": "Upper C-band auction proceeds",
+   "question": "Gross proceeds of the FCC upper C-band auction (Auction 115), in $B. Void if bidding has not concluded by end-2028.",
+   "unit": "$B",
+   "fmt": "usd_b",
+   "current": 81,
+   "current_label": "Lower C-band 2021: $81B for 280 MHz; analysts $30-75B",
+   "horizon": "2027"
+  },
+  {
+   "id": "q_midband_2030",
+   "kind": "quantile",
+   "group": "Spectrum prices",
+   "headline": "Yes",
+   "short": "Mid-band price in 2029-2030 deals",
+   "question": "Median price per MHz-pop of US nationwide or near-nationwide low- and mid-band spectrum (below 6 GHz) changing hands in 2029-2030, across FCC auctions and private sales above $1B (nominal dollars).",
+   "unit": "$/MHz-pop",
+   "fmt": "usd2",
+   "current": 1.4,
+   "current_label": "2025-26 deals: about $0.5-2.5 by band (AT&T-EchoStar $1.40)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_bigdeals",
+   "kind": "quantile",
+   "group": "Spectrum prices",
+   "headline": "",
+   "short": "Spectrum deals of $5B or more, 2027-2030",
+   "question": "Number of US spectrum-only transactions of $5B or more announced from 1 Jan 2027 to 31 Dec 2030 (licence sales or swaps; FCC auctions excluded; company takeovers count only if spectrum is most of the value).",
+   "unit": "deals",
+   "fmt": "int",
+   "current": 3,
+   "current_label": "3 spectrum-only deals in 2025-26 (AT&T and SpaceX from EchoStar; SpaceX from Grain), plus Amazon-Globalstar ($11.6B takeover)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_traffic_2030",
+   "kind": "quantile",
+   "group": "Demand",
+   "headline": "Yes",
+   "short": "US mobile data traffic in 2030",
+   "question": "US wireless data traffic in calendar 2030 as reported by CTIA's annual survey (includes fixed wireless), in exabytes (trillion MB) per year.",
+   "unit": "EB per year",
+   "fmt": "eb",
+   "current": 159.3,
+   "current_label": "159 EB in 2025 (+20%)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_traffic_2035",
+   "kind": "quantile",
+   "group": "Demand",
+   "headline": "",
+   "short": "US mobile data traffic in 2035",
+   "question": "US wireless data traffic in calendar 2035 on the CTIA basis, in exabytes per year.",
+   "unit": "EB per year",
+   "fmt": "eb",
+   "current": 159.3,
+   "current_label": "159 EB in 2025",
+   "horizon": "2035",
+   "log": "Yes"
+  },
+  {
+   "id": "q_ai_share",
+   "kind": "quantile",
+   "group": "Demand",
+   "headline": "Yes",
+   "short": "AI share of mobile traffic in 2030",
+   "question": "Share of mobile network traffic directly attributable to AI assistants, agents and AI devices (glasses, robots, vehicles' AI functions) in 2030, on a narrow definition like Ericsson's 2025 GenAI measurement (not AI-recommended video), in percent. Resolves on the best operator or vendor measurement for 2030.",
+   "unit": "% of traffic",
+   "fmt": "pct1",
+   "current": 0.06,
+   "current_label": "0.06% (Ericsson, April 2025)",
+   "horizon": "2030",
+   "log": "Yes"
+  },
+  {
+   "id": "q_fwa_2030",
+   "kind": "quantile",
+   "group": "Demand",
+   "headline": "",
+   "short": "Fixed wireless homes in 2030",
+   "question": "Combined fixed wireless access (home and business internet over the mobile network) subscribers of T-Mobile, Verizon and AT&T at end-2030, in millions.",
+   "unit": "million",
+   "fmt": "m",
+   "current": 19,
+   "current_label": "About 19M (Q3 2026, estimate)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_rev_per_gb",
+   "kind": "quantile",
+   "group": "Demand",
+   "headline": "",
+   "short": "Revenue per gigabyte in 2030",
+   "question": "US wireless service revenue divided by US wireless data traffic (CTIA basis) in 2030, in dollars per GB.",
+   "unit": "$ per GB",
+   "fmt": "usd2",
+   "current": 1.48,
+   "current_label": "$1.48 in 2025 (about -20% a year)",
+   "horizon": "2030",
+   "log": "Yes"
+  },
+  {
+   "id": "q_new_mhz_2030",
+   "kind": "quantile",
+   "group": "Supply",
+   "headline": "Yes",
+   "short": "New spectrum auctioned by 2030",
+   "question": "MHz of new licensed terrestrial mobile spectrum (not re-auctions of returned licences) for which FCC auction bidding concludes between 1 Jan 2026 and 31 Dec 2030.",
+   "unit": "MHz",
+   "fmt": "mhz",
+   "current": 0,
+   "current_label": "None since 2022 (upper C-band 160 MHz scheduled for 2027)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_new_mhz_2035",
+   "kind": "quantile",
+   "group": "Supply",
+   "headline": "",
+   "short": "New spectrum auctioned by 2035",
+   "question": "MHz of new licensed terrestrial mobile spectrum for which FCC auction bidding concludes between 1 Jan 2026 and 31 Dec 2035 (the 2025 law requires at least 300 MHz in 1.3-10.5 GHz by 2034 within an 800 MHz pipeline).",
+   "unit": "MHz",
+   "fmt": "mhz",
+   "current": 0,
+   "current_label": "Law requires at least 300 MHz by 2034",
+   "horizon": "2035"
+  },
+  {
+   "id": "q_spacex_mhz",
+   "kind": "quantile",
+   "group": "Satellites and SpaceX",
+   "headline": "Yes",
+   "short": "Spectrum SpaceX owns in 2030",
+   "question": "MHz (nationwide-equivalent, both directions counted) of US spectrum usable for terrestrial or direct-to-device mobile service that SpaceX owns (closed transactions or auction wins, not leases from carriers) at end-2030.",
+   "unit": "MHz",
+   "fmt": "mhz",
+   "current": 0,
+   "current_label": "0 closed; about 79 MHz pending (EchoStar 65, Grain 14) plus small AWS-3 re-auction wins",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_d2d_rev",
+   "kind": "quantile",
+   "group": "Satellites and SpaceX",
+   "headline": "",
+   "short": "Satellite-to-phone revenue in 2030",
+   "question": "Global direct-to-device (satellite to ordinary phones and IoT devices) service revenue in 2030, wholesale plus retail, all operators, in $B.",
+   "unit": "$B",
+   "fmt": "usd_b",
+   "current": 0.5,
+   "current_label": "Well under $1B (2026, estimate)",
+   "horizon": "2030",
+   "log": "Yes"
+  },
+  {
+   "id": "q_spacex_subs",
+   "kind": "quantile",
+   "group": "Satellites and SpaceX",
+   "headline": "",
+   "short": "SpaceX's own US mobile subscribers in 2030",
+   "question": "Paying US mobile subscribers billed directly by SpaceX/Starlink Mobile at end-2030 (excluding satellite add-ons billed by carrier partners), in millions.",
+   "unit": "million",
+   "fmt": "m1",
+   "current": 0,
+   "current_label": "None today",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_service_rev",
+   "kind": "quantile",
+   "group": "Carriers and value capture",
+   "headline": "Yes",
+   "short": "US wireless service revenue in 2030",
+   "question": "US wireless industry service revenue in 2030 on the CTIA basis, in nominal $B.",
+   "unit": "$B",
+   "fmt": "usd_b",
+   "current": 235,
+   "current_label": "$235B in 2025 (about +3% a year since 2007)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_ev_ebitda",
+   "kind": "quantile",
+   "group": "Carriers and value capture",
+   "headline": "",
+   "short": "Carrier valuation multiple in 2030",
+   "question": "Simple average EV/EBITDA (forward 12-month adjusted EBITDA) of AT&T, Verizon and T-Mobile at end-2030.",
+   "unit": "x",
+   "fmt": "x",
+   "current": 6.9,
+   "current_label": "About 6.9x (Nov 2026, estimate)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_cable_lines",
+   "kind": "quantile",
+   "group": "Carriers and value capture",
+   "headline": "",
+   "short": "Cable mobile lines in 2030",
+   "question": "Combined Charter (including Cox) and Comcast mobile lines at end-2030, in millions.",
+   "unit": "million",
+   "fmt": "m",
+   "current": 24.1,
+   "current_label": "24.1M (Q3 2026)",
+   "horizon": "2030"
+  },
+  {
+   "id": "q_capex",
+   "kind": "quantile",
+   "group": "Carriers and value capture",
+   "headline": "",
+   "short": "US wireless capital spending in 2030",
+   "question": "US wireless industry network capital spending in 2030 on the CTIA basis, in nominal $B.",
+   "unit": "$B",
+   "fmt": "usd_b",
+   "current": 30,
+   "current_label": "About $30B (2025); peak $39B (2022)",
+   "horizon": "2030"
+  },
+  {
+   "id": "b_ucb_2027",
+   "kind": "binary",
+   "group": "Supply",
+   "question": "Will bidding in the FCC upper C-band auction conclude by 31 December 2027?",
+   "horizon": "End 2027",
+   "resolution": "Yes if the FCC announces the close of bidding (clock and assignment phases) of Auction 115 by 31 Dec 2027."
+  },
+  {
+   "id": "b_ucb_above",
+   "kind": "binary",
+   "group": "Spectrum prices",
+   "question": "Will the upper C-band auction clear above the lower C-band's price of about $0.94 per MHz-pop?",
+   "horizon": "End 2028",
+   "resolution": "Yes if Auction 115 gross bids divided by (MHz offered x 335M pops) exceed $0.94 and bidding concludes by 31 Dec 2028; No otherwise."
+  },
+  {
+   "id": "b_spacex_ucb",
+   "kind": "binary",
+   "group": "Satellites and SpaceX",
+   "question": "Will SpaceX win licences in the upper C-band auction?",
+   "horizon": "End 2028",
+   "resolution": "Yes if SpaceX or an affiliate is a winning bidder in Auction 115 by 31 Dec 2028."
+  },
+  {
+   "id": "b_echostar_close",
+   "kind": "binary",
+   "group": "Satellites and SpaceX",
+   "question": "Will SpaceX's purchase of EchoStar's AWS-4 and H-block licences close by the end of 2027?",
+   "horizon": "End 2027",
+   "resolution": "Yes if the licence assignment is consummated (not just approved) by 31 Dec 2027."
+  },
+  {
+   "id": "b_grain_approve",
+   "kind": "binary",
+   "group": "Satellites and SpaceX",
+   "question": "Will the FCC approve SpaceX's purchase of Grain's 800 MHz licences by the end of 2027?",
+   "horizon": "End 2027",
+   "resolution": "Yes if the FCC grants the assignment applications (with or without conditions) by 31 Dec 2027."
+  },
+  {
+   "id": "b_spacex_retail",
+   "kind": "binary",
+   "group": "Satellites and SpaceX",
+   "question": "Will SpaceX sell US mobile phone service under its own brand on its own spectrum by the end of 2028?",
+   "horizon": "End 2028",
+   "resolution": "Yes if SpaceX/Starlink offers a paid US consumer mobile plan billed by SpaceX that uses SpaceX-owned spectrum (satellite, terrestrial or both) by 31 Dec 2028."
+  },
+  {
+   "id": "b_spacex_top4",
+   "kind": "binary",
+   "group": "Satellites and SpaceX",
+   "question": "Will SpaceX be one of the four largest US mobile operators by subscribers by 2035?",
+   "horizon": "End 2035",
+   "resolution": "Yes if SpaceX's directly billed US mobile subscribers exceed those of the fourth-largest of AT&T, Verizon, T-Mobile, Charter and Comcast at end-2035."
+  },
+  {
+   "id": "b_tech_buys_carrier",
+   "kind": "binary",
+   "group": "Carriers and value capture",
+   "question": "Will SpaceX, Amazon or another non-telecom tech company agree to buy a US facilities-based mobile carrier or a cable company's mobile business by 2030?",
+   "horizon": "End 2030",
+   "resolution": "Yes if such a definitive agreement is announced by 31 Dec 2030."
+  },
+  {
+   "id": "b_crunch",
+   "kind": "binary",
+   "group": "Demand",
+   "question": "Will US wireless revenue per GB rise year on year in any year from 2027 to 2030, a sign of a capacity crunch?",
+   "horizon": "End 2030",
+   "resolution": "Yes if CTIA-basis service revenue per GB of traffic is higher than the prior year for any of 2027, 2028, 2029 or 2030."
+  },
+  {
+   "id": "b_reaccel",
+   "kind": "binary",
+   "group": "Demand",
+   "question": "Will US mobile data traffic grow more than 25% in any year from 2027 to 2030?",
+   "horizon": "End 2030",
+   "resolution": "Yes if CTIA-reported annual traffic growth exceeds 25% for any of 2027-2030."
+  },
+  {
+   "id": "b_6g",
+   "kind": "binary",
+   "group": "Supply",
+   "question": "Will a US carrier launch commercial 3GPP 6G service by the end of 2030?",
+   "horizon": "End 2030",
+   "resolution": "Yes if any US carrier offers paid commercial service on 3GPP Release 21 (6G) radio by 31 Dec 2030."
+  },
+  {
+   "id": "b_7ghz",
+   "kind": "binary",
+   "group": "Supply",
+   "question": "Will the FCC finish auctioning any upper mid-band spectrum above 4.2 GHz (such as 7.125-7.4 GHz) by the end of 2030?",
+   "horizon": "End 2030",
+   "resolution": "Yes if bidding concludes by 31 Dec 2030 in an FCC auction of licensed mobile spectrum between 4.2 and 10.5 GHz."
+  },
+  {
+   "id": "b_pureplay_sale",
+   "kind": "binary",
+   "group": "Spectrum prices",
+   "question": "Will at least one of Anterix, NextNav, Array or EchoStar's remaining licences be sold to a strategic buyer by the end of 2028?",
+   "horizon": "End 2028",
+   "resolution": "Yes if a definitive agreement is announced by 31 Dec 2028 to sell the company or most of its spectrum (for EchoStar, its remaining licences) to an operator, satellite company or other strategic buyer."
+  },
+  {
+   "id": "b_carriers_beat",
+   "kind": "binary",
+   "group": "Carriers and value capture",
+   "question": "Will an equal-weight basket of AT&T, Verizon and T-Mobile beat the S&P 500 on total return from 19 November 2026 to the end of 2030?",
+   "horizon": "End 2030",
+   "resolution": "Yes if the basket's total return (dividends reinvested) exceeds the S&P 500 total return over the period."
+  }
+ ],
+ "panel": [
+  {
+   "lens": "outside",
+   "lens_name": "Reference class",
+   "forecasts": [
+    {
+     "id": "q_ucb_price",
+     "p10": 0.44,
+     "p50": 0.82,
+     "p90": 1.45,
+     "rationale": "I started from the consensus centre of about $44-45B (Carr $30-60B, TD Cowen $30-75B), about $0.82 on 160 MHz x 335M pops. Real mid-band prices have fallen since 2015, and roughly $0.20-0.30/MHz-pop of clearing and altimeter costs sit on top of bids, so the all-in price is about lower C-band's in nominal terms (a real decline). I kept the range wide because of the reference class: 5 of the last 8 big US auctions beat consensus (AWS-3 about 3x, C-band 1.7x), while 600 MHz (0.5x) and 2.5 GHz (0.15x) fell well short. On the 335M-pop basis, lower C-band itself was only about $0.87."
+    },
+    {
+     "id": "q_ucb_proceeds",
+     "p10": 23.5,
+     "p50": 44,
+     "p90": 78,
+     "rationale": "This is the price distribution multiplied by 53.6B MHz-pops (160 MHz x 335M). The $78B P90 allows a lower-C-band-style beat of about 1.7x consensus. The $23.5B P10 allows a 600 MHz-style miss of about 0.5x, driven by AT&T's leverage, T-Mobile's build-versus-buy discipline and Verizon's comment that the band takes 4-5 years to deploy."
+    },
+    {
+     "id": "q_midband_2030",
+     "p10": 0.45,
+     "p50": 0.95,
+     "p90": 1.8,
+     "rationale": "The likely 2029-30 deals mix new-band auctions (2.7 GHz, the 25 MHz AWS-3-adjacent band, possibly 4.4 GHz) with private sales (EchoStar's remainder, Array's C-band, low-band resales). In the base rate, 2021-22 auctions cleared at $0.67-0.87 and private sales in 2025-26 ran $0.52-2.53, with a median near $1.2. Real mid-band prices have fallen as supply rose (Canada's second tranche cleared 90% lower). So the median slides a little below today's level, and the range is wide because which deals happen will decide the median."
+    },
+    {
+     "id": "q_bigdeals",
+     "p10": 0,
+     "p50": 1,
+     "p90": 3,
+     "rationale": "From 2013 to 2024 there were essentially no spectrum-only deals of $5B or more (about 0.2 a year). The 3 in 2025-26 came from one forced seller (EchoStar) and one new buyer (SpaceX). The main candidate for 2027-30 is EchoStar's paired AWS-3 remainder (about $8B on the books, to be sold by Sept 2028), with smaller odds on SpaceX or Amazon buying more, or a Viasat/L-band deal. I modelled the count as roughly Poisson with a mean of about 1.1 and some overdispersion."
+    },
+    {
+     "id": "q_traffic_2030",
+     "p10": 262,
+     "p50": 328,
+     "p90": 425,
+     "rationale": "Growth decayed from +38% to +20% over 2022-25, and mature markets settle in the high teens (UK +18%, Switzerland 20-25%). Ericsson's North American smartphone forecast is a 13% CAGR, and FWA traffic should grow about 18-20% as line adds slow. The blend gives about 16% a year, or about 330 EB by 2030. The P10 assumes growth drops toward 8-10% (FWA saturation, Wi-Fi). The P90 is close to CTIA's own roughly 22% path, which vendor and industry forecasts have usually overshot."
+    },
+    {
+     "id": "q_traffic_2035",
+     "p10": 345,
+     "p50": 525,
+     "p90": 900,
+     "rationale": "I extended the 2030 path with growth decaying further to about 9-12% a year over 2031-35, the pattern that every maturing market and Ericsson's own forecast (14% by 2031) show. The range is wide and log-skewed: P10 is about 6% growth after a weak 2030, and P90 is about 16% sustained by uplink-heavy AI and 6G. CTIA- and Nokia-style AI step-change scenarios sit at or above the P90."
+    },
+    {
+     "id": "q_ai_share",
+     "p10": 0.25,
+     "p50": 1.3,
+     "p90": 7.5,
+     "rationale": "The base is 0.06% in 2025. If share doubles each year it reaches about 2% in 2030, and growing 1.5x a year gives about 0.5%. Text and voice AI is light, AI glasses tether through phones and often Wi-Fi, and robotaxis add only about 0.1%. Vendor scenario forecasts (GSMA 5-20%, Nokia's broad definitions) have a record of overshooting. The upper tail reflects the TikTok precedent, a new video-heavy app category reaching double-digit share in about 4 years, and the chance that generative-video apps get counted."
+    },
+    {
+     "id": "q_fwa_2030",
+     "p10": 24.5,
+     "p50": 29,
+     "p90": 34.5,
+     "rationale": "The base is about 19.6M at end-2026. Annual adds have already peaked (3.8M in 2025, 3.6M in 2026, and Verizon's Q3 adds fell 39% year on year). Decaying adds of about 3.1, 2.6, 2.2 and 1.8M give about 29M, close to the carriers' targets (T-Mobile 15M by 2030, Verizon well beyond 8-9M by 2028). New Street's roughly 32M capacity ceiling and product S-curves cap the top. The P10 has adds collapsing as fiber overbuild and higher churn hit."
+    },
+    {
+     "id": "q_rev_per_gb",
+     "p10": 0.61,
+     "p50": 0.8,
+     "p90": 1.03,
+     "rationale": "This is the ratio of my revenue forecast (P50 $264B) to my traffic forecast (P50 328 EB). Revenue per GB falls about 11% a year as traffic growth slows, not the 20% a year of 2020-25, when traffic grew 25-38%. Traffic uncertainty drives most of the range. A naive extension of -20% a year would give about $0.49, which is below my P10."
+    },
+    {
+     "id": "q_new_mhz_2030",
+     "p10": 160,
+     "p50": 355,
+     "p90": 660,
+     "rationale": "Upper C-band (160 MHz) is nearly certain under the statute and FCC schedule. The 2.7 GHz band (about 200 MHz, Carr's 2028 target) gets about 57% by 2030, after the usual 1-3 year slip on US mid-band auctions, and the 25 MHz 1675/2020 band about 50%. The P90 needs an upper mid-band (4.4 or 7 GHz) or mmWave auction to finish by 2030, which I put at about 15-25%."
+    },
+    {
+     "id": "q_new_mhz_2035",
+     "p10": 365,
+     "p50": 630,
+     "p90": 1080,
+     "rationale": "Outside view: statutory spectrum mandates are usually met late or only in part; about 75% of Spectrum Act targets were auctioned within the decade. The 2025 law's 800 MHz pipeline excludes 1,350 MHz of candidate spectrum (3.1-3.45 and 7.4-8.4 GHz), so about 75-80% delivery gives about 630. The 300 MHz FCC minimum is met by upper C-band plus 2.7 GHz (P10). The upper tail adds 7.125-7.4 GHz and part of 4.4-4.94 GHz, with a possible mmWave auction such as upper 37 GHz, which would add a lot of MHz cheaply."
+    },
+    {
+     "id": "q_spacex_mhz",
+     "p10": 66,
+     "p50": 81,
+     "p90": 140,
+     "rationale": "About 79 MHz is pending: EchoStar's 65 MHz (about 83% to close by 2027, about 93% by 2030) and Grain's 14 MHz (about 87% approved). FCC approved every major 2025-26 transfer. SpaceX made about 5 spectrum moves in 13 months, so further buying is plausible: Auction 115 wins (about 37%), EchoStar's paired AWS-3, regional pieces. That fattens the upper tail. Musk's line that the 800 MHz deal is the 'last critical piece' keeps the median near the pending total."
+    },
+    {
+     "id": "q_d2d_rev",
+     "p10": 1.4,
+     "p50": 3.8,
+     "p90": 10,
+     "rationale": "The base is well under $1B, and the whole legacy satellite-phone (MSS) industry earns a few $B a year (Iridium $0.87B). My bottom-up 2030 estimate is $1.5-2.5B of SpaceX wholesale from about 150M monthly users at roughly $1/month, plus possible US retail, AST at $0.5-1.5B, and Apple/Globalstar/Amazon plus IoT at under $1B in total, for about $3-5B. Forecasts for new satellite services have historically overshot, and D2D is mostly bundled at near-zero marginal price. The upper tail is broadband-class D2D monetized at premium tiers."
+    },
+    {
+     "id": "q_spacex_subs",
+     "p10": 0,
+     "p50": 0.7,
+     "p90": 5.5,
+     "rationale": "I put the chance of a direct US launch by 2030 at about 70%, and it depends on the EchoStar closing (Nov 2027) and next-gen satellites, whose timelines usually slip. Reference class for entrants: cable MVNOs, with tens of millions of broadband homes to bundle into, reached about 1M lines in about 1.5 years and about 3M in about 3 years. Dish/Boost never scaled organically. A 2028 launch at a cable-like pace gives about 1-2.5M by end-2030, so the overall median is under 1M with a long right tail."
+    },
+    {
+     "id": "q_service_rev",
+     "p10": 246,
+     "p50": 264,
+     "p90": 285,
+     "rationale": "The 2007-2025 nominal CAGR was about 3% (roughly flat real), and I used 2.4% a year from $235B. The 2026 run-rate is firmer (AT&T wireless service +5%, T-Mobile +6-9%, price increases), and FWA adds about 0.7% a year. Offsetting that, cable takes share with free lines and Verizon's ARPA fell 1.9%. The P10 is about 1% CAGR (a price war after SpaceX enters) and the P90 about 4%. CTIA restating its basis is an extra source of width."
+    },
+    {
+     "id": "q_ev_ebitda",
+     "p10": 5.6,
+     "p50": 6.9,
+     "p90": 8.3,
+     "rationale": "US incumbent telcos have mostly traded at 6-8x, and today's 6.9x is close to the long-run average once T-Mobile's old premium is set aside. Multiples mean-revert, with about ±1.0-1.2x of 4-year dispersion. Downside risks are SpaceX price pressure and a 6G/upper C-band capex cycle around 2030. The upside is a convergence or M&A re-rating."
+    },
+    {
+     "id": "q_cable_lines",
+     "p10": 31,
+     "p50": 35.5,
+     "p90": 40,
+     "rationale": "Cable has added a steady 3-3.6M lines a year in 2022-26 (+3.4M in the 12 months to Q3 2026), and mobile penetration of cable broadband homes is still only about 20%. Adds decaying about 10% a year gives about 35.5M, and a straight-line trend gives about 38.6M. The P10 has adds roughly halving as broadband losses shrink the base, free lines roll off and carriers retaliate on price."
+    },
+    {
+     "id": "q_capex",
+     "p10": 26,
+     "p50": 31.5,
+     "p90": 38.5,
+     "rationale": "Capex has been flat at $29-30B for 2023-25 after the 2022 peak of $39B, and past cycles troughed 20-30% below peak before the next generation's ramp. 2030 sits at the trough-to-ramp turn: upper C-band deployment in 2029-31 (Verizon says 4-5 years) plus early 6G, with about 2.5% inflation. Against that, AT&T and Verizon have cut capex outlooks and the industry is in harvest mode. The P90 assumes a 2021-22-style spectrum-driven surge."
+    }
+   ],
+   "probabilities": [
+    {
+     "id": "b_ucb_2027",
+     "probability": 89,
+     "rationale": "Once the FCC sets a procedures date, US auctions almost always start on time: Auctions 107, 110, 108 and 103 did, and 105 slipped only a month during COVID. Statutory and Treasury pressure (at least 100 MHz by July 2027) adds to that. Clock and assignment phases for comparable band-plan auctions took 2.5-3 months (107: Dec to Feb; 110: Oct to Jan). An April 27 start therefore implies a close around Aug-Oct 2027, leaving room for slips. The residual risk is litigation, FAA/altimeter interference or a long bidding war."
+    },
+    {
+     "id": "b_ucb_above",
+     "probability": 36,
+     "rationale": "This is consistent with my price distribution. $0.94 on the 335M basis means proceeds of at least about $50.4B, which sits around the 62nd-63rd percentile of my conditional distribution (median $0.82). That gives about 38%, times about 96% that bidding concludes by 2028, or about 36%. The reference class of consensus beats (C-band, AWS-3) keeps this from being lower, and real price declines plus heavy add-on costs keep it below 50%."
+    },
+    {
+     "id": "b_spacex_ucb",
+     "probability": 37,
+     "rationale": "SpaceX was engaged in the Auction 115 rulemaking, asking that satellite coverage count toward buildout (denied) and seeking satellite or SCS access to the band. It won licences in the 2026 AWS-3 re-auction, possibly as a warm-up, and has huge balance-sheet capacity and stated telco ambitions. Against that, the FCC denied satellite buildout credit, Musk called 800 MHz the last critical piece, and a 4 GHz band needs a terrestrial grid SpaceX lacks. I put about 55% on SpaceX qualifying and about 65-70% on it winning something if it does."
+    },
+    {
+     "id": "b_echostar_close",
+     "probability": 83,
+     "rationale": "The FCC approved the transfer in May 2026, the licences are already in trust, and SpaceX's funding of EchoStar interest through November 2027 points to a contractual close around Nov 30, 2027. Approved deals with set dates usually close on schedule. But the target is only one month before the deadline, and the Dish subsidiaries are in Chapter 11, so a modest slip past 31 Dec is the main risk."
+    },
+    {
+     "id": "b_grain_approve",
+     "probability": 87,
+     "rationale": "The FCC approved every major 2025-26 spectrum transfer, with conditions, in about 6-12 months; SpaceX-EchoStar took about 8. SpaceX holds no low-band, so the spectrum screen is not an issue, and the Carr FCC has been accommodating to SpaceX. The application was accepted on Nov 10, 2026, leaving about 13 months against a 180-day informal shot clock. The residual risk is AT&T/Verizon opposition, 800 MHz public-safety interference issues or delays from added conditions."
+    },
+    {
+     "id": "b_spacex_retail",
+     "probability": 45,
+     "rationale": "This needs the EchoStar closing (about Nov 2027) plus either next-gen D2D satellites on AWS-4 (launches from 2027, expanded service targeted for end-2027) or a terrestrial grid for 800 MHz. All of that has to happen within about 13 months of closing. SpaceX has the billing base and the stated intent. But new-entrant and new-constellation timelines (Dish 5G, AST, Kuiper, Starship) usually slip 6-12 months, which puts the median launch near end-2028."
+    },
+    {
+     "id": "b_spacex_top4",
+     "probability": 11,
+     "rationale": "Beating the fourth-largest operator (Comcast or Charter at roughly 18-25M by 2035) needs about 20M directly billed US subscribers. Cable did about 24M in about 9 years with tens of millions of bundled broadband homes. Dish/Boost never scaled organically, and satellites cannot carry dense-urban demand. The probability is mostly an organic SpaceX success tail plus about a 3-4% chance it buys a carrier or a cable mobile base."
+    },
+    {
+     "id": "b_tech_buys_carrier",
+     "probability": 12,
+     "rationale": "The US base rate for a non-telecom tech company buying a facilities-based carrier is essentially zero over 30 years; Google Fi and others stayed MVNOs. SpaceX's stated telco ambitions, its need for towers and a core network, and the fact that a small regional carrier would count raise this above the base rate. Cable mobile businesses are core to the broadband bundle and unlikely to be sold."
+    },
+    {
+     "id": "b_crunch",
+     "probability": 9,
+     "rationale": "For revenue per GB to rise, traffic growth would have to fall below revenue growth of about 2-4%. CTIA's lowest growth since 2010 was +14% (2020), and my central path stays at 13-18% through 2030. Year-to-year noise of about ±6 points gives under 6% across the four years. A CTIA methodology break (for example, splitting out FWA) or a sharp FWA pullback adds a few points."
+    },
+    {
+     "id": "b_reaccel",
+     "probability": 19,
+     "rationale": "The central path has growth at 14-18% for 2027-30. But CTIA's series is noisy, with re-accelerations of 12 points or more in 2018, 2021 and 2022 driven by unlimited plans, FWA and methodology. Per-year odds of topping 25% (about 3-12%), partly correlated across years, give about 19%. That is slightly above the research digest's 15% because of the series' history of jumps."
+    },
+    {
+     "id": "b_6g",
+     "probability": 47,
+     "rationale": "Spec freeze to first US commercial launch was about 9-13 months for 5G (AT&T's hotspot in Dec 2018, Verizon in April 2019) and about 21 months for LTE. Release 21's ASN.1 freeze in March 2029 therefore points to a first launch between Dec 2029 and late 2030, right at the deadline. T-Mobile says it will be first around 2030, and US policy favours a race. Against that are possible 3GPP schedule slips, no new 6G band by 2030, weak carrier ROI, and a strict Release 21 test that rules out rebranded 5G-Advanced."
+    },
+    {
+     "id": "b_7ghz",
+     "probability": 24,
+     "rationale": "Candidates are 7.125-7.4 GHz (NTIA report due Dec 2026) and part of 4.4-4.94 GHz (DoD relocation plans under review). Federal-band study-to-auction has ranged from 14 months (3.45 GHz, with a strong push) to about 10 years (CBRS), and mid-band auctions usually slip 1-3 years. The 2.7 GHz band alone could largely satisfy the 200 MHz July-2029 federal tranche, which reduces pressure to rush 7 GHz before WRC-27 takes effect in 2029."
+    },
+    {
+     "id": "b_pureplay_sale",
+     "probability": 74,
+     "rationale": "EchoStar is a motivated seller with a stated target to sell its remaining licences (about $8.45B on its books, mainly paired AWS-3) by Sept 2028, and it has executed every sale so far. I give that about 60% within the window, allowing for slippage and piecemeal sales. Array still holds C-band facing buildout milestones (about 30%), Anterix is in a strategic review after the band was widened (about 22%), and NextNav depends on FCC action (about 8%). Treated as roughly independent, that gives about 75%."
+    },
+    {
+     "id": "b_carriers_beat",
+     "probability": 35,
+     "rationale": "In most rolling 4-year windows since 2010, an equal-weight basket of T, VZ and TMUS has trailed the S&P 500. It mostly won in bear-market windows such as 2000-03 and 2007-10. A low starting multiple (about 6.9x), about 5-6% dividend yields and a richly valued, AI-heavy S&P argue for some mean reversion. SpaceX entry, cable share gains and a capex cycle around 2030 are structural headwinds."
+    }
+   ],
+   "notes": "Outside-view panel member. I read the full brief and checked specifics in workflow_result.json (EchoStar remainder sale target of Sept 2028, Auction 115 add-on costs of about $6.3B incentive plus $3.8-5.7B altimeter, T-Mobile's 6G-first statement). I used 2 of the 5 allowed web searches; neither changed the inputs (no confirmed SpaceX Auction 115 application, and short-forms are due Jan 2027; the EchoStar interest funding through Nov 2027 supports the Nov 30, 2027 closing target). Consistency checks: b_ucb_above (36%) = P(price > $0.94, about 38% from a lognormal with median $0.82 and upper log-sd about 0.445) x P(concluded by 2028, about 96%). Price and proceeds use the same 53.6B MHz-pops. Rev/GB P50 ($0.80) = revenue P50 ($264B) / traffic P50 (328 EB). b_crunch (9%) and b_reaccel (19%) are consistent with a traffic path of about 14-18% a year with ±6-point noise. new_mhz P90s reflect b_7ghz (24%) plus a small mmWave-auction tail. Lower C-band on the question's 335M-pop basis was about $0.87, not $0.94, so clearing $0.94 needs at least $50.4B. Sources from the searches: https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date ; https://www.fierce-network.com/wireless/spacex-seeks-tweaks-upper-c-band-auction-rules ; https://ir.echostar.com/node/32686 ; https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+  },
+  {
+   "lens": "model",
+   "lens_name": "Bottom-up model",
+   "forecasts": [
+    {
+     "id": "q_ucb_price",
+     "p10": 0.45,
+     "p50": 0.77,
+     "p90": 1.3,
+     "rationale": "Next-cheapest-capacity bound: carriers paid about $0.9-1.2 for 3.45 GHz they could use at once (AT&T-EchoStar $22.65B less about $11-13B for the 600 MHz part, over 30 MHz x 335M). Upper C-band carries about $0.30/MHz-pop of add-on costs ($16B / 53.6B MHz-pops) and a 4-5 year deployment lag (a 15-20% discount), so carrier-only bidding clears near $0.55-0.75. 3.45 GHz (2022) cleared at about 75% of the C-band price, consistent with that. I modelled a mixture: 55% no serious SpaceX bidding (median $0.65) and 45% SpaceX bids hard (median $0.95), which gives P10/P50/P90 of about 0.47/0.77/1.29."
+    },
+    {
+     "id": "q_ucb_proceeds",
+     "p10": 24,
+     "p50": 41,
+     "p90": 70,
+     "rationale": "Proceeds = 160 MHz x 335M pops x price = 53.6B MHz-pops x my price quantiles (0.45/0.77/1.30), giving about $24B/$41B/$70B. This sits inside TD Cowen's $30-75B and centres near Carr's $30-60B midpoint. I kept a fat right tail because analysts badly underestimated the 2021 auction ($81B vs $40-52B) and Verizon still pays up (88% of Auction 113 at $2.53/MHz-pop)."
+    },
+    {
+     "id": "q_midband_2030",
+     "p10": 0.38,
+     "p50": 0.86,
+     "p90": 1.8,
+     "rationale": "The median depends on which deals happen in 2029-30. Mid-band FCC auctions that slip into that window (2.7 GHz, 4.4 GHz, 1.6 GHz) should clear at about $0.3-0.7, given about 35% more mid-band supply by then and traffic growing only about 15%. Private sales over $1B (low-band, paired AWS, C-band remainders) run about $1.2-2.5. With 1-4 qualifying deals, two auctions plus one private sale gives a median near $0.6, and the reverse mix gives about $1.3-1.5. The result is a wide, slightly bimodal range centred near $0.86."
+    },
+    {
+     "id": "q_bigdeals",
+     "p10": 0,
+     "p50": 1,
+     "p90": 3,
+     "rationale": "Candidate-by-candidate: a $5B+ sale of EchoStar's remaining licences (book $8.45B, paired AWS-3 marked at $8.1B, sale targeted by Sept 2028), about 50%; another SpaceX purchase about 20%; Amazon about 10%; a carrier swap or sale about 10%; Anterix, NextNav or Ligado about 10%; other about 10%. That gives an expected count of about 1.1 and P(0) of about 26%. The 2013-24 base rate was roughly 0.2 a year; the 2025-26 burst came from EchoStar's forced exit."
+    },
+    {
+     "id": "q_traffic_2030",
+     "p10": 268,
+     "p50": 333,
+     "p90": 425,
+     "rationale": "Bottom-up for 2030: phones 335M x about 37 GB/month (10%/yr from 25 GB, below Ericsson's 13%, which has overshot before) x 12 = about 149 EB. FWA about 28.5M average lines x about 520 GB/month (7%/yr from about 371 GB implied in 2025) x 12 = about 178 EB. Other devices add about 10 EB, for about 337 EB. Top-down, growth decaying from 18% to 11% gives about 310 EB. The P90 sits on CTIA's 4x-by-2032 path (22% CAGR, about 430 EB); the P10 assumes FWA adds stall and phone growth is about 7%."
+    },
+    {
+     "id": "q_traffic_2035",
+     "p10": 355,
+     "p50": 525,
+     "p90": 870,
+     "rationale": "From about 333 EB in 2030, growth of 8-10%/yr gives about 500-540. Bottom-up 2035: phones 340M x about 60 GB x 12 = 245 EB, FWA about 30M x about 750 GB x 12 = 270 EB, plus vehicles, robots and glasses about 20 EB, for about 535 EB. Low case: FWA shrinks to about 22M lines under fiber overbuild and phones reach 48 GB, about 350 EB. High case: AI uplink, 7 GHz capacity and 38M FWA lines at 1 TB, about 880 EB. Log-wide range."
+    },
+    {
+     "id": "q_ai_share",
+     "p10": 0.35,
+     "p50": 1.5,
+     "p90": 6.5,
+     "rationale": "From 0.06% in Apr 2025: if GenAI app traffic grows 120%/yr against total traffic at about 18%/yr, the share is 0.06% x 51.5 / 2.29, about 1.35%. Adding the pieces: voice and vision assistants about 0.5 GB/month per phone (about 1.2% of phone traffic), AI-video generation apps about 0.3-1%, 60K robotaxis x 20 GB/day = 0.44 EB (about 0.13%), and tethered glasses about 0.05%. Total about 1.5-2.5%. The upper tail is fat because vendors measure generously and AI-video apps are hard to classify; the downside comes from AI features folded into OS and apps where they are not counted."
+    },
+    {
+     "id": "q_fwa_2030",
+     "p10": 24.5,
+     "p50": 29.5,
+     "p90": 34.5,
+     "rationale": "Start from about 20M at end-2026 (19M in Q3). Net adds decay from 3.6M (2026) by about 12%/yr: 3.2 + 2.8 + 2.4 + 2.1 = about +10.5M, so about 30M. That matches company targets: T-Mobile 15M by 2030, Verizon 'well beyond' 8-9M, AT&T about 5M. The downside (adds fall 30%/yr, then churn and fiber substitution) gives about 25M; the upside (adds hold, upper C-band capacity) about 35M, near New Street's 32M headroom estimate. T-Mobile no longer discloses its count, which adds resolution noise."
+    },
+    {
+     "id": "q_rev_per_gb",
+     "p10": 0.63,
+     "p50": 0.8,
+     "p90": 0.98,
+     "rationale": "Ratio of my own forecasts: service revenue P50 $266B / traffic P50 333 EB = $0.80/GB, against $1.48 in 2025 (about -11.6%/yr, a slower decline than the -20%/yr since 2020 because traffic growth is slowing). Combining log-uncertainty (traffic sd about 0.18, revenue about 0.06, correlation 0.3) gives about $0.63-0.98."
+    },
+    {
+     "id": "q_new_mhz_2030",
+     "p10": 160,
+     "p50": 390,
+     "p90": 740,
+     "rationale": "Auction by auction, with a common FCC-pace factor in a Monte Carlo: upper C-band 160 MHz (97%); 2.7 GHz 100-210 MHz (70%; Carr targets 2028, typical slip 1-3 years); 1.6/2.0 GHz 20-25 MHz (62%); 7.125-7.4 GHz 275 MHz (42%; on Carr's end-2028 slate, NTIA report due Dec 2026); a 4.4 GHz portion (18%); mmWave (4%; no plan found). The simulation gives a lump at 160 (about 25%), a median of about 395, and P90 about 750-800. I shaded the tail down slightly."
+    },
+    {
+     "id": "q_new_mhz_2035",
+     "p10": 330,
+     "p50": 685,
+     "p90": 1250,
+     "rationale": "Same model to 2035: 2.7 GHz 88%, 7 GHz 75%, a 4.4-4.94 GHz portion of 100-300 MHz 50%, 1.3 GHz 25%, plus small chances of mmWave (about 12-15%) or a reversal at upper 6 GHz. The median is about 160+180+22+275 plus a coin-flip 4.4 GHz tranche, about 685. That is about 85% of the 800 MHz statutory pipeline, close to the base rate that 75% of Spectrum Act targets were met within a decade. The P10 is a DoD-resistance or political-slowdown world (UCB plus 2.7 GHz only); the P90 adds a mmWave or upper-6 GHz award."
+    },
+    {
+     "id": "q_spacex_mhz",
+     "p10": 66,
+     "p50": 88,
+     "p90": 140,
+     "rationale": "Monte Carlo: EchoStar 65 MHz (92% closed by 2030) + Grain 800 MHz 12-14 MHz (88%) + tiny AWS-3 wins. Add-ons: Auction 115 wins (48%; 30% of those only token, otherwise median 35 MHz pop-weighted), 2.7 GHz wins (20% x about 30 MHz), a secondary purchase (20% x 5-25 MHz) and a 2020-2025 MHz adjacency (30% x 5). That gives about 69/89/139. The median sits above the 79 MHz pending because at least one substantive addition is more likely than not."
+    },
+    {
+     "id": "q_d2d_rev",
+     "p10": 1.8,
+     "p50": 5,
+     "p90": 13,
+     "rationale": "Sum of operators for 2030. SpaceX wholesale from carrier partners (about 50-80M entitled subscribers at $1-5/month) plus US direct retail, about $2.5B. AST revenue share about $1.2B (from $150-200M in 2026 with about 100 satellites by 2028). Apple and Amazon-Globalstar about $0.5B; China (Tiantong and others) about $0.5B; IoT (Skylo, Iridium NTN) about $0.5B; total about $5B. The low case is bundling at near-zero price (about $2B); the high case is broadband-class next-gen D2D priced as a $5-10 add-on (about $13-15B). For scale, the whole legacy MSS industry is a few $B."
+    },
+    {
+     "id": "q_spacex_subs",
+     "p10": 0.05,
+     "p50": 1,
+     "p90": 5.5,
+     "rationale": "Lines = P(launch) x ramp. I put about a 50% chance of a direct plan on owned spectrum by end-2028 (FT: SpaceX told investors it plans a US consumer service; owned spectrum arrives at the Nov 2027 EchoStar closing) and about 20% of no direct plan by 2030. Conditional on a 2028 launch: about 5M US Starlink broadband homes x 30% attach x about 1.6 lines, plus about 1M rural switchers, gives about 2.5-3M by 2030. Analogs are slow: DISH/Boost about 7M after 5 years mostly by acquisition, cable 24M in about 8 years on 60M broadband homes."
+    },
+    {
+     "id": "q_service_rev",
+     "p10": 245,
+     "p50": 266,
+     "p90": 286,
+     "rationale": "Lines x ARPU: phone lines about +1%/yr, ARPU about +1%/yr, plus FWA (about 3M adds/yr x $50 x 12, about $1.8B/yr or about +0.75%/yr), gives about 2.5-3%/yr. $235B x 1.025^5 = $266B. The P10 is Analysys Mason's near-flat view (+0.6%/yr, about $242B) with SpaceX and cable price pressure; the P90 is T-Mobile-style ARPA gains in a 3-network market (+4%/yr, about $286B). 2007-25 nominal CAGR was 3.0%."
+    },
+    {
+     "id": "q_ev_ebitda",
+     "p10": 5.7,
+     "p50": 6.85,
+     "p90": 8.2,
+     "rationale": "Starting from about 6.9x (T 6.7, VZ 6.7, TMUS 7.4), incumbents have mostly traded at 6-8x. Scenario weights: grind 50% (6.5-7.5x), price pressure from SpaceX and cable 30% (5-6x), convergence or M&A premium 20% (8x+). A 6G and upper C-band capex cycle around 2030 limits re-rating, while T-Mobile's lost premium could partly return. The weighted median is about 6.85x."
+    },
+    {
+     "id": "q_cable_lines",
+     "p10": 30.5,
+     "p50": 34.5,
+     "p90": 38.5,
+     "rationale": "Start from 24.1M in Q3 2026 (about 25M at end-2026), with recent adds about 3.3-3.4M/yr (Charter +1.8M, Comcast +1.6M over 12 months). With adds decaying about 10%/yr (3.0 + 2.7 + 2.4 + 2.1), I get about 35M. Faster decay plus broadband losses (Q3: -144K Comcast, -233K Charter) and SpaceX pressure gives about 31M; Cox integration and steady adds give about 38-39M. The attach ceiling on about 60M broadband homes x about 1.7 lines is far above these levels."
+    },
+    {
+     "id": "q_capex",
+     "p10": 26.5,
+     "p50": 32,
+     "p90": 39,
+     "rationale": "Base: harvest-mode capex flat at about $29-30B nominal (2023-25), about $30-31B by 2030. Add upper C-band deployment from about 2029-31 ($2-4B/yr, smaller than the 2022 C-band spike of about +$9B over trend) and early 6G or 7 GHz builds. Low case: network sharing, capex shifting to fiber, AT&T's lowered outlook, about $26-27B. High case: full 6G, UCB and AI-uplink densification plus any SpaceX terrestrial build, near the $39B 2022 peak."
+    }
+   ],
+   "probabilities": [
+    {
+     "id": "b_ucb_2027",
+     "probability": 86,
+     "rationale": "Bidding starts 27 Apr 2027 (short-forms due Jan 2027), with a statutory deadline of 4 Jul 2027. Comparable clock-plus-assignment auctions took about 10 weeks (Auction 107) and about 13 weeks (Auction 110), so the auction should close by about Aug 2027 with four months to spare. The residual risk is a slip of 5+ months (shutdown, aviation or satellite litigation, IT problems)."
+    },
+    {
+     "id": "b_ucb_above",
+     "probability": 30,
+     "rationale": "Taken from my price distribution: median $0.77, P90 $1.30. P(price > $0.94 | auction concluded) is about 31%, times P(concluded by 2028) of about 0.95, about 30%. Most of that probability comes from the about 45% scenario in which SpaceX bids hard (about 50% above $0.94 there) against about 14% without it."
+    },
+    {
+     "id": "b_spacex_ucb",
+     "probability": 48,
+     "rationale": "SpaceX lobbied on the Auction 115 rules (it sought satellite buildout credit, which the FCC deferred), bid in Auction 113 (2 of 6 licences won, read as a practice run), and analysts expect it to be a major bidder. Musk's stated approach is to buy spectrum and build. I estimate P(applies and qualifies) about 68% x P(wins at least one of 3,248 licences) about 75% x P(concludes by 2028) 0.95, about 48%. Without satellite buildout credit it needs a terrestrial plan, which tempers this."
+    },
+    {
+     "id": "b_echostar_close",
+     "probability": 81,
+     "rationale": "The FCC approved the transfer in May 2026, the licences have been in trust since 22 May 2026, and closing is targeted for about 30 Nov 2027, leaving only a one-month buffer before the deadline. The search found no creditor challenge aimed specifically at the SpaceX closing, but the Dish DBS and Dish Wireless Chapter 11 cases and the Hughes bondholder suits add tail risk. Contracted closing dates usually hold; I allow about 19% for slippage into 2028 or a renegotiation."
+    },
+    {
+     "id": "b_grain_approve",
+     "probability": 87,
+     "rationale": "The filing was accepted 10 Nov 2026. The FCC's 180-day informal clock points to about mid-2027, and SpaceX-EchoStar took about 8 months under Carr, leaving about 13 months of runway. SpaceX holds no other low-band, so there are no spectrum-screen issues, and T-Mobile shares in Grain's resale gain, which dulls incumbent opposition. Residual risk comes from interference conditions on 800 MHz satellite use or a political or DOJ delay."
+    },
+    {
+     "id": "b_spacex_retail",
+     "probability": 50,
+     "rationale": "The FT reports SpaceX told investors it plans a US consumer mobile service, and Shotwell wants a full telco. Owned spectrum usable only arrives at the about Nov 2027 EchoStar closing, leaving about 13 months to launch. Handset support for AWS-4 or the next-gen D2D bands and the lack of any Big 3 MVNO are the binding constraints. A satellite-only or bundled plan billed by SpaceX would also count, which helps."
+    },
+    {
+     "id": "b_spacex_top4",
+     "probability": 9,
+     "rationale": "The fourth-largest of the five would be Charter at about 20-25M lines in 2035. My 2030 SpaceX median is about 1M direct subscribers, so it would need roughly 4x/yr growth or a carrier acquisition. Cable took about 8 years to reach 24M with 60M broadband homes to sell into. Paths are a cheap satellite-plus-terrestrial bundle that scales, or buying a carrier or cable mobile base (included at about 5%)."
+    },
+    {
+     "id": "b_tech_buys_carrier",
+     "probability": 15,
+     "rationale": "Light Reading reports Musk's approach as 'won't buy a telco, will build one'. The Big 3 are effectively unbuyable (scale, DT control of TMUS), and cable mobile is tied to the broadband bundle. The remaining paths are SpaceX or Amazon buying a small regional facilities-based carrier for sites and customers (about 8%), a cable mobile carve-out (about 3%), or a larger surprise (about 4%)."
+    },
+    {
+     "id": "b_crunch",
+     "probability": 6,
+     "rationale": "Revenue per GB rises only if traffic growth falls below revenue growth (about 2-3%) in some year. CTIA traffic growth has not been below about 14% since at least 2010, and my 2030 paths have growth of about 9-15%. The residual comes mostly from a CTIA methodology or restatement artefact or a traffic plateau from FWA reversal."
+    },
+    {
+     "id": "b_reaccel",
+     "probability": 13,
+     "rationale": "Growth fell from 32% to 20% in 2025 and FWA adds are slowing, so a year above 25% needs a new load driver. Upper C-band capacity arrives about 2029-31 (Verizon says 4-5 years to deploy). The precedent is 2020-22, when FWA plus C-band lifted growth from 14% to 38%, so it is possible: a CTIA definitional change or an AI or FWA surge could do it in one year."
+    },
+    {
+     "id": "b_6g",
+     "probability": 45,
+     "rationale": "The Rel-21 ASN.1 freeze is set for Mar 2029. The first US LTE launch came about 21 months after its ASN.1 freeze and 3GPP 5G about 13 months after, which points to Apr-Dec 2030, right at the deadline. There is political pressure for US 6G leadership, Ericsson expects first systems in 2030, and a token paid FWA launch would count. Against that: flat capex, weak carrier ROI, little competitive marketing pressure, and possible 3GPP schedule slip."
+    },
+    {
+     "id": "b_7ghz",
+     "probability": 47,
+     "rationale": "Carr aims to finish 7 GHz, 1.6 GHz and 2.7 GHz auctions by end-2028, though Commissioner Gomez doubts it, and NTIA's 7.125-7.4 GHz report is due Dec 2026. US mid-band auctions have usually slipped 1-3 years, which still leaves about a 42% chance for 7 GHz by end-2030. A 4.4-4.94 GHz auction (NTIA targets an auction by 2030) adds about 18%, correlated, for about 47% that either happens. This matches the CDF of my 2030 MHz forecast."
+    },
+    {
+     "id": "b_pureplay_sale",
+     "probability": 74,
+     "rationale": "Union of four candidates. EchoStar's remaining licences: a motivated seller targeting completion by Sept 2028, with Verizon and SpaceX as known suitors, about 60%. Array's retained C-band about 35%, Anterix (strategic review, 10 MHz at 900 MHz) about 25%, NextNav (contingent on the FCC's 900 MHz decision) about 15%. Independence gives about 83%; I discount for correlated buyer appetite and for the 'most of its spectrum' wording."
+    },
+    {
+     "id": "b_carriers_beat",
+     "probability": 38,
+     "rationale": "Equal-weight carriers' expected return is about a 4.2% average yield plus about 3% growth and buybacks, about 7%/yr, against a richly valued, AI-heavy S&P with about 5-7% expected. The carriers have already de-rated on the SpaceX threat (TMUS about -22% YTD). Against that, the historical base rate for carriers beating the S&P over 4-year windows is about 30-35%, and SpaceX competition and a 2030 capex cycle are further headwinds. Tracking error of about 20%/yr makes the outcome close to a coin flip, tilted to No."
+    }
+   ],
+   "notes": "Inside-view panel member. Each forecast is built from small explicit models (for example lines x ARPU, phones x GB plus FWA x GB, MHz x 335M pops x $/MHz-pop, auction-by-auction Monte Carlo) and kept consistent across questions. The upper C-band price feeds proceeds (x53.6B MHz-pops) and P(>$0.94) (30%). Revenue per GB is my revenue P50 over my traffic P50. The 2030 MHz CDF matches P(7 GHz or 4.4 GHz by 2030) at 47%. The SpaceX MHz simulation uses P(SpaceX wins in UCB) at 48%. Four web searches were used. (1) Carr plans three more auctions after upper C-band (7 GHz, 1.6 GHz, 2.7 GHz), with a goal of finishing by end-2028; Commissioner Gomez is sceptical; no upper 37 GHz auction plan was found. Sources: https://broadbandbreakfast.com/fcc-adviser-says-more-spectrum-auction-nprms-coming-soon/ and https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz. (2) SpaceX's Auction 115 posture: it sought rule tweaks, and analysts expect aggressive bidding. Sources: https://www.fierce-network.com/wireless/spacex-seeks-tweaks-upper-c-band-auction-rules and https://www.lightreading.com/satellite/spacex-won-t-buy-a-telco-musk-will-buy-the-spectrum-and-build-one-himself. (3) FT, June 2026: SpaceX told investors it plans a US consumer Starlink mobile service. Source: https://www.fierce-network.com/wireless/spacex-plans-bigger-starlink-mobile-push-us-report. (4) No creditor challenge specific to the SpaceX-EchoStar closing was found. Source: https://www.lightreading.com/5g/echostar-closes-at-t-spectrum-deal-but-wrinkles-remain. The simulation scripts are in /tmp/claude-0/-home-user-power-transformers-casestudy/40f682fa-9f5f-52cd-a1da-07efc0db00e4/scratchpad/sim.py and /tmp/claude-0/-home-user-power-transformers-casestudy/40f682fa-9f5f-52cd-a1da-07efc0db00e4/scratchpad/sim2.py."
+  },
+  {
+   "lens": "bull",
+   "lens_name": "Thesis advocate",
+   "forecasts": [
+    {
+     "id": "q_ucb_price",
+     "p10": 0.45,
+     "p50": 0.82,
+     "p90": 1.42,
+     "rationale": "This is gross proceeds divided by 53.6B MHz-pops (160 MHz x 335M), so the figures are the proceeds forecast divided through. On the same 335M-pop basis the lower C-band works out to about $0.87, and the follow-on 3.45 GHz tranche cleared about 25% below it. I tilt up from that reference class because SpaceX is a plausible new aggressive bidder, in the role DISH played in AWS-3 in 2015, when proceeds ran 2-4x consensus. The carriers also have a reason to bid defensively after losing 9-13% of their value on 9 Oct. The tilt is capped by about $16B of add-on costs (about $0.30/MHz-pop, double the lower C-band's) and by AT&T and Verizon's leverage."
+    },
+    {
+     "id": "q_ucb_proceeds",
+     "p10": 24,
+     "p50": 44,
+     "p90": 76,
+     "rationale": "I modelled this as a mixture. In the roughly 40% of cases where SpaceX does not bid seriously, the median is about $38B. In the roughly 60% where it does, the median is about $52B. Both use a log spread of about 0.42, reflecting how far past US auctions landed from consensus (AWS-3 and lower C-band far above, 600 MHz and 2.5 GHz far below). My median sits at the top of the internal researchers' $30-45B and near the middle of Carr's $30-60B and TD Cowen's $30-75B. Press reports that SpaceX may bid aggressively ('Elon is coming') support the upper tail, while the ~$16B add-on and altimeter costs and slower traffic growth support the lower one."
+    },
+    {
+     "id": "q_midband_2030",
+     "p10": 0.4,
+     "p50": 0.95,
+     "p90": 1.9,
+     "rationale": "The likely 2029-30 deals mix cheap auction supply with expensive private sales. On the auction side: 2.7 GHz (about 210 MHz with radar constraints, around $0.3-0.8), possibly 7 GHz (around $0.1-0.3) and 1675/2020 MHz (around $0.5-1.5). On the private side: low-band and paired sales at $1.2-2.0, where sub-1 GHz is scarce and SpaceX and Amazon are now buyers. With only a few deals in the sample, the median depends heavily on which deals happen, so the range is wide. The centre is near the 2025-26 comparables of about $1.0-1.4, shaded down for new supply."
+    },
+    {
+     "id": "q_bigdeals",
+     "p10": 0,
+     "p50": 1,
+     "p90": 3,
+     "rationale": "I summed rough per-candidate probabilities to an expected count of about 1.4. EchoStar's paired AWS-3, marked at about $8B, must be sold by Sept 2028 (about 50% that it goes as a single deal of $5B or more in the window). I give about 30% to further SpaceX buying, about 13% to Amazon buying terrestrial spectrum, about 17% to carrier swaps or post-auction trades, and smaller shares to takeovers where spectrum is most of the value and to intermediary flips. A Poisson-like count with mean 1.4 gives a median of 1 and a P90 of about 3. That is far above the pre-2025 base rate of about 0.2 a year, because new deep-pocketed buyers now exist, but there are few large nationwide sellers left."
+    },
+    {
+     "id": "q_traffic_2030",
+     "p10": 262,
+     "p50": 335,
+     "p90": 440,
+     "rationale": "I built this bottom-up. Phones grow about 11% a year from 98 EB, which is what the 2024-25 split implies once FWA is taken out. FWA grows from about 13.7M to about 28M average lines, with per-line use rising about 5% a year. Together that gives about 325-340 EB in 2030, with annual growth falling from about 19% to 12%. The upper tail (about 22% CAGR) covers Ericsson's mid-2026 re-acceleration led by North America, upper C-band capacity feeding FWA, and uplink-heavy AI. The lower tail covers FWA saturating at about 25M lines and phone growth falling below 10%."
+    },
+    {
+     "id": "q_traffic_2035",
+     "p10": 380,
+     "p50": 560,
+     "p90": 920,
+     "rationale": "I extended the 2030 distribution at about 9-12% a year after 2030, consistent with mature markets settling in the high teens and still decelerating. The upper tail allows for Nokia's AI-driven scenario (about 4x 2026 levels by 2035, roughly 16% CAGR) and 6G or 7 GHz capacity. The lower tail allows for saturation at about 7% a year from a weak 2030. The internal research's 520 (325-930) and CTIA's 4x-by-2032 path bracket this range."
+    },
+    {
+     "id": "q_ai_share",
+     "p10": 0.6,
+     "p50": 3,
+     "p90": 11,
+     "rationale": "The starting point is 0.06% (Ericsson, April 2025). Reaching 3% by 2030 requires AI traffic to grow about 120% a year in absolute terms, which is plausible with multimodal camera assistants, AI glasses, GenAI video apps (likely counted under Ericsson-style app measurement) and robotaxi uplink. Ericsson's medium uplink scenario (3x uplink by 2031) implies about 10% AI share, and GSMA Intelligence says 5-20%. I discount those vendor scenarios for their history of overshooting, for Wi-Fi offload, and for AI features being absorbed into existing apps where they are not measured separately. The resolution also uses a vendor measurement, which leans toward a higher figure."
+    },
+    {
+     "id": "q_fwa_2030",
+     "p10": 24,
+     "p50": 30,
+     "p90": 36,
+     "rationale": "I start from about 19.5-20M at end-2026 and add decaying net adds of 3.2, 2.9, 2.6 and 2.3M, giving about 31M. Faster decay gives about 28M. The company targets (T-Mobile 15M by 2030, Verizon 'well beyond' 8-9M, AT&T about 5M) sum to about 30M, inside New Street's estimate of about 32M Big 3 capacity. Upper C-band deployment adds headroom. The downside is that a mobile capacity squeeze, the very thing the spectrum thesis predicts, would lead carriers to ration FWA."
+    },
+    {
+     "id": "q_rev_per_gb",
+     "p10": 0.59,
+     "p50": 0.79,
+     "p90": 1.02,
+     "rationale": "This is the ratio of my service revenue and traffic forecasts: median $266B divided by median 335 EB is about $0.79, roughly -12% a year from $1.48. That is a slower decline than the -20% a year since 2020, because traffic growth is slowing. The P10 combines low revenue with high traffic, and the P90 combines high revenue with low traffic. The result matches the research's $0.53-1.07 range."
+    },
+    {
+     "id": "q_new_mhz_2030",
+     "p10": 160,
+     "p50": 370,
+     "p90": 660,
+     "rationale": "Upper C-band (160 MHz) is about 95% likely to finish bidding by 2030. 2.7 GHz (about 210 MHz, Carr targets 2028, and it plausibly fills the statutory 200 MHz federal tranche due for auction by July 2029) is about 55-60% likely, allowing for the usual 1-3 year US slippage. 1675-1695 plus 2020-2025 (25 MHz) is about 55%, and 7.125-7.4 GHz (275 MHz) about 24%. So the P10 is upper C-band alone, the P50 is upper C-band plus most of 2.7 GHz, and the P90 needs every band on time."
+    },
+    {
+     "id": "q_new_mhz_2035",
+     "p10": 400,
+     "p50": 650,
+     "p90": 950,
+     "rationale": "OBBBA sets an 800 MHz pipeline, at least 300 MHz to be auctioned by 2034, and auction authority to Sept 2034. That gives a strong fiscal and legal push, helped by WRC-27 identification of 7 GHz and 4.4 GHz and by demand for 6G. Applying the roughly 75% completion rate of the 2012 Spectrum Act targets to 800 MHz gives about 600-650. The lower tail reflects Defense Department resistance, the excluded 3.1-3.45 and 7.4-8.4 GHz bands, and political change after 2028."
+    },
+    {
+     "id": "q_spacex_mhz",
+     "p10": 65,
+     "p50": 88,
+     "p90": 150,
+     "rationale": "The base is about 79 MHz: EchoStar's 65 (FCC-approved, in trust, closing Nov 2027, about 92% by 2030) plus Grain's 14 (about 88%). I add small regional AWS-3 holdings (Tristar, Auction 113) and a roughly 40% chance of some Auction 115 wins, worth perhaps 10-40 MHz nationwide-equivalent. The upper tail covers SpaceX buying EchoStar's paired AWS-3 (about 8 MHz equivalent), 2020-2025 MHz next to AWS-4, or 2.7 GHz. SpaceX added about 79 MHz in 13 months, so further buying is credible, but Musk called 800 MHz the 'last critical piece'."
+    },
+    {
+     "id": "q_d2d_rev",
+     "p10": 1.8,
+     "p50": 5.5,
+     "p90": 15,
+     "rationale": "I summed by operator for 2030. Starlink Mobile could have about 100-200M monthly users at low wholesale ARPU (about $2-4B), plus a SpaceX US retail plan. AST's wholesale revenue share with AT&T, Verizon and Vodafone could be about $1-3B, Apple's payments to Globalstar/Amazon a few hundred million, and Skylo, Iridium NTN and IoT add more. The whole legacy MSS industry is only a few billion dollars a year, and satellite service is often bundled at near-zero price, which bounds the downside. A long right tail is warranted because broadband-class next-generation D2D starts in 2027-28."
+    },
+    {
+     "id": "q_spacex_subs",
+     "p10": 0,
+     "p50": 1.8,
+     "p90": 9,
+     "rationale": "I put about a 75% chance on a SpaceX-billed US plan by 2030. If it launches in 2028-29, a bundle with Starlink broadband plus a satellite or 800 MHz offer could reach about 1-3M by end-2030. Reference classes: DISH/Boost reached about 7M only with acquired bases, and cable MVNOs took 7-8 years to reach about 24M. The upper tail allows for an acquisition (for example Boost or a regional carrier) or a cheap satellite-plus-terrestrial plan that goes viral. The roughly 25% chance of no meaningful launch puts the P10 near zero."
+    },
+    {
+     "id": "q_service_rev",
+     "p10": 248,
+     "p50": 266,
+     "p90": 285,
+     "rationale": "I use the CTIA-basis $235B for 2025 and the 2007-2025 nominal CAGR of about 3%, which gives about $272B. I shade that slightly for Verizon's ARPA decline, cable free lines and SpaceX entry. On the upside, AT&T's wireless service revenue grew 5% and T-Mobile's 6-9% in 2026, FWA adds about $10B of revenue by 2030, and price increases and satellite or AI tiers add more. The range of 1-4% annual growth is the 2007-2025 record of steady low-single-digit growth."
+    },
+    {
+     "id": "q_ev_ebitda",
+     "p10": 5.6,
+     "p50": 6.9,
+     "p90": 8.4,
+     "rationale": "US incumbent carriers have mostly traded at 6-8x. The research weights its 2030 scenarios at 50% grind (6-7.5x), 30% price pressure (5-6x) and 20% convergence premium (8x or more), which centres near today's 6.9x. The bull upside is spectrum monetised through M&A or a SpaceX or hyperscaler bid. The downside is SpaceX and cable competition and a 6G capex cycle around 2030."
+    },
+    {
+     "id": "q_cable_lines",
+     "p10": 30.5,
+     "p50": 35,
+     "p90": 39.5,
+     "rationale": "The base is 24.1M at Q3 2026, adding about 3.4M a year. A linear path gives about 38.6M by end-2030, and adds decaying 10-15% a year give about 33-36M. Comcast's adds are already slowing (368k against 414k a year earlier), and shrinking cable broadband bases cap how many mobile lines can be attached. Free-line promotions and Cox inside Charter support continued growth."
+    },
+    {
+     "id": "q_capex",
+     "p10": 26,
+     "p50": 31.5,
+     "p90": 39,
+     "rationale": "Capex has been flat at about $29-30B since 2023, against a 5G peak of $39B in 2022. Past generations peaked early and then fell 20-30%. In 2030 the industry is near the turn from trough to ramp: upper C-band deployment in 2028-30, early 6G or 7 GHz overlays, and inflation of about 2.5% a year push it up. Capital-light strategies, AT&T's lower long-term guidance and T-Mobile's roughly $10B push it down. A capacity crunch (the bull case) would lift the upper tail toward the 2022 peak."
+    }
+   ],
+   "probabilities": [
+    {
+     "id": "b_ucb_2027",
+     "probability": 88,
+     "rationale": "Bidding is scheduled to start 27 April 2027, under a statutory July 2027 deadline. Recent clock auctions ran about 2.5-3 months including the assignment phase (Auction 107 about 2.5 months, Auction 110 about 3, Auction 97 about 2.5), which points to a close around Aug-Sept 2027 with several months of slack. The residual risk is a start-date slip (altimeter or FAA disputes, cable earth-station objections, litigation or a government shutdown) of more than about five months."
+    },
+    {
+     "id": "b_ucb_above",
+     "probability": 36,
+     "rationale": "The $0.94 threshold equals $50.4B of gross bids (0.94 x 160 x 335M). That sits at about the 63rd percentile of my proceeds distribution (median $44B, log spread about 0.43), so P(exceed) is about 37.5%. Multiplied by about 95% that bidding concludes by end-2028, that gives about 36%. A SpaceX bidding war is the main route above the threshold. Third-tranche diminishing returns and $16B of add-on costs are the main reasons it falls short."
+    },
+    {
+     "id": "b_spacex_ucb",
+     "probability": 42,
+     "rationale": "SpaceX filed in the proceeding, asking the FCC to reserve part of the band for D2D and to let satellite coverage satisfy buildout. The FCC rebuffed both, which weakens SpaceX's case but signals interest, and analysts expect it to bid ('Elon is coming'). It qualified and won small licences in Auction 113, bidding in only six markets, which may have been practice. I estimate about 60-65% that it applies and about 70% that it wins at least one of 3,248 PEA licences if it bids seriously. The deduction is for terrestrial-only buildout obligations and Musk's 'last piece' comment."
+    },
+    {
+     "id": "b_echostar_close",
+     "probability": 82,
+     "rationale": "The FCC approved the transfer on 12 May 2026, the licences have been in trust since 22 May, and closing is targeted for 30 Nov 2027. That is a high-probability event with only about one month of slack before the deadline. The risks are slippage past 31 Dec, claims from the Dish DBS and Dish Wireless Chapter 11 estates, and SpaceX share-price or financing issues. I come out a little below the research's 85%."
+    },
+    {
+     "id": "b_grain_approve",
+     "probability": 86,
+     "rationale": "The FCC accepted the filing in Nov 2026, with petitions due around 1-8 Dec. On the usual 180-day informal shot clock, a decision would come around mid-2027, leaving about six months of buffer. Every major spectrum transfer in 2025-26 was approved, often with conditions, including T-Mobile-Grain for the same licences and the approval of SpaceX-EchoStar in about eight months. A new entrant adding low-band is pro-competitive, which counters Carr's over-consolidation remark. The main risks are public-safety interference concerns about satellite use of 800 MHz and political volatility."
+    },
+    {
+     "id": "b_spacex_retail",
+     "probability": 55,
+     "rationale": "EchoStar's AWS-4, H-block and AWS-3 close around Nov 2027, which leaves about 13 months, and Grain's 800 MHz closes around mid-2027. Next-generation D2D satellites launch from 2027, with expanded service targeted for end-2027. Shotwell says SpaceX wants to be a full mobile telco, and a Starlink-billed satellite or hybrid plan for broadband subscribers would satisfy the resolution. Against that: slips in the Starship launch cadence, handset band support, the carriers refusing wholesale access, and SpaceX's history of missing timelines. I match the research's 55%."
+    },
+    {
+     "id": "b_spacex_top4",
+     "probability": 14,
+     "rationale": "The bar is the larger cable operator, probably about 22-30M lines by 2035, because AT&T, Verizon and T-Mobile stay far ahead. My 2030 SpaceX distribution (median 1.8M, P90 9M) implies only about a 10-15% chance of passing 25M directly billed lines by 2035. Paths to it include an acquisition of a subscriber base or a cheap satellite plan that scales. The new-entrant record (DISH, Clearwire) argues for caution."
+    },
+    {
+     "id": "b_tech_buys_carrier",
+     "probability": 26,
+     "rationale": "SpaceX needs about 80,000 sites and wants subscribers. Small regional facilities-based carriers (C Spire, Cellcom and others), Boost (arguably) and the cable companies' mobile businesses are all buyable targets that would count, and SpaceX has a stock currency of about $1.9T. Amazon's purchase of Globalstar shows hyperscaler appetite. Against that: these acquirers have historically built rather than bought carriers, regulators and Deutsche Telekom stand in the way of any large deal, and the research gives about 20% to its 2030 'convergence premium' scenario."
+    },
+    {
+     "id": "b_crunch",
+     "probability": 7,
+     "rationale": "For revenue per GB to rise in a year, traffic growth would have to fall below revenue growth of about 2-4%. Even my P10 traffic path (about 10.5% CAGR) keeps yearly growth well above that. The probability comes mainly from a CTIA methodology break or restatement, as with the 2015 and 2017 survey anomalies, or a sharp FWA rationing shock. The research gives about 20% to a broader 'crunch' that includes capex intensity, but this question is narrower."
+    },
+    {
+     "id": "b_reaccel",
+     "probability": 18,
+     "rationale": "US growth decelerated from 38% to 20% between 2022 and 2025, and my median path continues down to 12% by 2030. On the other side, Ericsson's Q2 2026 global re-acceleration to 23% was led by North America, upper C-band capacity could revive FWA, and AI uplink is a wildcard. There are four annual draws, and the CTIA series is lumpy. The research estimates about 15%, and I tilt slightly up for the bull factors."
+    },
+    {
+     "id": "b_6g",
+     "probability": 57,
+     "rationale": "The Rel-21 ASN.1 freeze is in March 2029. US carriers launched 5G about 9-13 months after the Rel-15 ASN.1 freeze, which points to late 2029 or 2030. T-Mobile says it will be 'first with 6G in this country', Qualcomm targets commercial 6G systems from 2029, and an AT&T engineer expects 'a little cluster of 6G to make a marketing claim' in 2030, which would count. The risks are 3GPP slippage, chipset readiness, weak ROI and flat capex, with 7 GHz spectrum probably not yet in place."
+    },
+    {
+     "id": "b_7ghz",
+     "probability": 24,
+     "rationale": "2.7 GHz (about 210 MHz, below 4.2 GHz) probably fills the first statutory federal tranche (identify by July 2027, auction by July 2029). That pushes 7.125-7.4 GHz and 4.4-4.94 GHz into the second tranche, due for auction by July 2033. A 2030 auction would need NTIA's Dec 2026 study to come back favourable, an FCC rulemaking in 2027-28 and no Defense Department or fixed-link holdouts. The 6G push and WRC-27 (in force from 2029) help, but US mid-band auctions usually slip 1-3 years."
+    },
+    {
+     "id": "b_pureplay_sale",
+     "probability": 84,
+     "rationale": "EchoStar told the FCC it would sell its remaining 700 MHz, paired AWS-3, CBRS, C-band and other licences by 1 Sept 2028, as a condition of its waivers. Its paired AWS-3 is marked at about $8.1B and Verizon has been interested, so P(definitive agreement by end-2028) is about 75% on its own. Add Array's C-band (about 40%), Anterix's strategic review after it raised its value estimate to $2.5-7B (about 25%) and NextNav (about 10%), and the chance of at least one is high. The deduction allows for correlated failure (a buyer strike after Auction 115) and for doubt over whether a partial sale counts as 'most'."
+    },
+    {
+     "id": "b_carriers_beat",
+     "probability": 37,
+     "rationale": "Over most 4-year windows since 2010, US telcos have lagged the S&P 500 (a base rate of roughly 30-35%). Today they start from depressed valuations after the 9 Oct selloff (T-Mobile down about 22% year to date) with 4-6% dividend yields, while the S&P carries AI-boom valuations, which helps the relative case. The spectrum thesis does not clearly help the incumbents, because markets treat SpaceX's spectrum as a competitive negative. I give a slight uplift to the research's 35%."
+    }
+   ],
+   "notes": "Bull-lens panelist. I read the whole brief.md and checked the JSON for Auction 115 add-on costs (~$16B: $6.3B in incentive payments plus $3.83-5.71B of altimeter rebates), the 406 PEA x 8-block licence structure, short-form applications due 6-20 Jan 2027, EchoStar's remaining licences ($8.45B book, sale commitment by Sept 2028) and SpaceX's Tristar and AWS-3 holdings. I used 3 web searches.\n\n1) Upper C-band: SpaceX asked the FCC to reserve part of the band for D2D and was rebuffed. Analysts expect it to bid aggressively; it bid in only six AWS-3 markets. Sources: https://www.fierce-network.com/wireless/spacex-seeks-tweaks-upper-c-band-auction-rules, https://wccftech.com/spacex-can-unleash-a-brutal-bidding-war-upon-att-verizon-and-t-mobile-as-the-fcc-dangles-160-mhz-of-prized-c-band-spectrum/, https://www.fierce-network.com/wireless/spacex-gets-unlikely-allies-latest-d2d-c-band-fight, https://www.techtimes.com/articles/319643/20260703/fcc-sets-rules-30b75b-c-band-auction-blocks-spacex-satellite-bid.htm\n\n2) EchoStar's paired AWS-3 still has no buyer. Sources: https://www.fierce-network.com/wireless/more-echostar-spectrum-could-be-sale-soon, https://broadbandbreakfast.com/echostar-selling-more-spectrum-to-spacex/\n\n3) 6G timing: T-Mobile says it will be first; an AT&T engineer expects a 'marketing cluster' in 2030. Sources: https://lightreading.com/6g/t-mobile-we-ll-be-first-with-6g-and-no-to-spacex-mvno, https://communicationsdaily.com/news/2024/10/02/6G-Deployments-Wont-Really-Start-in-2030-ATT-Warns-2410010033, https://www.phonearena.com/news/qualcomm-and-t-mobile-promise-something-huge-but-for-2029_id178612\n\nConsistency checks:\n- The upper C-band $0.94 threshold equals $50.4B on 335M pops. That is about the 63rd percentile of my proceeds distribution; multiplied by 0.95 for the chance of concluding, it gives b_ucb_above = 36.\n- Price quantiles are proceeds divided by 53.6B MHz-pops.\n- Revenue per GB is my revenue median divided by my traffic median.\n- The new-MHz quantiles match my band-by-band probabilities: 7 GHz at about 24%, consistent with b_7ghz.\n- The SpaceX subscriber distribution supports b_spacex_retail = 55 and b_spacex_top4 = 14.\n\nMy main bull tilts against the internal research medians:\n- Upper C-band proceeds median $44B against $30-42B.\n- Traffic in 2030 335 EB against 320.\n- SpaceX MHz in 2030 88.\nI give low weight to a broad re-rating of mid-band, because supply rises under the statute and AWS-3 prices were flat in nominal terms."
+  },
+  {
+   "lens": "bear",
+   "lens_name": "Skeptic",
+   "forecasts": [
+    {
+     "id": "q_ucb_price",
+     "p10": 0.43,
+     "p50": 0.76,
+     "p90": 1.25,
+     "rationale": "Starting points: the 2021 lower C-band ($0.945), 3.45 GHz ($0.70) and TD Cowen's $30-75B range ($0.56-1.40). The 2021 price was set when Verizon and AT&T had almost no mid-band. They now hold 160-200+ MHz of C-band and 3.45 GHz, AT&T is at 3.1x leverage after paying $23B for EchoStar, and T-Mobile says it will bid only if spectrum is cheaper than densifying. Winners also carry about $16B of clearing and altimeter costs, and abroad, second tranches of similar bands clear lower (Canada 3800 MHz came in about 90% below 3500 MHz). The upper tail stays fat because a block next to the incumbents' C-band is worth a lot to them, and SpaceX could bid. I put P(>$0.94 | concludes) at about 29%."
+    },
+    {
+     "id": "q_ucb_proceeds",
+     "p10": 23,
+     "p50": 41,
+     "p90": 67,
+     "rationale": "This is the price distribution times 53.6B MHz-pops (160 MHz x 335M), so the two stay consistent. My median of about $41B sits below the midpoint of the analyst ranges (TD Cowen $30-75B, Carr $30-60B) and below the $81B of 2021, for the reasons in the price rationale. US auctions have missed consensus badly in both directions (AWS-3 and C-band well above, 600 MHz and 2.5 GHz well below), hence the wide range."
+    },
+    {
+     "id": "q_midband_2030",
+     "p10": 0.4,
+     "p50": 0.85,
+     "p90": 1.7,
+     "rationale": "By my count, the median of the 2025-26 deals above $1B is about $1.20. Most of that wave came from EchoStar's forced exit and SpaceX's one-off build-out. In 2029-30 the observations are more likely to be FCC auctions of 2.7 GHz, 1675/2020 MHz or 4.4 GHz, which carry federal exclusion zones and large supply and should clear around $0.3-0.7. Private low-band sales, if any, would come in around $1.2-2.0. Which deals happen drives the result, so the range is wide, centred below today's median."
+    },
+    {
+     "id": "q_bigdeals",
+     "p10": 0,
+     "p50": 1,
+     "p90": 3,
+     "rationale": "From 2013 to 2024 the base rate was about 0.2 deals of $5B+ a year. 2025-26 produced 3, almost all from EchoStar's FCC-forced exit, and SpaceX says its portfolio is now complete. The most likely $5B+ deal in the window is EchoStar's remaining paired AWS-3 (New Street values it at about $8.1B), though it could be split into smaller pieces or signed before January 2027. Beyond that, few nationwide holdings outside the big three are left to sell. I model this as Poisson-like with mean about 1.0 and some overdispersion: P(0) about 38%."
+    },
+    {
+     "id": "q_traffic_2030",
+     "p10": 248,
+     "p50": 300,
+     "p90": 390,
+     "rationale": "CTIA counted 159.3 EB in 2025 after growth fell from 32% to 20%. Mature-market analogues (UK +18%, Switzerland 20-25% and falling) and Ericsson's 13% per-smartphone CAGR, which has historically run high, point to growth fading to about 10-14% by 2030. FWA, the main driver, is slowing (Verizon added 159K vs 261K), and 82-89% of smartphone data rides Wi-Fi. My P50 path is roughly +18, +15, +13, +12 and +11% for 2026-30 (about 13.5% CAGR). Ericsson's mid-2026 note that North America is leading global growth keeps the upper tail open."
+    },
+    {
+     "id": "q_traffic_2035",
+     "p10": 310,
+     "p50": 455,
+     "p90": 760,
+     "rationale": "I extend the 2030 distribution at about 7-12% a year for 2031-35, the decay seen in every maturing market and in Ericsson's own forecast (14% by 2031). The log-scale upper tail allows for AI and physical-AI uplink scenarios (Nokia's 44% AI share of all network traffic by 2035), but vendor forecasts from Ericsson, Nokia and CTIA have consistently overshot. CTIA's own 4x-by-2032 path sits near my P90."
+    },
+    {
+     "id": "q_ai_share",
+     "p10": 0.3,
+     "p50": 1.5,
+     "p90": 6.5,
+     "rationale": "The only measurement is 0.06% (Ericsson, April 2025), and none has appeared since. Reaching even 1.5% by 2030 means AI traffic growing roughly 2.2x a year in absolute terms while total traffic doubles. Text AI is light, a lot of inference is moving on-device or server-to-server, and glasses and indoor robots ride Wi-Fi or the phone. The log-wide upper tail reflects multimodal voice and camera assistants, AI video apps, and vendors' incentive to define 'AI traffic' broadly when they publish the 'best measurement'."
+    },
+    {
+     "id": "q_fwa_2030",
+     "p10": 24,
+     "p50": 28.5,
+     "p90": 33.5,
+     "rationale": "About 19M now. Industry adds are decaying from 3.8M (2025) to about 3.6M (2026), and I assume roughly 2.8, 2.3, 1.9 and 1.5M for 2027-30, as disconnects rise and AT&T and Verizon prioritise fiber. By carrier at end-2030 that is roughly T-Mobile 14-15M (near its 15M target), Verizon about 9M and AT&T 4.5-5.5M. Upper C-band capacity from 2028-30 supports the upside, against New Street's estimated ~32M ceiling."
+    },
+    {
+     "id": "q_rev_per_gb",
+     "p10": 0.68,
+     "p50": 0.87,
+     "p90": 1.1,
+     "rationale": "This is my service-revenue P50 ($262B) divided by my traffic P50 (300 EB), with roughly independent uncertainty in each. The historical -20% a year came from 25-35% traffic growth. With traffic slowing to about 13% and revenue growing about 2.3%, the decline slows to about -10% a year. The ratio's spread is mostly traffic uncertainty."
+    },
+    {
+     "id": "q_new_mhz_2030",
+     "p10": 160,
+     "p50": 375,
+     "p90": 640,
+     "rationale": "The outcomes cluster. Upper C-band 160 MHz is about 96% likely by 2030. 1675/2020 MHz (25 MHz) is about 60%, with its NPRM in October 2026. 2.7 GHz (about 210 MHz) is about 50%: Carr targets 2028 and the statutory federal deadline is July 2029, but US mid-band auctions have slipped 1-3 years. 7.125-7.4 GHz or part of 4.4-4.94 GHz is about 30% combined. That puts about 35% of the mass at 160-185 MHz, about 35% at 370-395 MHz and the rest above 430 MHz."
+    },
+    {
+     "id": "q_new_mhz_2035",
+     "p10": 350,
+     "p50": 610,
+     "p90": 930,
+     "rationale": "The 2025 law requires 300 MHz from the FCC plus 500 MHz of federal spectrum. But the easiest federal bands (3.1-3.45 and 7.4-8.4 GHz, 1,350 MHz) are excluded, the Defense Department prefers sharing to clearing, and the FCC's auction authority lapses in September 2034. About 75% of the 2012 Spectrum Act targets were met within the decade, which supports a P50 near 600 rather than the full 800 MHz. The P90 allows for a WRC-27-driven 7 GHz or 15 GHz tranche."
+    },
+    {
+     "id": "q_spacex_mhz",
+     "p10": 65,
+     "p50": 83,
+     "p90": 135,
+     "rationale": "The base case is 79 MHz: EchoStar's AWS-4, H-block and unpaired AWS-3 (65 MHz, FCC-approved, about 95% likely to close by 2030) plus Grain's 800 MHz (14 MHz, about 88% likely). The P10 is the case where the Grain deal fails. Upside comes from Auction 115 wins (about 47% chance of any win, probably small nationwide-equivalent amounts) and a possible purchase of EchoStar's paired AWS-3. Musk called the 800 MHz deal the 'last critical piece', which caps the median."
+    },
+    {
+     "id": "q_d2d_rev",
+     "p10": 1.2,
+     "p50": 3.5,
+     "p90": 10,
+     "rationale": "Revenue today is well under $1B: SpaceX does not disclose its figure and AST's $150-200M guidance is mostly non-subscriber. The whole legacy satellite-phone (MSS) industry earns a few $B a year. D2D is mostly bundled into carrier plans at near-zero marginal price, and SpaceX, AST, Amazon and Apple/Globalstar will all be competing. Next-generation capacity from 2027-28 and 22M+ monthly users support growth of about 1.6-2x a year from about $0.4B. My median is below the brief's $6B."
+    },
+    {
+     "id": "q_spacex_subs",
+     "p10": 0,
+     "p50": 1,
+     "p90": 6.5,
+     "rationale": "SpaceX now guides to a US Starlink Mobile service on its own spectrum in early 2028. I give about 80% to some directly billed plan by end-2030, leaving about 20% at zero. If it launches, about three years in market at the pace of Dish/Boost (about 7M, mostly acquired) or the cable MVNOs (about 24M in 8 years, with bundles and free lines) suggests a median of about 1.5M with a wide range. SpaceX has 79 MHz against T-Mobile's about 400 MHz, so urban capacity limits it."
+    },
+    {
+     "id": "q_service_rev",
+     "p10": 245,
+     "p50": 262,
+     "p90": 280,
+     "rationale": "Revenue was $235B in 2025 and has grown about 3% a year nominal since 2007. The 2026 mix is +5-6% at AT&T and T-Mobile against ARPA -1.9% at Verizon, with cable free lines and SpaceX entry pressuring price. FWA revenue adds about 0.5 points a year. I use about 2.2% CAGR. The CTIA-basis figure itself is uncertain (other trackers show $255-326B), which widens the range a little."
+    },
+    {
+     "id": "q_ev_ebitda",
+     "p10": 5.4,
+     "p50": 6.6,
+     "p90": 8,
+     "rationale": "The multiple is about 6.9x today, and the US incumbents have traded in a 6-8x band. I lean slightly lower: SpaceX and cable competition, a 6G and upper C-band capex cycle around 2030, and markets punishing every SpaceX spectrum step (-9 to -13% on 9 October 2026). The brief's scenario weights are 50% grind (6-7.5x), 30% price pressure (5-6x) and 20% convergence premium (8x+). I shade the premium case down slightly."
+    },
+    {
+     "id": "q_cable_lines",
+     "p10": 29.5,
+     "p50": 33.8,
+     "p90": 38,
+     "rationale": "24.1M in Q3 2026, adding about 3.4M a year, but Comcast adds are slowing (368K vs 414K) and both broadband bases are shrinking, which caps attach rates. Decaying adds of about 2.8, 2.4, 2.0 and 1.6M for 2027-30 on an end-2026 base of about 25M give about 34M. The P90 is linear continuation helped by Cox's footprint. The P10 adds free-line roll-off churn and SpaceX competition."
+    },
+    {
+     "id": "q_capex",
+     "p10": 26,
+     "p50": 30.5,
+     "p90": 37,
+     "rationale": "Capex has been flat at $29-30B for 2023-25. Verizon trimmed its 2026 guide, AT&T cut its long-term outlook and T-Mobile is at about $10B. Upper C-band deployment in 2028-30 and early 6G add some spend in 2030. Inflation adds a little nominal growth, but carriers are in harvest mode and no capacity crunch is visible. A return to the $39B peak needs a 2018-22-style cycle, which sits in my upper tail."
+    }
+   ],
+   "probabilities": [
+    {
+     "id": "b_ucb_2027",
+     "probability": 87,
+     "rationale": "Rules are final, bidding starts 27 April 2027, and the statute requires the auction by July 2027. Recent clock-plus-assignment auctions took about 10-13 weeks (Auction 107 Dec-Feb, Auction 110 Oct-Jan), so even a start delayed by a quarter or a long clock phase still closes in 2027. The residual risk is litigation, shutdowns or procedural slips."
+    },
+    {
+     "id": "b_ucb_above",
+     "probability": 27,
+     "rationale": "P(bidding concludes by 2028) is about 0.94, and P(price > $0.94 | concludes) is about 0.29 from my price distribution (P50 $0.76, P90 $1.25). The incumbents' mid-band needs are much smaller than in 2021, and balance sheets are stretched after EchoStar. Clearing costs and the large 160 MHz block push the price below the 2021 level, so only a SpaceX bidding war or an adjacency fight gets it above."
+    },
+    {
+     "id": "b_spacex_ucb",
+     "probability": 47,
+     "rationale": "For: SpaceX qualified for and won licences in Auction 113 (only $8.5M), says it wants to be a full mobile telco, is seeking 80,000 sites and has IPO cash. Against: the FCC refused satellite buildout credit, so licences carry terrestrial obligations; Musk called 800 MHz the last piece needed; and capital competes with AI. A token rural win counts, which keeps this near a coin flip."
+    },
+    {
+     "id": "b_echostar_close",
+     "probability": 82,
+     "rationale": "The FCC approved the transfer in May 2026 and the licences are in trust, so the main remaining question is timing. The contractual target is 30 November 2027, leaving one month of buffer before the deadline. Risks are slippage, disputes from the bankruptcies of EchoStar's subsidiaries Dish DBS and Dish Wireless, and either party preferring to delay the cash payment. Both sides have strong incentives to close, and an earlier close is possible."
+    },
+    {
+     "id": "b_grain_approve",
+     "probability": 87,
+     "rationale": "The FCC accepted the filing on 10 November 2026 with pleadings due in December, so the informal 180-day clock points to mid-2027. SpaceX holds no sub-1 GHz spectrum, so screen concerns are minimal, and T-Mobile shares in Grain's gain rather than opposing. Carr's FCC approved every major 2025-26 transfer. The residual risk is conditions-driven delay or Musk-related politics."
+    },
+    {
+     "id": "b_spacex_retail",
+     "probability": 60,
+     "rationale": "SpaceX now targets early 2028 for a Starlink Mobile service on its own spectrum, after the EchoStar closing (about 82% by end-2027, about 92% by end-2028). Dish's band n70 (AWS-4/H downlink, AWS-3 uplink) is already supported in phones, which eases a terrestrial or hybrid launch. Next-generation D2D satellites depend on Starship's launch cadence, and Musk-era timelines often slip a year. A one-year buffer gives about 60%."
+    },
+    {
+     "id": "b_spacex_top4",
+     "probability": 11,
+     "rationale": "SpaceX would need to pass the larger cable operator, Charter, likely 20-25M lines by 2035, with direct subscribers from a 2028 start. Dish never scaled despite plenty of spectrum, and cable took about 8 years to reach 24M with bundles and free lines on Verizon's network. Satellite-only cheap lines or buying a carrier are the main upside routes."
+    },
+    {
+     "id": "b_tech_buys_carrier",
+     "probability": 13,
+     "rationale": "SpaceX's stated approach is to buy spectrum and build, not buy a telco (Light Reading). The big three are huge, and T-Mobile is controlled by Deutsche Telekom. Cable mobile is bundled with broadband. The plausible route is a small regional facilities-based carrier or a cable mobile carve-out for SpaceX or Amazon, which the brief's 20% 'convergence premium' state partly covers."
+    },
+    {
+     "id": "b_crunch",
+     "probability": 7,
+     "rationale": "Revenue per GB has fallen every year since 2010 (-20% a year recently). A rise needs traffic growth below the roughly 2-3% revenue growth, which would take a traffic stall or a CTIA methodology change. Carriers are trimming capex and cutting real prices, which argues against scarcity pricing. The residual probability is mostly data and definition risk."
+    },
+    {
+     "id": "b_reaccel",
+     "probability": 11,
+     "rationale": "US growth decelerated from 38% to 20% between 2022 and 2025, and mature markets settle in the high teens. A year above 25% would need a new driver: an AI or uplink surge, cheap FWA on new C-band capacity, or a CTIA methodology jump like the 2015 and 2017 anomalies. Ericsson's mid-2026 'North America leading' growth note keeps this from being negligible. The brief puts it at 15%; I shade slightly lower."
+    },
+    {
+     "id": "b_6g",
+     "probability": 45,
+     "rationale": "Rel-21 ASN.1 freeze is March 2029. Matching LTE's 21 months from freeze to launch lands exactly at December 2030, while 5G's faster pace would make it comfortable. US policy and marketing races argue for a token paid launch, possibly FWA. Harvest-mode economics, no new 7 GHz spectrum yet, device availability and any 3GPP slip argue against."
+    },
+    {
+     "id": "b_7ghz",
+     "probability": 30,
+     "rationale": "NTIA's 7.125-7.4 GHz study is due December 2026, and the 2.7 GHz band alone can meet the July 2029 federal auction requirement, so 7 GHz is not forced by 2030. Identification-to-auction has taken 1.5-3 years (3.45 GHz was fast), and WRC-27 decisions take effect in 2029. I give about 22% to 7 GHz and about 12% to a 4.4-4.94 GHz slice, about 30% combined, matching the upper tail of my 2030 MHz forecast."
+    },
+    {
+     "id": "b_pureplay_sale",
+     "probability": 76,
+     "rationale": "EchoStar told the FCC it would sell its remaining terrestrial licences by September 2028, it is a motivated forced seller, and New Street marks its paired AWS-3 at about $8.1B, which Verizon has discussed. That alone gives about 65%. Array's retained C-band, an Anterix sale or exit, and NextNav add some independent chance. The few buyers and Auction 115 as substitute supply keep this from being near-certain."
+    },
+    {
+     "id": "b_carriers_beat",
+     "probability": 36,
+     "rationale": "US telcos have underperformed the S&P 500 in most multi-year windows since 2010, and every SpaceX spectrum step has de-rated them. Against that, a starting point of about 6.9x EV/EBITDA, high FCF and dividend yields, and an AI-concentrated, richly valued S&P mean a defensive basket wins if the AI trade unwinds. About 4 years of tracking error makes this a little better than 1 in 3."
+    }
+   ],
+   "notes": "Lens: the strongest honest case against the spectrum-scarcity thesis, then forecasts calibrated to bet on. Main bearish inputs:\n- US traffic growth fell from 32% to 20%, and mature markets settle at roughly 18-20%.\n- FWA was about 90% of incremental traffic in 2023 and is now slowing.\n- 82-89% of smartphone data rides Wi-Fi, and measured AI traffic is 0.06%.\n- Revenue per GB falls about 20% a year while service revenue grows about 3% nominal, and capex is flat at about $30B.\n- The statutory pipeline adds roughly 375 MHz by 2030 and roughly 610 MHz by 2035 at my P50s.\n- Auctions abroad keep clearing lower, with large unsold volumes (India 2024, Canada 3800 MHz).\n- Carrier stocks fell 9-13% on the SpaceX-Grain deal, and most historical pure-play spectrum bets lost money.\nWhere the evidence favours the thesis, I kept fat upper tails: SpaceX as a new well-funded bidder, scarce low-band, and incumbents valuing the upper C-band block next to their holdings.\n\nConsistency checks:\n- b_ucb_above (27) = P(conclude by 2028, about 0.94) x P(price > $0.94 | concludes, about 0.29 from the price distribution).\n- Proceeds = price x 53.6B MHz-pops.\n- Revenue per GB = my service revenue P50 / my traffic P50.\n- b_7ghz (30) matches the upper-mid-band share of q_new_mhz_2030.\n- SpaceX subscribers (about 20% at zero by 2030), b_spacex_retail (60 by 2028) and b_echostar_close (82) are mutually consistent.\n\nWeb checks (3 searches):\n- No confirmed SpaceX bid for Auction 115 yet; short-form applications are due January 2027 (fierce-network.com/wireless/spacex-seeks-tweaks-upper-c-band-auction-rules; lightreading.com/satellite/spacex-won-t-buy-a-telco-musk-will-buy-the-spectrum-and-build-one-himself).\n- The FCC has adopted final Auction 115 procedures and the 27 April 2027 start stands (lightreading.com/regulatory-politics/fcc-sets-key-dates-for-upper-c-band-auction; docs.fcc.gov/public/attachments/DA-26-769A1.pdf).\n- SpaceX reportedly now targets Starlink Mobile on its own spectrum in early 2028, after earlier talk of Q4 2027 (phonearena.com/news/starlink-mobile-hits-a-major-milestone-as-spacex-reveals-when-it-could-be-your-next-carrier_id184273; macrumors.com/2026/08/05/starlink-mobile-service/).\n\nSources read: /home/user/power-transformers-casestudy/wireless-spectrum/research/brief.md (all of it), workflow_result.json and verification.json in the same folder."
+  },
+  {
+   "lens": "policy",
+   "lens_name": "Policy and market structure",
+   "forecasts": [
+    {
+     "id": "q_ucb_price",
+     "p10": 0.34,
+     "p50": 0.69,
+     "p90": 1.31,
+     "rationale": "Price is my proceeds distribution divided by 53.6B MHz-pops (160 MHz x 335M). On this basis lower C-band was about $0.87, not $0.94. Winners also owe about $16B in add-on costs (incentive payments, clearing, altimeter rebates), about $0.30/MHz-pop or double the lower C-band's per-MHz burden. Each carrier already holds about 150 MHz or more of mid-band TDD, Verizon cites a 4-5 year deployment lag, AT&T is at 3.13x leverage after EchoStar, and 2.7 GHz follows in 2028. With 8 blocks per PEA and only three carriers, demand could roughly equal supply and clear near the 3.45 GHz level (~$0.67). A serious SpaceX bid (about 40%) is the main upside, and US mid-band auctions have often beaten consensus."
+    },
+    {
+     "id": "q_ucb_proceeds",
+     "p10": 18,
+     "p50": 37,
+     "p90": 70,
+     "rationale": "I treat this as a mixture. Without a serious fourth bidder (about 60%), proceeds center near $29B, as three carriers cut demand to fit 8 blocks per market. With SpaceX bidding seriously (about 40%), they center near $50B. The median sits below TD Cowen's $30-75B midpoint and Carr's $30-60B because of the ~$16B add-on costs and carrier restraint. The P90 stays high because lower C-band beat forecasts by 55-100%. Conditional on bidding concluding, which I put at about 96.5% by end-2028."
+    },
+    {
+     "id": "q_midband_2030",
+     "p10": 0.35,
+     "p50": 0.9,
+     "p90": 1.95,
+     "rationale": "The 2029-30 deal set will probably be small (2-4 transactions). It mixes TDD mid-band auctions (2.7 GHz if it slips from 2028, 1675/2020 MHz, possibly part of 4.4 GHz) likely at $0.3-0.8, with private sales of paired or low-band spectrum (EchoStar leftovers, Anterix, SpaceX deals) at $1-2.5. By then upper C-band and 2.7 GHz add supply, so generic mid-band compresses while low-band keeps a premium. The median depends heavily on deal mix, hence the wide range."
+    },
+    {
+     "id": "q_bigdeals",
+     "p10": 0,
+     "p50": 1,
+     "p90": 3,
+     "rationale": "The most likely $5B+ deal is EchoStar's paired AWS-3 (valued at $8-10B). EchoStar has committed to sell its remaining licences by September 2028 in exchange for buildout waivers, and Verizon has held talks. It may still be split into sub-$5B pieces. Other candidates are further SpaceX or Amazon purchases. The base rate was about 0.2 per year in 2013-24 and 3 in 2025-26, so I use roughly Poisson with a mean of 1.25 plus overdispersion."
+    },
+    {
+     "id": "q_traffic_2030",
+     "p10": 258,
+     "p50": 312,
+     "p90": 420,
+     "rationale": "Starting from 159.3 EB (+20% in 2025), I assume growth slows from about 17% in 2026 to about 12% in 2030. This follows Ericsson's 13% per-smartphone CAGR for North America, slowing FWA net adds, and mature markets settling near 20% or lower. The P10 assumes faster saturation (about 8-10% by 2029-30). The P90 assumes growth holds near 22%, CTIA's own 4x-by-2032 path. CTIA's series has methodology jumps, which widens both tails."
+    },
+    {
+     "id": "q_traffic_2035",
+     "p10": 340,
+     "p50": 500,
+     "p90": 900,
+     "rationale": "I extend the 2030 distribution at about 10% a year average growth for 2031-35 (Ericsson sees 14% globally by 2031 and falling). The low end assumes 6% from a weak 2030. The high end assumes AI or uplink-heavy devices and 6G/7 GHz FWA keep growth near 15-18%. The range is log-wide because five more years of compounding uncertainty sit on top of the 2030 range."
+    },
+    {
+     "id": "q_ai_share",
+     "p10": 0.6,
+     "p50": 3,
+     "p90": 12,
+     "rationale": "Measured GenAI traffic was 0.06% in April 2025. If AI-app traffic grows about 2.2x a year faster than total traffic, the 2030 share is about 3%. Ratios of 1.8x and 2.8x give about 1% and about 10%. The best measurement will probably come from vendors (Ericsson, Nokia) with an incentive toward broad inclusion of glasses, vehicles and agents, which fattens the upper tail. Wi-Fi offload and on-device inference cap the base case."
+    },
+    {
+     "id": "q_fwa_2030",
+     "p10": 23.5,
+     "p50": 28.5,
+     "p90": 34,
+     "rationale": "From about 19M in Q3 2026 (about 20M by end-2026), I let industry adds decay from about 3.6M in 2026 to about 1.5-2M by 2030. That fits Verizon's slowing adds and AT&T's fiber priority, and is offset by T-Mobile's 15M target and AT&T's EchoStar 3.45 GHz enabling more Internet Air. New Street's ~32M Big-3 capacity estimate bounds the P90. T-Mobile no longer discloses its count, which adds measurement noise."
+    },
+    {
+     "id": "q_rev_per_gb",
+     "p10": 0.63,
+     "p50": 0.86,
+     "p90": 1.06,
+     "rationale": "This is the ratio of my service-revenue P50 ($267B) to my traffic P50 (312 EB). Revenue varies far less than traffic, so the range is close to the inverse of the traffic distribution. It implies about -10% a year, a slower decline than 2020-25's -20%, because traffic growth is slowing."
+    },
+    {
+     "id": "q_new_mhz_2030",
+     "p10": 160,
+     "p50": 362,
+     "p90": 690,
+     "rationale": "Upper C-band contributes 160 MHz (about 97%) and is a point mass that sets the P10. 2.7 GHz adds about 200 MHz with roughly 70% odds by 2030: relocation plans were approved in April 2026, Carr targets 2028, and the statute requires 200 MHz of federal spectrum auctioned by July 2029. 1675/2020 MHz adds about 25 MHz (about 50%). Upper mid-band (7.125-7.4 GHz or 4.4 GHz) adds about 275-400 MHz at about 30%, and a mmWave auction is a small tail. FCC and NTIA timelines typically slip 1-3 years, and once 300 MHz is auctioned the statute stops forcing more."
+    },
+    {
+     "id": "q_new_mhz_2035",
+     "p10": 340,
+     "p50": 640,
+     "p90": 1050,
+     "rationale": "By 2035, upper C-band and 2.7 GHz are very likely (about 360 MHz combined). 7.125-7.4 GHz (275 MHz) is about 60% after the WRC-27 identification and the statutory 2033 tranche. 4.4 GHz (up to 400 MHz) is about 40-45%: study plans were cleared in July 2026, but DoD and DOJ are major users. The Spectrum Act precedent delivered about 75% of its targets within a decade. DoD resistance and the exclusion of 3.1-3.45 and 7.4-8.4 GHz cap the upside."
+    },
+    {
+     "id": "q_spacex_mhz",
+     "p10": 70,
+     "p50": 92,
+     "p90": 185,
+     "rationale": "The base is about 79 MHz: EchoStar's 65 MHz (closing is about 85% by end-2027 and about 93% by 2030) plus Grain's 2x7 MHz (about 90% approved). Small AWS-3 and Tristar holdings add little. Upside comes from Auction 115 wins (about 52% to win anything, about 38% for a meaningful 20-80 MHz nationwide-equivalent), EchoStar's paired AWS-3, and 2.7 GHz. SpaceX added about 79 MHz in 13 months and wants terrestrial capacity, but it is spending about $20B a quarter on capex, mostly for AI."
+    },
+    {
+     "id": "q_d2d_rev",
+     "p10": 1.6,
+     "p50": 4.8,
+     "p90": 13,
+     "rationale": "Revenue is well under $1B in 2026. SpaceX's V2 constellation (service on its own spectrum targeted for early 2028), AST's 2027-28 ramp and Amazon's 2028 entry could take wholesale plus retail to a few billion dollars. For example, 100-200M Starlink Mobile users at $0.5-2 a month wholesale is $0.6-4.8B, plus AST, IoT and Apple-linked revenue. Bundling at near-zero prices and Starship or launch slips pull it down. Legacy MSS (a few $B in total) is the scale anchor."
+    },
+    {
+     "id": "q_spacex_subs",
+     "p10": 0,
+     "p50": 0.8,
+     "p90": 6.5,
+     "rationale": "SpaceX guided on its Q3 call to switch on Starlink Mobile on its own spectrum in early 2028. Musk's timelines usually slip, and T-Mobile refuses an MVNO, so urban indoor coverage would depend on SpaceX's own sites (80,000-site talks, possibly Dish base stations). There is about a 30% chance of essentially zero direct-billed subscribers at end-2030. Conditional on launch the median is about 1.5M, with upside from Starlink broadband bundling or buying Boost's base. Dish/Boost and the cable MVNOs show that entrants scale slowly."
+    },
+    {
+     "id": "q_service_rev",
+     "p10": 247,
+     "p50": 267,
+     "p90": 287,
+     "rationale": "Starting from $235B in 2025, I assume about +4% in 2026 (AT&T wireless service +5%, T-Mobile +6%, price increases, FWA) and about 2.5% a year after that, close to the ~3% nominal CAGR since 2007. The 2025 base of $235B is unverified; other trackers give $255-326B. The P10 is a price-pressure path (SpaceX plus cable free lines, flat nominal from 2027). The P90 assumes rational three-network pricing after the EchoStar exit, plus FWA and IoT growth. The range is widened for uncertainty about how CTIA defines the series."
+    },
+    {
+     "id": "q_ev_ebitda",
+     "p10": 5.7,
+     "p50": 7,
+     "p90": 8.4,
+     "rationale": "The carriers have historically traded at 6-8x EV/EBITDA. T-Mobile's 7.4x is unusually low after the SpaceX shock, so partial mean reversion is plausible if SpaceX's terrestrial build proves slow. On the downside, an upper C-band and 6G capex cycle around 2030 plus SpaceX and cable price pressure could push the average to 5.5-6x. Spectrum M&A or a re-rating takes it above 8x."
+    },
+    {
+     "id": "q_cable_lines",
+     "p10": 30.5,
+     "p50": 35,
+     "p90": 39.5,
+     "rationale": "The base is 24.1M in Q3 2026, adding about 3.4M a year with Comcast's adds already decaying (368k vs 414k). Linear extrapolation gives about 38.6M and a 10-20% annual decay in adds gives 33-36M. Penetration of the cable broadband base is still low (about 14-25%), but shrinking broadband subscriber counts, free-line roll-off and possible SpaceX competition cap the upside."
+    },
+    {
+     "id": "q_capex",
+     "p10": 26,
+     "p50": 31.5,
+     "p90": 38,
+     "rationale": "Capex has been flat at $29-30B nominal for 2023-25, and Verizon, AT&T and T-Mobile are all guiding flat or down (harvest mode, fiber priority). 2030 sits at the turn toward an upper C-band, 2.7 GHz and early-6G deployment cycle, but Verizon's 4-5 year deployment lag and altimeter retrofits push the heavy spend toward 2031-32. A 5G-style surge (+42% to the 2022 peak) is the P90 tail. SpaceX's own build probably falls outside the CTIA basis."
+    }
+   ],
+   "probabilities": [
+    {
+     "id": "b_ucb_2027",
+     "probability": 89,
+     "rationale": "Bidding starts on 27 April 2027 and the statute requires the auction by July 2027. Clock-plus-assignment auctions of this size (Auctions 107 and 110) took about 10-13 weeks, so a start slip of up to about 5 months still closes in 2027. Auctions continued through past shutdowns, and courts rarely stay them. The residual risk is litigation or a postponement over the cable-video or altimeter transition."
+    },
+    {
+     "id": "b_ucb_above",
+     "probability": 26,
+     "rationale": "Clearing above $0.94 on the question's 335M-pop basis means gross bids above $50.4B, more than lower C-band's own ~$0.87 on that basis. That sits at about the 73rd percentile of my proceeds distribution (P50 $37B, P90 $70B), so about 26.7% conditional, times about 96.5% that bidding concludes by end-2028. Reaching it essentially requires SpaceX to bid seriously against Verizon."
+    },
+    {
+     "id": "b_spacex_ucb",
+     "probability": 52,
+     "rationale": "SpaceX qualified for and won licences in the 2026 AWS-3 re-auction, took part in the upper C-band rulemaking, and is reported to be expected to bid. Analysts expect an aggressive bid. With 3,248 PEA licences it can win rural blocks cheaply if it enters. On the other side, the FCC refused satellite-coverage buildout credit, SpaceX's capex is going mainly to AI, and Musk called the 800 MHz deal the last critical piece. I put about 72% on applying and about 72% on winning given an application."
+    },
+    {
+     "id": "b_echostar_close",
+     "probability": 85,
+     "rationale": "The FCC approved the transfer in May 2026 and the licences sit in a trust. The closing is contractually targeted for 30 November 2027, which aligns with SpaceX funding interest through that date and its guidance for service on its own spectrum in early 2028. Both parties have strong incentives to close. The risks are only one month of slack before the deadline, the Dish subsidiaries' Chapter 11 cases, and possible creditor litigation."
+    },
+    {
+     "id": "b_grain_approve",
+     "probability": 90,
+     "rationale": "The FCC accepted the filing on 10 November 2026 (petitions due 1 December, oppositions 8 December). The informal 180-day review points to about May-June 2027, and the deadline leaves 13 months. This FCC approved every major 2025-26 transfer, including SpaceX-EchoStar in about 8 months and T-Mobile-Grain quickly. SpaceX holds no low-band, so the below-1-GHz screen does not bind. The residual risks are 800 MHz public-safety interference objections, conditions-related delay, and a Musk-administration falling-out."
+    },
+    {
+     "id": "b_spacex_retail",
+     "probability": 55,
+     "rationale": "SpaceX's Q3 2026 guidance is to switch on Starlink Mobile on its own spectrum in early 2028, after the November 2027 EchoStar closing (about 85%). Many phones already support Dish's band 70/66 frequencies. That leaves about 12 months of buffer against Musk's usual slips: T-Mobile's satellite service moved roughly 1.5-2 years from announcement to commercial launch, and V2 satellites depend on Starship cadence. I estimate about 93% that the closing happens by end-2028 and about 60% that a paid SpaceX-billed plan launches in time given closing."
+    },
+    {
+     "id": "b_spacex_top4",
+     "probability": 6,
+     "rationale": "The fourth-largest operator in 2035 will almost certainly be Charter or Comcast, likely at 22-30M lines, so SpaceX would need 25M or more directly billed US subscribers. US entrants (Dish/Boost, the cable MVNOs) took 5-8 years to reach single-digit to roughly 20M, and with help from incumbents' networks. Without an MVNO host, SpaceX's satellite capacity cannot serve dense indoor demand. The probability rests mainly on a large acquisition or a hugely successful cheap satellite-only plan."
+    },
+    {
+     "id": "b_tech_buys_carrier",
+     "probability": 17,
+     "rationale": "Several plausible paths exist: SpaceX buying a regional facilities-based carrier for sites, operations and customers to support its terrestrial build, a Boost-type base (borderline under the resolution), or Amazon extending Leo and Globalstar into mobile. Big-3 or cable mobile-unit takeovers are very unlikely, since the cable mobile businesses exist to defend the broadband bundle. SpaceX's AI capex competes for the capital. The 2025-26 tech deals bought spectrum and satellite operators, not carriers."
+    },
+    {
+     "id": "b_crunch",
+     "probability": 7,
+     "rationale": "Revenue per GB rises only if traffic grows more slowly than revenue (about 2-4%) in some year. Even my slowest traffic path keeps growth at 8% or more through 2030. The main route to Yes is a CTIA survey or methodology break (the series has anomalies in 2015-18) or carriers throttling FWA hard."
+    },
+    {
+     "id": "b_reaccel",
+     "probability": 12,
+     "rationale": "Growth fell from 32% to 20% in 2025, FWA adds are slowing, and Ericsson projects decelerating growth. Getting above 25% would need a new driver (AI uplink devices, cheap FWA on newly cleared spectrum) or a CTIA methodology jump like the 2018 spike. Four annual chances keep the probability above negligible. This is slightly below the research team's 15%."
+    },
+    {
+     "id": "b_6g",
+     "probability": 50,
+     "rationale": "The Release 21 ASN.1 freeze is March 2029. The first US 5G launch came about 10 months after its freeze and LTE about 21, so end-2030 sits at the slow end of the range. T-Mobile says it intends to be first in the US with 6G around 2030, Ericsson expects first commercial systems in 2030, and the US-China race politics resemble 2019, all pointing to a token launch, possibly on existing or upper C-band spectrum. Harvest-mode capex, no 7 GHz spectrum by 2030 and chipset timing pull the other way."
+    },
+    {
+     "id": "b_7ghz",
+     "probability": 30,
+     "rationale": "NTIA's 7.125-7.4 GHz report is due 10 December 2026 and WRC-27 decides in November 2027. 4.4 GHz study plans were cleared in July 2026 (up to 400 MHz) and the administration has sped up the relocation process. The fast 3.45 GHz precedent took about 17 months from identification to auction. But 2.7 GHz alone can meet the statute's 2029 federal tranche, which removes forcing for upper mid-band until 2033. DoD resistance and the 1-3 year slips typical of NTIA and FCC timelines make concluding bidding by end-2030 less likely than not."
+    },
+    {
+     "id": "b_pureplay_sale",
+     "probability": 83,
+     "rationale": "EchoStar has told the FCC it will sell its remaining terrestrial licences by September 2028 in exchange for buildout waivers. Its paired AWS-3 (valued at $8-10B) has an obvious buyer in Verizon, which took 88% of Auction 113, and SpaceX is a second possible bidder. I give EchoStar alone about 72%. Array's retained C-band (about 35%), Anterix (about 20%) and NextNav (about 10%) add independent chances, though only four or five buyers exist."
+    },
+    {
+     "id": "b_carriers_beat",
+     "probability": 36,
+     "rationale": "Over 4-year windows since 2010, the carrier basket has usually lagged the tech-led S&P 500; only T-Mobile beat it consistently. The base rate is roughly 25-30%. Today's depressed multiples (about 6.9x after the SpaceX shock), a basket dividend yield near 4% against about 1.2% for the S&P, and S&P valuation risk from the AI boom raise the odds somewhat. SpaceX execution and an upper C-band/6G capex cycle around 2030 are headwinds."
+    }
+   ],
+   "notes": "Lens: regulation and market structure. Key structural judgments: (1) Auction 115 has three carriers that each already hold about 150 MHz or more of mid-band, plus ~$16B of add-on costs (about $0.30/MHz-pop), so without a fourth bidder demand-reduction economics point to prices near 3.45 GHz levels. SpaceX's participation (about 52% to win anything, about 40% to bid seriously) is the swing factor, so the price distribution is a mixture. (2) On the question's 335M-pop basis, lower C-band was about $0.87, not $0.94. Clearing $0.94 needs more than $50.4B gross (about 26%). (3) 2.7 GHz (relocation plans approved April 2026, statutory federal deadline July 2029) likely meets the 300 MHz auction mandate alongside upper C-band, which removes statutory pressure for 7 GHz and 4.4 GHz until 2033. (4) This FCC has approved every 2025-26 transfer, including SpaceX's, so closing and approval risk is mainly timing and litigation. (5) SpaceX guided on its Q3 2026 call to service on its own spectrum in early 2028, and EchoStar committed to sell its remaining licences by September 2028 in exchange for buildout waivers. Web checks (5 searches): no new Auction 115 bidder news, though reports say SpaceX is expected to participate (Fierce, Light Reading, PhoneArena, wccftech); 4.4 GHz study plans were cleared in July 2026 with up to 400 MHz auctionable (Broadband Breakfast); EchoStar has no signed AWS-3 sale yet (Fierce, Broadband Breakfast); Starlink Mobile is targeted for late 2027 or early 2028 (PhoneArena, Notebookcheck, MacRumors). Sources: https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date ; https://www.lightreading.com/regulatory-politics/fcc-sets-key-dates-for-upper-c-band-auction ; https://broadbandbreakfast.com/ntia-clears-remaining-4-4-gigahertz-study-plans/ ; https://www.fierce-network.com/wireless/verizon-reportedly-talks-buy-echostars-aws-3-spectrum ; https://www.phonearena.com/news/starlink-mobile-hits-a-major-milestone-as-spacex-reveals-when-it-could-be-your-next-carrier_id184273 ; https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band. Research files used: /home/user/power-transformers-casestudy/wireless-spectrum/research/brief.md, /home/user/power-transformers-casestudy/wireless-spectrum/research/workflow_result.json, /home/user/power-transformers-casestudy/wireless-spectrum/research/verification.json."
+  }
+ ],
+ "aggregate": {
+  "forecasts": [
+   {
+    "id": "q_ucb_price",
+    "p10": 0.422,
+    "p50": 0.77,
+    "p90": 1.346
+   },
+   {
+    "id": "q_ucb_proceeds",
+    "p10": 22.5,
+    "p50": 41,
+    "p90": 72.2
+   },
+   {
+    "id": "q_midband_2030",
+    "p10": 0.396,
+    "p50": 0.9,
+    "p90": 1.83
+   },
+   {
+    "id": "q_bigdeals",
+    "p10": 0,
+    "p50": 1,
+    "p90": 3
+   },
+   {
+    "id": "q_traffic_2030",
+    "p10": 259.6,
+    "p50": 328,
+    "p90": 420
+   },
+   {
+    "id": "q_traffic_2035",
+    "p10": 346,
+    "p50": 525,
+    "p90": 870
+   },
+   {
+    "id": "q_ai_share",
+    "p10": 0.42,
+    "p50": 1.5,
+    "p90": 8.7
+   },
+   {
+    "id": "q_fwa_2030",
+    "p10": 24.1,
+    "p50": 29,
+    "p90": 34.5
+   },
+   {
+    "id": "q_rev_per_gb",
+    "p10": 0.628,
+    "p50": 0.8,
+    "p90": 1.038
+   },
+   {
+    "id": "q_new_mhz_2030",
+    "p10": 160,
+    "p50": 370,
+    "p90": 678
+   },
+   {
+    "id": "q_new_mhz_2035",
+    "p10": 357,
+    "p50": 640,
+    "p90": 1052
+   },
+   {
+    "id": "q_spacex_mhz",
+    "p10": 66.4,
+    "p50": 88,
+    "p90": 150
+   },
+   {
+    "id": "q_d2d_rev",
+    "p10": 1.56,
+    "p50": 4.8,
+    "p90": 12.2
+   },
+   {
+    "id": "q_spacex_subs",
+    "p10": 0.01,
+    "p50": 1,
+    "p90": 6.6
+   },
+   {
+    "id": "q_service_rev",
+    "p10": 246.2,
+    "p50": 266,
+    "p90": 284.6
+   },
+   {
+    "id": "q_ev_ebitda",
+    "p10": 5.6,
+    "p50": 6.9,
+    "p90": 8.26
+   },
+   {
+    "id": "q_cable_lines",
+    "p10": 30.4,
+    "p50": 35,
+    "p90": 39.1
+   },
+   {
+    "id": "q_capex",
+    "p10": 26.1,
+    "p50": 31.5,
+    "p90": 38.3
+   }
+  ],
+  "probabilities": [
+   {
+    "id": "b_ucb_2027",
+    "probability": 88,
+    "low": 86,
+    "high": 89,
+    "n": 5
+   },
+   {
+    "id": "b_ucb_above",
+    "probability": 31,
+    "low": 26,
+    "high": 36,
+    "n": 5
+   },
+   {
+    "id": "b_spacex_ucb",
+    "probability": 45,
+    "low": 37,
+    "high": 52,
+    "n": 5
+   },
+   {
+    "id": "b_echostar_close",
+    "probability": 83,
+    "low": 81,
+    "high": 85,
+    "n": 5
+   },
+   {
+    "id": "b_grain_approve",
+    "probability": 87,
+    "low": 86,
+    "high": 90,
+    "n": 5
+   },
+   {
+    "id": "b_spacex_retail",
+    "probability": 53,
+    "low": 45,
+    "high": 60,
+    "n": 5
+   },
+   {
+    "id": "b_spacex_top4",
+    "probability": 10,
+    "low": 6,
+    "high": 14,
+    "n": 5
+   },
+   {
+    "id": "b_tech_buys_carrier",
+    "probability": 16,
+    "low": 12,
+    "high": 26,
+    "n": 5
+   },
+   {
+    "id": "b_crunch",
+    "probability": 7,
+    "low": 6,
+    "high": 9,
+    "n": 5
+   },
+   {
+    "id": "b_reaccel",
+    "probability": 14,
+    "low": 11,
+    "high": 19,
+    "n": 5
+   },
+   {
+    "id": "b_6g",
+    "probability": 49,
+    "low": 45,
+    "high": 57,
+    "n": 5
+   },
+   {
+    "id": "b_7ghz",
+    "probability": 30,
+    "low": 24,
+    "high": 47,
+    "n": 5
+   },
+   {
+    "id": "b_pureplay_sale",
+    "probability": 79,
+    "low": 74,
+    "high": 84,
+    "n": 5
+   },
+   {
+    "id": "b_carriers_beat",
+    "probability": 36,
+    "low": 35,
+    "high": 38,
+    "n": 5
+   }
+  ]
+ },
+ "chief": {
+  "forecasts": [
+   {
+    "id": "q_ucb_price",
+    "p10": 0.422,
+    "p50": 0.77,
+    "p90": 1.346,
+    "adjusted": false,
+    "rationale": "Our central estimate is $0.77 per MHz-pop, about $41B of bids for 160 MHz. That is below the lower C-band's own $0.87 on the same 335M-pop basis and close to the 3.45 GHz auction's $0.70. Each of the three carriers already holds about 150 MHz or more of mid-band, winners owe about $16B of clearing and altimeter costs on top of their bids (about $0.30 per MHz-pop), and AT&T is stretched after paying $23B for EchoStar spectrum. A serious SpaceX bid is the main upside. The range is wide because US auctions have missed consensus in both directions.",
+    "drivers_up": "SpaceX bids seriously as a fourth bidder; Verizon or AT&T fight for blocks next to their existing C-band to build a 440 MHz contiguous range; carriers bid defensively after SpaceX's spectrum moves; little other new mid-band arrives before 2030.",
+    "drivers_down": "About $16B of add-on costs; carrier debt (AT&T at 3.13x leverage, Verizon net debt $123.7B); Verizon's 4-5 year deployment lag; T-Mobile will only buy if cheaper than adding sites; the 2.7 GHz band follows in 2028; second tranches abroad cleared far lower (Canada 3800 MHz about 90% below 3500 MHz).",
+    "base_rate": "US mid-band auctions in 2021-22 cleared $0.70-0.87 per MHz-pop on 335M pops; the 2015 AWS-3 peak was about $2.70. Analyst ranges (TD Cowen $30-75B, Carr $30-60B) imply $0.56-1.40. Five of the last eight big US auctions beat consensus, while 600 MHz and 2.5 GHz fell well short.",
+    "signposts": "Auction 115 short-form filings (6-20 January 2027), especially whether SpaceX applies; the qualified-bidder list and upfront payments (around March 2027); bidding pace in the first weeks after the 27 April 2027 start."
+   },
+   {
+    "id": "q_ucb_proceeds",
+    "p10": 22.5,
+    "p50": 41,
+    "p90": 72.2,
+    "adjusted": false,
+    "rationale": "Proceeds are the price forecast times 53.6B MHz-pops (160 MHz times 335M people), so about $41B at the middle. That sits inside Carr's $30-60B and TD Cowen's $30-75B ranges and far below the $81B raised for 280 MHz in 2021. If only the three carriers bid, and they hold back, proceeds land near $30B. If SpaceX bids hard, they land near $50B or more. The $72B top end allows for a surprise like the 2021 auction, which beat its forecast by 55-100%.",
+    "drivers_up": "SpaceX or another new bidder; carriers paying up for blocks next to their C-band; a scarcity of other mid-band before 2030; strategic bidding to keep SpaceX out.",
+    "drivers_down": "Only three committed bidders for eight blocks per market, which invites restraint; $16B of add-on costs; stretched balance sheets after the EchoStar deals; the FCC's refusal to give satellite coverage buildout credit, which deters SpaceX.",
+    "base_rate": "Lower C-band ($81B) beat its $40-52B consensus. 3.45 GHz landed near consensus. 600 MHz (about half of forecasts) and 2.5 GHz (well below $1-5B estimates) fell short.",
+    "signposts": "Whether SpaceX appears on the Auction 115 qualified-bidder list (early 2027); daily round results after 27 April 2027; gross bids passing $50.4B, the level that beats the 2021 price per MHz-pop."
+   },
+   {
+    "id": "q_midband_2030",
+    "p10": 0.396,
+    "p50": 0.9,
+    "p90": 1.83,
+    "adjusted": false,
+    "rationale": "We expect big 2029-30 deals to have a median near $0.90 per MHz-pop, below today's $1.40 AT&T-EchoStar benchmark. The likely deal set mixes cheap FCC auctions (2.7 GHz, 1675/2020 MHz, perhaps 4.4 or 7 GHz, at roughly $0.3-0.8) with dearer private sales of low-band and paired spectrum ($1.2-2.5). By 2030 mid-band supply is up about a third, which pushes generic mid-band down while low-band keeps its premium. With only a handful of qualifying deals, which deals happen decides the median, so the range is wide.",
+    "drivers_up": "Private low-band or paired sales dominate the sample; SpaceX and Amazon keep buying; 2.7 GHz or 7 GHz auctions slip past 2030; traffic re-accelerates on AI uplink.",
+    "drivers_down": "Several FCC auctions land in 2029-30 with federal exclusion zones and lots of MHz; carriers have room after upper C-band; SpaceX says its portfolio is complete; foreign mid-band prices keep falling.",
+    "base_rate": "2021-22 US auctions cleared $0.67-0.87 per MHz-pop; 2025-26 private sales ran $0.52-2.53 with a median near $1.20. Real US mid-band prices have fallen since 2015 as supply rose. Recent European mid-band averages are about $0.07.",
+    "signposts": "The FCC's 2.7 GHz auction date and result (Carr targets 2028); the price of EchoStar's paired AWS-3 sale (promised by September 2028); any SpaceX or Amazon low-band purchase in 2028-30."
+   },
+   {
+    "id": "q_bigdeals",
+    "p10": 0,
+    "p50": 1,
+    "p90": 3,
+    "adjusted": false,
+    "rationale": "We expect one spectrum-only deal of $5B or more in 2027-30, with roughly a one-in-three chance of none. The most likely is EchoStar's paired AWS-3 remainder, marked near $8B, which EchoStar has promised to sell by September 2028, though it could be split into smaller pieces. Further buying by SpaceX or Amazon, or a carrier sale or swap after Auction 115, could add one or two more. Before 2025 such deals came about once every five years; the 2025-26 burst came from one forced seller and one new buyer.",
+    "drivers_up": "SpaceX or Amazon want more terrestrial spectrum; EchoStar sells its AWS-3 in one block; Anterix or Ligado assets get re-rated; post-auction swaps between carriers.",
+    "drivers_down": "Few large nationwide holdings remain outside the big three; SpaceX called 800 MHz its last critical piece; FCC concentration review; auctions offer an alternative supply route; EchoStar may sell in pieces under $5B.",
+    "base_rate": "About 0.2 qualifying deals a year in 2013-24; three in 2025-26 (AT&T and SpaceX from EchoStar, SpaceX from Grain).",
+    "signposts": "An EchoStar paired AWS-3 sale announcement (deadline September 2028); SpaceX comments on spectrum needs after Grain closes (mid-2027); Amazon's terrestrial spectrum plans once Globalstar closes (2027)."
+   },
+   {
+    "id": "q_traffic_2030",
+    "p10": 259.6,
+    "p50": 328,
+    "p90": 420,
+    "adjusted": false,
+    "rationale": "We expect about 330 EB in 2030, roughly double 2025's 159 EB, with yearly growth fading from 20% to about 12% (about 15.5% a year on average). Bottom-up, phones at about 37 GB a month give about 150 EB, and about 28M fixed wireless lines at about 520 GB a month give about 175 EB. Mature markets show the same slowdown (UK +18%, Switzerland 20-25%), and 82-89% of phone data still rides Wi-Fi. The top of the range is CTIA's own 22%-a-year path, which industry forecasts have usually overshot.",
+    "drivers_up": "Fixed wireless grows toward 30M+ lines on upper C-band capacity; multimodal AI and glasses add uplink; robotaxi fleets scale; video quality rises.",
+    "drivers_down": "Fixed wireless adds keep slowing (Verizon 159K in Q3 2026 vs 261K); fiber overbuild by the same carriers; Wi-Fi offload; a saturated phone base; better video compression.",
+    "base_rate": "Growth fell from 38% (2022) to 20% (2025). Ericsson forecasts 13% a year for North American smartphone data to 2031. Mature markets settle in the high teens or below.",
+    "signposts": "Ericsson Mobility Report (30 November 2026 and June 2027); CTIA's survey of 2026 traffic (around September 2027); quarterly fixed wireless net adds from Verizon and AT&T."
+   },
+   {
+    "id": "q_traffic_2035",
+    "p10": 346,
+    "p50": 525,
+    "p90": 870,
+    "adjusted": false,
+    "rationale": "We extend the 2030 path at about 10% a year, giving about 525 EB in 2035, roughly 3.3 times 2025. Every maturing market shows growth decaying, and Ericsson's own forecast slows to 14% by 2031. The range is wide and skewed up. The low end has growth near 6% after a weak 2030; the high end keeps growth near 16% on uplink-heavy AI devices, 6G and 7 GHz capacity.",
+    "drivers_up": "Physical AI (robotaxis, drones, delivery robots) on wide-area networks; AI glasses and camera assistants; 7 GHz and 6G capacity making fixed wireless cheaper.",
+    "drivers_down": "Fixed wireless shrinks under fiber overbuild; phone use plateaus; on-device AI cuts round trips; Wi-Fi 7 and 6 GHz unlicensed absorb more indoor traffic.",
+    "base_rate": "Ericsson has repeatedly cut its forecasts (its 2030 global figure fell from 473 to 430 EB a month in one year). CTIA's 4x-by-2032 path (about 640 EB) sits above our 2032 range.",
+    "signposts": "CTIA growth in 2027-28 (holding above 15% would lift this); US uplink share in Ookla and Opensignal data; robotaxi fleet counts (Waymo about 4,000 in September 2026)."
+   },
+   {
+    "id": "q_ai_share",
+    "p10": 0.42,
+    "p50": 1.5,
+    "p90": 8.7,
+    "adjusted": false,
+    "rationale": "The only measurement is 0.06% of mobile traffic (Ericsson, April 2025). Reaching our 1.5% median by 2030 needs AI traffic to grow about 120% a year while total traffic grows 15-18%. Text AI is light, much inference runs on the device or server to server, and glasses and indoor robots mostly ride the phone or Wi-Fi. The upper tail is fat because camera and voice assistants and AI video apps could scale the way TikTok did, and the vendors who publish the measurement have reasons to count AI traffic broadly.",
+    "drivers_up": "Always-on multimodal assistants; AI glasses (IDC sees 27M display-less units by 2030); AI video generation apps being counted; robotaxi uplink; generous vendor definitions.",
+    "drivers_down": "On-device models; AI features folded into existing apps and not counted separately; Wi-Fi offload; robots on Wi-Fi or private 5G indoors.",
+    "base_rate": "Broad-definition forecasts (GSMA 5-20% by 2030, Nokia 44% of all traffic by 2035) have a record of overshooting. Video took over a decade to reach about 75% of mobile traffic; TikTok reached double-digit share in about four years.",
+    "signposts": "Any new operator or vendor AI traffic measurement (watch Ericsson's 30 November 2026 and June 2027 reports); AI glasses shipments in 2027; robotaxi fleet sizes and per-vehicle data use."
+   },
+   {
+    "id": "q_fwa_2030",
+    "p10": 24.1,
+    "p50": 29,
+    "p90": 34.5,
+    "adjusted": false,
+    "rationale": "We expect about 29M fixed wireless homes and businesses across the big three at end-2030, up from about 19M in Q3 2026. Net adds have already peaked (3.8M in 2025, about 3.6M in 2026), and we assume they keep decaying toward 2M a year. That lands close to the carriers' own targets: T-Mobile 15M by 2030, Verizon 'well beyond' 8-9M by 2028, AT&T about 5M. New Street's estimate of about 32M of Big 3 capacity caps the upside unless upper C-band adds room.",
+    "drivers_up": "Upper C-band capacity from 2028-30; cable broadband price rises; AT&T's EchoStar 3.45 GHz enabling more Internet Air; steady T-Mobile adds.",
+    "drivers_down": "Rising disconnects as the base grows; AT&T and Verizon pushing fiber first; carriers rationing capacity for mobile; satellite broadband competition; slower speeds at peak hours.",
+    "base_rate": "Product S-curves flatten once 50-70% of capacity is used. Industry adds fell from 3.8M (2025) to about 3.6M (2026), and Verizon's Q3 2026 adds fell 39% year on year.",
+    "signposts": "Quarterly fixed wireless net adds (Verizon and AT&T; T-Mobile stopped disclosing in 2026); any FWA price rises or sales pauses; the pace of upper C-band deployment after 2028."
+   },
+   {
+    "id": "q_rev_per_gb",
+    "p10": 0.628,
+    "p50": 0.8,
+    "p90": 1.038,
+    "adjusted": false,
+    "rationale": "This is our revenue forecast ($266B) divided by our traffic forecast (328 EB), about $0.80 per GB in 2030 against $1.48 in 2025. That is a fall of about 11% a year, half the 2020-25 pace, because traffic growth is slowing while revenue still grows 2-3%. Traffic uncertainty drives nearly all of the range. Even our high case keeps falling every year, so this does not point to a capacity squeeze.",
+    "drivers_up": "Slower traffic growth; carrier price rises; premium tiers for satellite, slicing or AI; carriers rationing cheap fixed wireless.",
+    "drivers_down": "Faster traffic growth from fixed wireless and AI; cable free lines and SpaceX pricing; satellite service bundled free; flat revenue.",
+    "base_rate": "Revenue per GB fell from $412 (2010) to $4.50 (2020) and $1.48 (2025), about -20% a year since 2020. CTIA reports price per MB fell 21% in 2025.",
+    "signposts": "CTIA's annual revenue and traffic figures (each September); the BLS wireless price index after carrier price rises; any slowdown in fixed wireless selling."
+   },
+   {
+    "id": "q_new_mhz_2030",
+    "p10": 160,
+    "p50": 370,
+    "p90": 678,
+    "adjusted": false,
+    "rationale": "Upper C-band (160 MHz) is close to certain and sets the floor. Our central case adds the 2.7 GHz band (about 210 MHz), which has approved federal relocation plans and a 2028 FCC target, for about 370 MHz. The 25 MHz 1675/2020 MHz band is roughly a coin flip. The top of the range needs a 7 GHz or 4.4 GHz auction to finish by 2030, which we put at about 30%, because US mid-band auctions usually slip 1-3 years from their first target.",
+    "drivers_up": "Statutory deadline of 200 MHz of federal spectrum auctioned by July 2029; Carr's 2028 auction slate (2.7 GHz, 1.6 GHz, 7 GHz); NTIA claims to be ahead of schedule; fiscal need for auction revenue.",
+    "drivers_down": "Defense Department resistance and relocation costs; FAA altimeter issues; NTIA study slips; litigation; once 300 MHz is auctioned, the law stops forcing more until 2033; political change after 2028.",
+    "base_rate": "About 585 MHz was auctioned in 2015-22 (about 73 MHz a year), then none during the 2023-25 lapse in authority. US mid-band auctions have typically slipped 1-3 years.",
+    "signposts": "NTIA's 7.125-7.4 GHz report (due 10 December 2026); FCC 2.7 GHz rules and auction date (2027-28); a final order on 1675/2020 MHz after the October 2026 proposal."
+   },
+   {
+    "id": "q_new_mhz_2035",
+    "p10": 357,
+    "p50": 640,
+    "p90": 1052,
+    "adjusted": false,
+    "rationale": "The 2025 law sets an 800 MHz pipeline with at least 300 MHz auctioned by 2034, and our central case delivers about 640 MHz by 2035. That assumes upper C-band, 2.7 GHz and 7.125-7.4 GHz are done, plus part of 4.4-4.94 GHz about half the time. Statutory spectrum targets are usually met late or in part: about 75% of the 2012 Spectrum Act targets were auctioned within the decade. The law also excludes two big federal bands (3.1-3.45 and 7.4-8.4 GHz), and Defense Department resistance caps the upside.",
+    "drivers_up": "WRC-27 identification of 7 GHz and 4.4 GHz for mobile; 6G demand; auction revenue needs; a possible mmWave auction that adds many MHz cheaply.",
+    "drivers_down": "Defense Department preference for sharing over clearing; excluded bands; FCC auction authority lapsing in September 2034; weak bids reducing the fiscal push; shared and unlicensed alternatives.",
+    "base_rate": "About 75% of Spectrum Act targets were met within a decade. The statutory minimum (300 MHz) is met by upper C-band plus 2.7 GHz alone.",
+    "signposts": "WRC-27 decisions on 4.4-4.8 and 7.125-8.4 GHz (October-November 2027); NTIA's identification of the second federal tranche (due July 2029); progress on the nine 4.4 GHz relocation plans."
+   },
+   {
+    "id": "q_spacex_mhz",
+    "p10": 66.4,
+    "p50": 88,
+    "p90": 150,
+    "adjusted": false,
+    "rationale": "SpaceX has about 79 MHz pending: 65 MHz from EchoStar (FCC-approved, closing targeted for 30 November 2027) and 14 MHz of 800 MHz from Grain (awaiting FCC approval). Our median of 88 MHz sits a little above that because at least one modest addition is slightly more likely than not: upper C-band wins (about 45%), EchoStar's paired AWS-3, the 2020-2025 MHz block next to its AWS-4, or 2.7 GHz. The floor near 66 MHz is the case where the Grain deal fails. Musk's description of 800 MHz as the 'last critical piece' keeps the median from going higher.",
+    "drivers_up": "Meaningful upper C-band or 2.7 GHz wins; buying EchoStar's paired AWS-3; buying more low-band; SpaceX added about 79 MHz in 13 months.",
+    "drivers_down": "FCC denial or tough conditions on Grain; an EchoStar closing failure; SpaceX capital going to AI; FCC refusal of satellite buildout credit, which makes auction licences costlier to hold.",
+    "base_rate": "The FCC approved every major 2025-26 spectrum transfer, with conditions. SpaceX went from zero to about 79 MHz agreed in 13 months.",
+    "signposts": "The FCC's Grain decision (petitions due 1 December 2026, decision likely mid-2027); SpaceX's Auction 115 short-form (January 2027) and winnings; the EchoStar closing on 30 November 2027."
+   },
+   {
+    "id": "q_d2d_rev",
+    "p10": 1.56,
+    "p50": 4.8,
+    "p90": 12.2,
+    "adjusted": false,
+    "rationale": "Satellite-to-phone revenue is well under $1B today, and we expect about $5B in 2030. Summing by operator: SpaceX wholesale from carrier partners plus any US retail (about $2-2.5B), AST's revenue share with its carrier partners (about $1B), and Apple/Amazon-Globalstar, China and IoT (about $1.5B combined). For scale, the whole legacy satellite-phone industry earns a few billion dollars a year, and carriers mostly bundle satellite service at near-zero extra price. The high end needs broadband-class next-generation service, due from 2027-28, to sell as a paid add-on.",
+    "drivers_up": "Next-generation SpaceX satellites (about 20x per-satellite throughput) from 2027; Amazon entry around 2028; AST's ramp to 100+ satellites; car, IoT and wearable contracts; government deals.",
+    "drivers_down": "Bundling at near-zero price; low willingness to pay outside emergencies; three or four constellations competing; Starship and launch slips.",
+    "base_rate": "Iridium earned $0.87B in 2025; the whole legacy mobile-satellite industry earns a few billion a year. Forecasts for new satellite services have usually overshot.",
+    "signposts": "Any SpaceX disclosure of Starlink Mobile revenue; AST reaching about 45 satellites (target mid-2027) and its 2027 revenue guidance; carrier pricing for satellite add-ons."
+   },
+   {
+    "id": "q_spacex_subs",
+    "p10": 0.01,
+    "p50": 1,
+    "p90": 6.6,
+    "adjusted": false,
+    "rationale": "We expect about 1M US subscribers billed directly by SpaceX at end-2030, with about a one-in-four chance of essentially none. SpaceX has said it plans its own US service once the EchoStar spectrum closes (targeted for 30 November 2027), and we put about 53% on a launch by end-2028. New entrants grow slowly: cable took about 8 years to reach 24M lines with tens of millions of broadband homes to sell to, and Dish/Boost never scaled on its own. The long upper tail covers a cheap plan bundled with Starlink broadband or buying an existing subscriber base.",
+    "drivers_up": "An early-2028 launch; bundling with Starlink broadband homes; low prices; 800 MHz for indoor coverage; tower access deals; buying a regional carrier or a reseller base.",
+    "drivers_down": "Satellites cannot serve dense indoor demand (over 70% of traffic is indoors); T-Mobile refuses an MVNO; phones need support for new bands; closing delays; SpaceX timelines that slip.",
+    "base_rate": "Cable resellers reached about 1M lines in about 1.5 years and about 24M in about 8 years. Dish/Boost reached about 7M after 5 years, mostly through acquired customers.",
+    "signposts": "A SpaceX consumer plan launch and its price (targeted for early 2028); tower access deals (SpaceX has sought about 80,000 sites); phones shipping in 2027-28 with AWS-4 and 800 MHz support."
+   },
+   {
+    "id": "q_service_rev",
+    "p10": 246.2,
+    "p50": 266,
+    "p90": 284.6,
+    "adjusted": false,
+    "rationale": "We expect about $266B in 2030, up about 2.5% a year from $235B in 2025. Industry revenue has grown about 3% a year in nominal terms since 2007, roughly flat after inflation, even as traffic rose by orders of magnitude. 2026 is firmer (AT&T wireless service +5%, T-Mobile +6-9%), and fixed wireless adds about 0.7 points a year. Cable's free lines, Verizon's falling ARPA and a possible SpaceX price war pull the other way.",
+    "drivers_up": "Price rises in a three-network market; fixed wireless growth; T-Mobile-style ARPA gains (+4%); satellite and premium tiers; IoT lines.",
+    "drivers_down": "Cable free lines (about half of Comcast connects); Verizon ARPA down 1.9%; SpaceX entry; a saturated phone base; falling price per GB.",
+    "base_rate": "2007-25 nominal growth was about 3% a year; Analysys Mason sees North American service revenue roughly flat to 2030. The $235B base comes from Light Reading citing CTIA; other trackers range $255-326B.",
+    "signposts": "Verizon and T-Mobile ARPA trends each quarter; SpaceX's launch price (2028); CTIA's 2026 revenue figure (around September 2027)."
+   },
+   {
+    "id": "q_ev_ebitda",
+    "p10": 5.6,
+    "p50": 6.9,
+    "p90": 8.26,
+    "adjusted": false,
+    "rationale": "We expect the big three to trade at about 6.9x forward EBITDA at end-2030, the same as today. US incumbent carriers have mostly traded between 6x and 8x, and today's level is close to that long-run average once T-Mobile's old premium is set aside. The market has punished each SpaceX spectrum step (carriers fell 9-13% on 9 October 2026), and an upper C-band and 6G spending cycle around 2030 weighs on cash flow. A takeover bid or rational three-network pricing could lift it above 8x.",
+    "drivers_up": "Spectrum monetised through sales or M&A; a SpaceX or hyperscaler bid for a carrier; disciplined pricing among three networks; T-Mobile regaining some premium if SpaceX's build proves slow.",
+    "drivers_down": "SpaceX entry and price pressure; cable share gains; a 2030 capex cycle; higher interest rates.",
+    "base_rate": "US incumbent telcos have mostly traded at 6-8x. The research weights 2030 states at 50% grind (6-7.5x), 30% price pressure (5-6x) and 20% convergence premium (8x or more).",
+    "signposts": "Carrier share moves on SpaceX milestones (Auction 115, 2028 launch); each carrier's upper C-band spend; T-Mobile's multiple versus AT&T and Verizon."
+   },
+   {
+    "id": "q_cable_lines",
+    "p10": 30.4,
+    "p50": 35,
+    "p90": 39.1,
+    "adjusted": false,
+    "rationale": "Charter (including Cox) and Comcast had 24.1M mobile lines in Q3 2026 and added about 3.4M over the prior year. We assume adds decay about 10% a year, giving about 35M at end-2030; a straight-line trend gives about 38.6M. Shrinking cable broadband bases cap how many phone lines can be attached, and about half of Comcast's connects are free lines that may churn when promotions end. Cox's footprint inside Charter and the low-cost reseller model on Verizon's network keep growth going.",
+    "drivers_up": "Free-line promotions; bundling to defend broadband; Cox integration; low mobile penetration of cable homes (about 20%); CBRS offload lowering costs.",
+    "drivers_down": "Broadband losses (Comcast -144K and Charter -233K in Q3 2026); free-line roll-off; carrier retaliation on price; SpaceX as a new low-price rival.",
+    "base_rate": "Cable added a steady 3-3.6M lines a year in 2022-26. Comcast's adds are already slowing (368K in Q3 2026 vs 414K a year earlier).",
+    "signposts": "Quarterly cable mobile adds against the 876K Q3 2026 pace; cable broadband subscriber losses; any change to the Verizon wholesale terms."
+   },
+   {
+    "id": "q_capex",
+    "p10": 26.1,
+    "p50": 31.5,
+    "p90": 38.3,
+    "adjusted": false,
+    "rationale": "Industry network capex has been flat at $29-30B since 2023, after the 5G peak of $39B in 2022. We expect about $31.5B in 2030, as upper C-band deployment and early 6G start to lift spending from the trough, plus about 2.5% a year of inflation. Carriers are in harvest mode: Verizon trimmed its 2026 guide, AT&T cut its long-term outlook and T-Mobile guides about $10B. A return toward $39B needs a 2021-22-style spectrum-driven surge, which sits in our top tail.",
+    "drivers_up": "Upper C-band builds (Verizon says 4-5 years); early 6G or 7 GHz overlays; densification for AI uplink; inflation.",
+    "drivers_down": "Network sharing; capital shifting to fiber; vendor price competition; slowing traffic; heavy spending pushed to 2031-32.",
+    "base_rate": "Past cycles peaked early in each generation then fell 20-30%; the 5G cycle rose 42% from 2018 to 2022, then fell 25% by 2024. 2030 sits near the turn from trough to ramp.",
+    "signposts": "Carrier capex guidance for 2028-29 after Auction 115; the pace of upper C-band deployment; announced 6G build plans."
+   }
+  ],
+  "probabilities": [
+   {
+    "id": "b_ucb_2027",
+    "probability": 88,
+    "adjusted": false,
+    "rationale": "Bidding starts on 27 April 2027 under final rules, and the law requires the auction by July 2027. Similar auctions with clock and assignment phases took about 10-13 weeks (Auctions 107 and 110), so a normal auction closes around August-September 2027. That leaves about four months of slack. The main risks are litigation, an aviation or satellite dispute that delays the start, a government shutdown, or a long bidding war.",
+    "signposts": "Short-form filings close on schedule (6-20 January 2027); the qualified-bidder list appears (around March 2027); bidding actually opens on 27 April 2027."
+   },
+   {
+    "id": "b_ucb_above",
+    "probability": 31,
+    "adjusted": false,
+    "rationale": "On the question's 335M-pop basis the 2021 lower C-band was about $0.87, so beating $0.94 means gross bids above $50.4B. Our price forecast puts about a 32% chance on that if the auction finishes, times about 95% that it finishes by end-2028. Getting there essentially needs SpaceX to bid hard against Verizon, or a fight for blocks next to existing C-band holdings. Heavy add-on costs and carrier balance sheets make it less likely than not.",
+    "signposts": "SpaceX on the qualified-bidder list (early 2027); total upfront payments and bidding eligibility (high eligibility signals demand); gross bids passing $50B in the clock phase."
+   },
+   {
+    "id": "b_spacex_ucb",
+    "probability": 45,
+    "adjusted": false,
+    "rationale": "SpaceX took part in the Auction 115 rulemaking, won small licences in the 2026 AWS-3 re-auction, and has the cash and the stated aim to become a full mobile operator. With 3,248 licences on offer, it could win cheap rural blocks if it enters. Against that, the FCC refused to let satellite coverage count toward buildout, so licences carry ground-network obligations, and Musk called 800 MHz the last critical piece. We put about two-thirds on SpaceX applying and about two-thirds on it winning something if it does.",
+    "signposts": "The public list of short-form applicants (late January 2027); the qualified-bidder list (around March 2027); SpaceX comments on terrestrial plans at its Q4 2026 results."
+   },
+   {
+    "id": "b_echostar_close",
+    "probability": 83,
+    "adjusted": false,
+    "rationale": "The FCC approved the transfer in May 2026, the licences have sat in a trust since 22 May 2026, and closing is targeted for 30 November 2027. SpaceX is funding EchoStar's interest through November 2027, which supports that date. The risk is timing: there is only one month of slack before the deadline, and the Dish DBS and Dish Wireless bankruptcy cases add litigation risk. Both sides have strong reasons to close on time.",
+    "signposts": "Any change to the 30 November 2027 target in EchoStar or SpaceX filings; rulings in the Dish DBS and Dish Wireless Chapter 11 cases; SpaceX confirming the $8.5B cash payment ahead of closing."
+   },
+   {
+    "id": "b_grain_approve",
+    "probability": 87,
+    "adjusted": false,
+    "rationale": "The FCC accepted the filing on 10 November 2026, with petitions due 1 December and oppositions 8 December. Its informal 180-day review points to a decision around mid-2027, leaving about six months of buffer. This FCC approved every major 2025-26 transfer, including SpaceX-EchoStar in about eight months, and SpaceX holds no other low-band, so the concentration screen does not bind. The remaining risks are public-safety interference objections at 800 MHz, conditions that slow the order, or political friction.",
+    "signposts": "Who files petitions to deny by 1 December 2026 (AT&T, Verizon or public-safety groups); any pause in the FCC's 180-day clock; an order by mid-2027."
+   },
+   {
+    "id": "b_spacex_retail",
+    "probability": 53,
+    "adjusted": false,
+    "rationale": "SpaceX has told investors it plans a US consumer mobile service on its own spectrum, targeting early 2028, once the EchoStar deal closes around 30 November 2027. Many phones already support Dish's band 70 frequencies, which helps. But that leaves only about 13 months, and SpaceX timelines, next-generation satellite launches and Starship cadence usually slip 6-12 months. A satellite-only or bundled plan billed by SpaceX would also count, which keeps this near a coin flip.",
+    "signposts": "The EchoStar closing on schedule (30 November 2027); the first next-generation direct-to-cell satellite launches (2027); a SpaceX plan announcement, beta or pricing in the first half of 2028."
+   },
+   {
+    "id": "b_spacex_top4",
+    "probability": 10,
+    "adjusted": false,
+    "rationale": "SpaceX would need to pass the smaller of Charter and Comcast, which we expect at roughly 20-30M lines by 2035. That means 20M or more directly billed subscribers from a launch around 2028. Cable took about 8 years to reach 24M lines with bundles and free lines, Dish never scaled on its own, and satellites cannot carry dense indoor demand. The probability rests mainly on buying a subscriber base or a very cheap plan that scales fast.",
+    "signposts": "SpaceX direct US subscribers at end-2029 (above 3M would raise this sharply); any SpaceX purchase of a carrier or reseller base; large tower or site deals that give it urban coverage."
+   },
+   {
+    "id": "b_tech_buys_carrier",
+    "probability": 16,
+    "adjusted": false,
+    "rationale": "No non-telecom tech company has bought a US facilities-based carrier in 30 years; Google Fi and others stayed resellers. SpaceX needs towers, operations and customers, and even a small regional carrier would count, which lifts the odds above that base rate. Amazon's Globalstar deal shows appetite for spectrum assets. But Musk's stated approach is to build, not buy, the big three are effectively unbuyable, and cable mobile is core to the broadband bundle.",
+    "signposts": "Whether SpaceX signs tower leases or instead holds M&A talks (2027-28); Amazon's plans after Globalstar closes and its satellite-to-phone launch (around 2028); strategic reviews at regional carriers."
+   },
+   {
+    "id": "b_crunch",
+    "probability": 7,
+    "adjusted": false,
+    "rationale": "For revenue per GB to rise, traffic growth would have to fall below revenue growth of about 2-4% in some year. CTIA traffic growth has not been below 14% since at least 2010, and our central path stays at 12-18% through 2030. Even our slow case keeps growth near 8-10%. The remaining chance is mostly a CTIA method change, such as splitting out fixed wireless, or carriers sharply throttling fixed wireless.",
+    "signposts": "CTIA traffic growth in each September survey from 2027; BLS wireless price index after carrier price rises; any carrier pausing fixed wireless sales."
+   },
+   {
+    "id": "b_reaccel",
+    "probability": 14,
+    "adjusted": false,
+    "rationale": "US traffic growth fell from 38% in 2022 to 20% in 2025, and our central path keeps it at 12-18% for 2027-30. A year above 25% needs a new driver: cheap fixed wireless on new upper C-band capacity, an AI uplink surge, or a CTIA method change. The series has jumped 12 points or more three times since 2018, and four annual chances keep this from being negligible. The research team's own estimate was 15%.",
+    "signposts": "CTIA's 2026 growth figure (around September 2027); Ericsson's North American growth readings; fixed wireless adds re-accelerating once upper C-band is deployed (2028-30)."
+   },
+   {
+    "id": "b_6g",
+    "probability": 49,
+    "adjusted": false,
+    "rationale": "3GPP's Release 21 final spec freeze is March 2029. The first US 5G launch came about 10-13 months after its freeze and LTE about 21 months, so a first 6G launch lands between late 2029 and late 2030, right at the deadline. T-Mobile says it will be first around 2030, Ericsson expects first commercial systems in 2030, and a small paid launch for marketing would count. Against that are flat capex, weak returns, no new 7 GHz spectrum by 2030, and any 3GPP slip.",
+    "signposts": "The Release 21 stage-3 freeze holding at December 2028; 6G chipset and handset announcements for 2029-30; carrier 6G trial and launch announcements."
+   },
+   {
+    "id": "b_7ghz",
+    "probability": 30,
+    "adjusted": false,
+    "rationale": "The candidates are 7.125-7.4 GHz (NTIA report due 10 December 2026) and part of 4.4-4.94 GHz (nine relocation plans under review). Carr wants 7 GHz on a 2028 auction slate, but the 2.7 GHz band alone can meet the law's 2029 federal deadline, which removes pressure for upper mid-band until 2033. Federal study-to-auction has taken from about 14-17 months (3.45 GHz) to about a decade (CBRS), and mid-band auctions usually slip 1-3 years. WRC-27 decisions also take effect only in 2029.",
+    "signposts": "NTIA's 7 GHz report findings (10 December 2026); an FCC 7 GHz proposal and auction date (2027-28); the WRC-27 outcome on 7.125-8.4 GHz and 4.4-4.8 GHz (November 2027)."
+   },
+   {
+    "id": "b_pureplay_sale",
+    "probability": 79,
+    "adjusted": false,
+    "rationale": "EchoStar told the FCC it would sell its remaining licences by September 2028 in return for buildout waivers, its paired AWS-3 is marked near $8B, and Verizon has held talks. That alone makes a sale about 60-75% likely. Array's retained C-band, Anterix's strategic review after its band was widened, and NextNav add independent chances. Only four or five buyers exist, and a partial sale may not count as 'most', which keeps this below 90%.",
+    "signposts": "An EchoStar paired AWS-3 sale agreement (watch 2027 to September 2028); the outcome of Anterix's strategic review; FCC action on NextNav's lower 900 MHz petition."
+   },
+   {
+    "id": "b_carriers_beat",
+    "probability": 36,
+    "adjusted": false,
+    "rationale": "Over most four-year windows since 2010, an equal-weight basket of AT&T, Verizon and T-Mobile has lagged the S&P 500; it mainly won when the market fell. Today the carriers start cheap (about 6.9x EBITDA after the SpaceX sell-off) with 4-6% dividend yields, while the S&P is richly valued and heavy in AI stocks. SpaceX entry, cable share gains and a 2030 spending cycle are structural headwinds. Large tracking error makes this closer to a coin flip than the base rate alone, but still tilted to No.",
+    "signposts": "SpaceX's launch and pricing (2028); any sharp AI-led fall in the S&P 500; carrier ARPA trends and cable share gains each quarter."
+   }
+  ],
+  "scenarios": [
+   {
+    "id": "s1",
+    "name": "Steady grind",
+    "probability": 39,
+    "tagline": "Spectrum keeps its value, but nobody gets a re-rating.",
+    "summary": "Defined as: SpaceX bills fewer than 3M US mobile lines directly at end-2030, and the median 2029-30 deal price is $0.60-1.40 per MHz-pop. Upper C-band clears near $0.65-0.95 ($35-50B), mostly to the three carriers. Traffic roughly doubles to about 300-350 EB, fixed wireless reaches about 29M lines, and revenue per GB keeps falling about 10% a year. SpaceX closes its EchoStar and Grain deals and launches a modest service, but stays a niche operator, and upper mid-band auctions slip past 2030.",
+    "spectrum_prices": "Mid-band trades near today's range of roughly $0.6-1.4 per MHz-pop. Low-band keeps a premium of about $1.2-2.0 because no new low-band is coming.",
+    "carriers": "Revenue grows 2-3% a year and multiples stay at about 6-7.5x. Returns come from dividends and buybacks, not from spectrum value.",
+    "satellites": "Satellite-to-phone grows into a few-billion-dollar bundled add-on. SpaceX is a coverage layer and a buyer, not a price-setter.",
+    "investors": "Spectrum exposure pays only through events, such as EchoStar's remainder sale or an Anterix or Array exit. Carrier stocks are income holdings, not a spectrum bet.",
+    "signposts": "Auction 115 gross bids between $35B and $50B (2027); fixed wireless adds below 3M a year from 2027; SpaceX direct US lines below 1M at end-2029.",
+    "forecast_links": "q_ucb_price $0.65-0.95; q_ucb_proceeds $35-50B; q_midband_2030 $0.60-1.40; q_traffic_2030 290-360 EB; q_rev_per_gb $0.70-0.90; q_service_rev $255-275B; q_ev_ebitda 6.3-7.5x; q_spacex_subs under 3M; q_new_mhz_2030 360-395 MHz; b_7ghz No; b_crunch No; b_carriers_beat roughly 35-40%."
+   },
+   {
+    "id": "s2",
+    "name": "Supply wave",
+    "probability": 24,
+    "tagline": "The spectrum law works, supply floods in, and prices per MHz-pop fall.",
+    "summary": "Defined as: SpaceX bills fewer than 3M US lines directly at end-2030, and the median 2029-30 deal price is below $0.60 per MHz-pop. Upper C-band clears low, near $0.40-0.65 ($22-35B), as three carriers split 160 MHz with little contest. NTIA and the FCC move fast: 2.7 GHz in 2028 and a 7 GHz or 4.4 GHz auction by 2030 take new supply past 430 MHz. Traffic growth fades toward 10%, Wi-Fi keeps most phone data, and new auctions clear at $0.3-0.6, echoing Canada's second mid-band tranche.",
+    "spectrum_prices": "The mid-band deal median falls below $0.60 and keeps falling in real terms. Low-band holds up better at about $1.0-1.6.",
+    "carriers": "Capacity gets cheap, which helps margins and fixed wireless, but price competition and cable keep revenue growth near 1-2%. Multiples sit around 6-7x.",
+    "satellites": "Satellite sharing of carrier spectrum and new auction bands with satellite rights reduce the need to own spectrum. Only the few dedicated satellite bands keep strategic value.",
+    "investors": "Pure-play spectrum holders lose, because sale prices fall and buyers have alternatives. Towers and equipment makers gain more from new deployments than holders do.",
+    "signposts": "A favourable NTIA 7 GHz report (10 December 2026) followed by an FCC 7 GHz auction date in 2028 or earlier; Auction 115 gross bids under $35B (2027); a 2.7 GHz auction clearing below $0.50.",
+    "forecast_links": "q_ucb_price $0.40-0.65; q_ucb_proceeds $22-35B; q_midband_2030 under $0.60; q_new_mhz_2030 435-680 MHz; b_7ghz Yes; q_traffic_2030 260-310 EB; q_rev_per_gb $0.85-1.04; b_ucb_above No; q_bigdeals 0-1; q_new_mhz_2035 above 640 MHz."
+   },
+   {
+    "id": "s3",
+    "name": "SpaceX fourth force",
+    "probability": 23,
+    "tagline": "Convergence creates a new national rival, and value moves from carriers to SpaceX and sellers.",
+    "summary": "Defined as: SpaceX (or another satellite owner) bills at least 3M US mobile lines directly at end-2030, whatever the price level. SpaceX closes EchoStar and Grain on time, wins meaningful upper C-band blocks, and launches a cheap Starlink Mobile plan in 2028 using satellites, 800 MHz and leased towers. By end-2030 it owns over 100 MHz and keeps buying. Prices rise for low-band and satellite-capable bands, where SpaceX and Amazon bid against carriers, while generic mid-band stays near trend. Carriers answer with price cuts and bundles, so service revenue grows only about 1-2% a year and multiples compress.",
+    "spectrum_prices": "Two tiers: low-band and satellite-usable bands clear at $1.5-2.5 or more, and upper C-band clears above $0.94 about half the time. Generic mid-band stays near $0.7-1.2.",
+    "carriers": "Multiples fall toward 5.5-6.5x and the carrier basket lags the S&P 500. Their licences are worth more to others than to them.",
+    "satellites": "SpaceX is the clear winner, and satellite-to-phone revenue reaches the top of our range ($8-12B). Owners of satellite bands (Amazon-Globalstar, AST's L-band rights) gain strategic value.",
+    "investors": "Spectrum exposure works best through the buyer and the sellers: SpaceX itself, EchoStar's SpaceX stake, or pure plays sold into a bidding contest. Incumbent carriers fund the shift rather than benefit from it.",
+    "signposts": "SpaceX qualifies for Auction 115 and wins meaningful blocks (2027); a SpaceX plan launches by mid-2028 at an aggressive price; tower deals covering tens of thousands of sites, or a deal to buy a carrier.",
+    "forecast_links": "q_spacex_subs 3M or more; q_spacex_mhz 100-150+ MHz; b_spacex_retail Yes; b_spacex_ucb Yes; q_ucb_price $0.85-1.35; q_d2d_rev $7-12B; q_ev_ebitda 5.6-6.5x; q_service_rev $246-260B; b_carriers_beat No; b_tech_buys_carrier more likely than its 16% base; b_spacex_top4 still a minority outcome."
+   },
+   {
+    "id": "s4",
+    "name": "Scarcity premium",
+    "probability": 14,
+    "tagline": "Demand outruns supply, and existing holders capture the gains.",
+    "summary": "Defined as: SpaceX bills fewer than 3M US lines directly at end-2030, and the median 2029-30 deal price is $1.40 per MHz-pop or more. Upper C-band clears above the 2021 price, near $1.00-1.35 ($55-72B), as Verizon, AT&T and a bidding SpaceX fight for blocks next to existing C-band. Traffic re-accelerates on AI uplink, glasses and fixed wireless, with at least one year above 25% growth, while 2.7 GHz and 7 GHz slip. Carriers ration fixed wireless and raise prices, so revenue per GB falls more slowly, and the remaining pure plays sell at premiums.",
+    "spectrum_prices": "The median deal price is $1.40 or more, with low-band above $2. New auctions clear near or above 2021 levels.",
+    "carriers": "Pricing power returns, revenue grows 3-4% a year, and multiples re-rate to about 7.5-8.5x. This is the carriers' best chance of beating the S&P 500.",
+    "satellites": "Satellite owners gain as deep-pocketed buyers, but SpaceX stays mainly a wholesale coverage partner rather than a retail rival.",
+    "investors": "This is the only world where both carriers and pure plays win. Even here, gains arrive through sales and auctions rather than steady earnings growth.",
+    "signposts": "CTIA traffic growth above 22% in 2026 or 2027; a measured AI traffic share above 1% by 2028; Auction 115 gross bids above $50B (2027); the 2.7 GHz auction slipping to 2029 or later.",
+    "forecast_links": "q_midband_2030 $1.40 or more; q_ucb_price $0.94-1.35; b_ucb_above Yes; q_traffic_2030 380-420+ EB; b_reaccel Yes; q_ai_share 4-9%; q_rev_per_gb $0.95-1.04; q_ev_ebitda 7.8-8.3x; b_carriers_beat Yes; q_new_mhz_2030 160-370 MHz; b_crunch possible."
+   }
+  ],
+  "coherence_notes": "No numbers were changed. Every panel aggregate passed the consistency checks, and no lens made a factual error that moved the aggregate. Floating-point noise was rounded (q_ai_share p10 0.42, q_rev_per_gb p90 1.038).\n\nChecks run:\n(1) Price times 53.6B MHz-pops (160 MHz x 335M) gives $22.6B, $41.3B and $72.1B. That matches the proceeds aggregate of $22.5B, $41B and $72.2B.\n(2) On the 335M-pop basis the 2021 lower C-band was about $0.87, so the $0.94 threshold needs gross bids of at least $50.4B. A split-lognormal fit to the aggregate price gives P(>$0.94 | auction concludes) of about 32%. Times about 95% that it concludes by end-2028, that is about 31%, which matches b_ucb_above.\n(3) Revenue per GB: $266B / 328 EB = $0.81, against the aggregate's $0.80. The range ($0.63-1.04) sits inside the ratio extremes.\n(4) Traffic quantiles imply 10.3%, 15.5% and 21.4% a year for 2025-30. That fits b_reaccel at 14% (the P90 is near 21% a year) and b_crunch at 7% (even P10 growth of about 10% stays far above revenue growth). The 2035 median implies about 10% a year after 2030. The AI share median of 1.5% is about 5 EB, which is plausible within 328 EB.\n(5) The 2030 new-MHz distribution is lumpy. P10 is upper C-band only (160), P50 is upper C-band plus 2.7 GHz (370), and a total above about 435 needs upper mid-band. A smooth fit gives P(>435) of about 37%, against b_7ghz at 30% plus a small mmWave tail. The lumps explain the gap.\n(6) SpaceX subscribers: about 25% at zero fits b_spacex_retail (53% by 2028, about 72% by 2030). P(>3M) is about 23% and P(>5M) about 14%, which supports b_spacex_top4 at 10% once the acquisition route is included.\n(7) EV/EBITDA P(>8x) is about 15%, consistent with the 14% scarcity scenario.\n\nScenarios: they are mutually exclusive and exhaustive by construction. A world goes to s3 if SpaceX (or another satellite owner) bills at least 3M US lines directly at end-2030. Otherwise it is classified by the median 2029-30 deal price: below $0.60 is s2, $0.60-1.40 is s1, and $1.40 or more is s4. If there are no qualifying 2029-30 deals, use the latest qualifying deal price instead.\n\nThe weights come from the aggregate distributions. For mid-band, P(<$0.60) is about 26% and P(>$1.40) about 21%. For SpaceX lines, P(>3M) is about 23%, with the price split inside s3 tilted higher (30% above $1.40, 10% below $0.60).\n\nCross-checks against the scenario weights:\n- Implied b_ucb_above is about 32% (panel: 31%).\n- Implied b_spacex_retail is about 53% (panel: 53%).\n- Implied b_carriers_beat is about 35% (panel: 36%).\ns2 and s3 are nearly tied (24 vs 23). Their order is a close call.\n\nTensions left:\n(a) The q_spacex_mhz median of 88 needs a substantive addition beyond the 79 MHz pending to be more likely than not. With b_spacex_ucb at 45%, and some of those wins only token, that depends on other routes: EchoStar's paired AWS-3, the 2020-2025 MHz block and 2.7 GHz. A defensible median runs from about 81 to 88. It was left at the panel value.\n(b) The $235B 2025 service revenue base is unverified (other trackers give $255-326B). That affects how q_service_rev and q_rev_per_gb resolve, but not the ratio logic.\n(c) T-Mobile no longer discloses its fixed wireless count, which adds noise to q_fwa_2030.\n(d) The panel sits below several research-digest medians: AI share 1.5% vs 4%, satellite-to-phone revenue $4.8B vs $6B, SpaceX lines 1M vs 3M, and 6G 49% vs 60%. In each case the panel leaned on the slowing measured data and the record of vendor forecasts overshooting.\n(e) The investables section's upper C-band view (about 60% concluding by 2028, $30B median) came from training data and is contradicted by the firm 27 April 2027 schedule. It was correctly given no weight."
+ }
+}

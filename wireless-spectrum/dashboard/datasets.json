@@ -1,0 +1,22 @@
+{
+ "plan": ["Verdict, method and caveats", "Headline, verdict on the thesis, how the projections were made, and caveats. The verdict quotes the final forecasts."],
+ "figures": ["Headline market figures", "Key numbers on demand, supply, prices and satellites, each with a source link."],
+ "key_findings": ["Key findings", "Findings on demand, substitutes, supply, prices, satellites, value capture, past spectrum bets, markets abroad and ways to invest, with evidence and sources."],
+ "key_numbers": ["Key numbers per finding", "The figures quoted under each finding, with a source link for each."],
+ "forecasts": ["Forecasts with 80% ranges", "Eighteen quantity forecasts for 2027-2035: central estimate, 10th and 90th percentiles, today's value, reasoning, drivers and signposts."],
+ "forecast_panel": ["Forecasting lenses", "Each of the five forecasting lenses' own estimates and reasoning for every question."],
+ "probabilities": ["Event probabilities", "Fourteen yes-or-no questions with deadlines, our probability and the range across the forecasting lenses."],
+ "scenarios": ["Scenarios for 2030", "Four mutually exclusive pictures of the market in 2030 with probabilities that add to 100%."],
+ "chart_meta": ["Chart definitions", "Title, note, kind, format and source of each chart."],
+ "charts": ["Chart data", "Data points for every chart, from regulators, filings, auction records, industry surveys and press."],
+ "deals": ["Auctions and private sales", "FCC auctions and private spectrum sales since 2006 with buyer, seller, band, price and price per MHz-pop."],
+ "pipeline": ["Spectrum pipeline and rules", "Bands in the federal pipeline with timing and status, and the rules on who can hold how much."],
+ "precedents": ["Past spectrum bets", "Historical spectrum investments with cost, outcome, multiple and lesson."],
+ "d2d_players": ["Satellite-to-phone players", "Companies building direct-to-device satellite service, with spectrum, partners, satellites and status."],
+ "universe": ["Listed spectrum exposure", "Public companies and funds with spectrum exposure: holdings, exposure grade, market data and how each gains or loses."],
+ "watchlist": ["Upcoming events", "Dated auctions, rulings, closings, launches and reports that would move the forecasts."],
+ "findings": ["Research findings", "Every sourced finding behind the report, with topic, source link, confidence tag and independent check result."],
+ "glossary": ["Glossary", "Plain definitions of the spectrum, technology, regulatory and finance terms used in the report."],
+ "value_chain_nodes": ["Market map companies", "Spectrum sources, equipment makers, sites, spectrum holders, sales channels, customers and uses in the US wireless market."],
+ "value_chain_edges": ["Market map flows", "Yearly money flows between groups and spectrum rights changing hands, with values and the basis for each."]
+}

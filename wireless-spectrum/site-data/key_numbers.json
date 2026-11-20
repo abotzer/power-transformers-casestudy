@@ -1,0 +1,434 @@
+[
+ {
+  "id": "demand-n00",
+  "finding": "demand",
+  "order": 1,
+  "label": "US mobile data traffic",
+  "value": "159.3 trillion MB (+20% y/y), 2025",
+  "source_url": "https://techblog.comsoc.org/2026/09/10/ctia-americans-used-more-wireless-data-in-2025-than-in-the-entire-4g-decade-but-growth-slowed-from-2023-2024/"
+ },
+ {
+  "id": "demand-n01",
+  "finding": "demand",
+  "order": 2,
+  "label": "Generative AI share of mobile traffic",
+  "value": "0.06%, April 2025",
+  "source_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025"
+ },
+ {
+  "id": "demand-n02",
+  "finding": "demand",
+  "order": 3,
+  "label": "US smartphone data carried on Wi-Fi",
+  "value": "82-89%, October 2024",
+  "source_url": "https://insights.opensignal.com/2024/10/31/wi-fi-drives-smartphone-data-consumption-in-the-us-but-trends-vary-across-operators"
+ },
+ {
+  "id": "demand-n03",
+  "finding": "demand",
+  "order": 4,
+  "label": "US service revenue per GB",
+  "value": "$1.48 per GB, 2025 ($4.50 in 2020)",
+  "source_url": "https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill"
+ },
+ {
+  "id": "demand-n04",
+  "finding": "demand",
+  "order": 5,
+  "label": "FWA share of the 2023 US traffic increase",
+  "value": "~90%, 2023 (Bubley estimate)",
+  "source_url": "https://www.rcrwireless.com/20241014/5g/us-mobile-data-traffic-stats-need-careful-scrutiny-analyst-angle"
+ },
+ {
+  "id": "demand-n05",
+  "finding": "demand",
+  "order": 6,
+  "label": "AI uplink scenario, 2031 vs 2025",
+  "value": "3x to 5x, June 2026 forecast",
+  "source_url": "https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum"
+ },
+ {
+  "id": "capacity-n00",
+  "finding": "capacity",
+  "order": 1,
+  "label": "FCC 2010 estimate: sites only vs with new spectrum",
+  "value": "$174B vs $54B, October 2010",
+  "source_url": "https://www.computerworld.com/article/1540380/fcc-projects-275mhz-spectrum-deficit-by-2014.html"
+ },
+ {
+  "id": "capacity-n01",
+  "finding": "capacity",
+  "order": 2,
+  "label": "US wireless network capex",
+  "value": "$39B (2022 peak) to ~$30B (2025)",
+  "source_url": "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+ },
+ {
+  "id": "capacity-n02",
+  "finding": "capacity",
+  "order": 3,
+  "label": "Median download speed, AT&T, T-Mobile and Verizon",
+  "value": "334 Mbps, H1 2026 (+74% in two years)",
+  "source_url": "https://www.techrepublic.com/article/news-us-mobile-speeds-rootmetrics/"
+ },
+ {
+  "id": "capacity-n03",
+  "finding": "capacity",
+  "order": 4,
+  "label": "Real price of typical unlimited plans",
+  "value": "-10.7%, 2025",
+  "source_url": "https://mma.prnewswire.com/media/2969076/CTIA_AffordabilityTracker.pdf?p=pdf"
+ },
+ {
+  "id": "capacity-n04",
+  "finding": "capacity",
+  "order": 5,
+  "label": "Brattle projected US spectrum deficit",
+  "value": "~1,400 MHz by 2032 (study April 2023)",
+  "source_url": "https://www.brattle.com/insights-events/publications/current-spectrum-allocation-is-not-sufficient-for-meeting-the-future-demand-for-wireless-broadband-in-the-us-according-to-a-new-brattle-report"
+ },
+ {
+  "id": "capacity-n05",
+  "finding": "capacity",
+  "order": 6,
+  "label": "Capacity gain from more spectrum (Cooper's law)",
+  "value": "~25x of ~1,000,000x since the 1950s",
+  "source_url": "https://www.oreilly.com/library/view/cooperative-communications-hardware/9780470997680/10-chapter01.html"
+ },
+ {
+  "id": "supply-n00",
+  "finding": "supply",
+  "order": 1,
+  "label": "Statutory spectrum pipeline",
+  "value": "At least 800 MHz (300 FCC + 500 federal), July 2025 law",
+  "source_url": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1"
+ },
+ {
+  "id": "supply-n01",
+  "finding": "supply",
+  "order": 2,
+  "label": "Upper C-band in Auction 115",
+  "value": "160 MHz; bidding from 27 April 2027",
+  "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date"
+ },
+ {
+  "id": "supply-n02",
+  "finding": "supply",
+  "order": 3,
+  "label": "FCC spectrum screen trigger",
+  "value": "385 MHz, May 2026 review",
+  "source_url": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+ },
+ {
+  "id": "supply-n03",
+  "finding": "supply",
+  "order": 4,
+  "label": "Proposed addition to satellite sharing (SCS) bands",
+  "value": "+482 MHz, 5 to 13 bands, October 2026",
+  "source_url": "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/"
+ },
+ {
+  "id": "supply-n04",
+  "finding": "supply",
+  "order": 5,
+  "label": "Mid-band assigned (1-7 GHz), US vs China",
+  "value": "791 MHz vs 835 MHz, 2025",
+  "source_url": "https://www.policytracker.com/?p=79240"
+ },
+ {
+  "id": "supply-n05",
+  "finding": "supply",
+  "order": 6,
+  "label": "2.7 GHz band targeted for auction",
+  "value": "~210 MHz, 2028 target",
+  "source_url": "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+ },
+ {
+  "id": "prices-n00",
+  "finding": "prices",
+  "order": 1,
+  "label": "SpaceX-Grain 800 MHz price (reported)",
+  "value": "~$8B, ~$1.73 per MHz-pop, October 2026",
+  "source_url": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers"
+ },
+ {
+  "id": "prices-n01",
+  "finding": "prices",
+  "order": 2,
+  "label": "T-Mobile sale of 800 MHz to Grain",
+  "value": "$2.9B cash + $690M of licences, August 2026",
+  "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management"
+ },
+ {
+  "id": "prices-n02",
+  "finding": "prices",
+  "order": 3,
+  "label": "AT&T-EchoStar price",
+  "value": "~$1.40 per MHz-pop blended, closed July 2026",
+  "source_url": "https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/"
+ },
+ {
+  "id": "prices-n03",
+  "finding": "prices",
+  "order": 4,
+  "label": "Lower C-band auction gross bids",
+  "value": "$81.17B, February 2021",
+  "source_url": "https://auctiondata.fcc.gov/public/projects/auction107"
+ },
+ {
+  "id": "prices-n04",
+  "finding": "prices",
+  "order": 5,
+  "label": "AWS-3 re-auction average price",
+  "value": "$2.53 per MHz-pop, June 2026",
+  "source_url": "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b"
+ },
+ {
+  "id": "prices-n05",
+  "finding": "prices",
+  "order": 6,
+  "label": "Upper C-band proceeds estimate",
+  "value": "$30-75B (TD Cowen), auction from April 2027",
+  "source_url": "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band"
+ },
+ {
+  "id": "satellite-n00",
+  "finding": "satellite",
+  "order": 1,
+  "label": "SpaceX IPO valuation",
+  "value": "~$1.77T at $135 a share, June 2026",
+  "source_url": "https://siliconangle.com/2026/06/11/elon-musks-spacex-raises-record-breaking-75b-pricing-ipo-135-per-share/"
+ },
+ {
+  "id": "satellite-n01",
+  "finding": "satellite",
+  "order": 2,
+  "label": "Starlink Mobile monthly users",
+  "value": "~22M (+37% q/q), Q3 2026",
+  "source_url": "https://www.satellitetoday.com/finance/2026/10/21/starlink-growth-slows-as-ai-takes-the-lead-at-spacex-in-q3-results/"
+ },
+ {
+  "id": "satellite-n02",
+  "finding": "satellite",
+  "order": 3,
+  "label": "SpaceX connectivity revenue",
+  "value": "$5.25B of $14.6B total, Q3 2026",
+  "source_url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html"
+ },
+ {
+  "id": "satellite-n03",
+  "finding": "satellite",
+  "order": 4,
+  "label": "EchoStar spectrum approved for SpaceX",
+  "value": "~65 MHz, May 2026",
+  "source_url": "https://docs.fcc.gov/public/attachments/DA-26-471A1.pdf"
+ },
+ {
+  "id": "satellite-n04",
+  "finding": "satellite",
+  "order": 5,
+  "label": "T-Satellite share of T-Mobile network usage",
+  "value": "0.0002%, 2026",
+  "source_url": "https://www.gsmaintelligence.com/blogs/what-does-the-early-data-on-d2d-usage-tell-us"
+ },
+ {
+  "id": "satellite-n05",
+  "finding": "satellite",
+  "order": 6,
+  "label": "Starlink capacity density (analyst estimates)",
+  "value": "4-55 Mbps per sq km, 2026",
+  "source_url": "https://rcrwireless.com/?p=434877"
+ },
+ {
+  "id": "capture-n00",
+  "finding": "capture",
+  "order": 1,
+  "label": "Carrier share moves on 9 October 2026",
+  "value": "AT&T -9.8%, Verizon -8.8%, T-Mobile -13.3%",
+  "source_url": "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+ },
+ {
+  "id": "capture-n01",
+  "finding": "capture",
+  "order": 2,
+  "label": "Verizon postpaid ARPA",
+  "value": "$168.08 (-1.9% y/y), Q3 2026",
+  "source_url": "https://finviz.com/news/407554/verizon-delivers-another-record-breaking-quarter-with-3q-2026-results-driven-by-strong-postpaid-phone-and-account-additions"
+ },
+ {
+  "id": "capture-n02",
+  "finding": "capture",
+  "order": 3,
+  "label": "US wireless service price index",
+  "value": "-4.1%, 2025",
+  "source_url": "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+ },
+ {
+  "id": "capture-n03",
+  "finding": "capture",
+  "order": 4,
+  "label": "T-Mobile postpaid ARPA",
+  "value": "$155.73 (+4% y/y), Q3 2026",
+  "source_url": "https://www.t-mobile.com/news/business/t-mobile-q3-2026-earnings"
+ },
+ {
+  "id": "capture-n04",
+  "finding": "capture",
+  "order": 5,
+  "label": "Charter mobile line adds",
+  "value": "508,000, Q3 2026",
+  "source_url": "https://finviz.com/news/418256/charter-announces-third-quarter-2026-results-and-launches-new-operating-model"
+ },
+ {
+  "id": "capture-n05",
+  "finding": "capture",
+  "order": 6,
+  "label": "EchoStar share price gain",
+  "value": "~+430%, January 2025 to June 2026",
+  "source_url": "https://fortune.com/2026/06/04/echostar-stock-elon-musk-spacex-spectrum-bankruptcy-to-best-shareholder-return-fortune-500/"
+ },
+ {
+  "id": "history-n00",
+  "finding": "history",
+  "order": 1,
+  "label": "Dish spectrum investment",
+  "value": "More than $30B, as of June 2023",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1001082/000155837023013759/R16.htm"
+ },
+ {
+  "id": "history-n01",
+  "finding": "history",
+  "order": 2,
+  "label": "Dish 2 GHz purchase (TerreStar and DBSD)",
+  "value": "~$2.86B, March 2012",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1001082/000155837019003904/R16.htm"
+ },
+ {
+  "id": "history-n02",
+  "finding": "history",
+  "order": 3,
+  "label": "SpaceX price for EchoStar AWS-4 and H-block",
+  "value": "~$17B, September 2025",
+  "source_url": "https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+ },
+ {
+  "id": "history-n03",
+  "finding": "history",
+  "order": 4,
+  "label": "NextWave licence sales",
+  "value": "~$5.4B, 2004-2005",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/0001374993/000114420406038702/v052905_s-4.htm"
+ },
+ {
+  "id": "history-n04",
+  "finding": "history",
+  "order": 5,
+  "label": "Google loss on its Clearwire stake",
+  "value": "-94% on $500M, 2012",
+  "source_url": "https://phys.org/news/2012-02-google-clearwire-stake-percent-loss.pdf"
+ },
+ {
+  "id": "history-n05",
+  "finding": "history",
+  "order": 6,
+  "label": "Harbinger main fund return",
+  "value": "-47%, 2011",
+  "source_url": "https://www.bloomberg.com/news/articles/2012-02-03/falcone-s-harbinger-capital-lost-47-last-year-on-lightsquared-venture-bet"
+ },
+ {
+  "id": "global-n00",
+  "finding": "global",
+  "order": 1,
+  "label": "Operator revenue per MHz",
+  "value": "-60%, 2014 to 2023",
+  "source_url": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/"
+ },
+ {
+  "id": "global-n01",
+  "finding": "global",
+  "order": 2,
+  "label": "Spectrum costs as share of operator revenue",
+  "value": "7.4% in 2023 (4.5% in 2014)",
+  "source_url": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/"
+ },
+ {
+  "id": "global-n02",
+  "finding": "global",
+  "order": 3,
+  "label": "European 3.3-3.9 GHz auction average",
+  "value": "€0.067 per MHz-pop, 2018-2024",
+  "source_url": "https://www.analysysmason.com/consulting/articles/spectrum-valuation-uppermid/"
+ },
+ {
+  "id": "global-n03",
+  "finding": "global",
+  "order": 4,
+  "label": "Canada 3800 MHz price paid by Rogers",
+  "value": "C$0.32 per MHz-pop, 2023 (C$3.38 for 3500 MHz in 2021)",
+  "source_url": "https://about.rogers.com/news-ideas/rogers-acquires-3800-mhz-5g-spectrum-across-canada/"
+ },
+ {
+  "id": "global-n04",
+  "finding": "global",
+  "order": 5,
+  "label": "India auction proceeds vs reserve value",
+  "value": "₹11,340 crore of ₹96,238 crore (~12%), June 2024",
+  "source_url": "https://theprint.in/economy/spectrum-auctions-see-sale-of-141-4-mhz-of-radio-waves-worth-rs-11340-78-cr-bharti-airtel-top-buyer/2148813"
+ },
+ {
+  "id": "global-n05",
+  "finding": "global",
+  "order": 6,
+  "label": "UK mmWave award",
+  "value": "£39m for 5.4 GHz, October 2025",
+  "source_url": "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced"
+ },
+ {
+  "id": "investing-n00",
+  "finding": "investing",
+  "order": 1,
+  "label": "SpaceX shares due to EchoStar",
+  "value": "261.8M at $42.40 deal price, September 2026",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm"
+ },
+ {
+  "id": "investing-n01",
+  "finding": "investing",
+  "order": 2,
+  "label": "UBS value of EchoStar's SpaceX stake",
+  "value": "~$39B, 2026",
+  "source_url": "https://www.proactiveinvestors.co.uk/companies/news/1098238/echostar-shares-rise-as-ubs-says-spacex-stake-makes-stock-undervalued-1098238.html"
+ },
+ {
+  "id": "investing-n02",
+  "finding": "investing",
+  "order": 3,
+  "label": "EchoStar cash and equivalents",
+  "value": "$13.44B, 30 September 2026",
+  "source_url": "https://www.panabee.com/news/echostar-earnings-q3-2026-report"
+ },
+ {
+  "id": "investing-n03",
+  "finding": "investing",
+  "order": 4,
+  "label": "SpaceX IPO price",
+  "value": "$135 a share, June 2026",
+  "source_url": "https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html"
+ },
+ {
+  "id": "investing-n04",
+  "finding": "investing",
+  "order": 5,
+  "label": "Anterix estimate of its spectrum value",
+  "value": "$2.5B-$7B+, April 2026",
+  "source_url": "https://finance.yahoo.com/markets/stocks/articles/anterix-investor-call-fcc-expands-140504313.html"
+ },
+ {
+  "id": "investing-n05",
+  "finding": "investing",
+  "order": 6,
+  "label": "AST SpaceMobile share gain",
+  "value": "+244%, 2025",
+  "source_url": "https://www.nasdaq.com/articles/why-ast-spacemobile-stock-rocketed-244-higher-2025"
+ }
+]

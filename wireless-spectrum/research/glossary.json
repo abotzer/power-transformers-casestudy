@@ -1,0 +1,1268 @@
+{
+ "terms": [
+  {
+   "id": "licensed-spectrum",
+   "term": "Licensed spectrum",
+   "aliases": "licensed spectrum | licensed band | licensed bands | spectrum licence | spectrum licences | spectrum license | spectrum licenses | FCC licence | FCC licences | FCC license | FCC licenses",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Radio frequencies the FCC assigns to one holder for exclusive use in a defined area and term, usually by auction. Exclusivity lets a carrier plan its network without interference from others, and it is the asset whose value this report tests."
+  },
+  {
+   "id": "unlicensed-spectrum",
+   "term": "Unlicensed spectrum",
+   "aliases": "unlicensed spectrum | unlicensed band | unlicensed bands | unlicensed use",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Frequencies anyone may use with certified equipment under power limits, without buying a licence. Wi-Fi runs here. It is a free substitute for licensed capacity, especially indoors: 82-89% of US smartphone data went over Wi-Fi in 2024 (Opensignal)."
+  },
+  {
+   "id": "mhz",
+   "term": "MHz",
+   "aliases": "MHz | megahertz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Megahertz, one million cycles per second. It gives both a band's position on the radio dial (e.g., 600 MHz) and a block's width (e.g., 30 MHz). Width is what decides how much data a licence can carry at each site."
+  },
+  {
+   "id": "ghz",
+   "term": "GHz",
+   "aliases": "GHz | gigahertz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Gigahertz, equal to 1,000 MHz. Bands at several GHz offer wide blocks for capacity, but their signals travel shorter distances, so they need denser networks."
+  },
+  {
+   "id": "mhz-pop",
+   "term": "MHz-pop",
+   "aliases": "MHz-pop | MHz-pops | MHz pop | MHz pops | MHz-POPs",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "The standard unit of spectrum quantity: block width in MHz multiplied by the population the licence covers. A nationwide 10 MHz licence covers about 335M people, or roughly 3.35B MHz-pops."
+  },
+  {
+   "id": "price-per-mhz-pop",
+   "term": "$/MHz-pop",
+   "aliases": "$/MHz-pop | per MHz-pop | dollars per MHz-pop | US$/MHz-pop | €/MHz-pop | EUR/MHz-pop | EUR/MHz/pop | C$/MHz-pop",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "A deal or auction price divided by MHz-pops, the yardstick for comparing spectrum prices across bands and deal sizes. The 2025-26 US deals mostly ran about $0.5-1.4, about $1.7 for 800 MHz if the reported Grain price is right. That compares with roughly $0.9 for lower C-band (2021), about $0.7 for 3.45 GHz (2022) and about €0.07 for European 3.5 GHz auctions. A rising figure would be the clearest sign of scarcity."
+  },
+  {
+   "id": "contiguous-spectrum",
+   "term": "Contiguous spectrum",
+   "aliases": "contiguous spectrum | contiguous block | contiguous blocks | contiguous range | wide channels | wider channels | channel width",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Frequencies in one unbroken range, which lets an operator run wide channels of 100 MHz or more. A US measurement study found that most 5G throughput gains came from wider channels rather than better technology. This is why contiguous mid-band next to a carrier's existing holdings commands the firmest prices."
+  },
+  {
+   "id": "paired-spectrum-fdd",
+   "term": "Paired spectrum (FDD)",
+   "aliases": "paired spectrum | paired block | paired blocks | FDD | frequency-division duplex | frequency division duplex | frequency-division duplexing",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Two equal blocks, one for sending to phones (downlink) and one for receiving from them (uplink), quoted as e.g. 2x7 MHz. Most low-band and older mid-band (600-900 MHz, PCS, AWS) is paired. Whether a deal's width is the total or per direction changes the implied $/MHz-pop, as in the Grain 800 MHz arithmetic."
+  },
+  {
+   "id": "unpaired-spectrum-tdd",
+   "term": "Unpaired spectrum (TDD)",
+   "aliases": "unpaired spectrum | unpaired | TDD | time-division duplex | time division duplex | time-division duplexing",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "A single block in which downlink and uplink take turns in time. Most new 5G mid-band (2.5 GHz, 3.45 GHz, CBRS, C-band) is TDD and supports wide channels. Isolated unpaired slivers fetch less: EchoStar's unpaired AWS-3 went to SpaceX at about $0.52/MHz-pop."
+  },
+  {
+   "id": "low-band",
+   "term": "Low-band",
+   "aliases": "low-band | low band | lowband | low-band spectrum | sub-1 GHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Spectrum below about 1 GHz (600, 700, 800 and 900 MHz). It travels far and passes through walls, so it sets rural and indoor coverage, but its blocks are narrow and carry little capacity. SpaceX buying 800 MHz for in-building coverage is the clearest evidence that low-band is a scarce input."
+  },
+  {
+   "id": "mid-band",
+   "term": "Mid-band",
+   "aliases": "mid-band | mid band | midband | mid-band spectrum",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Roughly 1-6 GHz, covering PCS, AWS, 2.5 GHz, 3.45 GHz, CBRS and C-band. It balances range and capacity. Wide contiguous mid-band blocks did most of the capacity work in US 5G, which makes mid-band the most contested band class today."
+  },
+  {
+   "id": "upper-mid-band",
+   "term": "Upper mid-band (7 GHz)",
+   "aliases": "upper mid-band | upper midband | 7 GHz | 7 GHz band | 7.125-8.4 GHz | 7.125-7.4 GHz | 7.4-8.4 GHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Frequencies around 7-8.4 GHz being studied for 6G. NTIA's study of 7.125-7.4 GHz is due December 10, 2026, and OBBBA bars auctions of 7.4-8.4 GHz. Clearing 275 MHz or more here would add supply, though existing users would leave exclusion zones, and Analysys Mason expects operators to value it only in high-traffic areas."
+  },
+  {
+   "id": "mmwave",
+   "term": "Millimeter wave (mmWave)",
+   "aliases": "millimeter wave | millimetre wave | millimeter-wave | millimetre-wave | mmWave | mmwave | high-band | high band | high-band spectrum | 24 GHz | 26 GHz | 28 GHz | 37 GHz | 39 GHz | 40 GHz | 47 GHz | Auction 101 | Auction 102 | Auction 103",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "High-band spectrum above about 24 GHz, with very wide blocks but a range of only a few hundred metres. Supply swamped demand. US 37/39/47 GHz licences sold for under a cent per MHz-pop in 2020, Verizon's 1,741 MHz carried little traffic (capable phones used it about 0.5% of the time), and Ofcom sold 5.4 GHz in 2025 for £39m."
+  },
+  {
+   "id": "600-mhz",
+   "term": "600 MHz",
+   "aliases": "600 MHz | 600 MHz band | 600 MHz spectrum | 600 MHz licences | 600 MHz licenses | Band 71 | n71",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Low-band spectrum (617-698 MHz) bought back from TV broadcasters and resold to carriers in the 2017 incentive auction, at roughly $0.9/MHz-pop. EchoStar sold 20 MHz of it to AT&T in the 2026 deal, and Comcast and Charter hold modest positions. Grain used 600 MHz licences as part of its payment to T-Mobile for 800 MHz."
+  },
+  {
+   "id": "700-mhz",
+   "term": "700 MHz",
+   "aliases": "700 MHz | 700 MHz band | 700 MHz spectrum | 700 MHz E-block | 700 MHz E block | Auction 73",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Low-band spectrum (698-806 MHz) from former TV channels, auctioned in 2008 and a core 4G coverage band for the large carriers. EchoStar's remaining licences reportedly include a 700 MHz E block, but the digest could not confirm its status."
+  },
+  {
+   "id": "800-mhz",
+   "term": "800 MHz",
+   "aliases": "800 MHz | 800 MHz band | 800 MHz spectrum | 800 MHz licences | 800 MHz licenses | 800 MHz portfolio",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Low-band spectrum with strong indoor reach. Grain Management bought T-Mobile's nationwide 800 MHz portfolio (546 licences, up to 14 MHz) in August 2026. On October 8, 2026 it agreed to sell the portfolio to SpaceX, reportedly for about $8B (unconfirmed and pending FCC approval); SpaceX says it needs the band because its 2 GHz spectrum does not reach indoors."
+  },
+  {
+   "id": "900-mhz",
+   "term": "900 MHz",
+   "aliases": "900 MHz | 900 MHz band | 900 MHz broadband | lower 900 MHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Narrow low-band slivers held by small listed companies. Anterix holds about 6 MHz of 900 MHz broadband spectrum, and NextNav holds about 8 MHz in the lower 900 MHz band. Their value depends mainly on a sale to one of a few possible buyers."
+  },
+  {
+   "id": "pcs",
+   "term": "PCS (Personal Communications Service)",
+   "aliases": "PCS | Personal Communications Service | PCS band | PCS spectrum | PCS G block | PCS G-block | G block | G-block | C-block PCS | PCS C block",
+   "case_sensitive": true,
+   "category": "Spectrum and bands",
+   "definition": "Mid-band spectrum around 1.9 GHz, auctioned from the mid-1990s and still a core 4G/5G band. NextWave's $4.74B bid for C-block PCS licences in 1996 ended in bankruptcy. Today about 5 MHz of T-Mobile's PCS G block carries SpaceX's first-generation Direct to Cell service in the US."
+  },
+  {
+   "id": "aws-1",
+   "term": "AWS-1",
+   "aliases": "AWS-1 | AWS1 | AWS-1 band | Auction 66",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Advanced Wireless Services 1: a paired mid-band block at 1710-1755 MHz and 2110-2155 MHz, auctioned in 2006 and now a core 4G/5G capacity band for the national carriers. AWS-3 and AWS-4 are later, separate bands with the same naming."
+  },
+  {
+   "id": "aws-3",
+   "term": "AWS-3",
+   "aliases": "AWS-3 | AWS3 | AWS-3 band | AWS-3 licences | AWS-3 licenses | unpaired AWS-3 | paired AWS-3 | Auction 97",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Mid-band spectrum near 1.7 and 2.1 GHz, auctioned in 2015 at about $2.2/MHz-pop, the US high-water mark. AWS-3 licences that went back to the FCC were re-auctioned in 2026 for $3.57B, slightly above Dish's original price, with SpaceX among the winners. SpaceX is also buying up to 15 MHz of EchoStar's unpaired AWS-3 for $2.6B in stock."
+  },
+  {
+   "id": "aws-4",
+   "term": "AWS-4",
+   "aliases": "AWS-4 | AWS4 | AWS-4 band | AWS-4 licences | AWS-4 licenses | 2 GHz holdings | 2 GHz spectrum | 2 GHz licences | 2 GHz licenses",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "About 40 MHz of former satellite (MSS) spectrum at 2 GHz. Dish bought it out of the TerreStar and DBSD bankruptcies for about $2.86B, and the FCC allowed terrestrial use in 2012. SpaceX agreed to buy it with the H-block for $17B ($8.5B cash, $8.5B stock); the FCC approved with flexible-use waivers on May 12, 2026, closing is expected around late 2027, and it is the template for value created by a regulatory upgrade plus a satellite buyer."
+  },
+  {
+   "id": "h-block",
+   "term": "H-block",
+   "aliases": "H-block | H block | H-Block | H-block licences | H-block licenses",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "A 10 MHz paired block next to the PCS band, which Dish bought for $1.67B. It goes to SpaceX together with AWS-4 in the $17B deal, at about $1.00/MHz-pop combined."
+  },
+  {
+   "id": "2-5-ghz",
+   "term": "2.5 GHz",
+   "aliases": "2.5 GHz | 2.5 GHz band | 2.5 GHz spectrum | n41 | Band 41 | Auction 108",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Mid-band TDD spectrum (2496-2690 MHz). Clearwire held it, Sprint bought out Clearwire's remaining shareholders in 2013, and after the 2020 merger T-Mobile made it its main 5G capacity band (n41). The original holders lost money while the large operator captured the value; a 2022 auction of leftover licences priced at a few cents per MHz-pop."
+  },
+  {
+   "id": "3-45-ghz",
+   "term": "3.45 GHz",
+   "aliases": "3.45 GHz | 3.45 GHz band | 3.45 GHz spectrum | 3.45-3.55 GHz | Auction 110",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "100 MHz at 3.45-3.55 GHz, auctioned in 2021-22 (Auction 110) for about $22.5B, roughly $0.67-0.73/MHz-pop. AT&T had been leasing EchoStar's 30 MHz of it and bought it in the $23B deal that closed July 28, 2026."
+  },
+  {
+   "id": "cbrs",
+   "term": "CBRS (Citizens Broadband Radio Service)",
+   "aliases": "CBRS | Citizens Broadband Radio Service | CBRS band | CBRS spectrum",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "150 MHz at 3.55-3.7 GHz shared in three tiers. Federal incumbents (mainly Navy radar) come first, Priority Access Licences (PALs) second, and General Authorized Access (GAA) users last. Sharing adds capacity without new exclusive licences, and cable companies hold CBRS to offload some traffic from the Verizon network they resell."
+  },
+  {
+   "id": "pal",
+   "term": "PAL (Priority Access License)",
+   "aliases": "PAL | PALs | Priority Access License | Priority Access Licenses | Priority Access Licence | Priority Access Licences | CBRS PAL | CBRS PALs | Auction 105",
+   "case_sensitive": true,
+   "category": "Spectrum and bands",
+   "definition": "The licensed middle tier of CBRS: 10 MHz channels sold by county for 10-year terms in the 2020 auction at about $0.22/MHz-pop. PALs are protected from GAA users but must yield to federal incumbents, and they priced far below exclusive mid-band."
+  },
+  {
+   "id": "gaa",
+   "term": "GAA (General Authorized Access)",
+   "aliases": "GAA | General Authorized Access",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "The open tier of CBRS. Anyone with certified equipment can use channels not taken by higher tiers, coordinated by automated databases, with no licence fee and no protection from interference. It is free capacity for private networks and offload, not a tradable asset."
+  },
+  {
+   "id": "c-band",
+   "term": "C-band",
+   "aliases": "C-band | C band | lower C-band | lower C band | Auction 107 | 3.7 GHz | 3.7-3.98 GHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "280 MHz at 3.7-3.98 GHz, cleared from satellite use and auctioned in 2021 (Auction 107) for about $81B in gross bids. That is roughly $0.9/MHz-pop before clearing payments and about 13 times the European 3.5 GHz average. Satellite incumbents received about $9.7B in accelerated relocation payments, and Verizon's C-band build is about 90% complete."
+  },
+  {
+   "id": "upper-c-band",
+   "term": "Upper C-band",
+   "aliases": "upper C-band | upper C band | Auction 115 | 3.98-4.2 GHz | 3.98-4.14 GHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "The slice above lower C-band. On July 22, 2026 the FCC adopted rules to auction 160 MHz at 3.98-4.14 GHz as Auction 115, with bidding from April 27, 2027, creating a 440 MHz contiguous C-band range. Analysts estimate proceeds of $30-75B (about $0.56-1.40/MHz-pop), and protecting aircraft altimeters is a key constraint."
+  },
+  {
+   "id": "6-ghz-unlicensed",
+   "term": "6 GHz unlicensed band",
+   "aliases": "6 GHz | 6 GHz band | 6 GHz unlicensed | upper 6 GHz | geofenced variable power | geofenced variable-power | GVP",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "1,200 MHz at 5.925-7.125 GHz that the US kept entirely for unlicensed use (Wi-Fi). Geofenced variable-power (GVP) rules, effective April 27, 2026, widen outdoor use. The UK is instead splitting upper 6 GHz between Wi-Fi and mobile; the US choice keeps a large free capacity layer competing with licensed spectrum."
+  },
+  {
+   "id": "3-1-3-45-ghz",
+   "term": "3.1-3.45 GHz",
+   "aliases": "3.1-3.45 GHz | 3.1-3.45 GHz band | lower 3 GHz",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "A federal band used heavily by military radar. OBBBA excludes it from auction, along with 7.4-8.4 GHz, which removes a large potential mid-band addition from the near-term US pipeline."
+  },
+  {
+   "id": "l-band",
+   "term": "L-band",
+   "aliases": "L-band | L band | L-Band",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Satellite spectrum around 1.5-1.6 GHz used by Iridium, Viasat/Inmarsat and Ligado. LightSquared's plan to use its L-band for terrestrial service was frozen in 2012 over GPS interference. AST SpaceMobile now has rights to up to 45 MHz of Ligado's L-band in North America (about $550M plus at least $80M a year), which Inmarsat disputes outside North America."
+  },
+  {
+   "id": "s-band",
+   "term": "S-band",
+   "aliases": "S-band | S band",
+   "case_sensitive": false,
+   "category": "Spectrum and bands",
+   "definition": "Satellite naming for roughly 2-4 GHz. It includes the 2 GHz mobile satellite bands (AWS-4 in the US, the EU 2 GHz MSS band) and part of Globalstar's spectrum. AST SpaceMobile bought 60 MHz of S-band priority rights for $64.5M."
+  },
+  {
+   "id": "lte",
+   "term": "LTE (4G)",
+   "aliases": "LTE | 4G | 4G LTE | Long Term Evolution",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "The fourth-generation mobile standard, launched in the US in December 2010. A measurement study found US mid-band 5G only marginally more efficient per data stream than LTE, so 5G's gains came mostly from new, wider spectrum."
+  },
+  {
+   "id": "5g",
+   "term": "5G",
+   "aliases": "5G | 5G NR | NR | New Radio",
+   "case_sensitive": true,
+   "category": "Technology",
+   "definition": "The fifth-generation mobile standard, launched in the US in April 2019. Its New Radio (NR) interface supports wide TDD channels in mid-band and mmWave. From 2018 to 2025 US traffic rose about 5.6x, while licensed sub-6 GHz spectrum in use rose about 1.6x and site counts about 1.3x."
+  },
+  {
+   "id": "5g-standalone",
+   "term": "5G standalone",
+   "aliases": "5G standalone | standalone 5G | 5G SA | 5G stand-alone",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "5G run on a 5G core network rather than a 4G core. It enables features such as network slicing and lower latency that could support premium services, but it adds no spectrum or raw capacity."
+  },
+  {
+   "id": "5g-advanced",
+   "term": "5G-Advanced",
+   "aliases": "5G-Advanced | 5G Advanced | 5.5G",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "The 3GPP upgrades to 5G that come before 6G. Nokia cites 20-40% higher spectral efficiency and up to 40% more uplink capacity. These gains arrive with normal equipment refresh and reduce how much new spectrum carriers need."
+  },
+  {
+   "id": "6g",
+   "term": "6G",
+   "aliases": "6G | sixth generation | sixth-generation | IMT-2030",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "The next mobile generation. 3GPP's first 6G specifications (Release 21) freeze in March 2029, and Ericsson expects first commercial systems in 2030. Its capacity case rests mostly on new spectrum such as 7 GHz rather than better efficiency, and a 6G build cycle around 2030 would raise carrier capex."
+  },
+  {
+   "id": "3gpp",
+   "term": "3GPP",
+   "aliases": "3GPP | 3rd Generation Partnership Project | Release 21 | Rel-21 | ASN.1 freeze",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "The industry body that writes the global mobile standards (LTE, 5G, 6G) in numbered releases. In June 2026 it approved the timeline for Release 21, the first 6G release, with the final ASN.1 freeze in March 2029."
+  },
+  {
+   "id": "spectral-efficiency",
+   "term": "Spectral efficiency",
+   "aliases": "spectral efficiency | bit/s/Hz | bps/Hz | bits per second per hertz | bit/s/Hz/stream",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Data carried per unit of spectrum, in bits per second per hertz. US mid-band 5G measured 1.9-2.3 bit/s/Hz per stream; Nokia's 6G target of 50 bps/Hz, against about 10 for 5G, is an ambition rather than a measurement. Each efficiency gain lets the same MHz carry more traffic, which lowers the value of extra MHz."
+  },
+  {
+   "id": "mimo",
+   "term": "MIMO",
+   "aliases": "MIMO | multiple-input multiple-output | multi-user MIMO | MU-MIMO | zero-forcing",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Multiple-input multiple-output: using several antennas at each end of the link to send parallel data streams over the same spectrum. A T-Mobile trial of an improved multi-user MIMO method (zero-forcing) reported 60% more than the legacy version, capacity gained without new spectrum."
+  },
+  {
+   "id": "massive-mimo",
+   "term": "Massive MIMO",
+   "aliases": "massive MIMO | massive-MIMO | mMIMO | extreme MIMO",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Base-station antenna arrays with dozens or more elements that steer narrow beams at many users at once; the standard radio for 5G mid-band. Nokia's 6G efficiency target assumes 'extreme MIMO' with even larger arrays and 400 MHz channels."
+  },
+  {
+   "id": "densification",
+   "term": "Densification",
+   "aliases": "densification | cell densification | network densification | cell splitting | denser grid | denser grids",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Adding cell sites or small cells so each covers a smaller area and the same spectrum is reused more often. Historically it delivered most capacity growth, about 1,600x by the usual reading of Cooper's law. Because it substitutes for spectrum, its cost caps what spectrum is worth."
+  },
+  {
+   "id": "coopers-law",
+   "term": "Cooper's law",
+   "aliases": "Cooper's law | Cooper's Law",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Martin Cooper's observation that wireless capacity has doubled roughly every 30 months. The usual reading splits the roughly million-fold gain since the late 1950s into densification (about 1,600x), more spectrum (about 30x) and better modulation and coding (10x or less). In other words, more sites have mattered more than more spectrum."
+  },
+  {
+   "id": "small-cell",
+   "term": "Small cell",
+   "aliases": "small cell | small cells | small-cell | outdoor small cell | outdoor small cells",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "A low-power base station on a pole or building that covers a few hundred metres and adds capacity in busy areas. Small-cell layers can reach 10,000+ Mbps per km², far above macro networks, so they are a main alternative to buying more spectrum in dense cores."
+  },
+  {
+   "id": "macro-site",
+   "term": "Macro site",
+   "aliases": "macro site | macro sites | macro cell | macro cells | macro grid | macro network | cell site | cell sites | site grid",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "A full-size cell site on a tower or rooftop covering kilometres; the backbone of a mobile network. WIA counted about 453,000 US macro sites plus outdoor small cells at end-2025. Spectrum and towers are complements, so a MHz is worth most to whoever owns a dense site grid, and SpaceX is reportedly seeking access to at least 80,000 US cell sites."
+  },
+  {
+   "id": "uplink",
+   "term": "Uplink",
+   "aliases": "uplink | uplink traffic | uplink share | upload traffic",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Traffic sent from the device to the network, about 10% of mobile traffic. Phone transmit power limits the uplink, so uplink-heavy AI use (GenAI traffic was 26% uplink) would consume a disproportionate share of spectrum and favour low- and mid-band coverage. Ericsson's scenarios have AI tripling to quintupling uplink volume by 2031."
+  },
+  {
+   "id": "downlink",
+   "term": "Downlink",
+   "aliases": "downlink | downlink traffic",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Traffic sent from the network to the device: about 90% of mobile traffic, dominated by video. Networks are built for roughly 10:1 downlink to uplink, and FWA is especially downlink-heavy."
+  },
+  {
+   "id": "wi-fi",
+   "term": "Wi-Fi",
+   "aliases": "Wi-Fi | WiFi | Wi-Fi 7 | Wi-Fi 6E",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Wireless local networking on unlicensed spectrum, paid for by consumers and cable companies rather than mobile carriers. It is the largest capacity lever by volume and the main substitute for licensed mobile capacity indoors."
+  },
+  {
+   "id": "wi-fi-offload",
+   "term": "Wi-Fi offload",
+   "aliases": "Wi-Fi offload | Wi-Fi offloading | offload to Wi-Fi | offloaded to Wi-Fi",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Phone data that goes over Wi-Fi instead of the mobile network: 82-89% of US smartphone data in 2024 (Opensignal). High offload means less demand on licensed spectrum. Unlimited plans and faster 5G could erode it, but most phone use happens at home."
+  },
+  {
+   "id": "private-5g",
+   "term": "Private 5G",
+   "aliases": "private 5G | private network | private networks | private LTE | private wireless",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "A dedicated cellular network for one site or organisation, such as a factory, warehouse or utility, often on CBRS or specialist bands. Robot makers recommend it for industrial sites, which keeps much machine traffic off public licensed networks."
+  },
+  {
+   "id": "propagation",
+   "term": "Propagation",
+   "aliases": "propagation | indoor coverage | in-building coverage | indoor reach",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "How far a radio signal travels and how well it passes through walls; lower frequencies propagate better. T-Mobile says more than 70% of traffic is indoors. That is why low-band is prized, and why satellites, with limited indoor capacity, cannot serve most demand."
+  },
+  {
+   "id": "capacity-density",
+   "term": "Capacity density (Mbps per km²)",
+   "aliases": "capacity density | Mbps per km² | Mbps/km² | Mbps/km2 | Mbps per km2 | Gbps per km² | Gbps per km2",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "The data throughput a network can deliver per square kilometre, which decides who can serve dense demand. Whitesail estimates first-generation satellite D2D at about 0.01-0.03 Mbps/km² and next-generation targets at 1-6. That compares with 1,500-9,000 for dense urban macro networks and 5-30 for rural macro."
+  },
+  {
+   "id": "exabyte",
+   "term": "Exabyte (EB)",
+   "aliases": "EB | exabyte | exabytes | EB/month | EB/yr | EB per month | EB per year | trillion MB",
+   "case_sensitive": true,
+   "category": "Technology",
+   "definition": "One billion gigabytes. CTIA's count of 159.3 trillion MB of US mobile traffic in 2025 equals 159.3 EB. That was up 20% on 2024, the slowest growth since 2020."
+  },
+  {
+   "id": "ai-traffic",
+   "term": "AI traffic",
+   "aliases": "AI traffic | GenAI traffic | AI-driven traffic | direct AI traffic | AI-related traffic",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "Mobile data generated directly by AI apps, agents and AI devices. Ericsson measured GenAI apps at 0.06% of mobile traffic in April 2025. Forecasts of an AI-driven step change are scenario models, mostly from equipment vendors and CTIA, which benefit from a scarcity story."
+  },
+  {
+   "id": "agentic-ai",
+   "term": "Agentic AI",
+   "aliases": "agentic AI | AI agent | AI agents",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "AI systems that carry out multi-step tasks on a user's behalf. Nokia projects agentic AI traffic reaching 160x its 2026 level by 2035, but critics note that most agent traffic runs server-to-server and never touches the radio network."
+  },
+  {
+   "id": "physical-ai",
+   "term": "Physical AI",
+   "aliases": "physical AI | robotaxi | robotaxis | humanoid robots",
+   "case_sensitive": false,
+   "category": "Technology",
+   "definition": "AI built into machines that move in the physical world: robotaxis, delivery robots, drones and humanoid robots. The outdoor, moving part is what needs wide-area licensed coverage, but it is tiny so far: Waymo's roughly 4,000 robotaxis add about 0.02% of US traffic."
+  },
+  {
+   "id": "d2d",
+   "term": "D2D (direct-to-device)",
+   "aliases": "D2D | direct-to-device | direct to device | direct-to-phone | direct to phone | satellite direct-to-device | satellite-to-phone",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "Satellites connecting directly to ordinary phones and devices, with no dish. It has a large user base but little revenue, and its capacity per square kilometre is far below terrestrial networks. It adds a coverage layer and a competitor, not relief for urban demand."
+  },
+  {
+   "id": "d2c",
+   "term": "D2C (direct-to-cell)",
+   "aliases": "D2C",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "Direct-to-cell, SpaceX's term for its satellite D2D service (see Starlink Direct to Cell). SpaceX counted about 7.4M monthly unique D2C devices in about 30 countries at March 31, 2026."
+  },
+  {
+   "id": "ntn",
+   "term": "NTN (non-terrestrial network)",
+   "aliases": "NTN | non-terrestrial network | non-terrestrial networks | 3GPP NTN",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "The 3GPP standards that let satellites connect to standard phones and IoT chipsets as part of 5G. Because D2D then works on ordinary devices, the market widens for satellite operators with suitable spectrum."
+  },
+  {
+   "id": "scs",
+   "term": "SCS (supplemental coverage from space)",
+   "aliases": "SCS | supplemental coverage from space | Supplemental Coverage from Space",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "The FCC framework that lets a satellite operator partnered with a carrier reuse that carrier's terrestrial licensed spectrum to fill coverage gaps, under emission limits. Existing licences do double duty, which is the opposite of new scarcity."
+  },
+  {
+   "id": "mss",
+   "term": "MSS (mobile satellite service)",
+   "aliases": "MSS | mobile satellite service | mobile-satellite service | mobile satellite services | MSS spectrum | MSS band | MSS bands | 2 GHz MSS | 2 GHz MSS band",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "Spectrum allocated for satellite links to mobile terminals, such as L-band, the 2 GHz S-band and Globalstar's band. These bands are few and contested, and FCC flexible-use waivers can make them usable on the ground. The EU's 2x30 MHz 2 GHz MSS rights expire in May 2027, and a May 2026 Commission proposal would re-award them EU-wide for 20 years."
+  },
+  {
+   "id": "leo",
+   "term": "LEO (low Earth orbit)",
+   "aliases": "LEO | low Earth orbit | low-Earth orbit",
+   "case_sensitive": true,
+   "category": "Satellite",
+   "definition": "Orbits a few hundred to about 2,000 km up, used by Starlink, AST SpaceMobile, Amazon Leo and Iridium. Low orbits allow phone-strength signals and short delays, but each satellite moves quickly overhead, so large constellations are needed."
+  },
+  {
+   "id": "beam",
+   "term": "Beam",
+   "aliases": "beam | beams | spot beam | spot beams",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "The patch of ground a satellite antenna serves at one time; everyone in it shares the beam's capacity. A first-generation D2D beam carries about 5-10 Mbps over several hundred km², so satellites cannot reuse spectrum as intensively as towers 0.5-2 km apart."
+  },
+  {
+   "id": "epfd",
+   "term": "EPFD (equivalent power flux density)",
+   "aliases": "EPFD | equivalent power flux density | equivalent power flux-density | EPFD limits",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "International limits on the combined power that non-geostationary constellations may put on the ground, set to protect geostationary satellites. Loosening them would raise LEO capacity. 2026 FCC decisions on EPFD were not checked for this report."
+  },
+  {
+   "id": "next-generation-satellites",
+   "term": "Next-generation (Gen2) D2D satellites",
+   "aliases": "next-generation satellites | next-gen satellites | next-generation D2D | next-gen D2D | Gen2 | Gen-2",
+   "case_sensitive": false,
+   "category": "Satellite",
+   "definition": "SpaceX's planned second D2D fleet. The FCC authorized up to 15,000 satellites in October 2026, launches start in 2027, and expanded service on 65 MHz of former EchoStar spectrum is targeted for end-2027. SpaceX's targets are about 20x per-satellite throughput, over 100x system capacity and about 150 Mbps per user."
+  },
+  {
+   "id": "fcc",
+   "term": "FCC (Federal Communications Commission)",
+   "aliases": "FCC | Federal Communications Commission",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The independent US regulator that licenses non-federal spectrum, runs auctions, approves licence transfers with conditions and sets technical rules. Its decisions on permitted use, interference and concentration have driven spectrum outcomes more than total data demand."
+  },
+  {
+   "id": "ntia",
+   "term": "NTIA",
+   "aliases": "NTIA | National Telecommunications and Information Administration",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The Commerce Department agency that manages federal government spectrum and studies which federal bands can be shared or freed for commercial use. Its study of 7.125-7.4 GHz is due December 10, 2026."
+  },
+  {
+   "id": "dod",
+   "term": "DoD (Department of Defense)",
+   "aliases": "DoD | Department of Defense | Pentagon",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The largest federal spectrum user, with radar and other systems in bands such as 3.1-3.45 GHz and 4.4-4.8 GHz. Its resistance to vacating or sharing bands is a main brake on the US spectrum pipeline."
+  },
+  {
+   "id": "itu",
+   "term": "ITU",
+   "aliases": "ITU | International Telecommunication Union | ITU-R",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The UN agency that coordinates global spectrum allocations and satellite orbits through its World Radiocommunication Conferences. National regulators largely follow its allocations, so its decisions shape where global equipment ecosystems form."
+  },
+  {
+   "id": "wrc-27",
+   "term": "WRC-27",
+   "aliases": "WRC-27 | WRC 27 | World Radiocommunication Conference 2027 | agenda item 1.7 | agenda item 1.13",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The ITU's treaty conference in late 2027. Agenda item 1.7 studies 4.4-4.8, 7.125-8.4 and 14.8-15.35 GHz for mobile (6G) use. Item 1.13 studies letting satellites connect to phones in bands now used for terrestrial mobile (roughly 694 MHz-2.7 GHz)."
+  },
+  {
+   "id": "obbba",
+   "term": "OBBBA (One Big Beautiful Bill Act)",
+   "aliases": "OBBBA | One Big Beautiful Bill Act | One Big Beautiful Bill | 2025 budget law",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The July 2025 budget law that restored FCC auction authority through September 30, 2034 and set an 800 MHz spectrum pipeline, with at least 300 MHz auctioned by 2034. It also requires at least 100 MHz of upper C-band to be auctioned by July 2027 and bars auctions of 3.1-3.45 GHz and 7.4-8.4 GHz. In effect it writes rising supply into law, which caps scarcity."
+  },
+  {
+   "id": "auction-authority",
+   "term": "Auction authority",
+   "aliases": "auction authority | FCC auction authority | spectrum auction authority",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Congress's legal permission for the FCC to assign licences by competitive bidding. It had lapsed until OBBBA restored it through September 30, 2034, reopening the main route for new licensed supply."
+  },
+  {
+   "id": "spectrum-pipeline",
+   "term": "Spectrum pipeline",
+   "aliases": "spectrum pipeline | 800 MHz pipeline | 800 MHz spectrum pipeline | 800 MHz statutory pipeline | statutory pipeline",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The 800 MHz of spectrum that OBBBA directs the government to identify for commercial use, with auction deadlines attached. Whitesail's P50 has about 200 MHz of new licensed mid-band in US service by 2030 and 600 MHz by 2035. Every MHz added works against scarcity pricing."
+  },
+  {
+   "id": "incentive-auction",
+   "term": "Incentive auction",
+   "aliases": "incentive auction | incentive auctions | broadcast incentive auction | reverse auction | forward auction",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "A two-sided FCC auction that pays incumbents to give up spectrum (the reverse auction) and sells the freed band to mobile bidders (the forward auction). The 2017 broadcast incentive auction created the 600 MHz band. It is one of the cases where a regulator widening a band's use rewarded the existing holders."
+  },
+  {
+   "id": "clock-auction",
+   "term": "Clock auction",
+   "aliases": "clock auction | clock auctions | ascending clock auction | clock phase | assignment phase",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The FCC's main format for large bands. Prices for generic blocks rise round by round until demand falls to the supply on offer, then an assignment phase allocates specific frequencies. The C-band and 3.45 GHz auctions used it."
+  },
+  {
+   "id": "reserve-price",
+   "term": "Reserve price",
+   "aliases": "reserve price | reserve prices | minimum opening bid | minimum opening bids",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The lowest price at which a regulator will sell spectrum. India's June 2024 auction left 98.7% of the MHz offered unsold at reserve, and reserve cuts of a reported 20-40% are now proposed. That is evidence that reserve prices sat above what operators would pay."
+  },
+  {
+   "id": "reauction",
+   "term": "Re-auction",
+   "aliases": "re-auction | reauction | re-auctioned | AWS-3 re-auction",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The FCC selling licences again after the original winner defaulted or returned them. The 2026 AWS-3 re-auction raised $3.57B, slightly above Dish's original price, with SpaceX among the winners."
+  },
+  {
+   "id": "relocation-payment",
+   "term": "Relocation payment",
+   "aliases": "relocation payment | relocation payments | relocation costs | clearing costs | clearing payments",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Money that auction winners pay incumbents to move out of a band, covering items such as new equipment, filters or satellite changes. These costs sit on top of the bids, so the true cost per MHz-pop of a band like C-band exceeds its headline auction price."
+  },
+  {
+   "id": "accelerated-relocation-payment",
+   "term": "Accelerated relocation payment",
+   "aliases": "accelerated relocation payment | accelerated relocation payments",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "A bonus paid to C-band satellite operators, such as SES and Intelsat, for clearing the band faster than required: about $9.7B in total. It shows incumbents capturing value when a regulator repurposes their band."
+  },
+  {
+   "id": "buildout-requirement",
+   "term": "Buildout requirement",
+   "aliases": "buildout requirement | buildout requirements | build-out requirement | build-out requirements | performance obligation | performance obligations | build-out | buildout",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Licence conditions that require the holder to serve a set share of population or area by deadlines, or risk losing the licences. FCC scrutiny of Dish's build-out helped force EchoStar's sales, and SpaceX's EchoStar licences carry new performance obligations. These rules make idle spectrum costly to hold."
+  },
+  {
+   "id": "spectrum-screen",
+   "term": "Spectrum screen",
+   "aliases": "spectrum screen | spectrum aggregation limit | spectrum aggregation limits | aggregation limits | concentration limits | spectrum cap | spectrum caps",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The FCC's threshold for how much suitable spectrum one company can hold in a market before an acquisition gets extra competitive review. It limits how much the largest carriers can buy, which narrows the pool of buyers for big blocks."
+  },
+  {
+   "id": "accepted-for-filing",
+   "term": "Accepted for filing",
+   "aliases": "accepted for filing",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "An FCC notice that a licence-transfer application is complete and open for comment. It starts the review and is not an approval. SpaceX's purchase of Grain's 800 MHz licences was at this stage in November 2026."
+  },
+  {
+   "id": "designated-entity",
+   "term": "Designated entity",
+   "aliases": "designated entity | designated entities",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "A small business eligible for FCC bidding credits (discounts) in spectrum auctions. Of the more than $30B Dish put into licences, more than $10B went through designated entities it financed."
+  },
+  {
+   "id": "flexible-use",
+   "term": "Flexible use",
+   "aliases": "flexible use | flexible-use | flexible-use waiver | flexible-use waivers | hybrid use",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Licence terms that let the holder choose the service: terrestrial mobile, satellite, or a hybrid of both. The FCC's waivers on EchoStar's satellite bands for SpaceX turned MSS spectrum into hybrid spectrum. That raises the value for the holder, but it also adds usable supply to the market."
+  },
+  {
+   "id": "interference",
+   "term": "Interference",
+   "aliases": "interference | harmful interference | interference ruling | interference rulings",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Unwanted signal from one system degrading another; the most common reason bands are restricted. LightSquared's L-band plan was frozen in 2012 over GPS interference, which shows how one ruling can wipe out a spectrum bet."
+  },
+  {
+   "id": "out-of-band-emissions",
+   "term": "Out-of-band emissions",
+   "aliases": "out-of-band emissions | out-of-band emission | OOBE | emission limits | emission limit",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Signal energy that leaks outside a transmitter's assigned band into neighbouring bands. Limits on it govern how much power satellites can use in carriers' bands under SCS, and how close new services can sit to incumbents. 2026 FCC decisions on these limits were not checked for this report."
+  },
+  {
+   "id": "radio-altimeter",
+   "term": "Radio altimeter",
+   "aliases": "radio altimeter | radio altimeters | altimeter | altimeters | altimeter constraints | altimeter protections",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "An aircraft instrument operating at 4.2-4.4 GHz, just above C-band. FAA interference concerns led to power limits on C-band near airports, and protections could cut usable upper C-band to about 100 MHz of the up to 180 MHz available, which lowers what the auction can raise."
+  },
+  {
+   "id": "licence-renewal",
+   "term": "Licence renewal and extension",
+   "aliases": "licence renewal | licence renewals | license renewal | license renewals | licence extension | license extension | renewal or extension | investment obligations | coverage obligations",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "Rolling expiring licences over to their current holders instead of re-auctioning them, sometimes with coverage or investment obligations in place of cash. Germany extended its 800/1800/2600 MHz rights by five years in 2025, and Brazil's 2021 auction turned at least 90% of the spectrum's value into investment obligations. The trend lowers operators' costs but leaves fewer market-priced transactions."
+  },
+  {
+   "id": "ofcom",
+   "term": "Ofcom",
+   "aliases": "Ofcom",
+   "case_sensitive": false,
+   "category": "Regulation",
+   "definition": "The UK communications regulator. Its October 2025 mmWave award sold all 5.4 GHz offered at 26 and 40 GHz for £39m in total, and it is splitting upper 6 GHz between Wi-Fi and mobile."
+  },
+  {
+   "id": "arpu",
+   "term": "ARPU (average revenue per user)",
+   "aliases": "ARPU | average revenue per user | average revenue per unit",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Average monthly service revenue per subscriber line. If spectrum scarcity let carriers raise prices, it would show up here first. Instead, industry service prices fell 4.1% in 2025 and Starlink's ARPU fell 22%."
+  },
+  {
+   "id": "arpa",
+   "term": "ARPA (average revenue per account)",
+   "aliases": "ARPA | average revenue per account",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Average monthly revenue per customer account, which can hold several lines. Verizon and T-Mobile now report it instead of per-line ARPU. In Q3 2026 Verizon's postpaid ARPA fell 1.9% to $168.08 while T-Mobile's rose 4% to $155.73, making T-Mobile the one carrier showing pricing power."
+  },
+  {
+   "id": "postpaid",
+   "term": "Postpaid",
+   "aliases": "postpaid | post-paid",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Customers billed monthly, usually on device-payment plans; the most valuable, lowest-churn segment. Postpaid phone net adds, churn and ARPA are the carriers' headline metrics."
+  },
+  {
+   "id": "prepaid",
+   "term": "Prepaid",
+   "aliases": "prepaid | pre-paid",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Customers who pay in advance with no contract, typically at lower ARPU and higher churn than postpaid customers."
+  },
+  {
+   "id": "churn",
+   "term": "Churn",
+   "aliases": "churn | churn rate | postpaid phone churn | account churn",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The share of customers who leave each month. In Q3 2026 AT&T's postpaid phone churn was 0.92% and Verizon's 0.94%, while T-Mobile's account churn rose 12 basis points to 1.09%. Rising churn signals competition that erodes pricing power."
+  },
+  {
+   "id": "net-adds",
+   "term": "Net adds",
+   "aliases": "net adds | net additions | net add | phone net adds | net account additions | net account adds",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "New customers minus those who left in a period. Verizon added 406k postpaid phones in Q3 2026, against 44k a year earlier, but with promotions and falling ARPA: growth from taking share, not from pricing."
+  },
+  {
+   "id": "mvno",
+   "term": "MVNO (mobile virtual network operator)",
+   "aliases": "MVNO | MVNOs | mobile virtual network operator | mobile virtual network operators | hybrid MVNO",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "A mobile brand that resells another carrier's network instead of owning spectrum and towers. A hybrid MVNO, like Boost Mobile on AT&T, runs some of its own network elements but relies on a host carrier's radio network."
+  },
+  {
+   "id": "cable-mvno",
+   "term": "Cable MVNO",
+   "aliases": "cable MVNO | cable MVNOs | Xfinity Mobile",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Comcast (Xfinity Mobile, about 10.6M lines) and Charter (13.5M lines including Cox) selling mobile service on Verizon's network, bundled with home broadband. Together they added about 876k lines in Q3 2026, more than AT&T's and Verizon's combined phone adds. About half of Comcast's postpaid connects were free lines, a sign of a promotional market."
+  },
+  {
+   "id": "facilities-based-carrier",
+   "term": "Facilities-based carrier",
+   "aliases": "facilities-based carrier | facilities-based carriers | facilities-based | mobile network operator | mobile network operators | MNO | MNOs",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "A carrier that owns and runs its own radio network on its own spectrum, as opposed to an MVNO. EchoStar's spectrum sales cut the US from four national facilities-based carriers to three. That would normally support pricing, but cable and the prospect of SpaceX have offset it."
+  },
+  {
+   "id": "big-3",
+   "term": "Big 3",
+   "aliases": "Big 3 | Big Three | Big-3 | big three",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "AT&T, Verizon and T-Mobile, the three national facilities-based carriers that own most of the valuable US bands. FCC licences are roughly 45-47% of enterprise value at AT&T and Verizon and about 29% at T-Mobile (rough book-value estimates). Even so, their stocks track pricing and competition, not spectrum values."
+  },
+  {
+   "id": "service-revenue",
+   "term": "Service revenue",
+   "aliases": "service revenue | service revenues | wireless service revenue | industry service revenue",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Recurring revenue from selling mobile service, excluding device sales. US industry service revenue was about $235B in 2025 (other trackers say $255-326B). It has grown only about 3% a year in nominal terms since 2007, while traffic rose by orders of magnitude."
+  },
+  {
+   "id": "revenue-per-gb",
+   "term": "Revenue per GB",
+   "aliases": "revenue per GB | service revenue per GB | price per GB | price per MB",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Service revenue divided by data carried. It fell from $412 in 2010 to $4.50 in 2020 and $1.48 in 2025, about 20% a year, and price per MB fell 21% in 2025. Carriers are selling capacity at falling unit prices, the opposite of what scarcity would produce."
+  },
+  {
+   "id": "wireless-price-index",
+   "term": "Wireless service price index (CPI)",
+   "aliases": "wireless CPI | service price index | wireless service price index | wireless price index",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Price indices for wireless service. CTIA's service price index fell 4.1% in 2025, and the BLS wireless CPI is the official monthly series. Secondary reports of a 5.9% month-on-month jump in August 2026 after carrier price rises are unverified; a sustained rise would be the clearest sign of pricing power."
+  },
+  {
+   "id": "capex",
+   "term": "Capex (capital expenditure)",
+   "aliases": "capex | capital expenditure | capital expenditures | capital spending | cash capex | capital intensity | capex intensity",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Spending on network equipment and construction. US wireless capex was about $30B in 2025, down from a $39B peak in 2022 even as traffic grew, and Verizon and T-Mobile are trimming it. Capital intensity (capex as a share of revenue) back above the 2022 peak would signal a real capacity crunch."
+  },
+  {
+   "id": "fwa",
+   "term": "FWA (fixed wireless access)",
+   "aliases": "FWA | fixed wireless access | fixed wireless | fixed-wireless | 5G broadband | 5G home internet | Internet Air",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Home broadband delivered over a mobile network to a fixed receiver. It has been the biggest new load on US licensed mid-band since 2021: about 17-19M lines in 2026, each using about 500 GB a month against about 25 GB for a phone. It is sold cheaply on spare capacity, which signals headroom, and carriers can stop selling it if capacity tightens."
+  },
+  {
+   "id": "tower-companies",
+   "term": "Tower companies",
+   "aliases": "tower company | tower companies | towerco | towercos | tower REIT | tower REITs",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Firms such as American Tower, Crown Castle and SBA that own towers and lease space on them to carriers. They hold no licensed spectrum but gain if scarce spectrum forces carriers, or SpaceX, to add sites. Morgan Stanley called the SpaceX-Grain deal constructive for them."
+  },
+  {
+   "id": "spectrum-lease",
+   "term": "Spectrum lease",
+   "aliases": "spectrum lease | spectrum leases | spectrum leasing | leased spectrum",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "A contract letting another party use licensed spectrum for a term while the licensee keeps the licence. AT&T leased EchoStar's 3.45 GHz before buying it, and AST SpaceMobile pays Ligado at least $80M a year for L-band. T-Mobile says it will not lease capacity to SpaceX."
+  },
+  {
+   "id": "pricing-power",
+   "term": "Pricing power",
+   "aliases": "pricing power",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The ability to raise prices without losing customers; this is how scarcity would reach carrier shareholders. In 2025-26 only T-Mobile showed it (ARPA up 4%), while Verizon pledged no increases 'without corresponding value'."
+  },
+  {
+   "id": "spectrum-deficit",
+   "term": "Spectrum deficit",
+   "aliases": "spectrum deficit | spectrum shortfall | spectrum shortage | spectrum gap | capacity crunch | capacity shortage",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Industry estimates of the gap between projected demand and licensed supply, quoted in MHz. These forecasts have a poor record: the FCC's 2010 paper projected a shortfall of about 275-300 MHz by 2014, and carriers absorbed the growth without visible failure. Brattle now projects about 400 MHz by 2027 and 1,400 MHz by 2032."
+  },
+  {
+   "id": "avoided-cost",
+   "term": "Avoided cost",
+   "aliases": "avoided cost | cost of alternative capacity | next-cheapest capacity",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The cost a carrier saves by adding spectrum instead of building more sites; it caps what spectrum is economically worth. The FCC's 2010 paper put it at about $120B ($174B with new sites alone, against $54B with 275 MHz more spectrum). Efficiency gains, slower demand and new supply all reduce it through 2035."
+  },
+  {
+   "id": "convergence",
+   "term": "Satellite-terrestrial convergence",
+   "aliases": "convergence | satellite-terrestrial convergence | satellite and terrestrial convergence",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "Satellite and land-based mobile networks merging into one service and one spectrum market, which brings in deep-pocketed bidders such as SpaceX and Amazon. Whitesail finds that it adds a competitor and a coverage layer rather than easing urban scarcity, and markets have read it as bad news for carriers."
+  },
+  {
+   "id": "ctia",
+   "term": "CTIA",
+   "aliases": "CTIA | CTIA Annual Survey | CTIA survey",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The US wireless industry trade association. Its Annual Survey is the main source for US traffic, capex, sites and service revenue. It also commissions spectrum-need studies such as Brattle's and projects about 4x US demand by 2032, and it benefits from a scarcity story."
+  },
+  {
+   "id": "gsma",
+   "term": "GSMA",
+   "aliases": "GSMA | GSMA Intelligence",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The global mobile operator association and its research arm. It reports spectrum costs at about 7% of operator revenue and revenue per MHz down 60-67% from 2014 to 2023, and says dense urban areas need 2-3 GHz of mid-band. It lobbies for cheaper spectrum, so its figures are not neutral."
+  },
+  {
+   "id": "brattle-study",
+   "term": "Brattle study",
+   "aliases": "Brattle study | Brattle report | Brattle Group | Brattle",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "A 2023 study by the consultancy the Brattle Group, commissioned by CTIA, projecting a US licensed spectrum deficit of about 400 MHz by 2027 and about 1,400 MHz by 2032. It is the main industry case for more auctions, and past shortfall forecasts of this kind have overshot."
+  },
+  {
+   "id": "ericsson-mobility-report",
+   "term": "Ericsson Mobility Report",
+   "aliases": "Ericsson Mobility Report | Mobility Report",
+   "case_sensitive": false,
+   "category": "Industry and business",
+   "definition": "The equipment vendor Ericsson's twice-yearly mobile traffic report and forecast, published in June and November (the next edition is due November 30, 2026). The June 2026 edition forecasts 515 EB a month of global traffic by 2031, but its forecasts have tended to run high and be revised down."
+  },
+  {
+   "id": "enterprise-value",
+   "term": "Enterprise value (EV)",
+   "aliases": "enterprise value | enterprise values | EV",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Equity market value plus net debt: the value of the whole business, licences included, to all providers of capital. Comparing licence book value with EV shows how much of a carrier's value its spectrum represents."
+  },
+  {
+   "id": "ev-ebitda",
+   "term": "EV/EBITDA",
+   "aliases": "EV/EBITDA | EV/EBITDA multiple | EV-to-EBITDA",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Enterprise value divided by EBITDA (earnings before interest, tax, depreciation and amortisation), the standard telecom valuation multiple. Whitesail estimates the Big 3 at roughly 6.5-7.5x (about 6.9x on average), in line with their usual 6-8x, so the market pays no visible premium for their spectrum."
+  },
+  {
+   "id": "impairment",
+   "term": "Impairment",
+   "aliases": "impairment | impairments | impairment charge | write-down | write-downs | written down",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "An accounting charge that cuts an asset's book value when what it can recover falls below the amount on the balance sheet. A write-down, or a sale below book, shows that spectrum has lost value: EchoStar's unpaired AWS-3 reportedly sold about 73% below book (weak source)."
+  },
+  {
+   "id": "book-value-of-licences",
+   "term": "Book value of licences",
+   "aliases": "book value | book value of licences | book value of licenses | licence book value | license book value | carrying value | carrying values",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "The amount at which spectrum licences sit on the balance sheet: essentially what was paid plus capitalised costs, not a market value. Whitesail estimates the Big 3's combined FCC licence book value at about $410B. Because spectrum is carried at cost, a rise in its market value does not show up in reported equity."
+  },
+  {
+   "id": "capitalized-interest",
+   "term": "Capitalized interest",
+   "aliases": "capitalized interest | capitalised interest | carrying cost | carrying costs",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Interest on debt that funded an asset not yet in service, added to the asset's book value instead of being expensed. Dish's licences carried about $7.5B of it in a $37.5B book basis, a measure of the cost of holding idle spectrum."
+  },
+  {
+   "id": "sum-of-the-parts",
+   "term": "Sum-of-the-parts",
+   "aliases": "sum-of-the-parts | sum of the parts | SOTP | look-through value | look-through | holding-company discount | holdco discount",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Valuing a company by pricing each asset separately and subtracting debt. EchoStar's gross look-through value (its SpaceX shares, pending SpaceX cash and its own cash, less debt) is about $50B, against a reported market value of about $34B. That is a roughly 30% discount, within the 10-40% typical for listed holding companies."
+  },
+  {
+   "id": "total-return",
+   "term": "Total return",
+   "aliases": "total return | total returns | total shareholder return | TSR | shareholder return | shareholder returns",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Share-price change plus dividends. Recent carrier returns have come mainly from dividends and buybacks funded by lower capex, not from spectrum. EchoStar's top Fortune 500 return came from selling its licences to two bidders."
+  },
+  {
+   "id": "lockup",
+   "term": "Lockup",
+   "aliases": "lockup | lock-up | lockups | lock-ups | lockup release | lock-up expiry",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A period after an IPO during which insiders may not sell shares. A 1.3B-share SpaceX lockup release on October 22, 2026 cut the stock 9% in a day. The main 180-day lockup ends December 8, 2026, adding more SPCX shares to the market."
+  },
+  {
+   "id": "ipo",
+   "term": "IPO (initial public offering)",
+   "aliases": "IPO | IPOs | initial public offering",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A company's first sale of shares to the public. SpaceX priced its IPO on June 11, 2026 at $135 a share, raising about $75B (about $85.7B with the over-allotment) at a valuation of about $1.77T."
+  },
+  {
+   "id": "etf",
+   "term": "ETF (exchange-traded fund)",
+   "aliases": "ETF | ETFs | exchange-traded fund | exchange-traded funds",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A fund whose shares trade on an exchange and track a basket of holdings. None isolates spectrum: IYZ and XTL are mostly carriers, UFO and ARKX hold satellite names, and XOVR holds SpaceX."
+  },
+  {
+   "id": "closed-end-fund",
+   "term": "Closed-end fund",
+   "aliases": "closed-end fund | closed-end funds",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A listed fund with a fixed number of shares, which can trade well above or below the value of its holdings. Funds such as DXYZ offered SpaceX exposure at a premium; with SPCX now listed directly, paying that premium makes less sense."
+  },
+  {
+   "id": "merger-arbitrage",
+   "term": "Merger arbitrage",
+   "aliases": "merger arbitrage | merger-arbitrage | merger arb",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Buying a target's shares after a deal is announced, to earn the gap to the deal price if the deal closes. Globalstar (being bought by Amazon) and Iridium (by Rocket Lab) now trade this way, so their upside is capped at the agreed price."
+  },
+  {
+   "id": "pure-play",
+   "term": "Pure play",
+   "aliases": "pure play | pure plays | pure-play | pure-plays",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A listed company whose value rests mostly on one asset. The US spectrum pure plays (Anterix, NextNav, Globalstar, Array) are small and illiquid, and they pay off mainly through a sale to one of only four or five possible buyers."
+  },
+  {
+   "id": "realized-multiple",
+   "term": "Realized multiple",
+   "aliases": "realized multiple | realised multiple | multiple on invested capital | MOIC",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Sale proceeds divided by capital invested. Dish's spectrum programme returned about 1.4x its cash cost (about 1.1x including capitalised interest), the TerreStar/DBSD licences about 3.8x and Clearwire about 0.25x. Whitesail's median for a pure-play position bought at market in 2026 is about 0.8x by 2035."
+  },
+  {
+   "id": "p10-p50-p90",
+   "term": "P10 / P50 / P90",
+   "aliases": "P10/P50/P90 | P10-P90 | P10/P90 | P10 | P50 | P90",
+   "case_sensitive": true,
+   "category": "Markets and finance",
+   "definition": "The format of Whitesail's forecast ranges. P50 is the median; there is a 10% chance the outcome falls below P10 and a 10% chance it lands above P90. A wide P10-P90 range flags real uncertainty."
+  },
+  {
+   "id": "whitesail-scenarios",
+   "term": "Grind, price-pressure and convergence-premium scenarios",
+   "aliases": "convergence premium | convergence-premium scenario | grind scenario | price-pressure scenario | price pressure scenario",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Whitesail's three 2030 states for US carriers. In grind (about 50%), service revenue grows 2-3% a year and multiples stay at 6-7.5x; in price pressure (about 30%), SpaceX and cable hold revenue flat and multiples fall to 5-6x. In convergence premium (about 20%), spectrum is turned into cash through sales or M&A and carriers re-rate to 8x or more."
+  },
+  {
+   "id": "free-cash-flow",
+   "term": "Free cash flow (FCF)",
+   "aliases": "free cash flow | FCF | adjusted free cash flow",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "Operating cash flow minus capex: the cash available for dividends, buybacks and debt reduction. Carrier shareholder value has come mostly from rising FCF after the 5G capex peak (T-Mobile guides $18.7-18.8B of adjusted FCF). A 6G and upper C-band build around 2030 would weigh on it."
+  },
+  {
+   "id": "chapter-11",
+   "term": "Chapter 11",
+   "aliases": "Chapter 11 | bankruptcy | bankruptcies | bankrupt",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "US court-supervised reorganisation of a company that cannot pay its debts. Spectrum holders have often ended up here: NextWave, LightSquared and Ligado, TerreStar and DBSD, and Dish DBS and Dish Wireless (June 30, 2026). Buyers then acquire the licences from distressed sellers."
+  },
+  {
+   "id": "scarcity-premium",
+   "term": "Scarcity premium",
+   "aliases": "scarcity premium | spectrum scarcity premium",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "A price above past auction levels and the cost of alternative capacity, paid because usable spectrum is genuinely short. Whitesail finds that the 2025-26 deals, at about $1.0-1.4/MHz-pop, sit within past auction ranges, so no clear premium is visible yet."
+  },
+  {
+   "id": "goldman-bankers-view",
+   "term": "Goldman banker's view",
+   "aliases": "Goldman banker's view | Goldman banker's point | Goldman banker | Goldman point | banker's view | banker's point",
+   "case_sensitive": false,
+   "category": "Markets and finance",
+   "definition": "The sceptical view this report tests: spectrum buyers are few and regulated, telcos see no value in spectrum unless they can raise prices, and competition pushes the other way. Whitesail finds that the 2024-2026 evidence broadly supports it, except when an outside bidder appears for a seller's licences."
+  },
+  {
+   "id": "spacex",
+   "term": "SpaceX",
+   "aliases": "SpaceX | SPCX | Space Exploration Technologies",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "The rocket and Starlink satellite company, listed on Nasdaq as SPCX since June 12, 2026 and worth about $1.9T at its November 18 close of $143.50. It is now the most aggressive US buyer of terrestrial-capable spectrum (about 79 MHz pending from EchoStar and Grain) and says it wants to be a full mobile carrier. Its roughly $20-23B of spectrum purchases are about 1% of its value, so SPCX is not a spectrum play."
+  },
+  {
+   "id": "starlink",
+   "term": "Starlink",
+   "aliases": "Starlink",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "SpaceX's low-Earth-orbit satellite broadband service, with about 12M subscribers in Q2 2026. Estimates of its capacity run from 4 to 55 Mbps per km², far below terrestrial urban networks, and its ARPU fell 22%."
+  },
+  {
+   "id": "starlink-direct-to-cell",
+   "term": "Starlink Direct to Cell",
+   "aliases": "Starlink Direct to Cell | Direct to Cell | Direct-to-Cell | direct-to-cell",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "SpaceX's first-generation satellite-to-phone service: about 650 LEO satellites using about 5 MHz of partner spectrum (in the US, T-Mobile's PCS G block). It carries texts, some app data and limited voice. It reached about 7.4M monthly unique devices in about 30 countries at March 31, 2026."
+  },
+  {
+   "id": "starlink-mobile",
+   "term": "Starlink Mobile",
+   "aliases": "Starlink Mobile",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "SpaceX's brand for its direct-to-phone mobile business. Management cited about 22M monthly users in Q3 2026, on a different definition from earlier device counts, and revenue is not disclosed. The next-generation system is to run on 65 MHz bought from EchoStar."
+  },
+  {
+   "id": "t-satellite",
+   "term": "T-Satellite",
+   "aliases": "T-Satellite",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "T-Mobile's Starlink-based satellite texting and data service, sold as a paid add-on since July 2025. It carried about 0.0002% of T-Mobile's network usage, and T-Mobile has said it does not want to lease capacity to SpaceX."
+  },
+  {
+   "id": "ast-spacemobile",
+   "term": "AST SpaceMobile",
+   "aliases": "AST SpaceMobile | AST | ASTS",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "A satellite company (ticker ASTS) building BlueBird satellites to connect directly to standard phones. It uses partner carriers' low-band spectrum, plus rights to up to 45 MHz of Ligado's L-band and 60 MHz of S-band. Q3 2026 revenue was $42.3M, mostly gateways and government work, against a market cap of $24.6-37.9B in mid-2026; the stock rose 244% in 2025 and was down about 55% in 2026 by mid-November."
+  },
+  {
+   "id": "bluebird",
+   "term": "BlueBird",
+   "aliases": "BlueBird | BlueBirds | BlueBird satellite | BlueBird satellites",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "AST SpaceMobile's satellites, which unfold a large antenna array in orbit. Twelve were operating in November 2026. The target of about 45 has slipped to mid-2027, and launch contracts cover more than 100 satellites over 2027-2028."
+  },
+  {
+   "id": "globalstar",
+   "term": "Globalstar",
+   "aliases": "Globalstar | GSAT",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A satellite operator with about 25 MHz of L/S-band MSS spectrum, including terrestrial-use rights known as Band 53. Apple owns 20% and has 85% of its capacity committed. Amazon agreed to buy it for about $11-11.5B (FCC approval October 27, 2026, closing in 2027), so the stock now trades as a merger-arbitrage position."
+  },
+  {
+   "id": "iridium",
+   "term": "Iridium",
+   "aliases": "Iridium | IRDM | Iridium Communications",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A LEO satellite operator with L-band spectrum (about 8.7 MHz, unverified) and 2025 revenue of $0.87B. Rocket Lab agreed to buy it for $54 a share, an enterprise value of about $8.0B, with closing expected in mid-2027."
+  },
+  {
+   "id": "iridium-ntn-direct",
+   "term": "Iridium NTN Direct",
+   "aliases": "Iridium NTN Direct | NTN Direct",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "Iridium's standards-based (3GPP NTN) direct-to-device service. It goes commercial in Q4 2026 with Deutsche Telekom IoT. The Toyota and Deutsche Telekom IoT work on it is an example of real machine demand for coverage."
+  },
+  {
+   "id": "amazon-leo",
+   "term": "Amazon Leo (formerly Project Kuiper)",
+   "aliases": "Amazon Leo | Project Kuiper | Kuiper | Amazon Kuiper",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "Amazon's LEO satellite constellation, formerly Project Kuiper. Amazon has applied for up to 5,105 D2D satellites for service around 2028, and it is buying Globalstar for its MSS spectrum and Apple relationship."
+  },
+  {
+   "id": "ligado",
+   "term": "Ligado Networks",
+   "aliases": "Ligado | Ligado Networks | LightSquared",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "Holder of L-band satellite spectrum, formerly LightSquared. Its terrestrial plan was frozen in 2012 over GPS interference, LightSquared went bankrupt, and its backer Harbinger's main fund lost 47% in 2011. Ligado went bankrupt again in 2025 and leases up to 40-45 MHz to AST SpaceMobile for $550M (mostly passed to Inmarsat) plus at least $80M a year, against about $8.6B of debt (weak source)."
+  },
+  {
+   "id": "viasat",
+   "term": "Viasat",
+   "aliases": "Viasat | Inmarsat",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A satellite operator, owner of Inmarsat, holding contested L-band and S-band rights; Inmarsat disputes AST's L-band rights outside North America. Ofcom proposed letting Viasat and EchoStar keep their UK 2 GHz MSS access for 3-5 years."
+  },
+  {
+   "id": "anterix",
+   "term": "Anterix",
+   "aliases": "Anterix | ATEX",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A listed holder (ticker ATEX) of about 6 MHz of 900 MHz broadband spectrum. It is a sub-$1B pure play whose value depends on a narrow pool of utility buyers."
+  },
+  {
+   "id": "nextnav",
+   "term": "NextNav",
+   "aliases": "NextNav",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A listed holder (ticker NN) of about 8 MHz in the lower 900 MHz band. It is one of the small pure plays that pay off mainly through a sale or an FCC rule change that unlocks more valuable use."
+  },
+  {
+   "id": "array-digital-infrastructure",
+   "term": "Array Digital Infrastructure",
+   "aliases": "Array Digital Infrastructure | Array Digital",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "The listed company (ticker AD) that holds the spectrum and towers left after UScellular's 2025 sale of its wireless operations. Parts of the spectrum have been sold to AT&T and Verizon, and it realises value mainly through such sales."
+  },
+  {
+   "id": "echostar",
+   "term": "EchoStar",
+   "aliases": "EchoStar | EchoStar Corporation | ECHO | SATS",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "Dish's parent, which turned its spectrum into about $43B of announced deals: about $23B from AT&T (closed July 28, 2026) and about $19.6B from SpaceX in cash and about 261.8M SpaceX shares (closing expected in 2027). Its stock (ticker ECHO since June 24, 2026, formerly SATS) rose about 375% in 2025, the best return in the Fortune 500. It now trades mainly on SpaceX's share price, closing risk and taxes."
+  },
+  {
+   "id": "dish",
+   "term": "Dish",
+   "aliases": "Dish | DISH | Dish Network | DISH Network | Dish Wireless | Dish DBS",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "EchoStar's pay-TV and wireless business, which put more than $30B into licences to become a fourth national carrier but never scaled. It is the reference case of an entrant with plenty of spectrum that captured value only by selling it, under FCC build-out pressure. Its subsidiaries Dish DBS and Dish Wireless filed for Chapter 11 on June 30, 2026."
+  },
+  {
+   "id": "boost-mobile",
+   "term": "Boost Mobile",
+   "aliases": "Boost Mobile | Boost",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "The mobile brand Dish built as the fourth national carrier, which reached about 7M subscribers in roughly five years. Since EchoStar's spectrum sales it runs as a hybrid MVNO on AT&T's network."
+  },
+  {
+   "id": "grain-management",
+   "term": "Grain Management",
+   "aliases": "Grain Management | Grain",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "A private spectrum investor acting as an intermediary. In August 2026 it bought T-Mobile's nationwide 800 MHz portfolio, reportedly for $2.9B in cash (about $0.62/MHz-pop) plus 600 MHz spectrum. Two months later it agreed to sell the portfolio to SpaceX, reportedly for about $8B (about $1.7/MHz-pop if correct)."
+  },
+  {
+   "id": "clearwire",
+   "term": "Clearwire",
+   "aliases": "Clearwire",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "A 2.5 GHz wireless broadband operator whose backers put in $3.2B in 2008: Google lost 94% on its $500M, and Intel took a $950M charge. Sprint bought out the remaining shareholders in 2013 at $5 a share, roughly 0.25x the 2008 entry. The spectrum later became T-Mobile's main 5G band."
+  },
+  {
+   "id": "nextwave",
+   "term": "NextWave",
+   "aliases": "NextWave | NextWave Wireless",
+   "case_sensitive": false,
+   "category": "Companies and products",
+   "definition": "It bid $4.74B for C-block PCS licences in 1996, paid $500M down and went bankrupt in 1998, keeping the licences only after winning a court fight with the FCC. It sold them for about $5.4B in 2004-05 and paid creditors in full, about 1.1x the bid after nine years. A successor company was sold to AT&T in 2012 for up to $600M."
+  },
+  {
+   "id": "straight-path",
+   "term": "Straight Path",
+   "aliases": "Straight Path | Straight Path Communications",
+   "case_sensitive": true,
+   "category": "Companies and products",
+   "definition": "Holder of 28 GHz and 39 GHz mmWave licences, sold to Verizon in 2017 for about $3.1B in stock after a bidding war with AT&T; the clean example of a holder win, though the FCC took 20% of proceeds. The buyer ended up with spectrum that the 2020 auctions priced below a cent per MHz-pop."
+  }
+ ]
+}

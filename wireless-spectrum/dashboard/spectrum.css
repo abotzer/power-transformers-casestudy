@@ -1,0 +1,65 @@
+/* wireless spectrum report additions */
+.tx { --vc-focus: #0F6E8C; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tx { --vc-focus: #5BC0DE; } }
+:root[data-theme="dark"] .tx { --vc-focus: #5BC0DE; }
+.tx-vc .tx-vc-node.is-focus rect { stroke: var(--vc-focus); stroke-width: 2.5px; fill: var(--vc-focus); }
+.tx-vc .tx-vc-node.is-focus text { fill: #fff; font-weight: 700; }
+.tx-vc .tx-vc-node.is-focus circle { fill: #fff !important; }
+.tx-vc .tx-vc-node.is-focus .tx-vc-mono { fill: var(--vc-focus); }
+[data-kind="focus"] { color: var(--color-fg); border-color: color-mix(in srgb, var(--vc-focus) 60%, transparent); background: color-mix(in srgb, var(--vc-focus) 14%, transparent); }
+
+/* scenarios */
+.tx-scen-bar { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+.tx-scen-track { display: flex; height: 2.4rem; border-radius: var(--cds-radius); overflow: hidden; gap: 2px; }
+.tx-scen-seg { display: flex; align-items: center; justify-content: center; min-width: 2.6rem; }
+.tx-scen-pct { color: #fff; font-weight: 700; font-variant-numeric: tabular-nums; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.tx-scen-key { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--cds-gap-sm) var(--cds-gap-md); }
+.tx-scen-keyitem { display: flex; gap: var(--cds-gap-sm); align-items: flex-start; min-width: 0; }
+.tx-scen-keyitem .tx-swatch { flex: none; margin-top: .3rem; }
+.tx-scen-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-scen-card { border-top: 4px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.tx-scen-top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-sm); }
+.tx-scen-prob { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; flex: none; }
+.tx-scen-card p { line-height: 1.55; }
+.tx-scen-card details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+
+/* forecasts */
+.tx-fc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-fc-group { grid-column: 1 / -1; margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .06em; color: var(--color-fg-muted); font-weight: 600; border-bottom: 2px solid var(--color-border-line); padding-bottom: 4px; }
+.tx-fc { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-fc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--cds-gap-sm); }
+.tx-fc-head .tx-chips { flex: none; }
+.tx-fc-strip { position: relative; min-height: 92px; }
+.tx-fc-nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
+.tx-fc-num { display: flex; flex-direction: column; gap: 2px; min-width: 0; border-top: 2px solid var(--color-border-line); padding-top: 4px; }
+.tx-fc-num.is-mid { border-top-color: var(--ws-amber); }
+.tx-fc-num .tx-ans-val { font-size: var(--cds-font-size-body); overflow-wrap: anywhere; }
+.tx-fc-today { font-family: var(--font-anthropic-sans) !important; font-size: var(--cds-font-size-caption) !important; color: var(--color-fg-muted); }
+.tx-fc details summary, .tx-prob details summary, .tx-cand details summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tx-fc details p, .tx-prob details p { margin-top: var(--cds-gap-xs); line-height: 1.55; }
+.tx-fc-todayline { margin: 0; }
+
+/* yes/no probabilities */
+.tx-prob-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+.tx-prob { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.tx-prob-top { display: flex; justify-content: space-between; gap: var(--cds-gap-md); align-items: flex-start; }
+.tx-prob-q { display: flex; flex-direction: column; gap: 6px; min-width: 0; line-height: 1.45; }
+.tx-prob-val { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1; font-variant-numeric: tabular-nums; flex: none; }
+.tx-prob-track { position: relative; height: .9rem; border-radius: 999px; background: var(--cds-chart-grid); overflow: visible; }
+.tx-prob-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: var(--s1); opacity: .85; }
+.tx-prob-range { position: absolute; top: -3px; bottom: -3px; border-radius: 4px; border: 1.5px dashed var(--color-fg-muted); }
+.tx-prob-tick { position: absolute; top: -5px; width: 2px; height: calc(100% + 10px); background: var(--color-fg); transform: translateX(-1px); opacity: .55; }
+
+/* universe */
+.tx-uni { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.tx-uni-cat { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.tx-uni-facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: 6px; margin: 0; align-items: baseline; }
+.tx-uni-facts dd { margin: 0; text-align: right; }
+.tx-uni-v { font-variant-numeric: tabular-nums; font-weight: 600; overflow-wrap: anywhere; }
+.tx-cand-head .tx-chip { flex: none; white-space: nowrap; }
+.tx-cand .tx-card-note { line-height: 1.5; }
+#method-box .tx-bottom-text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.65; }
+.tx-verdict-more { margin-top: var(--cds-gap-sm); }
+.tx-verdict-more .tx-verdict-h { margin-top: var(--cds-gap-sm); }
+#fam-summary .tx-verdict-grid .tx-bottom-text { font-size: var(--cds-font-size-body); }
+#fam-summary .tx-verdict-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }

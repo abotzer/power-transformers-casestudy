@@ -1,0 +1,627 @@
+{
+ "verdicts": [
+  {
+   "id": "demand:us-growth-decel",
+   "verdict": "confirmed",
+   "note": "Coverage of the CTIA 2026 survey gives +20% for 2025 against +32% for 2024 and +35% for 2023 (CTIA's 2024 survey had rounded 2023 to 36%), so this matches within rounding.",
+   "evidence_url": "https://techblog.comsoc.org/2026/09/10/ctia-americans-used-more-wireless-data-in-2025-than-in-the-entire-4g-decade-but-growth-slowed-from-2023-2024/"
+  },
+  {
+   "id": "demand:bubley-fwa-2023",
+   "verdict": "confirmed",
+   "note": "Bubley's RCR column estimates about 24T MB of FWA traffic, roughly 90% of the 2023 increment of about 26T MB (with a conservative floor of at least 70%), and notes that CTIA does not separate FWA traffic.",
+   "evidence_url": "https://www.rcrwireless.com/20241014/5g/us-mobile-data-traffic-stats-need-careful-scrutiny-analyst-angle"
+  },
+  {
+   "id": "demand:revenue-per-gb",
+   "verdict": "confirmed",
+   "note": "The Light Reading piece, by Recon Analytics' Roger Entner, gives $412/GB (2010), $4.50 (2020) and $1.48 (2025), and $235B divided by CTIA's 159.3T MB comes to about $1.48/GB; the figures cover service revenue only.",
+   "evidence_url": "https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill"
+  },
+  {
+   "id": "demand:ericsson-q2-2026",
+   "verdict": "confirmed",
+   "note": "Ericsson's traffic update shows traffic passing 220 EB/month in Q2 2026, up 23% y/y and led by India and North America; I did not verify the ~6% q/q figure.",
+   "evidence_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-update"
+  },
+  {
+   "id": "demand:ericsson-2031-forecast",
+   "verdict": "confirmed",
+   "note": "The June 2026 Ericsson report forecasts 515 EB/month including FWA and 328 EB/month excluding FWA by 2031; I did not separately check the 17% CAGR or the 14% growth rate for 2031.",
+   "evidence_url": "https://telecomlead.com/5g/ericsson-mobility-report-2026-global-mobile-data-traffic-to-reach-515-eb-by-2031-as-india-leads-smartphone-data-consumption-126290"
+  },
+  {
+   "id": "demand:fwa-share-global",
+   "verdict": "confirmed",
+   "note": "Ericsson's FWA outlook puts FWA at 28% of global mobile network traffic at end-2025 and about 187 EB/month by 2031, which is about 36% of 515 EB.",
+   "evidence_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/fwa-outlook"
+  },
+  {
+   "id": "demand:na-gb-per-phone",
+   "verdict": "confirmed",
+   "note": "The June 2026 edition lists North America at 25 GB (2025) rising to 52 GB (2031) at a 13% CAGR; one older Ericsson key-figures snapshot showed 49 GB and 12%, and I did not see the 2024 figure of 21 GB.",
+   "evidence_url": "https://telecomlead.com/5g/ericsson-mobility-report-2026-global-mobile-data-traffic-to-reach-515-eb-by-2031-as-india-leads-smartphone-data-consumption-126290"
+  },
+  {
+   "id": "demand:genai-share-2025",
+   "verdict": "confirmed",
+   "note": "Ericsson's June 2025 article gives GenAI at about 0.06% of traffic (21 apps, one week of April 2025 data from one operator) with 26% uplink against about 10% for typical traffic.",
+   "evidence_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025"
+  },
+  {
+   "id": "demand:ericsson-uplink-scenarios",
+   "verdict": "confirmed",
+   "note": "Ericsson's June 2026 modelling has 2031 uplink at 3x the 2025 level in a medium-adoption scenario and 5x in a high-adoption scenario.",
+   "evidence_url": "https://www.fierce-network.com/broadband/ericsson-predicts-more-fwa-uplink-traffic-network-demand-transforms"
+  },
+  {
+   "id": "demand:nokia-2035",
+   "verdict": "confirmed",
+   "note": "Nokia's November 2026 release projects about 3,789 EB/month in 2035, roughly 4x 2026 levels, with AI making up 44%.",
+   "evidence_url": "https://www.nokia.com/newsroom/nokia-global-network-traffic-report-forecasts-ai-will-drive-nearly-half-of-global-traffic-in-2035/"
+  },
+  {
+   "id": "demand:wifi-share-us",
+   "verdict": "confirmed",
+   "note": "Opensignal (Oct 31, 2024) and Wi-Fi NOW's write-up give an 82-89% Wi-Fi share, with Xfinity Mobile highest at 89% and T-Mobile at the opposite extreme.",
+   "evidence_url": "https://wifinowglobal.com/news-and-blog/bombshell-report-mobile-data-consumption-over-wi-fi-closes-in-on-90-in-the-us/"
+  },
+  {
+   "id": "demand:tmus-fwa-2025",
+   "verdict": "confirmed",
+   "note": "T-Mobile's Q4 2025 release reports 495K 5G broadband net adds in Q4 and 1.9M for 2025, ending at 8.5M customers (rounded), which is consistent with 8.45M.",
+   "evidence_url": "https://www.businesswire.com/news/home/20260210151033/en/T-Mobile-Delivers-Best-in-Class-Customer-Results-in-Q4-Translating-into-Durable-and-Profitable-Financial-Growth-Driven-By-Widening-Differentiation"
+  },
+  {
+   "id": "capacity:us-traffic-2025",
+   "verdict": "confirmed",
+   "note": "Coverage of the CTIA 2026 survey gives 159.3T MB in 2025, up 20%, against 32% growth in 2024 and 35% in 2023.",
+   "evidence_url": "https://broadbandbreakfast.com/wireless-data-use-up-20-percent-last-year-ctia-finds/"
+  },
+  {
+   "id": "capacity:ctia-price-per-mb",
+   "verdict": "confirmed",
+   "note": "CTIA's 2026 Affordability Tracker (a companion to the Annual Survey) shows real typical unlimited prices down 10.7% and the effective price per GB, the same thing as per MB, down more than 21%; the scarcity inference is the researcher's own interpretation.",
+   "evidence_url": "https://mma.prnewswire.com/media/2969076/CTIA_AffordabilityTracker.pdf?p=pdf"
+  },
+  {
+   "id": "capacity:ericsson-na-per-smartphone",
+   "verdict": "confirmed",
+   "note": "The June 2026 Ericsson regional forecast gives North America 25 GB/month (2025) rising to 52 GB (2031), a 13% CAGR.",
+   "evidence_url": "https://telecomlead.com/5g/ericsson-mobility-report-2026-global-mobile-data-traffic-to-reach-515-eb-by-2031-as-india-leads-smartphone-data-consumption-126290"
+  },
+  {
+   "id": "capacity:cooper-decomposition",
+   "verdict": "corrected",
+   "note": "The usual breakdown is 1,600x from smaller cells, 25x from more spectrum, and 5x channel slicing times 5x modulation, which multiplies to exactly 1,000,000; the claim's 30x and at most 10x only reach about 480,000, and I could not see the arXiv paper's own wording.",
+   "corrected_value": "~1,600x smaller cells / ~25x more spectrum / ~25x techniques (5x channel slicing x 5x modulation; WEF version gives ~5x)",
+   "corrected_claim": "A common reading of Cooper's law attributes the million-fold capacity gain to smaller cells (~1,600x), more spectrum (~25x), and finer channelisation plus better modulation (~5x each).",
+   "evidence_url": "https://www.oreilly.com/library/view/cooperative-communications-hardware/9780470997680/10-chapter01.html"
+  },
+  {
+   "id": "capacity:fcc-2010-deficit",
+   "verdict": "confirmed",
+   "note": "Contemporary coverage of the October 2010 FCC paper gives a 275 MHz deficit by 2014 (822 MHz needed against 547 available) and $174B for cell sites alone against $54B with spectrum; TV Technology also mentions a 300 MHz framing.",
+   "evidence_url": "https://tvtechnology.com/news/fcc-white-paper-factors-out-undeveloped-wireless-spectrum"
+  },
+  {
+   "id": "capacity:brattle-deficit",
+   "verdict": "confirmed",
+   "note": "The Brattle report for CTIA projects about 400 MHz by 2027 and more than 1,400 MHz by 2032, but it normalizes to full-power licensed lower mid-band spectrum rather than '1-2 GHz propagation'.",
+   "evidence_url": "https://www.brattle.com/insights-events/publications/current-spectrum-allocation-is-not-sufficient-for-meeting-the-future-demand-for-wireless-broadband-in-the-us-according-to-a-new-brattle-report"
+  },
+  {
+   "id": "capacity:obbba-pipeline",
+   "verdict": "confirmed",
+   "note": "CRS and Wiley summaries of P.L. 119-21 confirm authority through Sept 30, 2034, the 800 MHz pipeline, at least 100 MHz of upper C-band by July 2027, and the exclusion of 3.1-3.45 and 7.4-8.4 GHz.",
+   "evidence_url": "https://www.everycrsreport.com/files/2026-02-25_R48862_66e58badb3a5f49429169799a83fcc34936cfb38.html"
+  },
+  {
+   "id": "capacity:upper-cband-order",
+   "verdict": "confirmed",
+   "note": "FCC 26-46 (July 22, 2026) covers 160 MHz at 3.98-4.14 GHz as Auction 115, tentatively starting April 27, 2027, and creates a 440 MHz band from 3.70 to 4.14 GHz.",
+   "evidence_url": "https://www.newscaststudio.com/2026/07/22/fcc-adopts-rules-for-upper-c-band-auction-sets-stage-for-440-mhz-super-band/"
+  },
+  {
+   "id": "capacity:rel21-timeline",
+   "verdict": "confirmed",
+   "note": "Coverage from 3GPP and Qualcomm confirms the June 2026 approval of the Release 21 timeline, with stage 3 freeze in December 2028 and ASN.1 freeze in March 2029; I did not independently see Ericsson's 2030 commercial expectation.",
+   "evidence_url": "https://www.qualcomm.com/news/onq/2026/06/6g-standardization-release-21-milestones"
+  },
+  {
+   "id": "capacity:measured-nr-vs-lte",
+   "verdict": "unverified",
+   "note": "The paper exists and its main finding matches (mid-band 5G gains come mostly from wider channels), but I could not see the 1.9-2.3 bit/s/Hz/stream or n41 3.14 figures.",
+   "evidence_url": "https://arxiv.org/html/2312.00957v2"
+  },
+  {
+   "id": "capacity:wifi-data-share-2024",
+   "verdict": "confirmed",
+   "note": "Opensignal's 82-89% range and Xfinity's 89% are confirmed, but I did not independently see AT&T's 86%.",
+   "evidence_url": "https://insights.opensignal.com/2024/10/31/wi-fi-drives-smartphone-data-consumption-in-the-us-but-trends-vary-across-operators"
+  },
+  {
+   "id": "capacity:ctia-capex-series",
+   "verdict": "confirmed",
+   "note": "CTIA surveys give $27.4B for 2018, a record $39B for 2022, and about $30B for 2025, described as on par with the two prior years; I did not see the 2024 figure of $29B itself.",
+   "evidence_url": "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+  },
+  {
+   "id": "supply:obbba-800-pipeline",
+   "verdict": "confirmed",
+   "note": "CRS and law-firm summaries confirm at least 800 MHz in total: at least 300 MHz auctioned by the FCC, including at least 100 MHz of upper C-band, plus 500 MHz of federal spectrum in 1.3-10.5 GHz.",
+   "evidence_url": "https://www.everycrsreport.com/files/2026-02-25_R48862_66e58badb3a5f49429169799a83fcc34936cfb38.html"
+  },
+  {
+   "id": "supply:upper-cband-order",
+   "verdict": "confirmed",
+   "note": "The Federal Register summary and Light Reading confirm 3.98-4.14 GHz for flexible use, a 20 MHz guard band at 4.14-4.16 GHz, a contiguous 440 MHz band, and eight 20 MHz blocks by PEA.",
+   "evidence_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15598/upper-c-band-398-42-ghz-expanding-flexible-use-of-the-37-to-42-ghz-band"
+  },
+  {
+   "id": "supply:auction-113-results",
+   "verdict": "confirmed",
+   "note": "FCC data matches exactly: closed June 23, 2026 after 72 rounds, 17 qualified and 7 winning bidders, all 200 licenses sold, $3,572,889,200 gross.",
+   "evidence_url": "https://www.telecompetitor.com/fccs-aws-3-spectrum-auction-72-rounds-17-qualified-bidders-3-5b-in-bids/"
+  },
+  {
+   "id": "supply:att-echostar-close",
+   "verdict": "confirmed",
+   "note": "AT&T's July 28, 2026 release and Reuters confirm the close of about 30 MHz of 3.45 GHz and about 20 MHz of 600 MHz for about $23B.",
+   "evidence_url": "https://www.thestar.com.my/tech/tech-news/2026/07/29/att-closes-23-billion-deal-to-acquire-spectrum-from-echostar"
+  },
+  {
+   "id": "supply:spacex-echostar-approval",
+   "verdict": "confirmed",
+   "note": "The FCC's Wireless and Space Bureaus approved both sales around May 12, 2026, giving SpaceX 40 MHz AWS-4, 10 MHz H-block and 15 MHz unpaired AWS-3 (65 MHz), conditioned on a $2.4B EchoStar escrow.",
+   "evidence_url": "https://www.fierce-network.com/wireless/fcc-gives-conditional-ok-echostars-spectrum-sales-att-spacex"
+  },
+  {
+   "id": "supply:spacex-grain-800",
+   "verdict": "confirmed",
+   "note": "Several outlets confirm the October 8 deal for up to 14 MHz paired across 546 licenses, the WSJ-sourced $8B price (undisclosed by the companies), and about 2.8x Grain's $2.9B T-Mobile purchase.",
+   "evidence_url": "https://www.lightreading.com/satellite/spacex-grain-s-lowband-spectrum-is-our-ticket-to-becoming-major-mobile-carrier-"
+  },
+  {
+   "id": "supply:screen-385",
+   "verdict": "confirmed",
+   "note": "The FCC's AT&T-EchoStar review applies a 385 MHz overall spectrum screen trigger.",
+   "evidence_url": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+  },
+  {
+   "id": "supply:big3-share-82",
+   "verdict": "unverified",
+   "note": "Two differently phrased searches found no independent source for the Big 3 holding about 82% of screened spectrum on a MHz-POPs basis in FCC 24-136."
+  },
+  {
+   "id": "supply:carr-2028-auctions",
+   "verdict": "confirmed",
+   "note": "Light Reading and NewscastStudio report that Carr named 2028 auctions, including 2.7 GHz (a reported 210 MHz block at 2.69-2.9 GHz); I did not see the 'two bands not yet named' detail.",
+   "evidence_url": "https://www.newscaststudio.com/2026/07/22/fcc-adopts-rules-for-upper-c-band-auction-sets-stage-for-440-mhz-super-band/"
+  },
+  {
+   "id": "supply:scs-482-nprm",
+   "verdict": "confirmed",
+   "note": "SatNews reports the October 29, 2026 FCC vote proposing more than 482 MHz for SCS and expanding eligible bands from 5 to 13; I did not see the unanimity or Carr's consolidation remark.",
+   "evidence_url": "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/"
+  },
+  {
+   "id": "supply:midband-policytracker",
+   "verdict": "confirmed",
+   "note": "PolicyTracker lists the UK at 942.6 MHz, Germany 878.8, China 835 and the US 791.3, says China is about 5% ahead, and rebuts CTIA's 3.2x claim.",
+   "evidence_url": "https://www.policytracker.com/?p=79240"
+  },
+  {
+   "id": "prices:spacex-grain-800-deal",
+   "verdict": "confirmed",
+   "note": "T-Mobile's Q3 2026 10-Q confirms Grain agreed on Oct 8, 2026 to sell the 800 MHz licences to SpaceX subject to regulatory approval, and Technobezz and Mobile World Live both report that no price was disclosed.",
+   "evidence_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+  },
+  {
+   "id": "prices:spacex-grain-price",
+   "verdict": "confirmed",
+   "note": "Broadband Breakfast and RCR independently carry the WSJ figure of about $8B; Barden's $1.73 and the $6B ($1.30) target appear only in Fierce, but $8B divided by 14 MHz and about 330M pops does give $1.73.",
+   "evidence_url": "https://broadbandbreakfast.com/earthquake-in-the-sky-spacex-pays-8-billion-for-grain-management-airwaves-to-advance-starlink-mobile/"
+  },
+  {
+   "id": "prices:tmus-grain-sale-closed",
+   "verdict": "confirmed",
+   "note": "The T-Mobile 10-Q shows $2.9B cash plus 600 MHz licences valued at $690M ($3.6B in total), Cleary Gottlieb gives an Aug 10 close (T-Mobile's release is dated Aug 11), and PhoneArena separately reports the 50% gains-share clause.",
+   "evidence_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+  },
+  {
+   "id": "prices:carrier-stocks-fell-800",
+   "verdict": "confirmed",
+   "note": "Market roundups give Oct 9 closes of AT&T -9.81%, Verizon -8.75% (Axios rounds to 8.8%) and T-Mobile -13.27%, which matches within rounding; one Motley Fool recap is an outlier with Verizon at -10.14%.",
+   "evidence_url": "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+  },
+  {
+   "id": "prices:att-echostar-closed",
+   "verdict": "confirmed",
+   "note": "AT&T's release confirms the July 28, 2026 close at about $23B, and an independent analysis of AT&T's Q3 puts the July spectrum acquisitions at $22.7B, consistent with $22,650M; I did not see the 10-Q line item itself.",
+   "evidence_url": "https://www.panabee.com/news/at-t-earnings-q3-2026-report"
+  },
+  {
+   "id": "prices:spacex-echostar-17b",
+   "verdict": "confirmed",
+   "note": "Several outlets report the $17B price ($8.5B cash plus $8.5B stock), and Octus' roughly $19B figure includes the debt-interest funding; $1.03/MHz-pop equals $17B over 50 MHz and about 330M pops, though I saw the MoffettNathanson quote only in the Comm Daily snippet.",
+   "evidence_url": "https://octus.com/resources/articles/echostar-expects-to-resolve-fcc-inquiries-with-19b-s-band-spectrum-sale-to-spacex/"
+  },
+  {
+   "id": "prices:auction113-mhzpop",
+   "verdict": "confirmed",
+   "note": "Press coverage of New Street matches the $2.53 average, the $0.15-$5.67 range, Chicago above $4 and New York at $3.30, and PolicyTracker separately estimates about $2.6; I did not check the 24%-above-Auction-97 comparison.",
+   "evidence_url": "https://www.policytracker.com/?p=91976"
+  },
+  {
+   "id": "prices:auction107-results",
+   "verdict": "confirmed",
+   "note": "The FCC public reporting system shows $81,168,677,645 gross with 21 winners and 5,684 licences, and the winning-bidder coverage gives Verizon $45.45B, AT&T $23.41B and T-Mobile $9.34B (about 96% combined).",
+   "evidence_url": "https://auctiondata.fcc.gov/public/projects/auction107"
+  },
+  {
+   "id": "prices:amazon-globalstar",
+   "verdict": "confirmed",
+   "note": "Bloomberg, Reuters and Fierce confirm $90/share, about $11.57B and an expected 2027 close (Amazon's own equity figure was about $10.8B as of Apr 9); the SpaceX rival angle rests on Bloomberg's Oct 2025 report of early talks.",
+   "evidence_url": "https://www.fierce-network.com/wireless/amazon-acquire-globalstar-1157-billion"
+  },
+  {
+   "id": "prices:auction115-estimates",
+   "verdict": "confirmed",
+   "note": "Fierce reports TD Cowen's June 26 estimate of $30-75B and Carr's $30-60B; the point that the FCC declined satellite buildout credit for SpaceX is supported only by secondary reports that the rules sidestepped SpaceX's request.",
+   "evidence_url": "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band"
+  },
+  {
+   "id": "prices:license-book-att",
+   "verdict": "unverified",
+   "note": "AT&T's Q3 2026 release confirms net debt of $149.8B, but I could not find independent evidence for the Licenses-Net figures of $149,357M and $128,148M.",
+   "evidence_url": "https://finviz.com/news/405039/att-delivers-strong-third-quarter-2026-results-with-its-best-consolidated-service-revenue-growth-in-more-than-four-years"
+  },
+  {
+   "id": "satellite:starlink-d2c-fleet",
+   "verdict": "confirmed",
+   "note": "Engadget quotes a Starlink VP describing the completed first-generation constellation as 650 satellites, and Analysys Mason counted 653 in December 2025.",
+   "evidence_url": "https://www.engadget.com/science/space/spacex-completes-starlinks-first-direct-to-cell-constellation-212549713.html"
+  },
+  {
+   "id": "satellite:starlink-mobile-users-q3",
+   "verdict": "confirmed",
+   "note": "Satellite Today and Mobile World Live report more than 22M monthly Starlink Mobile users in Q3 2026, up 37% quarter on quarter, attributed to Gwynne Shotwell (SpaceX President and COO) on the Oct 20 call.",
+   "evidence_url": "https://www.satellitetoday.com/finance/2026/10/21/starlink-growth-slows-as-ai-takes-the-lead-at-spacex-in-q3-results/"
+  },
+  {
+   "id": "satellite:spacex-ipo",
+   "verdict": "confirmed",
+   "note": "SiliconAngle, CBS and others report pricing at $135 on June 11 for $75B (555.6M shares, about $1.77T implied), with trading on Nasdaq as SPCX starting June 12.",
+   "evidence_url": "https://siliconangle.com/2026/06/11/elon-musks-spacex-raises-record-breaking-75b-pricing-ipo-135-per-share/"
+  },
+  {
+   "id": "satellite:spacex-65mhz-vs-5mhz",
+   "verdict": "confirmed",
+   "note": "Coverage of SpaceX's Aug 4, 2026 Q2 earnings quotes Shotwell saying second-generation satellites will use 65 MHz of EchoStar spectrum versus the 5 MHz the current system uses, but the corroboration comes from the same cluster of earnings coverage.",
+   "evidence_url": "https://advanced-television.com/2026/08/05/spacex-targets-us-cellular-entry/"
+  },
+  {
+   "id": "satellite:fcc-echostar-approval",
+   "verdict": "confirmed",
+   "note": "FCC order DA 26-471 and Telecompetitor (May 12, 2026) confirm assignment to SpaceX of 40 MHz AWS-4, 10 MHz H-block and about 15 MHz unpaired AWS-3, with direct-to-device performance conditions.",
+   "evidence_url": "https://docs.fcc.gov/public/attachments/DA-26-471A1.pdf"
+  },
+  {
+   "id": "satellite:echostar-spacex-price",
+   "verdict": "confirmed",
+   "note": "TechCrunch, The Register and Fortune all report about $17B, split $8.5B cash and $8.5B SpaceX stock.",
+   "evidence_url": "https://techcrunch.com/2025/09/08/spacex-strikes-17b-deal-to-buy-echostars-spectrum-for-starlinks-direct-to-phone-service/"
+  },
+  {
+   "id": "satellite:grain-800-deal",
+   "verdict": "corrected",
+   "note": "The 546 licences and up to 14 MHz check out, but the FCC accepted the applications for filing on Nov 10, 2026 (DA 26-1218; petitions due Dec 1, oppositions Dec 8), not in late October; Oct 27 was SpaceX's separate request to modify its satellite authorizations.",
+   "corrected_value": "Applications accepted for filing 10 Nov 2026 (DA 26-1218, WT Docket 26-313)",
+   "corrected_claim": "SpaceX agreed to buy Grain's nationwide 800 MHz portfolio of 546 licences covering up to 14 MHz; the FCC accepted the applications for filing on November 10, 2026, which is not a grant.",
+   "evidence_url": "https://totaltele.com/fcc-accepts-spacex-application-to-acquire-800mhz-spectrum/"
+  },
+  {
+   "id": "satellite:v2-mobile-capacity",
+   "verdict": "confirmed",
+   "note": "MWC 2026 coverage (Fierce, ISPreview, Broadband Breakfast) reports up to 20x per-satellite throughput and more than 100x system capacity, with 150 Mbps described as a peak-speed target.",
+   "evidence_url": "https://www.ispreview.co.uk/index.php/2026/02/cellular-starlink-service-targets-peak-mobile-broadband-speeds-of-150mbps.html"
+  },
+  {
+   "id": "satellite:ast-12-in-orbit",
+   "verdict": "confirmed",
+   "note": "AST's Q3 2026 release (Business Wire via Finviz) lists BlueBirds 1-6 and 8-13 as unfolded and operating in orbit.",
+   "evidence_url": "https://finviz.com/news/419591/ast-spacemobile-provides-business-update-and-third-quarter-2026-results"
+  },
+  {
+   "id": "satellite:ast-q3-financials",
+   "verdict": "confirmed",
+   "note": "Zacks, Stocktwits and RuntimeWire report Q3 revenue of $42.3M from gateways and government milestones, reaffirmed 2026 guidance of $150-200M and about $3.2B of cash.",
+   "evidence_url": "https://runtimewire.com/article/ast-spacemobile-hits-42-3m-in-q3-revenue-as-it-scales-bluebird-production"
+  },
+  {
+   "id": "satellite:amazon-globalstar",
+   "verdict": "confirmed",
+   "note": "Amazon valued Globalstar equity at about $10.8B as of Apr 9 against a headline of about $11.57B, both consistent with 'about $11B', and a separate agreement keeps the iPhone and Apple Watch satellite features.",
+   "evidence_url": "https://www.geekwire.com/2026/amazon-and-apple-vs-starlink-globalstar-satellite-acquisition-comes-with-a-big-iphone-bonus/"
+  },
+  {
+   "id": "satellite:rocketlab-iridium",
+   "verdict": "confirmed",
+   "note": "DCD, Marine Log and SatNews confirm the June 29, 2026 deal at $54/share ($27 cash plus stock under a collar) and about $8.0B enterprise value, expected to close in mid-2027.",
+   "evidence_url": "https://www.datacenterdynamics.com/en/news/launcher-rocket-lab-acquires-satellite-operator-iridium-in-8bn-deal/"
+  },
+  {
+   "id": "economics:spacex-grain-800mhz",
+   "verdict": "confirmed",
+   "note": "Broadband Breakfast, RCR and SatNews confirm the Oct 8 deal for up to 14 MHz paired 800 MHz, subject to FCC approval, with the WSJ-reported price of about $8B in cash.",
+   "evidence_url": "https://broadbandbreakfast.com/earthquake-in-the-sky-spacex-pays-8-billion-for-grain-management-airwaves-to-advance-starlink-mobile/"
+  },
+  {
+   "id": "economics:carriers-drop-oct9",
+   "verdict": "confirmed",
+   "note": "Independent market roundups give Oct 9 closes of AT&T -9.81%, Verizon -8.75% and T-Mobile -13.27%, matching within rounding (one Motley Fool recap has Verizon at -10.14%).",
+   "evidence_url": "https://www.tikr.com/blog/verizon-stock-falls-spacex-spectrum-deal"
+  },
+  {
+   "id": "economics:att-closes-echostar",
+   "verdict": "confirmed",
+   "note": "AT&T's July 28, 2026 release, Fierce and Reuters confirm about $23B for about 30 MHz of 3.45 GHz and about 20 MHz of 600 MHz; I did not separately check the Boost hybrid MVNO detail.",
+   "evidence_url": "https://www.fierce-network.com/wireless/att-closes-23b-spectrum-deal-echostar"
+  },
+  {
+   "id": "economics:vz-q3-phone-adds",
+   "verdict": "confirmed",
+   "note": "Verizon's release reports 406,000 postpaid phone net adds, up more than 820% year on year (implying about 44k a year earlier); I did not check the 'strongest Q3 in five years' wording.",
+   "evidence_url": "https://verizon.com/about/news/verizon-delivers-another-record-breaking-quarter"
+  },
+  {
+   "id": "economics:vz-q3-arpa",
+   "verdict": "confirmed",
+   "note": "TelecomLead reports postpaid ARPA down 1.9% to $168.08 from $171.27.",
+   "evidence_url": "https://telecomlead.com/5g/verizon-q3-2026-results-revenue-hits-34-3-billion-fiber-subscribers-jump-44-capex-at-16-16-5-billion-128387?amp=1"
+  },
+  {
+   "id": "economics:att-q3-wireless-service",
+   "verdict": "confirmed",
+   "note": "AT&T's Q3 2026 tables show wireless service revenue of $17,764M versus $16,926M (+5.0%), now reported inside the Advanced Connectivity segment.",
+   "evidence_url": "https://about.att.com/story/2026/3q-earnings.html"
+  },
+  {
+   "id": "economics:tmus-q3-accounts",
+   "verdict": "confirmed",
+   "note": "T-Mobile's release and Q3 10-Q show 274k postpaid net account additions versus 396k a year earlier, a 31% decline.",
+   "evidence_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+  },
+  {
+   "id": "economics:charter-q3-mobile",
+   "verdict": "confirmed",
+   "note": "TelecomLead and Cord Cutters News confirm 508k pro forma mobile line adds (440k legacy Charter plus 68k Cox), 13.5M lines and 1.8M added over twelve months.",
+   "evidence_url": "https://telecomlead.com/broadband/charter-q3-2026-capex-falls-11-2-to-3-2-billion-broadband-subscribers-drop-to-34-3-million-spectrum-mobile-reaches-13-5-million-128591?amp=1"
+  },
+  {
+   "id": "economics:comcast-q3-mobile",
+   "verdict": "confirmed",
+   "note": "Comcast's release (via Benton and TelecomLead) shows 368k domestic wireless line adds and 10.6M total lines, and the 414k prior-year and 399k consensus figures match Light Reading.",
+   "evidence_url": "https://www.benton.org/headlines/comcast-reports-3rd-quarter-results"
+  },
+  {
+   "id": "economics:ctia-price-decline",
+   "verdict": "confirmed",
+   "note": "Broadband Breakfast and Telco Magazine, reporting CTIA's 2026 survey, give a 4.1% fall in wireless service prices from 2024 to 2025 and a 21% fall in price per GB.",
+   "evidence_url": "https://telcomagazine.com/news/ctia-us-wireless-data-use-up-20-yoy-in-2025"
+  },
+  {
+   "id": "economics:industry-service-revenue",
+   "verdict": "unverified",
+   "note": "I found the $235B and +69% since 2007 figures only in the Light Reading analysis itself and no CTIA primary figure, though 69% over 18 years does work out to about 3% a year."
+  },
+  {
+   "id": "economics:echostar-fortune",
+   "verdict": "confirmed",
+   "note": "Fortune, which publishes the list, states EchoStar had the Fortune 500's best shareholder return (about +430% since start-2025, nearly 375% in 2025), and Trefis independently shows a 375% total return for 2025.",
+   "evidence_url": "https://www.trefis.com/data/companies/echo"
+  },
+  {
+   "id": "investables:spacex-grain-800mhz",
+   "verdict": "confirmed",
+   "note": "Satnews and Light Reading confirm the Oct 8, 2026 deal for up to 14 MHz paired (546 licences) to add low-band indoor coverage alongside the 2 GHz spectrum, with the FCC application accepted for review but not granted; no official price was given, though the WSJ reported about $8B.",
+   "evidence_url": "https://satnews.com/2026/10/09/spacex-acquires-grain-managements-800-mhz-spectrum-portfolio-to-launch-standalone-starlink-mobile-carrier/"
+  },
+  {
+   "id": "investables:spacex-echostar-17b",
+   "verdict": "confirmed",
+   "note": "AP/PBS and Fierce report about $17B: up to $8.5B cash plus up to $8.5B SpaceX stock, with roughly $2B of interest on top.",
+   "evidence_url": "https://www.pbs.org/newshour/nation/spacex-pays-17-billion-to-acquire-spectrum-licenses-from-echostar"
+  },
+  {
+   "id": "investables:echostar-spacex-share-count",
+   "verdict": "confirmed",
+   "note": "24/7 Wall St reports about 261.8M SpaceX Class A shares at $42.40 (about $11.1B, which includes the later unpaired AWS-3 add-on), and Bloomberg confirms the 5-for-1 split in May 2026 (consistent with the roughly 52M pre-split count others cite); the 10-Q itself could not be opened.",
+   "evidence_url": "https://247wallst.com/investing/2026/06/07/the-beaten-down-stock-about-to-cash-a-19-6-billion-check-from-elon-musk/"
+  },
+  {
+   "id": "investables:echostar-spacex-close-2027",
+   "verdict": "confirmed",
+   "note": "Coverage of the May 2026 FCC approval says the SpaceX closing is expected around November 2027, and 24/7 Wall St gives total consideration of about $19.6B.",
+   "evidence_url": "https://www.mobileworldlive.com/att/fcc-signs-off-on-echostar-deals-to-spacex-att/"
+  },
+  {
+   "id": "investables:att-echostar-close",
+   "verdict": "confirmed",
+   "note": "AT&T's July 28, 2026 release and Fierce confirm the roughly $23B close for about 30 MHz of 3.45 GHz and about 20 MHz of 600 MHz.",
+   "evidence_url": "https://www.fierce-network.com/wireless/att-closes-23b-spectrum-deal-echostar"
+  },
+  {
+   "id": "investables:echostar-att-net-proceeds",
+   "verdict": "confirmed",
+   "note": "EchoStar's filing language (via Light Reading and EchoStar IR) says the seller received $20.25B and the buyer deposited $2.4B into the FCC trust for Dish Wireless decommissioning claims.",
+   "evidence_url": "https://www.lightreading.com/5g/echostar-closes-at-t-spectrum-deal-but-wrinkles-remain"
+  },
+  {
+   "id": "investables:echostar-cash-q3",
+   "verdict": "confirmed",
+   "note": "Panabee separately reports $13.44B of cash and equivalents at Sep 30, 2026, which fits the 10-Q's wider liquidity total of $13.969B (that total also counts restricted cash and marketable securities); I could not open the 10-Q balance-sheet line to check directly.",
+   "evidence_url": "https://www.panabee.com/news/echostar-earnings-q3-2026-report"
+  },
+  {
+   "id": "investables:ubs-echostar-stake-value",
+   "verdict": "confirmed",
+   "note": "Several outlets (Stocktwits, Goldesel, Edgen) confirm UBS's Buy and $150 target and the stake values of $39B ($110/share) and $55B ($156/share at a $210 SpaceX price); reported dates conflict (Sep 8 vs Oct 2, 2026).",
+   "evidence_url": "https://stocktwits.com/news-articles/markets/equity/echostar-spacex-stake-is-driving-ubs-citi-price-target-revisions/cLep8LlREuy"
+  },
+  {
+   "id": "investables:spacex-ipo-pricing",
+   "verdict": "confirmed",
+   "note": "Several outlets confirm $135/share and $75B base (555.6M shares), rising to $85.7B after the 83.3M-share greenshoe was exercised on June 15, 2026.",
+   "evidence_url": "https://www.thestar.com.my/tech/tech-news/2026/06/15/spacex-ipo-raises-857-billion-as-underwriters-exercise-039greenshoe-option"
+  },
+  {
+   "id": "investables:spacex-nov18-close",
+   "verdict": "unverified",
+   "note": "No Nov 18 close was found in two searches; the latest seen was $137.36 on Nov 16 plus a 3.16% gain on Nov 17 (about $141.70), so $143.50 is plausible but not shown.",
+   "evidence_url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-17-2026/"
+  },
+  {
+   "id": "precedents:att-echostar-close",
+   "verdict": "confirmed",
+   "note": "AT&T newsroom and DCD confirm the July 28, 2026 close of about 30 MHz of 3.45 GHz plus about 20 MHz of 600 MHz for roughly $23B.",
+   "evidence_url": "https://www.datacenterdynamics.com/en/news/att-completes-23bn-echostar-spectrum-acquisition/"
+  },
+  {
+   "id": "precedents:spacex-echostar-aws4",
+   "verdict": "confirmed",
+   "note": "AP/PBS and Fierce confirm about $17B (up to $8.5B cash plus $8.5B stock) and roughly $2B of EchoStar debt interest funded through November 2027.",
+   "evidence_url": "https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+  },
+  {
+   "id": "precedents:echostar-stock-430",
+   "verdict": "confirmed",
+   "note": "The Fortune piece states +430% since the start of 2025, including nearly 375% in 2025, and Chartrow separately lists 2025 at +374.7%; the Fortune 500 ranking itself rests on Fortune.",
+   "evidence_url": "https://chartrow.com/quote/echo/returns"
+  },
+  {
+   "id": "precedents:dish-30b-invested",
+   "verdict": "confirmed",
+   "note": "DISH's 2023 10-Q says it has invested over $30B in wireless spectrum licences, including over $10B of noncontrolling investments in the Northstar/SNR designated entities, and excluding about $8B of capitalised interest.",
+   "evidence_url": "https://sec.gov/Archives/edgar/data/1001082/000155837023008370/R16.htm"
+  },
+  {
+   "id": "precedents:dish-dbsd-terrestar",
+   "verdict": "confirmed",
+   "note": "A DISH SEC filing gives total consideration of about $2.860B and the FCC's March 2, 2012 approval of the 40 MHz transfer; trade press reports the close on March 9, 2012.",
+   "evidence_url": "https://www.satellitetoday.com/connectivity/2012/03/16/dish-closes-dbsd-terrestar-acquisitions-prepares-for-fcc-spectrum-nprm"
+  },
+  {
+   "id": "precedents:grain-800-spacex",
+   "verdict": "confirmed",
+   "note": "The deal and its indoor-coverage purpose are confirmed; SpaceX disclosed no terms (the WSJ reported about $8B), and a Nov 10, 2026 FCC public notice opened review with no grant yet.",
+   "evidence_url": "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward"
+  },
+  {
+   "id": "precedents:nextwave-licence-sales",
+   "verdict": "confirmed",
+   "note": "Verizon and RCR confirm the $3.0B Verizon purchase (closed Apr 13, 2005), Cingular $1.4B, Verizon New York $930M and MetroPCS $43.5M (some say $43M), and the NextWave plan (SEC T-3) paid creditors in full.",
+   "evidence_url": "https://rcrwireless.com/20040726/archived-articles/judge-oks-nextwave-auction-results"
+  },
+  {
+   "id": "precedents:sprint-clearwire-buyout",
+   "verdict": "confirmed",
+   "note": "Bloomberg, TNW and Fox Business confirm Sprint's June 20, 2013 raise to $5/share (about $14B valuation) over Dish's $4.40, and Dish withdrew around June 27.",
+   "evidence_url": "https://thenextweb.com/news/sprint-ups-its-clearwire-bid-to-5-per-share-and-is-afforded-unanimous-recommendation-by-clearwires-board"
+  },
+  {
+   "id": "precedents:harbinger-lightsquared",
+   "verdict": "confirmed",
+   "note": "Fierce and FA-Mag (from Bloomberg) confirm about $3B invested in LightSquared, a 47% loss for the main fund in 2011 and a roughly 59% markdown of the LightSquared stake.",
+   "evidence_url": "https://www.fierce-network.com/wireless/falcone-s-harbinger-capital-loses-47-value-due-to-lightsquared-writedown"
+  },
+  {
+   "id": "precedents:ligado-ast-terms",
+   "verdict": "corrected",
+   "note": "The three instalments ($420M + $100M + $15M = $535M) are the Inmarsat portion of the roughly $550M total, not the whole $550M; the $100M was placed in escrow by the bankruptcy court; the roughly $80M/yr minimum usage payment is supported by coverage of the filing.",
+   "corrected_claim": "AST's deal for Ligado's L-band pays about $550M in total, of which $535M goes to Inmarsat on Ligado's behalf ($420M on 2025-10-31, $100M on 2026-03-31 (escrowed by the bankruptcy court), $15M at closing), plus minimum annual L-band usage payments of about $80M for up to 40 MHz of L-band (45 MHz including 1670-1675 MHz).",
+   "corrected_value": "$550M total ($535M of it to Inmarsat) + ~$80M/yr minimum",
+   "evidence_url": "https://stocktwits.com/news-articles/markets/equity/asts-ligado-fcc-clearance-spectrum-96-ast-satellites/cZYTtUARJS4"
+  },
+  {
+   "id": "precedents:straightpath-verizon",
+   "verdict": "confirmed",
+   "note": "The Straight Path 8-K confirms $184.00/share all-stock at about $3.1B enterprise value; AT&T's earlier bid was $95.63/share, reported as $1.25B equity or $1.6B enterprise value.",
+   "evidence_url": "https://www.sec.gov/Archives/edgar/data/0001574460/000121390017004939/f8k051117ex99i_straightpath.htm"
+  },
+  {
+   "id": "global:gsma-global-cost-share-7pct",
+   "verdict": "confirmed",
+   "note": "The GSMA press release and summary say cumulative spectrum costs are about 7% of operator revenue (4.5% in 2014 to 7.4% in 2023), a 63% rise.",
+   "evidence_url": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/"
+  },
+  {
+   "id": "global:gsma-revenue-per-mhz-decline",
+   "verdict": "confirmed",
+   "note": "The GSMA press release confirms revenue per MHz fell 60% (2014-2023) and that prices have not adjusted; the summary deck cites -80% for 4G/5G, and I could not find the -67% upper bound.",
+   "evidence_url": "https://www.gsma.com/connectivity-for-good/spectrum/wp-content/uploads/2025/05/Global-Spectrum-Pricing-Summary.pdf"
+  },
+  {
+   "id": "global:am-35ghz-avg-eur0067",
+   "verdict": "confirmed",
+   "note": "Analysys Mason's own June 2025 PDF (same publisher, not an independent source) states EUR0.067/MHz/pop from 49 non-combinatorial national 3.3-3.9 GHz auctions in 2018-2024, normalised to 20 years.",
+   "evidence_url": "https://www.analysysmason.com/contentassets/22a8a8572e0c461d8db012485349a288/spectrum_valuation_uppermid_jun2025.pdf"
+  },
+  {
+   "id": "global:us-auction107-cband",
+   "verdict": "corrected",
+   "note": "$80.92bn is the clock-phase total; FCC final gross winning bids were $81,168,677,645, while BitPath's $0.942/MHz-pop and S&P's 'world's costliest mid-band auction' are confirmed.",
+   "corrected_value": "$81.17bn gross winning bids (final, incl. assignment phase); $80.92bn was clock phase only",
+   "evidence_url": "https://auctiondata.fcc.gov/public/projects/auction107"
+  },
+  {
+   "id": "global:uk-mmwave-2025",
+   "verdict": "confirmed",
+   "note": "Ofcom and ISPreview confirm 5.4 GHz offered (the most in any Ofcom auction), all sold to EE, O2 and VodafoneThree at £13m each (£39m in total), with final results on Oct 24, 2025.",
+   "evidence_url": "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced"
+  },
+  {
+   "id": "global:germany-extension-2025",
+   "verdict": "confirmed",
+   "note": "BNetzA's Mar 24, 2025 decision extends the 800/1800/2600 MHz rights by five years (lease and coverage conditions apply) and plans a later competitive award with the 2033 bands (around 2029 per Bird & Bird).",
+   "evidence_url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/EN/2025/20250324_frequenzen.html"
+  },
+  {
+   "id": "global:india-2024-auction",
+   "verdict": "corrected",
+   "note": "141.4 MHz sold of 10,522.35 MHz for ₹11,340.78 crore is confirmed, but ThePrint gives the reserve value of everything offered as ₹96,238.45 crore, not ₹96,318 crore (immaterial: about 12% realised either way).",
+   "corrected_value": "Reserve value ₹96,238 crore (ThePrint)",
+   "evidence_url": "https://theprint.in/economy/spectrum-auctions-see-sale-of-141-4-mhz-of-radio-waves-worth-rs-11340-78-cr-bharti-airtel-top-buyer/2148813"
+  },
+  {
+   "id": "global:canada-3800-prices",
+   "verdict": "confirmed",
+   "note": "Rogers' release confirms C$475M for 40.5 MHz at C$0.32/MHz-pop and Telus confirms C$0.24, against Rogers' 2021 3500 MHz C$3.38/MHz-pop (about 90% lower).",
+   "evidence_url": "https://about.rogers.com/news-ideas/rogers-acquires-3800-mhz-5g-spectrum-across-canada/"
+  },
+  {
+   "id": "global:brazil-obligations-90pct",
+   "verdict": "confirmed",
+   "note": "Teletime reports Anatel aimed to convert 90% of NPV into investments, and the final result was R$4.8B to the Treasury out of about R$47.2B of economic value (about 90% as obligations; 'at least' is slightly generous); I did not separately check the 20-year licence term.",
+   "evidence_url": "https://teletime.com.br/18/03/2021/presidente-da-anatel-diz-que-90-do-valor-do-leilao-de-5g-sera-convertido-em-investimentos/"
+  },
+  {
+   "id": "global:eu-2ghz-mss-proposal",
+   "verdict": "confirmed",
+   "note": "The Commission proposal (May 27, 2026) is confirmed; iDATE and CCIA describe three 2x10 MHz parts (IRIS²/sovereign, EU new entrants, open to all), so two-thirds are effectively reserved for European users; I did not see the 20-year term.",
+   "evidence_url": "https://idate.fr/europes-2-ghz-mss-band/"
+  },
+  {
+   "id": "global:us-europe-midband-multiple",
+   "verdict": "confirmed",
+   "note": "Both inputs were verified this session ($0.942 BitPath; EUR0.067 Analysys Mason), and 0.942/0.072 is about 13.1x, but at mid-2025 FX of about 1.15 USD/EUR the multiple is nearer 12x.",
+   "evidence_url": "https://www.spglobal.com/marketintelligence/en/news-insights/research/us-c-band-auction-becomes-worlds-costliest-mid-band-5g-auction-yet"
+  }
+ ],
+ "searches": [
+  38,
+  38,
+  38
+ ]
+}

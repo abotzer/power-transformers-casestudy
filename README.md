@@ -6,6 +6,7 @@ Source-linked market research reports prepared for Fulton Asset Management. The 
 |---|---|---|
 | **North American power transformers** | Supply, capacity, lead times, prices, trade and policy, deals, the value chain from electrical steel to data centers, and how Fulton can profit from the build-out. Updated weekly | [`transformer-market/`](transformer-market/) · [dashboard](https://claude.ai/artifact/HPfiJXoEzG2ZwVXuMkAWYb) |
 | **Critical utility infrastructure services** | An independent look at utility infrastructure maintenance across natural gas, power and water: asset age, demand drivers, precedent platforms, fragmentation, market size and margins, cross-unit synergies, platform candidates and where a new platform would sit | [`infra-services/`](infra-services/) · [dashboard](https://claude.ai/artifact/Qr6MHQ1uWuHrpDkx2gfpJn) |
+| **Wireless spectrum** | Tests the thesis that licensed spectrum becomes much more valuable as AI devices and satellite-terrestrial networks converge: demand, substitutes, supply and FCC rules, auction and private-sale prices, SpaceX and satellite direct-to-device, who captures the value, past spectrum bets, markets abroad and listed exposure, with forecasts, event probabilities and scenarios to 2030 | [`wireless-spectrum/`](wireless-spectrum/) · [dashboard](https://claude.ai/artifact/W3FJZ8ZSR4REECadQRFypB) |
 
 ## Repository layout
 
@@ -18,3 +19,4 @@ Source-linked market research reports prepared for Fulton Asset Management. The 
 | `shared/brand/` | Whitesail Labs logo |
 | `transformer-market/` | Transformer report: market map, weekly reports, deep dive, CSV trackers, dashboard source, runbook |
 | `infra-services/` | Utility infrastructure services report: research, dashboard source and datasets |
+| `wireless-spectrum/` | Wireless spectrum report: research, verification, forecasts, dashboard source and datasets |

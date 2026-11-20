@@ -1,0 +1,2106 @@
+[
+ {
+  "id": "us_traffic-00",
+  "chart_id": "us_traffic",
+  "order": 0,
+  "series": "Traffic",
+  "x": "2019",
+  "y": 37.06,
+  "label": "+30%",
+  "note": "37.1 EB in 2019, up 30% on 2018"
+ },
+ {
+  "id": "us_traffic-01",
+  "chart_id": "us_traffic",
+  "order": 1,
+  "series": "Traffic",
+  "x": "2020",
+  "y": 42.2,
+  "label": "+14%",
+  "note": "42.2 EB in 2020, up 14% on 2019"
+ },
+ {
+  "id": "us_traffic-02",
+  "chart_id": "us_traffic",
+  "order": 2,
+  "series": "Traffic",
+  "x": "2021",
+  "y": 53.4,
+  "label": "+27%",
+  "note": "53.4 EB in 2021, up 27% on 2020"
+ },
+ {
+  "id": "us_traffic-03",
+  "chart_id": "us_traffic",
+  "order": 3,
+  "series": "Traffic",
+  "x": "2022",
+  "y": 73.7,
+  "label": "+38%",
+  "note": "73.7 EB in 2022, up 38% on 2021"
+ },
+ {
+  "id": "us_traffic-04",
+  "chart_id": "us_traffic",
+  "order": 4,
+  "series": "Traffic",
+  "x": "2023",
+  "y": 100.1,
+  "label": "+36%",
+  "note": "100.1 EB in 2023, up 36% on 2022"
+ },
+ {
+  "id": "us_traffic-05",
+  "chart_id": "us_traffic",
+  "order": 5,
+  "series": "Traffic",
+  "x": "2024",
+  "y": 132,
+  "label": "+32%",
+  "note": "132 EB in 2024, up 32% on 2023"
+ },
+ {
+  "id": "us_traffic-06",
+  "chart_id": "us_traffic",
+  "order": 6,
+  "series": "Traffic",
+  "x": "2025",
+  "y": 159.3,
+  "label": "+20%",
+  "note": "159.3 EB in 2025, up 20% on 2024"
+ },
+ {
+  "id": "global_traffic-00",
+  "chart_id": "global_traffic",
+  "order": 0,
+  "series": "Actual",
+  "x": "2023-09",
+  "y": 130,
+  "note": "Ericsson revised figure (earlier edition said >140)"
+ },
+ {
+  "id": "global_traffic-01",
+  "chart_id": "global_traffic",
+  "order": 1,
+  "series": "Actual",
+  "x": "2024-09",
+  "y": 157,
+  "note": "Ericsson Nov 2024 edition; may be restated in later editions"
+ },
+ {
+  "id": "global_traffic-02",
+  "chart_id": "global_traffic",
+  "order": 2,
+  "series": "Actual",
+  "x": "2025-12",
+  "y": 203,
+  "note": "Ericsson end-2025"
+ },
+ {
+  "id": "global_traffic-03",
+  "chart_id": "global_traffic",
+  "order": 3,
+  "series": "Actual",
+  "x": "2026-03",
+  "y": 210,
+  "note": "+22% y/y"
+ },
+ {
+  "id": "global_traffic-04",
+  "chart_id": "global_traffic",
+  "order": 4,
+  "series": "Actual",
+  "x": "2026-06",
+  "y": 220,
+  "note": "Reported as 'exceeded 220'; +23% y/y"
+ },
+ {
+  "id": "global_traffic-05",
+  "chart_id": "global_traffic",
+  "order": 5,
+  "series": "Forecast",
+  "x": "2025-12",
+  "y": 203,
+  "note": "Ericsson's end-2025 base for its forecast"
+ },
+ {
+  "id": "global_traffic-06",
+  "chart_id": "global_traffic",
+  "order": 6,
+  "series": "Forecast",
+  "x": "2031-12",
+  "y": 515,
+  "note": "Ericsson Jun 2026 edition; CAGR ~17%"
+ },
+ {
+  "id": "forecast_overshoot-00",
+  "chart_id": "forecast_overshoot",
+  "order": 0,
+  "series": "Forecast at the time",
+  "x": "2022 (forecast made in 2018)",
+  "y": 26,
+  "note": "Ericsson 2018 edition"
+ },
+ {
+  "id": "forecast_overshoot-01",
+  "chart_id": "forecast_overshoot",
+  "order": 1,
+  "series": "What happened",
+  "x": "2022 (forecast made in 2018)",
+  "y": 19,
+  "note": "Later Ericsson edition"
+ },
+ {
+  "id": "forecast_overshoot-02",
+  "chart_id": "forecast_overshoot",
+  "order": 2,
+  "series": "Forecast at the time",
+  "x": "2023 (forecast made in 2017)",
+  "y": 48,
+  "note": "Ericsson 2017 edition"
+ },
+ {
+  "id": "forecast_overshoot-03",
+  "chart_id": "forecast_overshoot",
+  "order": 3,
+  "series": "What happened",
+  "x": "2023 (forecast made in 2017)",
+  "y": 26,
+  "note": "Ericsson 2024 edition"
+ },
+ {
+  "id": "fwa_subs-00",
+  "chart_id": "fwa_subs",
+  "order": 0,
+  "series": "T-Mobile",
+  "x": "2022",
+  "y": 2.65,
+  "note": "Derived: LRG YE2023 4.776M minus 2023 gain 2.13M"
+ },
+ {
+  "id": "fwa_subs-01",
+  "chart_id": "fwa_subs",
+  "order": 1,
+  "series": "Verizon",
+  "x": "2022",
+  "y": 1.45,
+  "note": "Business + consumer FWA"
+ },
+ {
+  "id": "fwa_subs-02",
+  "chart_id": "fwa_subs",
+  "order": 2,
+  "series": "T-Mobile",
+  "x": "2023",
+  "y": 4.78,
+  "note": "5G Home Internet"
+ },
+ {
+  "id": "fwa_subs-03",
+  "chart_id": "fwa_subs",
+  "order": 3,
+  "series": "Verizon",
+  "x": "2023",
+  "y": 3.07,
+  "note": "LRG count"
+ },
+ {
+  "id": "fwa_subs-04",
+  "chart_id": "fwa_subs",
+  "order": 4,
+  "series": "AT&T",
+  "x": "2024",
+  "y": 0.65,
+  "note": "'More than 650,000' Internet Air"
+ },
+ {
+  "id": "fwa_subs-05",
+  "chart_id": "fwa_subs",
+  "order": 5,
+  "series": "T-Mobile",
+  "x": "2024",
+  "y": 6.43,
+  "note": "Per Ookla/Telecompetitor"
+ },
+ {
+  "id": "fwa_subs-06",
+  "chart_id": "fwa_subs",
+  "order": 6,
+  "series": "Verizon",
+  "x": "2024",
+  "y": 4.6,
+  "note": "'Nearly 4.6 million' per Verizon"
+ },
+ {
+  "id": "fwa_subs-07",
+  "chart_id": "fwa_subs",
+  "order": 7,
+  "series": "AT&T",
+  "x": "2025",
+  "y": 1.49,
+  "note": "Derived: 1.27M + 221K Q4 net adds (New Street)"
+ },
+ {
+  "id": "fwa_subs-08",
+  "chart_id": "fwa_subs",
+  "order": 8,
+  "series": "T-Mobile",
+  "x": "2025",
+  "y": 8.45,
+  "note": "T-Mobile reconciliation table: 8,450K; separate disclosure stopped in 2026"
+ },
+ {
+  "id": "fwa_subs-09",
+  "chart_id": "fwa_subs",
+  "order": 9,
+  "series": "Verizon",
+  "x": "2025",
+  "y": 5.7,
+  "note": "'Over 5.7 million' after +319K in Q4"
+ },
+ {
+  "id": "ai_traffic-00",
+  "chart_id": "ai_traffic",
+  "order": 0,
+  "series": "Share",
+  "x": "Gen AI share of traffic, 2025",
+  "y": 0.06,
+  "note": "21 apps, one operator, one week, extrapolated"
+ },
+ {
+  "id": "ai_traffic-01",
+  "chart_id": "ai_traffic",
+  "order": 1,
+  "series": "Share",
+  "x": "Uplink share of all traffic today",
+  "y": 10,
+  "note": "~90:10 downlink:uplink"
+ },
+ {
+  "id": "ai_traffic-02",
+  "chart_id": "ai_traffic",
+  "order": 2,
+  "series": "Share",
+  "x": "Uplink share of gen AI traffic",
+  "y": 26,
+  "note": "Measured 2025"
+ },
+ {
+  "id": "ai_traffic-03",
+  "chart_id": "ai_traffic",
+  "order": 3,
+  "series": "Share",
+  "x": "Uplink share, text chatbots",
+  "y": 29,
+  "note": "29/71 uplink/downlink"
+ },
+ {
+  "id": "ai_traffic-04",
+  "chart_id": "ai_traffic",
+  "order": 4,
+  "series": "Share",
+  "x": "Uplink share, voice and agents",
+  "y": 50,
+  "note": "Close to 50/50"
+ },
+ {
+  "id": "ai_traffic-05",
+  "chart_id": "ai_traffic",
+  "order": 5,
+  "series": "Share",
+  "x": "US urban uplink share, 2031 scenario",
+  "y": 14,
+  "note": "From ~10% baseline"
+ },
+ {
+  "id": "ai_traffic-06",
+  "chart_id": "ai_traffic",
+  "order": 6,
+  "series": "Share",
+  "x": "Uplink in busiest AI cells, 2035",
+  "y": 24,
+  "note": "Not network-wide"
+ },
+ {
+  "id": "ai_traffic-07",
+  "chart_id": "ai_traffic",
+  "order": 7,
+  "series": "Share",
+  "x": "AI share of all traffic, 2035 (Nokia)",
+  "y": 44,
+  "note": "All networks, broad AI definition"
+ },
+ {
+  "id": "ai_traffic-08",
+  "chart_id": "ai_traffic",
+  "order": 8,
+  "series": "Share",
+  "x": "AI share of broadband, 2034 (CTIA)",
+  "y": 33,
+  "note": "'Nearly a third'; advocacy source"
+ },
+ {
+  "id": "capacity_levers-00",
+  "chart_id": "capacity_levers",
+  "order": 0,
+  "series": "Multiple",
+  "x": "Traffic carried",
+  "y": 5.6,
+  "note": "CTIA 2025 159.3T MB vs 2018 ~28.6T MB (2018 figure recalled, not re-verified)"
+ },
+ {
+  "id": "capacity_levers-01",
+  "chart_id": "capacity_levers",
+  "order": 1,
+  "series": "Multiple",
+  "x": "Licensed sub-6 GHz spectrum in use",
+  "y": 1.6,
+  "note": "~716 MHz implied by CTIA MB-per-MHz figure to ~1,150 MHz Whitesail estimate (C-band, 3.45 GHz, CBRS PAL, 600 MHz, 2.5 GHz)"
+ },
+ {
+  "id": "capacity_levers-02",
+  "chart_id": "capacity_levers",
+  "order": 2,
+  "series": "Multiple",
+  "x": "Outdoor cell sites",
+  "y": 1.3,
+  "note": "CTIA 349,344 (2018) vs WIA 452,950 macro + outdoor small cells (2025); definitions differ"
+ },
+ {
+  "id": "capacity_levers-03",
+  "chart_id": "capacity_levers",
+  "order": 3,
+  "series": "Multiple",
+  "x": "Residual: efficiency and loading",
+  "y": 2.7,
+  "note": "Computed 5.6 / (1.6 x 1.3); includes massive MIMO, NR, higher utilization"
+ },
+ {
+  "id": "spectrum_need-00",
+  "chart_id": "spectrum_need",
+  "order": 0,
+  "series": "Claimed need or shortfall",
+  "x": "FCC 2010: deficit by 2014",
+  "y": 275,
+  "note": "FCC headline ~300 MHz"
+ },
+ {
+  "id": "spectrum_need-01",
+  "chart_id": "spectrum_need",
+  "order": 1,
+  "series": "Claimed need or shortfall",
+  "x": "National Broadband Plan 2010: new spectrum by 2020",
+  "y": 500,
+  "note": "Target, 300 MHz mobile within 5 years"
+ },
+ {
+  "id": "spectrum_need-02",
+  "chart_id": "spectrum_need",
+  "order": 2,
+  "series": "Claimed need or shortfall",
+  "x": "Brattle/CTIA 2023: deficit by 2027",
+  "y": 400,
+  "note": "Normalized to 1-2 GHz full-power licensed"
+ },
+ {
+  "id": "spectrum_need-03",
+  "chart_id": "spectrum_need",
+  "order": 3,
+  "series": "Claimed need or shortfall",
+  "x": "Brattle/CTIA 2023: deficit by 2032",
+  "y": 1400,
+  "note": "Normalized to 1-2 GHz full-power licensed"
+ },
+ {
+  "id": "spectrum_need-04",
+  "chart_id": "spectrum_need",
+  "order": 4,
+  "series": "Claimed need or shortfall",
+  "x": "GSMA/Coleago 2021: total mid-band by 2030",
+  "y": 2000,
+  "note": "Total per country, not additional"
+ },
+ {
+  "id": "spectrum_need-05",
+  "chart_id": "spectrum_need",
+  "order": 5,
+  "series": "Claimed need or shortfall",
+  "x": "GSMA Vision 2040: total urban mid-band 2035-40",
+  "y": 2500,
+  "note": "Midpoint of 2,000-3,000 MHz; total not additional"
+ },
+ {
+  "id": "spectrum_need-06",
+  "chart_id": "spectrum_need",
+  "order": 6,
+  "series": "Planned supply",
+  "x": "OBBBA pipeline by 2034",
+  "y": 800,
+  "note": "Identification target; >=300 MHz must be auctioned"
+ },
+ {
+  "id": "spectrum_need-07",
+  "chart_id": "spectrum_need",
+  "order": 7,
+  "series": "Planned supply",
+  "x": "Upper C-band auction 2027",
+  "y": 160,
+  "note": "3.98-4.14 GHz, bidding April 27, 2027"
+ },
+ {
+  "id": "spectrum_need-08",
+  "chart_id": "spectrum_need",
+  "order": 8,
+  "series": "Planned supply",
+  "x": "NTIA 7.125-7.4 GHz candidate",
+  "y": 275,
+  "note": "Study due Dec 10, 2026"
+ },
+ {
+  "id": "spectral_efficiency-00",
+  "chart_id": "spectral_efficiency",
+  "order": 0,
+  "series": "Typical or target downlink values",
+  "x": "4G LTE 2x2 (textbook typical)",
+  "y": 2.5,
+  "note": "Illustrative textbook value"
+ },
+ {
+  "id": "spectral_efficiency-01",
+  "chart_id": "spectral_efficiency",
+  "order": 1,
+  "series": "Typical or target downlink values",
+  "x": "LTE-Advanced 4x4 macro",
+  "y": 4.7,
+  "note": "Book summary, ~200 Mbps on 40 MHz"
+ },
+ {
+  "id": "spectral_efficiency-02",
+  "chart_id": "spectral_efficiency",
+  "order": 2,
+  "series": "Typical or target downlink values",
+  "x": "5G NR (Nokia baseline)",
+  "y": 10,
+  "note": "Nokia's stated 5G average baseline"
+ },
+ {
+  "id": "spectral_efficiency-03",
+  "chart_id": "spectral_efficiency",
+  "order": 3,
+  "series": "Typical or target downlink values",
+  "x": "5G NR 64T64R 8-layer (textbook typical)",
+  "y": 12,
+  "note": "Illustrative textbook value"
+ },
+ {
+  "id": "spectral_efficiency-04",
+  "chart_id": "spectral_efficiency",
+  "order": 4,
+  "series": "Typical or target downlink values",
+  "x": "5G-Advanced (Nokia +20-40%)",
+  "y": 13,
+  "note": "Midpoint of +20-40% applied to 10 bps/Hz baseline; vendor claim"
+ },
+ {
+  "id": "spectral_efficiency-05",
+  "chart_id": "spectral_efficiency",
+  "order": 5,
+  "series": "Typical or target downlink values",
+  "x": "6G target (Nokia)",
+  "y": 50,
+  "note": "Vendor ambition with extreme MIMO, 400 MHz; not an ITU requirement"
+ },
+ {
+  "id": "spectral_efficiency-06",
+  "chart_id": "spectral_efficiency",
+  "order": 6,
+  "series": "Measured US networks (per stream)",
+  "x": "5G NR mid-band typical",
+  "y": 2.1,
+  "note": "Midpoint of 1.9-2.3 measured range; marginal vs LTE"
+ },
+ {
+  "id": "spectral_efficiency-07",
+  "chart_id": "spectral_efficiency",
+  "order": 7,
+  "series": "Measured US networks (per stream)",
+  "x": "T-Mobile n41",
+  "y": 3.14,
+  "note": "Outlier due to denser deployment and more beams"
+ },
+ {
+  "id": "capex-00",
+  "chart_id": "capex",
+  "order": 0,
+  "series": "Capital spending",
+  "x": "2018",
+  "y": 27.4,
+  "note": "Excludes spectrum purchases"
+ },
+ {
+  "id": "capex-01",
+  "chart_id": "capex",
+  "order": 1,
+  "series": "Capital spending",
+  "x": "2019",
+  "y": 29.1,
+  "note": "Excludes spectrum purchases"
+ },
+ {
+  "id": "capex-02",
+  "chart_id": "capex",
+  "order": 2,
+  "series": "Capital spending",
+  "x": "2020",
+  "y": 30,
+  "note": "Excludes spectrum purchases"
+ },
+ {
+  "id": "capex-03",
+  "chart_id": "capex",
+  "order": 3,
+  "series": "Capital spending",
+  "x": "2021",
+  "y": 35,
+  "note": "Nearly $35B"
+ },
+ {
+  "id": "capex-04",
+  "chart_id": "capex",
+  "order": 4,
+  "series": "Capital spending",
+  "x": "2022",
+  "y": 39,
+  "note": "Record; 5G mid-band build peak"
+ },
+ {
+  "id": "capex-05",
+  "chart_id": "capex",
+  "order": 5,
+  "series": "Capital spending",
+  "x": "2023",
+  "y": 30,
+  "note": "CTIA 2024 survey"
+ },
+ {
+  "id": "capex-06",
+  "chart_id": "capex",
+  "order": 6,
+  "series": "Capital spending",
+  "x": "2024",
+  "y": 29,
+  "note": "CTIA 2025 survey (via secondary summary)"
+ },
+ {
+  "id": "capex-07",
+  "chart_id": "capex",
+  "order": 7,
+  "series": "Capital spending",
+  "x": "2025",
+  "y": 30,
+  "note": "'Nearly $30B' per CTIA 2026 survey"
+ },
+ {
+  "id": "holdings-00",
+  "chart_id": "holdings",
+  "order": 0,
+  "series": "Low-band",
+  "x": "T-Mobile",
+  "y": 50,
+  "note": "Whitesail estimate: 600 MHz (~40 incl. Grain swap/UScellular/Array) + 700A (~9), 800 MHz sold to Grain; FCC range 54-66 MHz in UScellular counties"
+ },
+ {
+  "id": "holdings-01",
+  "chart_id": "holdings",
+  "order": 1,
+  "series": "Mid-band",
+  "x": "T-Mobile",
+  "y": 326,
+  "note": "TD Cowen sub-6 total 376 MHz minus est. low-band; 2.5 GHz ~160, PCS ~55, AWS ~45, C-band ~40, 3.45 ~10"
+ },
+ {
+  "id": "holdings-02",
+  "chart_id": "holdings",
+  "order": 2,
+  "series": "Low-band",
+  "x": "AT&T",
+  "y": 72,
+  "note": "700 MHz 29.6 (FCC 2024) + cellular ~22 + EchoStar 600 MHz ~20; excludes FirstNet Band 14; county max 110 MHz"
+ },
+ {
+  "id": "holdings-03",
+  "chart_id": "holdings",
+  "order": 3,
+  "series": "Mid-band",
+  "x": "AT&T",
+  "y": 250,
+  "note": "C-band ~80, 3.45 GHz ~72 (40 own + 30 EchoStar + Array), PCS/AWS/WCS ~100; TD Cowen total 314, PolicyTracker 375"
+ },
+ {
+  "id": "holdings-04",
+  "chart_id": "holdings",
+  "order": 4,
+  "series": "Low-band",
+  "x": "Verizon",
+  "y": 52,
+  "note": "700 Upper C 22 + lower 700 ~5 + cellular ~25; FCC range 22-94 MHz in Array markets"
+ },
+ {
+  "id": "holdings-05",
+  "chart_id": "holdings",
+  "order": 5,
+  "series": "Mid-band",
+  "x": "Verizon",
+  "y": 235,
+  "note": "C-band ~161 plus PCS/AWS incl. Auction 113 AWS-3 and Array; TD Cowen total 279 before those adds"
+ },
+ {
+  "id": "holdings-06",
+  "chart_id": "holdings",
+  "order": 6,
+  "series": "Low-band",
+  "x": "SpaceX (pending)",
+  "y": 12,
+  "note": "Up to 14 MHz paired 800 MHz from Grain; FCC review pending (petitions due 2026-12-01); currently held by Grain"
+ },
+ {
+  "id": "holdings-07",
+  "chart_id": "holdings",
+  "order": 7,
+  "series": "Mid-band",
+  "x": "SpaceX (pending)",
+  "y": 65,
+  "note": "AWS-4 40 + H-block 10 + unpaired AWS-3 15; in trust since 2026-05-22, acquisition closing targeted 2027-11-30"
+ },
+ {
+  "id": "holdings-08",
+  "chart_id": "holdings",
+  "order": 8,
+  "series": "Low-band",
+  "x": "EchoStar (rest)",
+  "y": 5,
+  "note": "700 MHz E block (6 MHz unpaired) assumed retained; not confirmed"
+ },
+ {
+  "id": "holdings-09",
+  "chart_id": "holdings",
+  "order": 9,
+  "series": "Mid-band",
+  "x": "EchoStar (rest)",
+  "y": 10,
+  "note": "Residual paired AWS-3 (~6) plus CBRS PALs; derived from ~76 MHz pre-SpaceX remainder minus 65 MHz"
+ },
+ {
+  "id": "holdings-10",
+  "chart_id": "holdings",
+  "order": 10,
+  "series": "Low-band",
+  "x": "Comcast",
+  "y": 4,
+  "note": "10 MHz 600 MHz in 72 PEAs, leased to T-Mobile with sale expected ~2028"
+ },
+ {
+  "id": "holdings-11",
+  "chart_id": "holdings",
+  "order": 11,
+  "series": "Mid-band",
+  "x": "Comcast",
+  "y": 3,
+  "note": "830 CBRS PALs in ~200 counties ($458M); weak estimate"
+ },
+ {
+  "id": "holdings-12",
+  "chart_id": "holdings",
+  "order": 12,
+  "series": "Mid-band",
+  "x": "Array (TDS)",
+  "y": 4,
+  "note": "Retained C-band after ~70% of holdings sold; weak estimate"
+ },
+ {
+  "id": "holdings-13",
+  "chart_id": "holdings",
+  "order": 13,
+  "series": "Mid-band",
+  "x": "Charter",
+  "y": 1,
+  "note": "210 CBRS PALs in 106 counties ($464M); weak estimate"
+ },
+ {
+  "id": "pipeline-00",
+  "chart_id": "pipeline",
+  "order": 0,
+  "series": "In the pipeline or under study",
+  "x": "Upper C-band 3.98-4.14 GHz",
+  "y": 160,
+  "note": "Auction 115 starts 2027-04-27; rules adopted 2026-07-22; statutory deadline 2027-07-04"
+ },
+ {
+  "id": "pipeline-01",
+  "chart_id": "pipeline",
+  "order": 1,
+  "series": "In the pipeline or under study",
+  "x": "1675-1695 + 2020-2025 MHz",
+  "y": 25,
+  "note": "NPRM Oct 2026; NTIA band study due early 2027; auction est. 2027-2028"
+ },
+ {
+  "id": "pipeline-02",
+  "chart_id": "pipeline",
+  "order": 2,
+  "series": "In the pipeline or under study",
+  "x": "2.7 GHz (2.69-2.9 GHz)",
+  "y": 210,
+  "note": "Relocation plans approved Apr 2026; Carr targets auction 2028"
+ },
+ {
+  "id": "pipeline-03",
+  "chart_id": "pipeline",
+  "order": 3,
+  "series": "In the pipeline or under study",
+  "x": "7.125-7.4 GHz",
+  "y": 275,
+  "note": "NTIA final study report due Dec 2026; auction est. 2029-2031 (Whitesail); WRC-27 AI 1.7 relevant"
+ },
+ {
+  "id": "pipeline-04",
+  "chart_id": "pipeline",
+  "order": 4,
+  "series": "In the pipeline or under study",
+  "x": "4.4-4.94 GHz (portion TBD)",
+  "y": 540,
+  "note": "NTIA reviewing 9 DoD/agency plans; auction est. 2030+ if any"
+ },
+ {
+  "id": "pipeline-05",
+  "chart_id": "pipeline",
+  "order": 5,
+  "series": "In the pipeline or under study",
+  "x": "1.3-1.35 GHz",
+  "y": 50,
+  "note": "Listed for future study only; no timeline"
+ },
+ {
+  "id": "pipeline-06",
+  "chart_id": "pipeline",
+  "order": 6,
+  "series": "In the pipeline or under study",
+  "x": "Lower 900 MHz (NextNav)",
+  "y": 15,
+  "note": "License reconfiguration petition, not auction; draft NPRM at OIRA Mar 2026; strong opposition"
+ },
+ {
+  "id": "pipeline-07",
+  "chart_id": "pipeline",
+  "order": 7,
+  "series": "In the pipeline or under study",
+  "x": "4.9 GHz (FirstNet)",
+  "y": 50,
+  "note": "Not auctioned; band manager to share with FirstNet; D.C. Cir. upheld July 2026"
+ },
+ {
+  "id": "pipeline-08",
+  "chart_id": "pipeline",
+  "order": 8,
+  "series": "Excluded by the 2025 law",
+  "x": "Lower 3 GHz 3.1-3.45 GHz",
+  "y": 350,
+  "note": "Excluded from OBBBA identification; DoD radar"
+ },
+ {
+  "id": "pipeline-09",
+  "chart_id": "pipeline",
+  "order": 9,
+  "series": "Excluded by the 2025 law",
+  "x": "7.4-8.4 GHz",
+  "y": 1000,
+  "note": "Excluded from OBBBA identification; federal satellite/DoD"
+ },
+ {
+  "id": "licensed_total-00",
+  "chart_id": "licensed_total",
+  "order": 0,
+  "series": "Licensed",
+  "x": "2014",
+  "y": 580,
+  "note": "Derived from ~194 MHz screen after 2014 Mobile Spectrum Holdings order; not verified this session"
+ },
+ {
+  "id": "licensed_total-01",
+  "chart_id": "licensed_total",
+  "order": 1,
+  "series": "Licensed",
+  "x": "2017",
+  "y": 715,
+  "note": "Derived: 2014 base + AWS-3 (65) + 600 MHz (70) added after incentive auction"
+ },
+ {
+  "id": "licensed_total-02",
+  "chart_id": "licensed_total",
+  "order": 2,
+  "series": "Licensed",
+  "x": "2025",
+  "y": 1155,
+  "note": "3 x 385 MHz overall screen (FCC DA 25-919); includes C-band, 3.45 GHz, CBRS PAL, 2.5 GHz"
+ },
+ {
+  "id": "licensed_total-03",
+  "chart_id": "licensed_total",
+  "order": 3,
+  "series": "Projection: our central forecast",
+  "x": "2027",
+  "y": 1315,
+  "note": "Adds the 160 MHz upper C-band auction scheduled for April 2027."
+ },
+ {
+  "id": "licensed_total-04",
+  "chart_id": "licensed_total",
+  "order": 4,
+  "series": "Projection: our central forecast",
+  "x": "2030",
+  "y": 1525,
+  "note": "1,155 MHz today plus our central forecast of 370 MHz of new auctions (80% range 160-678)."
+ },
+ {
+  "id": "licensed_total-05",
+  "chart_id": "licensed_total",
+  "order": 5,
+  "series": "Projection: our central forecast",
+  "x": "2035",
+  "y": 1795,
+  "note": "1,155 MHz today plus our central forecast of 640 MHz of new auctions (80% range 357-1052)."
+ },
+ {
+  "id": "midband_peers-00",
+  "chart_id": "midband_peers",
+  "order": 0,
+  "series": "MHz assigned",
+  "x": "United Kingdom",
+  "y": 942.6,
+  "note": "Assigned to operators, PolicyTracker database"
+ },
+ {
+  "id": "midband_peers-01",
+  "chart_id": "midband_peers",
+  "order": 1,
+  "series": "MHz assigned",
+  "x": "Germany",
+  "y": 878.8,
+  "note": "Assigned to operators"
+ },
+ {
+  "id": "midband_peers-02",
+  "chart_id": "midband_peers",
+  "order": 2,
+  "series": "MHz assigned",
+  "x": "China",
+  "y": 835,
+  "note": "Assigned to operators; excludes indoor-only/unassigned"
+ },
+ {
+  "id": "midband_peers-03",
+  "chart_id": "midband_peers",
+  "order": 3,
+  "series": "MHz assigned",
+  "x": "United States",
+  "y": 791.3,
+  "note": "Assigned to operators; before upper C-band"
+ },
+ {
+  "id": "auction_prices-00",
+  "chart_id": "auction_prices",
+  "order": 0,
+  "series": "Mid-band",
+  "x": "AWS-1 Auction 66 (2006)",
+  "y": 0.536,
+  "note": "Net price per NBER"
+ },
+ {
+  "id": "auction_prices-01",
+  "chart_id": "auction_prices",
+  "order": 1,
+  "series": "Low-band",
+  "x": "700 MHz Auction 73 (2008)",
+  "y": 1.3,
+  "note": "Computed: ~$19.1B / (52 MHz sold x ~281M pops); approximate"
+ },
+ {
+  "id": "auction_prices-02",
+  "chart_id": "auction_prices",
+  "order": 2,
+  "series": "Mid-band",
+  "x": "H-block Auction 96 (2014)",
+  "y": 0.51,
+  "note": "Computed: $1.564B / (10 MHz x ~309M pops); single bidder at reserve"
+ },
+ {
+  "id": "auction_prices-03",
+  "chart_id": "auction_prices",
+  "order": 3,
+  "series": "Mid-band",
+  "x": "AWS-3 Auction 97 (2015)",
+  "y": 2.71,
+  "note": "Paired-spectrum basis; other sources $2.19-2.68"
+ },
+ {
+  "id": "auction_prices-04",
+  "chart_id": "auction_prices",
+  "order": 4,
+  "series": "Low-band",
+  "x": "600 MHz Auction 1000 (2017)",
+  "y": 0.93,
+  "note": "Analyst estimate; another source $0.88"
+ },
+ {
+  "id": "auction_prices-05",
+  "chart_id": "auction_prices",
+  "order": 5,
+  "series": "Millimetre wave",
+  "x": "24 GHz Auction 102 (2019)",
+  "y": 0.0094,
+  "note": "Computed: $2.02B / (700 MHz x ~309M pops)"
+ },
+ {
+  "id": "auction_prices-06",
+  "chart_id": "auction_prices",
+  "order": 6,
+  "series": "Millimetre wave",
+  "x": "37/39/47 GHz Auction 103 (2020)",
+  "y": 0.009,
+  "note": "Third-party estimate"
+ },
+ {
+  "id": "auction_prices-07",
+  "chart_id": "auction_prices",
+  "order": 7,
+  "series": "Mid-band",
+  "x": "CBRS PAL Auction 105 (2020)",
+  "y": 0.21,
+  "note": "Computed: $4.586B / (70 MHz x ~309M pops)"
+ },
+ {
+  "id": "auction_prices-08",
+  "chart_id": "auction_prices",
+  "order": 8,
+  "series": "Mid-band",
+  "x": "C-band Auction 107 (2021)",
+  "y": 0.945,
+  "note": "Bids only"
+ },
+ {
+  "id": "auction_prices-09",
+  "chart_id": "auction_prices",
+  "order": 9,
+  "series": "Mid-band",
+  "x": "3.45 GHz Auction 110 (2022)",
+  "y": 0.736,
+  "note": "Analyst average; range of sources $0.70-0.74"
+ },
+ {
+  "id": "auction_prices-10",
+  "chart_id": "auction_prices",
+  "order": 10,
+  "series": "Mid-band",
+  "x": "AWS-3 Auction 113 (2026)",
+  "y": 2.53,
+  "note": "New Street average; range $0.15-5.67"
+ },
+ {
+  "id": "deal_prices-00",
+  "chart_id": "deal_prices",
+  "order": 0,
+  "series": "Low-band",
+  "x": "T-Mobile-Channel 51/LB 600 MHz (2022)",
+  "y": 2.64,
+  "note": "New Street estimate"
+ },
+ {
+  "id": "deal_prices-01",
+  "chart_id": "deal_prices",
+  "order": 1,
+  "series": "Low-band",
+  "x": "T-Mobile-Comcast 600 MHz (2023)",
+  "y": 2.21,
+  "note": "New Street, if full $3.3B portfolio sold"
+ },
+ {
+  "id": "deal_prices-02",
+  "chart_id": "deal_prices",
+  "order": 2,
+  "series": "Low-band",
+  "x": "Verizon-UScellular 850/AWS/PCS (2024, closed 2026)",
+  "y": 1.44,
+  "note": "Computed: $1.0B / 693M MHz-pops"
+ },
+ {
+  "id": "deal_prices-03",
+  "chart_id": "deal_prices",
+  "order": 3,
+  "series": "Mid-band",
+  "x": "AT&T-UScellular 3.45 GHz+700 MHz (2024, closed 2026)",
+  "y": 0.64,
+  "note": "Computed: $1.018B / 1,581M MHz-pops (blended)"
+ },
+ {
+  "id": "deal_prices-04",
+  "chart_id": "deal_prices",
+  "order": 4,
+  "series": "Mid-band",
+  "x": "AT&T-EchoStar 3.45 GHz+600 MHz (2025, closed 2026)",
+  "y": 1.4,
+  "note": "CreditSights blended, 325M pops"
+ },
+ {
+  "id": "deal_prices-05",
+  "chart_id": "deal_prices",
+  "order": 5,
+  "series": "Satellite-capable 2 GHz",
+  "x": "SpaceX-EchoStar AWS-4+H-block (2025)",
+  "y": 1.03,
+  "note": "MoffettNathanson"
+ },
+ {
+  "id": "deal_prices-06",
+  "chart_id": "deal_prices",
+  "order": 6,
+  "series": "Mid-band",
+  "x": "SpaceX-EchoStar unpaired AWS-3 (2025)",
+  "y": 0.52,
+  "note": "Computed: $2.6B / (15 MHz x ~330M); uplink-only"
+ },
+ {
+  "id": "deal_prices-07",
+  "chart_id": "deal_prices",
+  "order": 7,
+  "series": "Low-band",
+  "x": "T-Mobile-Grain 800 MHz (2025, closed 2026)",
+  "y": 0.78,
+  "note": "Computed: $3.6B / (14 MHz x ~330M)"
+ },
+ {
+  "id": "deal_prices-08",
+  "chart_id": "deal_prices",
+  "order": 8,
+  "series": "Low-band",
+  "x": "SpaceX-Grain 800 MHz (2026)",
+  "y": 1.73,
+  "note": "New Street on WSJ-reported ~$8B"
+ },
+ {
+  "id": "deal_prices-09",
+  "chart_id": "deal_prices",
+  "order": 9,
+  "series": "Low-band",
+  "x": "Anterix-CPS Energy 900 MHz (2026)",
+  "y": 1.08,
+  "note": "Computed: $13.0M / (6 MHz x ~2.01M Bexar County pops); discounted price"
+ },
+ {
+  "id": "auction_proceeds-00",
+  "chart_id": "auction_proceeds",
+  "order": 0,
+  "series": "Gross proceeds",
+  "x": "AWS-1 Auction 66 (2006)",
+  "y": 13.7,
+  "note": "Total per NBER (net basis)"
+ },
+ {
+  "id": "auction_proceeds-01",
+  "chart_id": "auction_proceeds",
+  "order": 1,
+  "series": "Gross proceeds",
+  "x": "700 MHz Auction 73 (2008)",
+  "y": 19.1,
+  "note": "FCC results"
+ },
+ {
+  "id": "auction_proceeds-02",
+  "chart_id": "auction_proceeds",
+  "order": 2,
+  "series": "Gross proceeds",
+  "x": "H-block Auction 96 (2014)",
+  "y": 1.564,
+  "note": "Reserve price met"
+ },
+ {
+  "id": "auction_proceeds-03",
+  "chart_id": "auction_proceeds",
+  "order": 3,
+  "series": "Gross proceeds",
+  "x": "AWS-3 Auction 97 (2015)",
+  "y": 44.9,
+  "note": "Gross bids"
+ },
+ {
+  "id": "auction_proceeds-04",
+  "chart_id": "auction_proceeds",
+  "order": 4,
+  "series": "Gross proceeds",
+  "x": "600 MHz Auction 1000 (2017)",
+  "y": 19.77,
+  "note": "FCC gross proceeds"
+ },
+ {
+  "id": "auction_proceeds-05",
+  "chart_id": "auction_proceeds",
+  "order": 5,
+  "series": "Gross proceeds",
+  "x": "28 GHz Auction 101 (2019)",
+  "y": 0.703,
+  "note": "FCC gross bids"
+ },
+ {
+  "id": "auction_proceeds-06",
+  "chart_id": "auction_proceeds",
+  "order": 6,
+  "series": "Gross proceeds",
+  "x": "24 GHz Auction 102 (2019)",
+  "y": 2.02,
+  "note": "Gross bids"
+ },
+ {
+  "id": "auction_proceeds-07",
+  "chart_id": "auction_proceeds",
+  "order": 7,
+  "series": "Gross proceeds",
+  "x": "37/39/47 GHz Auction 103 (2020)",
+  "y": 7.57,
+  "note": "FCC gross bids"
+ },
+ {
+  "id": "auction_proceeds-08",
+  "chart_id": "auction_proceeds",
+  "order": 8,
+  "series": "Gross proceeds",
+  "x": "CBRS Auction 105 (2020)",
+  "y": 4.586,
+  "note": "FCC gross bids"
+ },
+ {
+  "id": "auction_proceeds-09",
+  "chart_id": "auction_proceeds",
+  "order": 9,
+  "series": "Gross proceeds",
+  "x": "C-band Auction 107 (2021)",
+  "y": 81.17,
+  "note": "FCC gross bids; excludes ~$14B clearing"
+ },
+ {
+  "id": "auction_proceeds-10",
+  "chart_id": "auction_proceeds",
+  "order": 10,
+  "series": "Gross proceeds",
+  "x": "3.45 GHz Auction 110 (2022)",
+  "y": 22.51,
+  "note": "FCC gross bids"
+ },
+ {
+  "id": "auction_proceeds-11",
+  "chart_id": "auction_proceeds",
+  "order": 11,
+  "series": "Gross proceeds",
+  "x": "2.5 GHz Auction 108 (2022)",
+  "y": 0.428,
+  "note": "Total bids"
+ },
+ {
+  "id": "auction_proceeds-12",
+  "chart_id": "auction_proceeds",
+  "order": 12,
+  "series": "Gross proceeds",
+  "x": "AWS-3 Auction 113 (2026)",
+  "y": 3.573,
+  "note": "FCC gross bids"
+ },
+ {
+  "id": "license_book-00",
+  "chart_id": "license_book",
+  "order": 0,
+  "series": "Sep 2026",
+  "x": "AT&T",
+  "y": 149.4,
+  "note": "Licenses-Net, 10-Q"
+ },
+ {
+  "id": "license_book-01",
+  "chart_id": "license_book",
+  "order": 1,
+  "series": "Sep 2026",
+  "x": "Verizon",
+  "y": 161.4,
+  "note": "Secondary brief; 10-Q not directly verified"
+ },
+ {
+  "id": "license_book-02",
+  "chart_id": "license_book",
+  "order": 2,
+  "series": "Sep 2026",
+  "x": "T-Mobile",
+  "y": 99.98,
+  "note": "Spectrum licenses, 10-Q"
+ },
+ {
+  "id": "license_book-03",
+  "chart_id": "license_book",
+  "order": 3,
+  "series": "End 2025",
+  "x": "AT&T",
+  "y": 128.1,
+  "note": "10-Q comparative"
+ },
+ {
+  "id": "license_book-04",
+  "chart_id": "license_book",
+  "order": 4,
+  "series": "End 2025",
+  "x": "Verizon",
+  "y": 157,
+  "note": "10-K note via edgar.tools"
+ },
+ {
+  "id": "license_book-05",
+  "chart_id": "license_book",
+  "order": 5,
+  "series": "End 2025",
+  "x": "T-Mobile",
+  "y": 98.03,
+  "note": "10-Q comparative"
+ },
+ {
+  "id": "global_prices-00",
+  "chart_id": "global_prices",
+  "order": 0,
+  "series": "Mid-band",
+  "x": "US 2021 C-band",
+  "y": 0.942,
+  "note": "Auction 107 gross bids only, 3.7-3.98 GHz nationwide average (BitPath via Light Reading); excludes clearing costs"
+ },
+ {
+  "id": "global_prices-01",
+  "chart_id": "global_prices",
+  "order": 1,
+  "series": "Mid-band",
+  "x": "US 2022 3.45 GHz",
+  "y": 0.666,
+  "note": "Auction 110 average per BitPath"
+ },
+ {
+  "id": "global_prices-02",
+  "chart_id": "global_prices",
+  "order": 2,
+  "series": "Mid-band",
+  "x": "Canada 2021 3500 MHz (Rogers)",
+  "y": 2.7,
+  "note": "Rogers-reported C$3.38/MHz-pop converted at ~0.80 USD/CAD; one operator, not an auction-wide average"
+ },
+ {
+  "id": "global_prices-03",
+  "chart_id": "global_prices",
+  "order": 3,
+  "series": "Mid-band",
+  "x": "Canada 2023 3800 MHz (Rogers)",
+  "y": 0.24,
+  "note": "Rogers-reported C$0.32 converted at ~0.735 USD/CAD"
+ },
+ {
+  "id": "global_prices-04",
+  "chart_id": "global_prices",
+  "order": 4,
+  "series": "Mid-band",
+  "x": "Canada 2023 3800 MHz (Telus)",
+  "y": 0.18,
+  "note": "Telus-reported average C$0.24 converted at ~0.735 USD/CAD"
+ },
+ {
+  "id": "global_prices-05",
+  "chart_id": "global_prices",
+  "order": 5,
+  "series": "Mid-band",
+  "x": "Italy 2018 3.7 GHz",
+  "y": 0.42,
+  "note": "Press estimate; often cited as ~EUR0.31-0.36"
+ },
+ {
+  "id": "global_prices-06",
+  "chart_id": "global_prices",
+  "order": 6,
+  "series": "Mid-band",
+  "x": "Germany 2019 3.6 GHz",
+  "y": 0.19,
+  "note": "Press estimate"
+ },
+ {
+  "id": "global_prices-07",
+  "chart_id": "global_prices",
+  "order": 7,
+  "series": "Mid-band",
+  "x": "UK 2018 3.4 GHz",
+  "y": 0.15,
+  "note": "Press estimate"
+ },
+ {
+  "id": "global_prices-08",
+  "chart_id": "global_prices",
+  "order": 8,
+  "series": "Mid-band",
+  "x": "France 2020 3.5 GHz",
+  "y": 0.15,
+  "note": "PolicyTracker estimate"
+ },
+ {
+  "id": "global_prices-09",
+  "chart_id": "global_prices",
+  "order": 9,
+  "series": "Mid-band",
+  "x": "Spain 2018 3.6 GHz",
+  "y": 0.06,
+  "note": "Press estimate"
+ },
+ {
+  "id": "global_prices-10",
+  "chart_id": "global_prices",
+  "order": 10,
+  "series": "Mid-band",
+  "x": "Finland 2018 3.5 GHz",
+  "y": 0.04,
+  "note": "Press estimate"
+ },
+ {
+  "id": "global_prices-11",
+  "chart_id": "global_prices",
+  "order": 11,
+  "series": "Mid-band",
+  "x": "Europe avg 2018-24 3.3-3.9 GHz",
+  "y": 0.072,
+  "note": "Analysys Mason EUR0.067 (49 auctions, 20-year normalised) converted at ~1.08 USD/EUR"
+ },
+ {
+  "id": "global_prices-12",
+  "chart_id": "global_prices",
+  "order": 12,
+  "series": "Millimetre wave",
+  "x": "UK 2025 26/40 GHz",
+  "y": 0.00014,
+  "note": "Derived: GBP39m at ~1.33 USD/GBP divided by 5,400 MHz x ~69m population"
+ },
+ {
+  "id": "unsold-00",
+  "chart_id": "unsold",
+  "order": 0,
+  "series": "Share of MHz unsold",
+  "x": "India 2022 (all bands)",
+  "y": 28.9,
+  "note": "51,236 of 72,098 MHz sold"
+ },
+ {
+  "id": "unsold-01",
+  "chart_id": "unsold",
+  "order": 1,
+  "series": "Share of MHz unsold",
+  "x": "India 2024 (all bands)",
+  "y": 98.7,
+  "note": "~141 of ~10,523 MHz sold"
+ },
+ {
+  "id": "unsold-02",
+  "chart_id": "unsold",
+  "order": 2,
+  "series": "Share of reserve value unsold",
+  "x": "India 2024 (by reserve value)",
+  "y": 88.2,
+  "note": "Derived: INR11,340 cr sold vs INR96,238 cr reserve value offered"
+ },
+ {
+  "id": "unsold-03",
+  "chart_id": "unsold",
+  "order": 3,
+  "series": "Share of MHz unsold",
+  "x": "UK 2025 mmWave",
+  "y": 0,
+  "note": "5.4 GHz fully sold, but at nominal GBP39m"
+ },
+ {
+  "id": "rev_per_mhz-00",
+  "chart_id": "rev_per_mhz",
+  "order": 0,
+  "series": "Global",
+  "x": "2014",
+  "y": 100,
+  "note": "Base year"
+ },
+ {
+  "id": "rev_per_mhz-01",
+  "chart_id": "rev_per_mhz",
+  "order": 1,
+  "series": "Global",
+  "x": "2023-24",
+  "y": 40,
+  "note": "Press release cites ~60% decline; full report cites 67% (index ~33)"
+ },
+ {
+  "id": "rev_per_mhz-02",
+  "chart_id": "rev_per_mhz",
+  "order": 2,
+  "series": "Europe",
+  "x": "2014",
+  "y": 100,
+  "note": "Base year"
+ },
+ {
+  "id": "rev_per_mhz-03",
+  "chart_id": "rev_per_mhz",
+  "order": 3,
+  "series": "Europe",
+  "x": "2023-24",
+  "y": 46,
+  "note": "-54% since 2014; end year approximate (report Dec 2025)"
+ },
+ {
+  "id": "precedent_multiples-00",
+  "chart_id": "precedent_multiples",
+  "order": 0,
+  "series": "Paid off",
+  "x": "TerreStar/DBSD + H-block to SpaceX",
+  "y": 3.8,
+  "note": "$17B sale / ($2.86B DBSD+TerreStar + $1.67B H-block); excludes ~$2B interest support; half paid in SpaceX stock"
+ },
+ {
+  "id": "precedent_multiples-01",
+  "chart_id": "precedent_multiples",
+  "order": 1,
+  "series": "Paid off",
+  "x": "Dish 600 MHz + 3.45 GHz to AT&T",
+  "y": 1.7,
+  "note": "$23B sale / ($6.2B 600 MHz book + $7.33B 3.45 GHz bids)"
+ },
+ {
+  "id": "precedent_multiples-02",
+  "chart_id": "precedent_multiples",
+  "order": 2,
+  "series": "Mixed",
+  "x": "Dish/EchoStar programme (cash cost)",
+  "y": 1.4,
+  "note": "~$42.6B headline sales (AT&T $23B, SpaceX $17B + $2.6B) / >$30B invested; remaining licences not valued"
+ },
+ {
+  "id": "precedent_multiples-03",
+  "chart_id": "precedent_multiples",
+  "order": 3,
+  "series": "Mixed",
+  "x": "Dish/EchoStar programme (incl. capitalized interest)",
+  "y": 1.1,
+  "note": "~$42.6B / $37.5B carrying value including capitalized interest at 2023-06-30"
+ },
+ {
+  "id": "precedent_multiples-04",
+  "chart_id": "precedent_multiples",
+  "order": 4,
+  "series": "Mixed",
+  "x": "NextWave C-block (vs nominal bid)",
+  "y": 1.1,
+  "note": "~$5.4B licence sales 2004-05 / $4.74B 1996 bid; about 10x on the ~$0.5B cash actually paid"
+ },
+ {
+  "id": "precedent_multiples-05",
+  "chart_id": "precedent_multiples",
+  "order": 5,
+  "series": "Failed or lost",
+  "x": "Dish unpaired AWS-3 to SpaceX (vs reported book)",
+  "y": 0.27,
+  "note": "$2.6B / ~$9.8B reported book value; book basis from a weak source"
+ },
+ {
+  "id": "precedent_multiples-06",
+  "chart_id": "precedent_multiples",
+  "order": 6,
+  "series": "Failed or lost",
+  "x": "Clearwire 2008 strategic investors",
+  "y": 0.25,
+  "note": "Sprint 2013 buyout at $5.00 / ~$20 per share 2008 entry price (entry price from prior knowledge)"
+ },
+ {
+  "id": "precedent_multiples-07",
+  "chart_id": "precedent_multiples",
+  "order": 7,
+  "series": "Failed or lost",
+  "x": "Google stake in Clearwire",
+  "y": 0.06,
+  "note": "94% loss on $500M invested in 2008"
+ },
+ {
+  "id": "precedent_multiples-08",
+  "chart_id": "precedent_multiples",
+  "order": 8,
+  "series": "Failed or lost",
+  "x": "Ligado L-band to AST (vs funded debt)",
+  "y": 0.06,
+  "note": "$550M cash / ~$8.6B funded debt (weak source); excludes >= $80M/yr usage payments (PV could lift to ~0.15x)"
+ },
+ {
+  "id": "precedent_multiples-09",
+  "chart_id": "precedent_multiples",
+  "order": 9,
+  "series": "Failed or lost",
+  "x": "Verizon's Straight Path mmWave (marked to Auction 103)",
+  "y": 0.4,
+  "note": "Estimate: Auction 103 price (~$0.007/MHz-pop, prior knowledge) applied to roughly 620 MHz of 39 GHz holdings vs $3.1B price"
+ },
+ {
+  "id": "precedent_multiples-10",
+  "chart_id": "precedent_multiples",
+  "order": 10,
+  "series": "Failed or lost",
+  "x": "UK 3G 2000 (later-auction proxy)",
+  "y": 0.1,
+  "note": "UK 2013 4G auction GBP2.34B / 2000 3G GBP22.48B; a proxy for licence value reset; prior knowledge"
+ },
+ {
+  "id": "precedent_multiples-11",
+  "chart_id": "precedent_multiples",
+  "order": 11,
+  "series": "Failed or lost",
+  "x": "Germany 3G 2000 (later-auction proxy)",
+  "y": 0.09,
+  "note": "Germany 2010 auction EUR4.4B / 2000 3G EUR50.8B; prior knowledge"
+ },
+ {
+  "id": "precedent_multiples-12",
+  "chart_id": "precedent_multiples",
+  "order": 12,
+  "series": "Failed or lost",
+  "x": "Iridium original backers",
+  "y": 0.005,
+  "note": "~$25M asset sale in 2000 / ~$5B+ invested; prior knowledge; 2000 buyers later earned large gains"
+ },
+ {
+  "id": "euro_3g-00",
+  "chart_id": "euro_3g",
+  "order": 0,
+  "series": "3G auction proceeds (2000)",
+  "x": "United Kingdom",
+  "y": 33.7,
+  "note": "GBP22.48B at ~1.50 USD/GBP; prior knowledge, not re-verified this session"
+ },
+ {
+  "id": "euro_3g-01",
+  "chart_id": "euro_3g",
+  "order": 1,
+  "series": "Later auction proceeds",
+  "x": "United Kingdom",
+  "y": 3.6,
+  "note": "2013 4G auction GBP2.34B for 250 MHz at ~1.56 USD/GBP; prior knowledge"
+ },
+ {
+  "id": "euro_3g-02",
+  "chart_id": "euro_3g",
+  "order": 2,
+  "series": "3G auction proceeds (2000)",
+  "x": "Germany",
+  "y": 45.7,
+  "note": "EUR50.8B (often cited EUR50.5-50.8B) at ~0.90 USD/EUR; prior knowledge"
+ },
+ {
+  "id": "euro_3g-03",
+  "chart_id": "euro_3g",
+  "order": 3,
+  "series": "Abandoned 3G licences (write-off)",
+  "x": "Germany",
+  "y": 15.2,
+  "note": "Quam and MobilCom licences, ~EUR8.4B each, returned or abandoned; prior knowledge"
+ },
+ {
+  "id": "euro_3g-04",
+  "chart_id": "euro_3g",
+  "order": 4,
+  "series": "Later auction proceeds",
+  "x": "Germany",
+  "y": 5.8,
+  "note": "2010 multi-band auction EUR4.38B at ~1.33 USD/EUR; prior knowledge"
+ },
+ {
+  "id": "euro_3g-05",
+  "chart_id": "euro_3g",
+  "order": 5,
+  "series": "Later auction proceeds (5G 2019)",
+  "x": "Germany",
+  "y": 7.3,
+  "note": "2019 5G auction EUR6.55B at ~1.12 USD/EUR; prior knowledge"
+ },
+ {
+  "id": "d2d_capacity-00",
+  "chart_id": "d2d_capacity",
+  "order": 0,
+  "series": "Mbps per km²",
+  "x": "Starlink Gen-1 D2C (5 MHz)",
+  "y": 0.02,
+  "note": "Whitesail order-of-magnitude estimate: ~5-10 Mbps per beam over ~300-700 km2; 5 MHz per SpaceX; range 0.01-0.03"
+ },
+ {
+  "id": "d2d_capacity-01",
+  "chart_id": "d2d_capacity",
+  "order": 1,
+  "series": "Mbps per km²",
+  "x": "AST BlueBird Block 2",
+  "y": 0.2,
+  "note": "Whitesail estimate; assumes tens of Mbps per beam over ~500-2,000 km2 using partner low-band; AST peak-rate claims not verified this session; range 0.05-0.3"
+ },
+ {
+  "id": "d2d_capacity-02",
+  "chart_id": "d2d_capacity",
+  "order": 2,
+  "series": "Mbps per km²",
+  "x": "Starlink V2 Mobile (2027+ target)",
+  "y": 3,
+  "note": "Whitesail estimate from company targets (~150 Mbps per user, 20x per satellite) with assumed ~80-200 km2 beams and 2-4 overlapping satellites; range 1-6"
+ },
+ {
+  "id": "d2d_capacity-03",
+  "chart_id": "d2d_capacity",
+  "order": 3,
+  "series": "Mbps per km²",
+  "x": "Terrestrial macro, rural",
+  "y": 15,
+  "note": "Whitesail estimate: 0.3-1 Gbps per site, one site per ~30-60 km2; range 5-30; linked page is context, not the source of this number"
+ },
+ {
+  "id": "d2d_capacity-04",
+  "chart_id": "d2d_capacity",
+  "order": 4,
+  "series": "Mbps per km²",
+  "x": "Terrestrial macro, suburban",
+  "y": 300,
+  "note": "Whitesail estimate: 1-2 Gbps per 3-sector site, one site per ~3-8 km2; range 150-600"
+ },
+ {
+  "id": "d2d_capacity-05",
+  "chart_id": "d2d_capacity",
+  "order": 5,
+  "series": "Mbps per km²",
+  "x": "Terrestrial macro, dense urban",
+  "y": 3000,
+  "note": "Whitesail estimate: 1.5-3 Gbps per site with 100 MHz TDD massive MIMO, 1-3 sites per km2; range 1,500-9,000"
+ },
+ {
+  "id": "d2d_capacity-06",
+  "chart_id": "d2d_capacity",
+  "order": 6,
+  "series": "Mbps per km²",
+  "x": "Small-cell layer (mid-band/mmWave)",
+  "y": 30000,
+  "note": "Whitesail estimate: 0.5-2 Gbps per node at 10-50 nodes per km2; range 10,000-100,000"
+ },
+ {
+  "id": "d2d_spectrum-00",
+  "chart_id": "d2d_spectrum",
+  "order": 0,
+  "series": "Owned or controlled, incl. pending",
+  "x": "SpaceX (US)",
+  "y": 79,
+  "note": "65 MHz EchoStar (AWS-4 40 + H-block 10 + unpaired AWS-3 15; FCC approved, close ~Nov 2027) + up to 14 MHz 800 MHz from Grain (pending); excludes 5 MHz regional Tristar AWS-3"
+ },
+ {
+  "id": "d2d_spectrum-01",
+  "chart_id": "d2d_spectrum",
+  "order": 1,
+  "series": "Borrowed from a carrier today",
+  "x": "SpaceX (US)",
+  "y": 10,
+  "note": "T-Mobile PCS G block (2x5 MHz); SpaceX describes current system as operating in 5 MHz"
+ },
+ {
+  "id": "d2d_spectrum-02",
+  "chart_id": "d2d_spectrum",
+  "order": 2,
+  "series": "Owned or controlled, incl. pending",
+  "x": "AST SpaceMobile",
+  "y": 105,
+  "note": "Up to 45 MHz Ligado L-band/1670-1675 MHz (North America; scope contested by Inmarsat) + 60 MHz global S-band priority rights; partner low-band not counted"
+ },
+ {
+  "id": "d2d_spectrum-03",
+  "chart_id": "d2d_spectrum",
+  "order": 3,
+  "series": "Owned or controlled, incl. pending",
+  "x": "Globalstar (to Amazon)",
+  "y": 25,
+  "note": "About 25 MHz of harmonized MSS spectrum per FCC approval coverage; Apple uses 85% of capacity"
+ },
+ {
+  "id": "d2d_spectrum-04",
+  "chart_id": "d2d_spectrum",
+  "order": 4,
+  "series": "Owned or controlled, incl. pending",
+  "x": "Iridium (to Rocket Lab)",
+  "y": 8.7,
+  "note": "Approx. 1617.775-1626.5 MHz L-band; from prior knowledge, not reverified this session"
+ },
+ {
+  "id": "d2d_spectrum-05",
+  "chart_id": "d2d_spectrum",
+  "order": 5,
+  "series": "Owned or controlled, incl. pending",
+  "x": "Viasat/Inmarsat (EU 2 GHz only)",
+  "y": 30,
+  "note": "EU 2 GHz MSS 2x15 MHz authorization (expires 2027); L-band holdings not quantified; from prior knowledge, not reverified this session"
+ },
+ {
+  "id": "d2d_satellites-00",
+  "chart_id": "d2d_satellites",
+  "order": 0,
+  "series": "In orbit",
+  "x": "SpaceX Starlink D2C",
+  "y": 650,
+  "note": "First-generation fleet, 650+ per Starlink"
+ },
+ {
+  "id": "d2d_satellites-01",
+  "chart_id": "d2d_satellites",
+  "order": 1,
+  "series": "In orbit",
+  "x": "Iridium (NTN Direct on existing fleet)",
+  "y": 66,
+  "note": "Narrowband 3GPP NTN over the existing 66-satellite operational fleet; count from prior knowledge, not reverified"
+ },
+ {
+  "id": "d2d_satellites-02",
+  "chart_id": "d2d_satellites",
+  "order": 2,
+  "series": "In orbit",
+  "x": "AST SpaceMobile",
+  "y": 12,
+  "note": "BlueBirds 1-6 and 8-13 operating per Q3 2026 slides"
+ },
+ {
+  "id": "d2d_satellites-03",
+  "chart_id": "d2d_satellites",
+  "order": 3,
+  "series": "Authorized, applied for or targeted",
+  "x": "SpaceX next-gen (FCC authorized)",
+  "y": 15000,
+  "note": "Up to 15,000 next-gen Starlink Mobile satellites authorized Oct 2026; launches from 2027"
+ },
+ {
+  "id": "d2d_satellites-04",
+  "chart_id": "d2d_satellites",
+  "order": 4,
+  "series": "Authorized, applied for or targeted",
+  "x": "Amazon Leo D2D (applied)",
+  "y": 5105,
+  "note": "Application under FCC review"
+ },
+ {
+  "id": "d2d_satellites-05",
+  "chart_id": "d2d_satellites",
+  "order": 5,
+  "series": "Authorized, applied for or targeted",
+  "x": "AST SpaceMobile (mid-2027 target)",
+  "y": 45,
+  "note": "Target slipped to mid-2027; >100 under launch contracts for 2027-2028"
+ },
+ {
+  "id": "exposure-00",
+  "chart_id": "exposure",
+  "order": 0,
+  "series": "Spectrum holders",
+  "x": "EchoStar (ECHO)",
+  "y": 34,
+  "note": "Remaining licences at book ($8.45B) against EV; most of the rest is SpaceX shares and cash from its spectrum sales"
+ },
+ {
+  "id": "exposure-01",
+  "chart_id": "exposure",
+  "order": 1,
+  "series": "Spectrum holders",
+  "x": "Anterix (ATEX)",
+  "y": 95,
+  "note": "900 MHz licences are nearly the whole company"
+ },
+ {
+  "id": "exposure-02",
+  "chart_id": "exposure",
+  "order": 2,
+  "series": "Spectrum holders",
+  "x": "NextNav (NN)",
+  "y": 85,
+  "note": "Lower 900 MHz licences; value depends on an FCC petition"
+ },
+ {
+  "id": "exposure-03",
+  "chart_id": "exposure",
+  "order": 3,
+  "series": "Satellite",
+  "x": "Globalstar (GSAT)",
+  "y": 50,
+  "note": "Being acquired by Amazon at a fixed $90 a share, so spectrum prices matter only if the deal breaks"
+ },
+ {
+  "id": "exposure-04",
+  "chart_id": "exposure",
+  "order": 4,
+  "series": "US carriers",
+  "x": "Verizon (VZ)",
+  "y": 50,
+  "note": "Licence book value / EV, late Oct 2026"
+ },
+ {
+  "id": "exposure-05",
+  "chart_id": "exposure",
+  "order": 5,
+  "series": "US carriers",
+  "x": "AT&T (T)",
+  "y": 49,
+  "note": "Licence book value / EV, late Oct 2026"
+ },
+ {
+  "id": "exposure-06",
+  "chart_id": "exposure",
+  "order": 6,
+  "series": "US carriers",
+  "x": "T-Mobile (TMUS)",
+  "y": 41,
+  "note": "Licence book value / EV, late Oct 2026"
+ },
+ {
+  "id": "exposure-07",
+  "chart_id": "exposure",
+  "order": 7,
+  "series": "Spectrum holders",
+  "x": "Array (AD)",
+  "y": 40,
+  "note": "Retained spectrum and pending sale proceeds"
+ },
+ {
+  "id": "exposure-08",
+  "chart_id": "exposure",
+  "order": 8,
+  "series": "Satellite",
+  "x": "Viasat (VSAT)",
+  "y": 25,
+  "note": "L-band, very rough"
+ },
+ {
+  "id": "exposure-09",
+  "chart_id": "exposure",
+  "order": 9,
+  "series": "Satellite",
+  "x": "Iridium (IRDM)",
+  "y": 15,
+  "note": "L-band, very rough; being acquired by Rocket Lab"
+ },
+ {
+  "id": "exposure-10",
+  "chart_id": "exposure",
+  "order": 10,
+  "series": "Satellite",
+  "x": "AST SpaceMobile (ASTS)",
+  "y": 4,
+  "note": "On book value; the market implies more"
+ },
+ {
+  "id": "exposure-11",
+  "chart_id": "exposure",
+  "order": 11,
+  "series": "Satellite",
+  "x": "SpaceX (SPCX)",
+  "y": 1.5,
+  "note": "~$27.6B of agreed spectrum deals in a ~$1.85T company"
+ },
+ {
+  "id": "exposure-12",
+  "chart_id": "exposure",
+  "order": 12,
+  "series": "Cable",
+  "x": "Comcast (CMCSA)",
+  "y": 1.1,
+  "note": "600 MHz and CBRS licences"
+ },
+ {
+  "id": "exposure-13",
+  "chart_id": "exposure",
+  "order": 13,
+  "series": "Cable",
+  "x": "Charter (CHTR)",
+  "y": 0.4,
+  "note": "CBRS licences"
+ },
+ {
+  "id": "carrier_shock-00",
+  "chart_id": "carrier_shock",
+  "order": 0,
+  "series": "Change",
+  "x": "AT&T",
+  "y": -9.8,
+  "note": "Close 9 Oct 2026"
+ },
+ {
+  "id": "carrier_shock-01",
+  "chart_id": "carrier_shock",
+  "order": 1,
+  "series": "Change",
+  "x": "Verizon",
+  "y": -8.8,
+  "note": "Close 9 Oct 2026"
+ },
+ {
+  "id": "carrier_shock-02",
+  "chart_id": "carrier_shock",
+  "order": 2,
+  "series": "Change",
+  "x": "T-Mobile",
+  "y": -13.3,
+  "note": "T-Mobile's worst day as a public company"
+ },
+ {
+  "id": "net_adds-00",
+  "chart_id": "net_adds",
+  "order": 0,
+  "series": "Q3 2025",
+  "x": "AT&T",
+  "y": 405,
+  "note": "Prior-year comparative"
+ },
+ {
+  "id": "net_adds-01",
+  "chart_id": "net_adds",
+  "order": 1,
+  "series": "Q3 2026",
+  "x": "AT&T",
+  "y": 379,
+  "note": "Reported"
+ },
+ {
+  "id": "net_adds-02",
+  "chart_id": "net_adds",
+  "order": 2,
+  "series": "Q3 2025",
+  "x": "Verizon",
+  "y": 44,
+  "note": "Prior-year comparative"
+ },
+ {
+  "id": "net_adds-03",
+  "chart_id": "net_adds",
+  "order": 3,
+  "series": "Q3 2026",
+  "x": "Verizon",
+  "y": 406,
+  "note": "Consumer 266k + Business 140k"
+ },
+ {
+  "id": "net_adds-04",
+  "chart_id": "net_adds",
+  "order": 4,
+  "series": "Q3 2025",
+  "x": "T-Mobile (accounts)",
+  "y": 397,
+  "note": "Derived from 274k at -31% YoY; accounts, not phones"
+ },
+ {
+  "id": "net_adds-05",
+  "chart_id": "net_adds",
+  "order": 5,
+  "series": "Q3 2026",
+  "x": "T-Mobile (accounts)",
+  "y": 274,
+  "note": "Accounts, not phones"
+ },
+ {
+  "id": "net_adds-06",
+  "chart_id": "net_adds",
+  "order": 6,
+  "series": "Q3 2025",
+  "x": "Charter (excl. Cox)",
+  "y": 482,
+  "note": "Legacy basis as reported in Q3 2026 coverage; Charter's Q3 2025 release showed 493k; all mobile lines, not only phones"
+ },
+ {
+  "id": "net_adds-07",
+  "chart_id": "net_adds",
+  "order": 7,
+  "series": "Q3 2026",
+  "x": "Charter (excl. Cox)",
+  "y": 440,
+  "note": "Excludes Cox"
+ },
+ {
+  "id": "net_adds-08",
+  "chart_id": "net_adds",
+  "order": 8,
+  "series": "Q3 2025",
+  "x": "Comcast",
+  "y": 414,
+  "note": "Prior-year comparative; all mobile lines"
+ },
+ {
+  "id": "net_adds-09",
+  "chart_id": "net_adds",
+  "order": 9,
+  "series": "Q3 2026",
+  "x": "Comcast",
+  "y": 368,
+  "note": "About 50% of postpaid connects were free lines"
+ },
+ {
+  "id": "arpa-00",
+  "chart_id": "arpa",
+  "order": 0,
+  "series": "Q3 2025",
+  "x": "Verizon",
+  "y": 171.27,
+  "note": "Per account, not per phone; Verizon does not report postpaid phone ARPU"
+ },
+ {
+  "id": "arpa-01",
+  "chart_id": "arpa",
+  "order": 1,
+  "series": "Q3 2026",
+  "x": "Verizon",
+  "y": 168.08,
+  "note": "-1.9% YoY"
+ },
+ {
+  "id": "arpa-02",
+  "chart_id": "arpa",
+  "order": 2,
+  "series": "Q3 2025",
+  "x": "T-Mobile",
+  "y": 149.44,
+  "note": "Per account; T-Mobile stopped reporting phone ARPU in 2026"
+ },
+ {
+  "id": "arpa-03",
+  "chart_id": "arpa",
+  "order": 3,
+  "series": "Q3 2026",
+  "x": "T-Mobile",
+  "y": 155.73,
+  "note": "+4% YoY"
+ },
+ {
+  "id": "rev_per_gb-00",
+  "chart_id": "rev_per_gb",
+  "order": 0,
+  "series": "Revenue per GB",
+  "x": "2010",
+  "y": 412,
+  "note": "CTIA service revenue / traffic"
+ },
+ {
+  "id": "rev_per_gb-01",
+  "chart_id": "rev_per_gb",
+  "order": 1,
+  "series": "Revenue per GB",
+  "x": "2020",
+  "y": 4.5,
+  "note": "CTIA service revenue / traffic"
+ },
+ {
+  "id": "rev_per_gb-02",
+  "chart_id": "rev_per_gb",
+  "order": 2,
+  "series": "Revenue per GB",
+  "x": "2025",
+  "y": 1.48,
+  "note": "CTIA service revenue / traffic"
+ }
+]

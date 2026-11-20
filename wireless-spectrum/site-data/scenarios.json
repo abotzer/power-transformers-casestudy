@@ -1,0 +1,54 @@
+[
+ {
+  "id": "s1",
+  "order": 0,
+  "name": "Steady grind",
+  "probability": 39,
+  "tagline": "Spectrum keeps its value, but nobody gets a re-rating.",
+  "summary": "Defined as: no satellite owner (SpaceX or another) bills 3M or more US mobile lines directly at end-2030, and the median 2029-30 deal price is at least $0.60 but below $1.40 per MHz-pop. Upper C-band clears near $0.65-0.95 ($35-50B), mostly to the three carriers. Traffic roughly doubles to about 300-350 EB, fixed wireless reaches about 29M lines, and revenue per GB keeps falling about 10% a year. SpaceX closes its EchoStar and Grain deals and launches a modest service, but stays a niche operator, and upper mid-band auctions slip past 2030.",
+  "spectrum_prices": "Mid-band trades near today's range of roughly $0.6-1.4 per MHz-pop. Low-band keeps a premium of about $1.2-2.0 because no new low-band is coming.",
+  "carriers": "Revenue grows 2.5-3.5% a year and multiples stay at about 6.5-7.5x. Returns come from dividends and buybacks.",
+  "satellites": "Satellite-to-phone grows into a few-billion-dollar bundled add-on. SpaceX adds coverage and bids for spectrum, but carriers still set prices.",
+  "investors": "Spectrum exposure pays only through events, such as EchoStar's remainder sale or an Anterix or Array exit. Carrier stocks behave as income holdings.",
+  "signposts": "Auction 115 gross bids between $35B and $50B (2027); fixed wireless adds below 3M a year from 2027; SpaceX direct US lines below 1M at end-2029."
+ },
+ {
+  "id": "s2",
+  "order": 1,
+  "name": "Supply wave",
+  "probability": 24,
+  "tagline": "The spectrum law works, supply floods in, and prices per MHz-pop fall.",
+  "summary": "Defined as: no satellite owner (SpaceX or another) bills 3M or more US mobile lines directly at end-2030, and the median 2029-30 deal price is below $0.60 per MHz-pop. Upper C-band clears low, near $0.40-0.65 ($22-35B), as three carriers split 160 MHz with little contest. NTIA and the FCC move fast: 2.7 GHz in 2028 and a 7 GHz or 4.4 GHz auction by 2030 take new supply past 430 MHz. Traffic growth fades toward 10%, Wi-Fi keeps most phone data, and new auctions clear at $0.3-0.6, echoing Canada's second mid-band tranche.",
+  "spectrum_prices": "The mid-band deal median falls below $0.60 and keeps falling in real terms. Low-band holds up better at about $1.0-1.6.",
+  "carriers": "Capacity gets cheap, which helps margins and fixed wireless, but price competition and cable keep revenue growth near 1.5-2.5%. Multiples sit around 6.5-7x.",
+  "satellites": "Satellite sharing of carrier spectrum and new auction bands with satellite rights reduce the need to own spectrum. Only the few dedicated satellite bands keep strategic value.",
+  "investors": "Pure-play spectrum holders lose, because sale prices fall and buyers have alternatives. Towers and equipment makers gain more from new deployments than holders do.",
+  "signposts": "A favourable NTIA 7 GHz report (10 December 2026) followed by an FCC 7 GHz auction date in 2028 or earlier; Auction 115 gross bids under $35B (2027); a 2.7 GHz auction clearing below $0.50."
+ },
+ {
+  "id": "s3",
+  "order": 2,
+  "name": "SpaceX fourth force",
+  "probability": 23,
+  "tagline": "SpaceX becomes a retail entrant and a deep-pocketed bidder, and value moves from carriers to SpaceX and sellers.",
+  "summary": "Defined as: SpaceX (or another satellite owner) bills at least 3M US mobile lines directly at end-2030, whatever the price level. That is under 1% of US mobile connections, so the damage to carriers here comes mainly from SpaceX's low prices and its bidding for spectrum and towers, not from its market share. SpaceX closes EchoStar and Grain on time, wins meaningful upper C-band blocks, and launches a cheap Starlink Mobile plan in 2028 using satellites, 800 MHz and leased towers. By end-2030 it owns over 100 MHz and keeps buying. Prices rise for low-band and satellite-capable bands, where SpaceX and Amazon bid against carriers, while generic mid-band stays near trend. Carriers answer with price cuts and bundles, so service revenue grows only about 1-2% a year and multiples compress.",
+  "spectrum_prices": "Prices split into two tiers. Low-band and satellite-usable bands clear at $1.5-2.5 or more, and upper C-band clears above $0.94 about half the time. Generic mid-band stays near $0.7-1.2.",
+  "carriers": "Multiples fall toward 5.5-6.5x and the carrier basket lags the S&P 500. Their licences are worth more to others than to them.",
+  "satellites": "SpaceX is the clear winner, and satellite-to-phone revenue reaches the top of our range ($8-12B). Owners of satellite bands (Amazon-Globalstar, AST's L-band rights) gain strategic value.",
+  "investors": "In this world the gains go to SpaceX, to EchoStar through its SpaceX shares, and to pure plays sold into a bidding contest. Incumbent carriers pay for the shift.",
+  "signposts": "SpaceX qualifies for Auction 115 and wins meaningful blocks (2027); a SpaceX plan launches by mid-2028 at an aggressive price; tower deals covering tens of thousands of sites, or a deal to buy a carrier."
+ },
+ {
+  "id": "s4",
+  "order": 3,
+  "name": "Scarcity premium",
+  "probability": 14,
+  "tagline": "Demand outruns supply, and existing holders capture the gains.",
+  "summary": "Defined as: no satellite owner (SpaceX or another) bills 3M or more US mobile lines directly at end-2030, and the median 2029-30 deal price is $1.40 per MHz-pop or more. Upper C-band clears above the 2021 price, near $1.00-1.35 ($54-72B), as Verizon, AT&T and a bidding SpaceX fight for blocks next to existing C-band. Traffic re-accelerates on AI uplink, glasses and fixed wireless, with at least one year above 25% growth, while 2.7 GHz and 7 GHz slip. Carriers ration fixed wireless and raise prices, so revenue per GB falls more slowly, and the remaining pure plays sell at premiums.",
+  "spectrum_prices": "The median deal price is $1.40 or more, with low-band above $2. New auctions clear near or above 2021 levels.",
+  "carriers": "Pricing power returns, revenue grows 3-4% a year, and multiples re-rate to about 7.5-8.5x. This is the carriers' best chance of beating the S&P 500.",
+  "satellites": "Owners of satellite spectrum gain because deep-pocketed buyers compete for their bands. SpaceX stays mainly a wholesale coverage partner to carriers.",
+  "investors": "This is the only world where both carriers and pure plays win. Even here, gains come mostly through sales and auctions, and earnings grow slowly.",
+  "signposts": "CTIA traffic growth above 22% in 2026 or 2027; a measured AI traffic share above 1% by 2028; Auction 115 gross bids above $50B (2027); the 2.7 GHz auction slipping to 2029 or later."
+ }
+]

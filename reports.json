@@ -28,5 +28,20 @@
     "page": "infra-services/dashboard/index.html",
     "data": "infra-services/site-data",
     "page_title": "Utility Infrastructure Services · Whitesail Labs"
+  },
+  {
+    "slug": "spectrum",
+    "title": "Wireless spectrum",
+    "subtitle": "Is licensed spectrum about to become much more valuable as AI devices and satellites converge? Demand, supply, prices, SpaceX, past spectrum bets and listed exposure, with probabilistic forecasts and scenarios to 2030.",
+    "status": "New",
+    "updated": "2026-11-20",
+    "tags": [
+      "Spectrum",
+      "Satellite convergence",
+      "Probabilistic forecasts"
+    ],
+    "page": "wireless-spectrum/dashboard/index.html",
+    "data": "wireless-spectrum/site-data",
+    "page_title": "Wireless Spectrum · Whitesail Labs"
   }
 ]
