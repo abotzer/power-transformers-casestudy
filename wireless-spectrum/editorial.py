@@ -10,6 +10,7 @@ DOMAIN_LABEL = {"demand": "Demand", "capacity": "Capacity", "supply": "Supply an
 DROP_ALIASES = {"EV", "IPO", "ETF", "beam", "Beam", "uplink", "Uplink", "downlink", "Downlink", "screen", "Screen", "pipeline", "Pipeline"}
 DEAL_SKIP = {"EchoStar paired AWS-3 (Verizon talks; no deal)", "SpaceX buys Tristar unpaired AWS-3 licenses", "FCC Auction 115 (upper C-band)"}
 DEAL_RENAME = {"SpaceX buys Grain 800 MHz (Reuters 2026-10-08)": "SpaceX agrees to buy Grain's 800 MHz (8 Oct 2026)"}
+GLOSSARY_SKIP = {"goldman-bankers-view"}
 PLAYER_SKIP = {"EchoStar (spectrum seller)", "Space42 (Thuraya)", "Lynk Global / Omnispace"}
 PLAYER_STAGE = {"Starlink Mobile (Direct to Cell)": "In service", "T-Mobile T-Satellite": "In service", "AST SpaceMobile": "Testing",
                 "Globalstar (being acquired by Amazon)": "In service", "Amazon Leo (D2D)": "Planned", "Iridium NTN Direct (being acquired by Rocket Lab)": "In service",

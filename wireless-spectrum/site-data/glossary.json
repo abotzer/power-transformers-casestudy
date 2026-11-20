@@ -1072,14 +1072,6 @@
   "definition": "A price above past auction levels and the cost of alternative capacity, paid because usable spectrum is genuinely short. Whitesail finds that the 2025-26 deals, at about $1.0-1.4/MHz-pop, sit within past auction ranges, so no clear premium is visible yet."
  },
  {
-  "id": "goldman-bankers-view",
-  "term": "Goldman banker's view",
-  "aliases": "Goldman banker's view | Goldman banker's point | Goldman banker | Goldman point | banker's view | banker's point",
-  "case_sensitive": false,
-  "category": "Markets and finance",
-  "definition": "The sceptical view this report tests: spectrum buyers are few and regulated, telcos see no value in spectrum unless they can raise prices, and competition pushes the other way. Whitesail finds that the 2024-2026 evidence broadly supports it, except when an outside bidder appears for a seller's licences."
- },
- {
   "id": "spacex",
   "term": "SpaceX",
   "aliases": "SpaceX | SPCX | Space Exploration Technologies",

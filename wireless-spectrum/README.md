@@ -1,7 +1,8 @@
 # Wireless spectrum
 
-An independent market reference on US wireless spectrum, prepared for Fulton Asset Management in response to Jason Kozin's thesis that licensed spectrum becomes significantly more valuable as AI devices and satellite-terrestrial convergence raise demand. It covers demand, substitutes for spectrum, supply and FCC rules, auction and private-sale prices, satellite direct-to-device service, who captures the value, past spectrum bets, markets outside the US and listed ways to get exposure, with probabilistic projections to 2027-2035 (18 quantity forecasts with 80% ranges, 14 event probabilities and four scenarios for 2030).
+An independent market reference on US wireless spectrum, prepared for Fulton Asset Management testing the thesis that licensed spectrum becomes significantly more valuable as AI devices and satellite-terrestrial convergence raise demand. It covers demand, substitutes for spectrum, supply and FCC rules, auction and private-sale prices, satellite direct-to-device service, who captures the value, past spectrum bets, markets outside the US and listed ways to get exposure, with probabilistic projections to 2027-2035 (18 quantity forecasts with 80% ranges, 14 event probabilities and four scenarios for 2030).
 
+- Interactive dashboard: https://claude.ai/artifact/W3FJZ8ZSR4REECadQRFypB
 - Plain-text version (verdict, scenarios, forecasts, key findings, exposure list, signposts): [`report.md`](report.md)
 
 ## Layout

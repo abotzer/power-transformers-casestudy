@@ -310,7 +310,7 @@ def build_universe(U):
 def build_glossary(G):
     rows, seen = [], set()
     for t in G["terms"]:
-        if t["id"] in seen:
+        if t["id"] in seen or t["id"] in E.GLOSSARY_SKIP:
             continue
         seen.add(t["id"])
         aliases = [a.strip() for a in str(t.get("aliases", "")).split("|") if a.strip() and a.strip() not in E.DROP_ALIASES]
