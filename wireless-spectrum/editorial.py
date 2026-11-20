@@ -187,7 +187,7 @@ CHARTS = [
          note="Satellites in orbit now against those authorized or targeted, log scale. SpaceX is authorized for up to 15,000 next-generation direct-to-cell satellites, with launches from 2027."),
     # ---- invest
     dict(id="exposure", group="invest", order=1, kind="hbar", fmt="pctx", height=460, wide="Yes",
-         points=[("Spectrum holders", "EchoStar (ECHO)", 100, "Mostly SpaceX shares and cash from its spectrum sales"),
+         points=[("Spectrum holders", "EchoStar (ECHO)", 34, "Remaining licences at book ($8.45B) against EV; most of the rest is SpaceX shares and cash from its spectrum sales"),
                  ("Spectrum holders", "Anterix (ATEX)", 95, "900 MHz licences are nearly the whole company"),
                  ("Spectrum holders", "NextNav (NN)", 85, "Lower 900 MHz licences; value depends on an FCC petition"),
                  ("Satellite", "Globalstar (GSAT)", 50, "Being acquired by Amazon"),
@@ -202,7 +202,7 @@ CHARTS = [
                  ("Cable", "Comcast (CMCSA)", 1.1, "600 MHz and CBRS licences"),
                  ("Cable", "Charter (CHTR)", 0.4, "CBRS licences")],
          title="How much of each company's value is spectrum", source_url="https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000370/t-3q2026exhibit991.htm", confidence="W",
-         note="Rough Whitesail estimates: licence book value, or an estimate of the spectrum's market value, divided by enterprise value. Carriers use reported book values; the others are directional only. A high share is not the same as upside: these companies gain mainly when they sell."),
+         note="Rough Whitesail estimates: licence book value, or an estimate of the spectrum's market value, divided by enterprise value. Carriers use reported book values; the others are directional only. EchoStar's licences are now a third of its value; most of the rest is SpaceX shares and cash from its sales. A high share is not the same as upside: these companies gain mainly when they sell."),
     # ---- economics
     dict(id="carrier_shock", group="economics", order=1, kind="hbar", fmt="pct1",
          points=[("Change", "AT&T", -9.8, "Close 9 Oct 2026"), ("Change", "Verizon", -8.8, "Close 9 Oct 2026"), ("Change", "T-Mobile", -13.3, "T-Mobile's worst day as a public company")],

@@ -47,6 +47,13 @@ VC_PATCHES = [
      "if (vcState.sel) labelled = model.edges.filter((e) => e.source === vcState.sel || e.target === vcState.sel).sort((a, b) => (vcMid(b) || 0) - (vcMid(a) || 0)).slice(0, 6);"),
     ("      if (e.kind === 'fulton_opportunity') { const ch = mk('span', 'tx-chip', 'Opportunity'); ch.setAttribute('data-kind', 'fulton'); top.appendChild(ch); }",
      "      if (e.kind === 'spectrum') { const ch = mk('span', 'tx-chip', 'Spectrum rights'); ch.setAttribute('data-kind', 'focus'); top.appendChild(ch); }"),
+    ("const vals = model.edges.map(vcMid).filter((v) => v !== null && v > 0);",
+     "const vals = model.edges.filter((e) => e.kind !== 'spectrum').map(vcMid).filter((v) => v !== null && v > 0);"),
+    ("const sw = (e) => { const v = vcMid(e); return v && v > 0 ? wScale(v) : 1; };",
+     "const sw = (e) => { const v = vcMid(e); return e.kind === 'spectrum' ? 1.5 : v && v > 0 ? wScale(v) : 1; };"),
+    ("    labelled = Array.from(best.values());", "    labelled = [];"),
+    ("legend.appendChild(mk('span', null, 'Line width shows annual value'));", "legend.appendChild(mk('span', null, 'Solid line width shows yearly value'));"),
+    ("With nothing selected, the largest flow between each pair of columns is labelled.", "Dashed lines are spectrum rights changing hands."),
     ("'Click a company, or pick one from the list, to see who supplies it, who it sells to, what changes hands and how much it is worth each year.",
      "'Click a company, or pick one from the list, to see where its spectrum and equipment come from, who it sells to, what changes hands and how much it is worth."),
 ]

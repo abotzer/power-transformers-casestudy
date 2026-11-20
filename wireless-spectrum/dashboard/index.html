@@ -448,9 +448,10 @@ details.tx-fold-inline[open] > summary { margin-bottom: var(--cds-gap-sm); }
 /* universe */
 .tx-uni { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
 .tx-uni-cat { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
-.tx-uni-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: 6px; }
-.tx-uni-facts > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tx-uni-facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: 6px; margin: 0; align-items: baseline; }
+.tx-uni-facts dd { margin: 0; text-align: right; }
 .tx-uni-v { font-variant-numeric: tabular-nums; font-weight: 600; overflow-wrap: anywhere; }
+.tx-cand-head .tx-chip { flex: none; white-space: nowrap; }
 .tx-cand .tx-card-note { line-height: 1.5; }
 </style>
 
@@ -1160,7 +1161,7 @@ function drawValueChain() {
     item.append(sw, document.createTextNode(d[0]));
     legend.appendChild(item);
   });
-  legend.appendChild(mk('span', null, 'Line width shows annual value'));
+  legend.appendChild(mk('span', null, 'Solid line width shows yearly value'));
   legend.appendChild(mk('span', null, 'Dashed box: a group of many smaller firms'));
 
   const model = vcModel();
@@ -1187,9 +1188,9 @@ function drawValueChain() {
   const L = vcLayout(model, W);
   const svg = newSvg(el, L.W, L.H).attr('aria-label', 'Market map of US wireless spectrum: where spectrum comes from, who holds it, the networks built on it and the demand they serve');
   const tr = vcState.sel ? vcTrace(model, vcState.sel) : null;
-  const vals = model.edges.map(vcMid).filter((v) => v !== null && v > 0);
+  const vals = model.edges.filter((e) => e.kind !== 'spectrum').map(vcMid).filter((v) => v !== null && v > 0);
   const wScale = d3.scaleLog().domain([Math.max(d3.min(vals) || 1, 0.1), Math.max(d3.max(vals) || 10, 1)]).range([1, 9]).clamp(true);
-  const sw = (e) => { const v = vcMid(e); return v && v > 0 ? wScale(v) : 1; };
+  const sw = (e) => { const v = vcMid(e); return e.kind === 'spectrum' ? 1.5 : v && v > 0 ? wScale(v) : 1; };
 
   // column titles
   svg.append('text').attr('class', 'tx-vc-side').attr('x', L.colX[0]).attr('y', 14).text('← Suppliers');
@@ -1296,7 +1297,7 @@ function drawValueChain() {
       const k = L.pos.get(e.source).ci;
       if (!best.has(k) || (vcMid(e) || 0) > (vcMid(best.get(k)) || 0)) best.set(k, e);
     });
-    labelled = Array.from(best.values());
+    labelled = [];
   }
   const labs = labelled.map((e) => Object.assign({ e: e }, geom(e)));
   d3.group(labs, (l) => Math.round(l.mx)).forEach((list) => {
@@ -1328,7 +1329,7 @@ function renderVcDetail(model) {
   box.textContent = '';
   const id = vcState.sel;
   if (!id) {
-    box.appendChild(mk('p', 'tx-card-note', 'Click a company, or pick one from the list, to see where its spectrum and equipment come from, who it sells to, what changes hands and how much it is worth. The chain lights up through every layer: one color traces its suppliers and their suppliers, the other its customers and theirs. With nothing selected, the largest flow between each pair of columns is labelled.'));
+    box.appendChild(mk('p', 'tx-card-note', 'Click a company, or pick one from the list, to see where its spectrum and equipment come from, who it sells to, what changes hands and how much it is worth. The chain lights up through every layer: one color traces its suppliers and their suppliers, the other its customers and theirs. Dashed lines are spectrum rights changing hands.'));
     return;
   }
   const n = model.byId.get(id);
@@ -1989,6 +1990,7 @@ fmtBy = function (fmt, v) {
   const a = Math.abs(v);
   if (fmt === 'usd2') return (v < 0 ? '-$' : '$') + d3.format(',.2f')(a);
   if (fmt === 'usd') return '$' + d3.format(',.0f')(v);
+  if (fmt === 'int') return d3.format(',.0f')(v);
   if (fmt === 'usdp') return '$' + (a < 0.01 ? trim0(d3.format('.4f')(v)) : d3.format(',.2f')(v));
   if (fmt === 'usd_t') return '$' + d3.format(',.1f')(v) + 'T';
   if (fmt === 'x') return d3.format(',.1f')(v) + 'x';
@@ -2319,20 +2321,19 @@ function renderUniverse() {
       if (r.ticker) chips.appendChild(mk('span', 'tx-chip', r.ticker, 'universe', 'ticker', w));
       it.appendChild(chips);
       it.appendChild(mk('p', 'tx-cand-svc', r.holdings, 'universe', 'holdings', w));
-      const facts = mk('div', 'tx-uni-facts');
+      const facts = mk('dl', 'tx-uni-facts');
       [['Market cap', 'market_cap_label'], ['Spectrum share of value', 'spectrum_pct_ev'], ['1-year return', 'return_1y']].forEach(([lbl, f]) => {
         if (!r[f]) return;
-        const b = mk('div');
-        b.appendChild(mk('span', 'tx-ans-lbl', lbl));
-        b.appendChild(mk('span', 'tx-uni-v', r[f], 'universe', f, w));
-        facts.appendChild(b);
+        facts.appendChild(mk('dt', 'tx-ans-lbl', lbl));
+        facts.appendChild(mk('dd', 'tx-uni-v', r[f], 'universe', f, w));
       });
-      it.appendChild(facts);
+      if (facts.childNodes.length) it.appendChild(facts);
       const d = detailsBox('If spectrum gets scarcer, and if not');
       labelled(d, 'Gains if', r.benefits_if, 'universe', 'benefits_if', w);
       labelled(d, 'Loses if', r.loses_if, 'universe', 'loses_if', w);
       labelled(d, 'Risks', r.risks, 'universe', 'risks', w);
       labelled(d, 'Under our scenarios', r.scenario_view, 'universe', 'scenario_view', w);
+      labelled(d, 'Spectrum share of value, basis', r.spectrum_basis, 'universe', 'spectrum_basis', w);
       d.appendChild(sourceLinks(r.sources));
       it.appendChild(d);
       grid.appendChild(it);

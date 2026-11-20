@@ -1,0 +1,1409 @@
+{
+ "key_findings": [
+  {
+   "id": "demand",
+   "order": 1,
+   "topic": "Demand",
+   "tag": "Undercuts",
+   "headline": "US mobile data still grows about 20% a year, but growth is slowing and AI traffic barely registers.",
+   "summary": "US networks carried 159.3 trillion MB in 2025, up 20%, down from 32% in 2024 and about 35% in 2023. Ericsson measured generative AI apps at 0.06% of mobile traffic, and Wi-Fi carries 82-89% of US smartphone data. Service revenue per GB fell from $4.50 in 2020 to $1.48 in 2025, so carriers sell more capacity at lower unit prices.",
+   "body": "Growth is slowing:\nUS wireless networks carried 159.3 trillion MB in 2025, according to CTIA. Growth fell to 20% from 32% in 2024 and about 35% in 2023, the sharpest one-year slowdown in the series. Mature markets settle near the same level. UK mobile data grew 18% in 2025.\n\nEricsson put global traffic above 220 EB a month in Q2 2026, up 23% a year. It forecasts 515 EB a month by 2031, with yearly growth slowing to 14%. Its past forecasts ran high. A 2017-era edition expected North American smartphones to use 48 GB a month in 2023, and the actual figure came in near 26 GB.\n\nWhere the new load comes from:\nFixed wireless access (FWA), home broadband sold over licensed spectrum, has absorbed most new US capacity. Analyst Dean Bubley estimated FWA made up about 90% of the 2023 traffic increase. A typical FWA line uses about 500 GB a month, against about 25 GB for a smartphone. Carriers sell this capacity cheaply, which points to spare capacity today.\n\nAI in the traffic data:\n• Ericsson measured 21 generative AI apps at 0.06% of one operator's traffic in April 2025. Uplink was 26% of that traffic, against about 10% for traffic overall.\n• Waymo ran about 4,000 robotaxis in September 2026. At about 20 GB a day each, that is roughly 0.02% of 2025 US traffic (Whitesail calculation).\n• T-Mobile's Starlink-based T-Satellite service was 0.0002% of its network usage.\n\nSupports the thesis:\n• Traffic still compounds at 15-20% a year.\n• Ericsson models AI lifting 2031 uplink to 3x (medium adoption) or 5x (high adoption) the 2025 level. Phones transmit with limited power, so uplink-heavy AI uses a large share of spectrum.\n• CTIA expects US data demand to roughly quadruple by 2032.\n• FWA shows carriers can sell licensed spectrum as broadband.\n\nCuts against it:\n• US growth is slowing, and measured AI traffic is tiny.\n• Wi-Fi carries 82-89% of US smartphone data (Opensignal, 2024).\n• Service revenue per GB fell from $412 in 2010 to $4.50 in 2020 and $1.48 in 2025, about 20% a year since 2020.\n• Verizon trimmed 2026 capex to $16.0-16.5B from $17.0B.\n• The forecasts that show an AI step change come mostly from Ericsson, Nokia and CTIA, which all gain from a scarcity story.\n\nOur view:\nThe demand case is plausible for 2030-2035, mainly through uplink. The data through 2026 does not show it yet. We put about a 15% chance on US growth returning above 25% in any year from 2027 to 2030.",
+   "sources": "https://techblog.comsoc.org/2026/09/10/ctia-americans-used-more-wireless-data-in-2025-than-in-the-entire-4g-decade-but-growth-slowed-from-2023-2024/ | https://www.rcrwireless.com/20241014/5g/us-mobile-data-traffic-stats-need-careful-scrutiny-analyst-angle | https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025 | https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum | https://insights.opensignal.com/2024/10/31/wi-fi-drives-smartphone-data-consumption-in-the-us-but-trends-vary-across-operators | https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill | https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-update | https://www.fierce-network.com/wireless/ericsson-north-american-smartphones-to-chew-through-48-gb-per-month-2023"
+  },
+  {
+   "id": "capacity",
+   "order": 2,
+   "topic": "Substitutes for spectrum",
+   "tag": "Undercuts",
+   "headline": "Spectrum is the cheapest capacity at existing sites, but Wi-Fi, efficiency and spare capacity cap its value.",
+   "summary": "Mid-band spectrum did much of the 5G capacity work, and the FCC's 2010 paper put a sites-only build at $174B against $54B with new spectrum. Since then, US capex fell from $39B in 2022 to about $30B in 2025 while median speeds rose 74% in two years to 334 Mbps. Real prices for typical unlimited plans fell 10.7% in 2025, and Wi-Fi carries 82-89% of smartphone data.",
+   "body": "How capacity gets added:\nThe standard reading of Cooper's law splits the roughly million-fold gain in wireless capacity since the late 1950s into about 1,600x from smaller cells, about 25x from more spectrum and about 25x from better techniques. Over the long run, densification did most of the work.\n\nThe 5G era leaned harder on spectrum. A measurement study of AT&T, T-Mobile and Verizon found that 5G mid-band throughput gains came mainly from wider channels. That is the strongest technical point for the thesis.\n\nWhat spectrum is worth:\nSpectrum is worth what it saves against the next-cheapest option. The FCC's 2010 staff paper estimated a sites-only build at $174B, against $54B with 275 MHz of new spectrum. Three forces hold down that saving through 2035.\n• Efficiency gains arrive with normal equipment refresh. Nokia cites 20-40% higher spectral efficiency from 5G-Advanced.\n• Demand grows more slowly. Ericsson sees North American data per smartphone rising 13% a year to 2031.\n• Supply rises, through the 800 MHz statutory pipeline and possibly 7 GHz.\n\nWi-Fi is the largest capacity lever by volume. It carried 82-89% of US smartphone data in 2024, and the US kept all 1,200 MHz at 6 GHz for unlicensed use.\n\nSupports the thesis:\n• Mid-band spectrum is the cheapest capacity at sites carriers already own.\n• The 6G capacity case depends mostly on new spectrum. Ericsson's simulation says 200 MHz at 7 GHz roughly triples downlink capacity on an existing macro grid.\n• Demand concentrates in dense cities, where new sites are hardest to add and satellites cannot help.\n\nCuts against it:\n• Shortage forecasts have a poor record. The FCC projected a 275 MHz deficit by 2014, and carriers absorbed the growth with LTE, cell splitting and Wi-Fi. Brattle's study for CTIA now projects about 400 MHz by 2027 and about 1,400 MHz by 2032.\n• Industry capex fell from a $39B peak in 2022 to about $30B in 2025.\n• The combined median download speed of the three national carriers reached 334 Mbps in H1 2026, up 74% in two years.\n• Real prices for typical unlimited plans fell 10.7% in 2025, and price per GB fell more than 21%.\n• Verizon says its C-band build is about 90% complete and its FWA targets need no extra capital.\n\nOur view:\nA scarce input rarely sees its output price fall while buyers cut capex. We put about a 20% chance on a visible US capacity crunch by 2030. Our central case is flat to modestly higher prices for wide mid-band blocks next to carriers' existing holdings, with no broad re-rating of spectrum.",
+   "sources": "https://www.oreilly.com/library/view/cooperative-communications-hardware/9780470997680/10-chapter01.html | https://www.computerworld.com/article/1540380/fcc-projects-275mhz-spectrum-deficit-by-2014.html | https://www.brattle.com/insights-events/publications/current-spectrum-allocation-is-not-sufficient-for-meeting-the-future-demand-for-wireless-broadband-in-the-us-according-to-a-new-brattle-report | https://www.benton.org/headlines/ctia-2026-annual-survey-highlights | https://www.techrepublic.com/article/news-us-mobile-speeds-rootmetrics/ | https://mma.prnewswire.com/media/2969076/CTIA_AffordabilityTracker.pdf?p=pdf | https://convergedigest.com/verizon-delivers-strong-4q-25-as-fiber-fixed-wireless-and-network-convergence/ | https://ericsson.com/en/blog/2025/6/6g-rat-performance-potential"
+  },
+  {
+   "id": "supply",
+   "order": 3,
+   "topic": "Supply and rules",
+   "tag": "Undercuts",
+   "headline": "New US mid-band supply rises by law through 2035, while low-band stays scarce and concentrated.",
+   "summary": "The 2025 budget law sets an 800 MHz pipeline, and 160 MHz of upper C-band goes to auction on April 27, 2027. We estimate about 395 MHz of new licensed spectrum auctioned by 2030 and about 700 MHz by 2035, roughly 60% more than today's base of about 1,155 MHz. Low-band is the exception, with almost nothing new coming below 1 GHz.",
+   "body": "What exists today:\nThe FCC's spectrum screen, its trigger for closer deal review, stands at 385 MHz. The screen is set at about one-third of suitable spectrum, which implies about 1,155 MHz of licensed sub-6 GHz mobile spectrum. AT&T, Verizon and T-Mobile hold most of it. After buying EchoStar's licences, AT&T reaches 405 MHz in some counties, above the trigger. The FCC still approved the deal with conditions, and it blocked no 2025-2026 deal.\n\nThe pipeline:\n• The One Big Beautiful Bill Act (July 2025) restored FCC auction authority through September 30, 2034 and set an 800 MHz pipeline. The FCC must auction at least 300 MHz, and at least 500 MHz must come from federal spectrum between 1.3 and 10.5 GHz.\n• Upper C-band (160 MHz, Auction 115) starts bidding on April 27, 2027, with 3,248 licences. It creates a contiguous 440 MHz C-band range.\n• FCC Chairman Brendan Carr targets a 2.7 GHz auction of about 210 MHz in 2028.\n• NTIA's study of 7.125-7.4 GHz (275 MHz) is due December 10, 2026.\n• The law excludes 3.1-3.45 GHz and 7.4-8.4 GHz.\n\nOur P50 is about 395 MHz of new licensed spectrum auctioned by 2030 and about 700 MHz by 2035.\n\nSharing grows too:\nIn October 2026 the FCC proposed adding 482 MHz to its Supplemental Coverage from Space framework, taking eligible bands from 5 to 13. The framework lets satellites reuse carriers' spectrum. AT&T, Verizon and T-Mobile signed a joint venture on October 1, 2026 to pool spectrum for satellite partners.\n\nSupports the thesis:\n• Low-band is structurally scarce. No meaningful new supply below 1 GHz is in the pipeline.\n• Ownership is concentrated, and the screen limits who can buy. That protects the value of spectrum already held.\n• GSMA puts North America's 2035-2040 mid-band need at 2.7-3.8 GHz, against about 1 GHz today.\n\nCuts against it:\n• Mid-band supply grows about a third by 2030 and about 60% by 2035 if the law is followed.\n• The US mid-band gap is disputed. PolicyTracker counts 1-7 GHz spectrum assigned to operators at 791 MHz in the US and 835 MHz in China.\n• Carriers signal restraint. Verizon says upper C-band takes four to five years to deploy. T-Mobile says it will buy only where spectrum beats densifying its network.\n• Sharing rules reduce the need to own spectrum outright.\n\nOur view:\nA scarcity premium most likely holds in low-band and in rights usable by both satellites and ground networks. It most likely shrinks in generic mid-band.",
+   "sources": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1 | https://www.federalregister.gov/documents/2026/07/31/2026-15598/upper-c-band-398-42-ghz-expanding-flexible-use-of-the-37-to-42-ghz-band | https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date | https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz | https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf | https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/ | https://www.policytracker.com/?p=79240 | https://broadbandbreakfast.com/ntia-to-release-7-ghz-study-at-dec-10-event-in-washington.md"
+  },
+  {
+   "id": "prices",
+   "order": 4,
+   "topic": "Prices and deals",
+   "tag": "Mixed",
+   "headline": "Private spectrum prices rose in 2025-26 as SpaceX bid, but FCC auctions still clear below the 2015 peak.",
+   "summary": "SpaceX agreed to pay a reported $8B for Grain's 800 MHz licences, about $1.73 per MHz-pop and about 2.8x Grain's cash cost two months earlier. AT&T paid about $23B for EchoStar's 3.45 GHz and 600 MHz licences, about $1.40 per MHz-pop. Wide mid-band blocks still clear lower at auction. Lower C-band cleared at about $0.94 in 2021, and TD Cowen's $30-75B range for upper C-band implies $0.56-1.40.",
+   "body": "Recent private deals:\n• T-Mobile sold its 800 MHz licences to Grain Management for $2.9B in cash plus $690M of 600 MHz licences, closing August 10, 2026. That is about $0.78 per MHz-pop. T-Mobile keeps 50% of Grain's later gains above a set return.\n• On October 8, 2026, SpaceX agreed to buy the same licences, up to 14 MHz paired. The Wall Street Journal reported about $8B in cash. New Street puts that at about $1.73 per MHz-pop.\n• AT&T closed its roughly $23B purchase of EchoStar's 3.45 GHz and 600 MHz licences on July 28, 2026, about $1.40 per MHz-pop (CreditSights). New Street said the price was about $9B above EchoStar's cost.\n• SpaceX agreed to pay $17B for EchoStar's AWS-4 and H-block licences, about $1.03 per MHz-pop (MoffettNathanson), and $2.6B in stock for unpaired AWS-3, about $0.52.\n\nFCC auctions:\n• AWS-3 (2015) raised $44.9B at about $2.7 per MHz-pop, the US peak.\n• Lower C-band (2021) raised $81.17B at about $0.94. AT&T, Verizon and T-Mobile paid about 96% of it.\n• 3.45 GHz (2022) raised $22.5B at about $0.74.\n• The AWS-3 re-auction closed on June 23, 2026 at $3.57B. New Street put the average at $2.53 per MHz-pop, and Verizon paid about 88% of the total.\n• TD Cowen expects $30-75B for upper C-band in 2027, about $0.56-1.40 per MHz-pop. Winners also pay about $16B of satellite and altimeter costs.\n\nSupports the thesis:\n• The 800 MHz price more than doubled in two months.\n• EchoStar sold at large premiums to its cost.\n• Amazon agreed to pay about $11.57B for Globalstar, largely for its satellite spectrum rights.\n• Anterix raised its own estimate of its 900 MHz spectrum to $2.5B-$7B+ after the FCC widened the band.\n• Small amounts of paired lower mid-band with mature phone support still fetch $2.5-3.0 per MHz-pop.\n\nCuts against it:\n• Wide mid-band blocks sell for far less per MHz-pop than the 2015 peak, and the upper C-band range sits near lower C-band.\n• The buyer pool is tiny. Real competition appeared only when a fourth party showed up. SpaceX accounts for about $27.6B, roughly 45-50%, of 2025-26 private deal value, and it now says its spectrum puzzle is complete.\n• mmWave sits near $0.01 per MHz-pop, and the 2.5 GHz leftover auction raised $428M against $1-5B expected.\n• The FCC attaches conditions, such as an escrow and faster buildout on AT&T-EchoStar.\n\nOur view:\nOur P50 for upper C-band is about $42B, or about $0.80 per MHz-pop. We expect low-band private prices to hold at $1.2-2.0 by 2030 and upper mid-band to trend to $0.5-1.0.",
+   "sources": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers | https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management | https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/ | https://communicationsdaily.com/news/2025/09/09/EchoStar-Agrees-to-Sell-Spectrum-to-SpaceX-Raising-Many-Questions-2509080052 | https://auctiondata.fcc.gov/public/projects/auction107 | https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b | https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band | https://www.lightreading.com/5g/fcc-oks-6-3b-in-upper-c-band-incentive-payments-but-cable-ops-still-concerned"
+  },
+  {
+   "id": "satellite",
+   "order": 5,
+   "topic": "Satellites and SpaceX",
+   "tag": "Mixed",
+   "headline": "SpaceX has become the most aggressive US spectrum buyer, but satellites cannot carry dense city traffic.",
+   "summary": "SpaceX, valued at about $1.77T at its June 2026 IPO, has agreed deals for about 79 MHz of US spectrum usable on the ground, including EchoStar's 65 MHz and Grain's 800 MHz. Starlink Mobile reported about 22M monthly users in Q3 2026, but SpaceX does not disclose direct-to-device revenue. By our estimates satellites carry about three orders of magnitude less traffic per square km than city towers, so convergence adds a bidder and a coverage layer and leaves urban capacity to ground networks.",
+   "body": "Where direct-to-device stands:\nSpaceX's first-generation Direct to Cell fleet has about 650 satellites. In the US it runs on about 5 MHz of T-Mobile spectrum and carries texts, some app data and limited voice. Starlink Mobile reached about 22M monthly users in Q3 2026, up 37% on Q2. Connectivity revenue was $5.25B of SpaceX's $14.6B in Q3 2026, and direct-to-device is a small, unreported slice of it. T-Mobile's T-Satellite service was 0.0002% of its network usage.\n\nSpaceX's spectrum build:\n• The FCC approved the transfer of EchoStar's AWS-4 (40 MHz), H-block (10 MHz) and unpaired AWS-3 (15 MHz) on May 12, 2026, with rights for ground, satellite or hybrid use. The final closing is targeted for November 30, 2027.\n• SpaceX agreed on October 8, 2026 to buy Grain's nationwide 800 MHz, up to 14 MHz paired. The FCC accepted the filing on November 10, and petitions are due December 1.\n• SpaceX says it needs 800 MHz because its 2 GHz spectrum does not reach indoors.\n• The FCC authorized up to 15,000 next-generation direct-to-device satellites in October 2026. SpaceX targets about 20x the per-satellite throughput of the first generation.\n\nRivals are consolidating. Amazon is buying Globalstar for about $11.57B, and Rocket Lab is buying Iridium at an enterprise value of about $8.0B. AST SpaceMobile has 12 satellites operating and reported Q3 2026 revenue of $42.3M.\n\nThe physics:\nAnalyst estimates put Starlink's broadband capacity at 4-55 Mbps per square km. By our estimates, a dense urban macro grid delivers about 1,500-9,000 Mbps per square km. A satellite spreads its capacity over a huge area and cannot reuse spectrum as tightly as towers 0.5-2 km apart. That is why SpaceX buys low-band and, per Bloomberg, seeks access to at least 80,000 US cell sites. TD Cowen puts a ground network build above $80B.\n\nSupports the thesis:\n• Convergence has brought a new bidder with deep pockets.\n• SpaceX paid about $1.03 per MHz-pop for AWS-4 and H-block, a band EchoStar could not use for over a decade.\n• The Globalstar and Iridium deals repriced satellite spectrum.\n• SpaceX's move into 800 MHz confirms low-band as the scarce input.\n\nCuts against it:\n• Direct-to-device cannot serve dense urban demand, where carriers earn most of their money.\n• Revenue is small and mostly undisclosed.\n• The FCC adds usable supply through flexible-use waivers and sharing rules.\n• SpaceX's appetite may fade once it closes on about 79 MHz.\n• Carrier stocks fell on each SpaceX spectrum step.\n\nOur view:\nWe put about 85% on direct-to-device carrying under 2% of developed-market mobile data in 2035. New buyers reprice spectrum. Incumbent holders gain little of that through pricing.",
+   "sources": "https://siliconangle.com/2026/06/11/elon-musks-spacex-raises-record-breaking-75b-pricing-ipo-135-per-share/ | https://www.satellitetoday.com/finance/2026/10/21/starlink-growth-slows-as-ai-takes-the-lead-at-spacex-in-q3-results/ | https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html | https://docs.fcc.gov/public/attachments/DA-26-471A1.pdf | https://totaltele.com/fcc-accepts-spacex-application-to-acquire-800mhz-spectrum/ | https://rcrwireless.com/?p=434877 | https://gulfnews.com/technology/starlink-mobile-targets-80000-us-cell-sites-to-bolster-emergency-rural-communications-1.500720675 | https://www.gsmaintelligence.com/blogs/what-does-the-early-data-on-d2d-usage-tell-us"
+  },
+  {
+   "id": "capture",
+   "order": 6,
+   "topic": "Who captures the value",
+   "tag": "Undercuts",
+   "headline": "Sellers in contested deals captured the spectrum gains, while carrier stocks fell on each SpaceX move.",
+   "summary": "AT&T, Verizon and T-Mobile fell 9.8%, 8.8% and 13.3% on October 9, 2026, the day after SpaceX agreed to buy Grain's 800 MHz. Verizon added 406,000 postpaid phones in Q3 2026 while its ARPA fell 1.9%, and CTIA's wireless service price index fell 4.1% in 2025. EchoStar, a seller with two bidders, posted the best shareholder return in the Fortune 500.",
+   "body": "Pricing:\nUS carriers sell more capacity each year at lower unit prices. CTIA's service price index fell 4.1% in 2025, and price per GB fell 21%. Service revenue per connection was $33.14 a month in 2025, against $49.26 in 2007.\n\nQ3 2026 results:\n• Verizon added 406,000 postpaid phones, against 44,000 a year earlier. Its postpaid ARPA fell 1.9% to $168.08.\n• AT&T added 379,000 phones and grew wireless service revenue 5.0% to $17.76B.\n• T-Mobile's ARPA rose 4% to $155.73, so it is the one carrier showing pricing power. Its account adds fell 31% to 274,000.\n• Charter added 508,000 mobile lines and Comcast 368,000. Together that beats AT&T's and Verizon's combined phone adds. About half of Comcast's postpaid connects were free lines.\n\nStock reactions:\nThe market treats SpaceX's spectrum buying as bad news for incumbents. Carriers fell 4-5% when EchoStar agreed to sell to SpaceX in September 2025. On October 9, 2026, after the Grain deal, AT&T fell 9.8%, Verizon 8.8% and T-Mobile 13.3%. MoffettNathanson notes the three carriers still hold about 14-15 times as much spectrum as SpaceX.\n\nWhere the gains went:\nEchoStar shares rose about 375% in 2025 and about 430% from January 2025 to June 2026, the best return in the Fortune 500. It sold under FCC pressure to two strategic buyers. Carriers carry licences at historical cost. T-Mobile's spectrum licences were $99.98B at September 30, 2026, about 41% of its enterprise value (Whitesail calculation). Higher resale prices reach carrier earnings only when carriers sell, and they rarely do.\n\nSupports the thesis:\n• Holders capture value when an outside bidder appears, as EchoStar and Grain did.\n• The move from four networks to three, plus SpaceX's need for towers, opens options for wholesale deals, tower leases or M&A. Morgan Stanley called the Grain deal constructive for tower companies.\n\nCuts against it:\n• Spectrum in a new entrant's hands hurts incumbents' competitive position.\n• Cable takes share with free lines while reselling Verizon's network.\n• Carrier returns come from lower capex and higher free cash flow. T-Mobile guides 2026 adjusted free cash flow of $18.7-18.8B.\n• No 2026 carrier result shows AI devices moving service revenue.\n\nOur view:\nFor 2030 we weight a grind case at about 50% and price pressure from SpaceX and cable at about 30%. We put about 20% on a convergence premium, where spectrum is sold or bought through M&A and carriers re-rate to 8x EBITDA or more.",
+   "sources": "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum | https://finviz.com/news/407554/verizon-delivers-another-record-breaking-quarter-with-3q-2026-results-driven-by-strong-postpaid-phone-and-account-additions | https://www.benton.org/headlines/ctia-2026-annual-survey-highlights | https://www.t-mobile.com/news/business/t-mobile-q3-2026-earnings | https://finviz.com/news/418256/charter-announces-third-quarter-2026-results-and-launches-new-operating-model | https://fortune.com/2026/06/04/echostar-stock-elon-musk-spacex-spectrum-bankruptcy-to-best-shareholder-return-fortune-500/ | https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm | https://ng.investing.com/news/stock-market-news/tmobile-att-verizon-fall-after-echostar-announces-spectrum-sale-to-spacex-93CH-2095870"
+  },
+  {
+   "id": "history",
+   "order": 7,
+   "topic": "Past spectrum bets",
+   "tag": "Undercuts",
+   "headline": "Most past spectrum bets lost money; the wins needed a rule change plus two motivated buyers.",
+   "summary": "Of 26 spectrum bets from 1996 to 2026 that we reviewed, 6 clearly made money, 12 lost most of the capital and 8 were mixed or pending. Dish/EchoStar, the most relevant case, turned more than $30B of licence spending into about $42.6B of sales, about 1.4x cash cost over roughly ten years. Wins took 4-14 years, while losses usually showed within 2-5.",
+   "body": "The record:\nOf 26 spectrum bets from 1996 to 2026, 6 clearly made money, 12 lost most of the capital and 8 were mixed or pending. Among the 16 pure-play holders, 3 won, 8 lost and 5 were mixed. A holder who bought at market typically ended between break-even and a loss after financing and carrying costs.\n\nDish/EchoStar, 2008-2026:\n• Dish invested more than $30B in licences, including more than $10B through designated entities. Its books carried them at about $37.5B with capitalized interest.\n• It sold 3.45 GHz and 600 MHz to AT&T for about $23B, AWS-4 and H-block to SpaceX for about $17B, and unpaired AWS-3 to SpaceX for about $2.6B in stock.\n• Headline proceeds of about $42.6B are about 1.4x cash cost, or roughly 3.5-4% a year. Against the $37.5B book basis, the multiple is about 1.1x.\n• The best piece was the 2 GHz licences, bought out of the TerreStar and DBSD bankruptcies for about $2.86B, plus H-block for $1.67B. They sold for $17B, about 3.8x over 13-14 years. The FCC's 2012 decision to allow ground use, and a satellite buyer, made that happen.\n• Two Dish subsidiaries filed for Chapter 11 on June 30, 2026. EchoStar sold under FCC pressure with debt coming due.\n\nOther cases:\n• NextWave bid $4.74B for PCS licences in 1996, went bankrupt, and sold them for about $5.4B in 2004-05, about 1.1x after nine years.\n• Clearwire's backers put in $3.2B in 2008. Google lost 94% on its $500M stake. Sprint bought out the rest in 2013 at $5 a share.\n• Harbinger put about $3B into LightSquared. The FCC froze its plan over GPS interference, and Harbinger's main fund lost 47% in 2011.\n• Straight Path sold to Verizon for $3.1B in 2017 after a bidding war with AT&T. The Treasury took 20% of proceeds, and the parties paid about $614M to settle with the FCC.\n\nSupports the thesis:\n• A second motivated bidder was the best single predictor of a good exit, and SpaceX now plays that role.\n• AWS-4 shows how satellite-ground convergence can create value.\n\nCuts against it:\n• Even the best recent case returned single digits a year across the whole programme.\n• Treasuries, operators and creditors took much of the upside.\n• Bets failed on interference (LightSquared), technology shifts (WiMAX), oversupply (mmWave), peak-price bidding (European 3G) and carrying costs (Dish, Ligado).\n\nOur view:\nA new pure-play spectrum position bought at market has about a 25-35% chance of returning more than 1.5x by 2030 and about a 25-30% chance of ending below 0.5x. FCC rule changes and the number of motivated bidders drive outcomes more than total data demand.",
+   "sources": "https://www.sec.gov/Archives/edgar/data/1001082/000155837023013759/R16.htm | https://www.sec.gov/Archives/edgar/data/1001082/000155837019003904/R16.htm | https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b | https://www.sec.gov/Archives/edgar/data/0001374993/000114420406038702/v052905_s-4.htm | https://phys.org/news/2012-02-google-clearwire-stake-percent-loss.pdf | https://www.bloomberg.com/news/articles/2012-02-03/falcone-s-harbinger-capital-lost-47-last-year-on-lightsquared-venture-bet | https://www.cbsnews.com/news/verizon-to-buy-straight-path-for-3-1-billion | https://www.lightreading.com/5g/echostar-closes-at-t-spectrum-deal-but-wrinkles-remain"
+  },
+  {
+   "id": "global",
+   "order": 8,
+   "topic": "Outside the US",
+   "tag": "Undercuts",
+   "headline": "Outside the US, spectrum prices per MHz are falling, auctions go unsold and regulators favour renewals.",
+   "summary": "GSMA finds operator revenue per MHz fell about 60% from 2014 to 2023, even as spectrum costs rose to about 7% of revenue. Analysys Mason puts 49 European 3.3-3.9 GHz auctions at an average of €0.067 per MHz-pop, while US C-band cleared at about $0.94, roughly 12-13 times higher. India sold only about 141 MHz of the 10,523 MHz it offered in 2024.",
+   "body": "Prices per unit are falling:\nGSMA's 2025 study of about 250 operators finds revenue per MHz fell about 60% between 2014 and 2023. Operators hold about 80% more spectrum than in 2014, so total spectrum costs rose from about 4.5% to 7.4% of revenue. GSMA lobbies for lower prices, and the auction data point the same way.\n• Analysys Mason averages 49 national 3.3-3.9 GHz auctions from 2018 to 2024 at €0.067 per MHz-pop.\n• Italy's 2018 auction, at about $0.42, was the high point. Germany (2019) cleared at about $0.19, and the UK (2018) and France (2020) at about $0.15.\n• In Canada, Rogers paid C$3.38 per MHz-pop for 3500 MHz in 2021 and C$0.32 for 3800 MHz in 2023, about 90% less.\n• Ofcom sold all 5.4 GHz of UK mmWave in October 2025 for £39m in total.\n• NERA puts the global three-year mid-band average at $0.17 per MHz-pop.\n\nUnsold spectrum:\nIndia's June 2024 auction sold about 141 MHz of roughly 10,523 MHz offered. It raised ₹11,340 crore against a reserve value of ₹96,238 crore, about 12%. In February 2026 India's regulator recommended offering all 11,790 MHz at lower reserve prices.\n\nPolicy moves away from cash:\n• Germany extended 800, 1800 and 2600 MHz rights by five years in March 2025 instead of auctioning them.\n• Brazil's 2021 auction turned about 90% of the spectrum's value into investment obligations.\n• GSMA says low-cost renewals could save European operators up to €30bn of €104bn in 2025-2035 spectrum costs.\n\nThe US is the outlier:\nUS lower C-band cleared at about $0.94 per MHz-pop in 2021, roughly 12-13 times the European average. Licence terms differ, so the comparison is approximate. Three national bidders, higher revenue per user and shortages at the time explain much of the gap.\n\nSupports the thesis:\n• Holdings and total spending keep rising.\n• Satellite-usable bands are scarce and contested. The EU plans a single selection for the 2 GHz satellite band, whose licences expire in May 2027.\n\nCuts against it:\n• Prices per MHz-pop fall as new mid-band arrives.\n• Large shares of offered spectrum go unsold.\n• Politics caps who controls satellite bands. The EU proposal effectively reserves two of three 2 GHz blocks for European users, so a non-European operator such as SpaceX could win at most one.\n• Analysys Mason says operators may value 6-8 GHz spectrum only in high-traffic areas.\n\nOur view:\nWe put about 10-15% on spectrum broadly becoming far more valuable outside the US. Any premium is more likely in satellite-capable bands and in the US.",
+   "sources": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/ | https://www.analysysmason.com/consulting/articles/spectrum-valuation-uppermid/ | https://about.rogers.com/news-ideas/rogers-acquires-3800-mhz-5g-spectrum-across-canada/ | https://theprint.in/economy/spectrum-auctions-see-sale-of-141-4-mhz-of-radio-waves-worth-rs-11340-78-cr-bharti-airtel-top-buyer/2148813 | https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced | https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/EN/2025/20250324_frequenzen.html | https://www.spglobal.com/marketintelligence/en/news-insights/research/us-c-band-auction-becomes-worlds-costliest-mid-band-5g-auction-yet | https://idate.fr/europes-2-ghz-mss-band/"
+  },
+  {
+   "id": "investing",
+   "order": 9,
+   "topic": "Ways to invest",
+   "tag": "Undercuts",
+   "headline": "No listed security gives clean passive exposure to spectrum values; the options are event-driven or diluted.",
+   "summary": "AT&T, Verizon and T-Mobile own most US spectrum, but their shares track pricing power and fell 9-13% after SpaceX's 800 MHz deal. EchoStar now mainly holds a claim on 261.8M SpaceX shares plus $8.5B of cash due at closing. Small pure plays such as Anterix and NextNav pay off mainly through a sale to one of a handful of buyers.",
+   "body": "The carriers:\nAT&T, Verizon and T-Mobile own most of the valuable bands. Licences make up a large share of their enterprise value, about 41% at T-Mobile on book value (Whitesail calculation). They are also the main buyers, so scarcity raises what they pay for capacity about as much as it lifts their asset values. Their shares fell 9-13% the day after SpaceX agreed to buy Grain's 800 MHz. We put about 35% on them beating the S&P 500 over 2026-2030.\n\nEchoStar (ECHO):\nEchoStar sold its licences for about $42.6B of announced consideration. It is due 261.8M SpaceX shares, valued at $42.40 each at the deal price, plus $8.5B of cash at the final closing, targeted for November 2027. It held $13.44B of cash at September 30, 2026. UBS valued the SpaceX stake at about $39B. The stock now trades on SpaceX's share price, closing risk and taxes.\n\nSpaceX (SPCX):\nSpaceX listed in June 2026 at $135 a share and traded near $137 in mid-November. Its roughly $20-23B of spectrum purchases is about 1% of its value. Owning SPCX is a bet on Starlink, launch and AI. The main 180-day lockup ends on December 8, 2026.\n\nSmall pure plays:\n• Anterix (900 MHz) raised its own estimate of its spectrum value to $2.5B-$7B+ after the FCC widened the band to 10 MHz. It sells licences to utilities in small deals, such as $13.0M to CPS Energy.\n• NextNav (lower 900 MHz) depends on an FCC petition that faces heavy opposition.\n• Globalstar and Iridium have agreed takeovers, which caps their upside. Amazon pays $90 a share for Globalstar, and Rocket Lab pays $54 for Iridium.\n• Array keeps its C-band after selling other spectrum to AT&T and Verizon.\n\nSatellite names and funds:\nAST SpaceMobile rose 244% in 2025 and remains a high-risk bet on execution. No fund isolates spectrum. IYZ and XTL hold mostly carriers. XOVR and DXYZ hold SpaceX, which now trades directly.\n\nSupports the thesis:\n• Unused spectrum sells at scale. EchoStar's shares rose about 430% from January 2025 to June 2026.\n• SpaceX keeps buying spectrum it can use on the ground.\n\nCuts against it:\n• The 2025-26 deal prices sit within past auction ranges.\n• Spectrum is illiquid and allocated by regulators. AT&T's EchoStar deal took 11 months to close, and SpaceX's will take more than two years if it closes as targeted.\n• Pure plays are small and each depends on one sale.\n\nOur view:\nThe closest options are an equal-weight basket of the small pure plays, ECHO as a discounted claim on SpaceX shares, or carrier funds. The basket depends on sale timing, ECHO on SpaceX's share price, and carrier funds on carrier pricing.",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm | https://www.proactiveinvestors.co.uk/companies/news/1098238/echostar-shares-rise-as-ubs-says-spacex-stake-makes-stock-undervalued-1098238.html | https://www.panabee.com/news/echostar-earnings-q3-2026-report | https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html | https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-17-2026/ | https://finance.yahoo.com/markets/stocks/articles/anterix-investor-call-fcc-expands-140504313.html | https://www.sec.gov/Archives/edgar/data/0001304492/000130449226000027/atex-20260331.htm | https://www.nasdaq.com/articles/why-ast-spacemobile-stock-rocketed-244-higher-2025"
+  }
+ ],
+ "key_numbers": [
+  {
+   "id": "demand-n00",
+   "finding": "demand",
+   "order": 1,
+   "label": "US mobile data traffic",
+   "value": "159.3 trillion MB (+20% y/y), 2025",
+   "source_url": "https://techblog.comsoc.org/2026/09/10/ctia-americans-used-more-wireless-data-in-2025-than-in-the-entire-4g-decade-but-growth-slowed-from-2023-2024/"
+  },
+  {
+   "id": "demand-n01",
+   "finding": "demand",
+   "order": 2,
+   "label": "Generative AI share of mobile traffic",
+   "value": "0.06%, April 2025",
+   "source_url": "https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025"
+  },
+  {
+   "id": "demand-n02",
+   "finding": "demand",
+   "order": 3,
+   "label": "US smartphone data carried on Wi-Fi",
+   "value": "82-89%, October 2024",
+   "source_url": "https://insights.opensignal.com/2024/10/31/wi-fi-drives-smartphone-data-consumption-in-the-us-but-trends-vary-across-operators"
+  },
+  {
+   "id": "demand-n03",
+   "finding": "demand",
+   "order": 4,
+   "label": "US service revenue per GB",
+   "value": "$1.48 per GB, 2025 ($4.50 in 2020)",
+   "source_url": "https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill"
+  },
+  {
+   "id": "demand-n04",
+   "finding": "demand",
+   "order": 5,
+   "label": "FWA share of the 2023 US traffic increase",
+   "value": "~90%, 2023 (Bubley estimate)",
+   "source_url": "https://www.rcrwireless.com/20241014/5g/us-mobile-data-traffic-stats-need-careful-scrutiny-analyst-angle"
+  },
+  {
+   "id": "demand-n05",
+   "finding": "demand",
+   "order": 6,
+   "label": "AI uplink scenario, 2031 vs 2025",
+   "value": "3x to 5x, June 2026 forecast",
+   "source_url": "https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum"
+  },
+  {
+   "id": "capacity-n00",
+   "finding": "capacity",
+   "order": 1,
+   "label": "FCC 2010 estimate: sites only vs with new spectrum",
+   "value": "$174B vs $54B, October 2010",
+   "source_url": "https://www.computerworld.com/article/1540380/fcc-projects-275mhz-spectrum-deficit-by-2014.html"
+  },
+  {
+   "id": "capacity-n01",
+   "finding": "capacity",
+   "order": 2,
+   "label": "US wireless network capex",
+   "value": "$39B (2022 peak) to ~$30B (2025)",
+   "source_url": "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+  },
+  {
+   "id": "capacity-n02",
+   "finding": "capacity",
+   "order": 3,
+   "label": "Median download speed, AT&T, T-Mobile and Verizon",
+   "value": "334 Mbps, H1 2026 (+74% in two years)",
+   "source_url": "https://www.techrepublic.com/article/news-us-mobile-speeds-rootmetrics/"
+  },
+  {
+   "id": "capacity-n03",
+   "finding": "capacity",
+   "order": 4,
+   "label": "Real price of typical unlimited plans",
+   "value": "-10.7%, 2025",
+   "source_url": "https://mma.prnewswire.com/media/2969076/CTIA_AffordabilityTracker.pdf?p=pdf"
+  },
+  {
+   "id": "capacity-n04",
+   "finding": "capacity",
+   "order": 5,
+   "label": "Brattle projected US spectrum deficit",
+   "value": "~1,400 MHz by 2032 (study April 2023)",
+   "source_url": "https://www.brattle.com/insights-events/publications/current-spectrum-allocation-is-not-sufficient-for-meeting-the-future-demand-for-wireless-broadband-in-the-us-according-to-a-new-brattle-report"
+  },
+  {
+   "id": "capacity-n05",
+   "finding": "capacity",
+   "order": 6,
+   "label": "Capacity gain from more spectrum (Cooper's law)",
+   "value": "~25x of ~1,000,000x since the 1950s",
+   "source_url": "https://www.oreilly.com/library/view/cooperative-communications-hardware/9780470997680/10-chapter01.html"
+  },
+  {
+   "id": "supply-n00",
+   "finding": "supply",
+   "order": 1,
+   "label": "Statutory spectrum pipeline",
+   "value": "At least 800 MHz (300 FCC + 500 federal), July 2025 law",
+   "source_url": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1"
+  },
+  {
+   "id": "supply-n01",
+   "finding": "supply",
+   "order": 2,
+   "label": "Upper C-band in Auction 115",
+   "value": "160 MHz; bidding from 27 April 2027",
+   "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date"
+  },
+  {
+   "id": "supply-n02",
+   "finding": "supply",
+   "order": 3,
+   "label": "FCC spectrum screen trigger",
+   "value": "385 MHz, May 2026 review",
+   "source_url": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+  },
+  {
+   "id": "supply-n03",
+   "finding": "supply",
+   "order": 4,
+   "label": "Proposed addition to satellite sharing (SCS) bands",
+   "value": "+482 MHz, 5 to 13 bands, October 2026",
+   "source_url": "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/"
+  },
+  {
+   "id": "supply-n04",
+   "finding": "supply",
+   "order": 5,
+   "label": "Mid-band assigned (1-7 GHz), US vs China",
+   "value": "791 MHz vs 835 MHz, 2025",
+   "source_url": "https://www.policytracker.com/?p=79240"
+  },
+  {
+   "id": "supply-n05",
+   "finding": "supply",
+   "order": 6,
+   "label": "2.7 GHz band targeted for auction",
+   "value": "~210 MHz, 2028 target",
+   "source_url": "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+  },
+  {
+   "id": "prices-n00",
+   "finding": "prices",
+   "order": 1,
+   "label": "SpaceX-Grain 800 MHz price (reported)",
+   "value": "~$8B, ~$1.73 per MHz-pop, October 2026",
+   "source_url": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers"
+  },
+  {
+   "id": "prices-n01",
+   "finding": "prices",
+   "order": 2,
+   "label": "T-Mobile sale of 800 MHz to Grain",
+   "value": "$2.9B cash + $690M of licences, August 2026",
+   "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management"
+  },
+  {
+   "id": "prices-n02",
+   "finding": "prices",
+   "order": 3,
+   "label": "AT&T-EchoStar price",
+   "value": "~$1.40 per MHz-pop blended, closed July 2026",
+   "source_url": "https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/"
+  },
+  {
+   "id": "prices-n03",
+   "finding": "prices",
+   "order": 4,
+   "label": "Lower C-band auction gross bids",
+   "value": "$81.17B, February 2021",
+   "source_url": "https://auctiondata.fcc.gov/public/projects/auction107"
+  },
+  {
+   "id": "prices-n04",
+   "finding": "prices",
+   "order": 5,
+   "label": "AWS-3 re-auction average price",
+   "value": "$2.53 per MHz-pop, June 2026",
+   "source_url": "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b"
+  },
+  {
+   "id": "prices-n05",
+   "finding": "prices",
+   "order": 6,
+   "label": "Upper C-band proceeds estimate",
+   "value": "$30-75B (TD Cowen), auction from April 2027",
+   "source_url": "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band"
+  },
+  {
+   "id": "satellite-n00",
+   "finding": "satellite",
+   "order": 1,
+   "label": "SpaceX IPO valuation",
+   "value": "~$1.77T at $135 a share, June 2026",
+   "source_url": "https://siliconangle.com/2026/06/11/elon-musks-spacex-raises-record-breaking-75b-pricing-ipo-135-per-share/"
+  },
+  {
+   "id": "satellite-n01",
+   "finding": "satellite",
+   "order": 2,
+   "label": "Starlink Mobile monthly users",
+   "value": "~22M (+37% q/q), Q3 2026",
+   "source_url": "https://www.satellitetoday.com/finance/2026/10/21/starlink-growth-slows-as-ai-takes-the-lead-at-spacex-in-q3-results/"
+  },
+  {
+   "id": "satellite-n02",
+   "finding": "satellite",
+   "order": 3,
+   "label": "SpaceX connectivity revenue",
+   "value": "$5.25B of $14.6B total, Q3 2026",
+   "source_url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html"
+  },
+  {
+   "id": "satellite-n03",
+   "finding": "satellite",
+   "order": 4,
+   "label": "EchoStar spectrum approved for SpaceX",
+   "value": "~65 MHz, May 2026",
+   "source_url": "https://docs.fcc.gov/public/attachments/DA-26-471A1.pdf"
+  },
+  {
+   "id": "satellite-n04",
+   "finding": "satellite",
+   "order": 5,
+   "label": "T-Satellite share of T-Mobile network usage",
+   "value": "0.0002%, 2026",
+   "source_url": "https://www.gsmaintelligence.com/blogs/what-does-the-early-data-on-d2d-usage-tell-us"
+  },
+  {
+   "id": "satellite-n05",
+   "finding": "satellite",
+   "order": 6,
+   "label": "Starlink capacity density (analyst estimates)",
+   "value": "4-55 Mbps per sq km, 2026",
+   "source_url": "https://rcrwireless.com/?p=434877"
+  },
+  {
+   "id": "capture-n00",
+   "finding": "capture",
+   "order": 1,
+   "label": "Carrier share moves on 9 October 2026",
+   "value": "AT&T -9.8%, Verizon -8.8%, T-Mobile -13.3%",
+   "source_url": "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+  },
+  {
+   "id": "capture-n01",
+   "finding": "capture",
+   "order": 2,
+   "label": "Verizon postpaid ARPA",
+   "value": "$168.08 (-1.9% y/y), Q3 2026",
+   "source_url": "https://finviz.com/news/407554/verizon-delivers-another-record-breaking-quarter-with-3q-2026-results-driven-by-strong-postpaid-phone-and-account-additions"
+  },
+  {
+   "id": "capture-n02",
+   "finding": "capture",
+   "order": 3,
+   "label": "US wireless service price index",
+   "value": "-4.1%, 2025",
+   "source_url": "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+  },
+  {
+   "id": "capture-n03",
+   "finding": "capture",
+   "order": 4,
+   "label": "T-Mobile postpaid ARPA",
+   "value": "$155.73 (+4% y/y), Q3 2026",
+   "source_url": "https://www.t-mobile.com/news/business/t-mobile-q3-2026-earnings"
+  },
+  {
+   "id": "capture-n04",
+   "finding": "capture",
+   "order": 5,
+   "label": "Charter mobile line adds",
+   "value": "508,000, Q3 2026",
+   "source_url": "https://finviz.com/news/418256/charter-announces-third-quarter-2026-results-and-launches-new-operating-model"
+  },
+  {
+   "id": "capture-n05",
+   "finding": "capture",
+   "order": 6,
+   "label": "EchoStar share price gain",
+   "value": "~+430%, January 2025 to June 2026",
+   "source_url": "https://fortune.com/2026/06/04/echostar-stock-elon-musk-spacex-spectrum-bankruptcy-to-best-shareholder-return-fortune-500/"
+  },
+  {
+   "id": "history-n00",
+   "finding": "history",
+   "order": 1,
+   "label": "Dish spectrum investment",
+   "value": "More than $30B, as of June 2023",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1001082/000155837023013759/R16.htm"
+  },
+  {
+   "id": "history-n01",
+   "finding": "history",
+   "order": 2,
+   "label": "Dish 2 GHz purchase (TerreStar and DBSD)",
+   "value": "~$2.86B, March 2012",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1001082/000155837019003904/R16.htm"
+  },
+  {
+   "id": "history-n02",
+   "finding": "history",
+   "order": 3,
+   "label": "SpaceX price for EchoStar AWS-4 and H-block",
+   "value": "~$17B, September 2025",
+   "source_url": "https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+  },
+  {
+   "id": "history-n03",
+   "finding": "history",
+   "order": 4,
+   "label": "NextWave licence sales",
+   "value": "~$5.4B, 2004-2005",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/0001374993/000114420406038702/v052905_s-4.htm"
+  },
+  {
+   "id": "history-n04",
+   "finding": "history",
+   "order": 5,
+   "label": "Google loss on its Clearwire stake",
+   "value": "-94% on $500M, 2012",
+   "source_url": "https://phys.org/news/2012-02-google-clearwire-stake-percent-loss.pdf"
+  },
+  {
+   "id": "history-n05",
+   "finding": "history",
+   "order": 6,
+   "label": "Harbinger main fund return",
+   "value": "-47%, 2011",
+   "source_url": "https://www.bloomberg.com/news/articles/2012-02-03/falcone-s-harbinger-capital-lost-47-last-year-on-lightsquared-venture-bet"
+  },
+  {
+   "id": "global-n00",
+   "finding": "global",
+   "order": 1,
+   "label": "Operator revenue per MHz",
+   "value": "-60%, 2014 to 2023",
+   "source_url": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/"
+  },
+  {
+   "id": "global-n01",
+   "finding": "global",
+   "order": 2,
+   "label": "Spectrum costs as share of operator revenue",
+   "value": "7.4% in 2023 (4.5% in 2014)",
+   "source_url": "https://www.gsma.com/newsroom/press-release/gsma-calls-for-governments-to-prioritise-affordable-spectrum-costs-to-support-global-digital-growth/"
+  },
+  {
+   "id": "global-n02",
+   "finding": "global",
+   "order": 3,
+   "label": "European 3.3-3.9 GHz auction average",
+   "value": "€0.067 per MHz-pop, 2018-2024",
+   "source_url": "https://www.analysysmason.com/consulting/articles/spectrum-valuation-uppermid/"
+  },
+  {
+   "id": "global-n03",
+   "finding": "global",
+   "order": 4,
+   "label": "Canada 3800 MHz price paid by Rogers",
+   "value": "C$0.32 per MHz-pop, 2023 (C$3.38 for 3500 MHz in 2021)",
+   "source_url": "https://about.rogers.com/news-ideas/rogers-acquires-3800-mhz-5g-spectrum-across-canada/"
+  },
+  {
+   "id": "global-n04",
+   "finding": "global",
+   "order": 5,
+   "label": "India auction proceeds vs reserve value",
+   "value": "₹11,340 crore of ₹96,238 crore (~12%), June 2024",
+   "source_url": "https://theprint.in/economy/spectrum-auctions-see-sale-of-141-4-mhz-of-radio-waves-worth-rs-11340-78-cr-bharti-airtel-top-buyer/2148813"
+  },
+  {
+   "id": "global-n05",
+   "finding": "global",
+   "order": 6,
+   "label": "UK mmWave award",
+   "value": "£39m for 5.4 GHz, October 2025",
+   "source_url": "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced"
+  },
+  {
+   "id": "investing-n00",
+   "finding": "investing",
+   "order": 1,
+   "label": "SpaceX shares due to EchoStar",
+   "value": "261.8M at $42.40 deal price, September 2026",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm"
+  },
+  {
+   "id": "investing-n01",
+   "finding": "investing",
+   "order": 2,
+   "label": "UBS value of EchoStar's SpaceX stake",
+   "value": "~$39B, 2026",
+   "source_url": "https://www.proactiveinvestors.co.uk/companies/news/1098238/echostar-shares-rise-as-ubs-says-spacex-stake-makes-stock-undervalued-1098238.html"
+  },
+  {
+   "id": "investing-n02",
+   "finding": "investing",
+   "order": 3,
+   "label": "EchoStar cash and equivalents",
+   "value": "$13.44B, 30 September 2026",
+   "source_url": "https://www.panabee.com/news/echostar-earnings-q3-2026-report"
+  },
+  {
+   "id": "investing-n03",
+   "finding": "investing",
+   "order": 4,
+   "label": "SpaceX IPO price",
+   "value": "$135 a share, June 2026",
+   "source_url": "https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html"
+  },
+  {
+   "id": "investing-n04",
+   "finding": "investing",
+   "order": 5,
+   "label": "Anterix estimate of its spectrum value",
+   "value": "$2.5B-$7B+, April 2026",
+   "source_url": "https://finance.yahoo.com/markets/stocks/articles/anterix-investor-call-fcc-expands-140504313.html"
+  },
+  {
+   "id": "investing-n05",
+   "finding": "investing",
+   "order": 6,
+   "label": "AST SpaceMobile share gain",
+   "value": "+244%, 2025",
+   "source_url": "https://www.nasdaq.com/articles/why-ast-spacemobile-stock-rocketed-244-higher-2025"
+  }
+ ],
+ "watchlist": [
+  {
+   "id": "w00",
+   "sort_date": "2026-11-30",
+   "when": "30 Nov 2026",
+   "item": "Ericsson publishes its November 2026 Mobility Report, adding a 2032 forecast horizon.",
+   "why": "Ericsson's June forecast put global traffic at 515 EB/month by 2031 (about 17% a year), and it has cut past forecasts. Another cut would back our slower US traffic and AI-share forecasts, while a higher uplink or AI outlook would help the bull case.",
+   "sources": [
+    "https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-forecast"
+   ]
+  },
+  {
+   "id": "w01",
+   "sort_date": "2026-12-01",
+   "when": "1 Dec 2026 (oppositions due 8 Dec)",
+   "item": "Petitions to deny are due on SpaceX's purchase of Grain Management's 800 MHz licences (FCC WT Docket 26-313).",
+   "why": "The deal covers up to 14 MHz of paired low-band in 546 licences at a reported $8B. Strong carrier petitions or a fight over low-band concentration would lower our odds of FCC approval by end-2027, and a quiet docket points to approval.",
+   "sources": [
+    "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward",
+    "https://totaltele.com/fcc-accepts-spacex-application-to-acquire-800mhz-spectrum/"
+   ]
+  },
+  {
+   "id": "w02",
+   "sort_date": "2026-12-08",
+   "when": "8 Dec 2026",
+   "item": "SpaceX's main 180-day IPO lockup expires.",
+   "why": "The 22 Oct release of 1.3B shares cut SPCX 9% in one day. A further drop would lower the value of EchoStar's 261.8M SpaceX shares and of the stock SpaceX uses to pay for spectrum.",
+   "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/spacexs-december-lockup-nearly-biggest-210500586.html",
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm"
+   ]
+  },
+  {
+   "id": "w03",
+   "sort_date": "2026-12-10",
+   "when": "10 Dec 2026",
+   "item": "NTIA releases its study of 7.125-7.4 GHz (275 MHz) for mobile use.",
+   "why": "A finding that the band can carry mobile service with satellite protection gives the FCC its first large upper mid-band candidate. That raises our odds of an auction above 4.2 GHz by 2030 and adds 2030s supply, which weighs on mid-band prices.",
+   "sources": [
+    "https://broadbandbreakfast.com/ntia-to-release-7-ghz-study-at-dec-10-event-in-washington.md"
+   ]
+  },
+  {
+   "id": "w04",
+   "sort_date": "2026-12-15",
+   "when": "Dec 2026 (target is before year-end)",
+   "item": "AST SpaceMobile targets intermittent nationwide US service with 12 BlueBirds in orbit.",
+   "why": "On-time service tests AST's carrier-partner model with AT&T and Verizon against SpaceX and supports our direct-to-device revenue forecast. Another slip adds to AST's record of delays.",
+   "sources": [
+    "https://www.nasdaq.com/press-release/ast-spacemobile-provides-business-update-and-third-quarter-2026-results-2026-11-09",
+    "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526453758/asts-ex99_2.htm"
+   ]
+  },
+  {
+   "id": "w05",
+   "sort_date": "2027-01-15",
+   "when": "Late 2026 into 2027 (comment dates not set in our sources)",
+   "item": "Comment cycle on the FCC's proposal to add 482 MHz to Supplemental Coverage from Space (SCS), taking eligible bands from 5 to 13.",
+   "why": "Carrier objections on 5G interference will show how much spectrum carriers will share with satellite partners. Broad final rules let satellites lease carrier spectrum, which reduces the need to own it and cuts against scarcity value.",
+   "sources": [
+    "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/",
+    "https://broadbandbreakfast.com/fcc-clears-slate-of-spectrum-items-including-proposal-to-expand-direct-to-device/"
+   ]
+  },
+  {
+   "id": "w06",
+   "sort_date": "2027-01-20",
+   "when": "6-20 Jan 2027",
+   "item": "Short-form application window for Auction 115 (upper C-band).",
+   "why": "Applicants show who plans to bid, including SpaceX, Amazon or cable. A wider field raises our odds that the auction clears above the 2021 lower C-band price of $0.94 per MHz-pop, while a field of the three big carriers points lower, since they took 96% of lower C-band dollars.",
+   "sources": [
+    "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date",
+    "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+   ]
+  },
+  {
+   "id": "w07",
+   "sort_date": "2027-02-01",
+   "when": "Late Jan to mid-Feb 2027 (T-Mobile reported Q4 2025 on 10 Feb 2026)",
+   "item": "AT&T, Verizon, T-Mobile, Comcast and Charter report Q4 2026 results and 2027 guidance.",
+   "why": "Watch 2027 capex against Verizon's $16.0-16.5B and T-Mobile's about $10B for 2026, plus Auction 115 budgets and pricing. Rising capex or ARPA would hint at scarcity, and more promotions with falling ARPA (Verizon -1.9% in Q3) support our grind case for carrier revenue and returns.",
+   "sources": [
+    "https://www.telecomtv.com/content/access-evolution/verizon-beats-q4-estimates-plans-capex-cuts-54753",
+    "https://finviz.com/news/407554/verizon-delivers-another-record-breaking-quarter-with-3q-2026-results-driven-by-strong-postpaid-phone-and-account-additions",
+    "https://www.t-mobile.com/news/business/t-mobile-q4-2025-earnings"
+   ]
+  },
+  {
+   "id": "w08",
+   "sort_date": "2027-02-15",
+   "when": "Q1 2027 (expected; SpaceX reported Q3 on 20 Oct 2026)",
+   "item": "SpaceX reports Q4 2026 results, with Starlink Mobile users and US mobile plans in focus.",
+   "why": "Starlink Mobile had about 22M monthly users in Q3 2026, up 37% on Q2. News on US retail plans, tower leases or terrestrial capex would move our forecast that SpaceX sells its own US phone service by 2028, and would move carrier stocks, which fell 9-13% on the Grain deal.",
+   "sources": [
+    "https://payloadspace.com/spacexs-ai-revenue-leads-q3-earnings/",
+    "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+   ]
+  },
+  {
+   "id": "w09",
+   "sort_date": "2027-02-15",
+   "when": "Early 2027 (NTIA study); auction estimated 2027-2028",
+   "item": "NTIA's study of 1675-1695 MHz is due, the next step after the FCC's October 2026 proposal to auction 25 MHz (1675-1695 plus 2020-2025 MHz).",
+   "why": "A clean study keeps a 2027-2028 auction on track and adds a secondary satellite allocation for direct-to-device use. Delay trims our forecast of new MHz auctioned by 2030.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf",
+    "https://www.ntia.gov/sites/default/files/2026-03/1675-mhz-identification-letter.pdf"
+   ]
+  },
+  {
+   "id": "w10",
+   "sort_date": "2027-04-01",
+   "when": "1H 2027 (expected closing)",
+   "item": "FCC decision and closing on SpaceX's purchase of Grain's 800 MHz licences.",
+   "why": "Approval gives SpaceX up to 14 MHz of low-band for indoor coverage, which Musk called the last critical piece for full US phone coverage, and resolves our Grain approval forecast. Conditions or denial would cut our forecast of SpaceX-owned spectrum in 2030.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm",
+    "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers"
+   ]
+  },
+  {
+   "id": "w11",
+   "sort_date": "2027-04-27",
+   "when": "27 Apr 2027",
+   "item": "Bidding opens in Auction 115, 160 MHz of upper C-band (3.98-4.14 GHz) in 3,248 licences.",
+   "why": "TD Cowen expects $30-75B in gross bids. Round-by-round demand gives the first hard read on our upper C-band price and proceeds forecasts.",
+   "sources": [
+    "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date",
+    "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band"
+   ]
+  },
+  {
+   "id": "w12",
+   "sort_date": "2027-05-15",
+   "when": "May 2027 (expiry); EU award timing not set",
+   "item": "The EU's 2 GHz satellite (MSS) authorisations, 2x30 MHz, expire as the EU moves to a single EU-level selection in three blocks.",
+   "why": "Reports say two of the three blocks go to European users, so SpaceX could win one at most. It shows politics capping who can control satellite spectrum, which narrows the buyer pool.",
+   "sources": [
+    "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-new-authorisation-mobile-satellite-services-eus-resilience-and-competitiveness",
+    "https://www.gtlaw.com/ar/insights/2026/6/eu-commission-proposes-new-authorization-regime-for-mobile-satellite-services",
+    "https://idate.fr/europes-2-ghz-mss-band/"
+   ]
+  },
+  {
+   "id": "w13",
+   "sort_date": "2027-06-15",
+   "when": "June 2027 (expected; Ericsson publishes each June)",
+   "item": "Ericsson publishes its June 2027 Mobility Report.",
+   "why": "It updates the AI scenarios that put 2031 uplink at 3x to 5x the 2025 level, and the North American forecast of 52 GB per phone per month by 2031. Cuts would weaken the demand case, and a new measured AI traffic share well above 0.06% would strengthen it.",
+   "sources": [
+    "https://www.ericsson.com/en/press-releases/2026/6/ericsson-mobility-report-5g-subscriptions-top-three-billion-as-uplink-gains-momentum",
+    "https://www.ericsson.com/en/reports-and-papers/mobility-report/key-figures",
+    "https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025"
+   ]
+  },
+  {
+   "id": "w14",
+   "sort_date": "2027-06-30",
+   "when": "Mid-2027 (target)",
+   "item": "AST SpaceMobile aims to have about 45 BlueBirds in orbit.",
+   "why": "AST already slipped this goal from 2026. Hitting it supports continuous US service and our direct-to-device revenue forecast, and another slip raises funding risk despite $3.2B of cash.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526453758/asts-ex99_2.htm",
+    "https://www.nasdaq.com/press-release/ast-spacemobile-provides-business-update-and-third-quarter-2026-results-2026-11-09"
+   ]
+  },
+  {
+   "id": "w15",
+   "sort_date": "2027-06-30",
+   "when": "Mid-2027 (expected)",
+   "item": "Rocket Lab targets closing its $54-a-share purchase of Iridium (enterprise value about $8.0B).",
+   "why": "Closing completes the tie-up of nearly every Western satellite-spectrum asset with direct-to-device potential. It confirms strategic prices for satellite rights and removes another listed pure play.",
+   "sources": [
+    "https://www.nasdaq.com/press-release/rocket-lab-acquire-iridium-historic-deal-creating-fully-vertically-integrated-space-0"
+   ]
+  },
+  {
+   "id": "w16",
+   "sort_date": "2027-07-01",
+   "when": "2027 (expected; FCC cleared it 27 Oct 2026)",
+   "item": "Amazon closes its $11.57B purchase of Globalstar, with about 25 MHz of satellite spectrum and the Apple partnership.",
+   "why": "Amazon becomes a second deep-pocketed buyer of satellite-usable spectrum ahead of its planned 2028 direct-to-device service. More such buyers support our forecast of large spectrum deals in 2027-2030.",
+   "sources": [
+    "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html",
+    "https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar",
+    "https://lightreading.com/satellite/amazon-leo-s-d2d-plan-ready-for-liftoff-as-fcc-clears-globalstar-buy"
+   ]
+  },
+  {
+   "id": "w17",
+   "sort_date": "2027-07-01",
+   "when": "2027 (launches start)",
+   "item": "SpaceX starts launching next-generation Direct to Cell satellites under an FCC authorisation for up to 15,000.",
+   "why": "SpaceX targets about 20x per-satellite throughput and over 100x system capacity. Launch cadence shows whether a SpaceX phone service can scale, which drives our SpaceX retail and direct-to-device revenue forecasts.",
+   "sources": [
+    "https://www.satellitetoday.com/finance/2026/08/05/spacex-outlines-starlink-mobile-plans-in-first-earnings-report/",
+    "https://satnews.com/2026/02/25/spacex-unveils-150mbps-performance-target-for-upgraded-direct-to-cell-starlink/",
+    "https://www.satellitetoday.com/connectivity/2026/10/07/fcc-grants-spacex-approval-for-15000-direct-to-device-satellites-in-mss-spectrum/"
+   ]
+  },
+  {
+   "id": "w18",
+   "sort_date": "2027-07-04",
+   "when": "By 4 July 2027 (statutory deadline); exact close depends on bidding",
+   "item": "The 2025 budget law requires at least 100 MHz of upper C-band auctioned by 4 July 2027, and Auction 115 results follow the close of bidding.",
+   "why": "Gross bids above about $50B (160 MHz x 335M pops x $0.94) beat the lower C-band price and resolve that forecast Yes, while results near TD Cowen's $30B floor would show carrier restraint and falling mid-band prices. The winner list also settles whether SpaceX wins licences.",
+   "sources": [
+    "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled",
+    "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band",
+    "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+   ]
+  },
+  {
+   "id": "w19",
+   "sort_date": "2027-07-15",
+   "when": "July 2027",
+   "item": "NTIA deadline to identify at least 200 MHz of federal spectrum (1.3-10.5 GHz) for FCC auction by July 2029.",
+   "why": "On-time delivery keeps the 800 MHz statutory pipeline on schedule and raises our new-spectrum forecasts. A miss, or bands the Defense Department keeps, would tighten mid-band supply and help the scarcity case.",
+   "sources": [
+    "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1"
+   ]
+  },
+  {
+   "id": "w20",
+   "sort_date": "2027-09-15",
+   "when": "About Sept 2027 (the 2026 edition came out 9 Sept 2026)",
+   "item": "CTIA publishes its 2027 Annual Survey with 2026 US traffic, revenue and capex.",
+   "why": "US traffic grew 20% to 159.3 EB in 2025, the slowest rise since 2020. Growth back above 25% would point to re-acceleration, and another slowdown with revenue per GB still falling from $1.48 keeps the no-crunch case.",
+   "sources": [
+    "https://techblog.comsoc.org/2026/09/10/ctia-americans-used-more-wireless-data-in-2025-than-in-the-entire-4g-decade-but-growth-slowed-from-2023-2024/",
+    "https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill"
+   ]
+  },
+  {
+   "id": "w21",
+   "sort_date": "2027-10-18",
+   "when": "18 Oct-12 Nov 2027",
+   "item": "WRC-27 in Shanghai rules on satellite use of mobile bands (694 MHz-2.7 GHz, item 1.13) and new mobile bands at 4.4-4.8, 7.125-8.4 and 14.8-15.35 GHz (item 1.7).",
+   "why": "A global mobile identification at 7 GHz would support US 7 GHz auctions and add 2030s supply, which weighs on mid-band prices. Satellite allocations inside mobile bands favour sharing over exclusive ownership, and decisions take effect in January 2029.",
+   "sources": [
+    "https://rcrwireless.com/20261019/tech/wrc-27-direct-to-device-spectrum"
+   ]
+  },
+  {
+   "id": "w22",
+   "sort_date": "2027-11-30",
+   "when": "30 Nov 2027 (target)",
+   "item": "SpaceX and EchoStar target final closing on 65 MHz (AWS-4, H-block, unpaired AWS-3), the step at which SpaceX pays about $20B including up to $11B in SpaceX stock.",
+   "why": "Closing resolves our EchoStar-deal forecast and lets SpaceX use the bands, which it cannot do before this step. It also leaves EchoStar holding about 261.8M SpaceX shares.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+    "https://www.satellitetoday.com/connectivity/2026/10/07/fcc-grants-spacex-approval-for-15000-direct-to-device-satellites-in-mss-spectrum/"
+   ]
+  },
+  {
+   "id": "w23",
+   "sort_date": "2027-12-15",
+   "when": "End-2027 (target)",
+   "item": "SpaceX targets expanded Starlink Mobile service on next-generation satellites using 65 MHz of EchoStar spectrum, up from 5 MHz today.",
+   "why": "Service on spectrum SpaceX owns is a precondition for its own US phone plans, which our end-2028 retail forecast tracks. Carrier stocks have fallen on each SpaceX mobile step, so a strong launch would weigh on them.",
+   "sources": [
+    "https://www.satellitetoday.com/finance/2026/08/05/spacex-outlines-starlink-mobile-plans-in-first-earnings-report/"
+   ]
+  },
+  {
+   "id": "w24",
+   "sort_date": "2028-04-01",
+   "when": "1H 2028 (target)",
+   "item": "T-Mobile and Comcast target closing the rest of T-Mobile's purchase of Comcast's 600 MHz licences (up to $3.3B in total; $46M closed by June 2026).",
+   "why": "New Street puts the full deal at about $2.21 per MHz-pop. A close near full value would confirm the low-band premium, and a lower price would signal it fading.",
+   "sources": [
+    "https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum",
+    "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+   ]
+  },
+  {
+   "id": "w25",
+   "sort_date": "2028-07-01",
+   "when": "2028 (FCC Chairman Carr's target)",
+   "item": "FCC auction of about 210 MHz at 2.69-2.9 GHz (the 2.7 GHz band).",
+   "why": "A large new mid-band block in 2028 adds supply and should hold down mid-band prices in 2029-2030 deals. Slippage would leave Auction 115 as the main new supply before 2030.",
+   "sources": [
+    "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+   ]
+  },
+  {
+   "id": "w26",
+   "sort_date": "2028-09-01",
+   "when": "1 Sept 2028",
+   "item": "EchoStar's target date, given to the FCC, to sell its remaining terrestrial licences (700 MHz, paired AWS-3, CBRS, C-band, MVDDS, mmWave), booked at $8.45B.",
+   "why": "Sale prices against book will show whether a forced seller still draws bids from SpaceX and the carriers. A deal resolves our pure-play sale forecast Yes and adds to the count of $5B-plus deals if it is that large.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+    "https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028.md"
+   ]
+  },
+  {
+   "id": "w27",
+   "sort_date": "2028-12-15",
+   "when": "Dec 2028",
+   "item": "3GPP freezes stage 3 of Release 21, the first 6G standard, with the ASN.1 freeze to follow in March 2029.",
+   "why": "An on-time freeze keeps Ericsson's expected 2030 commercial 6G launch in reach, which supports our 6G-by-2030 forecast and demand for 7 GHz spectrum. Slippage pushes the 6G capex cycle and new-band demand later.",
+   "sources": [
+    "https://www.ericsson.com/en/blog/2026/6/6g-standardization-key-milestones-and-ran-decisions",
+    "https://www.qualcomm.com/news/onq/2026/06/6g-standardization-release-21-milestones"
+   ]
+  }
+ ],
+ "universe": [
+  {
+   "id": "t",
+   "order": 1,
+   "name": "AT&T",
+   "ticker": "T",
+   "category": "US carriers",
+   "holdings": "Holds about 314-375 MHz of sub-6 GHz spectrum across 600/700/850 MHz, PCS, AWS, WCS, C-band and 3.45 GHz, plus mmWave. In July 2026 it closed a $23B purchase of EchoStar's 30 MHz of 3.45 GHz and 20 MHz of 600 MHz, which lifted its FCC licenses to $149.4B at book on September 30, 2026.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 145.7,
+   "market_cap_label": "$146B (6 Nov 2026)",
+   "spectrum_pct_ev": "~49% (license book value vs EV at late-October prices)",
+   "return_1y": "-10% (to 13 Nov 2026)",
+   "benefits_if": "Scarce spectrum limits what rivals can add and supports pricing. AT&T now owns the 3.45 GHz it used to lease, so it needs to buy less in a tight market. Higher private-deal prices also support its credit.",
+   "loses_if": "Auction 115 (160 MHz of upper C-band, bidding from April 2027) and later auctions add supply and cap what its licenses would fetch. A SpaceX network on its own spectrum would add a fourth rival. AT&T fell 9.8% on October 9, 2026, the day after SpaceX agreed to buy 800 MHz.",
+   "risks": "Net debt was $149.8B after the EchoStar deal. Cable and SpaceX add price competition. Book value turns into cash only through a sale, and carriers rarely sell. The shares are down about 10% over the past year.",
+   "scenario_view": "Gains most if spectrum gets scarcer and holders capture it, holds up as a dividend stock if values stay steady, gives up some asset value under abundance, and does worst if SpaceX and satellite owners become a fourth force.",
+   "website": "https://www.att.com",
+   "sources": "https://about.att.com/story/2026/echostar-spectrum.html | https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm | https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000370/t-3q2026exhibit991.htm | https://www.policytracker.com/blog/spectrum-snapshot-att-becomes-the-second-largest-spectrum-holder-in-the-us-after-echostar-trade/ | https://www.techtimes.com/articles/319643/20260703/fcc-sets-rules-30b75b-c-band-auction-blocks-spacex-satellite-bid.htm | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum | https://marketchameleon.com/Overview/T/SingleLegOptionTradesNew/ | https://www.fool.com/quote/nyse/att/t/"
+  },
+  {
+   "id": "vz",
+   "order": 2,
+   "name": "Verizon",
+   "ticker": "VZ",
+   "category": "US carriers",
+   "holdings": "Holds about 279-290 MHz of sub-6 GHz spectrum, led by about 161 MHz of C-band, plus 700/850 MHz, PCS/AWS, CBRS and mmWave. In 2026 it won about $3.2B of AWS-3 in Auction 113 and bought $1.0B of Array spectrum. Its licenses were about $161B at book on September 30, 2026.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 190.9,
+   "market_cap_label": "$191B (9 Nov 2026)",
+   "spectrum_pct_ev": "~50% (license book value vs EV at late-October prices; 52% on unsecured net debt only)",
+   "return_1y": "+12% (to 9 Nov 2026)",
+   "benefits_if": "Its deep C-band position gains value as traffic grows and new mid-band stays scarce. It hosts the Comcast and Charter mobile services on its network, so scarcity lets it charge them more.",
+   "loses_if": "Auction 115 and SpaceX's spectrum add supply and a new rival. Verizon fell 8.8% on October 9, 2026. It already trades price for growth: postpaid ARPA fell 1.9% in Q3 2026 while phone net adds rose to 406,000.",
+   "risks": "The market is promotional, and management has pulled back from price rises. Leverage stays high, and 2026 capex runs $16.0-16.5B. The cable services it hosts also compete with it for customers.",
+   "scenario_view": "Gains most if spectrum gets scarcer and holders capture it, holds up as a dividend stock if values stay steady, gives up some asset value under abundance, and does worst if SpaceX and satellite owners become a fourth force.",
+   "website": "https://www.verizon.com",
+   "sources": "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/ | https://www.nextgcomm.com/verizon-q3-2026-earnings-brief/ | https://app.edgar.tools/companies/VZ/disclosures/goodwill-intangibles | https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b | https://www.datacenterdynamics.com/en/news/array-closes-1bn-spectrum-sale-to-verizon/ | https://finviz.com/news/407554/verizon-delivers-another-record-breaking-quarter-with-3q-2026-results-driven-by-strong-postpaid-phone-and-account-additions | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum | https://marketcapof.com/stocks/vz.us"
+  },
+  {
+   "id": "tmus",
+   "order": 3,
+   "name": "T-Mobile US",
+   "ticker": "TMUS",
+   "category": "US carriers",
+   "holdings": "Holds the most sub-6 GHz spectrum of the three, about 376 MHz, built on 2.5 GHz from Sprint plus 600 MHz, PCS/AWS, C-band and 3.45 GHz. It sold its 800 MHz to Grain in August 2026 for $2.9B cash and $690M of 600 MHz licenses, and keeps half of Grain's gains above a set return. Its licenses were $100.0B at book on September 30, 2026.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 177.85,
+   "market_cap_label": "$178B (19 Nov 2026)",
+   "spectrum_pct_ev": "~41% (license book value vs EV at late-October prices)",
+   "return_1y": "-17% (to 11 Nov 2026)",
+   "benefits_if": "Its mid-band lead becomes more valuable as traffic grows. It shares in the markup when Grain resells the 800 MHz to SpaceX for a reported ~$8B. It is the one carrier still raising prices: postpaid ARPA rose 4% in Q3 2026.",
+   "loses_if": "SpaceX, its partner for T-Satellite, is building a rival network on its own spectrum and has sought access to 80,000 US cell sites. T-Mobile fell 13.3% on October 9, 2026, its worst day as a public company, and hit a 52-week low of $143.75 on October 28.",
+   "risks": "Postpaid account adds fell 31% and account churn rose to 1.09% in Q3 2026, and it no longer reports phone net adds. Its satellite partnership with SpaceX may not survive the rivalry. It sits closest of the three to the FCC's 385 MHz spectrum-screen trigger, which limits further buying.",
+   "scenario_view": "Gains if spectrum gets scarcer and holders capture it, holds up if values stay steady, gives up some asset value under abundance, and is the most exposed carrier if SpaceX and satellite owners become a fourth force.",
+   "website": "https://www.t-mobile.com",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm | https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management | https://www.t-mobile.com/news/business/t-mobile-q3-2026-earnings | https://www.fierce-network.com/wireless/t-mobile-raises-profit-adds-274k-accounts-q3 | https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620 | https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf | https://gulfnews.com/technology/starlink-mobile-targets-80000-us-cell-sites-to-bolster-emergency-rural-communications-1.500720675 | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum | https://www.cnbc.com/quotes/TMUS | https://www.cnn.com/markets/stocks/TMUS | https://www.fool.com/quote/NASDAQ/TMUS"
+  },
+  {
+   "id": "echo",
+   "order": 4,
+   "name": "EchoStar",
+   "ticker": "ECHO",
+   "category": "Spectrum holders",
+   "holdings": "Sold its main spectrum for about $43B of announced value. It received about $20.25B in cash from AT&T, and it gets $8.5B in cash plus 261.8M SpaceX shares when the SpaceX sale closes, expected around November 2027. It still holds 700 MHz, paired AWS-3, CBRS, C-band and mmWave licenses carried at $8.45B, which it plans to sell by September 2028.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 28.59,
+   "market_cap_label": "$28.6B (13 Nov 2026)",
+   "spectrum_pct_ev": "~34% on remaining licenses at book ($8.45B vs ~$25B EV, calc.); the rest of its value is SpaceX shares and cash",
+   "return_1y": "+22% (to 6 Nov 2026)",
+   "benefits_if": "Its remaining licenses sell well. Auction 113 cleared AWS-3 at about $2.53/MHz-pop, which supports the value of its paired AWS-3. If SpaceX gains, so do EchoStar's 261.8M SpaceX shares.",
+   "loses_if": "SPCX falls, and EchoStar carries the price risk on its SpaceX shares. Abundant supply would cut what its remaining licenses fetch before the 2028 sale deadline. The SpaceX closing could also slip or fail.",
+   "risks": "At $28.6B the stock sits about 40% below a gross look-through value near $49B. That value counts 261.8M SpaceX shares at the $139.11 close on November 13, $8.5B of SpaceX cash still to come and $13.4B of cash, less about $9.7B of debt, all before taxes and wind-down costs. SpaceX's main lockup ends December 8, 2026. Two subsidiaries filed for bankruptcy in June 2026, and the Ergen family controls the company.",
+   "scenario_view": "Gains under scarcity through its remaining licenses, holds steady as a SpaceX holding company if values stay flat, loses some residual value under abundance, and does best if SpaceX becomes a fourth force, since most of its value is SpaceX stock.",
+   "website": "https://www.echostar.com",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm | https://broadbandbreakfast.com/echostar-at-t-close-23-billion-spectrum-sale/ | https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028.md | https://www.mobileworldlive.com/att/fcc-signs-off-on-echostar-deals-to-spacex-att/ | https://finance.yahoo.com/markets/stocks/articles/did-profit-rebound-just-shift-131337751.html | https://www.lightreading.com/5g/echostar-closes-at-t-spectrum-deal-but-wrinkles-remain | https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b | https://finance.yahoo.com/markets/stocks/articles/spacexs-december-lockup-nearly-biggest-210500586.html | https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-16-2026/ | https://ycharts.com/companies/ECHO | https://www.trefis.com/stock/echo/articles/623362/why-is-echostar-stock-falling/2026-11-06"
+  },
+  {
+   "id": "atex",
+   "order": 5,
+   "name": "Anterix",
+   "ticker": "ATEX",
+   "category": "Spectrum holders",
+   "holdings": "Holds 900 MHz broadband licenses across most of the US. The FCC widened the band from 6 MHz to 10 MHz on February 18, 2026. Anterix sells county licenses to utilities for private LTE networks.",
+   "exposure_grade": "High",
+   "market_cap_usd_b": 1.5,
+   "market_cap_label": "$1.5B (12 Nov 2026)",
+   "spectrum_pct_ev": "~95% (rough; the licenses are nearly the whole business)",
+   "return_1y": "+317% (to 11 Nov 2026)",
+   "benefits_if": "Low-band spectrum is the scarcest input. After the FCC expansion, Anterix raised its own estimate of its spectrum value to $2.5B-$7B+. A carrier, SpaceX or a utility group could buy the company or its licenses.",
+   "loses_if": "Utilities adopt slowly and no large buyer appears. More low-band supply or shared spectrum weakens the case for paying up for a narrow 900 MHz block.",
+   "risks": "Trailing revenue is only about $7M. Sales so far are small: CPS Energy paid $13.0M, after a discount, for Bexar County. The stock has quadrupled over the past year, so the market may already price much of the value case. Trading is thin.",
+   "scenario_view": "Gains most under scarcity, most likely through a sale, holds value in a steady market as utility sales continue, loses under abundance, and could gain if SpaceX or satellite owners go after low-band, though the pool of buyers stays small.",
+   "website": "https://www.anterix.com",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0001304492/000130449226000027/atex-20260331.htm | https://www.sec.gov/Archives/edgar/data/1304492/000130449226000004/cpsfactsheet_222026.htm | https://finance.yahoo.com/markets/stocks/articles/anterix-investor-call-fcc-expands-140504313.html | https://www.fool.com/investing/2026/11/12/why-anterix-rallied-today/ | https://www.benzinga.com/quote/ATEX/charts"
+  },
+  {
+   "id": "nn",
+   "order": 6,
+   "name": "NextNav",
+   "ticker": "NN",
+   "category": "Spectrum holders",
+   "holdings": "Holds lower 900 MHz (902-928 MHz) location licenses, about 8 MHz. It has asked the FCC to reconfigure the band for 5G positioning and broadband, and a draft FCC proposal was under White House review in March 2026.",
+   "exposure_grade": "High",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~85% (rough)",
+   "return_1y": "",
+   "benefits_if": "An FCC grant would turn its licenses into saleable low-band spectrum while buyers are paying up for low-band. In October 2026 SpaceX urged the FCC to include lower 900 MHz in its satellite-to-phone rules, and the stock rose 12% that day.",
+   "loses_if": "The FCC rejects or delays the petition. Unlicensed users and utilities oppose it, and a House appropriations rider against it has been proposed. Abundant supply elsewhere also lowers the value of a narrow band.",
+   "risks": "The regulatory outcome is binary. The stock was down 32% for 2026 by late October, and the company reported Q3 2026 results on November 10. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains under scarcity only if the FCC approves its plan, drifts in a steady market, loses under abundance, and could gain if SpaceX wants the band for satellite-to-phone service.",
+   "website": "https://nextnav.com",
+   "sources": "https://www.powermag.com/what-utilities-need-to-know-about-the-900-mhz-nextnav-fcc-proceeding/ | https://stocktwits.com/news-articles/markets/equity/nn-stock-soars-as-space-x-backs-900-m-hz-for-satellite-rules/cZU3QjWRBzE | https://finviz.com/news/420476/nextnav-inc-reports-third-quarter-2026-results-and-operational-highlights"
+  },
+  {
+   "id": "ad",
+   "order": 7,
+   "name": "Array Digital Infrastructure",
+   "ticker": "AD",
+   "category": "Spectrum holders",
+   "holdings": "The former UScellular kept its spectrum and towers after selling its wireless business to T-Mobile. It closed spectrum sales to AT&T ($1.018B, January 2026) and Verizon (about $1.0B, June 2026), plus smaller sales to T-Mobile, and keeps its C-band, CBRS and mmWave licenses.",
+   "exposure_grade": "High",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~40% (rough, pre-2026 estimate)",
+   "return_1y": "",
+   "benefits_if": "Its retained C-band could sell at mid-band prices to a carrier or SpaceX. Management is under no pressure to sell, so it can wait for a better bid.",
+   "loses_if": "Auction 115 offers 160 MHz of upper C-band from 2027 to the same few buyers that would want Array's C-band. Its mmWave licenses have already been written down by $136.2M and then $47.7M.",
+   "risks": "TDS controls it, and the free float is small. Tower revenue depends on a few carrier tenants. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains under scarcity if it sells its C-band, holds as a tower company in a steady market, loses license value under abundance, and could gain if SpaceX leases its towers or buys its spectrum.",
+   "website": "https://www.arrayinc.com",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000040/ad8-k2026verizonex991.htm | https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000034/arrayq120268kex991.htm | https://www.datacenterdynamics.com/en/news/att-closes/ | https://app.edgar.tools/companies/AD/disclosures/goodwill-intangibles | https://www.techtimes.com/articles/319643/20260703/fcc-sets-rules-30b75b-c-band-auction-blocks-spacex-satellite-bid.htm"
+  },
+  {
+   "id": "tds",
+   "order": 8,
+   "name": "Telephone and Data Systems",
+   "ticker": "TDS",
+   "category": "Spectrum holders",
+   "holdings": "Owns a controlling stake in Array (about 83% on pre-2026 data), so it holds Array's spectrum and towers on a look-through basis. It also runs TDS Telecom, a fiber and cable business.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~25% (rough, look-through via Array)",
+   "return_1y": "",
+   "benefits_if": "Cash from Array's spectrum sales flows up to TDS. Higher prices for Array's C-band would add to that.",
+   "loses_if": "Array gets weak bids for its remaining licenses, or fiber spending absorbs the proceeds.",
+   "risks": "Its shares trade at a holding-company discount. The fiber build needs capital. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains a little under scarcity through Array, holds as a fiber company in a steady market, loses some look-through value under abundance, and sees little direct effect if SpaceX becomes a fourth force.",
+   "website": "https://www.tdsinc.com",
+   "sources": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000040/ad8-k2026verizonex991.htm | https://www.tdsinc.com"
+  },
+  {
+   "id": "asts",
+   "order": 9,
+   "name": "AST SpaceMobile",
+   "ticker": "ASTS",
+   "category": "Satellite and direct-to-device",
+   "holdings": "Has rights to up to 45 MHz of Ligado's L-band in North America (about $550M plus at least $80M a year, pending FCC approval) and bought 60 MHz of global S-band priority rights for $64.5M. It also uses partner carriers' low-band, including AT&T's and Verizon's.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 25,
+   "market_cap_label": "~$25B (after 9 Nov 2026 Q3 results)",
+   "spectrum_pct_ev": "~3% at the cost of its rights (rough); the market-implied share is higher",
+   "return_1y": "",
+   "benefits_if": "Satellite-to-phone spectrum gets scarce, and its L-band and S-band rights gain value. Carriers that do not want to depend on SpaceX choose AST as a neutral partner.",
+   "loses_if": "SpaceX's own spectrum and scale win the carrier deals. FCC rules that let satellites reuse carrier spectrum lower the value of separate satellite bands.",
+   "risks": "It has 12 BlueBirds in orbit, and its 45-satellite target has slipped to mid-2027. Q3 2026 revenue was $42.3M against a market value near $25B. Inmarsat disputes its L-band rights outside North America. Shares were down about 55% in 2026 as of November 13. Launch delays and dilution remain risks.",
+   "scenario_view": "Gains if satellite spectrum gets scarcer, trades on execution in a steady market, loses some edge under abundance, and gets squeezed if SpaceX becomes the dominant fourth force.",
+   "website": "https://ast-science.com",
+   "sources": "https://www.datacenterdynamics.com/en/news/ast-spacemobile-pays-550m-to-access-premium-spectrum-in-north-america-for-satellite-d2d/ | https://rcrwireless.com/20250813/network-infrastructure/ast-spacemobile | https://www.sec.gov/Archives/edgar/data/0001780312/000119312526453758/asts-ex99_2.htm | https://www.nasdaq.com/press-release/ast-spacemobile-provides-business-update-and-third-quarter-2026-results-2026-11-09 | https://www.fierce-network.com/wireless/ast-spacemobile-gets-new-static-spectrum-front | https://stocktwits.com/news-articles/markets/equity/asts-q3-sales-miss-1b-revenue-opportunity-ai-partnerships-growth-focus/cNGuGazR97f | https://www.fool.com/quote/nasdaq/asts"
+  },
+  {
+   "id": "gsat",
+   "order": 10,
+   "name": "Globalstar",
+   "ticker": "GSAT",
+   "category": "Satellite and direct-to-device",
+   "holdings": "Holds about 25 MHz of globally harmonized satellite spectrum in L-band and S-band, with terrestrial Band 53 rights. Apple owns 20% and uses 85% of network capacity. Amazon agreed in April 2026 to buy it for $90 a share, about $11.6B, and the FCC approved the deal on October 27, 2026, with closing expected in 2027.",
+   "exposure_grade": "High",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Most of the deal value (very rough; Amazon is paying about 40x 2026 sales)",
+   "return_1y": "",
+   "benefits_if": "Little more upside. Holders get $90 in cash or Amazon stock capped at $90 a share, with cash limited to 40% of shares. Scarcer spectrum mostly confirms the price Amazon already agreed to pay.",
+   "loses_if": "The deal fails before closing. The stock would then trade on its own spectrum value and the Apple contract.",
+   "risks": "Closing risk runs until 2027. The stock portion depends on Amazon's share price. Apple holds control rights. November 2026 market value was not confirmed.",
+   "scenario_view": "Stays close to the $90 deal price in all four futures, and scarcity or a SpaceX fourth force matter mainly if the deal breaks.",
+   "website": "https://www.globalstar.com",
+   "sources": "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html | https://www.sec.gov/Archives/edgar/data/1366868/000114036126014528/ef20070409_ex99-2.htm | https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar | https://www.fierce-network.com/wireless/fcc-gives-ok-amazon-leos-acquisition-globalstar | https://www.satellitetoday.com/connectivity/2026/10/27/amazon-secures-fcc-approval-for-globalstar-acquisition/"
+  },
+  {
+   "id": "irdm",
+   "order": 11,
+   "name": "Iridium",
+   "ticker": "IRDM",
+   "category": "Satellite and direct-to-device",
+   "holdings": "Runs a network of about 66 satellites on about 8.7 MHz of global L-band (approximate, not re-verified). Rocket Lab agreed in June 2026 to buy it for $54 a share, $27 in cash plus Rocket Lab stock under a collar, for an enterprise value of about $8.0B. Closing is expected in mid-2027.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~15% (very rough)",
+   "return_1y": "",
+   "benefits_if": "Little more upside, because the deal sets the price. Demand for L-band IoT and narrowband satellite-to-phone service supports the deal. NTN Direct goes commercial with Deutsche Telekom IoT in Q4 2026.",
+   "loses_if": "The deal breaks, and Starlink's direct-to-cell service then competes with its narrowband business head on.",
+   "risks": "Half the price is Rocket Lab stock, so the payout moves with Rocket Lab's shares. The stock closed at $43.79 on October 23, 2026, well below the $54 headline. Shareholders approved the sale on September 24, but there was no FCC decision as of early November. November 2026 market value was not confirmed.",
+   "scenario_view": "Follows the Rocket Lab deal in all four futures, spectrum scarcity matters little, and a SpaceX fourth force matters mainly if the deal fails.",
+   "website": "https://www.iridium.com",
+   "sources": "https://www.nasdaq.com/press-release/rocket-lab-acquire-iridium-historic-deal-creating-fully-vertically-integrated-space-0 | https://www.datacenterdynamics.com/en/news/launcher-rocket-lab-acquires-satellite-operator-iridium-in-8bn-deal/ | https://finviz.com/news/390817/iridium-deutsche-telekom-iot-and-toyota-demonstrate-voice-messaging-over-satellite-via-iridium-ntn-direct | https://www.foxbusiness.com/quote?stockTicker=IRDM | https://keeptrack.space/deep-dive/iridium-stock-satellite-fleet"
+  },
+  {
+   "id": "vsat",
+   "order": 12,
+   "name": "Viasat",
+   "ticker": "VSAT",
+   "category": "Satellite and direct-to-device",
+   "holdings": "Owns Inmarsat's global L-band satellite spectrum and an EU 2 GHz satellite license (2x15 MHz, expiring 2027, not re-verified), plus Ka-band broadband capacity. Through Inmarsat it disputes AST's use of Ligado L-band outside North America, and it receives $535M of AST's $550M payment to Ligado.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": 9.2,
+   "market_cap_label": "$9.2B (4 Nov 2026)",
+   "spectrum_pct_ev": "~25% (very rough)",
+   "return_1y": "",
+   "benefits_if": "Satellite-to-phone demand makes its L-band and S-band rights worth more, through a sale, a lease or a direct-to-device venture.",
+   "loses_if": "Starlink's pricing erodes its broadband and aviation business. Sharing rules in the US and EU add satellite capacity in other bands.",
+   "risks": "Leverage is high. Its EU 2 GHz license comes up for renewal in 2027. It faces satellite failures and competition from Starlink and Amazon Leo.",
+   "scenario_view": "Gains if satellite spectrum gets scarcer, holds in a steady market, loses some value under abundance, and faces more pressure if SpaceX and Amazon dominate satellite-to-phone service.",
+   "website": "https://www.viasat.com",
+   "sources": "https://www.fierce-network.com/wireless/ast-spacemobile-gets-new-static-spectrum-front | https://spacenews.com/ast-spacemobile-reaches-deal-to-bankroll-ligados-viasat-settlement/ | https://www.ofcom.org.uk/siteassets/resources/documents/consultations/200923---future-use-of-2-ghz-mss/consultation-future-use-of-2ghz-mss.pdf | https://fundamentei.com/en-US/us/vsat"
+  },
+  {
+   "id": "spcx",
+   "order": 13,
+   "name": "SpaceX",
+   "ticker": "SPCX",
+   "category": "SpaceX access",
+   "holdings": "Has agreed to buy about 79 MHz of US spectrum usable on the ground. That includes EchoStar's AWS-4 (40 MHz), H-block (10 MHz) and unpaired AWS-3 (15 MHz) for about $19.6B, closing around November 2027, and Grain's 800 MHz (up to 14 MHz) for a reported ~$8B, which the FCC is reviewing. It also runs Starlink and about 650 first-generation direct-to-cell satellites.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": 1850,
+   "market_cap_label": "$1.85T (2 Nov 2026)",
+   "spectrum_pct_ev": "~1-1.5% (about $20-28B of spectrum deals vs ~$1.85T)",
+   "return_1y": "+3% since $135 IPO (to 13 Nov 2026)",
+   "benefits_if": "Owned spectrum lets it sell mobile service on its own network. Scarcity raises the value of spectrum it bought at about $1.0/MHz-pop for AWS-4 and H-block.",
+   "loses_if": "The FCC blocks or attaches conditions to more purchases, or abundant supply lets rivals match its coverage cheaply. Carriers refuse it wholesale access, and T-Mobile has ruled that out.",
+   "risks": "Spectrum is too small a share of value to drive the stock. AI costs, Starlink and launch do. The 180-day lockup ends December 8, 2026, and a 1.3B-share release on October 22 cut the stock 9% in a day. Shares have traded between about $108 and $192.50 since the June listing.",
+   "scenario_view": "Gains a little under scarcity, tracks Starlink and AI in a steady market, loses a little under abundance, and gains most if it becomes a fourth force, though spectrum stays a small part of its value.",
+   "website": "https://www.spacex.com",
+   "sources": "https://techcrunch.com/2025/09/08/spacex-strikes-17b-deal-to-buy-echostars-spectrum-for-starlinks-direct-to-phone-service/ | https://www.fcc.gov/document/order-granting-spacex-echostar-applications | https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm | https://broadbandbreakfast.com/earthquake-in-the-sky-spacex-pays-8-billion-for-grain-management-airwaves-to-advance-starlink-mobile/ | https://www.mobileworldlive.com/att/fcc-signs-off-on-echostar-deals-to-spacex-att/ | https://www.starlink.com/direct-to-cell | https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html | https://finance.yahoo.com/markets/stocks/articles/spacexs-december-lockup-nearly-biggest-210500586.html | https://value-investor.io/hub/spacex-latest-valuation-2026 | https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-16-2026/"
+  },
+  {
+   "id": "googl",
+   "order": 14,
+   "name": "Alphabet",
+   "ticker": "GOOGL",
+   "category": "SpaceX access",
+   "holdings": "Holds no material licensed mobile spectrum. It owns about 5-6% of SpaceX, a stake it valued at $94.1B on June 30, 2026.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "<0.1% look-through (rough)",
+   "return_1y": "",
+   "benefits_if": "SPCX rises if SpaceX's spectrum and mobile plans pay off, which lifts the value of Alphabet's stake.",
+   "loses_if": "SPCX falls, though the effect on Alphabet is small.",
+   "risks": "The SpaceX stake is a small part of Alphabet's value. The exact stake size is uncertain after SpaceX's merger with xAI. November 2026 market value was not confirmed.",
+   "scenario_view": "Barely moves in any of the four futures, and gains a little if SpaceX becomes a fourth force.",
+   "website": "https://abc.xyz",
+   "sources": "https://www.morningstar.com/news/dow-jones/202607238259/google-discloses-941-billion-in-spacex-stock-marking-6-stake-update | https://thenextweb.com/news/google-94-billion-spacex-shares-ipo-stake"
+  },
+  {
+   "id": "xovr",
+   "order": 15,
+   "name": "ERShares Private-Public Crossover ETF",
+   "ticker": "XOVR",
+   "category": "SpaceX access",
+   "holdings": "An ETF that mixes listed growth stocks with stakes in private companies, including a SpaceX position (weight not verified).",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low (via SpaceX, where spectrum is about 1% of value)",
+   "return_1y": "",
+   "benefits_if": "SPCX rises as SpaceX's mobile plans pay off.",
+   "loses_if": "SPCX falls. Now that SPCX trades directly, investors have less reason to pay fund fees for access.",
+   "risks": "Holdings and the SpaceX weight were not verified. Exposure to spectrum is very diluted.",
+   "scenario_view": "Moves little in any of the four futures and gains slightly if SpaceX becomes a fourth force.",
+   "website": "https://www.ershares.com",
+   "sources": "https://www.ershares.com | https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html"
+  },
+  {
+   "id": "dxyz",
+   "order": 16,
+   "name": "Destiny Tech100",
+   "ticker": "DXYZ",
+   "category": "SpaceX access",
+   "holdings": "A listed closed-end fund that holds stakes in private and recently listed tech companies, including SpaceX (weight not verified).",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low (via SpaceX, where spectrum is about 1% of value)",
+   "return_1y": "",
+   "benefits_if": "SPCX rises as SpaceX's mobile plans pay off.",
+   "loses_if": "SPCX falls, or the fund's premium to net asset value shrinks now that SPCX trades directly.",
+   "risks": "The fund can trade far from net asset value. Holdings and the SpaceX weight were not verified.",
+   "scenario_view": "Moves little in any of the four futures, gains slightly if SpaceX becomes a fourth force, and depends mostly on its premium to net asset value.",
+   "website": "https://destiny.xyz",
+   "sources": "https://destiny.xyz | https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html"
+  },
+  {
+   "id": "cmcsa",
+   "order": 17,
+   "name": "Comcast",
+   "ticker": "CMCSA",
+   "category": "Cable",
+   "holdings": "Holds 10 MHz of 600 MHz in 72 areas, leased to T-Mobile under a sale worth up to $3.3B. Only $46M of that sale has closed, and the rest is targeted for the first half of 2028. It also holds 830 CBRS licenses bought for about $458M, and Xfinity Mobile, with about 10.6M lines, runs mostly on Verizon's network.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": 88.24,
+   "market_cap_label": "$88B (6 Nov 2026)",
+   "spectrum_pct_ev": "~1-2% at cost (rough)",
+   "return_1y": "-6% (to 6 Nov 2026)",
+   "benefits_if": "Higher low-band prices support its 600 MHz sale to T-Mobile, priced at about $2.21/MHz-pop if fully completed.",
+   "loses_if": "Scarcity raises the wholesale rates it pays Verizon. A SpaceX mobile service adds another low-price rival.",
+   "risks": "Comcast lost 144,000 broadband customers in Q3 2026. About half its Q3 postpaid mobile connects were free lines.",
+   "scenario_view": "Gains a little under scarcity through its 600 MHz sale, holds in a steady market, gains slightly under abundance as wholesale costs fall, and faces another price rival if SpaceX becomes a fourth force.",
+   "website": "https://corporate.comcast.com",
+   "sources": "https://www.rcrwireless.com/20230913/featured/citing-cbrs-strength-comcast-to-sell-3-3b-in-600-mhz-spectrum-to-t-mo | https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum | https://www.lightreading.com/network-platforms/how-charter-and-comcast-are-building-their-way-out-of-verizon-dependency | https://lightreading.com/cable-technology/comcast-drops-more-broadband-subs-as-restructuring-and-layoffs-loom | https://www.foxbusiness.com/quote?stockTicker=CMCSA"
+  },
+  {
+   "id": "chtr",
+   "order": 18,
+   "name": "Charter Communications",
+   "ticker": "CHTR",
+   "category": "Cable",
+   "holdings": "Holds 210 CBRS licenses in 106 counties, bought for $464M, which must be in use by 2030. Spectrum Mobile, now 13.5M lines including Cox, runs mostly on Verizon's network.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "<1% at cost (rough)",
+   "return_1y": "",
+   "benefits_if": "It gains little directly. It can move more traffic onto its own CBRS licenses as wholesale costs rise.",
+   "loses_if": "Wholesale costs rise, and fixed wireless and satellite take broadband customers.",
+   "risks": "Leverage is high. Charter lost 233,000 broadband customers in Q3 2026. November 2026 market value was not confirmed.",
+   "scenario_view": "Pays more under scarcity, holds in a steady market, gains slightly under abundance as wholesale costs fall, and faces another price rival if SpaceX becomes a fourth force.",
+   "website": "https://corporate.charter.com",
+   "sources": "https://www.lightreading.com/network-platforms/how-charter-and-comcast-are-building-their-way-out-of-verizon-dependency | https://finviz.com/news/418256/charter-announces-third-quarter-2026-results-and-launches-new-operating-model"
+  },
+  {
+   "id": "amt",
+   "order": 19,
+   "name": "American Tower",
+   "ticker": "AMT",
+   "category": "Towers",
+   "holdings": "Holds no licensed spectrum. It leases tower sites to carriers, so it gains when carriers need more sites to carry traffic on the spectrum they have.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "0% (no licenses)",
+   "return_1y": "",
+   "benefits_if": "Scarce spectrum pushes carriers to add sites. A SpaceX ground network would also need many sites. Bloomberg reported SpaceX is seeking at least 80,000 US sites, and Morgan Stanley called the Grain deal constructive for tower companies.",
+   "loses_if": "Abundant spectrum and satellite coverage reduce the need for new sites, mainly in rural areas. Carrier consolidation removes tenants.",
+   "risks": "It is sensitive to interest rates. It lost leases when the Dish 5G network shut down, and the FCC required a $2.4B escrow tied to tower-company litigation. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains under scarcity as carriers add sites, holds in a steady market, loses some demand under abundance, and gains if SpaceX builds a ground network on leased towers.",
+   "website": "https://www.americantower.com",
+   "sources": "https://gulfnews.com/technology/starlink-mobile-targets-80000-us-cell-sites-to-bolster-emergency-rural-communications-1.500720675 | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum | https://247wallst.com/investing/2026/10/23/spacex-is-coming-for-the-phone-companies-but-the-tower-owners-win-either-way | https://broadbandbreakfast.com/fcc-approves-echostar-spectrum-sales-with-escrow-requirement/"
+  },
+  {
+   "id": "cci",
+   "order": 20,
+   "name": "Crown Castle",
+   "ticker": "CCI",
+   "category": "Towers",
+   "holdings": "Holds no licensed spectrum. It owns US towers, and Bloomberg reported that SpaceX held talks with it about site access.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "0% (no licenses)",
+   "return_1y": "",
+   "benefits_if": "Scarce spectrum pushes carriers to add sites. A SpaceX ground network would need tens of thousands of leased sites.",
+   "loses_if": "Abundant spectrum and satellite coverage reduce the need for new sites. Carrier consolidation removes tenants.",
+   "risks": "It lost leases when the Dish 5G network shut down. It is sensitive to interest rates. A SpaceX lease has not been signed. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains under scarcity as carriers add sites, holds in a steady market, loses some demand under abundance, and gains most of the tower group if SpaceX builds a ground network on its sites.",
+   "website": "https://www.crowncastle.com",
+   "sources": "https://gulfnews.com/technology/starlink-mobile-targets-80000-us-cell-sites-to-bolster-emergency-rural-communications-1.500720675 | https://247wallst.com/investing/2026/10/23/spacex-is-coming-for-the-phone-companies-but-the-tower-owners-win-either-way | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+  },
+  {
+   "id": "sbac",
+   "order": 21,
+   "name": "SBA Communications",
+   "ticker": "SBAC",
+   "category": "Towers",
+   "holdings": "Holds no licensed spectrum. It owns towers in the US and abroad and leases space on them to carriers.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "0% (no licenses)",
+   "return_1y": "",
+   "benefits_if": "Scarce spectrum pushes carriers to add sites, and a SpaceX ground network would need leased towers.",
+   "loses_if": "Abundant spectrum and satellite coverage reduce the need for new sites. Carrier consolidation removes tenants.",
+   "risks": "Leverage is high. It lost leases when Dish and EchoStar shut their network. November 2026 market value was not confirmed.",
+   "scenario_view": "Gains under scarcity as carriers add sites, holds in a steady market, loses some demand under abundance, and gains if SpaceX builds a ground network on leased towers.",
+   "website": "https://www.sbasite.com",
+   "sources": "https://247wallst.com/investing/2026/10/23/spacex-is-coming-for-the-phone-companies-but-the-tower-owners-win-either-way | https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum"
+  },
+  {
+   "id": "iyz",
+   "order": 22,
+   "name": "iShares US Telecommunications ETF",
+   "ticker": "IYZ",
+   "category": "Funds and ETFs",
+   "holdings": "A cap-weighted fund of US telecom stocks, led by the large carriers, with some small spectrum names (holdings not verified).",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Indirect (its largest carrier holdings carry ~41-50% of EV in spectrum at book)",
+   "return_1y": "",
+   "benefits_if": "Carriers keep pricing power as spectrum gets scarcer.",
+   "loses_if": "A price war, or a SpaceX fourth network, hits its largest holdings.",
+   "risks": "It is concentrated in a few carriers. Holdings and weights were not verified.",
+   "scenario_view": "Gains if spectrum gets scarcer and holders capture it, holds in a steady market, loses some value under abundance, and does worst if SpaceX becomes a fourth force.",
+   "website": "https://www.ishares.com",
+   "sources": "https://www.ishares.com"
+  },
+  {
+   "id": "xtl",
+   "order": 23,
+   "name": "SPDR S&P Telecom ETF",
+   "ticker": "XTL",
+   "category": "Funds and ETFs",
+   "holdings": "An equal-weight fund of US telecom stocks, which gives small spectrum and satellite names more weight than a cap-weighted fund does (holdings not verified).",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Indirect (equal weight adds small spectrum holders)",
+   "return_1y": "",
+   "benefits_if": "Small spectrum names get bought at a premium, and carriers keep pricing power.",
+   "loses_if": "Equipment makers in the fund hit a downturn, or carriers lose pricing power.",
+   "risks": "It includes equipment makers with little spectrum exposure. Holdings were not verified.",
+   "scenario_view": "Gains under scarcity through takeovers of small holders, holds in a steady market, loses some value under abundance, and is mixed if SpaceX becomes a fourth force, since it holds both carriers and satellite names.",
+   "website": "https://www.ssga.com",
+   "sources": "https://www.ssga.com"
+  },
+  {
+   "id": "vox",
+   "order": 24,
+   "name": "Vanguard Communication Services ETF",
+   "ticker": "VOX",
+   "category": "Funds and ETFs",
+   "holdings": "A broad communication services fund dominated by internet and media giants. Carriers are a minority weight.",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low (carriers are a minority weight)",
+   "return_1y": "",
+   "benefits_if": "It gains little from spectrum prices, which reach it only through its carrier holdings.",
+   "loses_if": "Its carrier holdings lose pricing power, which has a small effect on the fund.",
+   "risks": "It is not a spectrum vehicle. Returns depend mostly on internet and media stocks.",
+   "scenario_view": "Barely moves in any of the four futures.",
+   "website": "https://investor.vanguard.com",
+   "sources": "https://investor.vanguard.com"
+  },
+  {
+   "id": "nxtg",
+   "order": 25,
+   "name": "First Trust Indxx NextG ETF",
+   "ticker": "NXTG",
+   "category": "Funds and ETFs",
+   "holdings": "A fund of 5G and next-generation network companies, including equipment makers, chip firms and carriers (holdings not verified).",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low (mostly equipment and chips)",
+   "return_1y": "",
+   "benefits_if": "Scarce spectrum pushes carriers to spend more on network equipment.",
+   "loses_if": "Carriers cut network spending after the 5G peak.",
+   "risks": "Exposure to spectrum is very diluted. Holdings were not verified.",
+   "scenario_view": "Gains a little under scarcity through equipment demand, holds in a steady market, and moves little under abundance or a SpaceX fourth force.",
+   "website": "https://www.ftportfolios.com",
+   "sources": "https://www.ftportfolios.com"
+  },
+  {
+   "id": "ufo",
+   "order": 26,
+   "name": "Procure Space ETF",
+   "ticker": "UFO",
+   "category": "Funds and ETFs",
+   "holdings": "A fund of space companies, including satellite operators (holdings not verified).",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low (indirect via satellite operators)",
+   "return_1y": "",
+   "benefits_if": "Satellite spectrum is revalued as buyers like Amazon and SpaceX pay up for it.",
+   "loses_if": "Space stocks lose favor, or held satellite names are bought out at fixed prices.",
+   "risks": "The fund is small. Holdings were not verified. Globalstar and Iridium, if held, are capped by their deal prices.",
+   "scenario_view": "Gains a little under scarcity, holds in a steady market, and gains if satellite owners become a fourth force, depending on what it holds.",
+   "website": "https://www.procureetfs.com",
+   "sources": "https://www.procureetfs.com"
+  },
+  {
+   "id": "arkx",
+   "order": 27,
+   "name": "ARK Space and Defense Innovation ETF",
+   "ticker": "ARKX",
+   "category": "Funds and ETFs",
+   "holdings": "An actively managed fund of space and defense companies (holdings not verified).",
+   "exposure_grade": "Low",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "Low",
+   "return_1y": "",
+   "benefits_if": "Satellite names it holds gain as satellite spectrum is revalued.",
+   "loses_if": "Space and defense stocks lose favor.",
+   "risks": "It is an active, thematic fund. Holdings were not verified.",
+   "scenario_view": "Moves little with spectrum prices and gains slightly if satellite owners become a fourth force.",
+   "website": "https://www.ark-funds.com",
+   "sources": "https://www.ark-funds.com"
+  },
+  {
+   "id": "rci",
+   "order": 28,
+   "name": "Rogers Communications",
+   "ticker": "RCI",
+   "category": "International",
+   "holdings": "Was the biggest bidder in Canada's 2021 3500 MHz auction, paying about C$3.3B (C$3.38/MHz-pop). It paid C$475M (C$0.32/MHz-pop) in the 2023 3800 MHz auction and also holds 600 MHz and AWS.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~35% (very rough)",
+   "return_1y": "",
+   "benefits_if": "Canadian spectrum stays scarce and supports a three-carrier market. US prices matter only as a benchmark.",
+   "loses_if": "Canada's regulator pushes more competition, and new supply clears cheaply. The 3800 MHz auction priced about 90% below 3500 MHz.",
+   "risks": "Leverage is high. It faces regulatory price pressure and possible satellite entry. November 2026 market value was not confirmed.",
+   "scenario_view": "Feels US spectrum futures mostly at a distance, gains if Canadian spectrum stays scarce, holds in a steady market, loses if new supply clears cheaply as in 2023, and faces its own satellite competition if a SpaceX-style entrant reaches Canada.",
+   "website": "https://www.rogers.com",
+   "sources": "https://www.canada.ca/en/innovation-science-economic-development/news/2021/07/3500-mhz-auction--process-and-results.html | https://mobilesyrup.com/2021/07/30/canadian-carriers-react-3500mhz-spectrum-auction-results/ | https://www.canada.ca/en/innovation-science-economic-development/news/2023/11/3800-mhz-auction--process-and-results.html | https://telecomtalk.info/canada-concludes-3800mhz-spectrum-auction-awarding-4099licences/901670/"
+  },
+  {
+   "id": "tu",
+   "order": 29,
+   "name": "Telus",
+   "ticker": "TU",
+   "category": "International",
+   "holdings": "Paid about C$1.9B in Canada's 2021 3500 MHz auction and about C$0.24/MHz-pop in the 2023 3800 MHz auction. It also holds 600 MHz and AWS.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~20% (very rough)",
+   "return_1y": "",
+   "benefits_if": "Canadian spectrum stays scarce and supports a three-carrier market.",
+   "loses_if": "Canada's regulator pushes more competition, and new supply clears cheaply, as 3800 MHz did in 2023.",
+   "risks": "Leverage is high, and dividend cover is a concern. November 2026 market value was not confirmed.",
+   "scenario_view": "Feels US spectrum futures mostly at a distance, gains if Canadian spectrum stays scarce, holds in a steady market, loses if new supply clears cheaply, and faces its own satellite competition if a SpaceX-style entrant reaches Canada.",
+   "website": "https://www.telus.com",
+   "sources": "https://mobilesyrup.com/2021/07/30/canadian-carriers-react-3500mhz-spectrum-auction-results/ | https://telecomtalk.info/canada-concludes-3800mhz-spectrum-auction-awarding-4099licences/901670/ | https://www.canada.ca/en/innovation-science-economic-development/news/2023/11/3800-mhz-auction--process-and-results.html"
+  },
+  {
+   "id": "bce",
+   "order": 30,
+   "name": "BCE",
+   "ticker": "BCE",
+   "category": "International",
+   "holdings": "Bell paid about C$2.1B in Canada's 2021 3500 MHz auction. It also holds 600 MHz and AWS.",
+   "exposure_grade": "Medium",
+   "market_cap_usd_b": null,
+   "market_cap_label": "",
+   "spectrum_pct_ev": "~20% (very rough)",
+   "return_1y": "",
+   "benefits_if": "Canadian spectrum stays scarce and supports a three-carrier market.",
+   "loses_if": "Canada's regulator pushes more competition, and new supply clears cheaply, as 3800 MHz did in 2023.",
+   "risks": "Leverage is high, and it is spending on US fiber expansion. November 2026 market value was not confirmed.",
+   "scenario_view": "Feels US spectrum futures mostly at a distance, gains if Canadian spectrum stays scarce, holds in a steady market, loses if new supply clears cheaply, and faces its own satellite competition if a SpaceX-style entrant reaches Canada.",
+   "website": "https://www.bce.ca",
+   "sources": "https://www.canada.ca/en/innovation-science-economic-development/news/2021/07/3500-mhz-auction--process-and-results.html | https://mobilesyrup.com/2021/07/30/canadian-carriers-react-3500mhz-spectrum-auction-results/ | https://www.canada.ca/en/innovation-science-economic-development/news/2023/11/3800-mhz-auction--process-and-results.html"
+  }
+ ]
+}

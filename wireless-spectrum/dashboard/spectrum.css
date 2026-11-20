@@ -53,7 +53,8 @@
 /* universe */
 .tx-uni { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
 .tx-uni-cat { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
-.tx-uni-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: 6px; }
-.tx-uni-facts > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tx-uni-facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: 6px; margin: 0; align-items: baseline; }
+.tx-uni-facts dd { margin: 0; text-align: right; }
 .tx-uni-v { font-variant-numeric: tabular-nums; font-weight: 600; overflow-wrap: anywhere; }
+.tx-cand-head .tx-chip { flex: none; white-space: nowrap; }
 .tx-cand .tx-card-note { line-height: 1.5; }

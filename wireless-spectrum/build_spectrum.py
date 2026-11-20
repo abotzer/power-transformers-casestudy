@@ -282,6 +282,31 @@ def build_map(M):
     return nodes, edges, net.get("layer_titles")
 
 
+def build_universe(U):
+    rows = []
+    for u in U:
+        u = dict(u)
+        full = clean(u.get("spectrum_pct_ev"))
+        short = re.split(r"\s*[(;,]|\s+on\s", full)[0].strip()
+        u["spectrum_basis"] = full if full != short else ""
+        u["spectrum_pct_ev"] = short
+        mc, r1 = clean(u.get("market_cap_label")), clean(u.get("return_1y"))
+        notes = []
+        if mc:
+            notes.append("market cap " + mc)
+        if r1:
+            notes.append("return " + r1)
+        u["market_note"] = "; ".join(notes)
+        u["market_cap_label"] = re.sub(r"\s*\(.*?\)", "", mc).strip()
+        u["return_1y"] = re.sub(r"\s*\(.*?\)", "", r1).strip()
+        for k in ("holdings", "benefits_if", "loses_if", "risks", "scenario_view"):
+            u[k] = clean(u.get(k))
+        u["website"] = https(u.get("website"))
+        u["sources"] = sources([x.strip() for x in str(u.get("sources", "")).split("|")])
+        rows.append(u)
+    return rows
+
+
 def build_glossary(G):
     rows, seen = [], set()
     for t in G["terms"]:
@@ -329,7 +354,7 @@ def main(src, out):
     write(out, "key_findings", S.get("key_findings", []))
     write(out, "key_numbers", S.get("key_numbers", []))
     write(out, "watchlist", S.get("watchlist", []))
-    write(out, "universe", S.get("universe", []))
+    write(out, "universe", build_universe(S.get("universe", [])))
 
 
 if __name__ == "__main__":

@@ -338,20 +338,20 @@ function renderUniverse() {
       if (r.ticker) chips.appendChild(mk('span', 'tx-chip', r.ticker, 'universe', 'ticker', w));
       it.appendChild(chips);
       it.appendChild(mk('p', 'tx-cand-svc', r.holdings, 'universe', 'holdings', w));
-      const facts = mk('div', 'tx-uni-facts');
+      const facts = mk('dl', 'tx-uni-facts');
       [['Market cap', 'market_cap_label'], ['Spectrum share of value', 'spectrum_pct_ev'], ['1-year return', 'return_1y']].forEach(([lbl, f]) => {
         if (!r[f]) return;
-        const b = mk('div');
-        b.appendChild(mk('span', 'tx-ans-lbl', lbl));
-        b.appendChild(mk('span', 'tx-uni-v', r[f], 'universe', f, w));
-        facts.appendChild(b);
+        facts.appendChild(mk('dt', 'tx-ans-lbl', lbl));
+        facts.appendChild(mk('dd', 'tx-uni-v', r[f], 'universe', f, w));
       });
-      it.appendChild(facts);
+      if (facts.childNodes.length) it.appendChild(facts);
       const d = detailsBox('If spectrum gets scarcer, and if not');
       labelled(d, 'Gains if', r.benefits_if, 'universe', 'benefits_if', w);
       labelled(d, 'Loses if', r.loses_if, 'universe', 'loses_if', w);
       labelled(d, 'Risks', r.risks, 'universe', 'risks', w);
       labelled(d, 'Under our scenarios', r.scenario_view, 'universe', 'scenario_view', w);
+      labelled(d, 'Spectrum share of value, basis', r.spectrum_basis, 'universe', 'spectrum_basis', w);
+      labelled(d, 'Market data', r.market_note, 'universe', 'market_note', w);
       d.appendChild(sourceLinks(r.sources));
       it.appendChild(d);
       grid.appendChild(it);
