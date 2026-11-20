@@ -194,7 +194,7 @@
   "price_label": "$22.51B",
   "usd_per_mhz_pop": 0.7,
   "status": "closed",
-  "notes": "DISH 3.45 GHz later sold to AT&T",
+  "notes": "DISH 3.45 GHz later sold to AT&T. About $0.74 at ~305M pops as reported; $0.67 at 335M.",
   "source_url": "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/"
  },
  {
@@ -416,7 +416,7 @@
  {
   "id": "spacex-buys-grain-800-mhz-reuters-2026-10-08",
   "kind": "Private sale",
-  "name": "SpaceX buys Grain's 800 MHz (the Reuters 8 Oct 2026 deal)",
+  "name": "SpaceX agrees to buy Grain's 800 MHz (8 Oct 2026)",
   "date": "2026-10-08",
   "sort_date": "2026-10-08",
   "buyer": "SpaceX",
@@ -459,11 +459,11 @@
   "seller": "Globalstar shareholders",
   "band": "Big LEO MSS L/S-band + Band n53",
   "band_class": "MSS",
-  "mhz": "~36.7 usable for D2C (analyst)",
+  "mhz": "~25 (L-band and S-band; ~36.7 if Band 53 is counted separately)",
   "price_usd_b": 11.57,
   "price_label": "$11.57B",
   "usd_per_mhz_pop": null,
-  "status": "pending FCC; expected 2027",
+  "status": "FCC approved 2026-10-27; closing expected 2027",
   "notes": "$90/share; SpaceX reported rival; ~40x 2026 sales",
   "source_url": "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html"
  },

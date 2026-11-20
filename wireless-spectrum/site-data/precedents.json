@@ -336,10 +336,10 @@
   "period": "2024",
   "holder": "Government of India (seller)",
   "spectrum": "800 MHz to 26 GHz bands",
-  "cost_basis": "~INR 96,317 crore offered at reserve (prior knowledge)",
+  "cost_basis": "~INR 96,238 crore offered at reserve (prior knowledge)",
   "outcome_value": "~INR 11,341 crore sold (prior knowledge)",
   "multiple": "~0.12x of offered value sold",
-  "outcome": "Lost",
+  "outcome": "Mixed",
   "years": "n/a",
   "lesson": "With three operators that had bought heavily in 2022, oversupply and high reserve prices left most spectrum unsold.",
   "sources": "https://dot.gov.in"

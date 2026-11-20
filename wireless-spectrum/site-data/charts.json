@@ -1518,7 +1518,7 @@
   "series": "Share of reserve value unsold",
   "x": "India 2024 (by reserve value)",
   "y": 88.2,
-  "note": "Derived: INR11,340 cr sold vs INR96,318 cr reserve value offered"
+  "note": "Derived: INR11,340 cr sold vs INR96,238 cr reserve value offered"
  },
  {
   "id": "unsold-03",
@@ -1941,7 +1941,7 @@
   "series": "Satellite",
   "x": "Globalstar (GSAT)",
   "y": 50,
-  "note": "Being acquired by Amazon"
+  "note": "Being acquired by Amazon at a fixed $90 a share, so spectrum prices matter only if the deal breaks"
  },
  {
   "id": "exposure-04",
@@ -2012,8 +2012,8 @@
   "order": 11,
   "series": "Satellite",
   "x": "SpaceX (SPCX)",
-  "y": 1.2,
-  "note": "~$20-28B of spectrum in a ~$1.9T company"
+  "y": 1.5,
+  "note": "~$27.6B of agreed spectrum deals in a ~$1.85T company"
  },
  {
   "id": "exposure-12",
@@ -2119,7 +2119,7 @@
   "chart_id": "net_adds",
   "order": 6,
   "series": "Q3 2025",
-  "x": "Charter",
+  "x": "Charter (excl. Cox)",
   "y": 482,
   "note": "Legacy basis as reported in Q3 2026 coverage; Charter's Q3 2025 release showed 493k; all mobile lines, not only phones"
  },
@@ -2128,7 +2128,7 @@
   "chart_id": "net_adds",
   "order": 7,
   "series": "Q3 2026",
-  "x": "Charter",
+  "x": "Charter (excl. Cox)",
   "y": 440,
   "note": "Excludes Cox"
  },

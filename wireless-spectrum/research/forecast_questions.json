@@ -30,12 +30,12 @@
   "kind": "quantile",
   "group": "Spectrum prices",
   "headline": "Yes",
-  "short": "Mid-band price in 2029-2030 deals",
+  "short": "Low- and mid-band deal price, 2029-30",
   "question": "Median price per MHz-pop of US nationwide or near-nationwide low- and mid-band spectrum (below 6 GHz) changing hands in 2029-2030, across FCC auctions and private sales above $1B (nominal dollars).",
   "unit": "$/MHz-pop",
   "fmt": "usd2",
-  "current": 1.4,
-  "current_label": "2025-26 deals: about $0.5-2.5 by band (AT&T-EchoStar $1.40)",
+  "current": 1.2,
+  "current_label": "2025-26 deals: median about $1.20 ($0.52-2.53; AT&T-EchoStar $1.40)",
   "horizon": "2030"
  },
  {
@@ -249,7 +249,7 @@
   "id": "b_ucb_above",
   "kind": "binary",
   "group": "Spectrum prices",
-  "question": "Will the upper C-band auction clear above the lower C-band's price of about $0.94 per MHz-pop?",
+  "question": "Will the upper C-band auction clear above $0.94 per MHz-pop on today's 335M population, the 2021 lower C-band's headline price (about 8% above its $0.87 like-for-like)?",
   "horizon": "End 2028",
   "resolution": "Yes if Auction 115 gross bids divided by (MHz offered x 335M pops) exceed $0.94 and bidding concludes by 31 Dec 2028; No otherwise."
  },

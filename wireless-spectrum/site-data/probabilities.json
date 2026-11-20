@@ -8,7 +8,7 @@
   "probability": 88,
   "low": 86,
   "high": 89,
-  "rationale": "Bidding starts on 27 April 2027 under final rules, and the law requires the auction by July 2027. Similar auctions with clock and assignment phases took about 10-13 weeks (Auctions 107 and 110), so a normal auction closes around August-September 2027. That leaves about four months of slack. The main risks are litigation, an aviation or satellite dispute that delays the start, a government shutdown, or a long bidding war.",
+  "rationale": "Bidding starts on 27 April 2027 under final rules, and the law requires the auction by July 2027. Similar auctions with clock and assignment phases took about 10-13 weeks (Auctions 107 and 110), so a normal auction closes in July 2027. That leaves about five months of slack. The main risks are litigation, an aviation or satellite dispute that delays the start, a government shutdown, or a long bidding war.",
   "resolution": "Yes if the FCC announces the close of bidding (clock and assignment phases) of Auction 115 by 31 Dec 2027.",
   "signposts": "Short-form filings close on schedule (6-20 January 2027); the qualified-bidder list appears (around March 2027); bidding actually opens on 27 April 2027."
  },
@@ -16,7 +16,7 @@
   "id": "b_ucb_above",
   "order": 19,
   "group": "Spectrum prices",
-  "question": "Will the upper C-band auction clear above the lower C-band's price of about $0.94 per MHz-pop?",
+  "question": "Will the upper C-band auction clear above $0.94 per MHz-pop on today's 335M population, the 2021 lower C-band's headline price (about 8% above its $0.87 like-for-like)?",
   "horizon": "End 2028",
   "probability": 31,
   "low": 26,

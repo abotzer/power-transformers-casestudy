@@ -39,10 +39,11 @@ def main(d, out):
     L = ["# Wireless spectrum: market reference and probabilistic outlook", ""]
     if head:
         L += ["**%s**" % head["body"], ""]
-    L += ["Prepared for Fulton Asset Management by Whitesail Labs, November 2026. The interactive report has the charts, market map, forecast panel and full source list; this file holds the text. It is a market reference, not investment advice.", ""]
+    L += ["Prepared for Fulton Asset Management by Whitesail Labs, November 2026. The interactive report has the charts, market map, forecast panel and full source list; this file holds the text. It is a market reference, not investment advice.", "",
+          "Units: a MHz-pop is one megahertz of bandwidth covering one person, so a nationwide 10 MHz licence is about 3.35 billion MHz-pops, and prices per MHz-pop let bands of different width and reach be compared. An exabyte (EB) is a billion gigabytes. Uplink is data sent from a device to the network.", ""]
     L += ["## Our verdict", ""]
     for p in [p for p in plan if p["kind"] == "verdict"]:
-        L += ["**%s**" % p["heading"], "", bullets(p["body"]), ""]
+        L += ["**%s**" % p["heading"], "", bullets(p["body"]).replace("on the Projections tab", "in the signposts table below"), ""]
     L += ["## Scenarios for 2030", "", "| Scenario | Probability | What it looks like |", "|---|---|---|"]
     L += ["| **%s** | %s%% | %s |" % (cell(s["name"]), s["probability"], cell(s["tagline"])) for s in sc]
     L.append("")
@@ -62,7 +63,7 @@ def main(d, out):
         L.append("")
         for f in [x for x in fc if x["group"] == g]:
             L += ["**%s.** %s" % (f["short"], f["rationale"]), ""]
-    L += ["## Key events and their odds", "", "| Event | By | Probability | Range across lenses |", "|---|---|---|---|"]
+    L += ["## Key events and their odds", "", "Ranges across lenses are narrow partly because the lenses shared research; they are not independent confirmations.", "", "| Event | By | Probability | Range across lenses |", "|---|---|---|---|"]
     L += ["| %s | %s | %s%% | %s-%s%% |" % (cell(p["question"]), p["horizon"], p["probability"], p["low"], p["high"]) for p in pr]
     L.append("")
     L += ["## Key findings", ""]
@@ -73,17 +74,18 @@ def main(d, out):
             L += ["| Figure | Value |", "|---|---|"]
             L += ["| %s | %s |" % (cell(n["label"]), link(cell(n["value"]), n.get("source_url"))) for n in ns]
             L.append("")
-    L += ["## Listed companies and funds with spectrum exposure", "", "Exposure is our judgment of how much of the company's value would move if spectrum became scarcer. A map of the market, not a recommendation.", "",
-          "| Name | Ticker | Category | Exposure | Market cap | Spectrum share of value | Holdings |", "|---|---|---|---|---|---|---|"]
+    L += ["## Listed companies and funds with spectrum exposure", "", "Exposure is our judgment of how much the share price would move if US spectrum prices rose. It combines the spectrum share of value with whether the company can sell that spectrum. A map of the market, not a recommendation.", "",
+          "| Name | Ticker | Category | Exposure | Market cap | Spectrum share of value | Holdings | How it fares in our four futures |", "|---|---|---|---|---|---|---|---|"]
     rank = {"High": 0, "Medium": 1, "Low": 2}
     for u in sorted(uni, key=lambda u: (rank.get(u["exposure_grade"], 3), u["category"], u["name"])):
-        L.append("| %s | %s | %s | %s | %s | %s | %s |" % (link(cell(u["name"]), u.get("website")), cell(u["ticker"]), cell(u["category"]), u["exposure_grade"],
-                                                          cell(u.get("market_cap_label")), cell(u.get("spectrum_pct_ev")), cell(u["holdings"])[:220]))
+        mc = cell(u.get("market_cap_label")) or ("" if u["category"] == "Funds and ETFs" else "Not confirmed")
+        L.append("| %s | %s | %s | %s | %s | %s | %s | %s |" % (link(cell(u["name"]), u.get("website")), cell(u["ticker"]), cell(u["category"]), u["exposure_grade"],
+                                                               mc, cell(u.get("spectrum_pct_ev")), cell(u["holdings"]), cell(u.get("scenario_view"))))
     L += ["", "## Signposts and upcoming events", "", "| When | What | Why it matters |", "|---|---|---|"]
     L += ["| %s | %s | %s |" % (cell(w["when"]), cell(w["item"]), cell(w["why"])) for w in watch]
     L += ["", "## Method and caveats", ""]
     for p in [p for p in plan if p["kind"] == "method"]:
-        L += ["**%s.** %s" % (p["heading"], p["body"]), ""]
+        L += ["**%s.** %s" % (p["heading"], p["body"].replace("is in the Appendix", "is in the Appendix of the interactive report")), ""]
     for p in [p for p in plan if p["kind"] == "caveat"]:
         L += [p["body"], ""]
     open(out, "w").write("\n".join(L))

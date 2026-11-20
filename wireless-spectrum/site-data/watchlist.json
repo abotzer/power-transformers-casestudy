@@ -77,7 +77,7 @@
  {
   "id": "w07",
   "sort_date": "2027-02-01",
-  "when": "Late Jan to mid-Feb 2027 (T-Mobile reported Q4 2025 on 10 Feb 2026)",
+  "when": "Late Jan to mid-Feb 2027",
   "item": "AT&T, Verizon, T-Mobile, Comcast and Charter report Q4 2026 results and 2027 guidance.",
   "why": "Watch 2027 capex against Verizon's $16.0-16.5B and T-Mobile's about $10B for 2026, plus Auction 115 budgets and pricing. Rising capex or ARPA would hint at scarcity, and more promotions with falling ARPA (Verizon -1.9% in Q3) support our grind case for carrier revenue and returns.",
   "sources": [
@@ -201,10 +201,10 @@
  },
  {
   "id": "w18",
-  "sort_date": "2027-07-04",
-  "when": "By 4 July 2027 (statutory deadline); exact close depends on bidding",
+  "sort_date": "2027-07-15",
+  "when": "July 2027 (bidding usually ends 10-13 weeks after the 27 April start; statutory date 4 July 2027)",
   "item": "The 2025 budget law requires at least 100 MHz of upper C-band auctioned by 4 July 2027, and Auction 115 results follow the close of bidding.",
-  "why": "Gross bids above about $50B (160 MHz x 335M pops x $0.94) beat the lower C-band price and resolve that forecast Yes, while results near TD Cowen's $30B floor would show carrier restraint and falling mid-band prices. The winner list also settles whether SpaceX wins licences.",
+  "why": "Gross bids above about $50B (160 MHz x 335M pops x $0.94) resolve that forecast Yes (about $46.6B would already match 2021's $0.87 on the same population basis), while results near TD Cowen's $30B floor would show carrier restraint and falling mid-band prices. The winner list also settles whether SpaceX wins licences.",
   "sources": [
    "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled",
    "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band",
@@ -246,7 +246,7 @@
   "id": "w22",
   "sort_date": "2027-11-30",
   "when": "30 Nov 2027 (target)",
-  "item": "SpaceX and EchoStar target final closing on 65 MHz (AWS-4, H-block, unpaired AWS-3), the step at which SpaceX pays about $20B including up to $11B in SpaceX stock.",
+  "item": "SpaceX and EchoStar target final closing on 65 MHz (AWS-4, H-block, unpaired AWS-3), the step at which SpaceX pays $8.5B in cash and delivers 261.8M SpaceX shares (about $11.1B at the $42.40 deal price, about $36B at the 13 November close).",
   "why": "Closing resolves our EchoStar-deal forecast and lets SpaceX use the bands, which it cannot do before this step. It also leaves EchoStar holding about 261.8M SpaceX shares.",
   "sources": [
    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",

@@ -355,6 +355,30 @@ def main(src, out):
     write(out, "key_numbers", S.get("key_numbers", []))
     write(out, "watchlist", S.get("watchlist", []))
     write(out, "universe", build_universe(S.get("universe", [])))
+    apply_edits(out)
+
+
+def apply_edits(out):
+    """Apply editorial.EDITS (text replacements) and editorial.SETS (field values) to the written datasets."""
+    cache = {}
+
+    def rows(name):
+        if name not in cache:
+            cache[name] = json.load(open(os.path.join(out, name + ".json")))
+        return cache[name]
+
+    def row(name, rid):
+        r = next((x for x in rows(name) if x.get("id") == rid), None)
+        assert r is not None, (name, rid)
+        return r
+    for name, rid, field, old, new in E.EDITS:
+        r = row(name, rid)
+        assert old in str(r.get(field, "")), ("edit text not found", name, rid, field, old[:60])
+        r[field] = r[field].replace(old, new)
+    for name, rid, field, value in E.SETS:
+        row(name, rid)[field] = value
+    for name, data in cache.items():
+        write(out, name, data)
 
 
 if __name__ == "__main__":
