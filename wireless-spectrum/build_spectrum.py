@@ -120,6 +120,9 @@ def build_charts(R, F):
                 q = dict(series=spec.get("series_map", {}).get(p["series"], p["series"]), x=spec.get("x_map", {}).get(p["x"], p["x"]),
                          y=p["y"], note=clean(p.get("note")))
                 pts.append(q)
+        for p in pts:
+            if p["x"] in spec.get("overrides", {}):
+                p["y"] = spec["overrides"][p["x"]]
         if spec.get("from_forecast"):
             pts = spec["from_forecast"](F, pts)
         if spec.get("swap"):
@@ -161,12 +164,17 @@ def build_deals(R):
         if ppm is not None and ("n/a" in str(r.get("usd_per_mhz_pop")) or ppm > 20):
             ppm = None
         raw_price = clean(r.get("price_usd_b"))
-        label = ("$%sB" % (("%.2f" % price).rstrip("0").rstrip(".") if price < 10 else "%.1f" % price)) if price is not None else raw_price
-        if price is not None and re.search(r"[-–]|est|~|reported|plus|\+", raw_price):
-            label = "$" + raw_price.replace("$", "") + ("B" if not re.search(r"B\b", raw_price) else "")
-            label = re.sub(r"\s*\(.*?\)", "", label).strip()
-            if raw_price.startswith("~"):
-                label = "~$" + raw_price[1:].split(" ")[0] + "B"
+
+        def fmt_b(v):
+            return "$%gM" % round(v * 1000, 1) if v < 0.1 else "$%gB" % round(v, 2)
+        if price is None:
+            label = raw_price
+        elif re.match(r"~?\d[\d.]*\s*[-–]\s*\d", raw_price):
+            label = "$" + re.match(r"~?([\d.]+\s*[-–]\s*[\d.]+)", raw_price).group(1).replace(" ", "") + "B"
+        elif raw_price.startswith("~"):
+            label = "~" + fmt_b(price)
+        else:
+            label = fmt_b(price)
         rows.append(dict(id=slug(name, 48), kind=kind, name=E.DEAL_RENAME.get(name, name), date=date.split(" (")[0], sort_date=sort_date,
                          buyer=clean(r.get("buyer")), seller=clean(r.get("seller")), band=clean(r.get("band")), band_class=clean(r.get("band_class")),
                          mhz=clean(r.get("mhz")), price_usd_b=price, price_label=label, usd_per_mhz_pop=round(ppm, 3) if ppm is not None else None,
@@ -292,7 +300,7 @@ def main(src, out):
     V = load(os.path.join(src, "verification.json"), {})
     F = load(os.path.join(src, "forecasts.json"), {})
     Fq = load(os.path.join(src, "forecast_questions.json"), [])
-    M = load(os.path.join(src, "map.json"))
+    M = load(os.path.join(src, "map.json"), None)
     G = load(os.path.join(src, "glossary.json"))
     S = load(os.path.join(src, "synthesis.json"), {})
 
@@ -309,11 +317,12 @@ def main(src, out):
     write(out, "probabilities", pr)
     write(out, "forecast_panel", pn)
     write(out, "scenarios", sc)
-    nodes, edges, titles = build_map(M)
-    write(out, "value_chain_nodes", nodes)
-    write(out, "value_chain_edges", edges)
-    if titles:
-        json.dump(titles, open(os.path.join(HERE, "dashboard", "layer_titles.json"), "w"))
+    if M:
+        nodes, edges, titles = build_map(M)
+        write(out, "value_chain_nodes", nodes)
+        write(out, "value_chain_edges", edges)
+        if titles and len(titles) == 7:
+            json.dump(titles, open(os.path.join(HERE, "dashboard", "layer_titles.json"), "w"))
     write(out, "glossary", build_glossary(G))
     write(out, "figures", E.figures())
     write(out, "plan", E.plan(fc, pr, sc))

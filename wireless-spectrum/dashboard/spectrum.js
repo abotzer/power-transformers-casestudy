@@ -7,6 +7,7 @@ fmtBy = function (fmt, v) {
   const a = Math.abs(v);
   if (fmt === 'usd2') return (v < 0 ? '-$' : '$') + d3.format(',.2f')(a);
   if (fmt === 'usd') return '$' + d3.format(',.0f')(v);
+  if (fmt === 'int') return d3.format(',.0f')(v);
   if (fmt === 'usdp') return '$' + (a < 0.01 ? trim0(d3.format('.4f')(v)) : d3.format(',.2f')(v));
   if (fmt === 'usd_t') return '$' + d3.format(',.1f')(v) + 'T';
   if (fmt === 'x') return d3.format(',.1f')(v) + 'x';

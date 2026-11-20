@@ -1981,18 +1981,28 @@ function drawGeneric(el, legend, m, list) {
 
 
 // ---------- wireless spectrum report: renderers ----------
-function fmtF(fmt, v) {
+// extra number formats for this report, layered over the shared chart engine's fmtBy
+const fmtByBase = fmtBy;
+const trim0 = (s) => s.replace(/(\.\d*?)0+(?=\D*$)/, '$1').replace(/\.(?=\D*$)/, '');
+fmtBy = function (fmt, v) {
   if (v === null || v === undefined || Number.isNaN(v)) return '';
-  if (fmt === 'usd2') return '$' + d3.format(',.2f')(v);
+  const a = Math.abs(v);
+  if (fmt === 'usd2') return (v < 0 ? '-$' : '$') + d3.format(',.2f')(a);
   if (fmt === 'usd') return '$' + d3.format(',.0f')(v);
+  if (fmt === 'usdp') return '$' + (a < 0.01 ? trim0(d3.format('.4f')(v)) : d3.format(',.2f')(v));
   if (fmt === 'usd_t') return '$' + d3.format(',.1f')(v) + 'T';
   if (fmt === 'x') return d3.format(',.1f')(v) + 'x';
+  if (fmt === 'x2') return (a < 1 ? d3.format('.2f')(v) : d3.format(',.1f')(v)) + 'x';
+  if (fmt === 'pctx') return (a < 1 ? d3.format('.2f')(v) : d3.format('.0f')(v)) + '%';
+  if (fmt === 'numx') return a < 1 ? d3.format('.2f')(v) : a < 10 ? d3.format('.1f')(v) : d3.format(',.0f')(v);
   if (fmt === 'mhz') return d3.format(',.0f')(v) + ' MHz';
   if (fmt === 'eb') return d3.format(',.0f')(v) + ' EB';
   if (fmt === 'm') return d3.format(',.0f')(v) + 'M';
   if (fmt === 'm1') return d3.format(',.1f')(v) + 'M';
-  return fmtBy(fmt, v);
-}
+  return fmtByBase(fmt, v);
+};
+function fmtF(fmt, v) { return fmtBy(fmt, v); }
+Object.assign(TAG_ATTR, { Supports: 'High', Mixed: 'Medium', Undercuts: 'Low' });
 const wq = (id) => 'id=' + encodeURIComponent(id);
 function detailsBox(summary) {
   const d = document.createElement('details');
@@ -2116,7 +2126,10 @@ function drawStrip(el, f, panel) {
   const ticks = isLog ? x.ticks(4).filter((t, i, a) => a.length <= 5 || i % 2 === 0) : x.ticks(4);
   ticks.forEach((t) => {
     svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', axisY - 3).attr('y2', axisY + 3).style('stroke', 'var(--cds-chart-axis)');
-    svg.append('text').attr('x', x(t)).attr('y', H - 4).attr('text-anchor', 'middle').text(fmt(t).replace(/\.0(?=\D*$)/, ''));
+    const lbl = svg.append('text').attr('x', x(t)).attr('y', H - 4).attr('text-anchor', 'middle').text(fmt(t).replace(/\.0(?=\D*$)/, ''));
+    const lw = lbl.node().getComputedTextLength();
+    if (x(t) - lw / 2 < 0) lbl.attr('text-anchor', 'start').attr('x', 0);
+    else if (x(t) + lw / 2 > W) lbl.attr('text-anchor', 'end').attr('x', W);
   });
   const p10 = num(f.p10), p50 = num(f.p50), p90 = num(f.p90), cur = num(f.current);
   if (p10 !== null && p90 !== null) {

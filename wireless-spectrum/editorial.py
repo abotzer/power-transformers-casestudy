@@ -69,16 +69,21 @@ def _swap(pts):
 
 
 CTIA = "https://www.benton.org/headlines/ctia-2026-annual-survey-highlights"
+AI_X = {"GenAI share of mobile traffic, measured Apr 2025 (Ericsson)": "Gen AI share of traffic, 2025", "Typical mobile uplink share today (Ericsson)": "Uplink share of all traffic today",
+        "Uplink share of GenAI app traffic (Ericsson)": "Uplink share of gen AI traffic", "Uplink share, text LLM traffic (Ookla est.)": "Uplink share, text chatbots",
+        "Uplink share, voice/agentic AI (Ookla est.)": "Uplink share, voice and agents", "US urban uplink share 2031, medium GenAI (Ericsson ETR)": "US urban uplink share, 2031 scenario",
+        "Uplink share in highest-AI cells 2035 (Nokia)": "Uplink in busiest AI cells, 2035", "AI share of all network traffic 2035 (Nokia)": "AI share of all traffic, 2035 (Nokia)",
+        "AI share of broadband traffic 2034 (CTIA)": "AI share of broadband, 2034 (CTIA)"}
 CHARTS = [
     # ---- demand
-    dict(id="us_traffic", group="demand", order=1, domain="demand", **{"from": "us_traffic"}, kind="line", fmt="int",
+    dict(id="us_traffic", group="demand", order=1, domain="demand", **{"from": "us_traffic"}, kind="line", fmt="dec1",
          title="US mobile data traffic", source_url=CTIA, confidence="S",
          note="Exabytes (trillion megabytes) a year, from CTIA's annual survey. The series includes fixed wireless home internet. Survey editions changed in 2015 and 2017, so the early years are approximate."),
     dict(id="us_traffic_growth", group="demand", order=2, domain="demand", **{"from": "us_traffic_growth"}, kind="bar", fmt="pct",
-         keep=lambda p: p["x"] >= "2019", title="Traffic growth is slowing", source_url=CTIA, confidence="S",
+         keep=lambda p: p["x"] >= "2019", overrides={"2025": 20}, title="Traffic growth is slowing", source_url=CTIA, confidence="S",
          note="Year-on-year growth in US mobile data traffic (CTIA). 2025's 20% was the slowest year since 2020 and the sharpest one-year slowdown in the series."),
     dict(id="global_traffic", group="demand", order=3, domain="demand", **{"from": "global_traffic"}, kind="bar", fmt="int",
-         keep=lambda p: p["series"] in ("Actual", "Forecast"), x_map={"2031": "2031 (forecast)"},
+         keep=lambda p: p["series"] in ("Actual", "Forecast"), x_map={"2031": "2031F"},
          title="Global mobile traffic, actual and forecast", source_url="https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/mobile-traffic-forecast", confidence="P",
          note="Exabytes a month including fixed wireless (Ericsson). The June 2026 forecast of 515 EB a month in 2031 implies 17% a year, slowing to 14%. Ericsson cut its 2030 forecast from 473 to 430 between its November 2024 and June 2025 editions."),
     dict(id="forecast_overshoot", group="demand", order=4, kind="bar", fmt="int", title="Usage forecasts have run high",
@@ -91,7 +96,7 @@ CHARTS = [
          title="Fixed wireless home internet subscribers", source_url="https://www.t-mobile.com/news/business/t-mobile-q4-2025-earnings", confidence="P",
          note="Millions at year end. Fixed wireless sells spare mobile capacity as home broadband and took most of the growth in US traffic. Additions are now slowing: Verizon added 159K in Q3 2026 against 261K a year earlier."),
     dict(id="ai_traffic", group="demand", order=6, domain="demand", **{"from": "ai_traffic_scenarios"}, kind="hbar", fmt="pctx",
-         keep=lambda p: p["series"] == "Share (%)", series_map={"Share (%)": "Share"},
+         keep=lambda p: p["series"] == "Share (%)", series_map={"Share (%)": "Share"}, x_map=AI_X,
          title="AI traffic today is tiny, but upload-heavy", source_url="https://www.ericsson.com/en/reports-and-papers/mobility-report/articles/genai-data-traffic-today-june-2025", confidence="S",
          note="Percent, measured and forecast. Ericsson measured generative AI apps at 0.06% of mobile traffic in April 2025, but 26% of that traffic was uplink against about 10% for mobile overall. The 2031-2035 figures are scenarios from vendors and the industry body, who benefit from a scarcity story."),
     # ---- capacity
@@ -113,7 +118,7 @@ CHARTS = [
     # ---- supply
     dict(id="holdings", group="supply", order=1, domain="supply", **{"from": "holdings_by_holder"}, kind="stack", fmt="int", height=280, wide="Yes",
          keep=lambda p: p["series"] in ("Low-band", "Mid-band"),
-         x_order=["T-Mobile", "AT&T", "Verizon", "SpaceX (pending)", "EchoStar (remainder)", "Comcast", "Array (TDS)", "Charter"],
+         x_map={"EchoStar (remainder)": "EchoStar (rest)"}, x_order=["T-Mobile", "AT&T", "Verizon", "SpaceX (pending)", "EchoStar (rest)", "Comcast", "Array (TDS)", "Charter"],
          title="Who holds US low- and mid-band spectrum", source_url="https://www.fcc.gov/document/order-granting-spacex-echostar-applications", confidence="S",
          note="Nationwide average MHz, weighted by population (Whitesail estimates from filings and TD Cowen totals). SpaceX's 77 MHz is pending the EchoStar and Grain closings. AT&T, Verizon and T-Mobile also hold 600-1,700 MHz each of millimetre wave, which carries little traffic."),
     dict(id="pipeline", group="supply", order=2, domain="supply", **{"from": "pipeline"}, kind="hbar", fmt="int",
@@ -181,7 +186,7 @@ CHARTS = [
          title="Satellites that can reach ordinary phones", source_url="https://www.starlink.com/direct-to-cell", confidence="S",
          note="Satellites in orbit now against those authorized or targeted, log scale. SpaceX is authorized for up to 15,000 next-generation direct-to-cell satellites, with launches from 2027."),
     # ---- invest
-    dict(id="exposure", group="invest", order=1, kind="hbar", fmt="pct", height=460, wide="Yes",
+    dict(id="exposure", group="invest", order=1, kind="hbar", fmt="pctx", height=460, wide="Yes",
          points=[("Spectrum holders", "EchoStar (ECHO)", 100, "Mostly SpaceX shares and cash from its spectrum sales"),
                  ("Spectrum holders", "Anterix (ATEX)", 95, "900 MHz licences are nearly the whole company"),
                  ("Spectrum holders", "NextNav (NN)", 85, "Lower 900 MHz licences; value depends on an FCC petition"),
@@ -234,7 +239,7 @@ def figures():
         ("wifi", "demand", 3, "Share of US smartphone data that goes over Wi-Fi", "82-89", "%", "", "Opensignal, 2024, by carrier", "https://insights.opensignal.com/2024/10/31/wi-fi-drives-smartphone-data-consumption-in-the-us-but-trends-vary-across-operators", "S"),
         ("rpgb", "demand", 4, "Service revenue per GB of traffic, 2025", "1.48", "", "$", "About -20% a year since 2020", "https://lightreading.com/wireless/inflation-mostly-skipped-the-wireless-bill", "S"),
         ("sub6", "supply", 1, "Licensed sub-6 GHz mobile spectrum in the US", 1155, "MHz", "", "Implied by the FCC's 385 MHz screen; low-band about 204 MHz", "https://www.fcc.gov/document/order-granting-spacex-echostar-applications", "S"),
-        ("big3", "supply", 2, "Share held by AT&T, Verizon and T-Mobile", "~85", "%", "", "82% in June 2024, plus AT&T's EchoStar purchase", "https://www.fcc.gov/document/order-granting-spacex-echostar-applications", "S"),
+        ("big3", "supply", 2, "Share of 2021 C-band auction dollars won by AT&T, Verizon and T-Mobile", 96, "%", "", "$78.2B of $81.2B; in the 2026 AWS-3 re-auction they took about 99%", "https://www.lightreading.com/5g/c-band-bidding-wraps-at-$809", "S"),
         ("ucb", "supply", 3, "Upper C-band auction, bidding from 27 Apr 2027", 160, "MHz", "", "3.98-4.14 GHz; analysts expect $30-75B", "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date", "P"),
         ("pipeline", "supply", 4, "Federal pipeline set by the 2025 law", 800, "MHz", "", "At least 300 MHz must be auctioned by 2034", "https://www.wiley.law/alert-One-Big-Beautiful-Bill-Act-Passes-Restoring-FCC-Auction-Authority-and-Establishing-Spectrum-Pipeline", "S"),
         ("cband", "prices", 1, "Lower C-band auction, 2021, per MHz-pop", "0.94", "", "$", "$81.2B of bids for 280 MHz", "https://www.lightreading.com/5g/c-band-bidding-wraps-at-$809", "S"),
