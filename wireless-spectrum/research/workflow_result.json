@@ -3249,6 +3249,3685 @@
    "gaps": "1) WebFetch was blocked for nearly all hosts in this session (ericsson.com, lightreading.com, telecoms.com, techblog.comsoc.org and others failed to resolve). Every figure here therefore comes from search-result excerpts, not from reading the primary documents (Ericsson PDFs, FCC orders, CTIA PDFs, the Brattle report). Those hosts need to be allowed to check page-level details.\n2) The 2018 US traffic figure (~28.6 trillion MB) is from memory, not re-checked. The licensed sub-6 GHz spectrum totals (~716 MHz in 2018, ~1,150 MHz in 2025) are my own estimates. The 2018-2025 lever breakdown depends on both.\n3) No current carrier disclosures of network utilization or capacity headroom were found. The latest is Verizon's chart from around 2020. The mmWave usage figure (0.5%) is about 2021-22.\n4) No sourced spectral-efficiency figure for 3G (HSPA), so 3G is left out of that chart. ITU IMT-Advanced, IMT-2020 and IMT-2030 numeric targets were not confirmed. The 6G figures are vendor targets.\n5) No Wi-Fi offload share for 2025 or 2026. The 2017-18 figures measure time on Wi-Fi; the 2024 figures measure share of data. They are not comparable.\n6) CTIA's 2025 total cell-site count was not found. The WIA and CTIA site definitions differ.\n7) No current US wireless-only capex-as-%-of-revenue series was found; carrier capex guidance includes fiber. Dell'Oro's 5G-peak figure (~18%) is inferred from its forecast wording.\n8) Paywalled analysis was not accessible: New Street, MoffettNathanson, TD Cowen and Tim Farrar notes on spectrum value versus the cost of densification. Minimum opening bids for upper C-band were also not found.\n9) Ericsson's November 2026 Mobility Report launches November 30, 2026; I used the June 2026 edition.\n10) No source quantifies the bandwidth saved by on-device AI. Mobile Experts' uplink-overload claim and the full conclusion of the RCR uplink critique were not reviewed.\n11) The Reuters 2026-10-08 story could not be opened. Search results point to SpaceX buying Grain Management's nationwide 800 MHz holdings (up to 14 MHz paired, price not disclosed), but this is unconfirmed.\n12) The 3.45 GHz auction proceeds (~$22.5B) and the lower C-band $/MHz-pop figure are my recall or calculation, not re-verified this session.",
    "searches_used": 49
   },
+  "supply": {
+   "domain": "supply",
+   "answer": "Bottom line. US licensed mobile spectrum is concentrated, and the 2025-2026 deals made it more so. Over the next ten years, though, supply grows faster than at any time since 2021. Low-band (under 1 GHz) is the one class where scarcity is clearly real and getting worse: there is essentially no new low-band in the pipeline. Mid-band supply is set to grow by about a third by 2030 and by roughly 60% by 2035 if the statute is followed. That cuts against the idea that licensed rights in general become \"significantly more valuable.\" The thesis holds up best for nationwide low-band and for rights usable by both satellites and terrestrial networks. It holds up worst for generic mid-band.\n\n1. How much spectrum exists and who holds it (Nov 2026)\n- Total supply. The FCC's overall spectrum screen is 385 MHz (DA 25-919). The screen is set at roughly one-third of \"suitable and available\" spectrum, which implies about 1,155 MHz of sub-6 GHz licensed mobile spectrum. That splits into about 204 MHz low-band and about 1,000 MHz mid-band: AWS, PCS, WCS, 2.5 GHz, 3.45 GHz, CBRS PALs and C-band. Separately there is about 4,950 MHz of licensed mmWave, screened at 1,850 MHz.\n- Concentration. As of June 2024, AT&T, Verizon and T-Mobile held about 82% of screen spectrum on a MHz-POPs basis. AT&T's $23B purchase of EchoStar's 600 MHz and 3.45 GHz licenses closed July 28, 2026 and added about 50 MHz of nationwide average. That plausibly lifts the big three to about 85%.\n- Holdings by carrier. TD Cowen's sub-6 GHz totals are T-Mobile 376 MHz, AT&T 314 MHz after EchoStar, and Verizon 279 MHz. PolicyTracker puts AT&T at 375 MHz on a population-weighted basis. The methods differ, so treat these as ranges.\n- My split. My estimated nationwide averages are below; they are derived, not published.\n\n| Holder | Low-band | Mid-band | mmWave |\n|---|---|---|---|\n| T-Mobile | ~50 | ~325 | ~600 (weak estimate) |\n| AT&T | ~72 | ~250 | ~1,040 |\n| Verizon | ~52 | ~235 | ~1,700 (CEO, Q3 2026) |\n\n- SpaceX. SpaceX is now a real terrestrial holder, but most of it is not yet closed:\n  - 65 MHz from EchoStar (AWS-4 40 MHz, H-block 10 MHz, unpaired AWS-3 15 MHz), approved May 12, 2026. The licenses moved into a trust on May 22, 2026, and the acquisition closing is targeted for Nov 30, 2027 (about $20B, up to $11B of it in SpaceX stock).\n  - Up to 14 MHz paired of nationwide 800 MHz from Grain, signed Oct 8, 2026 at a reported ~$8B. The FCC accepted the filing Nov 10; petitions are due Dec 1.\n- Smaller holders and remainders:\n  - EchoStar keeps small remainders (some paired AWS-3, 700 MHz E block, CBRS PALs, mmWave) and aims to sell its remaining terrestrial spectrum by September 2028.\n  - Array (former UScellular) sold to AT&T ($1.018B), Verizon ($1.0B) and T-Mobile (about $178M). It keeps its C-band.\n  - Comcast and Charter hold mainly CBRS PALs (about $922M combined at auction). Comcast's 600 MHz is leased to T-Mobile, with a sale expected around 2028.\n\n2. The aggregation rules and how much they bind\n- How the screen works. It is a trigger for closer review, not a cap.\n- AT&T. Its post-EchoStar holdings reach 405 MHz in some counties, including up to 110 MHz below 1 GHz, which is above the 385 MHz trigger. The deal was still approved, with conditions (faster buildout and a $2.4B EchoStar escrow).\n- T-Mobile. It is attributed 328-370 MHz county by county, so it is close to the screen.\n- Verizon. It sits at 242-302 MHz and has the most headroom. Its Array deal triggered enhanced review in 98 markets because of its below-1-GHz holdings, and was still approved.\n- No 2025-2026 deal was blocked. The time-limited 40 MHz cap on 3.45 GHz holdings expired in January 2026.\n- What changes next. The 160 MHz of upper C-band will be added to the screen after the auction, lifting the trigger to about 438 MHz. The FCC's 25 MHz auction proposal includes no bright-line limit on how much any one bidder can win. In October 2026, FCC Chairman Carr said the agency may need to look at spectrum ownership in some markets to prevent over-consolidation.\n- Net effect. The rules limit the big three most in low-band and in local mid-band stacking, and they explain why the buyer pool is narrow.\n\n3. Terrestrial pipeline\n- The statute. The July 2025 One Big Beautiful Bill Act (P.L. 119-21) restored FCC auction authority through Sept 30, 2034 and set an 800 MHz pipeline:\n  - The FCC must auction at least 300 MHz, including at least 100 MHz of upper C-band by July 4, 2027.\n  - At least 500 MHz must come from federal spectrum between 1.3 and 10.5 GHz. NTIA must identify at least 200 MHz by July 2027 for auction by July 2029, and the remainder by July 2029 for auction by July 2033.\n  - The 3.1-3.45 GHz and 7.4-8.4 GHz bands are excluded (1,350 MHz in total).\n- Firm:\n  - Upper C-band (3.98-4.14 GHz, 160 MHz) goes up for auction as Auction 115 starting April 27, 2027, with 3,248 licenses.\n  - Satellite operators estimate $4.33B to clear the band.\n  - TD Cowen estimates proceeds of $30-75B.\n- Done:\n  - The AWS-3 reauction (Auction 113) closed June 23, 2026 at $3.57B for 200 licenses.\n  - Verizon took about $3.2B of that. New Street puts the average price at $2.53 per MHz-POP.\n- Likely:\n  - 1675-1695 MHz plus 2020-2025 MHz (25 MHz). The NPRM came in October 2026. NTIA identified the first 5 MHz in February 2026.\n  - 2.7 GHz (2.69-2.9 GHz, about 210 MHz). Federal relocation plans were approved in April 2026, and Carr targets an auction in 2028.\n- Uncertain:\n  - 7.125-7.4 GHz (275 MHz). NTIA's final report is due December 2026.\n  - Part of 4.4-4.94 GHz. Nine Defense Department and agency relocation plans are under review.\n  - 1.3-1.35 GHz, which is listed only for future study.\n- Not auctions:\n  - 4.9 GHz (50 MHz) is going to FirstNet through a band manager; the D.C. Circuit upheld the FCC order in July 2026.\n  - NextNav's request for 15 MHz in the lower 900 MHz band is a license-modification petition. A draft NPRM went to White House review (OIRA) in March 2026, and it faces heavy opposition.\n  - CBRS has no FCC proposal pending.\n- My estimates of new terrestrial licensed MHz auctioned after July 2025:\n\n| By end of | P10 | P50 | P90 |\n|---|---|---|---|\n| 2030 | ~185 | ~395 | ~670 |\n| 2035 | ~450 | ~700 | ~960 |\n\nAt P50 for 2035, that is about +60% on today's ~1,155 MHz base.\n\n4. Satellite (MSS) bands and direct-to-device\n- 2 GHz (AWS-4, 40 MHz) is going to SpaceX. In October 2026 the FCC authorized 15,000 direct-to-device satellites, with 7,500 due by Oct 7, 2032. SpaceX cannot use the EchoStar bands until the second closing step.\n- Big LEO (1.6/2.4 GHz). In April 2026 (DA 26-398) the FCC dismissed petitions from SpaceX, AST, Iridium, Kepler and Sateliot to share the Big LEO, L-band and 2 GHz bands, keeping incumbents' exclusive rights. Amazon Leo's ~$11.5B purchase of Globalstar was cleared Oct 27, 2026 and is expected to close in 2027.\n- L-band. AST holds rights to 40 MHz of Ligado's L-band; Inmarsat litigation continues.\n- Satellite-terrestrial sharing rules. On Oct 29, 2026 the FCC proposed adding 482 MHz to the Supplemental Coverage from Space (SCS) framework, which lets satellite operators use carriers' spectrum, taking it from 5 bands to 13. In April 2026 it replaced the EPFD limits (power caps that protect geostationary satellites); most of the new rules took effect July 13, 2026.\n- WRC-27 (Oct 18-Nov 12, 2027). Agenda item 1.13 studies secondary MSS use inside IMT bands from 694 MHz to 2.7 GHz. Agenda item 1.7 studies IMT (mobile) identification in 4.4-4.8 GHz, 7.125-8.4 GHz and 14.8-15.35 GHz. Decisions take effect January 2029.\n\n5. Evidence that supports the thesis\n- Low-band is structurally scarce. No meaningful new low-band supply is coming.\n- New buyers are paying up. Grain paid T-Mobile $2.9B plus 600 MHz licenses and agreed to resell to SpaceX about two months later for a reported ~$8B, above New Street's ~$6B view of Grain's target. AST was also reportedly interested.\n- Non-traditional buyers have committed about $40B. SpaceX has about $28B across its deals and Amazon $11.5B for Globalstar.\n- Satellite firms want exclusive rights. Incumbents defended exclusivity and the FCC upheld it.\n- Industry demand estimates run far above supply. GSMA puts North America's 2035-2040 mid-band need at 2.7-3.8 GHz, against about 1.0 GHz of mid-band today.\n- Concentration is high and the rules limit who can buy, which supports scarcity value for spectrum already held.\n\n6. Evidence that undercuts the thesis\n- Supply is rising sharply: about +395 MHz by 2030 and +700 MHz by 2035 at P50.\n- Prices are not rising:\n  - Auction 113 averaged $2.53/MHz-POP versus about $2.71 for paired AWS-3 in 2015, which is a real-terms decline.\n  - TD Cowen's upper C-band range implies about $0.56-1.40/MHz-POP, against about $0.94 in the 2021 C-band auction.\n  - AT&T-EchoStar implies about $1.37/MHz-POP and SpaceX's AWS-4/H-block deal about $1.01.\n- The US mid-band \"gap\" is disputed. PolicyTracker counts 1-7 GHz spectrum assigned to operators at US 791 MHz, China 835, Germany 879 and UK 943 MHz. CTIA's much larger gap rests on a 3 GHz-and-up definition.\n- Carriers are signaling restraint:\n  - Verizon talks about \"build versus buy\" and says upper C-band takes 4-5 years to deploy.\n  - T-Mobile says it will bid only if spectrum is cheaper than densifying its network.\n  - AT&T's leverage is 3.13x and it cut 2027-28 capex guidance. Its CEO told investors not to \"over-rotate\" on SpaceX's single low-band carrier.\n- Policy is moving toward sharing, not new monopolies: SCS leasing, the big three's satellite joint venture signed Oct 1, 2026 (pooling spectrum for satellite partners), and new auction bands that carry secondary MSS allocations. All of these make it less necessary to own spectrum outright.\n- The buyer pool is narrow. Auction 113 had 17 qualified bidders and 7 winners, and Verizon spent about 89% of the money.\n\n7. Implications by horizon\n- 2028: upper C-band licensed (very likely), SpaceX closed on about 80 MHz of terrestrial spectrum (likely), and a 2.7 GHz auction underway (about 55%).\n- 2030: the screen near ~500 MHz, sub-6 supply about 1,500-1,550 MHz, and the big three still above 75% of spectrum.\n- 2035: the federal 500 MHz mostly auctioned if NTIA and the Defense Department deliver, with a large upper mid-band (7-8 GHz) tranche depending on WRC-27.\n\nThe scarcity premium most likely persists in low-band and in rights usable by both satellites and terrestrial networks. It most likely compresses in mid-band.",
+   "findings": [
+    {
+     "id": "obbba-auction-authority",
+     "claim": "The One Big Beautiful Bill Act (P.L. 119-21, July 2025) restored FCC general spectrum auction authority, which had lapsed in 2023.",
+     "value": "Authority through 2034-09-30",
+     "as_of": "2025-07",
+     "source_name": "Wiley Rein LLP alert",
+     "source_url": "https://www.wiley.law/alert-One-Big-Beautiful-Bill-Act-Passes-Restoring-FCC-Auction-Authority-and-Establishing-Spectrum-Pipeline",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "obbba-800-pipeline",
+     "claim": "The law sets a pipeline of at least 800 MHz: the FCC must auction at least 300 MHz (including at least 100 MHz of upper C-band) and at least 500 MHz of federal spectrum in 1.3-10.5 GHz must be repurposed for full-power licensed use.",
+     "value": "800 MHz (300 FCC + 500 federal)",
+     "as_of": "2025-07",
+     "source_name": "Hogan Lovells, America's New Commercial Spectrum Pipeline (Part 1)",
+     "source_url": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "obbba-federal-deadlines",
+     "claim": "NTIA must identify at least 200 MHz of federal spectrum by July 2027 for FCC auction by July 2029, and the remainder of the 500 MHz by July 2029 for auction by July 2033.",
+     "value": "200 MHz by 2027/2029; 300 MHz by 2029/2033",
+     "as_of": "2025-07",
+     "source_name": "Hogan Lovells; Wiley",
+     "source_url": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "obbba-exclusions",
+     "claim": "The federal identification excludes the Lower 3 GHz (3.1-3.45 GHz) and 7.4-8.4 GHz bands, which are heavily used by DoD.",
+     "value": "1,350 MHz excluded (350 + 1,000)",
+     "as_of": "2026-02-25",
+     "source_name": "Congressional Research Service R48862",
+     "source_url": "https://www.congress.gov/crs-product/R48862",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "upper-cband-order",
+     "claim": "FCC order 26-46 (July 22, 2026) reallocated 3.98-4.14 GHz for licensed terrestrial use with a 4.14-4.16 GHz guard band, creating a contiguous 440 MHz 3.7 GHz Service; it will be sold in 20 MHz unpaired blocks.",
+     "value": "160 MHz new",
+     "as_of": "2026-07-22",
+     "source_name": "FCC / Federal Register 91 FR 48700",
+     "source_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15598/upper-c-band-398-42-ghz-expanding-flexible-use-of-the-37-to-42-ghz-band",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "auction-115-schedule",
+     "claim": "The upper C-band auction is Auction 115, offering 3,248 licenses with bidding starting April 27, 2027 and short-form applications due January 6-20, 2027.",
+     "value": "Start 2027-04-27; 3,248 licenses",
+     "as_of": "2026-10",
+     "source_name": "Fierce Network",
+     "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "upper-cband-clearing-cost",
+     "claim": "Incumbent satellite operators estimated combined costs of clearing the upper C-band, to be reimbursed from auction proceeds.",
+     "value": "$4.33 billion",
+     "as_of": "2026",
+     "source_name": "Light Reading",
+     "source_url": "https://www.lightreading.com/regulatory-politics/fcc-sets-key-dates-for-upper-c-band-auction",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "upper-cband-proceeds-est",
+     "claim": "TD Cowen estimated the upper C-band auction could raise a wide range depending on FAA altimeter delays and SpaceX participation.",
+     "value": "$30-75 billion (about $0.56-1.40/MHz-POP for 160 MHz)",
+     "as_of": "2026-06-26",
+     "source_name": "Fierce Network citing TD Cowen",
+     "source_url": "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "auction-113-results",
+     "claim": "AWS-3 reauction (Auction 113) closed after 72 rounds with all 200 licenses sold, 17 qualified and 7 winning bidders.",
+     "value": "$3,572,889,200 gross",
+     "as_of": "2026-06-23",
+     "source_name": "FCC Auction 113 public reporting system",
+     "source_url": "https://auctiondata.fcc.gov/public/projects/auction113",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "auction-113-winners",
+     "claim": "Verizon won 82 licenses for about $3.2B; T-Mobile 102 for $277.8M; AT&T 10 for $120.8M; SpaceX 2 for $8.5M; EchoStar 2 for $1.2M.",
+     "value": "Verizon ~89% of gross proceeds",
+     "as_of": "2026-06",
+     "source_name": "Mobile World Live",
+     "source_url": "https://www.mobileworldlive.com/verizon/fcc-reveals-verizon-t-mobile-among-aws-3-auction-big-winners/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "auction-113-price",
+     "claim": "New Street Research put the Auction 113 average at $2.53/MHz-POP (New York $3.30, Boston $3.28), versus roughly $2.71 for paired AWS-3 in the 2015 Auction 97 (third-party estimate), implying flat nominal prices over 11 years.",
+     "value": "$2.53/MHz-POP",
+     "as_of": "2026-06",
+     "source_name": "Fierce Network citing New Street Research",
+     "source_url": "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "att-echostar-close",
+     "claim": "AT&T closed its purchase of EchoStar's 3.45 GHz and 600 MHz licenses, adding about 30 MHz of 3.45 GHz and about 20 MHz of 600 MHz on a nationwide-average basis.",
+     "value": "~50 MHz for ~$23 billion",
+     "as_of": "2026-07-28",
+     "source_name": "AT&T newsroom",
+     "source_url": "https://about.att.com/story/2026/echostar-spectrum.html",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "spacex-echostar-approval",
+     "claim": "FCC approved both EchoStar sales on May 12, 2026; SpaceX's portion is about 40 MHz AWS-4, 10 MHz H-block and 15 MHz unpaired AWS-3, conditioned on a $2.4B EchoStar escrow.",
+     "value": "65 MHz to SpaceX; 115 MHz total from EchoStar",
+     "as_of": "2026-05-12",
+     "source_name": "FCC news release DOC-421651",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-421651A1.pdf",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "spacex-echostar-trust",
+     "claim": "EchoStar moved the SpaceX spectrum into a trust on May 22, 2026; the acquisition closing, when SpaceX pays, is targeted for November 30, 2027.",
+     "value": "~$20B consideration incl. up to $11B SpaceX stock",
+     "as_of": "2026-09-30",
+     "source_name": "EchoStar Q3 2026 Form 10-Q (SEC)",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "echostar-remaining-sale",
+     "claim": "EchoStar aims to sell its remaining terrestrial spectrum licenses (remainders such as paired AWS-3, 700 MHz E block, CBRS PALs, mmWave) by September 2028.",
+     "value": "Target Sept 2028",
+     "as_of": "2026",
+     "source_name": "Broadband Breakfast",
+     "source_url": "https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028.md",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "tmo-grain-swap",
+     "claim": "T-Mobile sold its 800 MHz portfolio to Grain Management for $2.9B cash plus all of Grain's 600 MHz licenses; FCC approved July 1, 2026 with 3-year interim and 8-year final buildout conditions on Grain.",
+     "value": "$2.9B + 600 MHz licenses",
+     "as_of": "2026-08-10",
+     "source_name": "T-Mobile newsroom",
+     "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "spacex-grain-800",
+     "claim": "SpaceX agreed to buy Grain's nationwide 800 MHz portfolio (up to 14 MHz paired, 546 licenses) to add low-band to Starlink Mobile; WSJ and Reuters reported a value of about $8B, roughly 2.75x Grain's cash cost two months earlier.",
+     "value": "~$8 billion (reported); up to 14 MHz",
+     "as_of": "2026-10-08",
+     "source_name": "Fierce Network; Light Reading",
+     "source_url": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "spacex-grain-fcc-status",
+     "claim": "FCC accepted the SpaceX-Grain applications for filing on November 10, 2026 (WT Docket 26-313); petitions to deny are due December 1 and oppositions December 8.",
+     "value": "Pending; petitions due 2026-12-01",
+     "as_of": "2026-11-10",
+     "source_name": "Light Reading",
+     "source_url": "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "spacex-d2d-15000",
+     "claim": "FCC authorized SpaceX's 15,000-satellite direct-to-device constellation with half due by Oct 7, 2032 and the rest by Oct 7, 2035; operation in AWS-4/H/AWS-3 waits for the EchoStar Step Two closing.",
+     "value": "15,000 satellites",
+     "as_of": "2026-10-07",
+     "source_name": "Via Satellite",
+     "source_url": "https://www.satellitetoday.com/connectivity/2026/10/07/fcc-grants-spacex-approval-for-15000-direct-to-device-satellites-in-mss-spectrum/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "screen-385",
+     "claim": "The FCC's overall spectrum screen for secondary-market review stands at 385 MHz (roughly one-third of suitable and available spectrum, implying ~1,155 MHz in the screen).",
+     "value": "385 MHz",
+     "as_of": "2025-09",
+     "source_name": "FCC Public Notice DA 25-919 (AT&T-EchoStar)",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "screen-mmwave-1850",
+     "claim": "The FCC's separate millimeter-wave aggregation threshold was raised to 1,850 MHz when 24 GHz and 47 GHz were added.",
+     "value": "1,850 MHz",
+     "as_of": "2018-2020",
+     "source_name": "FCC mobile spectrum holdings page",
+     "source_url": "https://www.fcc.gov/node/84288",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "big3-share-82",
+     "claim": "As of June 2024, AT&T, T-Mobile and Verizon together held about 82% of all spectrum included in the screen on a MHz-POPs basis.",
+     "value": "~82%",
+     "as_of": "2024-06",
+     "source_name": "FCC 2024 Communications Marketplace Report (FCC 24-136)",
+     "source_url": "https://docs.fcc.gov/public/attachments/FCC-24-136A1_Rcd.pdf",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "att-max-405",
+     "claim": "After the EchoStar deal, AT&T is attributed with a maximum of 405 MHz in some counties, including up to 110 MHz below 1 GHz; the FCC still approved it with accelerated buildout conditions.",
+     "value": "Max 405 MHz (110 MHz sub-1 GHz)",
+     "as_of": "2026-05-12",
+     "source_name": "FCC Order DA 26-470",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "tmo-vz-screen-ranges",
+     "claim": "In 2025 FCC transaction review, T-Mobile was attributed 328-370 MHz county by county (54-66 MHz below 1 GHz) and Verizon 242-302 MHz, so T-Mobile sits closest to the 385 MHz trigger.",
+     "value": "T-Mobile 328-370 MHz; Verizon 242-302 MHz",
+     "as_of": "2025-07",
+     "source_name": "FCC Order DA 25-605 (T-Mobile/UScellular)",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "vz-array-enhanced-review",
+     "claim": "Verizon's Array spectrum purchase did not trigger the overall screen but triggered enhanced review in 98 local markets because of its below-1-GHz holdings, and was approved.",
+     "value": "98 markets enhanced review",
+     "as_of": "2026",
+     "source_name": "Converge Digest",
+     "source_url": "https://convergedigest.com/verizon-wins-fcc-approval-for-major-array-spectrum-acquisition/?amp=1",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "tdcowen-sub6-totals",
+     "claim": "TD Cowen estimated sub-6 GHz holdings of T-Mobile 376 MHz, AT&T 314 MHz after EchoStar, and Verizon 279 MHz (pre-Auction 113 and Array closings).",
+     "value": "376 / 314 / 279 MHz",
+     "as_of": "2025-09",
+     "source_name": "PhoneArena citing TD Cowen",
+     "source_url": "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620",
+     "confidence": "W",
+     "key": false
+    },
+    {
+     "id": "vz-mmwave-1700",
+     "claim": "Verizon's CEO said its millimeter-wave holdings are about 1,700 MHz and now support a 1-gig fixed wireless offer in metros.",
+     "value": "1,700 MHz mmWave",
+     "as_of": "2026-10-26",
+     "source_name": "Verizon Q3 2026 earnings call transcript (Motley Fool)",
+     "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "array-sales",
+     "claim": "Array closed spectrum sales to AT&T ($1.018B, 3.45 GHz and 700 MHz, Jan 13, 2026) and Verizon (~$1.0B, AWS/PCS/cellular, June 1, 2026) plus smaller T-Mobile sales, and retains its C-band.",
+     "value": "~$2.2B total proceeds",
+     "as_of": "2026-06-01",
+     "source_name": "Array Form 8-K (SEC)",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000040/ad8-k2026verizonex991.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "ntia-1675-identified",
+     "claim": "NTIA formally identified 1675-1680 MHz as the first tranche of the 500 MHz federal requirement.",
+     "value": "5 MHz",
+     "as_of": "2026-02-26",
+     "source_name": "NTIA letter to FCC Chairman",
+     "source_url": "https://www.ntia.gov/sites/default/files/2026-03/1675-mhz-identification-letter.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "ntia-2.7-relocation",
+     "claim": "NTIA, OMB and the FCC approved federal relocation plans and cost estimates for the 2.69-2.9 GHz radar band (FAA, NOAA, DoD users).",
+     "value": "~210 MHz band",
+     "as_of": "2026-04",
+     "source_name": "NTIA press release",
+     "source_url": "https://www.ntia.gov/press-release/2026/plan-repurpose-27-ghz-band-clears-key-milestone-fueling-us-6g-leadership",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "carr-2028-auctions",
+     "claim": "FCC Chairman Carr said several auctions are planned for 2028, including a 2.7 GHz auction (about a 210 MHz block in 2.69-2.9 GHz) and two bands not yet named.",
+     "value": "2.7 GHz auction targeted 2028",
+     "as_of": "2026-07",
+     "source_name": "Light Reading",
+     "source_url": "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "fcc-25mhz-nprm",
+     "claim": "FCC proposed auctioning 25 MHz (1675-1695 MHz and 2020-2025 MHz) for terrestrial use with a secondary MSS allocation for direct-to-device, with no pre-auction bright-line limit on any bidder's holdings.",
+     "value": "25 MHz; auction date not set",
+     "as_of": "2026-10-08",
+     "source_name": "FCC Fact Sheet DOC-425709",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "scs-482-nprm",
+     "claim": "FCC voted unanimously to seek comment on adding 482 MHz to the Supplemental Coverage from Space framework, expanding eligible bands from 5 to 13; Carr said ownership in some markets may need scrutiny to prevent over-consolidation.",
+     "value": "+482 MHz proposed for SCS",
+     "as_of": "2026-10-29",
+     "source_name": "Broadband Breakfast; SatNews",
+     "source_url": "https://broadbandbreakfast.com/fcc-clears-slate-of-spectrum-items-including-proposal-to-expand-direct-to-device/",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "big-leo-exclusivity",
+     "claim": "FCC order DA 26-398 dismissed petitions from SpaceX, AST SpaceMobile, Iridium, Kepler and Sateliot seeking access to Big LEO (1610-1626.5/2483.5-2500 MHz), L-band and 2 GHz MSS spectrum, preserving incumbents' exclusivity.",
+     "value": "Petitions dismissed",
+     "as_of": "2026-04-23",
+     "source_name": "FCC Order DA 26-398",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-398A1.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "amazon-globalstar",
+     "claim": "FCC's Space Bureau cleared Amazon Leo's acquisition of Globalstar (Big LEO spectrum, Apple's satellite partner); closing is expected in 2027.",
+     "value": "~$11.5 billion",
+     "as_of": "2026-10-27",
+     "source_name": "DatacenterDynamics",
+     "source_url": "https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "ligado-ast-lband",
+     "claim": "AST SpaceMobile is acquiring use of 40 MHz of Ligado's L-band spectrum; the bankruptcy court approved the transaction in June 2025 and Inmarsat litigation continued into 2026.",
+     "value": "40 MHz L-band; $550M additional cash consideration",
+     "as_of": "2026",
+     "source_name": "AST SpaceMobile Form 8-K exhibit (SEC)",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226006223/ex99-1.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "epfd-rules",
+     "claim": "FCC Report and Order 26-26 (adopted April 30, 2026) replaced EPFD limits that it found overprotected GSO networks in key Ku/Ka downlink bands; it took effect July 13, 2026 except two sections.",
+     "value": "Effective 2026-07-13 (partial)",
+     "as_of": "2026-07",
+     "source_name": "Federal Register 2026-09565",
+     "source_url": "https://www.federalregister.gov/documents/2026/05/13/2026-09565/modernizing-spectrum-sharing-for-satellite-broadband",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "wrc27-agenda",
+     "claim": "WRC-27 (Shanghai, Oct 18-Nov 12, 2027) will consider secondary MSS allocations in IMT bands 694/698 MHz-2.7 GHz (AI 1.13) and IMT identification in 4.4-4.8, 7.125-8.4 and 14.8-15.35 GHz (AI 1.7); decisions take effect January 2029.",
+     "value": "Decisions effective Jan 2029",
+     "as_of": "2026-09",
+     "source_name": "RCR Wireless; ICAO briefing",
+     "source_url": "https://rcrwireless.com/20261019/tech/wrc-27-direct-to-device-spectrum",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "carrier-d2d-jv",
+     "claim": "AT&T, T-Mobile and Verizon signed a joint venture agreement to pool spectrum for satellite direct-to-device partners while keeping existing satellite deals; the spectrum amount was not disclosed.",
+     "value": "JV signed; MHz undisclosed",
+     "as_of": "2026-10-01",
+     "source_name": "AT&T newsroom",
+     "source_url": "https://about.att.com/story/2026/jv-help-end-dead-zones.html",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "firstnet-4.9",
+     "claim": "The D.C. Circuit affirmed the FCC order letting FirstNet (operated by AT&T) use the 4.9 GHz public safety band via a band manager; FirstNet's authority expires Feb 22, 2027 unless reauthorized.",
+     "value": "50 MHz (4940-4990 MHz)",
+     "as_of": "2026-10-07",
+     "source_name": "Congressional Research Service IF12766",
+     "source_url": "https://www.everycrsreport.com/reports/IF12766.html",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "midband-policytracker",
+     "claim": "On a 1-7 GHz assigned-to-operators basis, PolicyTracker counts UK 942.6 MHz, Germany 878.8, China 835 and US 791.3, finding China only ~5% ahead, against CTIA's claim of a 3.2x gap.",
+     "value": "US 791.3 MHz vs China 835 MHz",
+     "as_of": "2025",
+     "source_name": "PolicyTracker",
+     "source_url": "https://www.policytracker.com/?p=79240",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "midband-ctia",
+     "claim": "CTIA-commissioned Analysys Mason work (3 GHz-and-up definition) projects 2027 licensed mid-band of China 1,660 MHz, Japan 1,100, UK 790, South Korea 700, versus about 450 MHz in the US.",
+     "value": "US ~450 MHz vs China 1,660 MHz",
+     "as_of": "2025-03",
+     "source_name": "Accenture for CTIA (industry-commissioned)",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "gsma-need-2040",
+     "claim": "GSMA estimates North America needs an average of 2.7-3.8 GHz of total mid-band spectrum for 2035-2040, and says the 800 MHz pipeline puts the US level with other leaders.",
+     "value": "2.7-3.8 GHz needed",
+     "as_of": "2026-05",
+     "source_name": "GSMA, Evolution of Mid-Band Mobile Spectrum in the US v3",
+     "source_url": "https://www.gsma.com/connectivity-for-good/spectrum/wp-content/uploads/2026/05/The-Evolution-of-Mid-Band-Mobile-Spectrum-in-the-US-v3.pdf",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "tmo-spectrum-capital",
+     "claim": "T-Mobile expects to direct more capital toward spectrum in 2027-2028 (upper C-band, 2.7 GHz), but only where buying beats network densification on valuation; CEO ruled out a SpaceX MVNO.",
+     "value": "Spectrum spend weighted to 2027-28",
+     "as_of": "2026-10-28",
+     "source_name": "Light Reading; TradingKey transcript summary",
+     "source_url": "https://lightreading.com/6g/t-mobile-we-ll-be-first-with-6g-and-no-to-spacex-mvno",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "vz-build-vs-buy",
+     "claim": "Verizon's CEO said upper C-band spectrum cannot be deployed for four or five years after purchase and that Verizon weighs build versus buy; 2026 capex is $16-16.5B.",
+     "value": "4-5 year deployment lag",
+     "as_of": "2026-10-26",
+     "source_name": "Verizon Q3 2026 earnings call transcript (Motley Fool)",
+     "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/",
+     "confidence": "S",
+     "key": false
+    }
+   ],
+   "datapoints": [
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "T-Mobile",
+     "y": 50,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "Whitesail estimate: 600 MHz (~40 incl. Grain swap/UScellular/Array) + 700A (~9), 800 MHz sold to Grain; FCC range 54-66 MHz in UScellular counties",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "T-Mobile",
+     "y": 326,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "TD Cowen sub-6 total 376 MHz minus est. low-band; 2.5 GHz ~160, PCS ~55, AWS ~45, C-band ~40, 3.45 ~10",
+     "source_url": "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "High-band (mmWave)",
+     "x": "T-Mobile",
+     "y": 600,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "Weak estimate: 47 GHz ~400 MHz in 358 markets plus 28/24 GHz after 2024 AT&T swap; not confirmed",
+     "source_url": "https://fierce-network.com/5g/t-mobile-sprint-dish-control-99-47-ghz-spectrum"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "AT&T",
+     "y": 72,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "700 MHz 29.6 (FCC 2024) + cellular ~22 + EchoStar 600 MHz ~20; excludes FirstNet Band 14; county max 110 MHz",
+     "source_url": "https://about.att.com/story/2026/echostar-spectrum.html"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "AT&T",
+     "y": 250,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "C-band ~80, 3.45 GHz ~72 (40 own + 30 EchoStar + Array), PCS/AWS/WCS ~100; TD Cowen total 314, PolicyTracker 375",
+     "source_url": "https://www.policytracker.com/blog/spectrum-snapshot-att-becomes-the-second-largest-spectrum-holder-in-the-us-after-echostar-trade/"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "High-band (mmWave)",
+     "x": "AT&T",
+     "y": 1040,
+     "unit": "MHz (nationwide avg)",
+     "note": "24+39 GHz after 2020 auctions (AllNet Insights); 2024 swap with T-Mobile not reflected",
+     "source_url": "https://www.fierce-network.com/operators/at-t-touts-mmwave-spectrum-gains-verizon-still-has-nearly-2x-as-much"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "Verizon",
+     "y": 52,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "700 Upper C 22 + lower 700 ~5 + cellular ~25; FCC range 22-94 MHz in Array markets",
+     "source_url": "https://convergedigest.com/verizon-wins-fcc-approval-for-major-array-spectrum-acquisition/?amp=1"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "Verizon",
+     "y": 235,
+     "unit": "MHz (nationwide pop-weighted avg, est.)",
+     "note": "C-band ~161 plus PCS/AWS incl. Auction 113 AWS-3 and Array; TD Cowen total 279 before those adds",
+     "source_url": "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "High-band (mmWave)",
+     "x": "Verizon",
+     "y": 1700,
+     "unit": "MHz",
+     "note": "CEO statement, Q3 2026 call",
+     "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "SpaceX (pending)",
+     "y": 12,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "Up to 14 MHz paired 800 MHz from Grain; FCC review pending (petitions due 2026-12-01); currently held by Grain",
+     "source_url": "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "SpaceX (pending)",
+     "y": 65,
+     "unit": "MHz (nationwide)",
+     "note": "AWS-4 40 + H-block 10 + unpaired AWS-3 15; in trust since 2026-05-22, acquisition closing targeted 2027-11-30",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-421651A1.pdf"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "High-band (mmWave)",
+     "x": "SpaceX (pending)",
+     "y": 0,
+     "unit": "MHz",
+     "note": "No terrestrial mmWave licenses identified",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-421651A1.pdf"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "EchoStar (remainder)",
+     "y": 5,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "700 MHz E block (6 MHz unpaired) assumed retained; not confirmed",
+     "source_url": "https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028.md"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "EchoStar (remainder)",
+     "y": 10,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "Residual paired AWS-3 (~6) plus CBRS PALs; derived from ~76 MHz pre-SpaceX remainder minus 65 MHz",
+     "source_url": "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Low-band",
+     "x": "Comcast",
+     "y": 4,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "10 MHz 600 MHz in 72 PEAs, leased to T-Mobile with sale expected ~2028",
+     "source_url": "https://www.rcrwireless.com/20230913/featured/citing-cbrs-strength-comcast-to-sell-3-3b-in-600-mhz-spectrum-to-t-mo"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "Comcast",
+     "y": 3,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "830 CBRS PALs in ~200 counties ($458M); weak estimate",
+     "source_url": "https://www.lightreading.com/network-platforms/how-charter-and-comcast-are-building-their-way-out-of-verizon-dependency"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "Charter",
+     "y": 1,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "210 CBRS PALs in 106 counties ($464M); weak estimate",
+     "source_url": "https://www.lightreading.com/network-platforms/how-charter-and-comcast-are-building-their-way-out-of-verizon-dependency"
+    },
+    {
+     "chart": "holdings_by_holder",
+     "series": "Mid-band",
+     "x": "Array (TDS)",
+     "y": 4,
+     "unit": "MHz (nationwide avg, est.)",
+     "note": "Retained C-band after ~70% of holdings sold; weak estimate",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000040/ad8-k2026verizonex991.htm"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "Upper C-band 3.98-4.14 GHz",
+     "y": 160,
+     "unit": "MHz",
+     "note": "Auction 115 starts 2027-04-27; rules adopted 2026-07-22; statutory deadline 2027-07-04",
+     "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "1675-1695 + 2020-2025 MHz",
+     "y": 25,
+     "unit": "MHz",
+     "note": "NPRM Oct 2026; NTIA band study due early 2027; auction est. 2027-2028",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "2.7 GHz (2.69-2.9 GHz)",
+     "y": 210,
+     "unit": "MHz",
+     "note": "Relocation plans approved Apr 2026; Carr targets auction 2028",
+     "source_url": "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "7.125-7.4 GHz",
+     "y": 275,
+     "unit": "MHz",
+     "note": "NTIA final study report due Dec 2026; auction est. 2029-2031 (Whitesail); WRC-27 AI 1.7 relevant",
+     "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "4.4-4.94 GHz (portion TBD)",
+     "y": 540,
+     "unit": "MHz (full band; usable share uncertain)",
+     "note": "NTIA reviewing 9 DoD/agency plans; auction est. 2030+ if any",
+     "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "1.3-1.35 GHz",
+     "y": 50,
+     "unit": "MHz",
+     "note": "Listed for future study only; no timeline",
+     "source_url": "https://www.congress.gov/crs-product/R48862"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "Lower 900 MHz (NextNav)",
+     "y": 15,
+     "unit": "MHz",
+     "note": "License reconfiguration petition, not auction; draft NPRM at OIRA Mar 2026; strong opposition",
+     "source_url": "https://www.powermag.com/what-utilities-need-to-know-about-the-900-mhz-nextnav-fcc-proceeding/"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Terrestrial pipeline",
+     "x": "4.9 GHz (FirstNet)",
+     "y": 50,
+     "unit": "MHz",
+     "note": "Not auctioned; band manager to share with FirstNet; D.C. Cir. upheld July 2026",
+     "source_url": "https://www.everycrsreport.com/reports/IF12766.html"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Excluded by statute",
+     "x": "Lower 3 GHz 3.1-3.45 GHz",
+     "y": 350,
+     "unit": "MHz",
+     "note": "Excluded from OBBBA identification; DoD radar",
+     "source_url": "https://www.congress.gov/crs-product/R48862"
+    },
+    {
+     "chart": "pipeline",
+     "series": "Excluded by statute",
+     "x": "7.4-8.4 GHz",
+     "y": 1000,
+     "unit": "MHz",
+     "note": "Excluded from OBBBA identification; federal satellite/DoD",
+     "source_url": "https://www.congress.gov/crs-product/R48862"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2014",
+     "y": 580,
+     "unit": "MHz",
+     "note": "Derived from ~194 MHz screen after 2014 Mobile Spectrum Holdings order; not verified this session",
+     "source_url": "https://www.fcc.gov/node/84288"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2017",
+     "y": 715,
+     "unit": "MHz",
+     "note": "Derived: 2014 base + AWS-3 (65) + 600 MHz (70) added after incentive auction",
+     "source_url": "https://www.fcc.gov/node/84288"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2025",
+     "y": 1155,
+     "unit": "MHz",
+     "note": "3 x 385 MHz overall screen (FCC DA 25-919); includes C-band, 3.45 GHz, CBRS PAL, 2.5 GHz",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2027 (proj.)",
+     "y": 1315,
+     "unit": "MHz",
+     "note": "Projection: + upper C-band 160 MHz added to screen after Auction 115",
+     "source_url": "https://www.dwt.com/blogs/broadband-advisor/2026/07/fcc-adopts-upper-c-band-transition-order"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2030 (P50 proj.)",
+     "y": 1550,
+     "unit": "MHz",
+     "note": "Whitesail P50: + 25 MHz (1675/2020) + ~210 MHz 2.7 GHz",
+     "source_url": "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Sub-6 GHz licensed mobile in FCC screen",
+     "x": "2035 (P50 proj.)",
+     "y": 1855,
+     "unit": "MHz",
+     "note": "Whitesail P50: ~700 MHz of the 800 MHz statutory pipeline auctioned (some above 6 GHz)",
+     "source_url": "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Licensed mmWave",
+     "x": "2019",
+     "y": 1550,
+     "unit": "MHz",
+     "note": "24 GHz (700) + 28 GHz (850) after Auctions 101/102",
+     "source_url": "https://www.fcc.gov/node/84288"
+    },
+    {
+     "chart": "us_licensed_total",
+     "series": "Licensed mmWave",
+     "x": "2020",
+     "y": 4950,
+     "unit": "MHz",
+     "note": "+ upper 37, 39, 47 GHz (3,400 MHz) after Auction 103; screened at 1,850 MHz",
+     "source_url": "https://www.fcc.gov/node/84288"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "PolicyTracker: assigned 1-7 GHz",
+     "x": "United Kingdom",
+     "y": 942.6,
+     "unit": "MHz",
+     "note": "Assigned to operators, PolicyTracker database",
+     "source_url": "https://www.policytracker.com/?p=79240"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "PolicyTracker: assigned 1-7 GHz",
+     "x": "Germany",
+     "y": 878.8,
+     "unit": "MHz",
+     "note": "Assigned to operators",
+     "source_url": "https://www.policytracker.com/?p=79240"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "PolicyTracker: assigned 1-7 GHz",
+     "x": "China",
+     "y": 835,
+     "unit": "MHz",
+     "note": "Assigned to operators; excludes indoor-only/unassigned",
+     "source_url": "https://www.policytracker.com/?p=79240"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "PolicyTracker: assigned 1-7 GHz",
+     "x": "United States",
+     "y": 791.3,
+     "unit": "MHz",
+     "note": "Assigned to operators; before upper C-band",
+     "source_url": "https://www.policytracker.com/?p=79240"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "China",
+     "y": 1660,
+     "unit": "MHz",
+     "note": "Assumes upper 6 GHz licensing; CTIA-commissioned",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "Japan",
+     "y": 1100,
+     "unit": "MHz",
+     "note": "CTIA-commissioned projection",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "United Kingdom",
+     "y": 790,
+     "unit": "MHz",
+     "note": "CTIA-commissioned projection",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "South Korea",
+     "y": 700,
+     "unit": "MHz",
+     "note": "CTIA-commissioned projection",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "Saudi Arabia",
+     "y": 600,
+     "unit": "MHz",
+     "note": "CTIA-commissioned projection",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "France",
+     "y": 510,
+     "unit": "MHz",
+     "note": "CTIA-commissioned projection",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2022/09/Comparison-of-total-mobile-spectrum-14-09-22.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "United States (current)",
+     "y": 450,
+     "unit": "MHz",
+     "note": "C-band 280 + 3.45 GHz 100 + CBRS PAL 70",
+     "source_url": "https://api.ctia.org/wp-content/uploads/2025/03/Looming-Spectrum-Crisis-Accenture.pdf"
+    },
+    {
+     "chart": "midband_peers",
+     "series": "CTIA/Analysys Mason: licensed mid-band (3 GHz+), 2027 proj.",
+     "x": "United States (after Auction 115)",
+     "y": 610,
+     "unit": "MHz",
+     "note": "Whitesail: 450 + 160 MHz upper C-band, same CTIA definition",
+     "source_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15598/upper-c-band-398-42-ghz-expanding-flexible-use-of-the-37-to-42-ghz-band"
+    }
+   ],
+   "tables": [
+    {
+     "title": "US licensed mobile spectrum by holder, nationwide average MHz (Whitesail estimates, Nov 2026)",
+     "columns": [
+      "Holder",
+      "Low-band <1 GHz",
+      "Mid-band 1-6 GHz",
+      "Sub-6 total",
+      "mmWave",
+      "Basis / caveat"
+     ],
+     "rows": [
+      [
+       "T-Mobile",
+       "~50",
+       "~326",
+       "~376",
+       "~600 (weak)",
+       "TD Cowen total; FCC 328-370 MHz county range"
+      ],
+      [
+       "AT&T",
+       "~72",
+       "~250",
+       "~314-375",
+       "~1,040",
+       "TD Cowen 314 / PolicyTracker 375; county max 405"
+      ],
+      [
+       "Verizon",
+       "~52",
+       "~235",
+       "~279-290",
+       "~1,700",
+       "TD Cowen 279 + Array/AWS-3; CEO mmWave figure"
+      ],
+      [
+       "SpaceX",
+       "~12 (pending)",
+       "65 (in trust)",
+       "~77",
+       "0",
+       "EchoStar close targeted 2027-11-30; Grain 800 MHz pending FCC"
+      ],
+      [
+       "EchoStar remainder",
+       "~5",
+       "~10",
+       "~15",
+       "n/a",
+       "To be sold by Sept 2028; not confirmed"
+      ],
+      [
+       "Comcast",
+       "~4 (leased to TMUS)",
+       "~3 (CBRS PAL)",
+       "~7",
+       "n/a",
+       "600 MHz sale ~2028"
+      ],
+      [
+       "Charter",
+       "0",
+       "~1 (CBRS PAL)",
+       "~1",
+       "n/a",
+       "88% traffic offloaded to own infrastructure"
+      ],
+      [
+       "Array (TDS)",
+       "~0",
+       "~4 (C-band)",
+       "~4",
+       "small",
+       "~70% of holdings sold for ~$2.2B"
+      ],
+      [
+       "Big three share of screen MHz-POPs",
+       "",
+       "",
+       "~82% (2024) -> ~85% (est. 2026)",
+       "",
+       "FCC 2024 Marketplace Report"
+      ]
+     ],
+     "source_urls": [
+      "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620",
+      "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf",
+      "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf",
+      "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/",
+      "https://docs.fcc.gov/public/attachments/FCC-24-136A1_Rcd.pdf"
+     ]
+    },
+    {
+     "title": "Terrestrial pipeline: bands, size, timing, status",
+     "columns": [
+      "Band",
+      "MHz",
+      "Mechanism",
+      "Expected timing",
+      "Status (Nov 2026)",
+      "Whitesail P(auctioned by 2030)"
+     ],
+     "rows": [
+      [
+       "Upper C-band 3.98-4.14 GHz",
+       "160",
+       "FCC auction (Auction 115)",
+       "Bidding from 2027-04-27",
+       "Rules adopted 2026-07-22",
+       "~95%"
+      ],
+      [
+       "AWS-3 reauction",
+       "200 licenses (no new MHz)",
+       "Auction 113",
+       "Closed 2026-06-23",
+       "$3.57B gross",
+       "Done"
+      ],
+      [
+       "1675-1695 + 2020-2025 MHz",
+       "25",
+       "FCC auction w/ secondary MSS",
+       "2027-2028",
+       "NPRM Oct 2026",
+       "~70%"
+      ],
+      [
+       "2.7 GHz (2.69-2.9)",
+       "~210",
+       "Federal relocation + auction",
+       "2028 (Carr)",
+       "Relocation plans approved Apr 2026",
+       "~60%"
+      ],
+      [
+       "7.125-7.4 GHz",
+       "275",
+       "Federal identification + auction",
+       "2029-2031",
+       "NTIA final report due Dec 2026",
+       "~30%"
+      ],
+      [
+       "4.4-4.94 GHz",
+       "up to 540 (portion)",
+       "Federal sharing/relocation",
+       "2030+",
+       "9 agency plans under review",
+       "~10%"
+      ],
+      [
+       "1.3-1.35 GHz",
+       "50",
+       "Future study",
+       "None set",
+       "Study listed only",
+       "<10%"
+      ],
+      [
+       "4.9 GHz",
+       "50",
+       "FirstNet band manager",
+       "2027+",
+       "D.C. Cir. upheld order",
+       "n/a (not auctioned)"
+      ],
+      [
+       "Lower 900 MHz (NextNav)",
+       "15",
+       "License reconfiguration",
+       "Uncertain",
+       "Draft NPRM at OIRA; opposed",
+       "n/a"
+      ],
+      [
+       "CBRS 3.55-3.7 GHz",
+       "150 (70 PAL)",
+       "Possible rule changes",
+       "None",
+       "No FCC proposal; senators oppose",
+       "<10% re-auction"
+      ],
+      [
+       "3.1-3.45 GHz / 7.4-8.4 GHz",
+       "350 / 1,000",
+       "Excluded by OBBBA",
+       "n/a",
+       "Excluded",
+       "0%"
+      ]
+     ],
+     "source_urls": [
+      "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date",
+      "https://auctiondata.fcc.gov/public/projects/auction113",
+      "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf",
+      "https://www.ntia.gov/press-release/2026/plan-repurpose-27-ghz-band-clears-key-milestone-fueling-us-6g-leadership",
+      "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g",
+      "https://www.congress.gov/crs-product/R48862",
+      "https://www.everycrsreport.com/reports/IF12766.html",
+      "https://broadbandbreakfast.com/fcc-takes-step-toward-upper-c-band-auction/"
+     ]
+    },
+    {
+     "title": "MSS / direct-to-device bands: who controls them and recent actions",
+     "columns": [
+      "Band",
+      "MHz",
+      "Controller",
+      "2025-2026 action",
+      "Status"
+     ],
+     "rows": [
+      [
+       "2 GHz AWS-4 (+ H-block, unpaired AWS-3)",
+       "40 (+10, +15)",
+       "EchoStar -> SpaceX",
+       "FCC approved 2026-05-12; 15,000 D2D satellites authorized Oct 2026",
+       "In trust; close targeted 2027-11-30"
+      ],
+      [
+       "800 MHz SMR",
+       "up to 14 paired",
+       "Grain -> SpaceX",
+       "Agreement 2026-10-08 (~$8B reported); SCS mod requested",
+       "FCC pleading cycle Dec 2026"
+      ],
+      [
+       "Big LEO 1610-1626.5 / 2483.5-2500 MHz",
+       "~33",
+       "Globalstar (-> Amazon Leo), Iridium",
+       "Sharing petitions dismissed Apr 2026; Amazon deal cleared Oct 27, 2026",
+       "Amazon close expected 2027"
+      ],
+      [
+       "L-band (Ligado)",
+       "40",
+       "Ligado -> AST SpaceMobile rights",
+       "Bankruptcy approval 2025; Inmarsat litigation 2026",
+       "FCC application status unconfirmed"
+      ],
+      [
+       "Terrestrial bands via SCS",
+       "+482 proposed (5 -> 13 bands)",
+       "Carriers lease to satellite operators",
+       "NPRM 2026-10-29",
+       "Comment cycle"
+      ],
+      [
+       "Ku/Ka NGSO (EPFD)",
+       "n/a",
+       "SpaceX, Amazon",
+       "EPFD replaced by FCC 26-26; waivers Jan/Feb 2026",
+       "Effective 2026-07-13 (partial)"
+      ],
+      [
+       "IMT bands 694 MHz-2.7 GHz (WRC-27 AI 1.13)",
+       "n/a",
+       "Global",
+       "Secondary MSS allocation studies",
+       "WRC-27 Oct-Nov 2027; effective Jan 2029"
+      ]
+     ],
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DOC-421651A1.pdf",
+      "https://www.satellitetoday.com/connectivity/2026/10/07/fcc-grants-spacex-approval-for-15000-direct-to-device-satellites-in-mss-spectrum/",
+      "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward",
+      "https://docs.fcc.gov/public/attachments/DA-26-398A1.pdf",
+      "https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar",
+      "https://www.sec.gov/Archives/edgar/data/1780312/000149315226006223/ex99-1.htm",
+      "https://broadbandbreakfast.com/fcc-clears-slate-of-spectrum-items-including-proposal-to-expand-direct-to-device/",
+      "https://www.federalregister.gov/documents/2026/05/13/2026-09565/modernizing-spectrum-sharing-for-satellite-broadband",
+      "https://rcrwireless.com/20261019/tech/wrc-27-direct-to-device-spectrum"
+     ]
+    },
+    {
+     "title": "FCC aggregation rules and how binding they are for each carrier",
+     "columns": [
+      "Rule",
+      "Threshold",
+      "AT&T",
+      "Verizon",
+      "T-Mobile"
+     ],
+     "rows": [
+      [
+       "Overall spectrum screen (trigger, not cap)",
+       "385 MHz; ~438 after upper C-band added",
+       "Up to 405 MHz in some counties post-EchoStar; approved with conditions",
+       "242-302 MHz; most headroom",
+       "328-370 MHz; closest to trigger in many counties"
+      ],
+      [
+       "Below-1-GHz enhanced factor",
+       "~one-third of sub-1 GHz suitable spectrum",
+       "Up to 110 MHz sub-1 GHz in some counties",
+       "Triggered in 98 markets (Array deal), approved",
+       "54-66 MHz in UScellular counties"
+      ],
+      [
+       "mmWave threshold",
+       "1,850 MHz",
+       "~1,040 MHz",
+       "~1,700 MHz (near threshold)",
+       "~600 MHz (est.)"
+      ],
+      [
+       "3.45 GHz 40 MHz time-limited cap",
+       "Expired Jan 2026",
+       "Waived for Array deal",
+       "n/a",
+       "n/a"
+      ],
+      [
+       "New auction bright-line limits",
+       "None proposed for 1675/2020 MHz band",
+       "n/a",
+       "n/a",
+       "n/a"
+      ],
+      [
+       "Practical effect",
+       "Case-by-case review; no 2025-26 deal blocked",
+       "Buildout acceleration conditions",
+       "Low-band scrutiny",
+       "Further mid-band buys draw scrutiny"
+      ]
+     ],
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf",
+      "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf",
+      "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf",
+      "https://convergedigest.com/verizon-wins-fcc-approval-for-major-array-spectrum-acquisition/?amp=1",
+      "https://docs.fcc.gov/public/attachments/DA-25-1006A1.pdf",
+      "https://www.fcc.gov/node/84288",
+      "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf"
+     ]
+    },
+    {
+     "title": "Major 2025-2026 US spectrum transactions and implied prices",
+     "columns": [
+      "Seller -> Buyer",
+      "Bands",
+      "MHz (nationwide avg)",
+      "Price",
+      "Implied $/MHz-POP (Whitesail calc, ~335M pops)",
+      "Status"
+     ],
+     "rows": [
+      [
+       "EchoStar -> AT&T",
+       "3.45 GHz, 600 MHz",
+       "~50",
+       "~$23B",
+       "~$1.37",
+       "Closed 2026-07-28"
+      ],
+      [
+       "EchoStar -> SpaceX",
+       "AWS-4, H-block",
+       "50",
+       "~$17B",
+       "~$1.01",
+       "Trust; close 2027-11-30"
+      ],
+      [
+       "EchoStar -> SpaceX",
+       "Unpaired AWS-3",
+       "15",
+       "~$2.6B (SpaceX stock)",
+       "~$0.52",
+       "Trust; close 2027-11-30"
+      ],
+      [
+       "T-Mobile -> Grain",
+       "800 MHz (for 600 MHz + cash)",
+       "~12",
+       "$2.9B + 600 MHz licenses",
+       "~$0.7-1.0 (est.)",
+       "Closed 2026-08-10"
+      ],
+      [
+       "Grain -> SpaceX",
+       "800 MHz",
+       "up to 14 paired",
+       "~$8B (reported)",
+       "~$2.0 (est.)",
+       "FCC review"
+      ],
+      [
+       "Auction 113 (AWS-3 reauction)",
+       "AWS-3 paired/unpaired",
+       "200 licenses",
+       "$3.57B gross",
+       "$2.53 avg (New Street)",
+       "Closed 2026-06-23"
+      ],
+      [
+       "Array -> AT&T / Verizon / T-Mobile",
+       "3.45, 700, AWS, PCS, cellular, 600",
+       "small",
+       "$1.018B / $1.0B / ~$0.18B",
+       "n/a",
+       "Mostly closed 2026"
+      ],
+      [
+       "Globalstar -> Amazon Leo",
+       "Big LEO MSS",
+       "~33",
+       "~$11.5B (whole company)",
+       "n/a",
+       "FCC cleared; close 2027"
+      ]
+     ],
+     "source_urls": [
+      "https://about.att.com/story/2026/echostar-spectrum.html",
+      "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+      "https://www.mobileworldlive.com/network-tech/echostar-strikes-2-6b-spectrum-deal-with-spacex/",
+      "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management",
+      "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+      "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b",
+      "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000040/ad8-k2026verizonex991.htm",
+      "https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar"
+     ]
+    }
+   ],
+   "records": [
+    {
+     "kind": "holding",
+     "entity": "T-Mobile",
+     "band": "600/700 MHz, PCS, AWS, 2.5 GHz, C-band, 3.45 GHz, 24/28/47 GHz",
+     "band_class": "low+mid+mmWave",
+     "mhz": "~376 sub-6 (est.); ~600 mmWave (weak)",
+     "timing": "Nov 2026",
+     "status": "Held",
+     "notes": "Largest sub-6 holder; 2.5 GHz is core; sold 800 MHz to Grain, gained Grain 600 MHz; leases Comcast 600 MHz",
+     "source_url": "https://www.phonearena.com/news/another-echostar-deal-could-change-spectrum-standings_id173620"
+    },
+    {
+     "kind": "holding",
+     "entity": "AT&T",
+     "band": "600/700/850 MHz, PCS, AWS, WCS, 3.45 GHz, C-band, 24/39 GHz",
+     "band_class": "low+mid+mmWave",
+     "mhz": "~314-375 sub-6; ~1,040 mmWave",
+     "timing": "Nov 2026",
+     "status": "Held",
+     "notes": "Added ~50 MHz from EchoStar (closed 2026-07-28) and Array 3.45/700; operates FirstNet Band 14 and 4.9 GHz access",
+     "source_url": "https://about.att.com/story/2026/echostar-spectrum.html"
+    },
+    {
+     "kind": "holding",
+     "entity": "Verizon",
+     "band": "700/850 MHz, PCS, AWS (incl. Auction 113 AWS-3), C-band, CBRS PAL, 28/39 GHz",
+     "band_class": "low+mid+mmWave",
+     "mhz": "~279-290 sub-6; ~1,700 mmWave",
+     "timing": "Nov 2026",
+     "status": "Held",
+     "notes": "Won ~$3.2B of Auction 113; bought Array AWS/PCS/cellular ($1.0B); Carolina West deal filed Aug 2026",
+     "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/26/verizon-vz-q3-2026-earnings-call-transcript/"
+    },
+    {
+     "kind": "holding",
+     "entity": "SpaceX",
+     "band": "AWS-4 2 GHz, H-block, unpaired AWS-3 (1695-1710)",
+     "band_class": "mid",
+     "mhz": "65",
+     "timing": "Close targeted 2027-11-30",
+     "status": "In trust (Spectrum Transfer Closing 2026-05-22)",
+     "notes": "~$20B incl. up to $11B SpaceX stock; can't operate until Step Two closes",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm"
+    },
+    {
+     "kind": "holding",
+     "entity": "SpaceX (from Grain)",
+     "band": "800 MHz SMR",
+     "band_class": "low",
+     "mhz": "up to 14 paired",
+     "timing": "Signed 2026-10-08",
+     "status": "Pending FCC (WT 26-313)",
+     "notes": "Reported ~$8B; 546 licenses; SCS modification also requested",
+     "source_url": "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward"
+    },
+    {
+     "kind": "holding",
+     "entity": "EchoStar (remainder)",
+     "band": "Paired AWS-3 remnants, 700 MHz E, CBRS PAL, mmWave, 12 GHz",
+     "band_class": "low+mid+mmWave",
+     "mhz": "~15 sub-6 (est.)",
+     "timing": "Sale target Sept 2028",
+     "status": "Held, for sale",
+     "notes": "Composition not confirmed from filings",
+     "source_url": "https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028.md"
+    },
+    {
+     "kind": "holding",
+     "entity": "Comcast",
+     "band": "600 MHz; CBRS PAL",
+     "band_class": "low+mid",
+     "mhz": "10 MHz in 72 PEAs; 830 PALs",
+     "timing": "600 MHz sale ~2028",
+     "status": "600 MHz leased to T-Mobile",
+     "notes": "Up to $3.3B T-Mobile deal; Comcast kept reclaim option",
+     "source_url": "https://www.rcrwireless.com/20230913/featured/citing-cbrs-strength-comcast-to-sell-3-3b-in-600-mhz-spectrum-to-t-mo"
+    },
+    {
+     "kind": "holding",
+     "entity": "Charter",
+     "band": "CBRS PAL",
+     "band_class": "mid",
+     "mhz": "210 PALs in 106 counties",
+     "timing": "2020 auction",
+     "status": "Deploying",
+     "notes": "$464M; PALs must be in use by 2030",
+     "source_url": "https://www.lightreading.com/network-platforms/how-charter-and-comcast-are-building-their-way-out-of-verizon-dependency"
+    },
+    {
+     "kind": "holding",
+     "entity": "Array (TDS)",
+     "band": "C-band, mmWave, CBRS remnants",
+     "band_class": "mid+mmWave",
+     "mhz": "small",
+     "timing": "2026",
+     "status": "Retained after ~$2.2B sales",
+     "notes": "Management not under pressure to sell C-band",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000034/arrayq120268kex991.htm"
+    },
+    {
+     "kind": "holding",
+     "entity": "Amazon Leo (Globalstar)",
+     "band": "Big LEO 1.6/2.4 GHz MSS",
+     "band_class": "mid (MSS)",
+     "mhz": "~33",
+     "timing": "Close expected 2027",
+     "status": "FCC cleared 2026-10-27",
+     "notes": "~$11.5B; must keep serving Apple devices",
+     "source_url": "https://datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar"
+    },
+    {
+     "kind": "holding",
+     "entity": "AST SpaceMobile (Ligado)",
+     "band": "L-band 1.5/1.6 GHz",
+     "band_class": "mid (MSS)",
+     "mhz": "40",
+     "timing": "2025-2026",
+     "status": "Court-approved; FCC status unconfirmed",
+     "notes": "Inmarsat litigation ongoing",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226006223/ex99-1.htm"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FCC Auction 115",
+     "band": "3.98-4.14 GHz upper C-band",
+     "band_class": "mid",
+     "mhz": "160",
+     "timing": "Bidding from 2027-04-27",
+     "status": "Rules adopted",
+     "notes": "3,248 licenses; $4.33B clearing estimate; TD Cowen $30-75B",
+     "source_url": "https://www.fierce-network.com/wireless/upper-c-band-auction-gets-april-27-start-date"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FCC Auction 113",
+     "band": "AWS-3 1695-1710, 1755-1780/2155-2180 MHz",
+     "band_class": "mid",
+     "mhz": "200 licenses (reauction)",
+     "timing": "Closed 2026-06-23",
+     "status": "Complete",
+     "notes": "$3.57B gross; 7 winners; Verizon ~$3.2B",
+     "source_url": "https://auctiondata.fcc.gov/public/projects/auction113"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FCC/NTIA",
+     "band": "1675-1695 MHz + 2020-2025 MHz",
+     "band_class": "mid",
+     "mhz": "25",
+     "timing": "Auction est. 2027-2028",
+     "status": "NPRM Oct 2026",
+     "notes": "Secondary MSS allocation for D2D; 1675-1680 MHz identified by NTIA Feb 2026",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-425709A1.pdf"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FCC/NTIA",
+     "band": "2.69-2.9 GHz",
+     "band_class": "mid",
+     "mhz": "~210",
+     "timing": "Auction targeted 2028",
+     "status": "Relocation plans approved Apr 2026",
+     "notes": "FAA/NOAA/DoD radar; Spectrum Relocation Fund",
+     "source_url": "https://www.ntia.gov/press-release/2026/plan-repurpose-27-ghz-band-clears-key-milestone-fueling-us-6g-leadership"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "NTIA",
+     "band": "7.125-7.4 GHz",
+     "band_class": "mid (upper)",
+     "mhz": "275",
+     "timing": "Final report Dec 2026",
+     "status": "Study",
+     "notes": "Adjacent to WRC-27 AI 1.7 range 7.125-8.4 GHz",
+     "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "NTIA",
+     "band": "4.4-4.94 GHz",
+     "band_class": "mid",
+     "mhz": "up to 540",
+     "timing": "2030+",
+     "status": "Reviewing 9 agency plans",
+     "notes": "DoD-heavy band; usable share uncertain",
+     "source_url": "https://www.lightreading.com/6g/here-s-the-latest-on-us-efforts-to-find-spectrum-for-6g"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "NTIA",
+     "band": "1.3-1.35 GHz",
+     "band_class": "mid",
+     "mhz": "50",
+     "timing": "None",
+     "status": "Future study",
+     "notes": "No study confirmed launched",
+     "source_url": "https://www.congress.gov/crs-product/R48862"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FirstNet / band manager",
+     "band": "4.94-4.99 GHz",
+     "band_class": "mid",
+     "mhz": "50",
+     "timing": "2027+",
+     "status": "Order upheld July 2026",
+     "notes": "Not auctioned; FirstNet reauthorization due Feb 2027",
+     "source_url": "https://www.everycrsreport.com/reports/IF12766.html"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "NextNav",
+     "band": "902-928 MHz (lower 900)",
+     "band_class": "low",
+     "mhz": "15",
+     "timing": "Uncertain",
+     "status": "Petition; draft NPRM at OIRA Mar 2026",
+     "notes": "Broad opposition; House appropriations rider proposed",
+     "source_url": "https://www.powermag.com/what-utilities-need-to-know-about-the-900-mhz-nextnav-fcc-proceeding/"
+    },
+    {
+     "kind": "pipeline",
+     "entity": "FCC SCS expansion",
+     "band": "13 terrestrial bands (proposed)",
+     "band_class": "low+mid",
+     "mhz": "+482",
+     "timing": "Comment cycle late 2026-2027",
+     "status": "NPRM 2026-10-29",
+     "notes": "Satellite leasing of carrier spectrum; carriers raised 5G interference concerns",
+     "source_url": "https://satnews.com/2026/10/29/fcc-proposes-modernized-direct-to-device-rules-explores-482-mhz-expansion-for-satellite-cellular/"
+    },
+    {
+     "kind": "rule",
+     "entity": "OBBBA (P.L. 119-21)",
+     "band": "1.3-10.5 GHz federal; 3.98-4.2 GHz",
+     "band_class": "mid",
+     "mhz": "800 pipeline",
+     "timing": "Authority to 2034-09-30",
+     "status": "Law",
+     "notes": "300 MHz FCC (>=100 upper C by 2027-07-04) + 500 MHz federal (200 by 2027/2029, rest by 2029/2033)",
+     "source_url": "https://www.wiley.law/alert-One-Big-Beautiful-Bill-Act-Passes-Restoring-FCC-Auction-Authority-and-Establishing-Spectrum-Pipeline"
+    },
+    {
+     "kind": "rule",
+     "entity": "OBBBA exclusions",
+     "band": "3.1-3.45 GHz; 7.4-8.4 GHz",
+     "band_class": "mid",
+     "mhz": "1,350",
+     "timing": "2025",
+     "status": "Excluded",
+     "notes": "Protects DoD radar and federal satellite uses",
+     "source_url": "https://www.congress.gov/crs-product/R48862"
+    },
+    {
+     "kind": "rule",
+     "entity": "FCC overall spectrum screen",
+     "band": "Sub-6 suitable and available",
+     "band_class": "low+mid",
+     "mhz": "385",
+     "timing": "Current; ~438 after Auction 115",
+     "status": "In force",
+     "notes": "Trigger for case-by-case review; AT&T exceeded in some counties and was approved",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf"
+    },
+    {
+     "kind": "rule",
+     "entity": "FCC mmWave threshold",
+     "band": "24/28/37/39/47 GHz",
+     "band_class": "mmWave",
+     "mhz": "1,850",
+     "timing": "Since 2018-2020",
+     "status": "In force",
+     "notes": "Verizon ~1,700 MHz closest",
+     "source_url": "https://www.fcc.gov/node/84288"
+    },
+    {
+     "kind": "rule",
+     "entity": "FCC below-1-GHz enhanced factor",
+     "band": "600/700/800/850 MHz",
+     "band_class": "low",
+     "mhz": "~one-third of sub-1 GHz",
+     "timing": "Since 2014",
+     "status": "In force",
+     "notes": "Triggered in 98 Verizon/Array markets; approved",
+     "source_url": "https://convergedigest.com/verizon-wins-fcc-approval-for-major-array-spectrum-acquisition/?amp=1"
+    },
+    {
+     "kind": "rule",
+     "entity": "FCC MSS exclusivity (DA 26-398)",
+     "band": "Big LEO, L-band, 2 GHz",
+     "band_class": "mid (MSS)",
+     "mhz": "n/a",
+     "timing": "2026-04-23",
+     "status": "Petitions dismissed",
+     "notes": "Kept incumbents exclusive; reconsideration opposed by SpaceX and Globalstar",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-398A1.pdf"
+    },
+    {
+     "kind": "rule",
+     "entity": "FCC EPFD modernization (FCC 26-26)",
+     "band": "10.7-12.7, 17.3-18.6, 19.7-20.2 GHz",
+     "band_class": "satellite",
+     "mhz": "n/a",
+     "timing": "Effective 2026-07-13 (partial)",
+     "status": "Adopted",
+     "notes": "Replaces EPFD limits with performance-based GSO protection; two sections lack effective date",
+     "source_url": "https://www.federalregister.gov/documents/2026/05/13/2026-09565/modernizing-spectrum-sharing-for-satellite-broadband"
+    },
+    {
+     "kind": "rule",
+     "entity": "ITU WRC-27",
+     "band": "694 MHz-2.7 GHz (AI 1.13); 4.4-4.8, 7.125-8.4, 14.8-15.35 GHz (AI 1.7)",
+     "band_class": "low+mid",
+     "mhz": "n/a",
+     "timing": "Oct 18-Nov 12, 2027",
+     "status": "Studies",
+     "notes": "Decisions effective Jan 2029",
+     "source_url": "https://rcrwireless.com/20261019/tech/wrc-27-direct-to-device-spectrum"
+    },
+    {
+     "kind": "rule",
+     "entity": "CBRS framework",
+     "band": "3.55-3.7 GHz",
+     "band_class": "mid",
+     "mhz": "150 (70 PAL)",
+     "timing": "2026",
+     "status": "No FCC proposal pending",
+     "notes": "2024 higher-power NPRM; senators asked to preserve rules Mar 2026; AT&T relocation idea lacks momentum",
+     "source_url": "https://broadbandbreakfast.com/fcc-takes-step-toward-upper-c-band-auction/"
+    }
+   ],
+   "forecast_seeds": [
+    {
+     "question": "Cumulative new US terrestrial licensed mobile spectrum (MHz) auctioned after July 2025, by end-2030",
+     "unit": "MHz",
+     "current_value": "0 new MHz (Auction 113 re-licensed existing AWS-3); 160 MHz scheduled for April 2027",
+     "history": "2015 AWS-3 65 MHz; 2017 600 MHz 70; 2020 CBRS PAL 70; 2021 C-band 280; 2022 3.45 GHz 100 and 2.5 GHz; about 585 MHz in 2015-2022 (~73 MHz/yr); zero 2023-2026 during authority lapse",
+     "drivers_up": "Statutory deadlines (200 MHz federal auctioned by July 2029); Carr's 2028 auction slate; NTIA claims to be ahead of schedule; carrier and SpaceX demand",
+     "drivers_down": "DoD resistance and relocation cost; FAA altimeter issues; NTIA study slippage; litigation; political change after 2028",
+     "base_rate": "US mid-band auctions have typically slipped 1-3 years versus first target (3.45 GHz, CBRS, C-band); statutory deadlines (e.g., MOBILE NOW, Spectrum Act) were mostly met late or partially",
+     "p10": "185",
+     "p50": "395",
+     "p90": "670",
+     "horizon": "2030",
+     "source_urls": [
+      "https://www.hlc.com/en/publications/americas-new-commercial-spectrum-pipeline-part-1",
+      "https://www.lightreading.com/5g/fcc-oks-upper-c-band-auction-rules-sets-sights-on-2-7ghz"
+     ]
+    },
+    {
+     "question": "Cumulative new US terrestrial licensed mobile spectrum (MHz) auctioned after July 2025, by end-2035",
+     "unit": "MHz",
+     "current_value": "0 (160 MHz scheduled)",
+     "history": "Same as above; statute requires 800 MHz by 2034 (300 FCC + 500 federal)",
+     "drivers_up": "OBBBA mandate; WRC-27 identification of 7.125-8.4 GHz and 4.4-4.8 GHz; 6G demand; auction revenue needs",
+     "drivers_down": "Excluded bands (3.1-3.45, 7.4-8.4 GHz); DoD sharing instead of clearing; lower bids reducing fiscal incentive; shared/unlicensed alternatives",
+     "base_rate": "Roughly 75% of the 2012 Spectrum Act targets were auctioned within the decade",
+     "p10": "450",
+     "p50": "700",
+     "p90": "960",
+     "horizon": "2035",
+     "source_urls": [
+      "https://www.congress.gov/crs-product/R48862",
+      "https://www.policytracker.com/?p=79240"
+     ]
+    },
+    {
+     "question": "Gross proceeds of FCC Auction 115 (upper C-band, 160 MHz)",
+     "unit": "US$ billions",
+     "current_value": "Not yet held; bidding starts 2027-04-27",
+     "history": "Auction 107 lower C-band 280 MHz: ~$81B (2021, ~$0.94/MHz-POP); Auction 110 3.45 GHz 100 MHz: ~$22.5B (2022, not re-verified); Auction 113 AWS-3: $3.57B (2026)",
+     "drivers_up": "Contiguous 440 MHz C-band block; SpaceX or other new entrants bidding; T-Mobile and AT&T C-band gaps",
+     "drivers_down": "Verizon's 4-5 year deployment-lag comments; AT&T leverage 3.13x; altimeter retrofit delays; carriers favouring densification",
+     "base_rate": "Analyst ranges for C-band (2020) were exceeded; for 3.45 GHz and AWS-3 reauction results landed within or near consensus",
+     "p10": "25",
+     "p50": "45",
+     "p90": "75",
+     "horizon": "2027",
+     "source_urls": [
+      "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band",
+      "https://www.mitre.org/news-insights/publication/c-band-spectrum-auction-retrospective-and-prospective-observations"
+     ]
+    },
+    {
+     "question": "Average price of US mid-band licensed spectrum in the next primary auction (Auction 115)",
+     "unit": "US$ per MHz-POP",
+     "current_value": "Recent benchmarks: AT&T-EchoStar ~$1.37; SpaceX AWS-4/H ~$1.01; Auction 113 $2.53 (metro-weighted, paired AWS)",
+     "history": "Auction 97 AWS-3 ~$2.71 paired (2015); Auction 107 ~$0.94 (2021); Auction 110 ~$0.68 (2022, Whitesail calc); TD Cowen upper C-band range implies $0.56-1.40",
+     "drivers_up": "Scarcity of contiguous wide channels; satellite-terrestrial buyers; physical-AI data demand",
+     "drivers_down": "Large pipeline coming (2.7 GHz, 7 GHz); limited bidder pool; long clearing timeline",
+     "base_rate": "Real price per MHz-POP for US mid-band has declined since 2015 as supply rose",
+     "p10": "0.45",
+     "p50": "0.85",
+     "p90": "1.40",
+     "horizon": "2027",
+     "source_urls": [
+      "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b",
+      "https://www.fierce-network.com/wireless/fcc-tees-big-auction-c-band-super-band"
+     ]
+    },
+    {
+     "question": "FCC overall spectrum screen trigger level",
+     "unit": "MHz",
+     "current_value": "385",
+     "history": "About one-third of suitable and available spectrum; rose as AWS-3, 600 MHz, CBRS, C-band and 3.45 GHz were added",
+     "drivers_up": "Upper C-band (+160 MHz to the base, about +53 to the trigger); 2.7 GHz and 1675/2020 MHz bands",
+     "drivers_down": "FCC could rework the screen (e.g., to protect four competitors) or discount bands; auctions slipping",
+     "base_rate": "Screen updated after each major auction since 2014",
+     "p10": "438",
+     "p50": "505",
+     "p90": "560",
+     "horizon": "2030",
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DA-25-919A1.pdf",
+      "https://www.dwt.com/blogs/broadband-advisor/2026/07/fcc-adopts-upper-c-band-transition-order"
+     ]
+    },
+    {
+     "question": "Big three (AT&T, Verizon, T-Mobile) share of US screen spectrum on a MHz-POPs basis",
+     "unit": "% of MHz-POPs",
+     "current_value": "~85% (est. Nov 2026, after AT&T-EchoStar)",
+     "history": "~82% June 2024 (FCC)",
+     "drivers_up": "Big three winning most of Auction 115 and 2.7 GHz; EchoStar and Array remainders sold to them",
+     "drivers_down": "SpaceX adding ~80 MHz; Amazon or cable bidding; FCC ownership scrutiny Carr hinted at; DE bidding credits",
+     "base_rate": "Big three share rose from ~70% to ~82% in 2014-2024 as regionals exited",
+     "p10": "74",
+     "p50": "80",
+     "p90": "86",
+     "horizon": "2030",
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/FCC-24-136A1_Rcd.pdf",
+      "https://about.att.com/story/2026/echostar-spectrum.html"
+     ]
+    },
+    {
+     "question": "SpaceX licensed terrestrial-usable US mobile spectrum (nationwide average MHz, closed transactions)",
+     "unit": "MHz",
+     "current_value": "0 closed; 65 in trust; ~12-14 pending (800 MHz)",
+     "history": "Zero before Sept 2025; agreements for 65 MHz (Sept-Nov 2025) and 800 MHz (Oct 2026)",
+     "drivers_up": "Closing EchoStar Step Two (Nov 2027 or earlier for cash); Grain approval; bidding in Auction 115 or 2.7 GHz; buying EchoStar remainder",
+     "drivers_down": "FCC conditions or denial on 800 MHz; spectrum screen and below-1-GHz review; financing; litigation",
+     "base_rate": "FCC approved every major 2025-2026 spectrum transfer, with conditions",
+     "p10": "65",
+     "p50": "80",
+     "p90": "140",
+     "horizon": "2028",
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+      "https://lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward"
+     ]
+    }
+   ],
+   "gaps": "WebFetch could not reach most hosts in this session. reuters.com was refused, and www.lightreading.com, www.telecomtv.com and docs.fcc.gov failed DNS resolution and would need to be allowed in the session's network settings. So no primary document (FCC orders, SEC filings, NTIA letters) was read in full, and every fact rests on search-result summaries of those pages. The Reuters 2026-10-08 article was not read directly; its subject (SpaceX buying Grain's 800 MHz) was confirmed through other outlets. Holdings by holder and band class are Whitesail estimates built from TD Cowen and PolicyTracker totals, FCC county ranges and band sizes. No current published nationwide-average breakdown by band class was found (Allnet Insights/Spektrum Metrics data is paywalled). T-Mobile's mmWave total, EchoStar's exact remaining holdings (paired AWS-3, 700 MHz E block, PALs, mmWave) and Array's retained C-band MHz are not confirmed. I did not see the exact current spectrum screen math: 385 MHz comes from the FCC's Sept 2025 public notice, and the implied ~1,155 MHz base and the 2014/2017 historical totals are derived and unverified. The FCC 2024 Marketplace Report figure of 82% was seen only in a search snippet. Not confirmed: the OBBBA statutory text (deadlines come from law-firm summaries), whether NTIA has identified 200 MHz by end-2026, the size of the band slices in 7 GHz and 4.4 GHz, and the 1.3 GHz study status. Also not found: the list of bands in the FCC's 482 MHz SCS proposal, the formal US WRC-27 positions, the EPFD agenda item at WRC-27, the FCC status of the Ligado/AST L-band application, whether the Globalstar/Amazon closing needs other approvals, and the Tristar 1695-1700 MHz transfer to SpaceX (one low-quality report). The ~$8B SpaceX-Grain price is a press estimate (WSJ/Reuters), not disclosed by the companies. Mid-band peer comparisons depend heavily on definitions (CTIA counts 3 GHz and up; PolicyTracker counts 1-7 GHz assigned), and no current Japan or Korea figures on the PolicyTracker basis were found. P10/P50/P90 values are analyst judgment, not model output.",
+   "searches_used": 50
+  },
+  "prices": {
+   "domain": "prices",
+   "answer": "Short answer: private-market prices for US spectrum went up in 2025-2026, but nearly all of the gain went to sellers, not to the shareholders of the incumbent carriers. New mid-band supply still clears at FCC auction well below the 2015 peak. The new marginal buyer is SpaceX. Whether that bid lasts is the main swing factor for 2028-2035 values.\n\n1. What auctions have cleared at (gross proceeds; approximate $/MHz-pop; band)\n- AWS-1, Auction 66 (2006): $13.7B, $0.54, mid-band.\n- 700 MHz, Auction 73 (2008): $19.1B, about $1.3 on average (B block about $2.24), low-band.\n- H-block, Auction 96 (2014): $1.56B, about $0.51. DISH was the only bidder and won at the reserve price.\n- AWS-3, Auction 97 (2015): $44.9B, about $2.7. This is the US peak.\n- 600 MHz, Auction 1000 (2017): $19.8B, about $0.93.\n- mmWave, Auctions 101/102/103 (2019-20): $0.70B, $2.02B and $7.57B, all near $0.01.\n- CBRS licenses, Auction 105 (2020): $4.59B, about $0.21.\n- C-band, Auction 107 (2021): $81.2B. That is $0.945 on bids alone, or about $1.11 including roughly $14B of satellite clearing payments.\n- 3.45 GHz, Auction 110 (2022): $22.5B, $0.70-0.74.\n- 2.5 GHz, Auction 108 (2022): $0.43B, against pre-auction estimates of $1-5B.\n- AWS-3 re-auction, Auction 113 (June 2026): $3.57B, an average of $2.53 per New Street. That is about 24% above an analysis of Auction 97's average, and about 4% above what DISH affiliates originally bid for the same licenses.\n\n2. Price trend by band\n- Mid-band peaked at AWS-3 in 2015. The large upper mid-band blocks then sold for less per MHz-pop (C-band $0.95, 3.45 GHz $0.74). Reasons: more MHz sold at once, shorter range, and winners paying clearing costs.\n- Total dollars still rose: C-band raised more than any previous auction.\n- The 2026 AWS-3 result shows that small amounts of paired lower mid-band spectrum with mature device support still fetch $2.5-3.0.\n- Low-band went from about $1.3 (700 MHz, 2008) to $0.93 (600 MHz auction, 2017). It then rose in private resales:\n  - 600 MHz: $2.21-2.64 (2022-23).\n  - 850 MHz: $1.44 (Verizon-UScellular).\n  - 800 MHz: $0.78 when Grain bought it in 2025-26, then $1.73 when SpaceX agreed to buy it in 2026.\n- mmWave sits near $0.01 and is being written down. Array/TDS impaired high-band licenses, and T-Mobile handed back 24 GHz licenses.\n- Globally, NERA puts the three-year average mid-band price at $0.17/MHz-pop, with 2024 a historic low. US prices are several times global levels.\n\n3. Private deals, 2018-2026\n- Straight Path (2018): Verizon topped AT&T's $1.6B agreed price with $3.1B in stock.\n- 600 MHz:\n  - T-Mobile paid $3.5B to Channel 51/LB License in 2022 (about $2.64).\n  - T-Mobile agreed to pay up to $3.3B for Comcast's licenses in 2023 (about $2.21 if all are sold). Comcast had paid about $1.7B at auction. Only $46M has closed; the rest is targeted for the first half of 2028.\n- UScellular:\n  - T-Mobile bought the operations plus about 30% of the spectrum for $4.4B, including debt.\n  - AT&T paid $1.018B for 3.45 GHz and 700 MHz licenses (about $0.64; closed January 2026).\n  - Verizon paid $1.0B for 693M MHz-pops of 850 MHz, AWS and PCS (about $1.44; closed June 2026).\n- EchoStar to AT&T: AT&T closed 30 MHz of 3.45 GHz plus 20 MHz of 600 MHz for $22.65B on July 28, 2026. That is about $1.40 blended. Per New Street it was about $9B above EchoStar's cost, and AT&T's CEO admitted the price was high.\n- EchoStar to SpaceX:\n  - $17B for 40 MHz of AWS-4 plus 10 MHz of H-block: half cash, half SpaceX stock, plus about $2B of EchoStar interest. MoffettNathanson puts that at about $1.03, above its own estimates of $0.75 (AWS-4) and $0.65 (H-block).\n  - About $2.6B in SpaceX stock for 15 MHz of uplink-only unpaired AWS-3 (about $0.52, my calculation).\n  - The licenses moved into a trust on May 22, 2026. Final closing is targeted for November 30, 2027.\n- T-Mobile to Grain (800 MHz): $3.6B, made up of $2.9B cash plus $690M of 600 MHz licenses (about $0.78). It closed August 10, 2026. T-Mobile keeps 50% of Grain's later gains above Grain's invested capital, costs and a set return.\n\n4. The Reuters 2026-10-08 deal\nI could not open the Reuters page; the site blocks fetching. SpaceX's own 8-K and coverage of the Reuters story say:\n- On October 8, 2026, SpaceX agreed to buy 100% of Grain Management's nationwide 800 MHz portfolio: up to 14 MHz of paired low-band spectrum.\n- No price was disclosed. The Wall Street Journal, cited by Reuters, reported about $8B in cash. New Street puts that at about $1.73/MHz-pop, against a rumored Grain target of $6B ($1.30).\n- It needs FCC approval; petitions against it are due December 8. Closing is expected in the first half of 2027.\n- Grain bought these licenses two months earlier for $3.6B, so the resale is about 2.2x total consideration, or 2.8x Grain's cash outlay. T-Mobile's 50% share of the gain means part of that markup flows back to T-Mobile.\n- Musk called it the last critical piece SpaceX needed to provide complete phone coverage in America.\n\n5. Buyers: very few\n- AT&T, Verizon and T-Mobile took about 96% of C-band dollars ($78.2B of $81.2B).\n- In Auction 113 they took about 99%; Verizon alone took 88%. Seventeen bidders qualified, seven won, and SpaceX won $8.5M.\n- Verizon and Sprint skipped the 600 MHz auction.\n- Real competition appears only when a fourth party shows up:\n  - Straight Path (AT&T against Verizon).\n  - EchoStar, whose spectrum was split between AT&T and SpaceX. Verizon held talks about the AWS-3 licenses but signed nothing.\n  - Globalstar: Amazon agreed to pay $11.57B, with SpaceX reported as a rival bidder.\n- SpaceX accounts for about $27.6B, roughly 45-50%, of 2025-26 US private spectrum deal value.\n\n6. Book values\n- Carriers carry FCC licenses at historical cost:\n  - AT&T: $149.4B at September 30, 2026, up from $128.1B, because of the EchoStar purchase.\n  - Verizon: about $161B ($157.0B at year-end 2025).\n  - T-Mobile: $100.0B.\n  - Combined: about $411B.\n- At late-October share prices and reported net debt, that is roughly 49%, 50% and 41% of enterprise value.\n- So the market already prices spectrum at roughly book value. Higher resale prices do not reach carrier earnings unless carriers sell, which they rarely do.\n\nWhat supports the thesis:\n- The 800 MHz price more than doubled in two months.\n- EchoStar sold at large premiums to its cost.\n- Auction 113 cleared above Auction 97 even for leftover licenses.\n- Amazon is paying about 40x 2026 sales for Globalstar, largely for its satellite spectrum rights.\n- Anterix raised its own estimate of its 900 MHz spectrum to $2.5B-$7B+ after the FCC widened the band to 10 MHz.\n- AT&T admitted it paid more than prior benchmarks.\n\nWhat undercuts it:\n- AT&T, Verizon and T-Mobile shares fell 9-13% on October 9 (per NBC) when SpaceX bought the 800 MHz licenses. Spectrum in a new entrant's hands is a competitive negative for incumbents, which matches the Goldman banker's point.\n- MoffettNathanson notes the three carriers still hold 14-15x as much spectrum as SpaceX.\n- New supply is coming:\n  - Auction 115: 160 MHz of upper C-band, bidding from April 27, 2027. TD Cowen estimates $30-75B, or about $0.57-1.42/MHz-pop, before about $16B of satellite and altimeter costs that winners also pay.\n  - EchoStar's remaining licenses ($8.45B on its books) are to be sold by September 2028.\n- Several bands have disappointed: mmWave, 2.5 GHz leftovers and CBRS.\n- The FCC attaches conditions: an escrow and faster buildout on AT&T-EchoStar, and a refusal to let satellite coverage count toward Auction 115 buildout.\n- The extra buyer is essentially one company, which now says its spectrum puzzle is complete.\n\nOutlook (probabilistic)\n- By 2028: Auction 115 will have set a fresh mid-band price. My P50 is about $42B, or about $0.80/MHz-pop on bids, below the 2025-26 private deals. A large SpaceX win would be an upside surprise.\n- By 2030: low-band private prices likely hold at $1.2-2.0 (P50 about $1.6), because sub-1 GHz spectrum is scarce. Upper mid-band likely trends to $0.5-1.0 as the auction pipeline required by the One Big Beautiful Bill Act adds supply.\n- By 2035: values depend on whether direct-to-phone satellite and ground networks produce more than one well-funded non-carrier buyer. If they do not, 2025-26 looks like a one-time jump driven by EchoStar's forced exit and SpaceX's build.\n\nFor passive exposure, the evidence favors owners of spectrum they have not yet sold, with few operating obligations (EchoStar's remaining portfolio, Anterix), or the buyer itself (SpaceX, reported as listed). It favors them over AT&T, Verizon and T-Mobile: their spectrum is already about half of enterprise value, and their returns depend on raising prices.",
+   "findings": [
+    {
+     "id": "spacex-grain-800-deal",
+     "claim": "On Oct 8, 2026 SpaceX agreed to acquire Grain Management's nationwide 800 MHz license portfolio of up to 14 MHz of paired low-band spectrum; the 8-K does not state a price and the deal needs FCC approval.",
+     "value": "up to 14 MHz (800 MHz band), nationwide",
+     "as_of": "2026-10-08",
+     "source_name": "SpaceX (Space Exploration Technologies Corp) Form 8-K",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "spacex-grain-price",
+     "claim": "The Wall Street Journal reported SpaceX will pay about $8B cash for Grain's 800 MHz spectrum; New Street's David Barden put this at about $1.73/MHz-pop, above Grain's rumored $6B ($1.30/MHz-pop) target.",
+     "value": "~$8B; ~$1.73/MHz-pop",
+     "as_of": "2026-10",
+     "source_name": "Fierce Network",
+     "source_url": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "tmus-grain-sale-closed",
+     "claim": "T-Mobile closed the sale of its 800 MHz portfolio to Grain on Aug 10, 2026 for $2.9B cash plus Grain's 600 MHz licenses valued at $690M, and keeps a 50% share of Grain's future monetization proceeds above invested capital, expenses and a specified return.",
+     "value": "$3.6B total consideration (~$0.78/MHz-pop computed on 14 MHz x ~330M pops)",
+     "as_of": "2026-08-10",
+     "source_name": "T-Mobile Newsroom",
+     "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "carrier-stocks-fell-800",
+     "claim": "After the SpaceX 800 MHz deal, AT&T shares fell 9.8%, Verizon 8.7% and T-Mobile 13.3% on Oct 9, 2026.",
+     "value": "-9.8% / -8.7% / -13.3%",
+     "as_of": "2026-10-09",
+     "source_name": "NBC News",
+     "source_url": "https://www.nbcnews.com/business/corporations/elon-musk-spacex-verizon-tmobile-att-rcna602525",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "att-echostar-closed",
+     "claim": "AT&T completed the purchase of EchoStar's 600 MHz and 3.45 GHz licenses on July 28, 2026 for $22,650M, carried in Licenses-Net.",
+     "value": "$22.65B for ~30 MHz 3.45 GHz + ~20 MHz 600 MHz",
+     "as_of": "2026-07-28",
+     "source_name": "AT&T Form 10-Q (Q3 2026)",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "fcc-echostar-conditions",
+     "claim": "The FCC approved the AT&T-EchoStar deal on May 12, 2026, requiring EchoStar to place $2.4B in escrow (tower litigation) and AT&T to build out faster than requested.",
+     "value": "$2.4B escrow",
+     "as_of": "2026-05-12",
+     "source_name": "Fierce Network",
+     "source_url": "https://www.fierce-network.com/wireless/att-closes-23b-spectrum-deal-echostar",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "att-echostar-mhzpop",
+     "claim": "CreditSights estimated the AT&T-EchoStar price at about $1.40/MHz-pop using 325M pops; AT&T did not split the price by band.",
+     "value": "~$1.40/MHz-pop blended",
+     "as_of": "2025-08",
+     "source_name": "CreditSights",
+     "source_url": "https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "att-echostar-premium",
+     "claim": "New Street said the $23B price exceeded EchoStar's purchase cost by $9B and its securitization appraisal by $5B; AT&T CEO John Stankey said he was well aware it exceeded what Dish paid.",
+     "value": "~$9B above cost",
+     "as_of": "2025-08-26",
+     "source_name": "Via Satellite",
+     "source_url": "https://www.satellitetoday.com/finance/2025/08/26/echostar-to-sell-23b-of-mid-and-low-band-spectrum-to-att/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "spacex-echostar-17b",
+     "claim": "SpaceX agreed to buy EchoStar's 40 MHz AWS-4 and 10 MHz H-block licenses for about $17B (up to $8.5B cash and $8.5B SpaceX stock) plus about $2B of EchoStar interest; MoffettNathanson put the price at about $1.03/MHz-pop versus its $0.75 (AWS-4) and $0.65 (H-block) estimates.",
+     "value": "$17B; ~$1.03/MHz-pop",
+     "as_of": "2025-09-08",
+     "source_name": "Communications Daily (MoffettNathanson quoted)",
+     "source_url": "https://communicationsdaily.com/news/2025/09/09/EchoStar-Agrees-to-Sell-Spectrum-to-SpaceX-Raising-Many-Questions-2509080052",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "spacex-echostar-closing-stages",
+     "claim": "EchoStar moved the licenses sold to SpaceX into Spectrum Business Trust 2025-1 on May 22, 2026; the final Spectrum Acquisition Closing to SpaceX is targeted for Nov 30, 2027.",
+     "value": "Final closing target 2027-11-30",
+     "as_of": "2026-05-22",
+     "source_name": "Investing.com (summary of EchoStar SEC filing)",
+     "source_url": "https://www.investing.com/news/sec-filings/echostar-completes-spectrum-transfer-to-trust-under-agreement-with-spacex-93CH-4707591",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "spacex-aws3-unpaired",
+     "claim": "EchoStar agreed on Nov 6, 2025 to sell its nationwide unpaired AWS-3 licenses (1695-1710 MHz, uplink only) to SpaceX for about $2.6B in SpaceX stock.",
+     "value": "$2.6B; ~$0.52/MHz-pop (computed, 15 MHz x ~330M pops)",
+     "as_of": "2025-11-06",
+     "source_name": "EchoStar Investor Relations",
+     "source_url": "https://ir.echostar.com/news-releases/news-release-details/echostar-agrees-sell-full-unpaired-aws-3-spectrum-license",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction113-results",
+     "claim": "FCC Auction 113 (AWS-3 re-auction) closed with $3,572,889,200 in gross bids; 7 bidders won 200 licenses after 72 rounds, of 17 qualified bidders.",
+     "value": "$3.573B gross",
+     "as_of": "2026-06-26",
+     "source_name": "FCC Public Notice DA 26-633",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction113-winners",
+     "claim": "In Auction 113 Verizon won 82 licenses for about $3.16B, T-Mobile 102 licenses for $277.8M, AT&T 10 licenses for $120.8M, SpaceX two markets for $8.49M and EchoStar two licenses for $1.2M.",
+     "value": "Verizon ~88% of gross bids",
+     "as_of": "2026-06-26",
+     "source_name": "Telecompetitor",
+     "source_url": "https://www.telecompetitor.com/fcc-announces-winners-of-its-recent-spectrum-auction/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "auction113-mhzpop",
+     "claim": "New Street estimated Auction 113 averaged $2.53/MHz-pop, ranging from $0.15 (American Samoa) to $5.67 (Honolulu), with Chicago above $4 and New York at $3.30; another analysis put it about 24% above Auction 97's $2.03 for comparable licenses.",
+     "value": "$2.53/MHz-pop average",
+     "as_of": "2026-06",
+     "source_name": "Fierce Network (New Street quoted)",
+     "source_url": "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "echostar-paired-aws3-mark",
+     "claim": "Applying Auction 113's ~4% premium, New Street valued EchoStar's remaining paired AWS-3 at $8.1B ($2.94/MHz-pop); MoffettNathanson called that a floor. No buyer was confirmed.",
+     "value": "$8.1B; $2.94/MHz-pop",
+     "as_of": "2026-06",
+     "source_name": "Light Reading",
+     "source_url": "https://www.lightreading.com/5g/aws-3-auction-closes-with-more-than-3-5b-in-bids",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "echostar-remaining-licenses",
+     "claim": "EchoStar carried its remaining wireless spectrum licenses at about $8.45B at Sep 30, 2026 and told the FCC it would sell its 700 MHz, paired AWS-3, CBRS, C-band, MVDDS and mmWave licenses by Sept 1, 2028 if waivers are granted.",
+     "value": "$8.45B book; sale deadline 2028-09-01",
+     "as_of": "2026-09-30",
+     "source_name": "EchoStar Form 10-Q (Q3 2026); Broadband Breakfast",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction107-results",
+     "claim": "C-band Auction 107 raised $81,168,677,645 in gross bids; Verizon bid $45.45B, AT&T $23.41B and T-Mobile $9.34B; 21 bidders won all 5,684 licenses.",
+     "value": "$81.17B gross; Big 3 ~96%",
+     "as_of": "2021-02-24",
+     "source_name": "FCC public notice DOC-370267",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "auction107-mhzpop",
+     "claim": "C-band bids equated to about $0.945/MHz-pop; winners also owed about $9.7B in accelerated relocation payments plus an estimated $3.3-5.2B in relocation costs, implying about $1.11/MHz-pop all-in (computed).",
+     "value": "$0.945/MHz-pop bids; ~$1.11 incl. clearing",
+     "as_of": "2021",
+     "source_name": "IEEE ComSoc Techblog; Kelley Drye",
+     "source_url": "https://techblog.comsoc.org/2022/01/14/fcc-auction-110-rakes-in-22-5-billion-in-gross-proceeds-for-3-45-ghz-service/",
+     "confidence": "W",
+     "key": false
+    },
+    {
+     "id": "auction110-results",
+     "claim": "3.45 GHz Auction 110 raised $22,513,601,811 in gross bids for 100 MHz; average price about $0.736/MHz-pop.",
+     "value": "$22.51B; ~$0.74/MHz-pop",
+     "as_of": "2022-01",
+     "source_name": "Frank Rayal (consultant summary of FCC data)",
+     "source_url": "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "auction97-results",
+     "claim": "AWS-3 Auction 97 (2014-15) raised about $44.9B for 65 MHz, the US mid-band price peak at roughly $2.7/MHz-pop on a paired basis.",
+     "value": "$44.9B; ~$2.71/MHz-pop",
+     "as_of": "2015-01",
+     "source_name": "Wikipedia (AWS-3 auction)",
+     "source_url": "https://en.wikipedia.org/wiki/AWS-3_auction",
+     "confidence": "W",
+     "key": false
+    },
+    {
+     "id": "auction1000-results",
+     "claim": "The 600 MHz incentive auction raised $19,768,437,378 gross for 70 MHz; T-Mobile bid about $8.0B, DISH $6.2B and Comcast $1.7B, while Verizon and Sprint did not bid; analysts put it near $0.93/MHz-pop.",
+     "value": "$19.77B; ~$0.93/MHz-pop",
+     "as_of": "2017-04",
+     "source_name": "FCC Auction 1000 Public Reporting System",
+     "source_url": "https://auctiondata.fcc.gov/public/projects/1000",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction73-results",
+     "claim": "The 700 MHz auction (Auction 73) totaled about $19.1B; analysts put the B block near $2.24/MHz-pop and the A block near $1.17.",
+     "value": "$19.1B; ~$1.3/MHz-pop average (computed)",
+     "as_of": "2008-03",
+     "source_name": "FCC Auction 73 results attachment",
+     "source_url": "https://apps.fcc.gov/edocs_public/attachmatch/DOC-281550A2.pdf",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction66-results",
+     "claim": "The AWS-1 auction (Auction 66, 2006) raised $13.7B at a net price of about $0.536/MHz-pop.",
+     "value": "$13.7B; $0.536/MHz-pop",
+     "as_of": "2006",
+     "source_name": "NBER Working Paper w14441",
+     "source_url": "https://www.nber.org/system/files/working_papers/w14441/w14441.pdf",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "mmwave-auctions",
+     "claim": "mmWave Auctions 101 (28 GHz), 102 (24 GHz) and 103 (37/39/47 GHz) raised $702.6M, $2.02B and $7.57B gross; Auction 103 was estimated at about $0.009/MHz-pop.",
+     "value": "$0.70B / $2.02B / $7.57B; ~$0.01/MHz-pop",
+     "as_of": "2019-2020",
+     "source_name": "FCC Auction 103 page",
+     "source_url": "https://www.fcc.gov/auction/103",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "cbrs-auction105",
+     "claim": "CBRS PAL Auction 105 raised $4,585,663,345 gross with 228 winners of 20,625 county licenses.",
+     "value": "$4.59B; ~$0.21/MHz-pop (computed, 70 MHz x 2010 pops)",
+     "as_of": "2020-09",
+     "source_name": "FCC Auction 105 page",
+     "source_url": "https://www.fcc.gov/auction/105",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction108-shortfall",
+     "claim": "2.5 GHz Auction 108 raised only about $427.8M versus analyst expectations of $1-5B; T-Mobile won about $304M of it.",
+     "value": "$0.428B",
+     "as_of": "2022-08",
+     "source_name": "Telecompetitor",
+     "source_url": "https://www.telecompetitor.com/auction-108-of-2-5-ghz-spectrum-closes-raising-less-than-428-million/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "highband-impairments",
+     "claim": "Array Digital Infrastructure (ex-UScellular) recorded a $47.7M impairment on retained 28/37/39 GHz licenses in Q3 2025 after an earlier $136.2M charge, citing industry-wide challenges operationalizing high-band spectrum.",
+     "value": "$47.7M + $136.2M impairments",
+     "as_of": "2025-Q3",
+     "source_name": "edgar.tools (Array SEC filing data)",
+     "source_url": "https://app.edgar.tools/companies/AD/disclosures/goodwill-intangibles",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "straight-path-bidding",
+     "claim": "Verizon outbid AT&T's agreed $1.6B deal for Straight Path's 28/39 GHz licenses, closing in Feb 2018 for about $3.1B in stock; Straight Path paid an FCC civil penalty of more than $600M.",
+     "value": "$3.1B vs $1.6B rival",
+     "as_of": "2018-02-28",
+     "source_name": "TechSpot; Straight Path 8-K",
+     "source_url": "https://www.techspot.com/news/69279-verizon-outbids-att-straight-path-nationwide-5g-spectrum.html",
+     "confidence": "W",
+     "key": false
+    },
+    {
+     "id": "comcast-600",
+     "claim": "T-Mobile agreed in 2023 to buy Comcast's 600 MHz licenses for $1.2-3.3B (New Street: $2.21/MHz-pop if all sold; Comcast paid ~$1.7B at auction); only $46M had closed by June 2, 2026, with the rest targeted for 1H 2028.",
+     "value": "$1.2-3.3B; ~$2.21/MHz-pop",
+     "as_of": "2026-06-02",
+     "source_name": "Light Reading; T-Mobile 10-Q",
+     "source_url": "https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "channel51-600",
+     "claim": "In 2022 T-Mobile agreed to pay $3.5B for 600 MHz licenses from Channel 51 License Co and LB License Co covering about 108M POPs; New Street put it at about $2.64/MHz-pop.",
+     "value": "$3.5B; ~$2.64/MHz-pop",
+     "as_of": "2022-08",
+     "source_name": "Fierce Network",
+     "source_url": "https://fierce-network.com/wireless/t-mobile-forks-over-35b-more-600-mhz-spectrum",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "verizon-uscellular",
+     "claim": "Verizon's $1.0B purchase of UScellular spectrum covered 663M MHz-pops of 850 MHz cellular plus 11M MHz-pops AWS and 19M MHz-pops PCS; it closed June 1, 2026.",
+     "value": "$1.0B; ~$1.44/MHz-pop (computed)",
+     "as_of": "2026-06-01",
+     "source_name": "UScellular press release",
+     "source_url": "https://seekingalpha.com/pr/19884093-uscellular-announces-sale-of-select-spectrum-assets-for-1_0-billion",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "att-uscellular",
+     "claim": "Array (ex-UScellular) closed its sale to AT&T on Jan 13, 2026: 1,250M MHz-pops of 3.45 GHz and 331M MHz-pops of 700 MHz B/C block for about $1.018B.",
+     "value": "~$1.02B; ~$0.64/MHz-pop (computed)",
+     "as_of": "2026-01-13",
+     "source_name": "DCD; Spectrum valuation analysis",
+     "source_url": "https://www.datacenterdynamics.com/en/news/att-closes/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "amazon-globalstar",
+     "claim": "Amazon agreed on Apr 14, 2026 to buy Globalstar for $90/share (about $11.57B), with SpaceX reported as a rival bidder; closing is pending FCC review and expected in 2027.",
+     "value": "$11.57B",
+     "as_of": "2026-04-14",
+     "source_name": "CNBC",
+     "source_url": "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html",
+     "confidence": "S",
+     "key": true
+    },
+    {
+     "id": "ast-ligado",
+     "claim": "AST SpaceMobile agreed to provide about $550M to Ligado ($535M passing to Inmarsat) for long-term use of up to 45 MHz of L-band; closing still awaits FCC approval.",
+     "value": "~$550M upfront plus usage payments",
+     "as_of": "2026-08",
+     "source_name": "SpaceNews",
+     "source_url": "https://spacenews.com/ast-spacemobile-reaches-deal-to-bankroll-ligados-viasat-settlement/",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "anterix-2026-sales",
+     "claim": "Anterix signed 2026 900 MHz license sales to CPS Energy (Bexar County, $13.0M, discounted), NorthWestern Energy ($7.7M), TNMP ($3.2M) and Benton PUD (~$0.8M).",
+     "value": "$13.0M / $7.7M / $3.2M / $0.8M",
+     "as_of": "2026-03-31",
+     "source_name": "Anterix Form 10-K FY2026",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001304492/000130449226000027/atex-20260331.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "anterix-value-range",
+     "claim": "After the FCC expanded the 900 MHz broadband allocation from 6 to 10 MHz (Feb 18, 2026), Anterix estimated its spectrum value at roughly $2.5B to over $7B, up from $1.5-4B.",
+     "value": "$2.5B-$7B+ (~$0.75-2.1/MHz-pop implied, computed)",
+     "as_of": "2026-04",
+     "source_name": "Yahoo Finance (Anterix investor call)",
+     "source_url": "https://finance.yahoo.com/markets/stocks/articles/anterix-investor-call-fcc-expands-140504313.html",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "auction115-schedule",
+     "claim": "FCC Auction 115 will offer 160 MHz of upper C-band (3.98-4.14 GHz) in eight 20 MHz blocks per PEA, with bidding starting Apr 27, 2027; the One Big Beautiful Bill Act requires at least 100 MHz auctioned by July 4, 2027.",
+     "value": "160 MHz; 3,248 licenses",
+     "as_of": "2026-11-13",
+     "source_name": "Federal Register",
+     "source_url": "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "auction115-estimates",
+     "claim": "TD Cowen estimated the upper C-band auction at $30-75B and Chairman Carr at $30-60B; the FCC declined SpaceX's request to let satellite coverage satisfy buildout.",
+     "value": "$30-75B (~$0.57-1.42/MHz-pop implied)",
+     "as_of": "2026-07",
+     "source_name": "Tech Times (TD Cowen, FCC quoted)",
+     "source_url": "https://www.techtimes.com/articles/319643/20260703/fcc-sets-rules-30b75b-c-band-auction-blocks-spacex-satellite-bid.htm",
+     "confidence": "W",
+     "key": true
+    },
+    {
+     "id": "auction115-addon-costs",
+     "claim": "Upper C-band winners must also fund $6.3B in satellite incentive payments ($5.6B to SES) and $3.83-5.71B of altimeter rebates, about $16B of add-on costs in total.",
+     "value": "~$16B add-on costs",
+     "as_of": "2026-11",
+     "source_name": "Light Reading",
+     "source_url": "https://www.lightreading.com/5g/fcc-oks-6-3b-in-upper-c-band-incentive-payments-but-cable-ops-still-concerned",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "license-book-att",
+     "claim": "AT&T's Licenses-Net were $149,357M at Sep 30, 2026 versus $128,148M at Dec 31, 2025; net debt was $149.8B.",
+     "value": "$149.4B licenses (~49% of EV, computed)",
+     "as_of": "2026-09-30",
+     "source_name": "AT&T Form 10-Q Q3 2026; Q3 earnings release",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000370/t-3q2026exhibit991.htm",
+     "confidence": "P",
+     "key": true
+    },
+    {
+     "id": "license-book-vz",
+     "claim": "Verizon carried wireless licenses of $157,039M at Dec 31, 2025; a secondary brief puts them at $161.4B at Sep 30, 2026; net unsecured debt was $123.7B at Q3 2026.",
+     "value": "$157.0B (YE2025); ~$161.4B (Q3 2026)",
+     "as_of": "2026-09-30",
+     "source_name": "edgar.tools (Verizon 10-K note); Verizon 3Q26 release",
+     "source_url": "https://app.edgar.tools/companies/VZ/disclosures/goodwill-intangibles",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "license-book-tmus",
+     "claim": "T-Mobile's spectrum licenses were $99,980M at Sep 30, 2026 versus $98,030M at Dec 31, 2025; net debt excluding tower obligations was $80.3B and 1,059M shares were outstanding.",
+     "value": "$99.98B (~41% of EV, computed)",
+     "as_of": "2026-09-30",
+     "source_name": "T-Mobile Form 10-Q Q3 2026",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm",
+     "confidence": "P",
+     "key": false
+    },
+    {
+     "id": "global-prices",
+     "claim": "NERA reports global spectrum prices hit a historic low in 2024, with a three-year mid-band average of $0.17/MHz-pop to end-2025, and says the long decline may have run its course.",
+     "value": "$0.17/MHz-pop mid-band global average",
+     "as_of": "2026",
+     "source_name": "NERA Spectrum Report 2026",
+     "source_url": "https://www.nera.com/about/press-releases/2026/nera-spectrum-report-2026--analysis-of-spectrum-awards-data.html",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "moffett-spectrum-ratio",
+     "claim": "MoffettNathanson's Julie Zhu said Starlink's mobile service is not competitive with the Big 3 and that the three carriers still hold roughly 14-15x more spectrum than SpaceX.",
+     "value": "14-15x",
+     "as_of": "2026-10-12",
+     "source_name": "CNBC",
+     "source_url": "https://www.cnbc.com/video/2026/10/12/spacexs-spectrum-license-not-competitive-with-big-3-telecom-offerings-says-julie-zhu.html",
+     "confidence": "S",
+     "key": false
+    },
+    {
+     "id": "spacex-ipo",
+     "claim": "SpaceX reportedly listed on Nasdaq as SPCX on June 12, 2026 at $135/share with a target valuation near $1.77T (only a Wikipedia entry confirms post-listing figures).",
+     "value": "$135/share; ~$1.77T",
+     "as_of": "2026-06-12",
+     "source_name": "Wikipedia",
+     "source_url": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+     "confidence": "W",
+     "key": false
+    }
+   ],
+   "datapoints": [
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "AWS-1 Auction 66 (2006)",
+     "y": 0.536,
+     "unit": "$/MHz-pop",
+     "note": "Net price per NBER",
+     "source_url": "https://www.nber.org/system/files/working_papers/w14441/w14441.pdf"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "low-band",
+     "x": "700 MHz Auction 73 (2008)",
+     "y": 1.3,
+     "unit": "$/MHz-pop",
+     "note": "Computed: ~$19.1B / (52 MHz sold x ~281M pops); approximate",
+     "source_url": "https://apps.fcc.gov/edocs_public/attachmatch/DOC-281550A2.pdf"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "H-block Auction 96 (2014)",
+     "y": 0.51,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $1.564B / (10 MHz x ~309M pops); single bidder at reserve",
+     "source_url": "https://www.rcrwireless.com/20140303/policy/dish-network-picks-up-all-h-block-spectrum-licenses-whats-next"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "AWS-3 Auction 97 (2015)",
+     "y": 2.71,
+     "unit": "$/MHz-pop",
+     "note": "Paired-spectrum basis; other sources $2.19-2.68",
+     "source_url": "https://en.wikipedia.org/wiki/AWS-3_auction"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "low-band",
+     "x": "600 MHz Auction 1000 (2017)",
+     "y": 0.93,
+     "unit": "$/MHz-pop",
+     "note": "Analyst estimate; another source $0.88",
+     "source_url": "https://frankrayal.com/2017/03/27/600-mhz-incentive-auction/"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "high-band (mmWave)",
+     "x": "24 GHz Auction 102 (2019)",
+     "y": 0.0094,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $2.02B / (700 MHz x ~309M pops)",
+     "source_url": "https://www.fcc.gov/auction/101-102"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "high-band (mmWave)",
+     "x": "37/39/47 GHz Auction 103 (2020)",
+     "y": 0.009,
+     "unit": "$/MHz-pop",
+     "note": "Third-party estimate",
+     "source_url": "https://techblog.comsoc.org/2019/12/10/analysis-and-results-of-fcc-auction-103-for-5g-mmwave-spectrum/"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "CBRS PAL Auction 105 (2020)",
+     "y": 0.21,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $4.586B / (70 MHz x ~309M pops)",
+     "source_url": "https://www.fcc.gov/auction/105"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "C-band Auction 107 (2021)",
+     "y": 0.945,
+     "unit": "$/MHz-pop",
+     "note": "Bids only",
+     "source_url": "https://techblog.comsoc.org/2022/01/14/fcc-auction-110-rakes-in-22-5-billion-in-gross-proceeds-for-3-45-ghz-service/"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band (incl. clearing)",
+     "x": "C-band Auction 107 (2021)",
+     "y": 1.11,
+     "unit": "$/MHz-pop",
+     "note": "Computed: ($81.2B + ~$14B clearing/ARP) / (280 MHz x ~307M pops)",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "3.45 GHz Auction 110 (2022)",
+     "y": 0.736,
+     "unit": "$/MHz-pop",
+     "note": "Analyst average; range of sources $0.70-0.74",
+     "source_url": "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/"
+    },
+    {
+     "chart": "auction_prices",
+     "series": "mid-band",
+     "x": "AWS-3 Auction 113 (2026)",
+     "y": 2.53,
+     "unit": "$/MHz-pop",
+     "note": "New Street average; range $0.15-5.67",
+     "source_url": "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "AWS-1 Auction 66 (2006)",
+     "y": 13.7,
+     "unit": "$B",
+     "note": "Total per NBER (net basis)",
+     "source_url": "https://www.nber.org/system/files/working_papers/w14441/w14441.pdf"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "700 MHz Auction 73 (2008)",
+     "y": 19.1,
+     "unit": "$B",
+     "note": "FCC results",
+     "source_url": "https://apps.fcc.gov/edocs_public/attachmatch/DOC-281550A2.pdf"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "H-block Auction 96 (2014)",
+     "y": 1.564,
+     "unit": "$B",
+     "note": "Reserve price met",
+     "source_url": "https://www.rcrwireless.com/20140303/policy/dish-network-picks-up-all-h-block-spectrum-licenses-whats-next"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "AWS-3 Auction 97 (2015)",
+     "y": 44.9,
+     "unit": "$B",
+     "note": "Gross bids",
+     "source_url": "https://en.wikipedia.org/wiki/AWS-3_auction"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "600 MHz Auction 1000 (2017)",
+     "y": 19.77,
+     "unit": "$B",
+     "note": "FCC gross proceeds",
+     "source_url": "https://auctiondata.fcc.gov/public/projects/1000"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "28 GHz Auction 101 (2019)",
+     "y": 0.703,
+     "unit": "$B",
+     "note": "FCC gross bids",
+     "source_url": "https://www.fcc.gov/auction/101"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "24 GHz Auction 102 (2019)",
+     "y": 2.02,
+     "unit": "$B",
+     "note": "Gross bids",
+     "source_url": "https://www.fcc.gov/auction/101-102"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "37/39/47 GHz Auction 103 (2020)",
+     "y": 7.57,
+     "unit": "$B",
+     "note": "FCC gross bids",
+     "source_url": "https://www.fcc.gov/auction/103"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "CBRS Auction 105 (2020)",
+     "y": 4.586,
+     "unit": "$B",
+     "note": "FCC gross bids",
+     "source_url": "https://www.fcc.gov/auction/105"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "C-band Auction 107 (2021)",
+     "y": 81.17,
+     "unit": "$B",
+     "note": "FCC gross bids; excludes ~$14B clearing",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "3.45 GHz Auction 110 (2022)",
+     "y": 22.51,
+     "unit": "$B",
+     "note": "FCC gross bids",
+     "source_url": "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "2.5 GHz Auction 108 (2022)",
+     "y": 0.428,
+     "unit": "$B",
+     "note": "Total bids",
+     "source_url": "https://www.telecompetitor.com/auction-108-of-2-5-ghz-spectrum-closes-raising-less-than-428-million/"
+    },
+    {
+     "chart": "auction_proceeds",
+     "series": "gross proceeds",
+     "x": "AWS-3 Auction 113 (2026)",
+     "y": 3.573,
+     "unit": "$B",
+     "note": "FCC gross bids",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "T-Mobile-Channel 51/LB 600 MHz (2022)",
+     "y": 2.64,
+     "unit": "$/MHz-pop",
+     "note": "New Street estimate",
+     "source_url": "https://fierce-network.com/wireless/t-mobile-forks-over-35b-more-600-mhz-spectrum"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "T-Mobile-Comcast 600 MHz (2023)",
+     "y": 2.21,
+     "unit": "$/MHz-pop",
+     "note": "New Street, if full $3.3B portfolio sold",
+     "source_url": "https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "Verizon-UScellular 850/AWS/PCS (2024, closed 2026)",
+     "y": 1.44,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $1.0B / 693M MHz-pops",
+     "source_url": "https://seekingalpha.com/pr/19884093-uscellular-announces-sale-of-select-spectrum-assets-for-1_0-billion"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "mid-band",
+     "x": "AT&T-UScellular 3.45 GHz+700 MHz (2024, closed 2026)",
+     "y": 0.64,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $1.018B / 1,581M MHz-pops (blended)",
+     "source_url": "https://www.datacenterdynamics.com/en/news/att-closes/"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "mid-band",
+     "x": "AT&T-EchoStar 3.45 GHz+600 MHz (2025, closed 2026)",
+     "y": 1.4,
+     "unit": "$/MHz-pop",
+     "note": "CreditSights blended, 325M pops",
+     "source_url": "https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "MSS/2 GHz",
+     "x": "SpaceX-EchoStar AWS-4+H-block (2025)",
+     "y": 1.03,
+     "unit": "$/MHz-pop",
+     "note": "MoffettNathanson",
+     "source_url": "https://communicationsdaily.com/news/2025/09/09/EchoStar-Agrees-to-Sell-Spectrum-to-SpaceX-Raising-Many-Questions-2509080052"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "mid-band",
+     "x": "SpaceX-EchoStar unpaired AWS-3 (2025)",
+     "y": 0.52,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $2.6B / (15 MHz x ~330M); uplink-only",
+     "source_url": "https://ir.echostar.com/news-releases/news-release-details/echostar-agrees-sell-full-unpaired-aws-3-spectrum-license"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "T-Mobile-Grain 800 MHz (2025, closed 2026)",
+     "y": 0.78,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $3.6B / (14 MHz x ~330M)",
+     "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "SpaceX-Grain 800 MHz (2026)",
+     "y": 1.73,
+     "unit": "$/MHz-pop",
+     "note": "New Street on WSJ-reported ~$8B",
+     "source_url": "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "low-band",
+     "x": "Anterix-CPS Energy 900 MHz (2026)",
+     "y": 1.08,
+     "unit": "$/MHz-pop",
+     "note": "Computed: $13.0M / (6 MHz x ~2.01M Bexar County pops); discounted price",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001304492/000130449226000027/atex-20260331.htm"
+    },
+    {
+     "chart": "deal_prices",
+     "series": "analyst mark",
+     "x": "EchoStar paired AWS-3 mark (2026)",
+     "y": 2.94,
+     "unit": "$/MHz-pop",
+     "note": "New Street valuation, no deal",
+     "source_url": "https://www.lightreading.com/5g/aws-3-auction-closes-with-more-than-3-5b-in-bids"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Sep 30 2026",
+     "x": "AT&T",
+     "y": 149.4,
+     "unit": "$B",
+     "note": "Licenses-Net, 10-Q",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Sep 30 2026",
+     "x": "Verizon",
+     "y": 161.4,
+     "unit": "$B",
+     "note": "Secondary brief; 10-Q not directly verified",
+     "source_url": "https://www.nextgcomm.com/verizon-q3-2026-earnings-brief/"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Sep 30 2026",
+     "x": "T-Mobile",
+     "y": 99.98,
+     "unit": "$B",
+     "note": "Spectrum licenses, 10-Q",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Sep 30 2026",
+     "x": "EchoStar (remaining)",
+     "y": 8.45,
+     "unit": "$B",
+     "note": "Remaining wireless spectrum licenses, 10-Q",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Dec 31 2025",
+     "x": "AT&T",
+     "y": 128.1,
+     "unit": "$B",
+     "note": "10-Q comparative",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Dec 31 2025",
+     "x": "Verizon",
+     "y": 157,
+     "unit": "$B",
+     "note": "10-K note via edgar.tools",
+     "source_url": "https://app.edgar.tools/companies/VZ/disclosures/goodwill-intangibles"
+    },
+    {
+     "chart": "license_book",
+     "series": "FCC licenses book value, Dec 31 2025",
+     "x": "T-Mobile",
+     "y": 98.03,
+     "unit": "$B",
+     "note": "10-Q comparative",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "Licenses as % of EV (approx)",
+     "x": "AT&T",
+     "y": 49,
+     "unit": "% of EV",
+     "note": "Computed: $149.4B / (~7.0B sh x $21.89 Oct 23 + $149.8B net debt); share count approximate",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000370/t-3q2026exhibit991.htm"
+    },
+    {
+     "chart": "license_book",
+     "series": "Licenses as % of EV (approx)",
+     "x": "Verizon",
+     "y": 52,
+     "unit": "% of EV",
+     "note": "Computed: $161.4B / (~4.22B sh x $43.73 + $123.7B net unsecured debt); ~49% if secured debt added",
+     "source_url": "https://www.verizon.com/about/news/verizon-delivers-another-record-breaking-quarter"
+    },
+    {
+     "chart": "license_book",
+     "series": "Licenses as % of EV (approx)",
+     "x": "T-Mobile",
+     "y": 41,
+     "unit": "% of EV",
+     "note": "Computed: $99.98B / (1.059B sh x $153.82 + $80.3B net debt ex towers)",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+    }
+   ],
+   "tables": [
+    {
+     "title": "FCC auction results 2006-2026 (and Auction 115 scheduled)",
+     "columns": [
+      "Auction",
+      "Year",
+      "Band",
+      "MHz",
+      "Gross $B",
+      "$/MHz-pop",
+      "Largest winners"
+     ],
+     "rows": [
+      [
+       "66 AWS-1",
+       "2006",
+       "1.7/2.1 GHz",
+       "90",
+       "13.7",
+       "0.54",
+       "T-Mobile, Verizon, cable consortium (not re-verified)"
+      ],
+      [
+       "73 700 MHz",
+       "2008",
+       "700 MHz",
+       "52 sold",
+       "19.1",
+       "~1.3 (B ~2.24)",
+       "Verizon, AT&T (not re-verified)"
+      ],
+      [
+       "96 H-block",
+       "2014",
+       "1.9/2.0 GHz",
+       "10",
+       "1.56",
+       "~0.51",
+       "DISH (sole bidder)"
+      ],
+      [
+       "97 AWS-3",
+       "2015",
+       "1.7/2.1 GHz",
+       "65",
+       "44.9",
+       "~2.7",
+       "AT&T, DISH-backed DEs, Verizon"
+      ],
+      [
+       "1000 600 MHz",
+       "2017",
+       "600 MHz",
+       "70",
+       "19.77",
+       "~0.93",
+       "T-Mobile 8.0, DISH 6.2, Comcast 1.7; Verizon did not bid"
+      ],
+      [
+       "101/102/103 mmWave",
+       "2019-20",
+       "24-47 GHz",
+       "850/700/3,400",
+       "0.70/2.02/7.57",
+       "~0.01",
+       "Big 3"
+      ],
+      [
+       "105 CBRS PAL",
+       "2020",
+       "3.55-3.65 GHz",
+       "70",
+       "4.59",
+       "~0.21",
+       "228 winners"
+      ],
+      [
+       "107 C-band",
+       "2021",
+       "3.7-3.98 GHz",
+       "280",
+       "81.17",
+       "0.945 (1.11 all-in)",
+       "Verizon 45.45, AT&T 23.41, T-Mobile 9.34"
+      ],
+      [
+       "110 3.45 GHz",
+       "2022",
+       "3.45-3.55 GHz",
+       "100",
+       "22.51",
+       "0.70-0.74",
+       "AT&T, DISH"
+      ],
+      [
+       "108 2.5 GHz",
+       "2022",
+       "2.5 GHz",
+       "remnants",
+       "0.43",
+       "n/a",
+       "T-Mobile 0.30"
+      ],
+      [
+       "113 AWS-3 reauction",
+       "2026",
+       "1.7/2.1 GHz",
+       "200 licenses",
+       "3.57",
+       "2.53",
+       "Verizon 3.16, T-Mobile 0.28, AT&T 0.12, SpaceX 0.008"
+      ],
+      [
+       "115 upper C-band",
+       "Apr 2027 (sched.)",
+       "3.98-4.14 GHz",
+       "160",
+       "30-75 est.",
+       "~0.57-1.42 implied",
+       "Expected Big 3; SpaceX possible"
+      ]
+     ],
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf",
+      "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf",
+      "https://auctiondata.fcc.gov/public/projects/1000",
+      "https://www.nber.org/system/files/working_papers/w14441/w14441.pdf",
+      "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled"
+     ]
+    },
+    {
+     "title": "Private US spectrum transactions 2018-2026",
+     "columns": [
+      "Deal",
+      "Signed / closed",
+      "Band",
+      "MHz",
+      "Price $B",
+      "$/MHz-pop",
+      "Status"
+     ],
+     "rows": [
+      [
+       "Verizon <- Straight Path",
+       "2017 / Feb 2018",
+       "28/39 GHz",
+       "nationwide mmWave",
+       "3.1 (stock)",
+       "~0.01-0.02 (rough)",
+       "Closed; beat AT&T $1.6B"
+      ],
+      [
+       "T-Mobile <- Channel 51/LB",
+       "Aug 2022",
+       "600 MHz",
+       "108M POPs",
+       "3.5",
+       "~2.64",
+       "Signed 2022"
+      ],
+      [
+       "T-Mobile <- Comcast",
+       "Sep 2023",
+       "600 MHz",
+       "73 licenses",
+       "1.2-3.3",
+       "~2.21",
+       "$46M closed Jun 2026; rest 1H 2028"
+      ],
+      [
+       "AT&T <- UScellular/Array",
+       "2024 / Jan 2026",
+       "3.45 GHz + 700 MHz",
+       "1,581M MHz-pops",
+       "1.018",
+       "~0.64",
+       "Closed"
+      ],
+      [
+       "Verizon <- UScellular/Array",
+       "Oct 2024 / Jun 2026",
+       "850 MHz + AWS + PCS",
+       "693M MHz-pops",
+       "1.0",
+       "~1.44",
+       "Closed"
+      ],
+      [
+       "AT&T <- EchoStar",
+       "Aug 2025 / Jul 2026",
+       "3.45 GHz + 600 MHz",
+       "30 + 20",
+       "22.65",
+       "~1.40",
+       "Closed"
+      ],
+      [
+       "SpaceX <- EchoStar",
+       "Sep 2025 / target Nov 2027",
+       "AWS-4 + H-block",
+       "40 + 10",
+       "17.0 (+~2 interest)",
+       "~1.03",
+       "In trust; final closing pending"
+      ],
+      [
+       "SpaceX <- EchoStar",
+       "Nov 2025",
+       "AWS-3 unpaired",
+       "15",
+       "2.6 (stock)",
+       "~0.52",
+       "Approved; closing with AWS-4"
+      ],
+      [
+       "Grain <- T-Mobile",
+       "May 2025 / Aug 2026",
+       "800 MHz",
+       "up to 14",
+       "3.6",
+       "~0.78",
+       "Closed; T-Mobile 50% upside"
+      ],
+      [
+       "SpaceX <- Grain",
+       "Oct 2026",
+       "800 MHz",
+       "up to 14",
+       "~8 (WSJ)",
+       "~1.73",
+       "Pending FCC; 1H 2027"
+      ],
+      [
+       "Amazon <- Globalstar",
+       "Apr 2026",
+       "MSS L/S-band + n53",
+       "~36.7 usable",
+       "11.57 (company)",
+       "n/a",
+       "Pending; 2027"
+      ],
+      [
+       "AST <- Ligado (usage rights)",
+       "2025",
+       "L-band",
+       "up to 45",
+       "~0.55 upfront",
+       "n/a",
+       "Pending FCC"
+      ]
+     ],
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management",
+      "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm",
+      "https://communicationsdaily.com/news/2025/09/09/EchoStar-Agrees-to-Sell-Spectrum-to-SpaceX-Raising-Many-Questions-2509080052",
+      "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html"
+     ]
+    },
+    {
+     "title": "Carrier FCC license book values vs enterprise value (approx.)",
+     "columns": [
+      "Carrier",
+      "Licenses Dec 31 2025 $B",
+      "Licenses Sep 30 2026 $B",
+      "Net debt $B",
+      "Mkt cap $B (Oct 23 2026 px)",
+      "EV $B",
+      "Licenses % EV"
+     ],
+     "rows": [
+      [
+       "AT&T",
+       "128.1",
+       "149.4",
+       "149.8",
+       "~153 (~7.0B sh x $21.89)",
+       "~303",
+       "~49%"
+      ],
+      [
+       "Verizon",
+       "157.0",
+       "~161.4",
+       "123.7 (net unsecured)",
+       "~184 (~4.22B sh x $43.73)",
+       "~308",
+       "~52% (~49% incl. secured debt)"
+      ],
+      [
+       "T-Mobile",
+       "98.0",
+       "100.0",
+       "80.3 (ex towers)",
+       "~163 (1.059B sh x $153.82)",
+       "~243",
+       "~41%"
+      ],
+      [
+       "Sum Big 3",
+       "383.1",
+       "~410.8",
+       "",
+       "",
+       "~854",
+       "~48%"
+      ]
+     ],
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000370/t-3q2026exhibit991.htm",
+      "https://www.verizon.com/about/news/verizon-delivers-another-record-breaking-quarter",
+      "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm",
+      "https://www.forbes.com/sites/siladityaray/2026/10/23/att-verizon-t-mobile-shares-slip-as-spacex-reportedly-holds-cell-tower-talks-for-starlink-mobile/"
+     ]
+    },
+    {
+     "title": "Seller cost basis vs exit price (who captured the gains)",
+     "columns": [
+      "Asset",
+      "Original cost",
+      "Exit price",
+      "Gain"
+     ],
+     "rows": [
+      [
+       "EchoStar 3.45 GHz + 600 MHz",
+       "~$14B (Auctions 110 and 1000), per New Street ~$9B below exit",
+       "$22.65B (AT&T)",
+       "~$9B"
+      ],
+      [
+       "Comcast 600 MHz",
+       "~$1.7B (Auction 1000, 2017)",
+       "$1.2-3.3B (T-Mobile)",
+       "up to ~1.9x"
+      ],
+      [
+       "T-Mobile/Sprint 800 MHz",
+       "Held by Sprint",
+       "$3.6B (Grain, Aug 2026)",
+       "T-Mobile keeps 50% of Grain upside"
+      ],
+      [
+       "Grain 800 MHz",
+       "$3.6B (Aug 2026)",
+       "~$8B (SpaceX, Oct 2026, reported)",
+       "~2.2x in two months"
+      ],
+      [
+       "EchoStar H-block",
+       "$1.564B (Auction 96, 2014)",
+       "Part of $17B with AWS-4 (SpaceX)",
+       "AWS-4 cost basis not verified"
+      ]
+     ],
+     "source_urls": [
+      "https://www.satellitetoday.com/finance/2025/08/26/echostar-to-sell-23b-of-mid-and-low-band-spectrum-to-att/",
+      "https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum",
+      "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+      "https://www.rcrwireless.com/20140303/policy/dish-network-picks-up-all-h-block-spectrum-licenses-whats-next"
+     ]
+    },
+    {
+     "title": "Current price marks by band (US, 2025-2026)",
+     "columns": [
+      "Band",
+      "Mark $/MHz-pop",
+      "Basis"
+     ],
+     "rows": [
+      [
+       "800 MHz low-band",
+       "1.73",
+       "SpaceX-Grain reported price (New Street)"
+      ],
+      [
+       "850 MHz cellular",
+       "~1.44",
+       "Verizon-UScellular (computed)"
+      ],
+      [
+       "600 MHz",
+       "2.21-2.64 (2022-23); blended in AT&T-EchoStar",
+       "Private deals (New Street)"
+      ],
+      [
+       "AWS-3 paired",
+       "2.53 auction avg; 2.94 mark for EchoStar remainder",
+       "Auction 113; New Street"
+      ],
+      [
+       "AWS-4 / H-block (2 GHz MSS-capable)",
+       "~1.03 (vs 0.75/0.65 prior estimates)",
+       "SpaceX-EchoStar (MoffettNathanson)"
+      ],
+      [
+       "3.45 GHz + 600 MHz blend",
+       "~1.40-1.50",
+       "AT&T-EchoStar (CreditSights, Rayal)"
+      ],
+      [
+       "Upper C-band (3.98-4.14 GHz)",
+       "~0.57-1.42 implied, before ~$16B add-on costs",
+       "TD Cowen $30-75B estimate"
+      ],
+      [
+       "900 MHz (Anterix)",
+       "~0.75-2.1 implied",
+       "Company value range $2.5-7B+"
+      ],
+      [
+       "mmWave",
+       "~0.01 and impaired",
+       "Auctions 102/103; Array impairments"
+      ],
+      [
+       "Global mid-band average",
+       "0.17",
+       "NERA 2026"
+      ]
+     ],
+     "source_urls": [
+      "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+      "https://www.fierce-network.com/wireless/aws-3-auction-concludes-topping-35b",
+      "https://know.creditsights.com/insights/att-echostar-mega-mhz-deal/",
+      "https://www.nera.com/about/press-releases/2026/nera-spectrum-report-2026--analysis-of-spectrum-awards-data.html"
+     ]
+    }
+   ],
+   "records": [
+    {
+     "kind": "auction",
+     "name": "FCC Auction 66 (AWS-1)",
+     "date": "2006-09",
+     "buyer": "T-Mobile, Verizon, SpectrumCo cable consortium largest (not re-verified)",
+     "seller": "FCC",
+     "band": "AWS-1 1710-1755/2110-2155 MHz",
+     "band_class": "mid-band",
+     "mhz": "90",
+     "price_usd_b": "13.7",
+     "usd_per_mhz_pop": "0.536",
+     "status": "closed",
+     "notes": "Net price per NBER",
+     "source_url": "https://www.nber.org/system/files/working_papers/w14441/w14441.pdf"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 73 (700 MHz)",
+     "date": "2008-03",
+     "buyer": "Verizon, AT&T largest (not re-verified)",
+     "seller": "FCC",
+     "band": "700 MHz A/B/C/E",
+     "band_class": "low-band",
+     "mhz": "52 sold (D block unsold)",
+     "price_usd_b": "19.1",
+     "usd_per_mhz_pop": "~1.3 avg (computed); B ~2.24, A ~1.17",
+     "status": "closed",
+     "notes": "Average computed on ~281M pops",
+     "source_url": "https://apps.fcc.gov/edocs_public/attachmatch/DOC-281550A2.pdf"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 96 (H-block)",
+     "date": "2014-02",
+     "buyer": "DISH (American H Block Wireless), sole winner",
+     "seller": "FCC",
+     "band": "H-block 1915-1920/1995-2000 MHz",
+     "band_class": "mid-band",
+     "mhz": "10",
+     "price_usd_b": "1.564",
+     "usd_per_mhz_pop": "~0.51 (computed)",
+     "status": "closed",
+     "notes": "Cleared at reserve price; DISH pre-committed",
+     "source_url": "https://www.rcrwireless.com/20140303/policy/dish-network-picks-up-all-h-block-spectrum-licenses-whats-next"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 97 (AWS-3)",
+     "date": "2015-01",
+     "buyer": "AT&T, DISH-backed designated entities, Verizon, T-Mobile",
+     "seller": "FCC",
+     "band": "AWS-3 1695-1710, 1755-1780/2155-2180 MHz",
+     "band_class": "mid-band",
+     "mhz": "65",
+     "price_usd_b": "44.9",
+     "usd_per_mhz_pop": "~2.71 (paired basis; range 2.19-2.71)",
+     "status": "closed",
+     "notes": "US mid-band price peak; DE defaults later re-auctioned in Auction 113",
+     "source_url": "https://en.wikipedia.org/wiki/AWS-3_auction"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 1000 (600 MHz incentive)",
+     "date": "2017-04",
+     "buyer": "T-Mobile ~$8.0B, DISH $6.2B, Comcast $1.7B",
+     "seller": "FCC / broadcasters",
+     "band": "600 MHz",
+     "band_class": "low-band",
+     "mhz": "70",
+     "price_usd_b": "19.77",
+     "usd_per_mhz_pop": "~0.93",
+     "status": "closed",
+     "notes": "Verizon and Sprint did not bid; ~$10B to broadcasters",
+     "source_url": "https://auctiondata.fcc.gov/public/projects/1000"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 101 (28 GHz)",
+     "date": "2019-01",
+     "buyer": "33 winners (Verizon largest; not re-verified)",
+     "seller": "FCC",
+     "band": "28 GHz",
+     "band_class": "high-band (mmWave)",
+     "mhz": "850",
+     "price_usd_b": "0.703",
+     "usd_per_mhz_pop": "<0.01 (not computed; partial county coverage)",
+     "status": "closed",
+     "notes": "$702.6M gross",
+     "source_url": "https://www.fcc.gov/auction/101"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 102 (24 GHz)",
+     "date": "2019-05",
+     "buyer": "AT&T, T-Mobile largest (not re-verified)",
+     "seller": "FCC",
+     "band": "24 GHz",
+     "band_class": "high-band (mmWave)",
+     "mhz": "700",
+     "price_usd_b": "2.02",
+     "usd_per_mhz_pop": "~0.009 (computed)",
+     "status": "closed",
+     "notes": "T-Mobile later returned 24 GHz licenses per commentary",
+     "source_url": "https://www.fcc.gov/auction/101-102"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 103 (37/39/47 GHz)",
+     "date": "2020-03",
+     "buyer": "Verizon, AT&T, T-Mobile (not re-verified)",
+     "seller": "FCC",
+     "band": "37/39/47 GHz",
+     "band_class": "high-band (mmWave)",
+     "mhz": "3400",
+     "price_usd_b": "7.57",
+     "usd_per_mhz_pop": "~0.009 (third-party)",
+     "status": "closed",
+     "notes": "Largest amount of spectrum in any FCC auction",
+     "source_url": "https://www.fcc.gov/auction/103"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 105 (CBRS PAL)",
+     "date": "2020-08",
+     "buyer": "228 winners (Verizon largest; not re-verified)",
+     "seller": "FCC",
+     "band": "3550-3650 MHz PAL",
+     "band_class": "mid-band",
+     "mhz": "70",
+     "price_usd_b": "4.586",
+     "usd_per_mhz_pop": "~0.21 (computed)",
+     "status": "closed",
+     "notes": "County licenses, shared band",
+     "source_url": "https://www.fcc.gov/auction/105"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 107 (C-band)",
+     "date": "2021-02",
+     "buyer": "Verizon $45.45B, AT&T $23.41B, T-Mobile $9.34B",
+     "seller": "FCC / satellite incumbents",
+     "band": "3.7-3.98 GHz",
+     "band_class": "mid-band",
+     "mhz": "280",
+     "price_usd_b": "81.17",
+     "usd_per_mhz_pop": "0.945 bids; ~1.11 incl. ~$14B clearing (computed)",
+     "status": "closed",
+     "notes": "21 winners; Big 3 ~96% of dollars",
+     "source_url": "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 110 (3.45 GHz)",
+     "date": "2022-01",
+     "buyer": "AT&T and DISH led",
+     "seller": "FCC (DoD sharing)",
+     "band": "3.45-3.55 GHz",
+     "band_class": "mid-band",
+     "mhz": "100",
+     "price_usd_b": "22.51",
+     "usd_per_mhz_pop": "0.70-0.74",
+     "status": "closed",
+     "notes": "DISH 3.45 GHz later sold to AT&T",
+     "source_url": "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 108 (2.5 GHz)",
+     "date": "2022-08",
+     "buyer": "T-Mobile $304M (most licenses)",
+     "seller": "FCC",
+     "band": "2.5 GHz white space",
+     "band_class": "mid-band",
+     "mhz": "county remnants",
+     "price_usd_b": "0.428",
+     "usd_per_mhz_pop": "n/a (rural remnants)",
+     "status": "closed",
+     "notes": "Expectations were $1-5B",
+     "source_url": "https://www.telecompetitor.com/auction-108-of-2-5-ghz-spectrum-closes-raising-less-than-428-million/"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 113 (AWS-3 re-auction)",
+     "date": "2026-06-23",
+     "buyer": "Verizon $3.16B, T-Mobile $277.8M, AT&T $120.8M, SpaceX $8.49M, EchoStar $1.2M",
+     "seller": "FCC (defaulted DE licenses)",
+     "band": "AWS-3 1755-1780/2155-2180 MHz",
+     "band_class": "mid-band",
+     "mhz": "200 licenses",
+     "price_usd_b": "3.573",
+     "usd_per_mhz_pop": "2.53 avg (New Street)",
+     "status": "closed",
+     "notes": "17 qualified, 7 winners, 72 rounds; cleared $2.9B EchoStar penalty threshold",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf"
+    },
+    {
+     "kind": "auction",
+     "name": "FCC Auction 115 (upper C-band)",
+     "date": "2027-04-27 (scheduled)",
+     "buyer": "Expected AT&T, Verizon, T-Mobile; SpaceX may bid",
+     "seller": "FCC / satellite incumbents",
+     "band": "3.98-4.14 GHz",
+     "band_class": "mid-band",
+     "mhz": "160",
+     "price_usd_b": "30-75 (TD Cowen est.)",
+     "usd_per_mhz_pop": "~0.57-1.42 implied (computed)",
+     "status": "scheduled",
+     "notes": "Plus ~$6.3B incentive payments and $3.83-5.71B altimeter rebates",
+     "source_url": "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled"
+    },
+    {
+     "kind": "transaction",
+     "name": "Verizon acquires Straight Path",
+     "date": "2018-02-28",
+     "buyer": "Verizon",
+     "seller": "Straight Path Communications",
+     "band": "39 GHz and 28 GHz",
+     "band_class": "high-band (mmWave)",
+     "mhz": "nationwide 39 GHz plus 28 GHz in major markets",
+     "price_usd_b": "3.1",
+     "usd_per_mhz_pop": "~0.01-0.02 (rough, unverified)",
+     "status": "closed",
+     "notes": "All stock; topped AT&T's $1.6B deal; >$600M FCC penalty",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001574460/000121390018002359/f8k022818ex99-1_straightpath.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "T-Mobile buys 600 MHz from Channel 51 License Co and LB License Co",
+     "date": "2022-08-08",
+     "buyer": "T-Mobile",
+     "seller": "Channel 51 License Co; LB License Co",
+     "band": "600 MHz",
+     "band_class": "low-band",
+     "mhz": "licenses covering ~108M POPs",
+     "price_usd_b": "3.5",
+     "usd_per_mhz_pop": "~2.64 (New Street)",
+     "status": "signed 2022 (closing not re-verified)",
+     "notes": "~$1.9B to 51 License, ~$1.6B to LB License",
+     "source_url": "https://fierce-network.com/wireless/t-mobile-forks-over-35b-more-600-mhz-spectrum"
+    },
+    {
+     "kind": "transaction",
+     "name": "T-Mobile buys Comcast 600 MHz",
+     "date": "2023-09-12",
+     "buyer": "T-Mobile",
+     "seller": "Comcast",
+     "band": "600 MHz",
+     "band_class": "low-band",
+     "mhz": "73 licenses",
+     "price_usd_b": "1.2-3.3",
+     "usd_per_mhz_pop": "~2.21 at full (New Street)",
+     "status": "partially closed ($46M on 2026-06-02; remainder targeted 1H 2028)",
+     "notes": "Comcast paid ~$1.7B at 2017 auction; exclusive lease meanwhile",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "T-Mobile acquires UScellular wireless operations",
+     "date": "2024-05 (signed); 2025 (closed)",
+     "buyer": "T-Mobile",
+     "seller": "UScellular/TDS",
+     "band": "mixed",
+     "band_class": "mixed",
+     "mhz": "~30% of UScellular spectrum",
+     "price_usd_b": "4.4",
+     "usd_per_mhz_pop": "n/a (operating business)",
+     "status": "closed (date not re-verified)",
+     "notes": "Includes up to $2.0B assumed debt",
+     "source_url": "https://www.rcrwireless.com/20241021/spectrum/uscellular-to-sell-spectrum-to-verizon-for-1-billion"
+    },
+    {
+     "kind": "transaction",
+     "name": "AT&T buys UScellular (Array) 3.45 GHz and 700 MHz",
+     "date": "2026-01-13 (closed)",
+     "buyer": "AT&T",
+     "seller": "Array Digital Infrastructure (ex-UScellular)",
+     "band": "3.45 GHz + 700 MHz B/C",
+     "band_class": "mid-band (blended)",
+     "mhz": "1,250M MHz-pops 3.45 GHz + 331M MHz-pops 700 MHz",
+     "price_usd_b": "1.018",
+     "usd_per_mhz_pop": "~0.64 (computed)",
+     "status": "closed",
+     "notes": "FCC approval conditioned on DEI policy commitments",
+     "source_url": "https://www.datacenterdynamics.com/en/news/att-closes/"
+    },
+    {
+     "kind": "transaction",
+     "name": "Verizon buys UScellular (Array) cellular/AWS/PCS",
+     "date": "2026-06-01 (closed)",
+     "buyer": "Verizon",
+     "seller": "Array Digital Infrastructure (ex-UScellular)",
+     "band": "850 MHz cellular + AWS + PCS",
+     "band_class": "low-band",
+     "mhz": "663M + 11M + 19M MHz-pops",
+     "price_usd_b": "1.0",
+     "usd_per_mhz_pop": "~1.44 (computed)",
+     "status": "closed",
+     "notes": "Signed Oct 2024; FCC approved May 2026",
+     "source_url": "https://www.datacenterdynamics.com/en/news/array-closes-1bn-spectrum-sale-to-verizon/"
+    },
+    {
+     "kind": "transaction",
+     "name": "AT&T buys EchoStar 3.45 GHz and 600 MHz",
+     "date": "2026-07-28 (closed)",
+     "buyer": "AT&T",
+     "seller": "EchoStar",
+     "band": "3.45 GHz + 600 MHz",
+     "band_class": "mid-band/low-band blend",
+     "mhz": "~30 + ~20 nationwide",
+     "price_usd_b": "22.65",
+     "usd_per_mhz_pop": "~1.40 (CreditSights); ~1.50 (Rayal)",
+     "status": "closed",
+     "notes": "FCC approved May 12, 2026 with $2.4B escrow and faster buildout",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "SpaceX buys EchoStar AWS-4 and H-block",
+     "date": "2025-09-08 (signed)",
+     "buyer": "SpaceX",
+     "seller": "EchoStar",
+     "band": "AWS-4 2000-2020/2180-2200 MHz + H-block",
+     "band_class": "MSS/2 GHz (satellite + terrestrial capable)",
+     "mhz": "40 + 10",
+     "price_usd_b": "17.0 (plus ~2.0 interest)",
+     "usd_per_mhz_pop": "~1.03 (MoffettNathanson)",
+     "status": "licenses in trust since 2026-05-22; final closing targeted 2027-11-30",
+     "notes": "Up to $8.5B cash + $8.5B SpaceX stock",
+     "source_url": "https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+    },
+    {
+     "kind": "transaction",
+     "name": "SpaceX buys EchoStar unpaired AWS-3",
+     "date": "2025-11-06 (signed)",
+     "buyer": "SpaceX",
+     "seller": "EchoStar",
+     "band": "AWS-3 unpaired 1695-1710 MHz (uplink)",
+     "band_class": "mid-band",
+     "mhz": "15",
+     "price_usd_b": "2.6",
+     "usd_per_mhz_pop": "~0.52 (computed)",
+     "status": "FCC-approved; closing with AWS-4 package (not separately re-verified)",
+     "notes": "Paid in SpaceX stock",
+     "source_url": "https://ir.echostar.com/news-releases/news-release-details/echostar-agrees-sell-full-unpaired-aws-3-spectrum-license"
+    },
+    {
+     "kind": "transaction",
+     "name": "Grain buys T-Mobile 800 MHz",
+     "date": "2026-08-10 (closed)",
+     "buyer": "Grain Management",
+     "seller": "T-Mobile",
+     "band": "800 MHz SMR",
+     "band_class": "low-band",
+     "mhz": "up to 14 (paired)",
+     "price_usd_b": "3.6",
+     "usd_per_mhz_pop": "~0.78 (computed)",
+     "status": "closed",
+     "notes": "$2.9B cash + $690M Grain 600 MHz licenses; T-Mobile gets 50% of upside",
+     "source_url": "https://www.t-mobile.com/news/business/t-mobile-completes-sale-of-800-mhz-spectrum-portfolio-to-grain-management"
+    },
+    {
+     "kind": "transaction",
+     "name": "SpaceX buys Grain 800 MHz (Reuters 2026-10-08)",
+     "date": "2026-10-08 (signed)",
+     "buyer": "SpaceX",
+     "seller": "Grain Management",
+     "band": "800 MHz",
+     "band_class": "low-band",
+     "mhz": "up to 14 (paired), nationwide",
+     "price_usd_b": "~8.0 (WSJ-reported; undisclosed)",
+     "usd_per_mhz_pop": "~1.73 (New Street)",
+     "status": "pending FCC; expected 1H 2027",
+     "notes": "~2.2x Grain's $3.6B entry two months earlier; no rival bidder reported",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "SpaceX buys Tristar unpaired AWS-3 licenses",
+     "date": "2026-07 (FCC notice)",
+     "buyer": "SpaceX (Starlink)",
+     "seller": "Tristar License Group (TLG Unpaired Holdings)",
+     "band": "AWS-3 unpaired",
+     "band_class": "mid-band",
+     "mhz": "3 licenses",
+     "price_usd_b": "~0.006 (analyst est.)",
+     "usd_per_mhz_pop": "n/a",
+     "status": "approved",
+     "notes": "Price not disclosed",
+     "source_url": "https://docs.fcc.gov/public/attachments/DA-26-747A1.pdf"
+    },
+    {
+     "kind": "transaction",
+     "name": "T-Mobile buys TStar 600 MHz",
+     "date": "2026-09-21",
+     "buyer": "T-Mobile",
+     "seller": "TStar 600, LLC",
+     "band": "600 MHz",
+     "band_class": "low-band",
+     "mhz": "n/a",
+     "price_usd_b": "0.29",
+     "usd_per_mhz_pop": "n/a",
+     "status": "closed; cash payable Q1 2027",
+     "notes": "Per T-Mobile Q3 2026 10-Q",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "Amazon acquires Globalstar",
+     "date": "2026-04-14 (signed)",
+     "buyer": "Amazon",
+     "seller": "Globalstar shareholders",
+     "band": "Big LEO MSS L/S-band + Band n53",
+     "band_class": "MSS",
+     "mhz": "~36.7 usable for D2C (analyst)",
+     "price_usd_b": "11.57",
+     "usd_per_mhz_pop": "n/a (company deal; global rights)",
+     "status": "pending FCC; expected 2027",
+     "notes": "$90/share; SpaceX reported rival; ~40x 2026 sales",
+     "source_url": "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html"
+    },
+    {
+     "kind": "transaction",
+     "name": "AST SpaceMobile - Ligado L-band usage rights",
+     "date": "2025-06-23 (court approved)",
+     "buyer": "AST SpaceMobile (usage rights)",
+     "seller": "Ligado Networks",
+     "band": "L-band 1.5/1.6 GHz + 1670-1675 MHz",
+     "band_class": "MSS",
+     "mhz": "up to 45",
+     "price_usd_b": "~0.55 upfront + ~0.08/yr",
+     "usd_per_mhz_pop": "n/a (usage rights)",
+     "status": "pending FCC",
+     "notes": "$535M to Inmarsat; $100M paid Mar 31, 2026; Iridium opposes",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526342550/asts-20260630.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "Anterix sells 900 MHz to CPS Energy",
+     "date": "2026-01-30",
+     "buyer": "CPS Energy",
+     "seller": "Anterix",
+     "band": "900 MHz broadband",
+     "band_class": "low-band",
+     "mhz": "3x3 MHz, Bexar County TX",
+     "price_usd_b": "0.013",
+     "usd_per_mhz_pop": "~1.08 (computed, discounted)",
+     "status": "signed",
+     "notes": "AnterixAccelerator dollar-for-dollar discount",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/1304492/000130449226000004/cpsfactsheet_222026.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "Anterix 2026 utility sales (NorthWestern, TNMP, Benton PUD)",
+     "date": "2026-03/04",
+     "buyer": "NorthWestern Energy; Texas-New Mexico Power; Benton PUD",
+     "seller": "Anterix",
+     "band": "900 MHz broadband",
+     "band_class": "low-band",
+     "mhz": "county licenses",
+     "price_usd_b": "0.0117 (7.7 + 3.2 + 0.8 $M)",
+     "usd_per_mhz_pop": "n/a",
+     "status": "signed; phased delivery 2026-2033",
+     "notes": "FCC expanded 900 MHz broadband to 10 MHz on Feb 18, 2026",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001304492/000130449226000027/atex-20260331.htm"
+    },
+    {
+     "kind": "transaction",
+     "name": "EchoStar paired AWS-3 (Verizon talks; no deal)",
+     "date": "2025-09 (talks reported)",
+     "buyer": "none signed (Verizon reported interest)",
+     "seller": "EchoStar",
+     "band": "AWS-3 paired",
+     "band_class": "mid-band",
+     "mhz": "paired AWS-3 portfolio",
+     "price_usd_b": "8.1 (New Street mark)",
+     "usd_per_mhz_pop": "2.94 (mark)",
+     "status": "unsold; EchoStar plans sale by 2028-09-01",
+     "notes": "Earlier reports valued it at $9.8B",
+     "source_url": "https://www.fierce-network.com/wireless/verizon-reportedly-talks-buy-echostars-aws-3-spectrum"
+    }
+   ],
+   "forecast_seeds": [
+    {
+     "question": "Gross winning bids in FCC Auction 115 (upper C-band, 160 MHz), excluding incentive and altimeter payments",
+     "unit": "$B",
+     "current_value": "Not held; analyst range $30-75B (TD Cowen), FCC chair $30-60B",
+     "history": "C-band Auction 107 $81.2B for 280 MHz (2021); 3.45 GHz Auction 110 $22.5B for 100 MHz (2022); Auction 113 $3.57B (2026)",
+     "drivers_up": "SpaceX or other non-carrier bidding; Verizon/T-Mobile capacity needs; scarce new mid-band before 2030",
+     "drivers_down": "~$16B add-on costs; carrier leverage after EchoStar/C-band spend; FCC rejected satellite-based buildout; AT&T absorbed 3.45 GHz",
+     "base_rate": "US mid-band auctions 2021-22 cleared $0.70-0.95/MHz-pop; global mid-band average $0.17",
+     "p10": "25",
+     "p50": "42",
+     "p90": "65",
+     "horizon": "2027 (results known by 2028)",
+     "source_urls": [
+      "https://www.techtimes.com/articles/319643/20260703/fcc-sets-rules-30b75b-c-band-auction-blocks-spacex-satellite-bid.htm",
+      "https://www.federalregister.gov/documents/2026/08/03/2026-15725/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-scheduled"
+     ]
+    },
+    {
+     "question": "Average $/MHz-pop (bids only) in Auction 115",
+     "unit": "$/MHz-pop",
+     "current_value": "~0.57-1.42 implied by analyst range",
+     "history": "C-band 0.945 (2021; 1.11 all-in); 3.45 GHz 0.70-0.74 (2022); CBRS ~0.21 (2020)",
+     "drivers_up": "New buyer competition; lower-than-expected supply",
+     "drivers_down": "Large block (160 MHz), winner-funded clearing, carrier budget fatigue",
+     "base_rate": "Upper mid-band US auctions averaged ~0.7-0.95",
+     "p10": "0.45",
+     "p50": "0.80",
+     "p90": "1.25",
+     "horizon": "2027",
+     "source_urls": [
+      "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf",
+      "https://frankrayal.com/2022/01/16/fcc-auction-110-3-45-ghz-summary/"
+     ]
+    },
+    {
+     "question": "Typical $/MHz-pop for US sub-1 GHz (low-band) spectrum in private transactions",
+     "unit": "$/MHz-pop",
+     "current_value": "1.73 (SpaceX-Grain 800 MHz, 2026); 1.44 (850 MHz, Verizon-UScellular)",
+     "history": "700 MHz auction ~1.3 (2008); 600 MHz auction 0.93 (2017); private 600 MHz 2.21-2.64 (2022-23); 800 MHz 0.78 (Grain entry 2025-26)",
+     "drivers_up": "Fixed supply below 1 GHz; satellite-terrestrial convergence needing in-building coverage; new entrants (SpaceX, Amazon)",
+     "drivers_down": "SpaceX says its puzzle is complete; few remaining sellers; carriers' existing low-band; FCC spectrum-screen limits",
+     "base_rate": "Private low-band comps 2017-2026 ranged 0.78-2.64; median ~1.6",
+     "p10": "2028: 1.0; 2030: 0.9; 2035: 0.8",
+     "p50": "2028: 1.7; 2030: 1.6; 2035: 1.6",
+     "p90": "2028: 2.6; 2030: 2.8; 2035: 3.2",
+     "horizon": "2028 / 2030 / 2035",
+     "source_urls": [
+      "https://www.fierce-network.com/wireless/spacexs-800-mhz-spectrum-grab-threatens-big-3-mobile-carriers",
+      "https://www.lightreading.com/5g/t-mobile-to-buy-up-to-3-3b-of-comcast-s-600mhz-spectrum"
+     ]
+    },
+    {
+     "question": "Combined FCC license book value of AT&T, Verizon and T-Mobile",
+     "unit": "$B",
+     "current_value": "~410.8 (Sep 30, 2026: 149.4 + ~161.4 + 100.0)",
+     "history": "YE2025 ~383.1; step-ups from C-band (2021), 3.45 GHz (2022), EchoStar (2026 +22.65)",
+     "drivers_up": "Auction 115 spend; EchoStar remaining licenses; OBBBA pipeline auctions; capitalized interest",
+     "drivers_down": "Impairments (mmWave), sales to SpaceX or others, swaps",
+     "base_rate": "Book grew ~$100B+ in 2021-2022 auction cycle, then ~flat until 2026",
+     "p10": "2028: 425; 2030: 430; 2035: 440",
+     "p50": "2028: 455; 2030: 470; 2035: 520",
+     "p90": "2028: 480; 2030: 515; 2035: 620",
+     "horizon": "2028 / 2030 / 2035",
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0000732717/000073271726000372/t-20260930.htm",
+      "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000129/tmus-20260930.htm",
+      "https://app.edgar.tools/companies/VZ/disclosures/goodwill-intangibles"
+     ]
+    },
+    {
+     "question": "Share of US spectrum transaction dollars (auctions + private deals) paid by non-carrier buyers (SpaceX, Amazon, etc.)",
+     "unit": "% of dollars",
+     "current_value": "~45-50% of 2025-26 private deal value (SpaceX ~$27.6B); ~0.2% of Auction 113",
+     "history": "Pre-2025: near 0% (cable and DISH aside); Auction 107: ~4% non-Big-3",
+     "drivers_up": "SpaceX Auction 115 participation; Amazon/Globalstar; D2D convergence",
+     "drivers_down": "FCC refusal of satellite buildout credit; SpaceX says spectrum puzzle complete; carrier-dominated auctions",
+     "base_rate": "Big 3 took ~96% of Auction 107 and ~99% of Auction 113",
+     "p10": "2027-2030 cumulative: 5%",
+     "p50": "2027-2030 cumulative: 18%",
+     "p90": "2027-2030 cumulative: 40%",
+     "horizon": "2030",
+     "source_urls": [
+      "https://www.telecompetitor.com/fcc-announces-winners-of-its-recent-spectrum-auction/",
+      "https://docs.fcc.gov/public/attachments/DOC-370267A1.pdf"
+     ]
+    },
+    {
+     "question": "Proceeds from EchoStar's sale of remaining terrestrial licenses (700 MHz, paired AWS-3, CBRS, C-band, MVDDS, mmWave)",
+     "unit": "$B",
+     "current_value": "Book $8.45B (Sep 30, 2026); New Street paired AWS-3 mark $8.1B",
+     "history": "EchoStar sold $22.65B to AT&T and ~$19.6B to SpaceX in 2025",
+     "drivers_up": "Auction 113 marks ($2.53-2.94); Verizon interest; SpaceX demand",
+     "drivers_down": "Forced-seller timeline (by Sept 2028); few buyers; Auction 115 supply competing",
+     "base_rate": "EchoStar's 2025 sales cleared above book and cost",
+     "p10": "5",
+     "p50": "9.5",
+     "p90": "14",
+     "horizon": "2028",
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926121675/sats-20260930x10q.htm",
+      "https://broadbandbreakfast.com/echostar-aiming-to-sell-remaining-terrestrial-spectrum-by-sept-2028/"
+     ]
+    },
+    {
+     "question": "SpaceX US spectrum usable for mobile (nationwide-equivalent MHz) under ownership or agreement",
+     "unit": "MHz",
+     "current_value": "~79 (40 AWS-4 + 10 H-block + 15 unpaired AWS-3 + 14 800 MHz, incl. pending)",
+     "history": "~0 dedicated terrestrial-licensed before Sept 2025",
+     "drivers_up": "Auction 115 wins; purchase of EchoStar paired AWS-3 or other licenses",
+     "drivers_down": "FCC denial or conditions on Grain deal; EchoStar final closing failure",
+     "base_rate": "SpaceX added ~79 MHz in 13 months",
+     "p10": "2028: 65; 2030: 65",
+     "p50": "2028: 79; 2030: 95",
+     "p90": "2028: 110; 2030: 160",
+     "horizon": "2028 / 2030",
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "https://www.fierce-network.com/wireless/spacex-scoops-echostar-spectrum-17b"
+     ]
+    }
+   ],
+   "gaps": "I could not read the Reuters 2026-10-08 article (reuters.com blocks fetching). lightreading.com and telecoms.com do not resolve in this session's network, and these sites need to be allowed in the session network settings to read them. After those failures I stopped fetching pages. Every fact here comes from web-search summaries of the pages listed, including the SEC and FCC documents, not from reading the filings in full.\n\nWhat the Reuters deal was comes from SpaceX's 8-K and other coverage. The ~$8B price is WSJ-reported and has not been disclosed by either party.\n\nNot confirmed:\n- AT&T's exact share count. The EV shares use ~7.0B shares and Oct 23, 2026 share prices.\n- Verizon's Sep 30, 2026 license balance ($161.4B is from a secondary brief).\n- Verizon's secured debt, for a full EV.\n- Any per-band price split inside AT&T-EchoStar.\n- Straight Path's MHz-pops (its $/MHz-pop is a rough estimate).\n- Auction 101's $/MHz-pop.\n- Largest-winner amounts for Auctions 66, 73, 97 and 101-105. These are from memory and flagged as not re-verified.\n- Closing dates for the Channel 51/LB and T-Mobile-UScellular deals.\n- EchoStar's AWS-4 cost basis.\n- A population-weighted $/MHz-pop for Amazon-Globalstar or AST-Ligado. Neither is comparable, because they are global satellite rights, usage rights, or include an operating company.\n- Anterix per-MHz-pop pricing beyond my own calculation for the CPS deal.\n- Whether Anterix's strategic review has concluded.\n- The full spectrum-pipeline terms of the One Big Beautiful Bill Act beyond the July 2027 upper C-band mandate.\n- A reserve price for Auction 115.\n- SpaceX's IPO details. Only a Wikipedia entry gives post-listing figures.\n- Whether any competing bids were made for Grain's 800 MHz.\n\nPopulation bases differ across sources (2000, 2010 and 2020 census). My own calculations use ~309M people for 2010-based auctions and ~330M for recent deals, so the $/MHz-pop figures are approximate to about ±10%.",
+   "searches_used": 48
+  },
   "satellite": {
    "domain": "satellite",
    "answer": "Summary. In November 2026, satellite direct-to-device (D2D) has a large user base but little revenue. It has already changed the US spectrum market in one specific way. SpaceX was valued at about $1.77T at its June 2026 IPO, and it is now the most aggressive buyer of terrestrial-capable spectrum in the country. That supports one part of the thesis: convergence brings new bidders with deep pockets. Two things undercut the other part. The physics says D2D cannot carry dense urban traffic. And the market reacted to each SpaceX spectrum step by selling carrier stocks. Convergence is adding a competitor and a coverage layer. It does not ease scarcity where the incumbents earn their money.\n\nWhere D2D stands. SpaceX's first-generation Direct to Cell fleet has about 650 satellites. It runs on about 5 MHz of partner spectrum (in the US, T-Mobile's PCS G block) and carries texts, some app data and limited voice. SpaceX reported about 7.4M monthly unique devices in about 30 countries at March 31, 2026. Management cited about 22M Starlink Mobile monthly users in Q3 2026, up 37% on Q2, but that metric is defined differently from the March figure. D2D revenue is not disclosed. In Q3 2026 connectivity revenue was $5.25B out of $14.6B total, so D2D is a small, unreported slice of a company whose value comes from broadband, launch and AI.\n\nSpaceX's spectrum build:\n- **EchoStar bands.** On May 12, 2026 the FCC approved the transfer of EchoStar's AWS-4 (about 40 MHz), H-block (10 MHz) and unpaired AWS-3 (15 MHz). Waivers allow terrestrial, satellite or hybrid use, and the order adds performance obligations.\n- **EchoStar price and closing.** The AWS-4/H-block price is $17B: up to $8.5B in cash and $8.5B in SpaceX stock. EchoStar expects closing around November 30, 2027.\n- **Grain 800 MHz.** On October 8, 2026 SpaceX agreed to buy Grain Management's nationwide 800 MHz portfolio (546 licences, up to 14 MHz). The FCC has only accepted the filing. The reported ~$8B price (WSJ) is unconfirmed. Grain bought the same licences from T-Mobile in August 2026 for $2.9B cash plus 600 MHz spectrum.\n- **Why 800 MHz.** SpaceX says it needs the band because its 2 GHz holdings do not reach indoors.\n\nSpaceX's next-generation plans:\n- **Constellation.** The FCC authorized up to 15,000 next-generation D2D satellites in October 2026. Launches start in 2027, and expanded service is targeted for the end of 2027.\n- **Capacity claims.** About 20x per-satellite throughput, more than 100x system capacity, and about 150 Mbps per user. These are company targets.\n- **Strategy.** SpaceX partners with carriers abroad but is confrontational in the US. Shotwell said SpaceX wants to be a full mobile telco. T-Mobile said on its Q3 call it does not want to lease capacity to SpaceX. Bloomberg reported SpaceX is seeking access to at least 80,000 US cell sites; TD Cowen puts a terrestrial build above $80B.\n\nAST SpaceMobile:\n- **Fleet.** 12 BlueBirds are operating. The target of about 45 has slipped to mid-2027, and launch contracts cover more than 100 satellites over 2027-2028.\n- **Financials.** Q3 2026 revenue was $42.3M, mostly gateways and government work. FY2026 guidance is $150-200M, and cash is $3.2B.\n- **Service.** Intermittent nationwide US service is targeted before year-end 2026.\n- **Spectrum.** Up to 45 MHz of Ligado L-band in North America (about $550M plus at least $80M a year); Inmarsat disputes these rights outside North America. Also 60 MHz of S-band priority rights bought for $64.5M.\n- **Valuation.** Market cap was $24.6-37.9B in June-July 2026, against revenue guidance under $200M. Investors are paying for the option on execution.\n\nConsolidation:\n- **Amazon and Globalstar.** Amazon is buying Globalstar (about $11-11.5B; FCC approval October 27, 2026; closing in 2027). That brings about 25 MHz of MSS spectrum and the Apple relationship: Apple holds 20%, and 85% of capacity is committed to Apple.\n- **Amazon Leo.** Amazon has applied for up to 5,105 D2D satellites for service around 2028.\n- **Rocket Lab and Iridium.** Rocket Lab is buying Iridium at $54 a share (enterprise value about $8.0B; closing mid-2027). Iridium's NTN Direct goes commercial in Q4 2026 with Deutsche Telekom IoT.\n\nWithin about 18 months, nearly every Western satellite-spectrum asset with D2D potential has been bought or tied up by a large, vertically integrated space company.\n\nPhysics. These are Whitesail order-of-magnitude estimates, not published measurements:\n- **Gen-1 D2D:** about 5-10 Mbps per beam over several hundred km2, or roughly 0.01-0.03 Mbps/km2.\n- **Next-gen targets:** perhaps 1-6 Mbps/km2.\n- **Terrestrial:** dense urban macro is about 1,500-9,000 Mbps/km2, small-cell layers 10,000+, and rural macro about 5-30.\n\nA single next-gen satellite may carry hundreds of Gbps, but that is spread over a field of view of hundreds of thousands of km2. It cannot reuse spectrum as tightly as towers 0.5-2 km apart. So satellites can come within about one order of magnitude of rural terrestrial capacity, but stay about three orders below urban. That is why SpaceX itself is buying 800 MHz and looking for towers. Demand from AI devices concentrates where people and vehicles are, and that demand will be met on the ground, mostly by existing licence holders.\n\nRegulation:\n- **Repurposing satellite spectrum.** The FCC is willing to repurpose satellite spectrum for flexible terrestrial or hybrid use (the EchoStar waivers). That adds usable supply.\n- **SCS framework.** It lets satellites reuse carriers' terrestrial spectrum under emission limits. Existing licences do double duty, which is the opposite of new scarcity.\n- **Not checked this session:** 2026 decisions on emission limits and EPFD (satellite power limits); the EU 2 GHz MSS licence renewal (licences expire 2027); WRC-27 agenda item 1.13 on D2D in mobile bands.\n- **Concentration rules.** The Goldman point holds. The buyer pool is small (SpaceX, Amazon, AT&T, Verizon, T-Mobile, a few intermediaries such as Grain, and AST), and the FCC spectrum screen limits concentration.\n\nSupports the thesis:\n- **Prices are rising.** SpaceX paid about $1.00/MHz-pop for AWS-4/H-block, a band EchoStar could not use for over a decade. If the $8B is right, it paid about $1.68/MHz-pop for 800 MHz that changed hands two months earlier at about $0.61 in cash (plus a 600 MHz swap).\n- **Satellite assets have been repriced.** Globalstar at about $11B and Iridium at about $8B; AST pays about $80M a year for L-band.\n- **Low-band is the scarce input.** SpaceX's own move into 800 MHz confirms it.\n- **Coverage demand from machines is real.** Examples: the Toyota and Deutsche Telekom IoT work on NTN Direct.\n\nUndercuts the thesis:\n- **Carrier stocks fell on each SpaceX spectrum step.** After the August 2026 earnings and after the October 2026 Grain deal (one report says T-Mobile fell 7.7%; another says 13%). Markets read convergence as competition, which is the banker's point.\n- **D2D cannot serve urban demand.** Its per-km2 capacity is the constraint above.\n- **Revenue is small.** SpaceX does not disclose it, and AST's is mostly non-subscriber.\n- **Regulators are adding supply** through flexible-use waivers and sharing.\n- **Buyer demand may fade.** Once SpaceX completes about 79 MHz of owned US spectrum, its incremental appetite may fall.\n- **Execution risk is high:** AST's slips, the New Glenn failure in May 2026, and Starship's cadence.\n\nProbabilistic view (Whitesail judgment):\n\n2028:\n- About 85% that the EchoStar transfer closes by end-2027.\n- Next-gen SpaceX D2D is in early deployment (P50 about 1,000-1,500 satellites).\n- Starlink Mobile monthly users: P50 about 70M.\n- AST: P50 about 80 satellites.\n- Global D2D revenue: P50 about $2.5B.\n- About 55% that SpaceX sells US retail mobile service under its own brand on its own spectrum.\n\n2030:\n- D2D satellites: P50 about 3,500.\n- Revenue: P10/P50/P90 of $2B/$6B/$15B.\n- About 65% that at least one more US spectrum deal above $5B is driven by a satellite operator (Ligado, remaining AWS-3, or a cable or regional holder).\n- About 30% that SpaceX runs at least 30,000 active terrestrial sites.\n\n2035:\n- About 80% that D2D is a standard feature of most new phones.\n- About 85% that D2D carries under 2% of developed-market mobile data.\n- Revenue: P50 about $15B.\n- About 20% that SpaceX is a top-four US operator by subscribers.\n\nInvestability. There is no clean passive way to own scarce spectrum through D2D:\n- **ASTS** is a high-beta bet on execution.\n- **SPCX** is dominated by AI, broadband and launch.\n- **GSAT and IRDM** are now merger-arbitrage positions with capped upside.\n- **EchoStar (SATS)** has turned its spectrum into cash plus SpaceX stock.\n- **Viasat** holds contested L-band and S-band rights.\n- **The US carriers** bear the competitive risk.\n\nThe evidence supports \"spectrum is being repriced by new strategic buyers.\" It does not support \"incumbent holders will capture that value through pricing.\"",
