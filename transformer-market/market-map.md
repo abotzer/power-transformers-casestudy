@@ -1,6 +1,6 @@
 # North American Transformer Market Map
 
-**Baseline as of 2026-11-16.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
+**Baseline as of 2026-11-23.** It now includes two rounds of primary-source research ([deep dive](deep-dive/2026-10-12-deep-dive.md)). Each weekly run updates this file, and every edit is logged in that week's report in `weekly/`.
 
 Confidence tags: **[P]** primary source (company, government or filing), **[S]** reputable secondary (trade press, law firm, analyst), **[W]** weak (vendor blog or aggregator; directional only).
 
@@ -95,7 +95,7 @@ Confidence tags: **[P]** primary source (company, government or filing), **[S]**
 |---|---|
 | **2026** | Howard Ellisville to 250 MVA/345 kV (on track, end-2026). Giga Houston, JST Wytheville and Central Moloney FL (operating). Hammond Mexico (operating). PTT pad-mount building complete Q4 |
 | **2027** | PTT Raeford pad-mount (early 2027). VTC Rincon +50% (Mar 2027, slipped). HD Hyundai #2 (Apr to mid-2027). Siemens Charlotte (slipped from 2026). Eaton Jonesville. ERMCO Waddell. Prolec Goldsboro to 420 units/yr (investment deadline Dec 31, 2027). Hyosung Memphis (phased 2027-28). Heron Power SST (late 2027) |
-| **2028** | VTC Muscle Shoals (Jan 2028, **at risk**, no site work seen). Hitachi South Boston (**at risk of slipping to 2029**). Cliffs Butler GOES +25%. Niagara (broke ground Oct 22, 2026; likely 2027-28) |
+| **2028** | VTC Muscle Shoals (Jan 2028, **at risk**, no site work seen). Hitachi South Boston (**at risk of slipping to 2029**). Cliffs Butler GOES +25%. Niagara (broke ground Oct 22, 2026; likely 2027-28). GE Vernova Shreveport upgrade (+175 jobs, announced Nov 10, 2026). **LIMiK Capital Gaffney SC, $327.7M heavy-duty power transformers, 400 jobs, early 2028 (announced Nov 17, 2026; ratings and capacity undisclosed; new entrant)** |
 | **2029** | Hitachi Gallman (partly replaces Crystal Springs) |
 
 **What this means:**
